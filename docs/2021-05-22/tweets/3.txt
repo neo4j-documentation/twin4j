@@ -1,0 +1,5 @@
+In this week's #twin4j, @lucmichalski has developed a Reddit Detective Python application that can be used to discover potentially problematic data in Reddit.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-2
+
+#api #social #data #socialMedia #database #reddit #politics #etl #analytics #neo4j

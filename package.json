@@ -2,10 +2,6 @@
   "name": "twin4j",
   "version": "1.0.0",
   "description": "Twin4j newsletter",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,7 +21,9 @@
   "homepage": "https://github.com/Mogztter/twin4j#readme",
   "devDependencies": {
     "@asciidoctor/core": "^2.2.4",
+    "nunjucks": "^3.2.3",
     "puppeteer": "^9.1.1",
+    "unxhr": "^1.2.0",
     "wpapi": "^1.2.2"
   }
 }

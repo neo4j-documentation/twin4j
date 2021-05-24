@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs').promises
 const ospath = require('path')
 const os = require('os')
@@ -73,12 +75,24 @@ async function generate(data) {
   }
 }
 
+/*
 generate({
   communityMember: {
     name: 'Camilla Dal Rio',
     title: 'Consultant at Moviri',
     image: 'camilla-dal-rio.jpeg'
   },
-  date: new Date(Date.UTC(2021, 5, 22))
+  // month are 0-based
+  date: new Date(Date.UTC(2021, 4, 22))
 })
+*/
 
+generate({
+  communityMember: {
+    name: 'Guillaume Grossetie',
+    title: 'Developer at Yuzu tech',
+    image: 'guillaume-grossetie.jpeg'
+  },
+  // month are 0-based
+  date: new Date(Date.UTC(2021, 4, 24))
+})

@@ -71,12 +71,12 @@ module.exports = (data) => {
     }
 
     .meta .avatar {
-      width: 300px;
-      height: 300px;
+      width: 305px;
+      height: 305px;
       border-radius: 100%;
       position: absolute;
       top: 95px;
-      margin-left: 5px;
+      margin-left: 22px;
     }
 
     .avatar {

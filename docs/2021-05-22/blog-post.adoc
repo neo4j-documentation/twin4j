@@ -1,0 +1,217 @@
+= This Week in Neo4j: Batch vs. Stream, UX Survey, Kafka Example, Jupyter/Docker for Data Science, Deep Learning
+:noheader:
+:linkattrs:
+:type: web
+:category: graph database
+// twing4j is added automatically
+:tags: batch, confluent, data ingestion, data science, deep learning, docker, graph, GraphXR, JHipster, Jupyter, \
+Kafka, Kineviz, Larus, machine learning, neo4j, nlp,nodes-2021, python, similarity algorithms, spring, spring boot, \
+streaming data
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graph Embeddings, Reddit, jQAssistant, Helidon, Corporate Data, Query Tuning
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, Tomaz Bratanic  teaches you how to visualize graph embedding algorithm results in NEuler. Luc Michalski has developed a Reddit Detective Python application that can be used to discover potentially problematic data in Reddit. Dirk Mahler has developed the jQAssistant application where Neo4j helps to identify problems in your software architecture. Paul Parkinson from Oracle published a blog that shows how to use Neo4j as a datasource in a Helidon Microservice. Rebecca Rabb posted a blog about how graph data models are necessary for corporate data.
+
+In addition, we have included a link to the _Advanced Query Tuning_ training session that Mark Quinsland presented last year.
+
+Cheers,
+https://twitter.com/elaine_neo4j[Elaine^] and the Developer Relations team
+
+
+[[featured-community-member]]
+== Featured Community Member: Chris Hay
+
+This week's featured community member is Chris Hay.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210514064853/this-week-in-neo4j-15-may-2021.jpeg[name="Chris Hay"]
+
+Chris has developed and architected applications for IBM and has discovered Neo4j.  He has created this excellent 30 minute video to get you started using Neo4j. In the video, he shows how easy it is to download and create a Docker instance of Neo4j. He steps you through how to create nodes, relationships , and properties in the graph, as well executing queries. Then, he goes further by showing you how easy it is to create a data model in Neo4j that supports a software supply-chain application. You can definitely use some of the points in this video to imagine how you could model a financial application where fraud detection is necessary. We like how Chris shows how easy it is to get started modeling your data with Neo4j.
+
+Thank you Chris for creating such a great video!
+
+https://www.linkedin.com/in/chris-hay-2664335/[Connect with Chris on LinkedIn, role="medium button"]
+
+// tags: #graph  #Docker #supplychain #fraud  #Neo4j
+
+
+[[features-1]]
+== Visualizing Graph Embedding Algorithm Results in NEuler
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514065049/GraphEmbeddingResultNEuler.jpeg" width=150px"  />
+</div>
+++++
+
+https://twitter.com/tb_tomaz[Tomaz Bratanic^]  published a tutorial that teaches you how to execute and visualize graph embedding algorithm results in Neo4j's  Graph Data Science Playground application, NEuler. NEuler is an excellent tool for data scientists that can be used with https://neo4j.com/download/[Neo4j Desktop^] or a https://sandbox.neo4j.com/[Neo4j Sandbox^]. In this tutorial, he steps you through loading the data through visualizing graph embedding results with the t-SNE scatter plot.
+
+https://medium.com/neo4j/visualize-graph-embedding-algorithm-result-in-neuler-767bb0dd8275/[Follow the Tutorial, role="medium button"]
+
+// tags: #graph  #embedding #algorithm #Neo4j
+
+
+[[features-2]]
+== Play Detective on Reddit
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514065536/reddit-detective-scaled.jpeg" width=150px"  />
+</div>
+++++
+
+https://twitter.com/lucmichalski[Luc Michalski^] created a Python application that loads a graph with Reddit data and enables you to look for political disinformation campaigns, secret influences, and more.  With this application, you can:
+
+* Detect political disinformation campaigns.
+* Find trolls manipulating the discussion.
+* Find secret influencers and idea spreaders (it might be you!).
+* Detect "cyborg-like" activities.
+
+https://github.com/umitkaanusta/reddit-detective/[View the GitHub Repo, role="medium button"]
+
+// tags:  #api #social #data #socialMedia #database #reddit #politics #etl #analytics #neo4j
+
+
+[[features-3]]
+== jQAssistant to Improve your Software Projects
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514070420/jqassistant.jpeg" width=150px"  />
+</div>
+++++
+
+https://twitter.com/dirkmahler[Dirk Mahler^] and a group of other developers have been working on an open-source project called JQAssistant.
+
+jQAssistant is a QA tool, which allows the definition and validation of project specific rules on a structural level. It is built upon the graph database Neo4j and can easily be plugged into the build process to automate detection of constraint violations and generate reports about user defined concepts and metrics.
+
+Example use cases include:
+
+* Enforce naming conventions, e.g. EJBs, JPA entities, test classes, packages, Maven modules etc.
+* Validate dependencies between modules of your project
+* Separate API and implementation packages
+* Detect common problems like cyclic dependencies or tests without assertions
+
+https://github.com/jqassistant/jqassistant/[View the GitHub Repo, role="medium button"]
+
+// tags:  #neo4j #applicationarchitecture #qa #stream #build #jqassistant
+
+
+[[features-4]]
+== Using Neo4j as a Data Source in the Oracle Helidon Microservices Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514071141/OracleHelidon.jpeg" width="200px"  />
+</div>
+++++
+
+https://twitter.com/pparkinson[Paul Parkinson^] who is  the Data and Transaction Processing Development Lead for the Helidon Microservices Cloud Platform at Oracle has written a blog about using Neo4j as a data source for a microservice. https://helidon.io/#/[Helidon^] is an open source project funded by Oracle It is a collection of Java libraries for writing microservices that run on a fast web core powered by Netty. This blog illustrates some of the ways you can integrate with the microservices architecture, including using Neo4j as a datasource.
+
+https://blogs.oracle.com/javamagazine/fast-flexible-data-access-in-java-using-the-helidon-microservices-platform/[Read the Blog Post, role="medium button"]
+
+// tags:  #neo4j #oracle #microservices #helidon #datasource #nosql #java
+
+
+[[features-5]]
+== The Power of Storing Corporate Data in a Graph Database
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514071240/graphable-corporateData.jpeg" width="150px"  />
+</div>
+++++
+
+Consultant Rebecca Rabb for https://www.graphable.ai/[Graphable.io], posted this blog which describes how corporate data is much better served from a graph database, rather than other types of databases.  Companies execute their business operations because of their connections to other companies. The only way to reasonably represent these connections is a graph. Rebecca presents two different use cases where graphs are the best solution. You can follow Graphable at https://twitter.com/Graphable1[@Graphable1]
+
+https://www.graphable.ai/post/the-power-of-storing-corporate-data-in-a-graph-database/[Read the Blog Post, role="medium button"]
+
+// tags:  #neo4j #corporate #graph #model
+
+
+[[features-6]]
+== Training Session (recording): Advanced Cypher Query Tuning
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514071351/Mark-AdvancedQueryTuning.jpeg" width="200px"  />
+</div>
+++++
+
+Last year, we held virtual advanced hands-on training sessions for our Certified Neo4j Professionals. This 4-hour recorded session was given by https://twitter.com/mquinsland[Mark Quinsland] where he presented his tips and tricks for Cypher Query Tuning. Here are the topics in this session that Mark presented:
+
+* Profiling slow-running queries
+* Methods for improving Cypher performance
+* Data modeling alternatives for improving query performance
+* Lesser-known Cypher features for better performance
+* Improving speeds for loading CSV files
+* How and when to use indexes
+
+https://youtu.be/xPSKqm4hFRc[Watch the Training Session, role="medium button"]
+
+// tags:  #neo4j #cypher #tuning #query
+
+
+[[features-7]]
+== Nodes 2021: The Largest Graph Dev Conference Is Back!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210514071459/NODES-2021.jpeg" width="200px"  />
+</div>
+++++
+
+Reserve your spot now for NODES 2021, designed for developers to bring their graph database skills to the next level. This is a *free* event that will be held on June 17th.
+
+You can https://neo4j.brand.live/c/2021nodes-homepage/[register here^]
+
+https://youtu.be/l9H3LCuDHqM[Watch the Promo Video, role="medium button"]
+
+// tags:  #neo4j #nodes2021 #graphs #graphdatabase #nosql
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/lyonwj[William Lyon^]:
+
+tweet::1392972056233267200[type={type}]
+
+Don't forget to RT if you liked it too!
+
+////
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members.
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+////
+
+

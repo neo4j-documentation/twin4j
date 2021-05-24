@@ -1,0 +1,14 @@
+= Twin4j Newsletter
+
+== Tweet scheduling
+
+- Sat 00:00 (community member) - fcm image and name + headline content
+- Sat 05:00 features-1
+- Sat 14:00 features-2
+- Sat 21:00 features-3
+- Sun 09:00 features-4
+- Sun 16:00 features-5 
+- Sun 23:00 features-6 
+- Mon 02:00 features-7 (if there's a section 7)
+- Tue 12:00 summary of the entire issue
+

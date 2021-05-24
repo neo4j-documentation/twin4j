@@ -1,0 +1,31 @@
+{
+  "name": "twin4j",
+  "version": "1.0.0",
+  "description": "Twin4j newsletter",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mogztter/twin4j.git"
+  },
+  "keywords": [
+    "neo4j",
+    "twin4j"
+  ],
+  "author": "Guillaume Grossetie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mogztter/twin4j/issues"
+  },
+  "homepage": "https://github.com/Mogztter/twin4j#readme",
+  "devDependencies": {
+    "@asciidoctor/core": "^2.2.4",
+    "puppeteer": "^9.1.1",
+    "wpapi": "^1.2.2"
+  }
+}

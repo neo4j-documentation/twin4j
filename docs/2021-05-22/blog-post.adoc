@@ -1,4 +1,5 @@
 = This Week in Neo4j: Batch vs. Stream, UX Survey, Kafka Example, Jupyter/Docker for Data Science, Deep Learning
+:slug: this-week-in-neo4j-batch-vs-stream-ux-survey-kafka-example-jupyter-docker-for-data-science-deep-learning
 :noheader:
 :linkattrs:
 :type: web

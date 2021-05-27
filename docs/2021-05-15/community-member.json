@@ -1,7 +1,7 @@
 {
-  communityMember: {
-    name: 'Chris Hay',
-    title: 'Distinguised Enginer and Architect at IBM iX',
-    image: 'chris-hay.jpeg'
+  "communityMember": {
+    "name": "Chris Hay",
+    "title": "Distinguised Enginer and Architect at IBM iX",
+    "image": "chris-hay.jpeg"
   }
 }

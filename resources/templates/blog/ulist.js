@@ -28,7 +28,8 @@ module.exports = ({ node, opts }) => {
   }
   let titleHtml = ''
   if (node.hasTitle()) {
-    titleHtml = `<div class="title">${node.getTitle()}</div>`
+    titleHtml = `
+<div class="title">${node.getTitle()}</div>`
   }
   let listRole
   if (hasChecklist) {
@@ -49,8 +50,7 @@ module.exports = ({ node, opts }) => {
     }
     return `<li>${content}</li>`
   })
-  return `<div${id ? ` id="${id}"` : ''} class="${roles.join(' ')}">
-${titleHtml}
+  return `<div${id ? ` id="${id}"` : ''} class="${roles.join(' ')}">${titleHtml}
 <ul${listRole ? ` class="${listRole}"` : ''}>
 ${itemsHtml.join('\n')}
 </ul>

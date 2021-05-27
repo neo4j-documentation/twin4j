@@ -1,3 +1,5 @@
+'use strict'
+
 const monthNames = [
   'January',
   'February',

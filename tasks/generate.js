@@ -5,8 +5,8 @@ const fs = require('fs').promises
 
 const { generate: generateBlogPost } = require('./generate-blog-post.js')
 const { generate: generateCommunityMemberCard } = require('./generate-community-member-card-image.js')
-const { getIssueDate } = require('./lib/date.js')
-const { getIssueDirectory, getBuildDirectory } = require('./lib/fs.js')
+const { copyImages } = require('./copy-images.js')
+const { getIssueDate, getIssueDirectory, getBuildDirectory } = require('./lib/data.js')
 
 const args = process.argv.slice(2)
 const issueDate = args[0]
@@ -23,6 +23,7 @@ if (!issueDate) {
     console.log(`Generating Twin4j newsletter ${issueDate}...`)
     await generateBlogPost(issueDate)
     await generateCommunityMemberCard(issueDate)
+    await copyImages(issueDate)
   } catch (e) {
     console.log('Something wrong happened!', e)
   }

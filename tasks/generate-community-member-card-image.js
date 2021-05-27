@@ -4,19 +4,25 @@ const fs = require('fs').promises
 const ospath = require('path')
 const puppeteer = require('puppeteer')
 
-const { getCommunityMemberImage, getCommunityMemberData, getBuildDirectory } = require('./lib/fs.js')
-const { getIssueDate, getMediaSlug } = require('./lib/date.js')
+const {
+  getCommunityMemberImage,
+  getCommunityMemberData,
+  getBuildDirectory,
+  getBuildImagesDirectory,
+  getIssueDate,
+  getMediaSlug
+} = require('./lib/data.js')
 
 const imagesDir = ospath.join(__dirname, '..', 'resources', 'images')
 const template = require('../resources/community-member-card-template.js')
 
-async function generateCommunityMemberCardHtml(issueDate, data) {
-  const communityMemberImage = await getCommunityMemberImage(issueDate, data.communityMember.image)
+async function generateCommunityMemberCardHtml(issueDate, uiModel) {
+  const communityMemberImage = await getCommunityMemberImage(issueDate, uiModel.communityMember.image)
   const avatarBuffer = await fs.readFile(communityMemberImage)
   const avatarDataUri = `data:image/gif;base64,${avatarBuffer.toString('base64')}`
   const backgroundImageBuffer = await fs.readFile(ospath.join(imagesDir, `twin4j-fcm-template-with-logo.jpeg`))
   const backgroundDataUri = `data:image/gif;base64,${backgroundImageBuffer.toString('base64')}`
-  return template({ ...data, backgroundDataUri, avatarDataUri })
+  return template({ ...uiModel, backgroundDataUri, avatarDataUri })
 }
 
 async function generateCommunityMemberCardImage(puppeteerPage, page, dest) {
@@ -29,19 +35,22 @@ async function generateCommunityMemberCardImage(puppeteerPage, page, dest) {
 async function generate(issueDate) {
   const communityMemberJson = await getCommunityMemberData(issueDate)
   const date = await getIssueDate(issueDate)
-  const data = { ...communityMemberJson, date }
-  const buildDir = await getBuildDirectory()
+  const uiModel = { communityMember: communityMemberJson, date }
+  const buildImagesDirectory = await getBuildImagesDirectory(issueDate)
+  const mediaSlug = getMediaSlug(issueDate)
+  const tempFilePath = ospath.join(buildImagesDirectory, `${mediaSlug}.html`)
   // Start browser
   const browser = await puppeteer.launch()
   try {
     const puppeteerPage = await browser.newPage()
-    const html = await generateCommunityMemberCardHtml(issueDate, data)
-    const mediaSlug = getMediaSlug(issueDate)
-    const tempFilePath = ospath.join(buildDir, `${mediaSlug}.html`)
+    const html = await generateCommunityMemberCardHtml(issueDate, uiModel)
     await fs.writeFile(tempFilePath, html, 'utf8')
     const url = `file://${tempFilePath}`
-    await generateCommunityMemberCardImage(puppeteerPage, { url }, ospath.join(buildDir, `${mediaSlug}.jpeg`))
+    await generateCommunityMemberCardImage(puppeteerPage, { url }, ospath.join(buildImagesDirectory, `${mediaSlug}.jpeg`))
   } finally {
+    if (typeof process.env['DEBUG'] === 'undefined') {
+      await fs.unlink(tempFilePath)
+    }
     await browser.close()
   }
 }

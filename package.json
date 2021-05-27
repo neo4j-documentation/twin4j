@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Twin4j newsletter",
   "scripts": {
-    "generate": "node tasks/generate.js"
+    "generate": "node tasks/generate.js",
+    "upload-images": "node tasks/upload-images.js",
+    "upload-blog-post": "node tasks/upload-blog-post.js"
   },
   "repository": {
     "type": "git",

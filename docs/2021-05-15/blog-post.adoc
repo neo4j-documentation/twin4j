@@ -1,8 +1,6 @@
 = This Week in Neo4j – Graph Embeddings, Reddit, jQAssistant, Helidon, Corporate Data, Query Tuning
 :slug: this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning
-:noheader:
-:linkattrs:
-:type: web
+:author: Elaine Rosenberg
 :category: graph database
 // twing4j is added automatically
 :tags: Analytics, application architecture, corporate knowledge, cypher, Cypher Query, Cypher query tuning, \

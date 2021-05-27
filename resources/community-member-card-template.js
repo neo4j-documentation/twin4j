@@ -15,8 +15,8 @@ const monthNames = [
   'December'
 ]
 
-module.exports = (data) => {
-  const date = data.date
+module.exports = (uiModel) => {
+  const date = uiModel.date
   const yyyy = date.getFullYear()
   const month = monthNames[date.getMonth()]
   const dd = ('0' + (date.getDate())).slice(-2)
@@ -49,7 +49,7 @@ module.exports = (data) => {
     }
 
     main {
-      background-image: url('${data.backgroundDataUri}');
+      background-image: url('${uiModel.backgroundDataUri}');
       width: 800px;
       height: 400px;
     }
@@ -82,7 +82,7 @@ module.exports = (data) => {
     }
 
     .avatar {
-      background-image: url(${data.avatarDataUri});
+      background-image: url(${uiModel.avatarDataUri});
       background-position: center;
       background-size: cover;
     }
@@ -94,8 +94,8 @@ module.exports = (data) => {
       <header>
         <div class="meta">
           <div class="byline">
-            <span class="author">${data.communityMember.name}</span>
-            <span class="title">${data.communityMember.title}</span>
+            <span class="author">${uiModel.communityMember.name}</span>
+            <span class="title">${uiModel.communityMember.title}</span>
           </div>
           <div class="avatar"></div>
         </div>

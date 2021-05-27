@@ -5,8 +5,7 @@ const fs = require('fs').promises
 
 const asciidoctor = require('@asciidoctor/core')()
 
-const { getBlogPost } = require('./lib/fs.js')
-const { getBlogPostSlug } = require('./lib/date.js')
+const { getBlogPost, getBuildDirectory } = require('./lib/data.js')
 const tweetExtension = require('../resources/extensions/tweet-block-macro.js')
 const featuredExtension = require('../resources/extensions/featured-block-macro.js')
 
@@ -23,13 +22,17 @@ async function generate(issueDate) {
     console.error(`Slug is mandatory, please define a :slug: attribute in ${blogPostPath}.`)
     process.exit(9)
   }
-  const outputFile = ospath.join(__dirname, '..', 'build', `${slug}.html`)
+  const buildDirectory = await getBuildDirectory(issueDate)
+  const outputFile = ospath.join(buildDirectory, `${slug}.html`)
   const doc = asciidoctor.convertFile(blogPostPath, {
     template_dirs: templateDirectoryPath,
     to_file: outputFile,
     mkdirs: true,
     standalone: false,
-    extension_registry: registry
+    extension_registry: registry,
+    attributes: {
+      linkattrs: ''
+    }
   })
   console.log(doc.getDocumentTitle())
 }

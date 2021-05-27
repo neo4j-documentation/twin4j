@@ -3,6 +3,21 @@
 const ospath = require('path')
 const fs = require('fs').promises
 
+const monthNames = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+
 const rootDirectoryPath = ospath.join(__dirname, '..', '..')
 const buildDirectoryPath = ospath.join(rootDirectoryPath, 'build')
 const docsDirectoryPath = ospath.join(rootDirectoryPath, 'docs')
@@ -84,21 +99,54 @@ async function getBlogPost(issueDate) {
   return blogPostPath
 }
 
-async function getBuildDirectory() {
+async function getBuildDirectory(issueDate) {
   // Create build directory (if it does not exist)
   if (!await directoryExists(buildDirectoryPath)) {
     await fs.mkdir(buildDirectoryPath)
   }
-  return buildDirectoryPath
+  const issueDateBuildDirectory = ospath.join(buildDirectoryPath, issueDate)
+  if (!await directoryExists(issueDateBuildDirectory)) {
+    await fs.mkdir(issueDateBuildDirectory)
+  }
+  return issueDateBuildDirectory
+}
+
+async function getBuildImagesDirectory(issueDate) {
+  const buildDirectory = await getBuildDirectory(issueDate)
+  const imagesBuildDirectory = ospath.join(buildDirectory, 'images')
+  if (!await directoryExists(imagesBuildDirectory)) {
+    await fs.mkdir(imagesBuildDirectory)
+  }
+  return imagesBuildDirectory
+}
+
+function getIssueDate(issueDate) {
+  const date = new Date(`${issueDate}T00:00:00Z`)
+  if (!(date instanceof Date) || isNaN(date)) {
+    console.error(`Issue date ${issueDate} is not a valid date, please use yyyy-MM-dd format, for instance: 2021-02-04 (February 4th, 2021).`)
+    process.exit(9)
+  }
+  return date
+}
+
+function getMediaSlug(issueDate) {
+  const date = getIssueDate(issueDate)
+  const yyyy = date.getUTCFullYear()
+  const month = monthNames[date.getUTCMonth()]
+  const dd = ('0' + (date.getUTCDate())).slice(-2)
+  return `this-week-in-neo4j-${dd}-${month}-${yyyy}`
 }
 
 module.exports = {
   directoryExists,
   fileExists,
+  getIssueDate,
+  getMediaSlug,
   getIssueDirectory,
   getCommunityMemberData,
   getBlogPost,
   getImagesDirectory,
   getCommunityMemberImage,
-  getBuildDirectory
+  getBuildDirectory,
+  getBuildImagesDirectory
 }

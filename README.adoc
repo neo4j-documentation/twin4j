@@ -101,6 +101,32 @@ Therefore, you should not update slugs once the content has been published.
 
 NOTE: Please note that the blog post will be scheduled (using the status `future`) and will be automatically published by WordPress at 00:00 PST (i.e., 08:00 UTC) on Saturday (i.e., the issue date)
 
+=== Debug
+
+You can use the `DEBUG` environment variable to enable traces based on space or comma-delimited names. +
+Here are some examples:
+
+```
+$ DEBUG=generate npm run generate 2021-05-15
+
+> twin4j@1.0.0 generate /home/guillaume/workspace/neo4j/twin4j
+> node tasks/generate.js "2021-05-15"
+
+Generating Twin4j newsletter 2021-05-15...
+  generate Blog post generated: build/2021-05-15/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning.html +0ms
+  generate Featured community member image generated: build/2021-05-15/images/this-week-in-neo4j-15-May-2021.jpeg +295ms
+  generate Images copied to: build/2021-05-15/images +3ms
+```
+
+This project is using the following names:
+
+- `images`
+- `generate`
+- `wordpress`
+- `blog-post`
+
+TIP: You can use the value `*` if you want to enable all traces.
+
 == Scheduling
 
 [cols="1,1,3",opts="header"]
@@ -150,4 +176,3 @@ NOTE: Please note that the blog post will be scheduled (using the status `future
 |Summary of the entire issue tweet
 
 |====
-

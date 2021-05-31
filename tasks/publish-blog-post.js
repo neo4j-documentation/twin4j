@@ -68,9 +68,11 @@ async function publish(issueDate) {
   if (result && result.length > 0) {
     const blogPostId = result[0].id
     debug(`Blog post with slug ${slug} found, updating blog post with id: ${blogPostId}.`)
+    await updatePost(blogPostId, blogPostData)
   } else {
     const {content: _, ...data} = blogPostData
     debug(`Blog post with slug: ${slug} not found, creating with data: %o.`, data)
+    await createPost(blogPostData)
   }
 }
 

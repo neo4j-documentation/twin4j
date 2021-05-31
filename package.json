@@ -2,10 +2,14 @@
   "name": "twin4j",
   "version": "1.0.0",
   "description": "Twin4j newsletter",
+  "engines": {
+    "node": ">= 14"
+  },
   "scripts": {
     "generate": "node tasks/generate.js",
-    "upload-images": "node tasks/upload-images.js",
-    "upload-blog-post": "node tasks/upload-blog-post.js"
+    "clean": "node tasks/clean.js",
+    "publish-images": "node tasks/publish-images.js",
+    "publish-blog-post": "node tasks/publish-blog-post.js"
   },
   "repository": {
     "type": "git",

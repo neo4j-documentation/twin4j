@@ -8,7 +8,7 @@ const asciidoctor = require('@asciidoctor/core')()
 const { getBuildDirectory, getBlogPost, getBuildBlogPost, getCommunityMemberImageSlug } = require('./lib/data.js')
 const { getPost, createPost, updatePost, getMedia, getTags, getCategories, findUser } = require('./lib/wp.js')
 
-async function upload(issueDate) {
+async function publish(issueDate) {
   const buildDirectory = await getBuildDirectory(issueDate)
   const blogPostPath = await getBlogPost(issueDate)
   const document = asciidoctor.loadFile(blogPostPath, { header_only: true })
@@ -78,14 +78,14 @@ const args = process.argv.slice(2)
 const issueDate = args[0]
 
 if (!issueDate) {
-  console.error('Issue date is undefined, please specify an issue date `npm run upload-blog-post 2021-05-15`.')
+  console.error('Issue date is undefined, please specify an issue date `npm run publish-blog-post 2021-05-15`.')
   process.exit(9)
 }
 
 ;(async () => {
   try {
-    console.log(`Uploading blog post for Twin4j newsletter ${issueDate}...`)
-    await upload(issueDate)
+    console.log(`Publishing blog post for Twin4j newsletter ${issueDate}...`)
+    await publish(issueDate)
   } catch (e) {
     console.error('Something wrong happened!', e)
   }

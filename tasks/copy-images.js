@@ -16,6 +16,7 @@ async function copyImages(issueDate) {
     }
     await fs.copyFile(ospath.join(imagesDirectory, image), ospath.join(buildImagesDirectory, image))
   }
+  return { destinationDirectory: buildImagesDirectory }
 }
 
 module.exports = {

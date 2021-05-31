@@ -34,7 +34,7 @@ async function generate(issueDate) {
       linkattrs: ''
     }
   })
-  console.log(doc.getDocumentTitle())
+  return { outputFile, blogPostPath }
 }
 
 module.exports.generate = generate

@@ -46,7 +46,9 @@ async function generate(issueDate) {
     const html = await generateCommunityMemberCardHtml(issueDate, uiModel)
     await fs.writeFile(tempFilePath, html, 'utf8')
     const url = `file://${tempFilePath}`
-    await generateCommunityMemberCardImage(puppeteerPage, { url }, ospath.join(buildImagesDirectory, `${communityMemberImageSlug}.jpeg`))
+    const outputFile = ospath.join(buildImagesDirectory, `${communityMemberImageSlug}.jpeg`)
+    await generateCommunityMemberCardImage(puppeteerPage, { url }, outputFile)
+    return { outputFile }
   } finally {
     if (typeof process.env['DEBUG'] === 'undefined') {
       await fs.unlink(tempFilePath)

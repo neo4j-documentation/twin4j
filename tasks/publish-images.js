@@ -7,7 +7,7 @@ const fs = require('fs').promises
 const { getBuildImagesDirectory } = require('./lib/data.js')
 const { getMedia, createMedia, updateMedia } = require('./lib/wp.js')
 
-async function upload(issueDate) {
+async function publish(issueDate) {
   const buildImagesDirectory = await getBuildImagesDirectory(issueDate)
   const images = await fs.readdir(buildImagesDirectory)
   for (const image of images) {
@@ -47,14 +47,14 @@ const args = process.argv.slice(2)
 const issueDate = args[0]
 
 if (!issueDate) {
-  console.error('Issue date is undefined, please specify an issue date `npm run upload-images 2021-05-15`.')
+  console.error('Issue date is undefined, please specify an issue date `npm run publish-images 2021-05-15`.')
   process.exit(9)
 }
 
 ;(async () => {
   try {
-    console.log(`Uploading images for Twin4j newsletter ${issueDate}...`)
-    await upload(issueDate)
+    console.log(`Publishing images for Twin4j newsletter ${issueDate}...`)
+    await publish(issueDate)
   } catch (e) {
     console.error('Something wrong happened!', e)
   }

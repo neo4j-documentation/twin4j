@@ -28,7 +28,7 @@ Example:
 :slug: this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning
 :author: Elaine Rosenberg
 :categories: graph database
-// twing4j is added automatically
+// twin4j is added automatically
 :tags: application architecture, corporate knowledge, cypher, data modeling, fraud analysis
 
 // content

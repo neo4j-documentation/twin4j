@@ -99,6 +99,16 @@ async function getBlogPost(issueDate) {
   return blogPostPath
 }
 
+async function getBuildBlogPost(issueDate, slug) {
+  const buildDirectory = await getBuildDirectory(issueDate)
+  const blogPostHtmlFile = ospath.join(buildDirectory, `${slug}.html`)
+  if (!await fileExists(blogPostHtmlFile)) {
+    console.error(`Blog post is missing from ${buildDirectory}.`)
+    process.exit(9)
+  }
+  return blogPostHtmlFile
+}
+
 async function getBuildDirectory(issueDate) {
   // Create build directory (if it does not exist)
   if (!await directoryExists(buildDirectoryPath)) {
@@ -129,7 +139,7 @@ function getIssueDate(issueDate) {
   return date
 }
 
-function getMediaSlug(issueDate) {
+function getCommunityMemberImageSlug(issueDate) {
   const date = getIssueDate(issueDate)
   const yyyy = date.getUTCFullYear()
   const month = monthNames[date.getUTCMonth()]
@@ -141,12 +151,13 @@ module.exports = {
   directoryExists,
   fileExists,
   getIssueDate,
-  getMediaSlug,
+  getCommunityMemberImageSlug,
   getIssueDirectory,
   getCommunityMemberData,
   getBlogPost,
   getImagesDirectory,
   getCommunityMemberImage,
   getBuildDirectory,
-  getBuildImagesDirectory
+  getBuildImagesDirectory,
+  getBuildBlogPost
 }

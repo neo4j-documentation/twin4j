@@ -10,7 +10,7 @@ const {
   getBuildDirectory,
   getBuildImagesDirectory,
   getIssueDate,
-  getMediaSlug
+  getCommunityMemberImageSlug
 } = require('./lib/data.js')
 
 const imagesDir = ospath.join(__dirname, '..', 'resources', 'images')
@@ -37,8 +37,8 @@ async function generate(issueDate) {
   const date = await getIssueDate(issueDate)
   const uiModel = { communityMember: communityMemberJson, date }
   const buildImagesDirectory = await getBuildImagesDirectory(issueDate)
-  const mediaSlug = getMediaSlug(issueDate)
-  const tempFilePath = ospath.join(buildImagesDirectory, `${mediaSlug}.html`)
+  const communityMemberImageSlug = getCommunityMemberImageSlug(issueDate)
+  const tempFilePath = ospath.join(buildImagesDirectory, `${communityMemberImageSlug}.html`)
   // Start browser
   const browser = await puppeteer.launch()
   try {
@@ -46,7 +46,7 @@ async function generate(issueDate) {
     const html = await generateCommunityMemberCardHtml(issueDate, uiModel)
     await fs.writeFile(tempFilePath, html, 'utf8')
     const url = `file://${tempFilePath}`
-    await generateCommunityMemberCardImage(puppeteerPage, { url }, ospath.join(buildImagesDirectory, `${mediaSlug}.jpeg`))
+    await generateCommunityMemberCardImage(puppeteerPage, { url }, ospath.join(buildImagesDirectory, `${communityMemberImageSlug}.jpeg`))
   } finally {
     if (typeof process.env['DEBUG'] === 'undefined') {
       await fs.unlink(tempFilePath)

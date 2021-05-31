@@ -3,32 +3,11 @@
 :noheader:
 :linkattrs:
 :type: web
-:category: graph database
-// twing4j is added automatically
-:tags: batch, confluent, data ingestion, data science, deep learning, docker, graph, GraphXR, JHipster, Jupyter, \
-Kafka, Kineviz, Larus, machine learning, neo4j, nlp,nodes-2021, python, similarity algorithms, spring, spring boot, \
-streaming data
-
-////
-[Keywords/Tags:]
-<insert-tags-here>
-
-
-[Meta Description:]
-
-
-
-[Primary Image File Name:]
-this-week-neo4j-21-dec-2019.jpg
-
-[Primary Image Alt Text:]
-
-
-[Headline:]
-This Week in Neo4j - Graph Embeddings, Reddit, jQAssistant, Helidon, Corporate Data, Query Tuning
-
-[Body copy:]
-////
+:categories: graph-database
+// twin4j is added automatically
+:tags: batch, confluent, data-ingestion, data-science, deep-learning, docker, graph, graphxr, jhipster, jupyter, \
+kafka, kineviz, larus, machine-learning, neo4j, nlp, nodes-2021, python, similarity-algorithms, spring, spring-boot, \
+streaming-data
 
 Hello, everyone!
 
@@ -53,9 +32,6 @@ Thank you Chris for creating such a great video!
 
 https://www.linkedin.com/in/chris-hay-2664335/[Connect with Chris on LinkedIn, role="medium button"]
 
-// tags: #graph  #Docker #supplychain #fraud  #Neo4j
-
-
 [[features-1]]
 == Visualizing Graph Embedding Algorithm Results in NEuler
 
@@ -68,9 +44,6 @@ https://www.linkedin.com/in/chris-hay-2664335/[Connect with Chris on LinkedIn, r
 https://twitter.com/tb_tomaz[Tomaz Bratanic^]  published a tutorial that teaches you how to execute and visualize graph embedding algorithm results in Neo4j's  Graph Data Science Playground application, NEuler. NEuler is an excellent tool for data scientists that can be used with https://neo4j.com/download/[Neo4j Desktop^] or a https://sandbox.neo4j.com/[Neo4j Sandbox^]. In this tutorial, he steps you through loading the data through visualizing graph embedding results with the t-SNE scatter plot.
 
 https://medium.com/neo4j/visualize-graph-embedding-algorithm-result-in-neuler-767bb0dd8275/[Follow the Tutorial, role="medium button"]
-
-// tags: #graph  #embedding #algorithm #Neo4j
-
 
 [[features-2]]
 == Play Detective on Reddit
@@ -89,9 +62,6 @@ https://twitter.com/lucmichalski[Luc Michalski^] created a Python application th
 * Detect "cyborg-like" activities.
 
 https://github.com/umitkaanusta/reddit-detective/[View the GitHub Repo, role="medium button"]
-
-// tags:  #api #social #data #socialMedia #database #reddit #politics #etl #analytics #neo4j
-
 
 [[features-3]]
 == jQAssistant to Improve your Software Projects
@@ -115,9 +85,6 @@ Example use cases include:
 
 https://github.com/jqassistant/jqassistant/[View the GitHub Repo, role="medium button"]
 
-// tags:  #neo4j #applicationarchitecture #qa #stream #build #jqassistant
-
-
 [[features-4]]
 == Using Neo4j as a Data Source in the Oracle Helidon Microservices Platform
 
@@ -131,9 +98,6 @@ https://twitter.com/pparkinson[Paul Parkinson^] who is  the Data and Transaction
 
 https://blogs.oracle.com/javamagazine/fast-flexible-data-access-in-java-using-the-helidon-microservices-platform/[Read the Blog Post, role="medium button"]
 
-// tags:  #neo4j #oracle #microservices #helidon #datasource #nosql #java
-
-
 [[features-5]]
 == The Power of Storing Corporate Data in a Graph Database
 
@@ -146,9 +110,6 @@ https://blogs.oracle.com/javamagazine/fast-flexible-data-access-in-java-using-th
 Consultant Rebecca Rabb for https://www.graphable.ai/[Graphable.io], posted this blog which describes how corporate data is much better served from a graph database, rather than other types of databases.  Companies execute their business operations because of their connections to other companies. The only way to reasonably represent these connections is a graph. Rebecca presents two different use cases where graphs are the best solution. You can follow Graphable at https://twitter.com/Graphable1[@Graphable1]
 
 https://www.graphable.ai/post/the-power-of-storing-corporate-data-in-a-graph-database/[Read the Blog Post, role="medium button"]
-
-// tags:  #neo4j #corporate #graph #model
-
 
 [[features-6]]
 == Training Session (recording): Advanced Cypher Query Tuning
@@ -170,9 +131,6 @@ Last year, we held virtual advanced hands-on training sessions for our Certified
 
 https://youtu.be/xPSKqm4hFRc[Watch the Training Session, role="medium button"]
 
-// tags:  #neo4j #cypher #tuning #query
-
-
 [[features-7]]
 == Nodes 2021: The Largest Graph Dev Conference Is Back!
 
@@ -187,9 +145,6 @@ Reserve your spot now for NODES 2021, designed for developers to bring their gra
 You can https://neo4j.brand.live/c/2021nodes-homepage/[register here^]
 
 https://youtu.be/l9H3LCuDHqM[Watch the Promo Video, role="medium button"]
-
-// tags:  #neo4j #nodes2021 #graphs #graphdatabase #nosql
-
 
 == Tweet of the Week
 

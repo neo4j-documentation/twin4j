@@ -25,7 +25,7 @@ if (!issueDate) {
     await generateCommunityMemberCard(issueDate)
     await copyImages(issueDate)
   } catch (e) {
-    console.log('Something wrong happened!', e)
+    console.error('Something wrong happened!', e)
   }
 })()
 

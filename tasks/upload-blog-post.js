@@ -3,80 +3,74 @@
 const debug = require('debug')('blog-post')
 const ospath = require('path')
 const fs = require('fs').promises
-const WPAPI = require('wpapi')
+const asciidoctor = require('@asciidoctor/core')()
 
-const { getBuildDirectory } = require('./lib/data.js')
-
-const wpEndpoint = process.env['WORDPRESS_ENDPOINT'] || 'https://neo4j.com/wp-json'
-const wpUsername = process.env['WORDPRESS_USERNAME']
-const wpPassword = process.env['WORDPRESS_PASSWORD']
-
-const wp = new WPAPI({
-  endpoint: wpEndpoint,
-  username: wpUsername,
-  password: wpPassword,
-})
-
-async function getPost(slug) {
-  return new Promise((resolve, reject) => {
-    wp.posts()
-      .slug(slug)
-      .then(function (response) {
-        resolve(response)
-      })
-      .catch((err) => reject(err))
-  })
-}
-
-async function updatePost(id, data) {
-  debug(`Update blog post with id: ${id} and data: ${JSON.stringify(data)}.`)
-  return new Promise((resolve, reject) => {
-    wp.posts()
-      .id(id)
-      .update(data)
-      .then((response) => resolve(response))
-      .catch((err) => reject(err))
-  })
-}
-
-async function createPost(data) {
-  debug(`Create blog post with data: ${JSON.stringify(data)}.`)
-  return new Promise((resolve, reject) => {
-    wp.posts()
-      .create(data)
-      .then((response) => resolve(response))
-      .catch((err) => reject(err))
-  })
-}
+const { getBuildDirectory, getBlogPost, getBuildBlogPost, getCommunityMemberImageSlug } = require('./lib/data.js')
+const { getPost, createPost, updatePost, getMedia, getTags, getCategories, findUser } = require('./lib/wp.js')
 
 async function upload(issueDate) {
   const buildDirectory = await getBuildDirectory(issueDate)
-  const files = await fs.readdir(buildDirectory)
-  for (const file of files) {
-    if (file.endsWith('.html')) {
-      const slug = ospath.basename(file, ospath.parse(file).ext)
-      const result = await getPost(slug)
-
-      // status = future
-      // date_gmt: YYYY-MM-DDTHH:MM:SS => from issue date, publish at issue date GMT? UTC+0?
-      // tags => AsciiDoc attribute :tags: (array of ids)
-      // categories => AsciiDoc attribute :categories: (array of ids)
-      // featured_media => get id from community member image
-      // title => document title (AsciiDoc)
-      // author => get id from author name (AsciiDoc attribute :author:)
-      const blogPostData = {
-        title: 'Your Post Title',
-        content: 'Your post content',
-        // Post will be created as a draft by default if a specific "status"
-        // is not specified
-      }
-      if (result && result.length > 0) {
-        const blogPostId = result[0].id
-        debug(`Blog post with slug ${slug} found, updating blog post with id: ${blogPostId}...`)
-      } else {
-        debug(`Blog post with slug: ${slug} not found, creating...`)
-      }
-    }
+  const blogPostPath = await getBlogPost(issueDate)
+  const document = asciidoctor.loadFile(blogPostPath, { header_only: true })
+  const slug = document.getAttribute('slug')
+  if (!slug) {
+    console.error(`Slug is mandatory, please define a :slug: attribute in ${blogPostPath}.`)
+    process.exit(9)
+  }
+  const communityMemberImageSlug = getCommunityMemberImageSlug(issueDate)
+  const media = await getMedia(communityMemberImageSlug)
+  if (!media || media.length === 0) {
+    console.error(`Community member image with slug: ${communityMemberImageSlug} not found on WordPress, please upload images before uploading blog post.`)
+    process.exit(9)
+  }
+  const tags = document.getAttribute('tags', '')
+  const categories = document.getAttribute('categories', '')
+  const authorName = document.getAttribute('author')
+  const documentTitle = document.getDocumentTitle({sanitize: true})
+  const blogPostHtmlFile = await getBuildBlogPost(issueDate, slug)
+  const content = await fs.readFile(blogPostHtmlFile, 'utf8')
+  const result = await getPost(slug)
+  const featuredMediaId = media[0].id
+  const wpTags = await getTags(tags.split(',').map(tag => tag.trim()).concat(['twin4j']).join(','))
+  const tagsPerSlug = wpTags.reduce((map, tag) => {
+    const { slug, id } = tag
+    map[slug] = id
+    return map
+  }, {})
+  debug('Found the corresponding tags on WordPress: %o', tagsPerSlug)
+  const tagIds = tags.split(',').map(tag => tagsPerSlug[tag.trim()]).filter(wpTag => wpTag !== undefined).map(wpTag => wpTag.id)
+  const wpCategories = await getCategories(categories.split(',').map(category => category.trim()).join(','))
+  const categoriesPerSlug = wpCategories.reduce((map, category) => {
+    const { slug, id } = category
+    map[slug] = id
+    return map
+  }, {})
+  debug('Found the corresponding categories on WordPress: %o', categoriesPerSlug)
+  const wpAuthor = await findUser(authorName)
+  let author = {}
+  if (wpAuthor && wpAuthor.length > 0) {
+    author = wpAuthor[0]
+  } else {
+    console.warn(`Unable to find the author with name: ${authorName} in WordPress, using the default author.`)
+  }
+  debug('Found the corresponding author on WordPress: %o', { id: author.id, name: author.name })
+  const blogPostData = {
+    title: documentTitle,
+    content: content,
+    status: 'future',
+    // PST is UTC−08:00
+    date_gmt: `${issueDate}T08:00:00`,
+    tags: Object.values(tagsPerSlug),
+    categories: Object.values(categoriesPerSlug),
+    featured_media: featuredMediaId,
+    author: author.id
+  }
+  if (result && result.length > 0) {
+    const blogPostId = result[0].id
+    debug(`Blog post with slug ${slug} found, updating blog post with id: ${blogPostId}.`)
+  } else {
+    const {content: _, ...data} = blogPostData
+    debug(`Blog post with slug: ${slug} not found, creating with data: %o.`, data)
   }
 }
 
@@ -93,32 +87,6 @@ if (!issueDate) {
     console.log(`Uploading blog post for Twin4j newsletter ${issueDate}...`)
     await upload(issueDate)
   } catch (e) {
-    console.log('Something wrong happened!', e)
+    console.error('Something wrong happened!', e)
   }
 })()
-
-/*
-wp.media()
-  // Specify a path to the file you want to upload, or a Buffer
-  .file(imagePath)
-  .create({
-    title: basename,
-    alt_text: 'This Week in Neo4j',
-    caption: 'This Week in Neo4j',
-    description: ''
-  })
-  .then(function (response) {
-    // Your media is now uploaded: let's associate it with a post
-    console.log({ response })
-    // var newImageId = response.id
-    // return wp.media().id( newImageId ).update({
-    //   post: associatedPostId
-    // })
-  })
-*/
-/*
-.then(function (response) {
-  console.log('Media ID #' + response.id)
-  console.log('is now associated with Post ID #' + response.post)
-})
-*/

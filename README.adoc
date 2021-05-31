@@ -1,14 +1,126 @@
 = Twin4j Newsletter
 
-== Tweet scheduling
+== Directory structure
 
-- Sat 00:00 (community member) - fcm image and name + headline content
-- Sat 05:00 features-1
-- Sat 14:00 features-2
-- Sat 21:00 features-3
-- Sun 09:00 features-4
-- Sun 16:00 features-5 
-- Sun 23:00 features-6 
-- Mon 02:00 features-7 (if there's a section 7)
-- Tue 12:00 summary of the entire issue
+Newsletters are inside the [.path]_docs_ directory with one folder per newsletter using `yyyy-MM-dd` format.
+For instance, the Twin4j Newsletter of May 22th, 2021 is located inside `2021-05-22`.
+
+A newsletter contains:
+
+`images/`::
+A directory that contains all the images used in the blog post.
+NOTE: The file name will be used as a slug, make sure to use a descriptive name.
+
+`blog-post.adoc`::
+A blog post (AsciiDoc file). Must contain:
+
+* Document title
+* Attributes:
+** `slug`: unique slug
+** `author`: author name used on WordPress
+** `categories`: list of slugs
+** `tags`: list of slugs
++
+Example:
++
+```adoc
+= This Week in Neo4j – Graph Embeddings, Reddit, jQAssistant, Helidon, Corporate Data, Query Tuning
+:slug: this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning
+:author: Elaine Rosenberg
+:categories: graph database
+// twing4j is added automatically
+:tags: application architecture, corporate knowledge, cypher, data modeling, fraud analysis
+
+// content
+```
+
+`community-member.json`::
+Information about the featured community member (JSON file). Must contain:
+
+- `name`: complete name (first name and last name) of the featured community member
+- `title`: job title of the featured community member
+- `image`: file name of a profile picture of the featured community member
++
+Example:
++
+```json
+{
+  "name": "Chris Hay",
+  "title": "Distinguised Enginer and Architect at IBM iX",
+  "image": "chris-hay.jpeg" // <1>
+}
+```
+<1> Image must be located inside the [.path]_images_ directory.
++
+TIP: Featured community member images are usually taken from LinkedIn.
+On a https://www.linkedin.com/in/chris-hay-2664335/[LinkedIn profile], you can left-clik on the profile picture, it should open a popup with an high-resolution image, then right-click and "Save image as".
+Save the image in the [.path]_images_ directory using a slug (for instance, `chris-hay.jpeg`).
+
+== Usage
+
+=== Tasks
+
+==== Generate
+
+ $ npm run generate <issue-date>
+
+For instance, if you want to generate the Twin4j newsletter of May 22th, 2021:
+
+ $ npm run generate 2021-05-22
+
+==== Publish
+
+ $ npm run upload-images <issue-date>
+
+ $ npm run upload-blog-post <issue-date>
+
+== Scheduling
+
+[cols="1,1,3",opts="header"]
+|====
+|Day
+|Hour
+|Description
+
+|Saturday
+|00:00 PST
+|Blog post published on WordPress
+
+|Saturday
+|00:00 PST
+|Community member tweet
+
+|Saturday
+|05:00 PST
+|Features 1 tweet
+
+|Saturday
+|14:00 PST
+|Features 2 tweet
+
+|Saturday
+|21:00 PST
+|Features 3 tweet
+
+|Sunday
+|09:00 PST
+|Features 4 tweet
+
+|Sunday
+|16:00 PST
+|Features 5 tweet
+
+|Sunday
+|23:00 PST
+|Features 6 tweet
+
+|Monday
+|02:00 PST
+|Features 7  tweet (if there's a section 7)
+
+|Tuesday
+|12:00 PST
+|Summary of the entire issue tweet
+
+|====
 

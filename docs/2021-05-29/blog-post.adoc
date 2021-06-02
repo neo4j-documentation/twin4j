@@ -1,0 +1,171 @@
+= This Week in Neo4j - Twitchverse, Java drivers, Encryption, Power BI, Machine Learning, Metadata
+:slug: this-week-in-neo4j-twitchverse-java-drivers-encryption-power-bi-machine-learning-metadata
+:noheader:
+:linkattrs:
+:type: web
+:categories: graph-database
+// twin4j is added automatically
+:tags: neo4j, automation, firebase, twitch, data-science, community-detection, algorithm, java, quarkus, \
+helidon, micronaut, cluster, ssl, certificates, encryption, graphql, datafitter, machine-learning, metadata, kafka, spark, graphql,  \
+nodes-2021, training
+
+Hello, everyone!
+
+Don't miss our free hands-on training sessions the week before NODES 2021. All folks who register for NODES can attend these sessions (scroll down for details).
+
+In this week's episode, Tomaz Bratanic provides a comprehensive tutorial for setting up your environment so you can analyze Twitch data. One of our Neo4j engineers, Gerrit Meier has written a Developer Guide for configuring java drivers to use Quarkus, Helidon, or Micronaut. Charlotte Skardon shares some helpful tips for those of you who want to set up Encryption for your Causal Cluster deployments. Bryant Avey has posted a blog that steps you through how to use Neo4j as a source of data for Power BI. The folks at DataFitter have published an article about  how they used Neo4j, Machine Learning, and GraphQL to help with their analysis of carbohydrate genomes.
+
+In addition, we have included a link to the recorded presentation that Vladimir Bacvanski and Deepak Chandramoul  from PayPal did at NODES 2020 entitled _Mastering Enterprise Metadata with Neo4j_.
+
+Cheers,
+https://twitter.com/elaine_neo4j[Elaine^] and the Developer Relations team
+
+
+[[featured-community-member]]
+== Featured Community Member: Frederik Byl
+
+This week's featured community member is Frederik Byl.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210527142408/this-week-in-neo4j-29-may-2021.jpg[name="Frederik Byl"]
+
+Frederik has worked on many projects to help automate the testing process for Web applications.
+
+Frederik will be presenting this year at NODES 2021 with a session in the Apps and APIs track entitled _Our Journey from Test Automation to a Data Marketplace_. From Frederik:
+
+"I am a developer who is always searching for simple solutions to difficult problems and who likes to connect dots. :-) I am a Neo4j lover, a Solid web believer and a science enthusiast! I am not a specialist, but a generalist."
+
+Frederik is a *Certified Neo4j Professional* and has contributed to our Community to help others with their Neo4j questions. We thank him for his contributions to Neo4j!
+
+https://www.linkedin.com/in/frederik-byl-0481489/[Connect with Frederik on LinkedIn, role="medium button"]
+
+// tags: #automation  #firebase  #Neo4j
+
+
+[[features-1]]
+== Twitchverse: A network analysis of Twitch universe using Neo4j Graph Data Science
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527142509/Twitchverse_Bratanic.png" width=150px"  />
+</div>
+++++
+
+https://twitter.com/tb_tomaz[Tomaz Bratanic^]  has just published a comprehensive tutorial on how to set up your Neo4j Desktop environment so that you can analyze Twitch data. He explains the Twitch network model and how to start exploring real data with Cypher. Then he delves into some of the Neo4j Graph Data Science Library algorithms and uses Community Detection to understand the connections in the data.
+
+https://towardsdatascience.com/twitchverse-a-network-analysis-of-twitch-universe-using-neo4j-graph-data-science-d7218b4453ff/[Read the Blog, role="medium button"]
+
+// tags: #neo4j #twitch #datascience #communitydetection #algorithm
+
+[[features-2]]
+== Using Quarkus, Helidon, Micronaut with Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527142557/Quarkus_DeveloperGuide.png" width=150px"  />
+</div>
+++++
+
+Our colleague, https://twitter.com/meistermeier[Gerrit Meier^] has written a new Developer Guide that explains how to use pre-configured java driver instances so you can easily integrate with Quarkus, Helidon, or Micronaut. These driver instances can be configured as one does with springboot.
+
+https://neo4j.com/developer/java-frameworks/[Read the Developer Guide, role="medium button"]
+
+// tags:  #java  #neo4j #quarkus #helidon #micronaut
+
+[[features-3]]
+== Neo4j Intra-cluster Encryption
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527142957/IntraClusterSSL_Skardon.png" width=150px"  />
+</div>
+++++
+
+https://twitter.com/CSkardon[Charlotte Skardon^] has gone through the arduous process of getting SSL to work with Neo4j Causal Clusters. In this blog, she steps you through what you can do to use both self-signed and proper Certificates.  Her focus in these steps is setting up for secure intra-cluster communication.
+
+https://xclave.co.uk/2021/05/21/neo4j-intra-cluster-encryption/[Read the Blog, role="medium button"]
+
+// tags:  #neo4j #cluster #ssl #certificates #encryption
+
+[[features-4]]
+== Importing Neo4j Graph Data with Power BI
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143043/neo4j_powerbi.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/BryantAvey[Bryant Avey^], posted a tutorial that steps you through importing data from a graph to Power BI. It covers how to use the default version of the Neo4j HTTP API with Power BI. Utilizing the Web API method allows all queries written for the REST API to be utilized in Power BI’s online service.
+
+https://medium.com/@bryantavey/importing-neo4j-graph-data-with-power-bi-d2686e9255bc/[Read the Blog, role="medium button"]
+
+// tags:  #neo4j #powerbi #import
+
+[[features-5]]
+== Graph Database, GraphQL and Machine Learning for Carbohydrate-Active Enzymes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143128/Genome_datafitter.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/datafitter[datafitter^], from https://datafitter.com/[Data Fitter^] posted an article that describes how they used Neo4j, Machine Learning, and GraphQL to help with their analysis of carbohydrate genomes. Even if you know nothing about carbohydrate genomes, you can learn how these technologies can help you to make conclusions about complex data.
+
+https://towardsdatascience.com/graph-database-graphql-and-machine-learning-for-carbohydrate-active-enzymes-dba8500b45cf/[Read the Blog, role="medium button"]
+
+// tags:  #neo4j #graphql #datafitter #machinelearning
+
+[[features-6]]
+== NODES 2020 Video of the Week (recording): Mastering Enterprise Metadata with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143210/Metadata_NODES2020.png" width="200px"  />
+</div>
+++++
+
+Last year, at NODES, https://twitter.com/OnSoftware[Vladimir Bacvanski^] and https://www.linkedin.com/in/deepakmc[Deepak Chandramoul], from PayPal presented this session where introduced us to how they build their application to combine data from many sources and used Gimel, Spark, and Kafka to stream data into Neo4j for analysis. They shared how they architected their application, as well as the GitHub repo that contains their work. Graph Algorithms and GraphQL also played an important role in their application.
+
+https://youtu.be/8flUr0J9rkU[Watch the Presentation, role="medium button"]
+
+// tags:  #metadata #kafka #spark #graphql #algorithms
+
+[[features-7]]
+== Nodes 2021: Pre-NODES Hands-on Training Sessions
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143455/Hands-on-training_Nodes.jpg" width="200px"  />
+</div>
+++++
+
+We hope that you will or have registered for NODES 2021. The week before our online conference, we will host 2-hour, hands-on training sessions led by our Developer Relations team members. You do not have to register for the training sessions as your registration for NODES 2021 will allow you to attend these sessions.
+
+The sessions will take place every day at 9:00AM EST | 1:00PM UTC | 6:30PM IST.
+
+Here are the sessions you can attend:
+
+* Mon., June 7: _Hands-on Introduction to Neo4j_ with Ljubica Lazarevic
+* Tue.,  June 8: _Hands-on with Neo4j Aura Free Tier_ with Jennifer Reif
+* Wed., June 9: _Getting started with Neo4j Bloom_ with Ljubica Lazarevic
+* Thu., June 10: _Building GraphQL APIs With The Neo4j GraphQL Library_ with William Lyon
+* Fri., June 11: _Creating a Knowledge Graph with Neo4j: A Simple Machine Learning Approach_ with Clair Sullivan
+
+We will be posting instructions to prepare your environment for each session. You will need a laptop/PC for the sessions. An iPad/Chromebook will not work.
+
+You can https://neo4j.brand.live/c/2021nodes-homepage/[register here^] for NODES 2021.
+
+https://youtu.be/l9H3LCuDHqM[Watch the Promo Video, role="medium button"]
+
+// tags:  #neo4j #nodes2021 #training
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/reshamas[Reshama Shaikh^]:
+
+tweet::1397346137925898246[type={type}]
+
+Don't forget to RT if you liked it too!
+
+

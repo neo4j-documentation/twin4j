@@ -1,0 +1,5 @@
+In this week's #twin4j, we point you to a blog by @pparkinson from Oracle. He describes how to use Neo4j as a datasource for  an Oracle Helidon Microservice.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-4
+
+#neo4j #oracle #microservices #helidon #datasource #nosql #java

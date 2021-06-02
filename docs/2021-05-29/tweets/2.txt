@@ -1,0 +1,5 @@
+In this week's #twin4j, we highlight the tutorial written by @tb_tomaz that teaches you how to visualize graph embedding algorithm results in NEuler.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-1
+
+#graph  #embedding #algorithm #Neo4j

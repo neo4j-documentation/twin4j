@@ -1,0 +1,5 @@
+In this week's #twin4j, the folks at Graphable, @Graphable1 model Corporate data in a graph.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-5
+
+#neo4j #corporate #graph #model

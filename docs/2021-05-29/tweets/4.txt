@@ -1,0 +1,5 @@
+In this week's #twin4j, @dirkmahler and a group of fellow developers have been working on an open-source project called JQAssistant  that can help you improve your software quality.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-3
+
+#neo4j #applicationarchitecture #qa #stream #build #jqassistant

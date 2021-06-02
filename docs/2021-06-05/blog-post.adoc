@@ -1,0 +1,179 @@
+= This Week in Neo4j - TBD
+:slug: this-week-in-neo4j-TBD
+:noheader:
+:linkattrs:
+:type: web
+:categories: graph-database
+// twin4j is added automatically
+:tags: neo4j, \
+nodes-2021, training
+
+Hello, everyone!
+
+Don't miss our free hands-on training sessions June 7-11. All folks who register for NODES can attend these sessions (scroll down for details).
+
+In this week's episode, TBD
+
+Cheers,
+https://twitter.com/elaine_neo4j[Elaine^] and the Developer Relations team
+
+
+[[featured-community-member]]
+== Featured Community Member: Alberto De Lazzari
+
+This week's featured community member is Alberto De Lazzari.
+
+featured::this-week-in-neo4j-05-June-2021.jpeg[name="Alberto De Lazzari"]
+
+Alberto is a Certified Neo4j Developer and has helped other users in our Community by answering their posted questions.
+Frederik will be presenting this year at NODES 2021 with a session in the Best Practice track entitled _Graph AI to Combat Fraud in Fintech and Insurtech_.
+
+Alberto is a passionate technologist who always keeps up with the latest patterns, methodologies, and frameworks. In the past 10 years, he has worked in very different industries, from automotive and fleet management to insurance and banking.
+Since 2007, Alberto he has been working on legacy and cutting-edge systems as well as a wide range of internalization and integration IT projects.
+Graphs have been Alberto's passion since the university, where he wrote a thesis on clustering algorithms and neural networks.
+He is a contributor to official Neo4j projects, including https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC^] and https://github.com/neo4j-contrib/neo4j-etl-components[ETL^].
+
+We thank Alberto for his contributions to our Neo4j Community!
+
+https://www.linkedin.com/in/albertodelazzari/[Connect with Alberto on LinkedIn, role="medium button"]
+
+// tags: #etl  #apoc  #larus
+
+
+[[features-1]]
+== Tutorial: Getting Started with Graph Embeddings in Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="GraphEmbeddings-Clair.png" width=150px"  />
+</div>
+++++
+
+https://twitter.com/cjlovesdata1[Clair Sullivan^] has just published a tutorial to get you started with graph embeddings with the Neo4j Graph Data Science Library.
+The starting point for all machine learning is to turn your data into vectors/embeddings.
+Clair shows you how to use graph embeddings to turn your graph data into vectors that can be tuned for your machine learning process.
+You can do all of this with a Neo4j Sandbox so that you need not install anything on your system.
+In the tutorial, she goes into the algorithms used for the different types of embeddings you can create.
+
+https://towardsdatascience.com/getting-started-with-graph-embeddings-2f06030e97ae/[Follow the Tutorial, role="medium button"]
+
+// tags: #neo4j #datascience #machinelearning #embedding
+
+[[features-2]]
+== Confluent Cloud, meet Neo4j Aura
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="ConfluentAura-wollford.png" width=150px"  />
+</div>
+++++
+
+Our colleague, https://twitter.com/biggus_data[Alex Woolford^] has published an article that explains how data that passes through Confluent Cloud can also be passed into a Neo4j Cloud instance, Aura.
+More and more enterprises are choosing to use managed services such as Confluent Cloud and Neo4j Aura which unburden them from needing to manage and maintain the hosting servides.
+He shows a simple example of how to stream Confluent events into Neo4j where he uses a set of technologies which include Kafka, Python, Docker, REST API, and of course Cypher.
+
+https://woolford.io/2021-05-17-confluent-cloud-to-neo4j-aura/[Read the Blog, role="medium button"]
+
+// tags:   #Neo4j #Aura #Confluent #Cloud #Kafka #docker #cypher
+
+[[features-3]]
+== Code. Simply. Calmly. Clearly.
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="calmly-introduction.png" width=150px"  />
+</div>
+++++
+
+https://twitter.com/fishnets88[Vincent D. Warmerdam^] has an impressive Web site for learning called https://calmcode.io/index.html/[Code. Simply. Calmly. Clearly.]
+This site is a collection of 74 video courses on a variety of technical topics.
+One of the courses teaches you how to get started with Neo4j Desktop and import CSV data into Neo4j.
+It is a great course to go through if you want a simple introduction to Cypher.
+
+https://calmcode.io/neo4j/introduction.html/[View the course, role="medium button"]
+
+// tags:  #neo4j #cypher #import #neo4j-desktop #CSV
+
+[[features-4]]
+== Importing Neo4j Graph Data with Power BI
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143043/neo4j_powerbi.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/BryantAvey[Bryant Avey^], posted a tutorial that steps you through importing data from a graph to Power BI. It covers how to use the default version of the Neo4j HTTP API with Power BI. Utilizing the Web API method allows all queries written for the REST API to be utilized in Power BI’s online service.
+
+https://medium.com/@bryantavey/importing-neo4j-graph-data-with-power-bi-d2686e9255bc/[Read the Blog, role="medium button"]
+
+// tags:  #neo4j #powerbi #import
+
+[[features-5]]
+== Graph Database, GraphQL and Machine Learning for Carbohydrate-Active Enzymes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143128/Genome_datafitter.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/datafitter[datafitter^], from https://datafitter.com/[Data Fitter^] posted an article that describes how they used Neo4j, Machine Learning, and GraphQL to help with their analysis of carbohydrate genomes. Even if you know nothing about carbohydrate genomes, you can learn how these technologies can help you to make conclusions about complex data.
+
+https://towardsdatascience.com/graph-database-graphql-and-machine-learning-for-carbohydrate-active-enzymes-dba8500b45cf/[Read the Blog, role="medium button"]
+
+// tags:  #neo4j #graphql #datafitter #machinelearning
+
+[[features-6]]
+== NODES 2020 Video of the Week (recording): Mastering Enterprise Metadata with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143210/Metadata_NODES2020.png" width="200px"  />
+</div>
+++++
+
+Last year, at NODES, https://twitter.com/OnSoftware[Vladimir Bacvanski^] and https://www.linkedin.com/in/deepakmc[Deepak Chandramoul], from PayPal presented this session where introduced us to how they build their application to combine data from many sources and used Gimel, Spark, and Kafka to stream data into Neo4j for analysis. They shared how they architected their application, as well as the GitHub repo that contains their work. Graph Algorithms and GraphQL also played an important role in their application.
+
+https://youtu.be/8flUr0J9rkU[Watch the Presentation, role="medium button"]
+
+// tags:  #metadata #kafka #spark #graphql #algorithms
+
+[[features-7]]
+== Nodes 2021: Pre-NODES Hands-on Training Sessions
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210527143455/Hands-on-training_Nodes.jpg" width="200px"  />
+</div>
+++++
+
+We hope that you will or have registered for NODES 2021. The week before our online conference, we will host 2-hour, hands-on training sessions led by our Developer Relations team members. You do not have to register for the training sessions as your registration for NODES 2021 will allow you to attend these sessions.
+
+The sessions will take place every day at 9:00AM EST | 1:00PM UTC | 6:30PM IST.
+
+Here are the sessions you can attend:
+
+* Mon., June 7: _Hands-on Introduction to Neo4j_ with Ljubica Lazarevic
+* Tue.,  June 8: _Hands-on with Neo4j Aura Free Tier_ with Jennifer Reif
+* Wed., June 9: _Getting started with Neo4j Bloom_ with Ljubica Lazarevic
+* Thu., June 10: _Building GraphQL APIs With The Neo4j GraphQL Library_ with William Lyon
+* Fri., June 11: _Creating a Knowledge Graph with Neo4j: A Simple Machine Learning Approach_ with Clair Sullivan
+
+We will be posting instructions to prepare your environment for each session. You will need a laptop/PC for the sessions. An iPad/Chromebook will not work.
+
+You can https://neo4j.brand.live/c/2021nodes-homepage/[register here^] for NODES 2021.
+
+https://youtu.be/l9H3LCuDHqM[Watch the Promo Video, role="medium button"]
+
+// tags:  #neo4j #nodes2021 #training
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/reshamas[Reshama Shaikh^]:
+
+tweet::1397346137925898246[type={type}]
+
+Don't forget to RT if you liked it too!
+
+

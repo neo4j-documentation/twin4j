@@ -1,0 +1,6 @@
+In this week's #twin4j, we feature tutorials and training videos. We point you to Neo4j applications for analyzing Reddit and ensuring software quality.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/
+
+#graph #Docker  #Neo4j #algorithm #reddit #qa #jqassistant #oracle #helidon #java #cypher
+

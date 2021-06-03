@@ -99,7 +99,7 @@ Therefore, you should not update slugs once the content has been published.
 .Publish blog post to WordPress
  $ npm run publish-blog-post <issue-date>
 
-NOTE: Please note that the blog post will be scheduled (using the status `future`) and will be automatically published by WordPress at 00:00 PST (i.e., 08:00 UTC) on Saturday (i.e., the issue date)
+NOTE: Please note that the blog post will be scheduled (using the status `future`) and will be automatically published by WordPress at 00:01 PST (i.e., 08:00 UTC) on Saturday (i.e., the issue date)
 
 === Debug
 

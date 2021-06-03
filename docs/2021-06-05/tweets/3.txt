@@ -1,5 +1,5 @@
-In this week's #twin4j, @lucmichalski has developed a Reddit Detective Python application that can be used to discover potentially problematic data in Reddit.
+In this week's #twin4j, @biggus_data posted a blog about using Confluent Cloud and Neo4j Aura. He shows an example of how the data can be streamed between the two.
 
-https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-2
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/#features-2
 
-#api #social #data #socialMedia #database #reddit #politics #etl #analytics #neo4j
+#Neo4j #Aura #Confluent #Cloud #Kafka #docker #cypher

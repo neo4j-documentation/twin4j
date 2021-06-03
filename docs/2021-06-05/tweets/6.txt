@@ -1,5 +1,5 @@
-In this week's #twin4j, the folks at Graphable, @Graphable1 model Corporate data in a graph.
+In this week's #twin4j,  @mdavidallen is interviewed by the folks at the Data Stack Show where he educates us about why one would use Neo4j and how best to architect it for scalability.
 
-https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-5
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/#features-5
 
-#neo4j #corporate #graph #model
+#neo4j #graph #scalability #event #stream

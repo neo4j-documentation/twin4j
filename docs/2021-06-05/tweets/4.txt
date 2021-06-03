@@ -1,5 +1,5 @@
-In this week's #twin4j, @dirkmahler and a group of fellow developers have been working on an open-source project called JQAssistant  that can help you improve your software quality.
+In this week's #twin4j, we highlight a really cool learning platform with video courses named Code. Simply. Calmly. Clearly. They have an introduction to Neo4j course that covers getting started with Neo4j Desktop through importing CSV data.
 
-https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-3
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/#features-3
 
-#neo4j #applicationarchitecture #qa #stream #build #jqassistant
+#neo4j #cypher #import #neo4jdesktop #CSV

@@ -1,18 +1,28 @@
-= This Week in Neo4j - TBD
-:slug: this-week-in-neo4j-TBD
+= This Week in Neo4j - Graph Embeddings, Confluent with Aura, Intro video, Liquibase, Data Stack Show
+:slug: this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show
 :noheader:
 :linkattrs:
 :type: web
 :categories: graph-database
+:author: Elaine Rosenberg
 // twin4j is added automatically
-:tags: neo4j, \
-nodes-2021, training
+:tags: neo4j, etl,  apoc,  larus, datas cience, machine learning, embedded,\
+aura , confluent, cloud ,kafka , docker, cypher,\
+import, neo4j desktop, CSV, liquibase, devops, scalability, event, stream,\
+automotive, knowledge graph, process, workflow, nodes-2021, training
 
 Hello, everyone!
 
-Don't miss our free hands-on training sessions June 7-11. All folks who register for NODES can attend these sessions (scroll down for details).
+Don't miss our free hands-on training sessions (~2 hours each day) June 7-11.
+All folks who register for NODES can attend these sessions (scroll down for details).
 
-In this week's episode, TBD
+In this week's episode, we thank Alberto De Lazzari for his contributions to Neo4j.
+One of our Data Scientist colleagues, Clair Sullivan has posted an easy-to-follow tutorial about getting started with Graph Embeddings.
+A Neo4j field engineer, Alex Wolford posted an article about using Confluent with Neo4j Aura.
+We have discovered a Web site, _Code. Simply. Calmly. Clearly._ that features video courses, one of which introduces you to Neo4j, Cypher, and importing data.
+The folks at Liquibase have just enhanced their products to work with Neo4j to help you with managing a Neo4j database from development to production.
+Our Cloud Architect, David Allen was interviewed by the folks at the Data Stack Show where he describes everything you would want to know about making the decision to use Neo4j for your application.
+And finally, we pull from our library of NODES 2020 videos of a presentation about modeling processes in the automotive industry.
 
 Cheers,
 https://twitter.com/elaine_neo4j[Elaine^] and the Developer Relations team
@@ -23,10 +33,10 @@ https://twitter.com/elaine_neo4j[Elaine^] and the Developer Relations team
 
 This week's featured community member is Alberto De Lazzari.
 
-featured::this-week-in-neo4j-05-June-2021.jpeg[name="Alberto De Lazzari"]
+featured::https://dist.neo4j.com/wp-content/uploads/20210603070434/this-week-in-neo4j-05-June-2021.jpeg[name="Alberto De Lazzari"]
 
-Alberto is a Certified Neo4j Developer and has helped other users in our Community by answering their posted questions.
-Frederik will be presenting this year at NODES 2021 with a session in the Best Practice track entitled _Graph AI to Combat Fraud in Fintech and Insurtech_.
+Alberto is a Certified Neo4j Developer and has helped many users in our Community by answering their posted questions.
+Alberto will be presenting this year at NODES 2021 with a session in the Best Practice track entitled _Graph AI to Combat Fraud in Fintech and Insurtech_.
 
 Alberto is a passionate technologist who always keeps up with the latest patterns, methodologies, and frameworks. In the past 10 years, he has worked in very different industries, from automotive and fleet management to insurance and banking.
 Since 2007, Alberto he has been working on legacy and cutting-edge systems as well as a wide range of internalization and integration IT projects.
@@ -37,7 +47,7 @@ We thank Alberto for his contributions to our Neo4j Community!
 
 https://www.linkedin.com/in/albertodelazzari/[Connect with Alberto on LinkedIn, role="medium button"]
 
-// tags: #etl  #apoc  #larus
+// hashtags: #etl  #apoc  #larus #neo4j
 
 
 [[features-1]]
@@ -45,7 +55,7 @@ https://www.linkedin.com/in/albertodelazzari/[Connect with Alberto on LinkedIn, 
 
 ++++
 <div style="float:right; padding: 2px; padding-left: 4px;">
-<img src="GraphEmbeddings-Clair.png" width=150px"  />
+<img src="https://dist.neo4j.com/wp-content/uploads/20210603070424/GraphEmbeddings-Clair.jpeg" width=150px"  />
 </div>
 ++++
 
@@ -57,31 +67,31 @@ In the tutorial, she goes into the algorithms used for the different types of em
 
 https://towardsdatascience.com/getting-started-with-graph-embeddings-2f06030e97ae/[Follow the Tutorial, role="medium button"]
 
-// tags: #neo4j #datascience #machinelearning #embedding
+// hashtags: #neo4j #datascience #machinelearning #embedded
 
 [[features-2]]
 == Confluent Cloud, meet Neo4j Aura
 
 ++++
 <div style="float:right; padding: 2px; padding-left: 4px;">
-<img src="ConfluentAura-wollford.png" width=150px"  />
+<img src="https://dist.neo4j.com/wp-content/uploads/20210603070419/ConfluentAura-wollford.jpeg" width=150px"  />
 </div>
 ++++
 
 Our colleague, https://twitter.com/biggus_data[Alex Woolford^] has published an article that explains how data that passes through Confluent Cloud can also be passed into a Neo4j Cloud instance, Aura.
-More and more enterprises are choosing to use managed services such as Confluent Cloud and Neo4j Aura which unburden them from needing to manage and maintain the hosting servides.
-He shows a simple example of how to stream Confluent events into Neo4j where he uses a set of technologies which include Kafka, Python, Docker, REST API, and of course Cypher.
+More and more enterprises are choosing to use managed services such as Confluent Cloud and Neo4j Aura which unburden them from needing to manage and maintain the hosting services.
+He shows a simple example of how to stream Confluent events into Neo4j where he uses a set of technologies which include Kafka, Python, Docker, REST API, and, of course, Cypher.
 
 https://woolford.io/2021-05-17-confluent-cloud-to-neo4j-aura/[Read the Blog, role="medium button"]
 
-// tags:   #Neo4j #Aura #Confluent #Cloud #Kafka #docker #cypher
+// hashtags:   #Neo4j #Aura #Confluent #Cloud #Kafka #docker #cypher
 
 [[features-3]]
 == Code. Simply. Calmly. Clearly.
 
 ++++
 <div style="float:right; padding: 2px; padding-left: 4px;">
-<img src="calmly-introduction.png" width=150px"  />
+<img src=" https://dist.neo4j.com/wp-content/uploads/20210603070428/calmy-introduction.jpeg" width=150px"  />
 </div>
 ++++
 
@@ -92,55 +102,60 @@ It is a great course to go through if you want a simple introduction to Cypher.
 
 https://calmcode.io/neo4j/introduction.html/[View the course, role="medium button"]
 
-// tags:  #neo4j #cypher #import #neo4j-desktop #CSV
+// hashtags:  #neo4j #cypher #import #neo4j-desktop #CSV
 
 [[features-4]]
-== Importing Neo4j Graph Data with Power BI
+== Liquibase now supports Neo4j for database DevOps
 
 ++++
 <div style="float:right; padding: 2px	">
-<img src="https://dist.neo4j.com/wp-content/uploads/20210527143043/neo4j_powerbi.png" width="200px"  />
+<img src="https://dist.neo4j.com/wp-content/uploads/20210603070432/liquibase.jpeg" width="200px"  />
 </div>
 ++++
 
-https://twitter.com/BryantAvey[Bryant Avey^], posted a tutorial that steps you through importing data from a graph to Power BI. It covers how to use the default version of the Neo4j HTTP API with Power BI. Utilizing the Web API method allows all queries written for the REST API to be utilized in Power BI’s online service.
+https://www.liquibase.com/[Liquibase^] has expanded support for DevOps to include integration with Neo4j databases.
+Their product enables engineers to accelerate their development workflow and streamline deployment of database applications.
+Liquibase is used to implement test automation for a variety of application databases.
 
-https://medium.com/@bryantavey/importing-neo4j-graph-data-with-power-bi-d2686e9255bc/[Read the Blog, role="medium button"]
+https://www.liquibase.com/blog/expanding-database-devops-pr/[Read the Blog, role="medium button"]
 
-// tags:  #neo4j #powerbi #import
+// hashtags:  #neo4j #liquibase #devops
 
 [[features-5]]
-== Graph Database, GraphQL and Machine Learning for Carbohydrate-Active Enzymes
+== The Data Stack Show Podcast: Graph Databases & Data Governance
 
 ++++
 <div style="float:right; padding: 2px	">
-<img src="https://dist.neo4j.com/wp-content/uploads/20210527143128/Genome_datafitter.png" width="150px"  />
+<img src="https://dist.neo4j.com/wp-content/uploads/20210603070421/DataStackShow.jpeg" width="150px"  />
 </div>
 ++++
 
-https://twitter.com/datafitter[datafitter^], from https://datafitter.com/[Data Fitter^] posted an article that describes how they used Neo4j, Machine Learning, and GraphQL to help with their analysis of carbohydrate genomes. Even if you know nothing about carbohydrate genomes, you can learn how these technologies can help you to make conclusions about complex data.
+https://twitter.com/mdavidallen[David Allen^], along with Kostas Pardalis and Eric Dodds, hosts of the https://datastackshow.com/[Data Stack Show^] had an hour-long discussion about Neo4j.
+In this podcast, David educates us about what Neo4j is, why a graph database is important, some tidbits about how Neo4j works under the covers, how Neo4j can scale, and how Neo4j can be used to work with event streams.
 
-https://towardsdatascience.com/graph-database-graphql-and-machine-learning-for-carbohydrate-active-enzymes-dba8500b45cf/[Read the Blog, role="medium button"]
 
-// tags:  #neo4j #graphql #datafitter #machinelearning
+https://datastackshow.com/podcast/38-graph-databases-data-governance-with-david-allen-of-neo4j/[Listen to the Podcast, role="medium button"]
+
+// hashtags:  #neo4j #graph #scalability #event #stream
 
 [[features-6]]
-== NODES 2020 Video of the Week (recording): Mastering Enterprise Metadata with Neo4j
+== NODES 2020 Video of the Week (recording): Scalable, reactive product development framework for the automotive industry
 
 ++++
 <div style="float:right; padding: 2px	">
-<img src="https://dist.neo4j.com/wp-content/uploads/20210527143210/Metadata_NODES2020.png" width="200px"  />
+<img src=" https://dist.neo4j.com/wp-content/uploads/20210603100226/Reactive-Scalable-Automative-NODES2020.jpeg" width="200px"  />
 </div>
 ++++
 
-Last year, at NODES, https://twitter.com/OnSoftware[Vladimir Bacvanski^] and https://www.linkedin.com/in/deepakmc[Deepak Chandramoul], from PayPal presented this session where introduced us to how they build their application to combine data from many sources and used Gimel, Spark, and Kafka to stream data into Neo4j for analysis. They shared how they architected their application, as well as the GitHub repo that contains their work. Graph Algorithms and GraphQL also played an important role in their application.
+Last year, at NODES, https://www.linkedin.com/in/elena-kohlwey-00924a14b/[Elena Kohlwey^] and https://www.linkedin.com/in/uwe-kloss-591685165/[Uwe Kloss^], from RLE International Group presented an overview of how they analyzed the needs of the automotive industry.
+They describe how they used a combination of process graph and knowledge graph to develop the data model for the application.
 
-https://youtu.be/8flUr0J9rkU[Watch the Presentation, role="medium button"]
+https://youtu.be/zp0GeiP3z88[Watch the Presentation, role="medium button"]
 
-// tags:  #metadata #kafka #spark #graphql #algorithms
+// hashtags:  #automotive #knowledgegraph #process #workflow  #neo4j
 
 [[features-7]]
-== Nodes 2021: Pre-NODES Hands-on Training Sessions
+== Final Reminder: Pre-NODES 2021 Hands-on Training Sessions
 
 ++++
 <div style="float:right; padding: 2px	">
@@ -160,19 +175,20 @@ Here are the sessions you can attend:
 * Thu., June 10: _Building GraphQL APIs With The Neo4j GraphQL Library_ with William Lyon
 * Fri., June 11: _Creating a Knowledge Graph with Neo4j: A Simple Machine Learning Approach_ with Clair Sullivan
 
-We will be posting instructions to prepare your environment for each session. You will need a laptop/PC for the sessions. An iPad/Chromebook will not work.
+The instructions to prepare your environment for each session are posted https://neo4j.brand.live/c/2021nodes-homepage[here^].
+Registrants will receive an email with links for attending these sessions.
 
 You can https://neo4j.brand.live/c/2021nodes-homepage/[register here^] for NODES 2021.
 
-https://youtu.be/l9H3LCuDHqM[Watch the Promo Video, role="medium button"]
+https://youtu.be/l9H3LCuDHqM[Watch NODES 2021 Trailer, role="medium button"]
 
-// tags:  #neo4j #nodes2021 #training
+// hashtags:  #neo4j #nodes2021 #training
 
 == Tweet of the Week
 
-My favorite tweet this week was by https://twitter.com/reshamas[Reshama Shaikh^]:
+My favorite tweet this week was by https://twitter.com/py2neo[py2neo.org^]:
 
-tweet::1397346137925898246[type={type}]
+tweet::1399672630878388224[type={type}]
 
 Don't forget to RT if you liked it too!
 

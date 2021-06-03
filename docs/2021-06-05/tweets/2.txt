@@ -1,5 +1,7 @@
-In this week's #twin4j, we highlight the tutorial written by @tb_tomaz that teaches you how to visualize graph embedding algorithm results in NEuler.
 
-https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/#features-1
 
-#graph  #embedding #algorithm #Neo4j
+In this week's #twin4j, @cjlovesdata1 has created an easy-to-follow tutorial on using graph embeddings using the Neo4j Graph Data Science Library.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/#features-1
+
+#neo4j #datascience #machinelearning #embedded

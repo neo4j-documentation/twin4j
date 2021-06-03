@@ -1,6 +1,8 @@
-In this week's #twin4j, we feature tutorials and training videos. We point you to Neo4j applications for analyzing Reddit and ensuring software quality.
+In this week's #twin4j, we feature a  tutoria about graph embedding, a video course, a Confluent to Aura example, and a podcast about Neo4j it can scale.
 
-https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-reddit-jqassistant-helidon-corporate-data-query-tuning/
+https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/
 
-#graph #Docker  #Neo4j #algorithm #reddit #qa #jqassistant #oracle #helidon #java #cypher
+#neo4j  #datascience #machinelearning #embedded #Aura #Confluent #Cloud #Kafka #docker #cypher #import #csv #devops #liquibase #neo4j #graph #scalability #event #stream
+ #knowledgegraph #process #workflow  #neo4j
+
 

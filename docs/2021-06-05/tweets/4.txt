@@ -1,5 +1,5 @@
-In this week's #twin4j, we highlight a really cool learning platform with video courses named Code. Simply. Calmly. Clearly. They have an introduction to Neo4j course that covers getting started with Neo4j Desktop through importing CSV data.
+In this week's #twin4j, we highlight a really cool learning platform named Code.Simply.Calmly.Clearly. They have an Intro to Neo4j video course that covers getting started with Neo4j Desktop through importing CSV data.
 
-https://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/#features-3
+://neo4j.com/blog/this-week-in-neo4j-graph-embeddings-confluent-with-aura-intro-video-liquibase-data-stack-show/#features-3
 
-#neo4j #cypher #import #neo4jdesktop #CSV
+#neo4j #cypher #import  #CSV

@@ -4,14 +4,20 @@ const debug = require('debug')('images')
 const ospath = require('path')
 const fs = require('fs').promises
 
-const { getBuildImagesDirectory } = require('./lib/data.js')
+const { getBuildImagesDirectory, isValidImageFile } = require('./lib/data.js')
 const { getMedia, createMedia, updateMedia } = require('./lib/wp.js')
 
 async function publish(issueDate) {
   const buildImagesDirectory = await getBuildImagesDirectory(issueDate)
   const images = await fs.readdir(buildImagesDirectory)
   for (const image of images) {
-    const slug = ospath.basename(image, ospath.parse(image).ext)
+    const isValidImage = isValidImageFile(image)
+    if (!isValidImage.result) {
+      debug(isValidImage.message)
+      continue
+    }
+    const imageExt = ospath.parse(image).ext
+    const slug = ospath.basename(image, imageExt)
     let mediaData
     if (slug.startsWith('this-week-in-neo4j-')) {
       mediaData = {

@@ -2,6 +2,7 @@
 
 const ospath = require('path')
 const fs = require('fs').promises
+const debugImages = require('debug')('images')
 
 const monthNames = [
   'January',
@@ -147,6 +148,34 @@ function getCommunityMemberImageSlug(issueDate) {
   return `this-week-in-neo4j-${dd}-${month}-${yyyy}`
 }
 
+const validImageExtensions = ['.jpeg', '.jpg', '.png', '.svg']
+
+function isValidImageFile(image) {
+  if (image.startsWith('.')) {
+    return {
+      result: false,
+      message: `Ignoring hidden file ${image}`
+    }
+  }
+  const imageExt = ospath.parse(image).ext
+  if (!imageExt) {
+    return {
+      result: false,
+      message: `Ignoring file ${image} without extension`
+    }
+  }
+  if (!validImageExtensions.includes(imageExt.toLowerCase())) {
+    return {
+      result: false,
+      message: `Ignoring file ${image}, invalid image file extension, must be one of: ${validImageExtensions.join(', ')}`
+    }
+  }
+  return {
+    result: true,
+    message: ''
+  }
+}
+
 module.exports = {
   directoryExists,
   fileExists,
@@ -159,5 +188,6 @@ module.exports = {
   getCommunityMemberImage,
   getBuildDirectory,
   getBuildImagesDirectory,
-  getBuildBlogPost
+  getBuildBlogPost,
+  isValidImageFile
 }

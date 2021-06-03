@@ -2,8 +2,9 @@
 
 const ospath = require('path')
 const fs = require('fs').promises
+const debug = require('debug')('copy-images')
 
-const { getCommunityMemberData, getImagesDirectory, getBuildImagesDirectory } = require('./lib/data.js')
+const { getCommunityMemberData, getImagesDirectory, getBuildImagesDirectory, isValidImageFile } = require('./lib/data.js')
 
 async function copyImages(issueDate) {
   const buildImagesDirectory = await getBuildImagesDirectory(issueDate)
@@ -11,6 +12,11 @@ async function copyImages(issueDate) {
   const communityMemberJson = await getCommunityMemberData(issueDate)
   const images = await fs.readdir(imagesDirectory)
   for (const image of images) {
+    const isValidImage = isValidImageFile(image)
+    if (!isValidImage.result) {
+      debug(isValidImage.message)
+      continue
+    }
     if (image === communityMemberJson.image) {
       continue // ignore!
     }

@@ -64,10 +64,18 @@ async function publish(issueDate) {
     // UTC-8 Pacific Standard Time (PST) from early November to mid-March
     publishDateUTCIncludingTimeZone = `${issueDate}T08:01:00`
   }
+  let status
+  const today = new Date()
+  if (today > new Date(publishDateUTCIncludingTimeZone)) {
+    // publication date has already passed!
+    status = 'publish'
+  } else {
+    status = 'future'
+  }
   const blogPostData = {
     title: documentTitle,
     content: content,
-    status: 'future',
+    status,
     date_gmt: publishDateUTCIncludingTimeZone,
     tags: Object.values(tagsPerSlug),
     categories: Object.values(categoriesPerSlug),

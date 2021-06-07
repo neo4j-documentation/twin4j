@@ -5,7 +5,7 @@ const ospath = require('path')
 const fs = require('fs').promises
 const asciidoctor = require('@asciidoctor/core')()
 
-const { getBuildDirectory, getBlogPost, getBuildBlogPost, getCommunityMemberImageSlug } = require('./lib/data.js')
+const { getBuildDirectory, getBlogPost, getBuildBlogPost, getCommunityMemberImageSlug, getIssueDate } = require('./lib/data.js')
 const { getPost, createPost, updatePost, getMedia, getTags, getCategories, findUser } = require('./lib/wp.js')
 
 async function publish(issueDate) {
@@ -50,16 +50,25 @@ async function publish(issueDate) {
   let author = {}
   if (wpAuthor && wpAuthor.length > 0) {
     author = wpAuthor[0]
+    debug('Found the corresponding author on WordPress: %o', { id: author.id, name: author.name })
   } else {
     console.warn(`Unable to find the author with name: ${authorName} in WordPress, using the default author.`)
   }
-  debug('Found the corresponding author on WordPress: %o', { id: author.id, name: author.name })
+
+  const publishDate = getIssueDate(issueDate)
+  let publishDateUTCIncludingTimeZone
+  if (publishDate.isDstObserved()) {
+    // UTC-7 Pacific Daylight Time (PDT)
+    publishDateUTCIncludingTimeZone = `${issueDate}T07:01:00`
+  } else {
+    // UTC-8 Pacific Standard Time (PST) from early November to mid-March
+    publishDateUTCIncludingTimeZone = `${issueDate}T08:01:00`
+  }
   const blogPostData = {
     title: documentTitle,
     content: content,
     status: 'future',
-    // PST is UTC−08:00
-    date_gmt: `${issueDate}T08:00:00`,
+    date_gmt: publishDateUTCIncludingTimeZone,
     tags: Object.values(tagsPerSlug),
     categories: Object.values(categoriesPerSlug),
     featured_media: featuredMediaId,

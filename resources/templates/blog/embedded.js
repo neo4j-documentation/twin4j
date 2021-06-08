@@ -1,6 +1,11 @@
 module.exports = ({ node, opts }) => `<div id="content">
 ${node.getContent()}
 <style type="text/css">
+  .imageblock.right {
+    float: right;
+    padding: 2px;
+    padding-left: 4px;
+  }
   .image-heading {
     text-align: center;
   }

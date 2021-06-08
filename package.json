@@ -9,7 +9,8 @@
     "generate": "node tasks/generate.js",
     "clean": "node tasks/clean.js",
     "publish-images": "node tasks/publish-images.js",
-    "publish-blog-post": "node tasks/publish-blog-post.js"
+    "publish-blog-post": "node tasks/publish-blog-post.js",
+    "init": "node tasks/init.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,10 @@
   "homepage": "https://github.com/Mogztter/twin4j#readme",
   "devDependencies": {
     "@asciidoctor/core": "^2.2.4",
+    "chalk": "^4.1.1",
     "debug": "^4.3.1",
+    "inquirer": "^8.1.0",
+    "inquirer-date-prompt": "^2.0.1",
     "nunjucks": "^3.2.3",
     "puppeteer": "^9.1.1",
     "unxhr": "^1.2.0",

@@ -65,6 +65,13 @@ async function getImagesDirectory(issueDate) {
   return imagesDirectoryPath
 }
 
+function getIssueDirectoryName(issueDate) {
+  const yyyy = issueDate.getUTCFullYear()
+  const mm = ('0' + (issueDate.getUTCMonth() + 1)).slice(-2)
+  const dd = ('0' + (issueDate.getUTCDate())).slice(-2)
+  return `${yyyy}-${mm}-${dd}`
+}
+
 async function getIssueDirectory(issueDate) {
   const issueDirectoryPath = ospath.join(docsDirectoryPath, issueDate)
   if (!await directoryExists(issueDirectoryPath)) {
@@ -192,6 +199,7 @@ module.exports = {
   getIssueDate,
   getCommunityMemberImageSlug,
   getIssueDirectory,
+  getIssueDirectoryName,
   getCommunityMemberData,
   getBlogPost,
   getImagesDirectory,

@@ -29,15 +29,14 @@ async function getBlogPostTitle() {
     name: 'blogPostTitle',
     message: 'What is the title of the blog post?',
     prefix: ' 📝 ',
-    validate: (input) => {
-      const result = input && input.trim().length > 1 && input.startsWith('This Week in Neo4j - ')
-      if (!result) {
-        console.error(chalk.redBright.bold('\n     !!! Must start with "This Week in Neo4j - "'))
+    transformer: (input) => {
+      if (!input.toLowerCase().startsWith('this week in neo4j')) {
+        return `This Week in Neo4j - ${input}`
       }
-      return result
+      return input
     }
   })
-  return blogPostTitle
+  return `This Week in Neo4j - ${blogPostTitle}`
 }
 
 async function getBlogPostAuthor(defaultAuthorName) {

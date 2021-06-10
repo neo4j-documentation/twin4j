@@ -1,5 +1,0 @@
-In this week's #twin4j, 
-
-https://neo4j.com/blog/this-week-in-neo4j-xxxxxthis-week-in-neo4j-xxxxx/
-
-#neo4j

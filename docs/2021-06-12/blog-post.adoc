@@ -1,12 +1,13 @@
-= This Week in Neo4j -
-// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
-:slug: this-week-in-neo4j-
+= This Week in Neo4j - deps.dev, neo-forgery, motherlode, tei2neo, RBAC with Azure AD, Prometheus, GraphStuff.FM Podcasts
+:slug: this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts
 :noheader:
 :linkattrs:
 :categories: graph-database
 :author: Elaine Rosenberg
 // twin4j is added automatically
-:tags:
+:tags: neo4j, dependencies, maven, cargo,  npm, neo4j-bloom, schema, api, npm, unit-test, neo-forgery, \
+motherlode, python, docker, docker-compose, pipeline, covidgraph, tei2neo, py2neo, parse, XML, TEI-XML, \
+azure, active-directory, RBAC, ldap, security, prometheus, grafana, monitor
 
 Hello, everyone!
 
@@ -17,75 +18,121 @@ Hello, everyone!
 
 This week's featured community member is Samuel Chalvet.
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Samuel Chalvet"]
+featured::https://dist.neo4j.com/wp-content/uploads/20210610130819/this-week-in-neo4j-12-June-2021.jpeg[name="Samuel Chalvet"]
 
-// featured community member presentation
+Samuel is a Certified Neo4j Professional and will be presenting at NODES 2021 this year.
+His presentation is entitled _Schema Design Demystified: Application-Driven Graph Architecture_.
+
+Samuel Chalvet is a Sr Consultant at Graphable.
+He has a BA in Computer Science and has experience in software and mobile app development.
+He delights in problem solving, gnarly logic issues and surmounting challenges.
+Sam is a native French and English speaker.
+When he is not slinging code or playing with Cypher, he enjoys reading, playing strategy games, cooking, and discovering other cultures.
 
 // linkedin link
-https://www.linkedin.com/in/name[Connect with Samuel on LinkedIn, role="medium button"]
+https://www.linkedin.com/in/samuel-chalvet-61a6895b/[Connect with Samuel on LinkedIn, role="medium button"]
+
+// #neo4j #schema #api
 
 [[features-1]]
-== Feature 1
+== Viewing Google deps.dev data
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130805/deps.dev_MichaelHunger.jpg[width=150,float="right"]
 
-// 3-4 paragraphs
+Our own https://twitter.com/mesirii/[Michael Hunger^] shows us how easy it is to take advantage of the new Google tool, https://deps.dev/[deps.dev^],
+that provides dependencies for maven, npm, cargo and pypi. He used the this tool to load the dependencies of https://deps.dev/maven/org.neo4j:neo4j-kernel[neo4j-kernel^]
+and then was able to visualize it in Neo4j Bloom. The helper files can be found in this https://gist.github.com/jexp/9541bbfc17e0383d1e55388a7d7e3162/[gist^] Really cool!
 
-https://call-to-action-url/[Action, role="medium button"]
+https://twitter.com/mesirii/status/1400747811348623362/[Read the Thread, role="medium button"]
+
+// #neo4j #dependencies #maven #RESTapi #Bloom #npm #cargo #pypi
 
 [[features-2]]
-== Feature 2
+== neo-forgery: A Mock a Neo4j driver session
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130815/npm_mock.jpg[width=150,float="right"]
 
-// 3-4 paragraphs
+https://twitter.com/YisroelYakovson/[Yisroel Yakovson^] just published an npm package, neo-forgery.
+This package enables you to simulate neo4j drivers so you can unit-test your application.
+It is fast and can be used with CLI and TDD.
+You can specify configuration parameters that can be used for your unit tests.
+When the application changes, it can be easily retested.
+You can even use it on a real database to confirm that your test queries still work.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://www.npmjs.com/package/neo-forgery/[Read about neo-forgery, role="medium button"]
+
+// #neo4j #npm #unittest #neo-forgery
 
 [[features-3]]
-== Feature 3
+== Motherlode: How to Create a Heterogeneous Neo4j Data Loading Pipeline Framework (Fast)
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130812/motherlode_tim_bleimehl.jpg[width=150,float="right"]
 
-// 3-4 paragraphs
+https://www.linkedin.com/in/timbleimehl/[Tim Bleimehl^] who has worked extensively on the
+CovidGraph project and for the German Center for Diabetes Research has posted an article about
+creating a  heterogeneous Neo4j data loading pipeline.
+This article first describes the challenges of collecting data from multiple sources and why
+the coordination of resources for something like CovidGraph motivated their development.
+The tool, called Motherlode, is like a docker-compose with the added benefit of loading data into Neo4j.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://healthecco.org/healthecco/how-to-create-a-heterogeneous-neo4j-data-loading-pipeline-framework-fast/[Read the Blog, role="medium button"]
+
+// #neo4j #motherlode #python #docker #dockercompose #pipeline #covidgraph
 
 [[features-4]]
-== Feature 4
+== tei2neo: Parser to extract information and store it in a Neo4j database
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130802/TEI-Julien_Raemy.jpeg[width=150,float="right"]
 
-// 3-4 paragraphs
+https://twitter.com/julsraemy/[Julian Raemy^] described some of the details of a project at https://twitter.com/USI_university[USI University^].
+They used https://pypi.org/project/tei2neo/[tei2neo^] to parse the _Semper Edition_ to load a graph
+where text is stored as chains of nodes and relations and represent words, parts of words or punctuation marks.
+Nodes have properties and labels and are linked together to represent direction of text flow.
+_tei2neo_ takes TEI-XML documents and uses a combination of _Beautiful Soup4_ and _Spacy_ to parse the document.
 
-https://call-to-action-url/[Action, role="medium button"]
+
+https://twitter.com/julsraemy/status/1402602043274051591/[Read the Thread, role="medium button"]
+
+// #neo4j #tei2neo #py2neo #parse #XML #TEIXML
 
 [[features-5]]
-== Feature 5
+== Neo4j RBAC with Azure Active Directory
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130758/RBAC_AzureAD.jpg[width=150,float="right"]
 
-// 3-4 paragraphs
+https://twitter.com/SohamDhodapkar/[Soham Dhodapkar^] from Neo4j has posted this blog with step-by-step instructions
+to configure and use Neo4j's RBAC functionality with Azure Active Directory Domain Services.
+He details the configuration necessary on the Azure Active Directory Data Service component and then to use RBAC in Neo4j.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://dhodapkarsoham.github.io/2021-06-09-neo4j-ldaps/[Read the Blog, role="medium button"]
+
+// #neo4j #azure #activedirectory #RBAC #ldap #security
 
 [[features-6]]
-== Feature 6
+== Monitor Neo4j with Prometheus and Grafana
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130754/Prometheus_alex_woolford.jpg[width=150,float="right"]
 
-// 3-4 paragraphs
+https://twitter.com/biggus_data/[Alex Woolford^] from Neo4j published yet another blog about monitoring Neo4j.
+He teaches you how to install and set up Prometheus for monitoring.
+Once it is connected to your Neo4j instance you can use Grafana to create your monitoring dashboards.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://woolford.io/2021-06-02-monitor-neo4j-with-prometheus/[Read the Blog, role="medium button"]
+
+// #neo4j #prometheus #grafana #monitor
 
 [[features-7]]
-== Feature 7
+== GraphStuff.FM: Podcasts
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210610130809/graphstuff_fm.jpg[width=150,float="right"]
 
-// 3-4 paragraphs
+In the run-up to NODES 2021 (the Neo4j Online Developer Expo & Summit) https://twitter.com/ElLazal/[Lju Lazarevic^] and https://twitter.com/lyonwj/[William Lyon^] interviewed a few of the speakers to tell us how they first got excited about graphs, what they're working on, and give us a preview of what they'll be sharing at NODES 2021.
 
-https://call-to-action-url/[Action, role="medium button"]
+* https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-toma-bratani-from-text-to-a-knowledge-graph-the-information-extraction-pipeline/[The Path To NODES 2021 With Tomaž Bratanič - From Text to a Knowledge Graph: The Information Extraction Pipeline^]
+* https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-david-bender-introduction-to-fastgraph-building-great-simple-apis-for-your-neo4j-projects/[The Path To NODES 2021 With David Bender - Introduction to FastGraph: Building Great, Simple APIs for your Neo4j Projects^]
+* https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-mike-morley-and-peter-tunkis-modeling-physical-systems-using-graphs/[Modeling Physical Systems Using Graphs: The Path To NODES 2021 With Mike Morley and Peter Tunkis^]
+
+https://neo4j.brand.live/c/2021nodes-homepage/[Don't forget to Register for NODES 2021 (June 17th), role="medium button"]
 
 == Tweet of the Week
 

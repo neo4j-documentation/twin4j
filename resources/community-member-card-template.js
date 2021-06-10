@@ -17,9 +17,9 @@ const monthNames = [
 
 module.exports = (uiModel) => {
   const date = uiModel.date
-  const yyyy = date.getFullYear()
-  const month = monthNames[date.getMonth()]
-  const dd = ('0' + (date.getDate())).slice(-2)
+  const yyyy = date.getUTCFullYear()
+  const month = monthNames[date.getUTCMonth()]
+  const dd = ('0' + (date.getUTCDate())).slice(-2)
   return `<!DOCTYPE html>
 <html lang="en">
 <head>

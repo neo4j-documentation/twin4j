@@ -6,6 +6,7 @@
     "node": ">= 14"
   },
   "scripts": {
+    "test": "mocha tests/**.test.js",
     "generate": "node tasks/generate.js",
     "clean": "node tasks/clean.js",
     "publish-images": "node tasks/publish-images.js",
@@ -29,11 +30,15 @@
   "homepage": "https://github.com/Mogztter/twin4j#readme",
   "devDependencies": {
     "@asciidoctor/core": "^2.2.4",
+    "chai": "^4.3.4",
     "chalk": "^4.1.1",
     "debug": "^4.3.1",
     "inquirer": "^8.1.0",
     "inquirer-date-prompt": "^2.0.1",
+    "luxon": "^1.27.0",
+    "mocha": "^9.0.0",
     "nunjucks": "^3.2.3",
+    "oauth": "^0.9.15",
     "puppeteer": "^9.1.1",
     "unxhr": "^1.2.0",
     "wpapi": "^1.2.2"

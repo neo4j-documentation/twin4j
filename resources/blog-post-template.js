@@ -1,6 +1,7 @@
 module.exports = (uiModel) => {
-  return `= ${uiModel.documentTitle}
-:slug: ${uiModel.slug}
+  return `= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-
 :noheader:
 :linkattrs:
 :categories: ${uiModel.categories}

@@ -10,6 +10,10 @@ inquirer.registerPrompt('date', require('inquirer-date-prompt'))
 const { getIssueDate, getIssueDirectory, getIssueDirectoryName, directoryExists } = require('./lib/data.js')
 const template = require('../resources/blog-post-template.js')
 
+// TODO:
+// - init: create file structure, json, and initialize the blog-post.adoc with community member and author
+// - generate-tweets:
+//   * create tweet files and add URL to tweet files (from document structure)
 async function askIssueDate(date) {
   const { timestamp } = await inquirer.prompt({
     type: 'date',
@@ -22,21 +26,6 @@ async function askIssueDate(date) {
     clearable: true,
   })
   return new Date(timestamp)
-}
-
-async function getBlogPostTitle() {
-  const { blogPostTitle } = await inquirer.prompt({
-    name: 'blogPostTitle',
-    message: 'What is the title of the blog post?',
-    prefix: ' 📝 ',
-    transformer: (input) => {
-      if (!input.toLowerCase().startsWith('this week in neo4j')) {
-        return `This Week in Neo4j - ${input}`
-      }
-      return input
-    }
-  })
-  return `This Week in Neo4j - ${blogPostTitle}`
 }
 
 async function getBlogPostAuthor(defaultAuthorName) {
@@ -134,8 +123,6 @@ const issueDateArg = args[0]
       console.error(chalk.redBright.bold(`     !!! Directory ${ospath.relative(rootDirectoryPath, issueDirectoryPath)} already exists, cannot initialize a new Twin4j newsletter`))
       process.exit(9)
     }
-    const blogPostTitle = await getBlogPostTitle()
-    const blogPostSlug = slugify(blogPostTitle)
     const blogPostAuthor = await getBlogPostAuthor('Elaine Rosenberg')
     const blogPostCategories = await getBlogPostCategories('graph-database')
     const featuredCommunityMemberFirstName = await getFeaturedCommunityMemberFirstName()
@@ -144,19 +131,7 @@ const issueDateArg = args[0]
 
     await fs.mkdir(issueDirectoryPath, { recursive: true })
     await fs.mkdir(ospath.join(issueDirectoryPath, 'images'), { recursive: true })
-    const tweetsDirectory = ospath.join(issueDirectoryPath, 'tweets')
-    await fs.mkdir(tweetsDirectory, { recursive: true })
-    await fs.writeFile(ospath.join(tweetsDirectory, '1-sat-00-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#featured-community-member\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '2-sat-05-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-1\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '3-sat-14-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-2\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '4-sat-21-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-3\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '5-sun-09-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-4\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '6-sun-16-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-5\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '7-mon-02-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-6\n\n#neo4j`, 'utf8')
-    await fs.writeFile(ospath.join(tweetsDirectory, '8-tue-12-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/\n\n#neo4j`, 'utf8')
     const blogPostContent = template({
-      documentTitle: blogPostTitle,
-      slug: blogPostSlug,
       author: blogPostAuthor,
       categories: blogPostCategories,
       featuredCommunityMember: {

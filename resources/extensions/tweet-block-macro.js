@@ -17,12 +17,19 @@ module.exports = function (registry) {
       })
       xhr.send(null)
       if (!responseText) {
-        throw new Error(`Unable to GET https://publish.twitter.com/oembed?url=https://twitter.com/twin4j/status/${target} - status: ${status}`)
+        console.log(`Unable to GET https://publish.twitter.com/oembed?url=https://twitter.com/twin4j/status/${target} - status: ${status}, make sure that the tweet ${target} exists, ignoring.`)
+        return self.createPassBlock(parent, '')
       }
-      const html = JSON.parse(responseText)['html']
-      return self.createPassBlock(parent, `<div class="content">
+      try {
+        const html = JSON.parse(responseText)['html']
+        return self.createPassBlock(parent, `<div class="content">
 ${html}
 </div>`)
+      } catch (e) {
+        // unable to parse response
+        console.log(`Unable to parse reponse as JSON from https://publish.twitter.com/oembed?url=https://twitter.com/twin4j/status/${target} - reponse: ${responseText}, ignoring.`, e)
+        return self.createPassBlock(parent, '')
+      }
     })
   })
 }

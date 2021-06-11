@@ -1,0 +1,6 @@
+In this week's #twin4j, @YisroelYakovson has published an npm package, neo-forgery that can be used for simulating Neo4j for unit testing.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/#features-2
+
+#neo4j  #npm #unittest #neo-forgery
+

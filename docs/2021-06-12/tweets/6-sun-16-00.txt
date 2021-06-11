@@ -1,0 +1,6 @@
+In this week's #twin4j, @SohamDhodapkar from Neo4j wrote a step-by-step guide for using RBAC with Azure Active Directory Data Service's LDAP.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/#features-5
+
+#neo4j  #azure #activedirectory #RBAC #ldap #security
+

@@ -1,0 +1,6 @@
+In this week's #twin4j, Tim Bleimehl who has worked extensively on the CovidGraph project has posted an article about creating a  heterogeneous Neo4j data loading pipeline. His framework is called Motherlode.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/#features-3
+
+#neo4j #motherlode #python #docker #dockercompose #pipeline #covidgraph
+

@@ -1,0 +1,6 @@
+In this week's #twin4j, we highlight projects implemented with Neo4j by Neo4j folks and Community members and we point you to two helpful tutorials for configuring Neo4j to work with Azure Active Directory and with Prometheus.
+And we have 3 pre-NODES podcasts for you to listen to.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/
+
+#neo4j #NODES2021

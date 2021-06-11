@@ -1,0 +1,7 @@
+In this week's #twin4j, @biggus_data, from Neo4j guides you through setting up monitoring Neo4j with Prometheus and viewing it in Grafana.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/#features-6
+
+#neo4j #prometheus #grafana #monitor
+
+

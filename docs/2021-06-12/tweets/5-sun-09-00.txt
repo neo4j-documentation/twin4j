@@ -1,0 +1,6 @@
+In this week's #twin4j, @julsraemy described some of the details of a project at USI University to parse and load Semper Edition into a graph using Beautiful Soup4, Spacy, tei2neo, and py2neo.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/#features-4
+
+#neo4j #tei2neo #py2neo #parse #XML #TEIXML
+

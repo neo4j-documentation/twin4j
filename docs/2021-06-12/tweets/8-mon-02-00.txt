@@ -1,0 +1,7 @@
+In this week's #twin4j, @ElLazal and @lyonwj from Neo4j interview some of our upcoming speakers at NODES 2021, Tomaz Bratanic, David Bender, Mike Morley, and Peter Tunkis.
+
+https://neo4j.com/blog/this-week-in-neo4j-deps-dev-neo-forgery-motherlode-tei2neo-rbac-with-azure-ad-prometheus-graphstuff-fm-podcasts/#features-7
+
+#neo4j #NODES2021
+
+

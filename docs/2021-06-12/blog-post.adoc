@@ -5,13 +5,30 @@
 :categories: graph-database
 :author: Elaine Rosenberg
 // twin4j is added automatically
-:tags: neo4j, dependencies, maven, cargo,  npm, neo4j-bloom, schema, api, npm, unit-test, neo-forgery, \
+:tags: neo4j, dependencies, maven, cargo,  npm, neo4j-bloom, schema, api, unit-testing, neo-forgery, \
 motherlode, python, docker, docker-compose, pipeline, covidgraph, tei2neo, py2neo, parse, XML, TEI-XML, \
 azure, active-directory, RBAC, ldap, security, prometheus, grafana, monitor
 
 Hello, everyone!
 
-// introduction
+This is the week of NODES 2021! We hope you will be there and can watch the keynote by our awesome CEO, Emil Eifrem.
+It is on June 17th at 8:00 ET, 12:00 UTC, 5:30 IST. https://neo4j.brand.live/c/2021nodes/[Register here^].
+
+In this edition, we have selected Samuel Chalvet as our featured commumnity member.
+He will be presenting at NODES and we look forward to hearing from him.
+
+Michael Hunger as put together a way to use the newest Google tool, deps.dev to extract dependencies from a repo.
+He shows us how to create a graph from the dependencies and explore the results in Bloom.
+Yisroel Yakovson, a long-time Neo4j developer has created neo-forgery.
+It is a framework for unit testing with Neo4j where the drivers are simulated.
+Tim Bleimehl, a creator of CovidGraph wrote a blog describing motherlode.
+Motherload can be used to load data into Neo4j from multiple, heterogeneous sources.
+Julian Raemy wrote a Twitter thread describing the work done at USI University to analyze text using tei2neo.
+It is a python-based tool that uses specialized libraries to help parse the documents and load them into Neo4j.
+Soham Dhodapkar, a sales engineer at Neo4j has written a clear, step-by-step guide to help you configure Azure Active Directory Domain Services with Neo4j for RBAC access.
+Another Neo4j sales engineer, Alex Woolford, has published a blog that teaches you how to install and configure Prometheus for monitoring Neo4j.
+
+And finally, my colleagues, Lju Lazarevic and William Lyon added three more interviews in their GraphStuff.FM podcast catalog where they talk with some of our NODES 2021 speakers.
 
 [[featured-community-member]]
 == Featured Community Member: Samuel Chalvet
@@ -40,7 +57,7 @@ https://www.linkedin.com/in/samuel-chalvet-61a6895b/[Connect with Samuel on Link
 image::https://dist.neo4j.com/wp-content/uploads/20210610130805/deps.dev_MichaelHunger.jpg[width=150,float="right"]
 
 Our own https://twitter.com/mesirii/[Michael Hunger^] shows us how easy it is to take advantage of the new Google tool, https://deps.dev/[deps.dev^],
-that provides dependencies for maven, npm, cargo and pypi. He used the this tool to load the dependencies of https://deps.dev/maven/org.neo4j:neo4j-kernel[neo4j-kernel^]
+that provides dependencies for maven, npm, cargo, and pypi. He used this tool to load the dependencies of https://deps.dev/maven/org.neo4j:neo4j-kernel[neo4j-kernel^]
 and then was able to visualize it in Neo4j Bloom. The helper files can be found in this https://gist.github.com/jexp/9541bbfc17e0383d1e55388a7d7e3162/[gist^] Really cool!
 
 https://twitter.com/mesirii/status/1400747811348623362/[Read the Thread, role="medium button"]
@@ -48,14 +65,14 @@ https://twitter.com/mesirii/status/1400747811348623362/[Read the Thread, role="m
 // #neo4j #dependencies #maven #RESTapi #Bloom #npm #cargo #pypi
 
 [[features-2]]
-== neo-forgery: A Mock a Neo4j driver session
+== neo-forgery: Mock a Neo4j driver session
 
 image::https://dist.neo4j.com/wp-content/uploads/20210610130815/npm_mock.jpg[width=150,float="right"]
 
 https://twitter.com/YisroelYakovson/[Yisroel Yakovson^] just published an npm package, neo-forgery.
 This package enables you to simulate neo4j drivers so you can unit-test your application.
 It is fast and can be used with CLI and TDD.
-You can specify configuration parameters that can be used for your unit tests.
+You can specify configuration parameters that are used to drive your unit tests.
 When the application changes, it can be easily retested.
 You can even use it on a real database to confirm that your test queries still work.
 
@@ -128,16 +145,16 @@ image::https://dist.neo4j.com/wp-content/uploads/20210610130809/graphstuff_fm.jp
 
 In the run-up to NODES 2021 (the Neo4j Online Developer Expo & Summit) https://twitter.com/ElLazal/[Lju Lazarevic^] and https://twitter.com/lyonwj/[William Lyon^] interviewed a few of the speakers to tell us how they first got excited about graphs, what they're working on, and give us a preview of what they'll be sharing at NODES 2021.
 
-* https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-toma-bratani-from-text-to-a-knowledge-graph-the-information-extraction-pipeline/[The Path To NODES 2021 With Tomaž Bratanič - From Text to a Knowledge Graph: The Information Extraction Pipeline^]
-* https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-david-bender-introduction-to-fastgraph-building-great-simple-apis-for-your-neo4j-projects/[The Path To NODES 2021 With David Bender - Introduction to FastGraph: Building Great, Simple APIs for your Neo4j Projects^]
-* https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-mike-morley-and-peter-tunkis-modeling-physical-systems-using-graphs/[Modeling Physical Systems Using Graphs: The Path To NODES 2021 With Mike Morley and Peter Tunkis^]
+* The Path To NODES 2021 With Tomaž Bratanič: https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-toma-bratani-from-text-to-a-knowledge-graph-the-information-extraction-pipeline/[From Text to a Knowledge Graph: The Information Extraction Pipeline^]
+* The Path To NODES 2021 With David Bender: https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-david-bender-introduction-to-fastgraph-building-great-simple-apis-for-your-neo4j-projects/[Introduction to FastGraph: Building Great, Simple APIs for your Neo4j Projects^]
+* The Path To NODES 2021 With Mike Morley and Peter Tunkis: https://graphstuff.fm/episodes/the-path-to-nodes-2021-with-mike-morley-and-peter-tunkis-modeling-physical-systems-using-graphs/[Modeling Physical Systems Using Graphs^]
 
 https://neo4j.brand.live/c/2021nodes-homepage/[Don't forget to Register for NODES 2021 (June 17th), role="medium button"]
 
 == Tweet of the Week
 
-My favorite tweet this week was by https://twitter.com/handle[name^]:
+My favorite tweet this week was by https://twitter.com/kojiannoura[Koji Annoura^]:
 
-tweet::tweet-id[]
+tweet::1401337594676318212[type={type}]
 
 Don't forget to RT if you liked it too!

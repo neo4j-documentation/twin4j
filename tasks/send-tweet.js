@@ -1,5 +1,6 @@
 'use strict'
 
+const debug = require('debug')('send-tweet')
 const luxon = require('luxon')
 const fs = require('fs').promises
 const ospath = require('path')
@@ -19,8 +20,6 @@ function findIssueDirectory(dateTime) {
     }
   }
   return `${dateTime.year}-${('0' + dateTime.month).slice(-2)}-${('0' + dateTime.day).slice(-2)}`
-
-  console.log(issueDirectoryName)
 }
 
 ;(async () => {
@@ -30,15 +29,16 @@ function findIssueDirectory(dateTime) {
     .setZone("America/Los_Angeles")
   console.log(`Current date is: ${dateTime}`)
   try {
-    const issueDate = getIssueDate(dateTime)
+    const issueDate = findIssueDirectory(dateTime)
+    debug(`Current issue date: ${issueDate}`)
     const issueDirectoryPath = await getIssueDirectory(issueDate)
     const tweetsDirectory = ospath.join(issueDirectoryPath, 'tweets')
     const tweetFile = getTweetFile(dateTime)
     const status = await fs.readFile(ospath.join(tweetsDirectory, tweetFile), 'utf8')
-    console.log(`Send tweet: ${status}`)
+    await sendTweet(status)
   } catch (err) {
     if (err.name === 'ArgumentOutOfRangeError') {
-      console.error(err.message)
+      console.log(err.message)
     } else {
       console.error(err)
     }

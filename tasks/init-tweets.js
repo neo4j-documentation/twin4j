@@ -53,9 +53,11 @@ if (!issueDate) {
     } else if (sectionId === 'features-5') {
       await fs.writeFile(ospath.join(tweetsDirectory, '6-sun-16-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-5\n\n#neo4j`, 'utf8')
     } else if (sectionId === 'features-6') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '7-mon-02-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-6\n\n#neo4j`, 'utf8')
+      await fs.writeFile(ospath.join(tweetsDirectory, '7-sun-23-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-6\n\n#neo4j`, 'utf8')
+    } else if (sectionId === 'features-6') {
+      await fs.writeFile(ospath.join(tweetsDirectory, '8-mon-02-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-7\n\n#neo4j`, 'utf8')
     }
   }
   // summary tweet
-  await fs.writeFile(ospath.join(tweetsDirectory, '8-tue-12-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/\n\n#neo4j`, 'utf8')
+  await fs.writeFile(ospath.join(tweetsDirectory, '9-tue-12-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/\n\n#neo4j`, 'utf8')
 })()

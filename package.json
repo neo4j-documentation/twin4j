@@ -12,7 +12,8 @@
     "publish-images": "node tasks/publish-images.js",
     "publish-blog-post": "node tasks/publish-blog-post.js",
     "init": "node tasks/init.js",
-    "init-tweets": "node tasks/init-tweets.js"
+    "init-tweets": "node tasks/init-tweets.js",
+    "send-tweet": "node tasks/send-tweet.js",
   },
   "repository": {
     "type": "git",

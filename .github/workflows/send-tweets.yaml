@@ -1,0 +1,26 @@
+on:
+  workflow_dispatch:
+#  schedule:
+#    # must be > 5 minutes otherwise we can send the same tweet more than once
+#    - cron:  '*/8 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: |
+          npm ci
+      - name: Send tweet
+        run: |
+          npm run send-tweet
+        env:
+          TWITTER_APPLICATION_CONSUMER_KEY: ${{ secrets.TWITTER_APPLICATION_CONSUMER_KEY }}
+          TWITTER_APPLICATION_SECRET: ${{ secrets.TWITTER_APPLICATION_SECRET }}
+          TWITTER_USER_ACCESS_TOKEN: ${{ secrets.TWITTER_USER_ACCESS_TOKEN }}
+          TWITTER_USER_SECRET: ${{ secrets.TWITTER_USER_SECRET }}

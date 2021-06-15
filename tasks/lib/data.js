@@ -209,7 +209,7 @@ function getTweetFile(dateTime) {
       const dateTime0200 = getDateAtTime(dateTime, 2)
       // tweet date is between range
       if (startRangeDateTime <= dateTime0200 && dateTime0200 <= endRangeDateTime) {
-        tweetFile = `7-mon-02-00.txt`
+        tweetFile = `8-mon-02-00.txt`
       } else {
         throw new ArgumentOutOfRangeError(`Tweet window ${dateTime0200} is not between ${startRangeDateTime} and ${endRangeDateTime}.`)
       }
@@ -218,7 +218,7 @@ function getTweetFile(dateTime) {
       const dateTime1200 = getDateAtTime(dateTime, 12)
       // tweet date is between range
       if (startRangeDateTime <= dateTime1200 && dateTime1200 <= endRangeDateTime) {
-        tweetFile = `8-tue-12-00.txt`
+        tweetFile = `9-tue-12-00.txt`
       } else {
         throw new ArgumentOutOfRangeError(`Tweet window ${dateTime1200} is not between ${startRangeDateTime} and ${endRangeDateTime}.`)
       }
@@ -248,11 +248,15 @@ function getTweetFile(dateTime) {
       const dateTime0900 = getDateAtTime(dateTime, 9)
       // sunday at 16:00
       const dateTime1600 = getDateAtTime(dateTime, 16)
+      // sunday at 23:00
+      const dateTime2300 = getDateAtTime(dateTime, 23)
       // tweet date is between range
       if (startRangeDateTime <= dateTime0900 && dateTime0900 <= endRangeDateTime) {
         tweetFile = '5-sun-09-00.txt'
       } else if (startRangeDateTime <= dateTime1600 && dateTime1600 <= endRangeDateTime) {
         tweetFile = '6-sun-16-00.txt'
+      } else if (startRangeDateTime <= dateTime2300 && dateTime2300 <= endRangeDateTime) {
+        tweetFile = '7-sun-23-00.txt'
       } else {
         throw new ArgumentOutOfRangeError(`Tweet windows [${[dateTime0900, dateTime1600].join(', ')}] is not between ${startRangeDateTime} and ${endRangeDateTime}.`)
       }

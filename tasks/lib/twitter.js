@@ -8,6 +8,7 @@ const twitterUserAccessToken = process.env['TWITTER_USER_ACCESS_TOKEN']
 const twitterUserSecret = process.env['TWITTER_USER_SECRET']
 
 async function sendTweet(status) {
+  console.log(`Sending tweet: ${status}`)
   const postBody = {
     status
   }
@@ -28,6 +29,7 @@ async function sendTweet(status) {
       '', // post content type
       function (err, data, res) {
         if (err) {
+          console.error('Something went wrong while sending tweet', err)
           reject(err)
         } else {
           resolve(data)

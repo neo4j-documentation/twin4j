@@ -1,0 +1,177 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Elaine Rosenberg
+// twin4j is added automatically
+:tags:
+
+Hello, everyone!
+
+NODES 2021 has come and gone! It was a very successful online developer conference for us.
+We hope you were able to attend, but if not, we will be posting links to the recordings soon.
+We thank all of the speakers who presented.
+
+The week we feature Andrew Bowman as our most valued Neo4j Community Member.
+If you have been on our forum or chat sites, you have seen how much he helps the community.
+
+Atul Shukla published an article that describes how he used multiple data sources to create a movie recommendation system using Neo4j.
+Rick Van Bruggen decided to explore the Shakespeare Kaggle data by loading it into Neo4j and analyzing the data.
+You can take a look at the Alteryx Connectors for Neo4j that Thomas Larsen just released.
+
+Neo4j has announced the general availabilty of Neo4j Aura Free Tier, a cloud instance that is free and does not expire like a Neo4j Sandbox does.
+Many folks were on a waiting list and we are happy to enable them to use Aura Free Tier.
+
+Finally, we share a link to the Keynote address for NODES 2021 given by Emil Eifrem. In addition, we provide the links to the pre-Nodes training session recordings.
+
+
+[[featured-community-member]]
+== Featured Community Member: Andrew Bowman
+
+This week's featured community member is Andrew Bowman.
+
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Andrew Bowman"]
+
+We are way past due in recognizing Andrew as a person in the Neo4j Community who has helped a tremendous number of users.
+No matter how "snarly" a question is, Andrew digs into it and resolves the problem at hand.
+He knows Cypher inside and out and is my go-to person when I need a good explanation of how queries work in Cypher.
+He has presented at NODES 2020 and you will always see him answering questions on our Community and Discord sites.
+
+His "day job" is with the Neo4j Customer Success team where he supports our Enterprise users.
+He has also written many informative and timely https://neo4j.com/developer/kb/[Knowledge Base articles^] to help our user community.
+
+We thank Andrew for his dedication to the Neo4j Community!
+
+// #neo4j #cypher #query
+
+// linkedin link
+https://www.linkedin.com/in/andrew-w-bowman/[Connect with Andrew on LinkedIn, role="medium button"]
+
+[[features-1]]
+== A recommendation system using a graph database
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/17Billion-atul-shukla.png[width=150,float="right"]
+
+https://www.linkedin.com/in/atul-kumar-shukla-9937b3104/[Atul Shukla^] from https://47billion.com/[47Billion^] has written an article about his experience creating a recommendation system for movies.
+He used the data provided by https://developers.themoviedb.org/4/getting-started/authorization/[The Movie DB^] and https://www.omdbapi.com/[OMDb API^].
+As with any import of CSV data, he explains how he needed to clean up the data before loading it.
+Then he describes his graph data model used to create the nodes and relationships in the graph.
+And finally, he shows some of the Cypher queries he used against the graph to implement the recommendations.
+Kudos to Atul for sharing his experiences.
+
+// #neo4j #import #CSV #recommendationengine
+
+https://47billion.com/blog/recommendation-system-using-graph-database/[Read the Blog, role="medium button"]
+
+[[features-2]]
+== Network Analysis of Shakespeare's plays
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/RickVanBruggen-Shakespeare.png[width=150,float="right"]
+
+https://twitter.com/rvanbruggen/[Rik Van Bruggen^] from Neo4j did some interesting loading of a https://www.kaggle.com/kingburrito666/shakespeare-plays/[Kaggle dataset^] with all of Shakespeare's plays.
+Then he was able to analyze the data to uncover the hidden networks.
+In his blog, he describes how he prepared the database for loading, loaded the data, and then most importantly refactored the graph to give it a structure that lends itself to exploration.
+He then shows how he explored the data in Bloom.
+And finally, he explains how he used some graph algorithms to further analyze the data.
+
+http://blog.bruggen.com/2021/06/network-analysis-of-shakespeares-plays.html/[Read the Blog, role="medium button"]
+
+// #neo4j #neo4jbloom #algorithms #import #CSV #shakespeare
+
+[[features-3]]
+== Graphyx: Alteryx Connectors for Neo4j
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/Graphyx-Thomas-Larsen.jpeg[width=150,float="right"]
+
+https://twitter.com/tlarsendataguy/[Thomas Larsen^] has just published his Alteryx Neo4j connectors.
+It can be used by https://www.alteryx.com/[Alteryx^] developers who want to import Cypher queries into Alteryx workflows,  export Alteryx data to a graph, or delete data from the graph.
+Thomas used the https://github.com/tlarsen7572/goalteryx/[Alteryx Go SDK^] and the https://github.com/neo4j/neo4j-go-driver/[Neo4j Go driver^] to build the connectors,
+as well as https://github.com/flutter/flutter/[Flutter^] for the UI.
+
+https://github.com/tlarsen7572/graphyx/[View the Repo, role="medium button"]
+
+// #neo4j #go #alteryx #graphyx #import #export #cypher
+
+[[features-4]]
+== Aura Free Tier now available for all
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/Neo4j-aura-twin4j.png[width=150,float="right"]
+
+Many, many developers have been patiently waiting for Aura Free Tier. It is now available!
+
+Aura Free Tier is a free cloud instance of Neo4j (latest release) that you can use for your development projects and demonstrations.
+There are limitations you should be aware of:
+
+* You can have one user database.
+* The maximum number of nodes is 50K and maximum number of relationships is 175K.
+* Because it is a cloud instance, you cannot modify the configuration (neo4j.conf).
+* You cannot place any files (for example, CSV files or Cypher files) in the filesystem of the instance.
+* It will have the APOC plugin, but it will NOT have the GDS Library or GraphQL plugins available.
+
+We will be populating this YouTube https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVyzMCg1Dx2dEoX73ewq35j/[Playlist] with videos that will help you to get started with Neo4j Aura Free Tier.
+
+Learn how to https://console.neo4j.io/#how-to-connect/[connect^] to Aura with drivers.
+You can load an http://github.com/neo4j-graph-examples/[example data dump file^] data or Neo4j Sandbox dump file into your Aura Free Tier database.
+Note that the dump file must be the same major version as the database.
+Many of the GraphAcademy developer courses can be taken using your Aura Free Tier database.
+
+You can learn more about Neo4j Aura https://neo4j.com/aura/[here^]. When you create an Aura account, the Free Tier database is available to you.
+
+https://console.neo4j.io/[Create your Neo4j Aura account here, role="medium button"]
+
+// #neo4j #aura #neo4jaura #aurafreetier
+
+[[features-5]]
+== Dungeons, Dragons, and Graph Databases
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/DungeonsDragons.png[width=150,float="right"]
+
+Calling all Dungeons and Dragons fans! https://twitter.com/guyroyse[Guy Royse^], a developer advocate at Redis Labs presented this hour-long talk at the All Things Open conference last year that provides a great introduction to the Property Graph Model.
+It then goes into how to analyze the data using a relational model and compares it to a graph data model.
+He shows queries in SQL and then the same query in Cypher.
+What he leads to user to, however, is the benefit of using a graph over tables, especially when you want to look at variable length paths between entities.
+Although he uses ReditGraph as the underlying database, it is a great way to see the benefits of graph databases and Cypher for querying the graph.
+
+https://youtu.be/X59DEx-4i74/[Watch the presentation, role="medium button"]
+
+// #neo4j #cypher #redisgraph #graphdatabase
+
+[[features-6]]
+== Graph Embeddings in Neo4j with GraphSAGE
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/GraphSAGE-Sefiks.png[width=150,float="right"]
+
+https://twitter.com/serengil/[Sefik Ilkin Serengil^] has published this article that describes how he uses GraphSAGE to train the network for the Game of Thrones data.
+GraphSAGE is one of three ways that you can embed graphs so you can perform deeper analysis of the data.
+GraphSAGE is implemented to create neural networks within your graph.
+He also points to another presentation that he did showcasing a facial recognition application using some of the same techniques.
+
+https://sefiks.com/2021/06/06/graph-embeddings-in-neo4j-with-graphsage/[Read the Blog, role="medium button"]
+
+[[features-7]]
+== NODES 2021: Our Third Annual Online Neo4j Developer Conference
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+We had a very successful conference this year that included a Pre-NODES week of hands-on training sessions give by our Developer Relations team members.
+You can watch these recorded sessions here:
+
+https://neo4j.brand.live/c/2021nodes-training-monday/[Hands-on Introduction to Neo4j (Lju Lazarevic)^]
+https://neo4j.brand.live/c/2021nodes-training-tuesday/[Hands-on with Neo4j Aura Free Tier (Jennifer Reif)^]
+https://neo4j.brand.live/c/2021nodes-training-wednesday/[Getting Started with Neo4j Bloom (Lju Lazarevic)^]
+https://neo4j.brand.live/c/2021nodes-training-thursday/[Building GraphQL APIs with the Neo4j GraphQL Library (William Lyon)^]
+https://neo4j.brand.live/c/2021nodes-training-friday/[Creating a Knowledge Graph with Neo4j: A Simple Machine Learning Approach (Clair Sullivan)^]
+
+We will be posting the links for the sessions that were recorded soon.
+
+https://call-to-action-url/[Watch the Keynote Address by Emil Eifrem, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/rvanbruggen/[Rik Van Bruggen^]:
+
+tweet::1405166774090338304[type={type}]
+
+Don't forget to RT if you liked it too!

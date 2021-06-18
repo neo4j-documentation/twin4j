@@ -1,0 +1,6 @@
+In this week's #twin4j, we point you to folks who imported and analyzed  data and announced Aura Free Tier availability for all.
+We also provide links for watching the pre-NODES training sessions, as well as the keynotes for NODES 2021.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/
+
+#neo4j #NODES2021

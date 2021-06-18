@@ -1,0 +1,5 @@
+In this week's #twin4j, @rvanbruggen shares his experience loading Kaggle Shakespeare data into Neo4j and how he refactored the graph for his analysis.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/#features-2
+
+#neo4j #bloom #neo4jbloom #algorithms #import #CSV #shakespeare

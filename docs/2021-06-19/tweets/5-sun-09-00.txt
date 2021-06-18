@@ -1,0 +1,5 @@
+In this week's #twin4j, we announce that Neo4j Aura Free Tier is now available for everybody. No more wait list! Neo4j Free Tier is a Neo4j cloud instance that does not expire.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/#features-4
+
+#neo4j #aura #neo4jaura #aurafreetier

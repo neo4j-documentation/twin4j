@@ -1,0 +1,5 @@
+In this week's #twin4j, @serengil describes how he used GraphSAGE to create graph embeddings for analyzing the Game of Thrones data.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/#features-6
+
+#neo4j #graphembeddings #graphsage #neuralnetwork #datascience

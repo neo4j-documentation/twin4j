@@ -1,0 +1,5 @@
+In this week's #twin4j, we thank Andrew Bowman as a long overdue Featured Community Member. Andrew's dedication to our Community and the wealth of Cypher knowledge he shares is unsurpassed.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/#featured-community-member
+
+#neo4j #cypher #query

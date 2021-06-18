@@ -1,0 +1,5 @@
+In this week's #twin4j, Atul Shukla from 47billion.com shares his experiences in developing a movie recommendation system. He describes the data and the process he used to import it into Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/#features-1
+
+#neo4j #import #CSV #recommendations

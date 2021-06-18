@@ -1,0 +1,5 @@
+In this week's #twin4j, we point you to a presentation that @guyroyse did that clearly explains how a property graph model and Cypher are the best way to go to analyze dungeons and dragons.
+
+https://neo4j.com/blog/this-week-in-neo4j-recommendations-shakespeare-graphyx-aura-free-tier-dungeons-and-dragons-graphsage-nodes-2021/#features-5
+
+#neo4j #cypher #redisgraph #graphdatabase #dungeonsdragons

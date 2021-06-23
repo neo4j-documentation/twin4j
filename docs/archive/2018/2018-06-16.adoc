@@ -1,0 +1,206 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 9 June 2018, including 
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – New Release of Neo4j ETL Tool, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have a tutorial of the Neo4j ETL Tool, a React.js application that uses the new temporal and geospatial data types, a new release of the JDBC Driver, and more!
+
+Have a really awesome Neo4j story or use case you want to share with the world? 
+Sign up for our Neo4j Speaker and/or Neo4j Blogger program!
+https://neo4j.com/community/share-your-story/[Learn More^] 
+
+
+[[featured-community-member]]
+=== Featured Community Member: David Meza
+
+This week’s featured community member is https://twitter.com/davidmeza1[David Meza^], Chief Knowledge Architect at NASA. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180614235948/this-week-in-neo4j-16-june-2018.jpg[name="David Meza"]
+
+David has been part of the Neo4j community for several years and is best known for his work building a graph of the public NASA Engineering Network lesson learned database, which he https://neo4j.com/blog/nasa-lesson-learned-database-using-neo4j-linkurious/[wrote about in July 2015^]. He was also http://blog.bruggen.com/2015/11/podcast-interview-with-david-meza-nasa.html[interviewed about his work on the Graphistania podcast^].
+
+David's https://www.youtube.com/watch?v=WUnScaOIoN0[How NASA Finds Critical Data Through a Knowledge Graph^] talk at GraphConnect San Francisco 2016 was one of the most popular at the conference. You can also find https://www.slideshare.net/neo4j/knowledge-architecture-graphing-your-knowledge[the slides^] from David's talk.
+
+David was interviewed as part of the Forbes article http://www.forbes.com/sites/bernardmarr/2017/02/22/big-data-why-nasa-can-now-visualize-its-lessons-learned[Why NASA Can Now Visualize Its Lessons Learned^] and was also interviewed as part of our https://neo4j.com/blog/david-meza-chief-knowledge-architect-nasa/[5 minute interview series^].
+
+On behalf of the Neo4j community, thanks for all your work David!
+
+[[neo4j-etl-walkthrough]]
+=== Tap into Hidden Connections  - Translating Your Relational Data to Graph
+
+https://twitter.com/jmhreif[Jennifer Reif^] has https://medium.com/neo4j/tap-into-hidden-connections-translating-your-relational-data-to-graph-d3a2591d4026[written a detailed post^] explaining how to use the https://neo4j.com/blog/neo4j-etl-1-2-0-release-whats-new-and-demo/[Neo4j ETL Tool^] from the Neo4j Desktop. 
+
+image::https://cdn-images-1.medium.com/max/800/1*X1GYCyE7zTVg-EFi2pDxPQ.png[]
+
+++++
+<br />
+++++
+
+Jennifer starts by showing how to enable the tool via an activation key , and then imports the Northwind dataset from a PostgreSQL relational database into Neo4j.
+
+If you'd like to get an activation key send us an email devrel@neo4j.com and we'll send one over.
+
+[[neo4j-data-spatial-types-reactjs]]
+=== Neo4j Date And Spatial Types: Yelp and React.js, Open Beer Database
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180615002632/1_dHzXQK7Ayo_MoupK01z96g.png" width="150px"  />
+</div>
+++++
+
+Will Lyon https://medium.com/neo4j/working-with-neo4j-date-and-spatial-types-in-a-react-js-app-5475b5042b50[wrote a blog post^] in which he shows how to build an application that makes use of the temporal and geospatial data types that were introduced in Neo4j 3.4.
+
+Will takes us through the steps to build a React.js dashboard type application that allows a user to search for businesses by location that have reviews within a certain date range and display some charts based on aggregations of these reviews.
+
+You can find https://github.com/johnymontana/spacetime-reviews[the code for this project on Github^] and https://spacetime.graph.zone/[try it live here^].
+
+https://twitter.com/rvanbruggen?lang=en[Rik^] has also been exploring how to https://blog.bruggen.com/2018/06/exploring-new-datatypes-in-neo4j-34-and.html[use the spatial data type^] to locate breweries in the  http://openbeerdb.com/[Open Beer Database^]. 
+
+[[intro-graph-databases]]
+=== An intro to graph databases
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180615054430/2018-06-15_11-56-59.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/bechbd[Dave Bechberger^] shared the slides from his NDC Oslo 2018 talk - https://www.slideshare.net/DaveBechberger/ndc-oslo-2018-a-practical-guide-to-graph-databases-102313908[A Practical Guide to Graph Databases^]. 
+
+If you're just getting into graph databases this is an excellent overview of the field and different tools available.
+
+
+Aaron Lelevier has been learning about Graph Theory and has https://aaronlelevier.github.io/intro-to-graphs/[written a blog post^] in which he distills his learnings. 
+
+Aaron explains the different types of graphs, ways of representing them, and shares a project where he built a https://github.com/aaronlelevier/neo4j-github-followers[bidirectional graph of his GitHub followers^].
+
+[[aws-clevr-graph-security-engineering]]
+=== Neo4j Enterprise on AWS, CLEVR graph, Security Engineering Tools
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180615054935/1_BQrdWTwi0f0UxpggTiljoA-1.png" width="200px"  />
+</div>
+++++
+
+* https://twitter.com/MackMacktweet[David Mack^] https://medium.com/octavian-ai/clevr-graph-a-dataset-for-graph-based-reasoning-5e4e64f28ffb[released CLEVR graph^] - a dataset that aims to help further research into machine reasoning on graph datasets. It contains a set of questions and answers about transport network graphs.
+
+* Neo4j Enterprise is now https://aws.amazon.com/marketplace/pp/B07D441G55?qid=1528576922100&sr=0-2&ref_=srh_res_product_title[available on the AWS Marketplace^]. Give it a try and let us know how you get on - devrel@neo4j.com  
+
+* I recently came across https://github.com/caffix/amass[Amass^] - a subdomain enumeration tool that performs network mapping and Open-source intelligence gathering by using Neo4j and Vis.js for visualization. 
+
+
+* https://github.com/redmed666[redmed666^] created  https://github.com/redmed666/mal6raph[Mal6raph^] - a framework which can be used to compare samples between them from a code perspective as part of malware analysis. It allows you to upload samples analysed by https://twitter.com/radareorg[radare^], display those samples, and display similar ones based on function analysis.
+
+[[sinar-project-network-chart]]
+===  The Sinar Project: The making of a network chart
+
+A couple of years ago there was https://en.wikipedia.org/wiki/1Malaysia_Development_Berhad_scandal[a big story^] about the 1Malaysia Development Berhad (IMDB), a fund that was created by the Malaysian government to promote economic development through global partnerships and foreign direct investment. The FBI posted a filing to seize their assets under the US Department of Justice and FBI's  Kleptocracy Asset Recovery Initiative. 
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180615022836/f6fdaee4-46ff-4a6b-af1c-8b842abe845a-1.png[]
+
+++++
+<br />
+++++
+
+There was an https://sinarproject.org/transparency/research-notes/uncovering-1mdb-with-popit-open-data[article written^] back in 2016 by The Sinar Project where they explained how they'd used their Popit Database of Politically Exposed Persons helps uncover culprits and hold officials accountable.
+
+This week sweemeng, a member of the Sinar Project, https://medium.com/@sweemeng/the-making-of-a-network-chart-7b4f61aaccd6[wrote a blog post^] explaining in more detail how they built the graph, how the data's organised, and why their method worked for exploring this type of data.
+
+You can find the source code for the data loader in the https://github.com/sinar/popit_relationship[sinar/popit_relationship^] GitHub repository.
+
+[[neo4j-jdbc-driver-3.3.1]]
+=== Neo4j JDBC Driver 3.3.1 Release Is Here
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180613141509/neo4j-jdbc-driver-matlab-example-1024x716.png" width="200px"  />
+</div>
+++++
+
+This week our friends at LARUS https://neo4j.com/blog/neo4j-jdbc-driver-3-3-1-release/[released version 3.3.1 of the Neo4j-JDBC driver^]. 
+
+The release has been upgraded to work with recent Neo4j 3.3.x versions and Bolt driver 1.4.6. Work is in progress on Neo4j 3.4.x and drivers 1.6.x. 
+
+There are also other improvements including support for in-memory databases, a debug feature to inspect how the driver works when used by third-party tools, and support for TrustStrategy. 
+
+If you want to use the Neo4j-JDBC driver in your application, you can depend on `org.neo4j:neo4j-jdcb:3.3.1` in your build setup or grab the https://github.com/neo4j-contrib/neo4j-jdbc/releases/tag/3.3.1[latest release from GitHub^].
+
+
+
+////
+
+
+
+[[graphaware-graphql-neo4j-python]]
+=== GraphAware turn 5, GraphQL and Neo4j with Python, Installing plugins
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://pbs.twimg.com/media/DelibaAWsAACEXY.jpg" alt="GraphAware are 5" width="150px" />
+</div>
+++++
+
+* thigns
+
+[[json-apis-apoc]]
+=== Importing the ZenDesk and Strava JSON APIs into Neo4j using APOC
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180608025602/strava-zendesk.png" width="200px"  />
+</div>
+++++
+
+something
+////
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| June 18th 2018 | https://www.meetup.com/GraphDB-Sydney/events/jqvlhpyxjbxb/[NLP(Natural Language Processing) and Graphs^] | https://www.meetup.com/GraphDB-Sydney/[GraphDB Sydney^] | https://twitter.com/justosophy?lang=en[Justin Anderson^] 
+
+| June 21st 2018 | https://www.meetup.com/Copenhagen-Graph-Databases-Meetup/events/251699293/[Graph Technology: Algorithms, Analytics & Visualization^] | https://www.meetup.com/Copenhagen-Graph-Databases-Meetup/[Copenhagen Graph Databases Meetup^] | https://twitter.com/mesirii/[Michael Hunger^] 
+
+| June 21st 2018 | https://www.meetup.com/graphdb-london/events/251240854/[Workshop Graph Data Modelling with Neo4j^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/@markhneedham[Mark Needham^]
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/eddywongch[Eddy Wong^]:
+
+tweet::1005479828982845442[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

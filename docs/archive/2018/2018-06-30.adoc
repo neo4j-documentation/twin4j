@@ -1,0 +1,200 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 23 June 2018, including the World Cup Graph and GraphQL API and the Intro to Graph Databases YouTube series is back!
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – abc
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have a procedures library for running linear regression on Neo4j, the Yen's k-shortest path algorithm, using GraphQL for database administration, exploring the World Cup with Neo4j Bloom, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Alicia Powers
+
+This week’s featured community member is https://twitter.com/apowers411[Alicia Powers^], Founder at Heart Metrics, Inc. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180628151321/this-week-in-neo4j-30-june-2018.jpg[name="Alicia Powers"]
+
+Alicia has been part of the Neo4j community for several years and presented https://www.transparency-one.com/beyonce-panama-papers-transparency-one-common/[a popular talk^] at GraphConnect EU 2016 titled https://www.youtube.com/watch?v=QAjkTkmM4gU[Who Cares What Beyonce Ate for Lunch?^].
+
+
+Alicia was also https://neo4j.com/blog/visualizing-healthy-lifestyle-alicia-powers-svp-nycedc/[interviewed about her^] work and opinions on the future of graph databases at GraphConnect 2017 in New York.
+
+On behalf of the Neo4j community, thanks for all your work Alicia!
+
+[[linear]]
+=== Graphs and ML: Linear Regression?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629044707/0_WYvGysi2pVZQfLXn.png" width="200px"  />
+</div>
+++++
+
+In https://medium.com/neo4j/graphs-and-linear-regression-734d1446e9cd[Graphs and ML: Linear Regression?^] my colleague Lauren Shin describes a set of user-defined procedures that she implemented to create a linear regression model in Neo4j. 
+
+Lauren goes on to demonstrate the  use of linear regression from the Neo4j browser to suggest prices for short term rentals in Austin, Texas. 
+
+You can https://github.com/neo4j-graph-analytics/ml-models/releases/tag/1.0.0[download the ml-models library^] containing these procedures from the GitHub releases page.
+
+[[world-cup-cypher-graphql-bloom]]
+=== Analysing the World Cup with Cypher, GraphQL, and Neo4j Bloom
+
+In this week's online meetup Jesus Barrasa and I showed how to query the World Cup 2018 Graph with 3 different tools: Cypher, GraphQL, and Neo4j Bloom. 
+
+youtube::UkeVuoVZCGo[type={type}]
+
+It was quite a fun experience trying to work out which tool worked best for which type of queries. 
+If you want to learn more about the World Cup Graph you can https://medium.com/neo4j/world-cup-2018-graph-19fbac0a75db[read the blog post^], all the code is in the https://github.com/mneedham/neo4j-worldcup/[neo4j-world-cup^] repository, and the https://www.slideshare.net/neo4j/the-world-cup-graph-2018[slides from the talk^] are also available. 
+
+[[yens]]
+=== Graph Algorithms: Yen's k-shortest path
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629044315/shortest_path.png" width="200px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest post he shows how to https://tbgraph.wordpress.com/2018/06/28/finding-alternative-routes-in-california-road-network-with-neo4j/[find alternative routes in the California road network using Neo4j Graph Algorithms^]. 
+
+He starts by showing how to find the shortest path between two places using Dijkstra algorithm's and then goes on to demonstrate Yen’s k-shortest paths algorithm which allows us to get the 2nd shortest path, 3rd shortest path, and so on. 
+
+This algorithm is very handy in the transport domain where we might want to find alternative routes if there's a problem with the shortest one.
+
+[[kotlin-graphql-sqlserver]]
+=== Procedures in Kotlin, SQL Server, GraphQL for database admin
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629060218/1_htOb7MGk4cXDpp4md_iHSQ.png" width="120px"  />
+</div>
+++++
+
+* Emad Panah explains how it took only 20 minutes to  https://medium.com/@emad.panah/create-neo4j-procedure-with-kotlin-in-20-minutes-75fa374c46e4[create a Neo4j Procedure that converts a string to SHA256 Hash^] using the Kotlin programming language.
+
+* Michael wrote a post explaining how to https://medium.com/@mesirii/using-a-graphql-api-for-database-administration-1a5039b43c8f[use a GraphQL API for database administration^]. In the post he explains how to expose all available procedures either as GraphQL queries or mutations. 
+
+
+* Sinister China Penguin wanted to connect SQL Server and Neo4j and https://medium.com/neo4j/building-a-graph-with-neo4j-http-api-powershell-464c75568312[explains how to do this^] using a combination of the Neo4j HTTP API & PowerShell.
+
+* Neo4j 3.4.1 community is now available for you to install from the https://aws.amazon.com/marketplace/pp/B071P26C9D[AWS marketplace^].
+
+* We also had an online meetup last week but it just missed the cut for last week's TWIN4j.
+Our friends at Menome Technologies explained how they've been https://www.youtube.com/watch?v=oanP2HYLIbQ&index=2&list=PL9Hl4pk2FsvVnz4oi0F8UXiD3nMNqsRO2[combining the gensim text analytics library with Neo4j to make sense of text data^].
+
+[[neo4j-apoc-series]]
+=== YouTube: Neo4j APOC Series and Intro to Graph Databases
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629061434/apoc-neo4j-user-defined-procedures1.gif" width="120px"  />
+</div>
+++++
+
+https://twitter.com/mesirii[Michael^] started the https://www.youtube.com/watch?v=V1DTBjetIfk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Neo4j APOC HowTo Series^] of YouTube videos designed to help get you quickly up to speed with the https://neo4j-contrib.github.io/neo4j-apoc-procedures/[indispensible procedures library^].
+
+So far 2 videos have been released -  https://www.youtube.com/watch?v=V1DTBjetIfk&index=1&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[User Defined Procedures & Functions and APOC Introduction^] and https://www.youtube.com/watch?v=b1Yr2nHNS4M&index=2&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Installation Desktop & Sandbox Neo4j^] - and there are many more to come! 
+
+https://twitter.com/ryguyrg?lang=en[Ryan^] continues the popular Intro to Graph Databases YouTube series with a video going into https://www.youtube.com/watch?v=Kv_HP6C2qes&list=PL9Hl4pk2FsvWM9GWaguRhlCQ-pa-ERd4U&index=6[more detail about the Cypher query language^].
+
+Don't forget to https://www.youtube.com/neo4j?sub_confirmation=1^[subscribe to the Neo4j YouTube channel^] to be notified when new videos are released in both series.
+
+
+
+
+[[knowledge-base]]
+=== Preserving the Neo4j pagecache across database restarts
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+While browsing the https://neo4j.com/developer/kb/[Neo4j Knowledge base^] I came across an entry explaining a 3.4 feature that I didn't even know about!
+
+3.4 has a new active page cache warmup feature in the Enterprise Edition. The memory contents of the Neo4j page cache are periodically profiled, and these profiles are used to quickly reheat the cache on startup. This decreases the time-to-performance for restarts or crashes.
+
+Our customer success team have https://neo4j.com/developer/kb/preserving-the-neo4j-pagecache-across-database-restarts/[written a knowledge base article^] explaining this feature in more detail.
+
+////
+[[projects-knowledge-mortality-rdf-graph]]
+=== Projects to play with: Knowledge Graph, Mortality Explorer, RDF -> Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070618/Octocat.png" width="120px"  />
+</div>
+++++
+
+On my GitHub travels I came across a few interesting projects that you can take a look at if you get some time over the weekend.
+
+* <text>
+////
+
+////
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| June 27th 2018 | https://www.meetup.com/graphdb-london/events/250982532/[Driving Insights Out of Connected Data to Transform Project Management^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/markhneedham?lang=en[Mark Needham^] 
+
+|=========================================================
+////
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/chiragmaliwal3[Chirag Maliwal^]:
+
+tweet::1010905073432477697[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+Save for next week's featured community member
+
+[[new-datatypes-open-beer-database]]
+=== On the podcast: Estelle Joubert
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070021/Screen-Shot-2018-06-11-at-17.51.22.png" width="150px"  />
+</div>
+++++
+
+You can listen to the interview below or read the transcript[http://blog.bruggen.com/2018/06/podcast-interview-with-estelle-joubert.html^]
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/461891370&amp;color=44c13e"></iframe>
+++++
+
+////

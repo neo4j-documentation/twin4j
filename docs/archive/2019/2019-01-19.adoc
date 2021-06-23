@@ -1,0 +1,155 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to the 3rd edition of This Week in Neo4j for 2019. 
+
+We've got a variety of different things for you this week. Christophe Willemsen has written an excellent deep dive into the Full-Text Search feature released in Neo4j 3.5, Dr Jim Webber explains how Neo4j can be used for large scale systems using less servers, Emil is interviewed on Azeem Azhar's podcast, and of course we have the next post in Jennifer Reif's Marvel Series!
+
+[[featured-community-member]]
+=== Featured Community Member: Michael Simons
+
+This week's featured community member is my colleague https://twitter.com/rotnroll666[Michael Simons^] - Java-Champion, JUG-Lead, conference speaker and book author. Besides his two sons and wife, coding, writing, biking, running and taking pictures are playing a big role in his life. You can more about him on http://michael-simons.eu/[his site^].
+
+Michael joined Neo4j as part of the Spring Data team in Summer 2018, and is working with Gerrit Meier to enhance the capabilities of Neo4j-OGM and Spring Data Neo4j which are used by a lot of our users and customers.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190118004909/this-week-in-neo4j-19-january-2019.jpg[name="Michael Simons"]
+
+But it doesn't stop there. After joining Michael immediately started building examples, writing articles, giving talks at conferences and user groups and contributing to other open source projects.
+
+He recently submitted Neo4j support to TestContainers and wrote about it https://medium.com/neo4j/testing-your-neo4j-based-java-application-34bef487cc3c[here^].
+This week Michael gave an JUG talk in Utrecht where he met co-biker Rik van Bruggen, who http://blog.bruggen.com/2018/10/podcast-interview-with-michael-simons.html[interviewed Michael^] on the Graphistania podcast in October.
+
+On behalf of the Neo4j community, thanks for all your work Michael!
+
+link:https://twitter.com/rotnroll666[[Thank Michael for his work, role="medium button"]
+
+[[features-1]]
+=== Topic Extraction with MeaningCloud and Graphileon
+
+This week in the Neo4j Online Meetup, https://twitter.com/tomzeppenfeldt?lang=en[Tom Zeppenfeldt^] gave us a fascinating deep dive into some of the capabilities of Graphileon - a tool that can be used to rapidly design and deploy graph-based applications.
+
+youtube::O8waU4Vhcrs[type={type}]
+
+Tom showed how to query data from the MeaningCloud text analytics API, and build a graph from the results using Graphileon. If you want to quickly build your first graph app without having to worry about the glue code, this presentation is a pretty good place to start.
+
+[[features-2]]
+=== Deep Dive into Neo4j 3.5 Full Text Search 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190117221501/image2.jpg" width="200px"  />
+</div>
+++++
+
+One of the major features released in Neo4j 3.5 was support for Full Text Search, and in the months since then Christophe Willemsen has been taking it through its paces. 
+
+This week he wrote a blog post explaining how Apache Lucene, the underlying search, works under the covers. With the help of a worked example Christophe explains the data structures used by Lucene, shows how to write fuzzy and wildcard queries, and explains the scores returned by the search engine.
+
+link:https://r.neo4j.com/2FLxbnJ[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Neo4j for Very Large Scale Systems
+
+Our Chief Scientist, https://twitter.com/jimwebber[Dr Jim Webber^], has been in the video studio this week, explaining how Neo4j can be used for very large scale systems.
+
+youtube::BfPDZf2wmqg[type={type}]
+
+Using the example of a system that https://www.youtube.com/watch?v=bPM9hVorPSM[David Fox and his team at Adobe built^], Jim describes how data problems that require 10s of MongoDB or Cassandra instances can be solved with a small Neo4j cluster.
+
+[[features-4]]
+=== Importing RDFS/OWL ontologies into Neo4j
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190117145702/0_elzMJEAxjQTpv0Ku.png" width="150px"  />
+</div>
+++++
+
+Lju Lazarevic is frequently asked how to import RDFS/OWL ontologies into Neo4j, and this week has written a blog post showing how to import the W3C Organizational Ontology using the neosematics tools.
+
+After importing the data, Lju explains how the RDF and Label Property Graph models differ, and shows how to make user-friendly views for exploration of the data using the APOC library, 
+
+link:https://r.neo4j.com/2FLxe2T[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Making Sense of the Data-Rich World with Graph Databases: Emil Eifrem and Azeem Azhar in Conversation
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190118003500/512.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/azeem[Azeem Azhar^] interviewed https://twitter.com/emileifrem[Emil^] on the latest episode of the Exponential View podcast. 
+
+They discuss the origin of graphs and graph databases, the ICIJ's Panama Papers investigation, and the types of problems that customers are solving with graphs.	
+
+link:https://r.neo4j.com/2FKu2Vb[Read the blog post, role="medium button"]
+
+[[features-6]]
+=== Create a Data Marvel: Developing More Entities
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190117143058/1_z40bC_gHxouKGxu2pPe1mA.jpeg" width="150px"  />
+</div>
+++++
+
+In the 6th post in https://twitter.com/jmhreif[Jennifer Reif^]'s series of posts showing how to build a full stack application with Spring and Neo4j, Jennifer create classes for another 4 areas of the graph data model - creator, event, series, and story.
+
+In a code heavy post, Jennifer shows how to remove the majority of boilerplate code using Spring Data Neo4j and Lombok annotations. 
+
+link:https://r.neo4j.com/2FKu0N3[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/joedepeau[Joe Depeau^]:
+
+tweet::1084779085077843974[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+* https://medium.com/neo4j/importing-rdfs-owl-ontologies-into-neo4j-23e4e28ebbad 
+
+[[articles-1]]
+=== Graphing yourself, New Scala Driver, New Release on Google Cloud Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111074314/1_H4YN_BOKECgFDZ8icF7tMg.png" width="150px"  />
+</div>
+++++
+
+* tada  - https://tech.findmypast.com/graphical-family-tree/ 
+
+Graphing the Poets 
+https://medium.com/@kirbyurner/graphing-the-poets-b600c86d6b9 
+
+////

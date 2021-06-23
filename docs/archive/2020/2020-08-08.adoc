@@ -1,0 +1,126 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Michael Hunger explores Spring Data Neo4j (SDN) 6.
+
+Lju Lazarevic launched the Summer of Nodes 2020, Michael Graham created a GraphQL API on top of Covid Graph, and a project that integrates two of the most prominent open source drug databases was published.
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Heinrich Klobuczek
+
+This week's featured community member is Heinrich Klobuczek, Tech Lead for McKinsey & Company.
+
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200807013614/this-week-in-neo4j-8-august-2020.jpg[name="Heinrich Klobuczek"]
+
+Heinrich is a long time Neo4j community contributor. Originally from Poland, he studied in Germany and now lives in Nevada.
+
+He has invested a lot of time and effort into the Neo4j Ruby driver. After Brian Underwood handed over the maintenance of the https://neo4jrb.io[neo4j.rb gems] to him, Heinrich has continuously improved them. Heinrich added support for bolt both via jRuby (java-driver) and the sealion c-connector.
+
+He is active in our driver community group and always reminds us of the importance of providing good documentation and base libraries for the underlying bolt protocols.
+
+On behalf of the Neo4j community, thanks for all your work Heinrich!
+
+https://www.linkedin.com/in/heinrich-klobuczek-39ba71/[Connect with Heinrich on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Spring Data Neo4j 6 Experiments
+
+This week's video is an exploration of Spring Data Neo4j (SDN) 6 by Michael Hunger.
+
+youtube::w0XZHOavqOM[type={type}]
+
+This version of SDN will be part of the Spring Data Ockham release, which had its 3rd milestone last week. In the video Michael shows how to use SDN 6 to build a Spring Boot backed movie application.
+
+[[features-2]]
+=== Summer of Nodes: Week 1 — The Barbecue
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200807014151/1_AvvCCoej5KCH6874O2XaAA.png" width="150px"  />
+</div>
+++++
+
+Lju Lazarevic launched the Summer of Nodes 2020, a series of graph challenges that will run for the month of August.
+
+Challenge #1 is The Barbecue, where participants need to create a graph model covering the various aspects of barbecues around the world. There's also a socially distanced variant of the challenge for experienced graph modellers.
+
+https://medium.com/neo4j/summer-of-nodes-week-1-the-barbecue-ead98d441a91[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Covid Graph GraphQL API
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200807011352/covid-graph.png" width="120px"  />
+</div>
+++++
+
+Michael Graham has created a GraphQL API on top of https://covidgraph.org/[Covid Graph^], a set of tools that helps researchers quickly and efficiently find their way through COVID-19 datasets.
+
+You can try out the API or check out the code on the https://github.com/Covid19-GraphQL/covid-graph-graphql[covid-graph-graphql^] GitHub repository.
+
+https://covid-graph-graphql.now.sh/[Try out the API, role="medium button"]
+
+
+[[features-4]]
+=== CompoundDB4j: Deriving an extensible and integrated knowledge of heterogeneous chemical databases
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200807023358/schema.png" width="150px"  />
+</div>
+++++
+
+Vidhya Murali, Cassandra Königs, Sarvani Deekshitula, Saranya Nukala, Maddala Divya, and Santhi  Prashanth Athri published CompoundDB4j, a study in which they used Neo4j to integrate two of the most prominent open source drug databases, DrugBank and ChEMBL.
+
+The resulting graph has led to identification of relationships between drugs and other related features that are otherwise spread across two different resources. 
+
+The code for the database is available in the https://github.com/ambf0632/CompoundDB4j[CompoundDB4j GitHub repository^].
+
+https://onlinelibrary.wiley.com/doi/epdf/10.1002/minf.202000013[Read the paper, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/udaykorlimarla[Uday Korlimarla^]:
+
+tweet::1288797725211811841[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+
+
+
+
+////

@@ -1,0 +1,108 @@
+﻿:linkattrs:
+:type: "web"
+ 
+ 
+////
+[Keywords/Tags:]
+<insert-tags-here>
+ 
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 08 July 2017, including projects around <insert-topics-here>
+ 
+ 
+[Primary Image File Name:]
+https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170630083143/mark-featured.png
+ 
+ 
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 08 July 2017
+ 
+ 
+[Headline:]
+This Week in Neo4j – 08 July 2017
+ 
+ 
+[Body copy:]
+////
+ 
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+  
+=== Featured Community Member: Cristina Escalante
+ 
+Every since http://twitter.com/whatsocks[Cristina^] met Max de Marzi in Chicago many years ago she has been the most prolific content creator and editor in or community. Cristina lives and works at her consultancy https://tsl.io/[The SilverLogic^] in Boca Raton, FL.
+ 
+[role="image-heading"]
+image::http://ur/file.png["Cristina Escalante - This Week&#039;s Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+  
+Christina authored a several http://portal.graphgist.org/people/whatsocks[GraphGists^], https://neo4j.com/blog/contributor/cristina-escalante/[Blog Posts^] and worked on the https://github.com/neo4j-examples/neo4j-movies-template[React Movie Template application^]. She also worked on creating and improving many of http://neo4j.com/developer/get-started[the developer pages^], http://neo4j.com/graphacademy[training materials^] and featured GraphGists. These days she helps us improve the GraphGist portal. 
+ 
+=== Releases
+ 
+This week, https://neo4j.com/release-notes/neo4j-3-2-2/[Neo4j 3.2.2 has been released^], containing quite a number of fixes and improvements, in the Browser, Cypher and the import tool.
+
+The drivers team https://www.npmjs.com/package/neo4j-driver[released version 1.4.0^] of the JavaScript bolt driver. 
+
+Nigel Small the longtime maintainer of py2neo posted a https://twitter.com/technige/status/883248540050489344[longer Twitter thread^] on the future of the library that you might be interested in if you used py2neo in the past.
+ 
+=== Blogs & Publications
+ 
+The folks fromJPCert show how http://blog.jpcert.or.jp/2017/03/malware-clustering-using-impfuzzy-and-network-analysis---impfuzzy-for-neo4j-.html[their impfuzzy tool^] can be used to http://blog.jpcert.or.jp/2017/07/clustering-malw-5a14.html[cluster and visualize malware variants^] based on similarity metrics.
+
+And Markus Harrer shares his second post on https://www.feststelltaste.de/mining-performance-hotspots-with-jprofiler-jqassistant-neo4j-and-pandas-part-2-root-cause-analysis/[Mining performance hotspots with JProfiler, jQAssistant, Neo4j and Pandas], this time performing a root cause analysis. 
+=== Online Meetup: The whole Blockchain in Neo4j
+
+This week we had Greg Walker explain the workings of blockchains like Bitcoin to us and how to model them as a graph. He actually imported the whole Blockchain into Neo4j creating a huge database, which is powering his learning site http://learnmeabitcoin.com
+
+I'm very much looking forward to be able to query and analyze this data in the future, this is just such a great trove of information and insight.
+
+You can find Gregs import code in https://github.com/in3rsha/bitcoin-to-neo4j[this repository^] and watch the video below for all the details.
+ 
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NSaYAPiJc-M" frameborder="0" allowfullscreen></iframe>
+++++
+ 
+=== On GitHub: new shell, Cypher DSLs
+ 
+Nigel small is https://github.com/technige/n4[working on a new python based neo4j shell, called n4^] which takes inspiration from Nicole White's cycli.
+
+Iian Neill created https://github.com/argimenes/Neo4jClient-Vector[Neo4jClient-Vector^] an extension of Neo4jClient with a set of extension methods for generating Cypher patterns. It includes helper methods for more concise queries and a generic pagination method.
+
+Similarly, Mark Jensen, started the https://github.com/majensen/cypher-abstract[Neo4j::Cypher::Abstract^] project a Cypher DSL for Perl.
+=== Videos
+ 
+Vince Bickers from GraphAware presented the quite powerful DataBridge ETL tool for Neo4j in a webinar last week.
+ 
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LzkLF3Fsy0E" frameborder="0" allowfullscreen></iframe>
+++++
+ 
+=== Next Week
+ 
+What’s happening next week in the world of graph databases?
+ 
+A really hot topic - natural language understanding (Graph NLU) with Python and Neo4j will be presented by Dan Kondratyuk at https://www.meetup.com/Neo4j-Online-Meetup/events/240545585/[next week's Online Meetup^]. Don will talk about how he processed natural language facts and stored them in Neo4j to answer natural language questions about those facts using the Facebook bAbI Tasks corpus for training and evaluating the system.
+
+
+Jonathan Freeman, longtime Neo4j community member and educator will present on a really cool topic in Chicagos Meetup Group on July 13. He'll demonstrate how to use Neo4j to make sense of the 3M anonymized orders that were put out by InstaCart for data analysis. 
+
+=== Tweet of the Week
+ 
+Welcome to the cute little node, congratulations http://twitter.com/ikwattro[Chris & family^].
+
+`+(babies)-[:ARE]->(everywhere)+`
+ 
+// tweet::882682499213799424[type={type}]
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Congrats to Neo4j Ambassador and friend <a href="https://twitter.com/ikwattro">@ikwattro</a> from <a href="https://twitter.com/graph_aware">@graph_aware</a> on his new node! So much cuteness!!! <a href="https://t.co/I2SpBU62iY">pic.twitter.com/I2SpBU62iY</a></p>&mdash; Neo4j (@neo4j) <a href="https://twitter.com/neo4j/status/882682499213799424">July 5, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+ 
+Don't forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+ 
+Cheers, Michael
+
+
+

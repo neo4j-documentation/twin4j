@@ -1,0 +1,166 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - NODES Preview: Data Science & Graph Algorithms, Graphing Brexit, Building a Chat Bot
+
+[Body copy:]
+////
+
+
+This week we have the video from the NODES 2019 keynote and Jennifer Reif explores Cypher's eager operator.
+
+Max De Marzi builds out the front end on our chat bot, we have releases of Neo4j OGM and jQAssistant, and we learn all about the Approximate Nearest Neighbors graph algorithm.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Surya Gupta
+
+This week's featured Neo4j community member is Surya Gupta, a Postdoctoral Researcher in VIB-UGent Center for Medical Biotechnology at Ghent University.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191009134917/this-week-in-neo4j-12-october-2019.jpg[name="Surya Gupta"]
+
+Surya works on protein-association networks and has used neo4j for some of her research. She’s been actively involved in the Neo4j community for quite some time and having her as a Featured Member is long overdue! 
+
+She initially connected with us via her Professor, Dr. Lennart Martens, and in 2017, alongside Neo4j’s https://twitter.com/mesirii[Michael Hunger^] and https://twitter.com/aethelraed?lang=en[Petra Selmer^], presented at a https://neo4j.com/blog/neo4j-life-sciences-healthcare-workshop-berlin/[Neo4j Life Sciences Research & Application Workshop^] in Berlin, on Tabloid Proteome, a protein association database she helped build.
+
+In 2018, she got involved as an organizer and a speaker at an event in Brussels, Belgium, which was one of our 23 community events in Europe around https://neo4j.com/blog/thank-you-neo4j-community-graphtour/[GraphTour EU^].  So, of course, when we announced the https://neo4j.com/speaker-program/[Neo4j Speaker Program^], Surya jumped at the opportunity and ended up taking an all-expenses paid trip to speak at https://www.datascience.salon/miami-2019-bios-and-abstracts/[DataSalon Conference^] in Miami.  
+
+Surya, it makes us so proud to have us part of our community! Thanks for letting us be a part of your life and thanks for being part of ours!
+
+https://www.linkedin.com/in/surya-gupta-50969827/?originalSubdomain=be[Connect with Surya on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Keynote: CEO Emil Eifrem at NODES 2019
+
+On Thursday Emil Eifrem and friends presented the keynote at the https://neo4j.com/online-summit/[NODES 2019^] conference.
+
+youtube::AfhJcyys108[type={type}]
+
+In the presentation they previewed the upcoming Neo4j 4.0 release, highlighted the latest Neo4j Labs projects, announced the winners of the GraphHack competition, and more. 
+
+[[features-2]]
+=== Cypher Sleuthing: the eager operator
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191009122250/1_WPn_-Hyd-yidFHfaXVfPjA.jpeg" width="150px"  />
+</div>
+++++
+
+Jennifer Reif spent some time this week eagerly exploring https://neo4j.com/docs/cypher-manual/current/execution-plans/operators/#query-plan-eager[Cypher's eager operator^], the scourge of many graphistas lives.
+
+Jennifer explains why we should be concerned when we see this operator in our query plans, and with the help of worked examples, shows us how to write queries that avoid this dreaded operator.
+
+
+
+
+
+
+
+https://medium.com/neo4j/cypher-sleuthing-the-eager-operator-84a64d91a452/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building a Chat Bot in Neo4j: Part 3
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191009083401/chatbot-3.jpg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/maxdemarzi[Max De Marzi^] continues his series of blog posts showing how to build a chat bot using Neo4j.
+
+In part 3, we build a front end application that handles user registration and chat requests, as well as hydrating user accounts in a background job via the FullContact API.
+
+https://maxdemarzi.com/2019/09/24/building-a-chat-bot-in-neo4j-part-3/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Releases: Neo4j OGM 3.2, jqAssistant
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191009085529/noun_Download_711090.png" width="150px"  />
+</div>
+++++
+
+This week we had releases for two prominent projects in the Neo4j ecosystem.
+
+Michael Simons https://medium.com/neo4j/neo4j-ogm-3-2-released-cdbaf1be1400[released version 3.2 of Neo4j OGM^], the Java based object mapping library for Neo4j. This release acts as the baseline of Spring Data Neo4j 5.2, and includes improved Kotlin support, support for all native Neo4j 3.5 types, and more.
+
+
+jQAssistant is a QA tool, which allows the definition and validation of project specific rules on a structural level. This week https://jqassistant.org/jqassistant-1-7-0-released/[version 1.7.0 was released^]. This release makes it possible to suppress violations via Java annotations, adds first class support for the Maven scanner, and adds a new shiny dashboard.
+
+
+[[features-5]]
+=== Building a similarity graph with Neo4j’s Approximate Nearest Neighbors Algorithm
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191009082848/1_SG-PohsurrOVxaOd04kgSQ.png" width="100px"  />
+</div>
+++++
+
+In the latest release of the Neo4j Graph Algorithms library, we released the Approximate Nearest Neighbors algorithm.
+
+This algorithm leverages similarity algorithms to efficiently find more alike items. In the blog post we look at our motivation for creating this algorithm, where it can be used, and show how to use it with the help of a worked example.
+
+https://medium.com/neo4j/building-a-similarity-graph-with-neo4js-approximate-nearest-neighbors-algorithm-1398583b280b[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ThatRobHuman[Rob Mayer^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1181611601197228032[type={type}]
+
+
+////
+
+* I wrote a blog post covering some of the common questions that https://neo4j.com/developer/dates-datetimes-durations/
+
+* Gunnar Morling 🇪🇺 @gunnarmorling
+If you've missed it so far, check out this superb intro () to #Quarkus at @heisedcwritten by @rotnroll666; not only describing the usage, but also touching on custom Quarkus extensions using the example of Michael's extension for #Neo4j .
+https://www.heise.de/developer/artikel/Quarkus-Der-Blick-ueber-den-Tellerrand-4532556.html?seite=all
+
+* https://dzone.com/articles/analyzing-us-lobbying-data-in-neo4j
+
+* https://dzone.com/articles/lobbying-for-fun-and-pleasure 
+
+
+I'm proud to announce that I've achieved my Reverse Engineering Malware (GREM) Gold Certification. "Leveraging the PE Rich Header for Static Malware Detection and Linking" is now published in the SANS Reading Room!
+https://www.sans.org/reading-room/whitepapers/reverseengineeringmalware/leveraging-pe-rich-header-static-malware-detection-linking-39045 
+
+https://towardsdatascience.com/how-i-learned-to-stop-worrying-and-love-the-graph-database-ef8af4ac7a8
+
+https://www.confluent.io/kafka-summit-san-francisco-2019/extending-the-stream-table-duality-into-a-trinity-with-graphs
+
+
+
+https://medium.com/@nsmith_piano/the-perfect-dorm-room-assignment-exploring-the-bipartite-matching-problem-with-neo4j-c59ade420acb
+
+https://ubiquis.co.uk/uncategorized/graph-databases-loading-data-with-neo4j/
+
+////

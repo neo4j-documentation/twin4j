@@ -1,0 +1,181 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+The big graph news of this week is the release of version 1.5 of the Graph Data Science Library. Alicia Frame and Amy Hodler give us the lowdown, including the first supervised machine learning algorithms in the library.
+
+In our video this week, Florent Biville shows us how to build our first Spring Data Neo4j 6 application.
+
+Jesús Barrasa creates a graph of English WordNet, Jennifer Reif shows how to use Neoj4 with GraalVM, and Michael Hermans demos  Csharp Superstack. 
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Gabriel Tard
+
+This week's featured community member is Gabriel Tard.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210212035934/this-week-in-neo4j-13-february-2021.jpg[name="Gabriel Tard"]
+
+Gabriel Tard is a new member of the Neo4j community but has been using Neo4j for the last two years to manage real estate data.
+
+He is a prolific answerer of questions on the https://community.neo4j.com/[Neo4j community site ^], helping other users with questions about the Neo4j Desktop, Cypher querying, and data import. Gabriel has also provided lots of feedback on https://neo4j.com/graphacademy/[Neo4j Graph Academy's online courses^], helping improve those courses for future students.
+
+Gabriel is currently looking for a role as a database admin/manager or trainer, so if you have a need for his Neo4j skills, https://community.neo4j.com/t/im-looking-for-a-neo4j-consultant-or-employee-position/33246[check out the Neo4j community thread^].
+
+https://community.neo4j.com/u/tard.gabriel/summary[Find Gabriel on the Neo4j Community, role="medium button"]
+
+[[features-1]]
+=== Starting an application with Spring Data Neo4j 6 
+
+Our video this week is from Florent Biville's live stream.
+
+youtube::De2ceW9l7kQ[type={type}]
+
+This week Florent shows us how to build a Spring Data Neo4j 6 application on top of a graph of his Neo4j driver ecosystem metadata. Spring Data Neo4j 6 is the latest release of the popular Spring integration and was released in November 2020.
+
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+////
+
+[[features-2]]
+=== QuickGraph #16 The English WordNet in Neo4j (part 1)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210212005248/image-18-4.png" width="300px"  />
+</div>
+++++
+
+Jesús Barrasa has been writing so many QuickGraph posts recently that it's hard to keep up. This week we'll focus on #16, in which he creates a graph of WordNet, a large lexical database of English words.
+
+After importing the data using https://neo4j.com/labs/neosemantics/4.1/[n10s^], Jesus shows how to perform refactorings to make the resulting graph more suitable for the property graph model.
+
+
+https://jbarrasa.com/2021/01/29/quickgraph16-the-english-wordnet-in-neo4j-part-1/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Supervised Machine Learning Workflows in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210210062548/GDS-1-5-supervised-machine-learning.png" width="150px"  />
+</div>
+++++
+
+Alicia Frame and Amy Hodler announced the release of version 1.5 of the Graph Data Science Library. 
+
+This version introduces new algorithms for node classification and link prediction, which are the first supervised machine learning algorithms added to the library. The HITS centrality and Speaker Listener Label Propagation overlapping community detection algorithms were also added.
+
+https://neo4j.com/blog/new-supervised-machine-learning-workflows-in-neo4j/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Observable Graphs, py2neo Bulk Data API, HITS algorithm
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* In Andreas Kollegger's https://medium.com/neo4j/observable-graphs-ff959f10c4a2[latest blog post^], he shows how to share graphs created with Gram on ObservableHQ. He also introduces d3-gram, which render graphs to SVG anywhere.
+
+* Martin Preusse and Nigel Small have started moving https://github.com/kaiserpreusse/graphio[graphio^] functions into the https://py2neo.org/2021.0/bulk/index.html[new py2neo bulk data API^].
+
+* I https://markhneedham.com/blog/2021/02/03/neo4j-gdsl-hits-algorithm/[wrote a blog post about the HITS centrality algorithm^] that was introduced in version 1.5.0 of the Graph Data Science Library.
+
+* In NODES 2020 Extended, Michael Hermans shows us https://www.youtube.com/watch?t=90&v=1B1n38WmBm8&feature=youtu.be[Csharp Superstack^], a tool he built to create highly scalable Neo4j web apps without Javascript. 
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Language Buffet — Using Neo4j with GraalVM
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210212005423/1_u4pZ_GwbjKCJzlbn3FHOhg.png" width=200px"  />
+</div>
+++++
+
+Jennifer Reif has started working on a new https://neo4j.com/labs/[Neo4j Labs^] project, where she is integrating Neo4j with GraalVM. GraalVM is a Java JVM and SDK that supports running additional programming languages. 
+
+In the blog post, Jennifer takes us through the integration strategies and then shows how to query Neo4j from Python, R, Ruby, and JavaScript using the Neo4j Java Driver.
+
+https://medium.com/neo4j/language-buffet-using-neo4j-with-graalvm-abf824b504fd[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/nuraini[Nur Aini Rakhmawati^]:
+
+tweet::1359293415138099202[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+https://markhneedham.com/blog/2021/02/08/neo4j-gdsl-overlapping-community-detection-sllpa/ 
+
+* https://jbarrasa.com/2021/01/22/quickgraph15-analysing-the-structured-data-embedded-in-web-pages/
+
+* https://towardsdatascience.com/finding-synergies-with-network-analysis-using-neo4j-to-identify-the-best-pok%C3%A9mon-teams-4ff89e791671
+
+https://twitter.com/AJarasch/status/1359471068247900160 
+
+https://towardsdatascience.com/create-a-graph-database-in-neo4j-using-python-4172d40f89c4
+MediumMedium
+Create a graph database in Neo4j using Python
+
+We've just released a new comprehensive post on how #Graphlytic visualization running on #Neo4j can support IT operations documentation. You can read, add your comments or questions here:
+https://graphlytic.biz/blog/it-infrastructure-visualization
+
+Jesús Barrasa @BarrasaDV
+Just published some initial graph analysis on the English #Wordnet
+Check out QuickGraph#17 and you'll learn among other things that there are 28 words to describe "the fleshy part of the human body that you sit on"
+#Neo4j
+https://jbarrasa.com/2021/02/05/quickgraph17-the-english-wordnet-in-neo4j-part-2/
+
+////

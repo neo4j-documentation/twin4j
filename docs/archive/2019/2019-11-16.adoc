@@ -1,0 +1,191 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - New Book: Fullstack GraphQL Applications with GRANDstack, Leveraging Graph Algorithms In Visualizations, Marketing Activities in Neo4j
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+A few colleagues and I spent a couple of days this week at the Big Data London Conference this week. I was mostly on booth duty, but also presented a variant of Amy Hodler's fantastic https://www.youtube.com/watch?v=ocadAuzfSnE[Responsible AI^] talk.
+
+If you're interested in learning about some of the problems with existing AI systems and how to address them, this talk is well worth watching.
+
+This week's video from the NODES 2019 conference is a crash course on the APOC standard library by Michael Hunger. 
+
+Tomaz Bratanic shows us how to use full text search in Neo4j, Rik launches version 2.0 of the Graphistania podcast, and Nathan Smith explores constrained triad dynamics.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Dr. David Bader
+
+Our featured community member this week is Dr. David Bader, Distinguished Professor at New Jersey Institute of Technology.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191115090314/this-week-in-neo4j-16-november-2019.jpg[name="Dr. David Bader"]
+
+
+Without doing too much ego-boosting, we can just say David is a graph-addict for a long time before it was a ‘thing’. Alongside his role as a professor, he’s a fellow of the IEEE, AAAS, and SIAM, advises the White House, and the National Strategic Computing Initiative (NSCI). David has also co-authored over 250 articles in peer-reviewed journals and conferences. 
+
+While this is all incredibly impressive, what we would like to highlight is David’s strong desire to share graph thinking with the world. If you talk to David about graphs, the conversation will likely go for hours (as most of us graph-addicts relate to). 
+
+He’s a natural thought-leader, not just in the sense of a hobby, but as a career path. As a Distinguished Professor at NJIT, he inspires growing minds to explore capabilities inside connected data (shameless plug for our educators out there: check out the https://neo4j.com/graphacademy/edu-program[Neo4j Edu Program]) .  David even recently brought in https://www.linkedin.com/mynetwork/invite-sent/michael-zelenetz-37b89438[Mike Zelenetz] to present in his classroom presenting on ‘Graphing a Hospital’.  
+
+David is regularly looking for interesting presentations in his classroom, so if you’re interested, you can contact him on the https://community.neo4j.com/t/david-bader-worlds-leading-graph-expert-prof-davidbader-georgiatech/1897[Neo4j Community Site]). You can also just ping him if you’re interested in nerding about graphs for hours…just be warned, he’s really knowledgeable and passionate - you’re head may explode with what  you learn. :) 
+
+Oh, and if you ever head over to Georgia Institute of Technology, where David used to work, make sure you check out the graph-theory inspired, https://arts.gatech.edu/content/seven-bridges-konigsberg[7 Bridges of Königsberg courtyard].
+
+David, we are so grateful to have kind and giving graph-addicts like you in our community. Thank you for all that you do! 
+
+https://www.linkedin.com/in/dbader13/[Connect with David on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: APOC Pearls: The Best Tips & Tricks
+
+This week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference is Michael Hunger's talk about APOC, Neo4j's standard library.
+
+youtube::mwgt97uQK5c[type={type}]
+
+In the talk Michael describes some of his favourite features from the library including:
+
+* Batching of large scale updates 
+* Importing JSON documents 
+* Working with maps using and collections
+* Large scale refactoring
+
+[[features-2]]
+=== Exploring the full-text search index in Neo4j on a movies dataset
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191115002034/1_latzBI-KPjAbNxc4n9dkPQ.jpeg" width="200px"  />
+</div>
+++++
+
+Tomaz Bratanic has written a blog post in which he explores the full text search functionality that was added in Neo4j 3.5.
+
+Tomaz introduces the basic Lucene query language and describe how to use it in Neo4j in the context of a Kaggle movies dataset
+
+
+https://towardsdatascience.com/exploring-the-full-text-search-index-in-neo4j-on-a-movies-dataset-3cddca69db7a[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Performance Testing using JMeter, Graph Analysis of Software Traces, Causal Clustering
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191115004727/noun_performance_1108815.png" width="150px"  />
+</div>
+++++
+
+
+* https://twitter.com/catchnkn[NaveenKumar Namachivayam^] has written a blog post showing how to https://qainsights.com/performance-testing-neo4j-database-using-bolt-protocol-in-apache-jmeter/[performance test Neo4j using JMeter^].
+
+* In somewhat related news, https://twitter.com/nmervaillie[Nicolas Mervaillie^] has https://medium.com/neo4j/load-testing-neo4j-procedures-with-apache-jmeter-caff4c0d9d5a[written up his team's Global GraphHack project^], in which they extended JMeter to provide support for the Bolt protocol and the execution of Cypher queries, and hence, procedures.
+
+* The slides from Richard Müller's https://www.slideshare.net/RichardMller12/graphbased-analysis-and-visualization-of-software-traces-ssp-2019[Graph-Based Analysis and Visualization of Software Traces^] talk are now available.
+
+
+* Sandeep Bandaru explains how to https://medium.com/@sandeepbandaru/creating-a-new-database-in-a-neo4j-causal-cluster-986bb3a1fe1c[create a new Database in a Neo4j Causal Cluster^].
+
+* Jasper Blues has started working on https://github.com/liberation-data/drivine[Drivine^], a graph database client for Node.js and TypeScript. 
+
+[[features-4]]
+=== Graphistania 2.0 - Episode 1 - This Month in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191114232751/noun_podcast_2594324.png" width="100px"  />
+</div>
+++++
+
+After a 6 month break, the Graphistania podcast is back with a shiny new format, and it's a very meta one! On a monthly basis, https://twitter.com/rvanbruggen[Rik^] and Stefan Wendin will review their favourite cool and innovative things from the previous 4 or 5 episodes of TWIN4j.
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/709154758&amp;color=44c13e"></iframe>
+++++
+
+In the first episode they discuss:
+
+* Estelle Scifo's https://github.com/stellasia/neomap/[neomap^] - one of our https://neo4j.com/blog/announcing-global-graphhack-winners/[Global GraphHack winners^]
+
+* Scott Sosna's https://dzone.com/articles/analyzing-us-lobbying-data-in-neo4j[analysis of US Lobbying data^]
+
+* Max De Marzi's series of blog posts about https://maxdemarzi.com/2019/09/18/building-a-chat-bot-in-neo4j/[building chatbots^]
+
+And several other topics, but you'll have to listen to the podcast or read the transcript to find out about those ones!
+
+https://blog.bruggen.com/2019/11/graphistania-20-episode-1-this-month-in.html[Read the transcirpt, role="medium button"]
+
+
+[[features-5]]
+=== Into the multiverse: Exploring multiple scenarios for structural balance
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025014324/41VaxWW3cqL._SX347_BO1204203200_.jpg" width="150px"  />
+</div>
+++++
+
+Nathan Smith continues to use Neo4j to explore the concepts in the https://www.cs.cornell.edu/home/kleinber/networks-book/[Networks, Crowds and Markets^] book.
+
+In his latest blog post, Nathan continues exploring structural balance in graphs, this time simulating constrained triad dynamics, using ideas from the paper https://journals.aps.org/pre/abstract/10.1103/PhysRevE.72.036121[Dynamics of social balance on networks^].
+
+https://medium.com/neo4j/into-the-multiverse-exploring-multiple-scenarios-for-structural-balance-48c460462510[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/snurby7[Ryan Bruns^]:
+
+tweet::1194102575349583873[type={type}]
+
+
+////
+
+When I saw @driesdedauw write about the dataset that they use for their @colruytgroup #datascience candidates as a homework assignment, I was triggered. It was great fun playing around with it in #neo4j - and I wrote it up on https://blog.bruggen.com/2019/11/playing-with-colruyt-data-science.html
+
+@ikwattro
+Handling Synomyms with @neo4j Full Text Search https://dev.to/ikwattro/handling-synonyms-in-neo4j-full-text-search-232p
+
+https://towardsdatascience.com/build-a-react-flask-app-that-suggests-novel-novels-with-a-python-graph-9491e714bbdf 
+Build a React + Flask App that Suggests Novel Novels with a Python Graph
+
+Our team member David shows you how to create a GRANDstack app using #GraphQL, React, Apollo, and #NeoJ4
+https://buff.ly/2q1NqHD
+
+* @softvisresearch
+Software Analytics with #Jupyter notebooks using a prefilled #Neo4j database running on #MyBinder. Created with building blocks from @feststelltaste and @psychemedia.
+https://github.com/softvis-research/BeLL https://pbs.twimg.com/media/EISE7-FXUAEkaDj.jpg
+
+
+* Hi, Spring fans! In this installment @starbuxman talks to @springbootbuch author, Spring community legend and engineer working on the new, reactive @SpringData @neo4j project,  @rotnroll666
+https://soundcloud.com/a-bootiful-podcast/michael-simons-on-spring-boot-reactive-spring-data-neo4j-and-more
+
+
+https://medium.com/neo4j/gr-r-andstack-the-2nd-r-stands-for-regraph-fca60f005e56
+GR-R-ANDstack (the 2nd ‘R’ stands for ReGraph)
+Using ReGraph as part of your GRANDstack application
+
+
+////

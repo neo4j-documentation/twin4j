@@ -1,0 +1,124 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 9 December 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Mike Morley
+
+This week’s featured community member is https://twitter.com/menometech[Mike Morley^], President at Menome Technologies Inc, a Calgary based organisation whose mission is to help organisations fully realize the value of their data.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171207101955/this-week-in-neo4j-9-december-2017.jpg["Mike Morley - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Mike Morley - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Mike has been part of the Neo4j community for the last couple of years and founded Menome Technologies, a company that has Neo4j at the core of its business.
+
+Mike blogs regularly about https://www.menome.com/wp/category/graph-databases/[his experiences with graph databases^] and organises the https://www.meetup.com/Calgary-Neo4j-Graph-Meetup[Calgary Neo4j meetup^].
+
+In this week's online meetup Mike, Mark Barley, and Konrad Aust showed us https://www.menome.com/wp/home/[the tools they've been building^] to help enterprises break down data silos and capture critical knowledge.
+
+youtube::sZhQMeP6Al4[type={type}]
+
+On behalf of the Neo4j community thanks for all your work Mike!
+
+=== ICIJ release Paradise Papers version of Neo4j Database
+
+Late last week The ICIJ released an https://neo4j.com/blog/icij-releases-neo4j-desktop-download-paradise-papers[ICIJ version of Neo4j Desktop^] which includes the Paradise Papers and the other Offshore Leaks graph data.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/rb-temp-assets/paradiseanimated3.gif["Neo4j Desktop for ICIJ", 512, 300, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Neo4j Desktop for ICIJ
+</strong>
+</p>
+++++
+
+On the back of that my colleague https://twitter.com/gerritmeier[Gerrit Meier^] has created https://github.com/meistermeier/sdn-paradise[sdn-paradise^] - a Spring Data Neo4j project that allows you to analyse the https://www.theguardian.com/news/series/paradise-papers[Paradise Papers^]. 
+
+=== Graph Powered Search with Elastic and Neo4j
+
+https://twitter.com/mesirii[Michael Hunger^], https://twitter.com/ikwattro[Christophe Willemsen^], and https://twitter.com/AlessandroNegro[Alessandro Negro^] have created a https://dzone.com/refcardz/graph-powered-search-neo4j-amp-elasticsearch[DZone Graph Powered Search Refcard ^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171207065314/7378604-picture4.png["Graph-Powered Search: Neo4j & Elasticsearch", 512, 300, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Graph-Powered Search: Neo4j & Elasticsearch
+</strong>
+</p>
+++++
+
+It includes code and examples for using Elasticsearch to enable full-text search and Neo4j to power graph-aided search. 
+
+=== Fraudsters, Terrorists, Knowledge Graphs, Jim Webber Interview
+
+* https://twitter.com/geoHeil[Georg Heiler^] https://medium.com/@georg.kf.heiler/graph-171dbd5b8de8[shows how to identify hidden fraudsters and terrorists using Neo4j^] by looking at their distance from known people. Georg's code is also available as a https://github.com/geoHeil/graph-playground/blob/master/neo4j.ipynb[Jupyter notebook^].
+
+* Rolf Håvard Blindheim's https://github.com/inonit/django-chemtrails[django-chemtrails] uses Neo4j to help determine if a user has permissions to perform some action on an object, based on the relationship between entities.
+
+* Chun Li has created https://github.com/jasonlin94/FindMyCar[FindMyCar^], a Flask application on top of a used cars knowledge graph. Chun also https://www.youtube.com/watch?v=Go-xj6v12EE&feature=youtu.be[posted a video^] that explains how to use the system and shows the Cypher queries behind the application.
+
+* Silicon Angle have an interview with my colleague https://twitter.com/jimwebber[Dr Jim Webber^] and Comcast's Director of Engineering for IoT, Mark Hashimoto - https://siliconangle.com/blog/2017/12/02/graph-databases-hot-can-break-relationals-grip/[Graph databases are hot, but can they break relational’s grip?^]. They talk about the use cases for which graphs are a good fit and the performance improvements they give over relational databases for certain workloads.
+
+=== Cyber threat intelligence
+
+We've previously covered the https://neo4j.com/blog/this-week-neo4j-29-july-2017/[use of Neo4j for security and threat detection^] and this week I came across a tool in that ecosystem called https://github.com/workingDog/StixToNeoDB[StixToNeoDB^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171207021915/stix2_relationship_example_2.png["STIX - Sharing threat intelligence just got a lot easier", 643, 256, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+STIX - Sharing threat intelligence just got a lot easier
+</strong>
+</p>
+++++
+
+Structured Threat Information Expression (https://oasis-open.github.io/cti-documentation/[STIX^]) is a language and serialization format used to exchange cyber threat intelligence.
+
+StixToNeoDB loads STIX objects and relations from JSON and zip files into Neo4j. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/charrtay[Charlene Tay^]:
+
+tweet::937836635550601217[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

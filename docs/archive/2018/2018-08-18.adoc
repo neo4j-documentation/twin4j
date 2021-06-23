@@ -1,0 +1,281 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 4 August 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have the release of Graphileon Personal Edition, a new Getting Started with Neo4j YouTube series, Intuitive Detections Research with Neo4j, we learn how to build the user timeline of a Neo4j based dating site, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Brian Underwood
+
+This week’s featured community member is https://twitter.com/cheerfulstoic[Brian Underwood^], Platform Engineer at Fishbrain. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180817004308/this-week-in-neo4j-18-august-2018.jpg" alt="" width="800" height="400" class="alignnone size-full wp-image-80114[name="Brian Underwood"]
+
+He has been instrumental for the Ruby community, taking the maintainer role for the widely used neo4jrb driver in 201x. Since then he has developed a lot of new features in the driver, APIs and Cypher DSL, as well as implementing a version of the driver that uses the Bolt protocol.
+
+Brian worked for the Developer Relations team while he was traveling the world with his family for two years. During that time Brian used every opportunity to present about Neo4j and Ruby in the countries he was visiting. He also built the https://portal.graphgist.org[GraphGist portal], created a https://www.udemy.com/building-a-ruby-on-rails-application-with-neo4j/[Ruby and Neo4j video course], and wrote many examples and articles. He blogs about a wide variety of topics at http://blog.brian-underwood.codes[blog.brian-underwood.codes^].
+
+After that he worked for a startup using Neo4j, and a few months ago moved to Sweden where he now works as Platform Engineer at Fishbrain.
+
+Unfortunately Brian is not working with Neo4j anymore at his current job and is asking everyone for https://github.com/neo4jrb/neo4j/issues/1516[help to find a new maintainer for the neo4jrb driver library]. So if you're using Neo4j with Ruby and would like to help/contribute please send us an email to devrel@neo4j.com. It doesn't have to be a single person doing the work - a team can share the load.
+
+On behalf of the Neo4j community, thanks for all your work Brian!
+
+[[features-1]]
+=== YouTube: Getting Started with Neo4j 
+
+https://neo4j.com/staff/elaine-rosenberg/[Elaine Rosenberg^], our new Principal Curriculum Developer, has started a new YouTube series of videos showing people how to get up and running with Neo4j.
+
+In the first video Elaine shows how to download the Neo4j Desktop application, create your first project, and gives a brief tour of the database view.
+
+youtube::8yWhuUnPapw[type={type}]
+
+In the second video we learn how to use the Neo4j browser. Elaine covers some of the most commonly used commands, shows how to load the sample movies graph, and writes Cypher queries against the dataset.
+
+youtube::rQTximyaETA[type={type}]
+
+There will be more of these videos in the coming weeks, so don't forget to subscribe to the playlist.
+
+link:https://www.youtube.com/watch?v=8yWhuUnPapw&list=PL9Hl4pk2FsvV1u8JY_TKTnYddujp8I7dn[Subscribe to Getting Started with Neo4j, role="medium button"]
+
+[[articles-1]]
+=== Dating Sites Parts 6 & 7, Zendesk -> Neo4j, Intuitive Detections Research
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180817015411/when_love_takes_over.jpg" width="150px"  />
+</div>
+++++
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] continues with his Building a Dating Site series of blog posts. In https://maxdemarzi.com/2018/08/15/building-a-dating-site-with-neo4j-part-six/[part 6^] he builds the functionality that lets users post things to the site and in https://maxdemarzi.com/2018/08/16/building-a-dating-site-with-neo4j-part-seven/[part 7^] creates the user timeline.
+
+
+* https://twitter.com/nik_seetharaman[Nik Seetharaman^] has http://www.endurant.io/graph-analysis/intuitive-detections-research-with-graph-analytics-and-neo4j/[written a blog post^] in which he shows how to use graph analytics tools to visualize simulated attacks during the course of detections research to gain an intuition of what an attack is doing across multiple axes.
+
+* Dana Canzano explains how to https://medium.com/neo4j/zendesk-to-neo4j-integration-2c5ddba16767[import Zendesk into Neo4j^] via ZenDesk's REST API, and then shows how to use the Cypher query language to gain novel insights into your customer data.
+
+[[features-1]]
+=== Releases: Graphileon Personal Edition, GraphStory expand offering
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180810044755/pre_press_release.jpg" width="150px"  />
+</div>
+++++
+
+This week Graphileon announced the beta release of https://graphileon.com/graphileon-personal-edition/[Graphileon Personal Edition 2.0.0^], a stand-alone edition of their graphy application builder and graph manager. It's available on Mac OS X, Windows and Linux.
+
+Elsewhere, GraphStory are https://www.graphstory.com/blog/2018/08/enterprise-neo4j-on-google-cloud-platform[expanding their offering^], and now offer Enterprise Neo4j in 15 Google Cloud Platform regions, with support recently added for the Mumbai, Netherlands, and London regions.
+
+
+[[articles-2]]
+=== Building an asset tracker, Piping data into Neo4j, Querying with Neo4j OGM 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180817013819/1_FrQIV8ZCfq65YHMjWdKQJg.jpeg" width="150px"  />
+</div>
+++++
+
+* I came across https://medium.com/@makona/makona-101-the-why-and-what-about-our-tech-stack-bc5943874d4b[an interesting blog post^] describing how https://medium.com/@makona[Makona^] use Neo4j to store the relations between users, accounts and the money they contain, as part of their asset tracker solution. Makona is a decentralised platform used for tracking donations to NGO's. 
+
+* https://twitter.com/einaros[Einar Otto Stangvik^] created https://github.com/einaros/neopipe[neopipe^], a little forensic tool to pipe stuff quickly into Neo4j. Give it a try and send Einar a pull request if you have a way to improve it. 
+
+* Following on from his https://dzone.com/articles/introduction-to-neo4j-ogm[Introduction to Neo4j OGM^] blog post, Scott Sansa's https://dzone.com/articles/intro-to-querying-neo4j-using-ogm[latest blog post^] shows us how to query data using the same tool. He explains how to do this using in built filters as well as with Cypher queries when we want to do something custom. 
+
+* https://twitter.com/dilyan_damyanov[Dilyan Damyanov^] continued his series of posts about modelling event data as a graph. In his latest post he goes through different things to keep in mind when https://snowplowanalytics.com/blog/2018/08/13/modelling-page-view-events-as-a-graph/[modeling page view events as a graph^]. 
+
+[[features-2]]
+=== Loading Graph Data for An Object Graph Mapper or GraphQL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180817012612/1_8fXDuFXn0BDok6_gA7EtTg.jpeg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/mesirii[Michael Hunger^] has written up his experience loading graph data into Object Graph Mappers, such as Spring Data Neo4j and Neo4j-OGM. He used the same lessons while building the neo4j-graphql integration.
+
+In the post Michael explains the different ways we can map graph data - from variable length path queries to pattern comprehensions and map projections - and shows how to use these different approaches for data loading. 
+
+link:https://medium.com/neo4j/loading-graph-data-for-an-object-graph-mapper-or-graphql-5103b1a8b66e[Read the blog post, role="medium button"]
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group
+
+| August 20th 2018 | https://www.meetup.com/GraphDB-Sydney/events/251121909/[Finding values from connected data: a case study from Paradise Papers^] | https://www.meetup.com/GraphDB-Sydney/[GraphDB Sydney^] 
+
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/joedepeau[Joe Depeau^]:
+
+tweet::1030068279258308608[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+[[online-meetup]]
+=== How Graphs Revolutionize Identity and Access Management
+
+https://twitter.com/ellazal[Lju Lazaravic^] presented a webinar in which she explained why Neo4j is such a great fit for Identity and Access Management.
+
+youtube::Mk1QYLOeq3s[type={type}]
+
+Lju takes us through a worked example of a person working in a organisation with a complex hierarchy, and shows how we can use a graph to determine what resources the person should have access to. Lju finishes the talk by going through some case studies of Neo4j customers who are using graphs to solve these types of problems.
+
+* https://neo4j.com/blog/congratulations-cerved-larus-big-data-analytics-award-digital360/
+Congrats to Cerved and LARUS for Winning the Big Data Analytics Award from Digital360
+
+* https://github.com/ezrac/POLAR/blob/master/README.md
+
+
+
+[[behance-adobe]]
+=== Moving Adobe Behance's activity feed from Cassandra -> Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720064210/belogo-social-posts-default.png" width="100px"  />
+</div>
+++++
+
+….
+
+link:http://www.odbms.org/blog/2018/07/on-using-graph-database-technology-at-behance-interview-with-david-fox[Read the full interview, role="medium button"]
+
+=== Neo4j Launches Commercial Kubernetes Application on GCP Marketplace
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720053438/apple-icon.png" width="100px"  />
+</div>
+++++
+
+….
+
+[[online-meetup]]
+=== Online Meetup: Meta-exp
+
+youtube::6aBsPquK-kg[type={type}]
+
+[[golang]]
+=== First alpha of Go Neo4j driver
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720072418/1__XgWKTM2vRHQrRUlaMMZCw.jpeg" width="100px"  />
+</div>
+++++
+
+meta exp
+
+
+youtube::6aBsPquK-kg[type={type}]
+
+link:https://medium.com/neo4j/neo4j-drivers-are-go-9697baf4d116[Learn about the Neo4j Go Driver, role="medium button"]
+
+[[apoc-series]]
+=== Creating Nodes and Relationships Dynamically with APOC 
+
+Creating nodes and relationships with Cypher is really straightforward. It only gets tricky when you have labels, relationship-types or property-keys that are driven by data and dynamic.
+
+youtube::KsAb8QHClNg[type={type}]
+
+The Cypher planner only works with static tokens and in this video https://twitter.com/mesirii[Michael^] shows how APOC procedures come to the rescue here for creating, merging and updating nodes and relationships with dynamic data coming from user provided strings or lists.
+
+link:https://www.youtube.com/watch?v=V1DTBjetIfk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=1[Watch the whole APOC series, role="medium button"]
+
+[[apoc-youtube]]
+=== APOC YouTube Series: Load JSON, Load JDBC, Bulk loading data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629061434/apoc-neo4j-user-defined-procedures1.gif" width="120px"  />
+</div>
+++++
+
+This week https://twitter.com/mesirii[Michael^] released 4 more videos in the Neo4j APOC YouTube series:
+
+* https://www.youtube.com/watch?v=yEN6TCL8WGk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4&t=0s[Exploring Neo4j Database Metadata in APOC (#3)^]
+
+* https://www.youtube.com/watch?v=M1P1IlQdb5M&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4[Loading Data from JSON Web APIs into Neo4j with apoc.load.json (#4)^]
+
+* https://www.youtube.com/watch?v=e8UfOHJngQA&index=5&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Load Data from Relational DBs with JDBC and APOC (#5)^]
+
+* https://www.youtube.com/watch?v=t1Nr5C5TAYs&index=6&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Efficiently Updating and Inserting Data With apoc.periodic.iterate (#6)^] 
+
+You can find a list of all the videos so far in https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[the Neo4j APOC Utility Library HowTo Series playlist^].
+
+[[knowledge-base]]
+=== How deletes work in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+This week from the https://neo4j.com/developer/kb/[Neo4j Knowledge base^] we have …
+
+[[european-roads-google-analytics-tibco-spitfire]]
+=== European road graph, Google Analytics -> Neo4j, TIBCO Spitfire
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713060902/A%CC%8ArhusE3-A101968.07.27.jpg" width="100px"  />
+</div>
+++++
+
+[[ml-models]]
+=== Graphs and ML: Remembering Models
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713072117/1_c-wlReFlN_WRaz9KS9yRxA.jpeg" width="150px"  />
+</div>
+++++
+
+Last week https://twitter.com/ML_auren[Lauren^] wrote an article explaining the linear regression procedures she added for Neo4j, and this week she's https://medium.com/neo4j/a-developers-look-ml-models-in-neo4j-7d4cbacb320c[written an article^] explaining some of the internals.
+
+Lauren explains her design decisions and looks at the advantages and disadvantages of different approaches. Lauren and https://twitter.com/mdavidallen[David Allen^] also have https://twitter.com/ML_auren/status/1017522612316983296[an interesting discussion on twitter^] about using Neo4j as a master data solution for machine learning systems.
+
+
+////

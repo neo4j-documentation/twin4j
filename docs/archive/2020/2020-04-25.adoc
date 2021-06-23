@@ -1,0 +1,165 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Lju shows how to de-duplicate ingredients in the BBC goodfood dataset.
+
+Rik Van Bruggen starts a COVID-19 Contact Tracing Graph blog series, I build a SARS-CoV-2 taxonomy graph, and Martin Preusse tells us all about the Covid Graph Knowledge Graph. 
+
+And finally, Max De Marzi shows us how to use stored procedures in Neo4j 4.0
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Thomas Deely
+
+This week's featured community member is Thomas Deely, Consultant on Instructional Design, Knowledge Management, Education, and Community Building.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200424013903/this-week-in-neo4j-25-april-2020.jpg[name="Thomas Deely"]
+
+Thomas is a knowledge-graph nerd with a soft spot for giving back. He's pretty fancy, as a quick read of his https://www.linkedin.com/in/thomasdeely[LinkedIn^] profile will reveal.
+
+Thomas is the organiser of the https://www.knowledgegraph.tech[Knowledge Graph Conference]. Before the viral pandemic we were planning to partner on the https://www.GraphConnect.com[GraphConnect] GraphHack. The theme was Graphs4Good, which proved to be a good choice after the GraphHack went virtual. 
+
+Thomas brought in https://www.linkedin.com/in/vivekkhetan[Vivek Khetan], https://www.linkedin.com/in/colin-puri[Colin Puri], and https://www.linkedin.com/in/lamberthogenhout[Lambert Hogenhout] (Accenture and United Nations, respectively) to participate in https://neo4j.com/blog/2020-graphs4good-graphhack-projects[Graphs4Good GraphHack] on the https://www.un.org/sustainabledevelopment/sustainable-development-goals/[UN Sustainable Development Goals (SDG’s)], covering topics from poverty to healthcare, education, and beyond.   
+
+Thomas, thank you for embracing collaboration, knowledge, and kindness within your community. We very much value those characteristics and think it's a true reflection of the quality of person you are! 
+
+You are a true inspiration and we look forward to collaborating with you in the future.
+
+https://www.linkedin.com/in/thomasdeely/[Connect with Thomas on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== De-duplicating the BBC goodfood ingredients
+
+This week's video is Lju Lazarevic's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] talk about the BBC goodfood Graph.
+
+youtube::m7aGQh8smPI[type={type}]
+
+In the talk Lju shows how to de-duplicate ingredients using Cypher queries, https://neo4j.com/docs/labs/apoc/current/[APOC^] procedures, and the https://neo4j.com/docs/graph-data-science/current/[Graph Data Science Library^].
+
+[[features-2]]
+=== COVID-19 Round-up: The Covid Graph, Contact Tracing, Virus Taxonomy
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327023334/Covid-19-Image.jpg" width="150px"  />
+</div>
+++++
+
+The Neo4j community continues to try and make sense of the COVID-19 pandemic using graphs. Below are some of the things that I came across this week:
+
+* Rik Van Bruggen has started a series of blog posts in which he'll show how to build and explore a COVID-19 Contact Tracing Graph. In https://blog.bruggen.com/2020/04/covid-19-contact-tracing-blogpost-part.html[part 1^] Rik builds a synthetic dataset using Google Sheets and imports it into Neo4j using the LOAD CSV clause.
+
+* I got very curious about the taxonomy of viruses that have caused the COVID-19 disease and https://markhneedham.com/blog/2020/04/21/quick-graph-covid-19-taxonomy/[loaded data from Wikidata into Neo4j to explore further^].
+
+* Martin Preusse https://www.youtube.com/watch?v=BHa015s-59s[gave a short presentation^] about the Covid Graph Knowledge Graph. This project links many different data sources, such as genome information and research papers together to aid rapid research on COVID-19.
+
+[[features-3]]
+=== Generate GraphQL Resolvers From Your Schema
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20170524234854/graph-ql-graph-database-neo4j-integration.png" width="120px"  />
+</div>
+++++
+
+Dakota Lewallen shows how to use https://github.com/neo4j-graphql/neo4j-graphql-js[neo4j-graphql-js^] to build a Neo4j backed GraphQL API.
+
+https://dev.to/fastflowz/generate-graphql-resolvers-from-your-schema-20ed[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Updating unmanaged extensions, GORM Release, Open Linked Cultural Data
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Max De Marzi shows us how to http://maxdemarzi.com/2020/04/06/updating-your-neo4j-3-x-unmanaged-extensions-to-4-x/[update our Neo4j 3.x unmanaged extensions to work with the 4.x version of the database^].
+
+* This week https://github.com/grails/gorm-neo4j/releases/tag/v7.1.0.M1[GORM for Neo4j released version 7.1.0.M1^]. GORM is the data access toolkit used by Grails to connect to different data sources. This latest release adds support for Groovy 3.
+
+* Estelle Scifo has started working on https://github.com/stellasia/pygds[pygds^], a Python wrapper to call procedures from the https://neo4j.com/docs/graph-data-science/current/[Neo4j Graph Data Science Library^] from Python using the Neo4j driver.
+
+* Georgios Drakopoulos, Yorghos Voutos, Evaggelos Spyrou, and Phivos Mylonas have written a paper showing how Neo4j can be used to create a https://dl.acm.org/doi/pdf/10.1145/3368640.3368659[Semantically Annotated JSON Metadata Structure For Open Linked Cultural Data^]. 
+
+[[features-5]]
+=== Stored Procedures in Neo4j Are NOT Evil 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200424021718/graphs-and-pyramids-2.png" width="200px"  />
+</div>
+++++
+
+In Max De Marzi's latest blog post he starts by explaining why the dislike of database stored procedures doesn't apply to Neo4j ones.
+
+He then goes on to show how we can start to build  a Neo4j 4.0 based application using stored procedures.
+
+http://maxdemarzi.com/2020/04/17/stored-procedures-in-neo4j-are-not-evil/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/rvanbruggen[Rik Van Bruggen^]:
+
+tweet::1252269244022128642[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* https://www.youtube.com/watch?v=NvbSjOOcKjc
+YouTubeYouTube | Neo4j
+Springboot with Michael Simons
+
+* https://www.youtube.com/watch?v=60Kb70ci2M0
+YouTubeYouTube | Neo4j
+Building a Graph App - Neo4j online MeetUp
+
+* Max De Marzi @maxdemarzi
+Getting and Creating Likes with @neo4j http://maxdemarzi.com/2020/04/22/getting-and-creating-likes-with-neo4j/  https://pbs.twimg.com/media/EWNVTiJWsAAnDv6.jpg
+
+
+
+* Tomaz Bratanic @tb_tomaz
+Presenting multiple node label support and graph mutability features of the Neo4j Graph Data Science in the Star Wars universe
+#Neo4j #algorithms #datascience #graph #graphdatabase #analytics
+https://towardsdatascience.com/presenting-multiple-node-label-support-and-graph-mutability-features-of-the-neo4j-graph-data-a0b0ea744884
+
+* Christophe Willemsen @ikwattro
+@TryHume combines the power of #MachineLearning and @neo4j to build a #KnowledgeGraph for monitoring the Satellite Technology Market https://graphaware.com/nlp/2020/04/15/hume-in-space.html 
+
+* https://medium.com/neo4j/flights-search-application-with-neo4j-grandstack-and-graphql-custom-resolver-part-3-4d14d174d980
+MediumMedium
+Flights Search Application with Neo4j — GRANDstack and GraphQL Custom Resolver (Part 3)
+GRANDstack overview: Neo4j Database, React, GraphQL API on Apollo server powered by neo4j-graphql-js library
+
+
+////

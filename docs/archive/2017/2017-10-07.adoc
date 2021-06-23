@@ -1,0 +1,141 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Michal Bachman
+
+This week’s featured community member is https://twitter.com/bachmanm[Michal Bachman^], founder and Managing Director of Neo4j Solution Partner https://twitter.com/graph_aware[GraphAware^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171005230408/this-week-in-neo4j-7-october-2017.jpg["Michal Bachman Name - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Michal Bachman - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Michal is one of the earliest members of the Neo4j community in London, starting to work with graphs in his time at https://twitter.com/OpenCredo[OpenCredo^] in 2011.
+
+He then went to Imperial to do a Masters degree in Computing before founding GraphAware in July 2013. 
+
+Michal spoke at GraphConnect in https://vimeo.com/110698389[2014^] and https://www.youtube.com/watch?v=L-GdmyswaFU[2015^], has spoken at countless meetups, presented numerous training sessions, and of course https://www.youtube.com/watch?v=hbo4yxQXf2Y[featured on the podcast last June^].
+
+Over the past few years Michal and his team have released multiple open source tools to the community, such as https://github.com/graphaware/neo4j-reco[neo4j-reco^], https://github.com/graphaware/neo4j-timetree[neo4j-timetree^], http://graphgen.graphaware.com/#/[GraphGen^], as well as the https://github.com/graphaware/neo4j-php-client[PHP driver^]. 
+
+This week they may have https://graphaware.com/neo4j/2017/10/03/efficient-unsupervised-topic-extraction-nlp-neo4j.html[released^] their coolest product yet - https://github.com/graphaware/neo4j-nlp[neo4j-nlp^], a toolkit for combining graphs and Natural Language Processing. I'm looking forward to playing around with this one. 
+ 
+On behalf of the Neo4j community, thanks to you and your team for all their work Michal!
+
+=== Online Meetup: Finding connections between components from 100s of GBs of data at Autodesk
+
+In this week's online meetup, Ravi Krishnaswamy, Lead Software Architect at https://twitter.com/autodesk[Autodesk^] showed us how to manage component complexity with graph databases.
+
+youtube::3DmpW3SosSM[type={type}]
+
+Ravi has built a graph containing data pulled from multiple packaging and security databases and showed how to write queries to find out what components were affected by various security vulnerabilities. 
+
+We won't have an online meetup next week, but the week after Norbert Preining will show us how to 	https://www.meetup.com/Neo4j-Online-Meetup/events/243206424[analyse Debian packages using Neo4j^].
+
+=== GraphQL to Cypher, eBay ShopBot, Temporal Network Analysis
+
+* My colleague https://twitter.com/lyonwj[WIll Lyon^] released https://github.com/neo4j-graphql/neo4j-graphql-js[neo4j-graphql-js^], a GraphQL to Cypher query execution layer for Neo4j and JavaScript GraphQL implementations. If you work with GraphQL give it a try and let us know how you get on by sending an email to devrel@neo4j.com
+
+* Thomas Frisendal explains the origins of graphs, the property graph model, and the flexibility of the graph model in http://www.dataversity.net/property-graphs-swiss-army-knife-data-modeling[Property Graphs: The Swiss Army Knife of Data Modeling^]  Thomas also has a book on https://technicspub.com/graph-data-modeling/[graph data modeling^] if you want to learn more.
+
+* https://github.com/jmercouris[John Mercouris^] created  https://github.com/jmercouris/networkt[Networkt^], a project that aims to do temporal network analysis on digital networks. One of the goals is to try and find Transnational Entrepreneurs who are responsible for the diffusion of information and innovation across national borders. The project combines Neo4j and http://scikit-learn.org/[scikit-learn^] (Python's machine learning library) to do this analysis.
+
+* In https://medium.com/@rjpittman/cracking-the-code-on-conversational-commerce-775b5172f312[Cracking the Code on Conversational Commerce^] https://twitter.com/rjpittman[RJ Pittman^] explains how https://shopbot.ebay.com/[eBay ShopBot^] combines natural language understanding with knowledge graphs to improve the shopping experience of eBay shoppers. Ajinkya Kale and Anuj Vatsa from the team will https://graphconnect2017.sched.com/event/CEMs?iframe=no[be presenting at GraphConnect NYC^] on October 24th 2017. Their talk will be at 11am - don't miss it!
+
+* https://github.com/flq[Frank Quednau^] created https://github.com/flq/neocaster[neocaster^], a .NET micro "ORM" in the spirit of https://github.com/StackExchange/Dapper[Dapper^], but for Neo4j. 
+
+* https://twitter.com/noel[Noel Jackson^] shared a script that https://gist.github.com/noeljackson/e10e135669e04c4b56bc61db5b802ba9[checks to make sure Neo4j started properly^] by tailing the logs for the line that indicates the HTTP server has started.
+
+=== Data Science in Practice: Using the Facebook API and Neo4J to Drive Real World Attendance to Events
+
+DigitalOcean posted the video from Ray Bernard's talk in which he shows how his cloud-based marketing company, https://twitter.com/suprfanz[Suprfanz^], uses Neo4j to drive attendance over social media platforms, email and SMS.
+
+youtube::fz6kdkT0D38[type={type}]
+
+=== We're hiring!
+
+We recently started using Google's Hire product for https://hire.withgoogle.com/public/jobs/neotechnologycom[our job listings^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171006013705/setting-2473875_640.jpg["Neo4j are hiring", 423, 200, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Come and work for Neo4j!
+</strong>
+</p>
+++++
+
+We're hiring for lots of different roles, so if you want to work with graphs full time take a look - there are roles in the engineering, pre-sales, professional services, and developer relations teams.
+
+Hopefully you can find something for you. 
+
+=== On StackOverflow: LOAD CSV, APOC, Variable length paths
+
+This week on https://stackoverflow.com/questions/tagged/neo4j[Neo4j StackOverflow^]…​
+
+* https://stackoverflow.com/users/6893866/tezra[Tezra^] shows how to write a query to calculate a trust based user ranking. The answer uses https://neo4j.com/docs/developer-manual/current/cypher/syntax/patterns/#cypher-pattern-varlength[variable length paths^] and http://neo4j.com/docs/developer-manual/current/cypher/syntax/operators/#syntax-accessing-elements-in-a-list[list operators^], so lots to learn. 
+
+* https://twitter.com/logisima[Benoît Simard^] explains https://stackoverflow.com/questions/46583598/using-equals-on-different-properties-of-the-same-collection-returns-no-record-w[how to build an employee/supervisor graph^] using Cypher and https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC^].
+
+* https://stackoverflow.com/users/6835358/bruno-peres[Bruno Peres^] answers https://stackoverflow.com/questions/46525220/neo4j-how-to-2-import-csv-files-with-relationship-between-them[a couple^] of https://stackoverflow.com/questions/46563848/neo4j-how-to-create-relationship-based-on-an-attribute-value-if-exists-or-no[import related^] questions about an employee/department graph. 
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| October 9th 2017 | https://www.meetup.com/graphdb-france/events/242790975[InterActor : du graphe aux tableaux de bord, il n'y a qu'un pas !^] |  https://www.meetup.com/graphdb-france[Graph Database - Paris^] | https://twitter.com/tomzeppenfeldt[Tom Zeppenfeldt^]
+
+| October 11th 2017 | https://www.meetup.com/preview/DataScientistsIreland/events/243554027?rv=ea1[Graph Databases: what are they and where to use them?^]  |  https://www.meetup.com//DataScientistsIreland[Data Scientists Ireland^] | https://twitter.com/rvanbruggen[Rik Van Bruggen^]
+
+
+| October 12th 2017 | https://www.meetup.com/graphdb-sf/events/243005299[Voice-Driven Experiences with Neo4j and Amazon Alexa^] |  https://www.meetup.com/graphdb-sf[Graph Database - San Francisco^] | https://twitter.com/ikwattro[Christophe Willemsen^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/habilbozali[ΗλβiL βOZλLi^]:
+
+tweet::915477465514086400[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

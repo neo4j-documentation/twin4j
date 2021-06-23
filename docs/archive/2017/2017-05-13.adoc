@@ -1,0 +1,138 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 13 May 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-13-may-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 13 May 2017
+
+[Headline:]
+This Week in Neo4j – 13 May 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: 	Luanne Misquitta 
+
+This week's featured community member is https://twitter.com/luannem[Luanne Misquitta^], Principal Consultant at Neo4j Solutions Partner https://graphaware.com/[GraphAware^].
+
+Luanne is one of the earliest Neo4j community members and has been using Neo4j since 2009 when it was still on version 0.8 and the http://www.opencypher.org/[Cypher^] query language was nowhere to be seen!
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170512032724/this-week-in-neo4j-12-may-20171.jpg" alt="Luanne Misquitta - This week&#039;s featured community member" width="300" height="450" class="alignnone size-full wp-image-65579" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Luanne Misquitta - this week's featured community member
+</strong>
+</p>
+++++
+
+Luanne organises and runs all Neo4j training in India and has been a big contributor on https://github.com/neo4j/neo4j-ogm[Neo4j OGM^] and https://github.com/spring-projects/spring-data-neo4j[Spring Data Neo4j^].
+
+[quote, Luanne Misquitta on what she likes best about the Neo4j community]
+____
+I owe everything I’ve learned to https://twitter.com/peterneubauer[Peter Neubauer^] and https://twitter.com/mesirii[Michael Hunger^]. They encouraged me from the very beginning, and it inspired me to be more involved and give back.
+____
+
+++++
+<br />
+++++
+
+Most recently Luanne presented on human capital management at GraphConnect Europe 2017 last Thursday. The video from that talk will be on our YouTube channel soon, but in the meantime you can also watch the https://www.youtube.com/watch?v=chdw9y_-8sk[GraphConnect San Francisco 2016 version^].
+
+=== GraphConnect: The Hackathon
+
+On Wednesday the Neo4j DevRel team hosted a https://www.meetup.com/graphdb-london/events/237040841/[data journalism focused hackathon^] at https://skillsmatter.com/[Skillsmatter^]'s CodeNode venue. 
+
+++++
+<blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:39.907407407407405% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BT9DwYOhDZt/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">With hackathon winner @adamcowley at @neo4j #GraphConnect</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Karin Wolok (@hellojewfro) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-05-11T13:39:14+00:00">May 11, 2017 at 6:39am PDT</time></p></div></blockquote>
+<script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+++++
+
+Around 45-50 graphistas spent the evening combining and analysing datasets such as fake news, foreign ownership, and Panama papers, while competing for a limited edition hackathon t-shirt. 
+
+Thanks to everyone who participated and a special thankyou to our judges - Tom Wills, David Blood, Gail Dawes, Miguel Fiandor Gutiérrez, Sarah Blaskey, and Manuel Villa. 
+
+==== GraphConnect: The Conference
+
+On Thursday we hosted our 4th GraphConnect Europe conference in the QE2 Centre in Westminster, London. 
+
+I still remember my first https://qconlondon.com/london-2007/conference/index.html[QCon in 2007^] at the same venue, so for Neo4j to host its conference at the same venue is amazing. 
+
+We'll have the videos up on our https://www.youtube.com/neo4j[YouTube channel^] over the next few weeks but https://twitter.com/hellojewfro[Karin^] and https://twitter.com/ryguyrg[Ryan^] from the DevRel team organised a live stream of the opening and closing keynotes so you can watch those below right now!
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dqrlotzdUlo" frameborder="0" allowfullscreen></iframe>
+++++
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_CQehnb6A6o" frameborder="0" allowfullscreen></iframe>
+++++
+
+There's also https://www.flickr.com/photos/neotechnology/albums/72157683595538986/with/34595713285/[a Flickr album with all the photos from the event^].
+
+=== Mastadon, Microservices, Node.js OGM
+
+In other news...
+
+* https://twitter.com/jamie_gaskins[Jamie Gaskins^] presented https://s3.amazonaws.com/jgaskins/uploads/Neo4j.pdf[Neo4j -Graph database for highly interconnected data^] at the https://www.meetup.com/bmore-on-rails/events/239287744/[Baltimore on Rails meetup^]. In the talk Jamie shows how some SQL queries on the https://mastodon.social/about[Mastadon^] social network would look if they were written in Cypher instead.
+
+* https://twitter.com/armdev[Armen^] created https://github.com/armdev/neo4j-microservice[neo4j-microservice^] which makes it easy to created microservices backed by Neo4j, DropWizard, swagger, and https://projectlombok.org/[Lombok^]. 
+
+* https://twitter.com/tbrantb[Brant Boehmann^] presented https://www.slideshare.net/BrantBoehmann/introduction-to-graph-databases-with-neo4j[An introduction to graph databases with Neo4j^] at the http://www.codestock.org/[Codestock conference 2017^]. 
+
+* https://twitter.com/rvanbruggen[Rik van Bruggen^] wrote http://blog.bruggen.com/2017/05/part-12-looking-at-web-of-belgian.html[a couple^] of http://blog.bruggen.com/2017/05/part-22-looking-at-web-of-belgian.html[blog posts^] looking at the web of Belgian public companies. In the first post Rik shows how to import the raw data, and in the second moves onto running graph algorithms over the data to find the most interesting companies for further exploration.
+
+* Nikolas Pontikos created https://github.com/phenopolis/pheno4j[pheno4j^], a graph based HPO to NGS database. It takes genetic and phenotype data in JSON, VCF, and CSV format and converts them into CSV files which can then be imported using the https://neo4j.com/docs/operations-manual/current/tutorial/import-tool/[neo4j-import^] tool.
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we've got a https://neo4j.com/developer/kb/explanation-of-error-procedure-is-not-available-due-to-having-restricted-access-rights-check-configuration/[configuration tweak^] that https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC^] users will need to make when moving to 3.2, which was released earlier this week.
+
+=== A blast from the past: Graph Modeling
+
+A https://www.infoq.com/articles/data-modeling-graph-databases[2014 interview^] with https://twitter.com/jimwebber[Dr Jim Webber^] and https://twitter.com/iansrobinson[Ian Robinson^] about graph modeling made a reappearance in the twitterverse this week.
+
+It's well worth a read as it contains timeless advice on the typical data modeling process as well as best practices for modeling graph data from two of the most experienced practitioners.  
+
+=== Next Week
+
+Next weekend Michael Hunger, Will Lyon, and I will be attending https://graphql-europe.org/[GraphQL-Europe^] and Michael will be showing https://graphql-europe.org/schedule/query-graphs-with-graphql[how to use Neo4j as the backend of your GraphQL applications^].
+
+If you're attending don't forget to come and say hi!
+
+=== Tweet of the Week
+
+My favourite non GraphConnect related tweet this week was by https://twitter.com/RonRabakukk[Ron Rabakukk^] who was attending my colleague https://twitter.com/lyonwj[Will Lyon^]'s workshop at the https://conferences.oreilly.com/oscon/oscon-tx[OSCON conference^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en-gb"><p lang="en" dir="ltr">Graph databases! I never knew how much I needed them until now. Thanks for the excellent session <a href="https://twitter.com/lyonwj">@lyonwj</a>!<a href="https://twitter.com/hashtag/OSCON?src=hash">#OSCON</a> <a href="https://t.co/0xmtOwdH1P">https://t.co/0xmtOwdH1P</a> <a href="https://t.co/xq5inbawlI">pic.twitter.com/xq5inbawlI</a></p>&mdash; Ron Rabakukk (@RonRabakukk) <a href="https://twitter.com/RonRabakukk/status/862056750681391105">9 May 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+And my favourite GraphConnect tweet was https://twitter.com/TMoreeuw[Thomas Moreeuw^]'s visual summary of the conference.
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Practicing scribing <a href="https://twitter.com/GraphConnect">@GraphConnect</a> <a href="https://t.co/G3E3QklmVC">pic.twitter.com/G3E3QklmVC</a></p>&mdash; Thomas Moreeuw (@TMoreeuw) <a href="https://twitter.com/TMoreeuw/status/862801939771346946">May 11, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+I wish I could draw that well!
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

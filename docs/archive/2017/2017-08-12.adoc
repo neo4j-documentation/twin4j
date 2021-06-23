@@ -1,0 +1,158 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 12 August 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-12-august-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 12 August 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Person
+
+This week’s featured community member is https://twitter.com/wefreema[Eve Freeman^], Applications Development Analyst IV at Fannie Mae.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170811075642/this-week-in-neo4j-12-august-2017.jpg["Eve Freeman - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Eve Freeman - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Eve is a long time Neo4j community member, an expert in https://www.slideshare.net/neo4j/optimizing-cypher-32550605[Cypher query optimisation^], and is the https://stackoverflow.com/tags/neo4j/topusers[6th highest answerer^] for the https://stackoverflow.com/questions/tagged/neo4j[#neo4j tag on StackOverflow^].
+
+Eve http://blog.bruggen.com/2015/05/podcast-interview-with-wes-freeman.html[featured on one of the very early editions of the Neo4j podcast^], back in 2015, and if you've attended a Neo4j training course on the East coast of the USA you've probably been taught about graphs by Eve. A lot of the content in the Advanced Cypher training was authored by her.
+
+Finally, Eve is a https://neo4j.com/ambassador/[Neo4j Ambassador^] and created the http://www.anormcypher.org/[AnormCypher^] Scala driver. 
+
+On behalf of the Neo4j community, thanks for your all your work Eve!
+
+[[online-meetup]]
+=== Online Meetup: Versioning your Neo4j graph through entity-state model 
+
+Versioning graphs is a very commonly asked question http://iansrobinson.com/2014/05/13/time-based-versioned-graphs/[going all the back to 2014^] and in this week's online meetup https://twitter.com/mfalcier[Marco Falcier^] and https://twitter.com/ziotob[Alberto D'Este^] presented their approach to solving the problem.
+
+youtube::APC1vptFJoU[type={type}]
+
+Their project https://github.com/h-omer/neo4j-versioner-core[Neo4j Versioner Core^] provides a collection of procedures to help developers to manage the entity state model, by creating, updating, and querying the graph. 
+
+If you're dealing with IoT devices, shopping carts, or trading positions this talk is well worth watching. 
+
+++++
+<blockquote class="tweet">
+Learn about versioning graphs with @mfalcier and @ziotob's Neo4 Versioner Core in this week's #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Learn about versioning graphs with @mfalcier and @ziotob's Neo4 Versioner Core in this week's #twin4j" data-url="https://neo4j.com/blog/this-week-neo4j-12-august-2017#online-meetup" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+
+[[articles]]
+=== Fake news, threat hunting, Symfony Neo4j, Neo4j Explorer, Fast Imports
+
+* Nir Avrahamov wrote the https://neo4j.com/blog/machine-learning-graphs-fake-news-epidemic-part-2/[2nd part of the Machine Learning, Graphs and the Fake News Epidemic series^]. In this article Nir introduces the news graph which can be used to detect controversial articles.
+
+* https://twitter.com/TobiasNyholm[Tobias Nyholm^] introduces SymfonyNeo4jBundle, https://www.sitepoint.com/introducing-the-neo4j-symfony-bundle/[Neo4j Symfony bundle^], which aims to provide a smooth integration between Neo4j and https://symfony.com/[Symfony^]. It wraps the PHP community client by Graphaware and creates a solid Symfony experience. Thanks to the WebProfiler integration, you will see all your database calls, all the queries and their results. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170811071905/1501830608graph0-1024x427-1024x427.png["SymfonyNeo4jBundle - The Neo4j Symfony bundle", 640, 267, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+SymfonyNeo4jBundle - The Neo4j Symfony bundle
+</strong>
+</p>
+++++
+
+* https://twitter.com/malwaresoup[Andy Moore^] wrote up https://www.malwaresoup.com/sysmon-and-neo4j/amp/[Sysmon and Neo4j^] in which he shows how to combine the ELK stack with Neo4j to visualize potentially interesting data points identified during threat hunting campaigns.
+
+* https://twitter.com/stabbymcduck[Regina Imhoff^] shared the slides from https://speakerdeck.com/stabbymcduck/graph-databases-plus-neo4j[Graph Databases + Neo4j^] which shows an example of using Neo4j to model the manufacturing and sales of yarn. 
+
+* https://twitter.com/yworks[yFiles^] have created https://www.youtube.com/watch?v=06XP8QgR2wM[an intro video^] showing how to use their https://www.yworks.com/neo4j-explorer/[Neo4j Explorer^] tool. If you're interested in graph visualisation you'll enjoy watching this one.
+
+++++
+<blockquote class="tweet">
+Learn about threat hunting, @yworks Neo4j explorer, and Power BI in this week's #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Learn about threat hunting, @yworks Neo4j explorer, and Power BI in this week's #twin4j" data-url="https://neo4j.com/blog/this-week-neo4j-12-august-2017#articles" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+
+* Samyadeep Basu wrote up https://samyadeepblog.wordpress.com/2017/07/03/first-blog-post/[The Similarity Project^] developed during the Google Summer of Code. It deals with the development of a statistical module to find similar genes in http://intermine.org/[InterMine^] by leveraging the huge amount of biological information lying in the InterMine Databases ultimately leading to the development of a recommendation engine.
+
+* I was reminded of a blog post written by https://twitter.com/CSkardon[Chris Skardon^] back in June that we didn't feature at the time on http://xclave.co.uk/2017/06/22/using-powerbi-with-neo4j/[Using PowerBI with Neo4j^]. Chris provides a very thorough walkthrough aimed at non BI users.
+
+* https://twitter.com/mesirii[Michael Hunger^] has refreshed his classic post sharing https://medium.com/@mesirii/5-tips-tricks-for-fast-batched-updates-of-graph-structures-with-neo4j-and-cypher-73c7f693c8cc[tips and tricks for Fast Batched Updates of Graph Structures with Neo4j and Cypher^]. If you're looking for ways to get data into your Neo4j graph more quickly this is the place to start.
+
+[[so]]
+=== On StackOverflow: Finding triplets, Dynamic relationship types, Property Arrays
+
+It's time for another trip to StackOverflow to see what people are asking about over there.
+
+* Max De Marzi published https://maxdemarzi.com/2017/08/11/finding-triplets-with-neo4j/[Finding triplets with Neo4j^] - in response to https://stackoverflow.com/questions/45541495/finding-triplets-having-highest-common-relationships-in-neo4j[the StackOverflow question of the same title^]. 
+
+* Mathew asks https://stackoverflow.com/questions/45544845/how-to-find-the-common-value-in-a-property-array[how to find common values in property arrays^] that exist on multiple nodes.
+
+* Joseph Berry asks how to use https://stackoverflow.com/questions/45598189/load-csv-with-multiple-types-of-relationships-to-neo4j[Load CSV with multiple types of relationships to Neo4j^]. Relationship types can't be parameterised in Cypher but luckily the https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_creating_data[apoc.create.relationship procedure^] comes to the rescue.
+
+++++
+<blockquote class="tweet">
+Finding triples, common values in property arrays, and creating dynamic relationship types in this week's #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Finding triples, common values in property arrays, and creating dynamic relationship types in this week's #twin4j" data-url="https://neo4j.com/blog/this-week-neo4j-12-august-2017#so" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Wednesday, August 16, 2017 Ashwin Pingali will present https://www.meetup.com/Graph-Nerds-of-Boulder/events/242383676/[Blockchain as a Graph^] at the https://www.meetup.com/Graph-Nerds-of-Boulder/[Graph Nerds of Boulder meetup^]. 
+
+* Also on Wednesday, August 16, 2017 https://twitter.com/cailliaup[Pieter Cailliau^] will present https://www.meetup.com/graphdb-london/events/242057578/[Real-time Recommender Systems Made Easy with Neo4j^] at the https://www.meetup.com/graphdb-london/[London Neo4j meetup^].
+
+=== Tweet of the Week
+
+My favourite tweet this week was by my colleague https://twitter.com/ryguyrg[Ryan Boyd^]:
+
+tweet::894730665316331520[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+
+////
+++++
+<blockquote>
+Learn about versioning graphs with Neo4 Versioner Core in this week's #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Hello @neo4j! I&#39;ve just passed the #Neo4j Professional Certification! Get certified here: " data-url="http://neo4j.com/graphacademy/neo4j-certification/" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+////

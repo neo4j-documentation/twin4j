@@ -1,0 +1,144 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Anurag Tandon shows us how to use Bloom's search phrases, and Pablo Díaz builds a project and library dependencies graph.
+
+We also have a post on graph modeling, we learn how to use SSIS Data Flow to import data into Neo4j, and there's a release of a new Haskell, GraphQL, and Neo4j library.
+
+[[featured-community-member]]
+=== Featured Community Member: Igor Rozani
+
+
+Our featured community members this week is Igor Rozani
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190801082453/this-week-in-neo4j-3-august-2019.jpg[name="Igor Rozani"]
+
+
+Igor is a true example of a trailblazer! We first encountered him in our community when we discovered his https://community.neo4j.com/t/pokemon-graph/6955[Pokémon Graph project^]. For this project, he created a scraper to pull data from Bulbapedia and bring it into Neo4j. This allowed him to better understand and track the Mega Evolutions of Pokémon’s. 
+
+We invited him to present on the https://www.youtube.com/watch?v=052tqeB8zCk[Neo4j Online Meetup^] and he happily accepted. Since then, he joined our https://neo4j.com/speaker-program/[Speaker Program^] and organized his own Neo4j workshop tutorial at a local company to his home town in Ribeirão Preto, Brazil. 
+
+Igor, you’re awesome!! Despite being new to using Neo4j, you courageously stepped up, presented your project in front of hundreds of people, and shared the graph love after with your friends and colleagues.  We’re proud to say you’re part of our community!     
+
+https://www.linkedin.com/in/igorrozani/[Connect with Igor on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Search Phrases in Bloom (Video #4 in Bloom Series)
+
+In the 4th video of https://www.linkedin.com/in/tandonanurag[Anurag Tandon^]'s series of videos on Neo4j Bloom, the graph visualisation tool, we learn about advanced search features.
+
+youtube::1JIK339dqL8[type={type}]
+
+With the help of a fraud dataset, Anurag shows us how to create and execute Cypher queries via user friendly natural language search phrases 
+
+[[features-2]]
+=== Tracking project and library dependencies with Graph Oriented DBs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190801073842/1_6HdLnarvER8JS2xj735d0g.jpeg" width="200px"  />
+</div>
+++++
+
+Pablo Díaz wrote a blog post describing a project and library dependencies graph he built for all the different projects that compose the general software solution for a customer he works with.
+
+Pablo explains how he built the graph and goes through various questions that are easily answerable via https://github.com/pablo-diaz/dependencytracker/blob/master/CypherQueries/ModelQueries.txt[Cypher queries^].
+
+https://medium.com/blogyuxiglobal/tracking-project-and-library-dependencies-with-graph-oriented-dbs-e55027d33adf[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Graph data modelling – inferred vs explicit categories and labels
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190801073748/image-2.png" width="150px"  />
+</div>
+++++
+
+Paul O'Neill has started writing a series of blog posts about his experience using Neo4j. In the first one he contrasts different ways of modelling categories and labels.
+
+https://pablissimo.com/758/graph-data-modelling-inferred-vs-explicit-categories-and-labels[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j/Kafka Rail Data Application, Conditional WHERE clauses, Haskell + GraphQL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190801081916/Selection_8911.png" width="150px"  />
+</div>
+++++
+
+* Robin Moffatt published the slides from his talk https://talks.rmoff.net/8Oruwt/on-track-with-apache-kafka-building-a-streaming-etl-solution-with-rail-data[On Track with Apache Kafka: Building a Streaming ETL solution with Rail Data^], in which he combines data from multiple sources using Kafka and Neo4j.
+
+* I wrote a blog post showing how to do https://markhneedham.com/blog/2019/07/31/neo4j-conditional-where-query-apoc/[conditional WHERE clauses^] in Cypher queries using the APOC library.
+
+* Gabriel Volpe published https://github.com/gvolpe/musikell[musikell^],   a GraphQL and Neo4j project written in Haskell that makes uses of the https://hackage.haskell.org/package/hasbolt[Haskell Bolt Driver^], https://morpheusgraphql.com/[Morpheus GraphQL library^], and  Spotify API.
+
+
+
+[[features-5]]
+=== Using a Data Flow to move data from who knows where to Neo4j in SSIS
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190801080716/Selection_889.png" width="150px"  />
+</div>
+++++
+
+In the 2nd post of Chris Skardon's series on Neo4j and SSIS (SQL Server Integration Services), we learn how to move data from one place to another using the data flow functionality. 
+
+https://www.xclave.co.uk/2019/07/19/using-a-data-flow-to-move-data-from-who-knows-where-to-neo4j-in-ssis/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/LoesZaitsev[Loes Zaitsev^]:
+
+tweet::1156040002893037568[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+* https://pablissimo.com/827/minecraft-crafting-tree-in-neo4j-part-3
+Minecraft Crafting Tree in Neo4j – Part 3 – pablissimo.com
+
+https://pablissimo.com/851/minecraft-crafting-tree-in-neo4j-part-4
+
+"Defending with Graphs: Create a Graph Data Map to Visualize Pivot Paths": In her paper, 
+@thebriannefahey
+ presents an approach that uses graph technology to improves incident response readiness. (link: https://buff.ly/2xPvG2i) buff.ly/2xPvG2i #Neo4j #Cybersecurity
+https://www.sans.org/reading-room/whitepapers/logging/paper/39030
+https://www.sans.org/reading-room/whitepapers/logging/defending-graphs-create-graph-data-map-visualize-pivot-paths-39030
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+////

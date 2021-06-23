@@ -1,0 +1,173 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Jans, Niels, and Morgan show how to build a social knowledge graph based on data from collaboration tools that we use at Neo4j.
+
+Rik Van Bruggen queries the COVID-19 Contact Tracing Graph, Tomaz Bratanic shows off new features in the Graph Data Science Library, and Lju Lazarevic demos how to use Neo4j Bloom with the movies dataset. 
+
+And finally, Max De Marzi shows us how to write stored procedures to receive and create likes in a social network.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Alex Law
+
+This week's featured community member is Alex Law, Communications Coordinator at https://www.kineviz.com[Kineviz^]. Alex does a combination of UX/UI testing, community development, and content, on Kineviz's visual analytics platform, https://www.kineviz.com/graphxr[GraphXR] .  
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200430232311/this-week-in-neo4j-2-may-2020.jpg[name="Alex Law"]
+
+Like most graph-enthusiasts, Alex was a newbie in our community who dove head-first into all the graph 'stuff'. That's fairly common...person discovers graphs....person gets hooked on graphs.... person wants to learn everything about graphs.  But what stood out about Alex wasn't how quickly she jumped in to learn, but how keen she was to contribute. Alex's mantra is "let's give it a try", and that's been clear from her contributions to the Neo4j community.
+
+She started https://medium.com/@aclaw707[writing blog posts] and attended the majority of the https://neo4j.com/blog/2020-graphs4good-graphhack-projects[Graphs4Good GraphHack] open hacking sessions. She listened intently, asked questions, and suggested ways for others to get involved.
+
+Oh, and she also just scheduled a https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup] presentation https://www.meetup.com/Neo4j-Online-Meetup/events/270335489[GraphXR Epidemic Simulator]. Her colleague Robert Allison will be presenting, but you can be sure Alex will be attending. So, if you want to say hi to her, definitely join us in the virtual session (she loves connecting with people, so don't be shy to say hi!).
+
+Thanks for being such a rockstar, Alex! We love your 'just do it' attitude and believe your courage and dedication are truly going to translate to massive success! We're looking forward to all the great things that we'll do together in the future!
+
+https://www.linkedin.com/in/alexandria-law/[Connect with Alex on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== How a Social Knowledge Graph Improves Remote Collaboration
+
+This week's video is from a webinar in which my colleagues Jans, Niels, and Morgan explain how they built a social knowledge graph based on data from collaboration tools that we use at Neo4j.
+
+youtube::_dbY73-Sz84[type={type}]
+
+The talk starts by going through common problems in remote working setups, like working on domain experts and improving the efficiency of virtual teams. 
+
+They then demo a collaboration dashboard that brings together knowledgeable users, missing skills, and knowledge base articles for various search terms. And finally they show how to use data science techniques to explore the data further.
+
+
+[[features-2]]
+=== COVID-19 Contact Tracing: Part 2 - Querying
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327023334/Covid-19-Image.jpg" width="150px"  />
+</div>
+++++
+
+Rik continues his series of blog posts showing how to build a COVID-19 Contact Tracing Graph using Neo4j.
+
+In part 2 we write queries against the graph, including:
+
+* Working out who a sick person has potentially infected
+* Determining whether we've been at a location at the same time as a sick person
+* Finding hotspots that sick people have viisted
+
+https://blog.bruggen.com/2020/04/covid-19-contact-tracing-blogpost-part_21.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Multiple node label support and graph mutability features of GDS in the Star Wars universe
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200430233953/1_f2MtjQg0_vS2aHqLhqEOTQ.png" width="120px"  />
+</div>
+++++
+
+In his latest blog post, Tomaz Bratanic uses a graph of the Star Wars universe to show off two new features of the Neo4j Graph Data Science Library:
+
+* Multiple label support, which enables more flexible querying of graph data.
+* Graph mutability, which lets users more easily build a graph analytics pipeline.
+
+https://towardsdatascience.com/presenting-multiple-node-label-support-and-graph-mutability-features-of-the-neo4j-graph-data-a0b0ea744884[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Building a Graph App, Bloom Perspectives, Lightweight C# OGM
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Adam Cowley explains https://www.youtube.com/watch?v=60Kb70ci2M0[how to build your first Neo4j Graph App^].  
+
+* Khalid Abuhakmeh uses Neo4j to https://khalidabuhakmeh.com/use-neo4j-to-find-the-shortest-path[find shortest paths between different locations^].
+
+* Lju Lazarevic shows https://www.youtube.com/watch?v=fOJqHcTpQxs[how to build a Neo4j Bloom perspective^] from scratch using the movies dataset.
+
+* Oktay Kır published https://github.com/OKTAYKIR/NeoClient[NeoClient^], a lightweight C# micro object graph mapper for Neo4j.
+
+* Vlasta Kůs shows how to https://graphaware.com/nlp/2020/04/15/hume-in-space.html[combine the power of machine learning and Neo4j to build a Knowledge Graph for monitoring the satellite technology market^].
+
+
+[[features-5]]
+=== Getting and Creating Likes with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200501001151/graphs-and-pyramids-3.png" width="200px"  />
+</div>
+++++
+
+Max De Marzi continues his series of posts showing how to build a social network with Neo4j. 
+
+In the latest post he shows how to write procedures to give and receive likes.
+
+http://maxdemarzi.com/2020/04/22/getting-and-creating-likes-with-neo4j/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/EarthlingDavey[Davey			^]:
+
+tweet::1255913237368975361[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+Rik Van Bruggen @rvanbruggen
+Picked up an old skill again: created a #neo4j browser guide for the #covid19 #contacttracing demo that I built last week. It has become so easy: from #asciidoc to browser guide in seconds. http://blog.bruggen.com/2020/04/contact-tracing-guide-for-neo4j-browser.html
+
+
+https://medium.com/oracledevs/finding-the-shortest-path-from-country-a-to-country-b-using-neo4j-and-node-d36f3aa96fe4 
+MediumMedium
+Finding the shortest path from Country A to Country B — using Neo4J and Node 
+
+* https://medium.com/neo4j/exploring-power-laws-with-neo4j-c5ba6203a2d5 
+MediumMedium
+Exploring Power Laws with Neo4j
+
+Gerrit Meier @meistermeier
+Great news: @rotnroll666 and me just released the first patch version of Spring Data Neo4j RX. https://github.com/neo4j/sdn-rx/releases/tag/1.0.1
+#SpringData #Neo4j
+
+
+* https://www.youtube.com/watch?v=NvbSjOOcKjc
+YouTubeYouTube | Neo4j
+Springboot with Michael Simons
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-grandstack-and-graphql-custom-resolver-part-3-4d14d174d980
+Flights Search Application with Neo4j — GRANDstack and GraphQL Custom Resolver (Part 3)
+
+
+
+////

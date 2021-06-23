@@ -1,0 +1,207 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, David Meza shows us how to develop a Knowledge Graph of Competency, Skills, and Knowledge.
+
+Max De Marzi starts a series of blog posts showing how to use faux bitmap indexes to optimise single model queries, Lju launches the final challenge of the Summer of Nodes, and Ng Wai Foong writes a comprehensive introduction to Neo4j for beginners.
+
+And finally, Will Lyon published Fullstack GraphQL Applications with GRANDstack and 3 chapters are available to download for free.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: David Makogon
+
+This week's featured community member is David Makogon. David is a "software creationist" and architect for almost 30 years. He lives in Washington, DC and works as a Senior Cloud Architect at Microsoft Azure.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200828011631/this-week-in-neo4j-29-august-2020.jpg[name="David Makogon"]
+
+David has been around the Neo4j community for a very long time. and https://neo4j.com/blog/neo4j-containers-docker-azure/[presented with Patrick Chanezon at GraphConnect in 2015] and https://vimeo.com/76806553[before in 2013] and has also spoken about Neo4j and .NET at local meetup groups.
+
+But most of his time is spent on https://stackoverflow.com/users/272109/david-makogon[StackOverflow] helping others and answering questions. He has an impressive karma of 63k and owns the Neo4j bronze badge.
+
+Thank you so much David for helping all these Neo4j users over the years, we truly appreciate your dedication.
+
+https://www.linkedin.com/in/davidmakogon/[Connect with David on LinkedIn, role="medium button"]
+
+[[features-6]]
+=== Book: Fullstack GraphQL Applications with GRANDstack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200828013510/noun_book-reading_856168.png" width="150px"  />
+</div>
+++++
+
+Over the last 12 months, Will Lyon has been writing a book about the GRANDstack.  In https://www.manning.com/books/fullstack-graphql-applications-with-grandstack[Fullstack GraphQL Applications with GRANDstack^] you’ll learn how to build graph-aware end-to-end web applications using GraphQL, React, Apollo, and Neo4j.
+
+Will has selected some of his favourite chapters from the book and you can download a complimentary copy of these chapters today.
+
+https://neo4j.com/fullstack-graphql-applications-with-grandstack?ref=twin4j[Download the book, role="medium button"]
+
+[[features-1]]
+=== Developing a Knowledge Graph of your Competency, Skills, and Knowledge at NASA
+
+This week's video is a presentation by David Meza, Senior Data Scientist at NASA,  from the recent https://neo4j.com/connections/knowledge-graphs/[Neo4j Connections: Knowledge Graphs^] event.
+
+youtube::fVMB2KYNoXQ[type={type}]
+
+In the video, David explains how to build a graph that combines domain occupation ontologies with employees' individual skills. He then uses the Graph Data Science Library and Bloom visualisation tool to make sense of the data.
+
+You can find all the talks from the conference in the https://neo4j.com/video/connections/knowledge-graphs/[video archive^].
+
+[[features-2]]
+=== Summer of Nodes: Final Week - Exploring the Area
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200827210247/1_W5ageTkgatUMDZhUq0domw.png" width="150px"  />
+</div>
+++++
+
+It’s the final week of Lju Lazarevic’s Summer of Nodes 2020, a series of graph challenges that have been running for the month of August.
+
+The challenge this week is to explore and navigate a graph of New York's Central Park.
+
+https://medium.com/neo4j/summer-of-nodes-final-week-exploring-the-area-ac4b24735612[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Faux Bitmap Indexes in Neo4j: Part 1
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200828053811/screen-shot-2020-08-13-at-4.50.15-pm.png" width=200px"  />
+</div>
+++++
+
+Max De Marzi has started a series of blog posts showing how to use faux bitmap indexes to optimise single model queries where relationships aren’t considered.
+
+In the first post, Max goes through a series of techniques to improve the performance of looking up the starting nodes in a query, finally settling on a procedure that implements boolean logic filtering. 
+
+The code is available in the https://github.com/maxdemarzi/boolean_filtering[maxdemarzi/boolean_filtering^] GitHub repository.
+
+https://maxdemarzi.com/2020/08/24/faux-bitmap-indexes-in-neo4j/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== JQAssistant helps with refactoring, Neo4j and Docker, Neo4j Commander MERGE support
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+
+* Adam Cowley shows how to https://medium.com/neo4j/handling-neo4j-constraint-errors-with-nest-interceptors-6d0c5909af9[deal with constraint errors with the help of Nest.js interceptors^]. 
+
+* Arseny Zinchenko connects to Neo4j using the Docker container and shows how to https://itnext.io/neo4j-graph-database-run-with-docker-and-cypher-ql-examples-6f81315f682[write Cypher queries and backup and restore the database^]. 
+
+* The Neo4j Commander graph app has added support for https://netbizltd.com/neo4j/#mergeNodes[merging multiple source nodes into a single target node^].
+
+* Torsten Mandry explained how his team https://www.innoq.com/en/blog/visualizing-progress-of-refactoring-into-hexagonal-architecture-using-jqassistant/[refactored an application into a hexagonal architecture^] with help from JQAssistant and Neo4j. 
+
+[[features-5]]
+=== The Beginner’s Guide to the Neo4j Graph Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200828033837/1_SUc0wts3K1cfTd5EjL3JYg.png" width="150px"  />
+</div>
+++++
+
+Ng Wai Foong has written a comprehensive introduction to Neo4j for beginners.
+
+After explaining how to install and connect to Neo4j, he provides a guided tour of the Neo4j Browser and Cypher query language.
+
+https://medium.com/better-programming/the-beginners-guide-to-the-neo4j-graph-platform-a39858ccdeaa[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Qxf21[Qxf2^]:
+
+tweet::1298842686817001472[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* https://twitter.com/maxdemarzi/status/1298680395932860417
+Max De Marzi @maxdemarzi
+Faux Bitmap Indexes in @neo4j Part Two http://maxdemarzi.com/2020/08/26/faux-bitmap-indexes-in-neo4j-part-two/
+
+* Michael Simons  21:30
+https://github.com/stefanak-michal/Bolt just a couple of days after @martin.bendsoe and @nigel posted the updated specs at 7687.org :tada:
+
+* https://blog.grandstack.io/drag-and-drop-with-the-grandstack-766f074df151
+Drag and Drop with the GRANDstack
+
+* Nikolas Santis @nikosantise
+I have added two examples using @neo4j (one with @apollographql ) with #Nextjs @vercel (waiting for the PR :face_with_cowboy_hat:). I'm looking forward to it being useful to other developers. (Improvement contributions are welcome) https://github.com/nikosantis/next.js/tree/canary/examples/with-apollo-neo4j-graphql
+https://github.com/nikosantis/next.js/tree/canary/examples/with-neo4j 
+#neo4j #GraphQL
+[Feature this when it's merged - https://github.com/vercel/next.js/pull/16081]
+
+Estelle Scifo @st3llasia
+"Hands-On Graph Analytics with #Neo4j" is out!
+It contains a review of #Cypher, hands-on exercises using several plugins for #NLP,  #spatialdata or #graph #algorithms.
+Grab your copy here: http://amzn.to/3gp4RWQ
+@PacktPub , @PacktAuthors https://twitter.com/st3llasia/status/1291635637620219905 https://pbs.twimg.com/media/EgQaDpEWAAAFS_n.jpg
+
+* https://neo4j.com/developer/graph-data-science/link-prediction/ 
+https://neo4j.com/developer/graph-data-science/connected-feature-extraction/ 
+https://neo4j.com/developer/graph-data-science/link-prediction/scikit-learn/
+https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/ 
+
+* https://towardsdatascience.com/traveling-tourist-part-1-import-wikidata-to-neo4j-with-neosemantics-library-f80235f40dc5 
+
+* Dr Alan Beckles @Ritmonegro
+Getting started with neo4j in 10 minutes | by Félix Revert | Towards Data Science https://towardsdatascience.com/getting-started-with-neo4j-in-10-minutes-94788d99cc2b 
+
+* triniqua @triniquaAG
+On “Terrific Tuesday” we want to remain true to form and deliver a fantastic example of a semantic data model. Using flight data we show how fun and beautiful semantic graph models are and how a perfectly created one can quickly deliver answers.
+#dataisbeautiful  #DataEngineering
+https://twitter.com/triniquaAG/status/1295710936666451969 
+
+
+* Steen Dupont @LegoMoth
+Playing with the @CollectionTrust  SPECTRUM 5.0 procedures (using @neo4j neo4J and @GraphXr) as they are core to our collections management system. Seeing how the procedures map and how the links focus the procedures towards Object Entry Information is oddly reassuring
+
+* https://itnext.io/neo4j-running-in-kubernetes-79633944f213 
+Neo4j: running in Kubernetes
+
+* https://medium.com/neo4j/k-means-clustering-with-neo4j-b0ec54bf0103 
+K-means clustering with Neo4j
+What can we learn about unsupervised machine learning by implementing K-means clustering with Neo4j?
+
+* https://medium.com/neo4j/try-and-then-retry-there-can-be-failure-30bf336383da
+MediumMedium
+Try. And then retry. There can be failure.
+With persistent connections, the exceptional case should be expected and not considered to be a surprise. Here is how to handle it in…
+
+////

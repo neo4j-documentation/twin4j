@@ -1,0 +1,183 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+Last week we hosted the https://neo4j.com/connections/graphs-in-government/[Graphs in Government^] version of Connections, a series of online events that replaced GraphConnect 2020. 
+
+There were lots of interesting presentations, but my favourite one was by Jussi Vira and Tuomas Piippo, who explained how to build a smart city knowledge graph using Neo4j.
+
+Michael Simons and Gerrit Meier show off Spring Data Neo4j 6, Dr Jim Webber and Rik Van Bruggen published Graph Databases For Dummies, and Benoît Simard creates a web application using the GRANDstack.
+
+And finally, Ng Wai Foong shows how to build a restaurant recommendation engine using Neo4j and Python.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Matt Cloyd
+
+This week's featured community member is Matt Cloyd, Consultant at the Metta Earth Institute.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200918014447/this-week-in-neo4j-19-september-2020.jpg[name="Matt Cloyd"]
+
+Matt is a civic technologist, who helps support democracy by improving the relationship between constituents and governments via thoughtful technology.
+
+He has worked as a mediator, a project manager & developer at OpenCounter, a civic tech startup. He also worked as a web developer for the Commonwealth of Massachusetts, volunteered as an advisor to local representatives' campaigns, and acted as Chair of a neighborhood association.
+
+During this year's https://neo4j.com/blog/2020-graphs4good-graphhack-projects/[Graphs4Good GraphHack], Matt led the development of https://community.neo4j.com/t/aspen-a-simple-language-for-generating-graph-data/15447[Aspen^], a markup language that produces rich graph data from plain text. It's like "Markdown, but for Cypher queries instead of HTML".  
+
+Intrigued and want to learn more? Join us on October 19th for an https://m.twitch.tv/neo4j_/profile[Online Meetup / Twitch Session^] where Matt will show Aspen's straightforward syntax. review simple use cases, and talk about the future of this project!
+
+Matt is also a featured speaker for https://neo4j.com/nodes-2020[NODES 2020^], where he's presenting on "Modeling Healthy Communication in Neo4j", where he will analyze public sentiment within a hypothetical scenario; public comments on a proposed local development project.
+
+Matt, thanks for being such an awesome contributor to our community! We're looking forward to these talks and supporting you in the development of your projects!
+
+https://www.linkedin.com/in/mattjcloyd/[Connect with Matt on LinkedIn, role="medium button"]
+
+[[features-6]]
+=== Neo4j DevRel Jobs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200918030952/noun_User_40807.png" width="150px"  />
+</div>
+++++
+
+We are hiring for two roles in the Neo4j Developer Relations team.
+
+* A https://jobs.lever.co/neo4j/e556296d-220b-4842-b353-9097b9d9e403[Data Science Advocate^] who will be responsible for helping the data science community understand how, when, and why they should consider graphs. If you like educating people by creating compelling content, this could be a good fit for you. 
+ 
+* A https://jobs.lever.co/neo4j/5dc83dc1-bbbc-4620-96d2-4f799dfab048[DevOps Engineer^] who will be responsible for developing and operating important backend infrastructure used in our team. We use AWS, Docker, Auto0, and the Serverless framework, so if any of those sound interesting, this might be a fun role for you.
+
+You can also see a list of other jobs at the link below.
+
+https://neo4j.com/careers/[See all Neo4j jobs, role="medium button"]
+
+[[features-1]]
+=== Empowering Cities with Data and Knowledge Graphs
+
+This week's video is a presentation by Jussi Vira and Tuomas Piippo from the recent https://neo4j.com/connections/graphs-in-government/[Connections: Graphs in Government event^].
+
+youtube::zd7BuY5gZYs[type={type}]
+
+In the talk, Jussi and Tuomas explain how they've built a smart city knowledge graph using Neo4j, and made sense of their data using APOC and the Graph Data Science Library.
+
+[[features-2]]
+=== Build a Restaurant Recommendation Engine Using Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200917084732/1_xAlmqnpcWkKFVwRwGnAaUg.jpeg" width="200px"  />
+</div>
+++++
+
+Ng Wai Foong has written a mouth-watering tutorial that explains how to build a recommendation engine using Neo4j and FastAPI. FastAPI is a high-performance Python web framework. 
+
+After creating a food graph, Ng Wai shows how to write basic queries to find a user's friends and restaurants in a specific location or that serve a specific cuisine. He then combines these queries together to suggest restaurants preferred by a user's friends.
+
+And finally, he shows how to put a web service in front of these queries to make recommendations to different users.
+
+////
+* https://towardsdatascience.com/build-a-subway-journey-planner-using-neo4j-566b1a53670a 
+MediumMedium
+
+Use the popular graph database to figure out the best travel path between two subway stations
+
+////
+
+
+https://medium.com/better-programming/build-a-restaurant-recommendation-engine-using-neo4j-9d13ebdd4736[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Getting started with Micronaut and Neo4J(-bolt) in kotlin
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200917085309/download-10.png" width=150px"  />
+</div>
+++++
+
+Richard Rijnberk has written a tutorial to help you get up to speed when using Neo4j with Micronaut. Micronaut is a JVM based framework for building microservice and serverless applications.
+
+With examples in Kotlin, Richard shows how to create an application that can both create and retrieve nodes using the Cypher query language.
+
+https://medium.com/@rrijnberk/getting-started-with-micronaut-and-neo4j-bolt-in-kotlin-d81848646771[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Graph Databases For Dummies, GraphQL Mutations, SDN 6
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+* Dr Jim Webber and Rik Van Bruggen published https://neo4j.com/blog/introducing-graph-databases-for-dummies/[Graph Databases For Dummies^], Neo4j Special Edition. This book will get you up and running with the basics of graph databases.
+
+* Will Lyon shows how to do https://www.youtube.com/watch?v=dCCObITlSY0https://www.youtube.com/watch?v=dCCObITlSY0[GraphQL Mutations & Authorization With Auth0^] in a recent episode of the Building A GRANDstack Real Estate Search App live stream series.
+
+* Michael Simons and Gerrit Meier presented on https://www.youtube.com/watch?v=A7LRNS0Dnr4[Spring Data Neo4j 6^] at the SpringOne virtual conference.
+
+
+[[features-5]]
+=== GRAND Stack: One schema to rule them all
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200918015206/grand-rule-them-all.png" width="200px"  />
+</div>
+++++
+
+Benoît Simard shows off the power of the GRAND stack for creating a web application on top of Neo4j where everything is typed using our data schema.
+
+In the first half of the post, he demonstrates new features in the neo4j-graphql-js library, including index and constraint generation based on schema directives. And in the second half, we generate TypeScript code fragments using the graphql-codegen library.
+
+https://ouestware.gitlab.io/website/2020/09/08/GRAND-stack-one-schema-to-rule-them-all/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/darthvader42/[Stefan Armbruster^]:
+
+tweet::1305878901911158784[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* 
+https://neo4j.com/developer/graph-data-science/link-prediction/scikit-learn/
+
+* Khalid @buhakmeh
+Check it out! "Use NEO4J To Find The Shortest Path" (04/28/2020) by @buhakmeh #database RTs appreciated. https://khalidabuhakmeh.com/use-neo4j-to-find-the-shortest-path (09/09/2020)
+
+
+* https://medium.com/@st3llasia/analyzing-arxiv-data-using-neo4j-part-1-ccce072a2027
+
+* https://medium.com/p/ed017004bb25/edit -Importing Data into Neo4j using RxJS
+
+
+////

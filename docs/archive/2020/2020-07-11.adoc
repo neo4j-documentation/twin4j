@@ -1,0 +1,227 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Adam Cowley starts a video showing how to build web applications with Neo4j and TypeScript.
+
+Stefan Dreverman builds a new module in the  low code platform, Rik Van Bruggen explains what Fraud Detection and Contact Tracing have in common, and Alicia Frame announced the release of version 1.3 of the Graph Data Science Library.
+
+And finally, Preet Kanwar has started a blog post series showing how to build a Neo4j backed application with Spring Boot and Kong.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Paul Jongsma
+
+This week's featured community member is Paul Jongsma, Owner of WEBtic Internet Consultancy.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200710004911/this-week-in-neo4j-11-july-2020.jpg[name="Paul Jongsma"]
+
+Paul has been active in the Neo4j community for years and has been consistently contributing.  He's https://neo4j.com/graphacademy/neo4j-certification[a Neo4j Certified Professional^] (of course!) who has shared his graph journey with the Neo4j community through https://neo4j.com/blog/paul-jongsma-founder-webtic[interviews^] and http://blog.bruggen.com/2016/01/podcast-interview-with-paul-jongsma.html[podcasts^]. 
+
+Paul loves solving challenging problems and is always hungry to learn more while helping others. This is why it's no surprise that he is a rock star as part of the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninjas Program^],  where graph-enthusiasts are rewarded for helping others through answering questions on the http://community.neo4j.com/[Neo4j Community Site^].
+
+His passion for helping is so apparent, that even during the exclusive Ninja presentations, Paul is chiming in providing links and resources for further learning on the topic presented, acting as a side-kick to the speaker!
+
+Paul, we would like to thank you on behalf of the Neo4j team and all the community members you've helped along the way! Thank you for being such an invaluable part of our community!
+
+https://www.linkedin.com/in/pauljongsma/[Connect with Paul on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Building Web Applications with Neo4j and TypeScript: Integrating Neo4j with NestJS
+
+This week's video is part of Adam Cowley's series showing how to build web applications with Neo4j and TypeScript.
+
+youtube::9sNgCiPnhZE[type={type}]
+
+Adam shows us how to create the scaffolding for a Neo4j project that uses NestJS, a framework for building Node.js server side applications.
+
+
+[[features-2]]
+=== Graph Data Science Library 1.3: Graph Embeddings and more
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200710002632/noun_launch_1920183.png" width="150px"  />
+</div>
+++++
+
+Alicia Frame announced the release of version 1.3 of the Graph Data Science Library. 
+
+This release sees the introduction of graph embedding algorithms, RBAC integration, support for weights in the node similarity algorithm, and more. 
+
+If you want to learn more about graph embeddings, we have a https://neo4j.com/developer/graph-embeddings/[developer guide that covers them at a high level^]. And Dave Voutila has https://www.sisu.io/posts/embeddings/[reproduced the node2vec tutorial^] from the original paper.
+
+The https://neo4j.com/download-center/#algorithms[latest version of the library^] is available from the download centre.
+
+https://github.com/neo4j/graph-data-science/releases/tag/1.3.0[Read the release notes, role="medium button"]
+
+[[features-3]]
+=== Building a low-code platform with Neo4j: The Rabbit Hole
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012212/1_wqG6kxn7ct8HpMlyuoS-6A.png" width="180px"  />
+</div>
+++++
+
+Stefan Dreverman continues his series of blog posts showing how to build a low-code platform with Neo4j.
+
+In the final article in the series, Stefan shows how to add a module for a questionnaire into the low code platform. We learn how to design the meta model and build the UI and backend to wire everything together.
+
+https://medium.com/dev-genius/building-a-low-code-platform-with-neo4j-4-4-the-rabbit-hole-1dbf376c452[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Loading CSV data, Neo4j Desktop Release, Visualizing graphs with 3d-force 
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="100px"  />
+</div>
+++++
+
+* Godwin Ekuma has written a tutorial for https://blog.logrocket.com/getting-started-with-neo4j/[getting started with Neo4j^].
+
+* Andreas Kollegger and Liza Shkirando https://www.youtube.com/watch?v=FrOcyTh4h5A[showed off the new features^] in the latest versions of the Neo4j Browser and Neo4j Desktop in a recent online meetup.
+
+* Jérôme Bâton https://wadael.wordpress.com/2020/07/03/apoc-to-the-rescue-2/[explains how to use the APOC library to read dynamic properties^] while importing data into Neo4j.
+
+* Rik Van Bruggen explains https://blog.bruggen.com/2020/06/what-vat-fraud-detection-and-contact.html[what Fraud Detection and Contact Tracing have in common^].
+
+* In the http://blog.bruggen.com/2020/07/graphistania-20-episode-7-one-after.html[latest episode of Graphistania^], Rik and Stefan Wendin share their experiences living through the COVID-19 lockdowns as well as talking about some of the interesting things the Neo4j community have been up to over the last few months.
+
+* Vivek Maskara published a tutorial showing https://medium.com/@maskaravivek/how-to-import-data-to-neo4j-from-csv-files-9c95905023bb[how to load data from CSV files into Neo4j^].
+
+* Michael Hunger showed how to https://www.youtube.com/watch?v=QGJbJAopX-s&list=PL9Hl4pk2FsvXjk0hrerr78pLN-477pDLo&index=20[visualise graph data using React and the 3d-force graph visualization library^].
+
+
+
+
+
+
+
+[[features-5]]
+=== How To Build Graphql API with Spring Boot, Neo4j and Kong
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200710025931/photo-1558544956-15f3c317e06a.jpeg" width="150px"  />
+</div>
+++++
+
+Preet Kanwar has started a blog post series showing how to build a Neo4j backed application with Spring Boot and Kong, an open-source API gateway and microservice management layer.
+
+In the first post, Preet gives an overview of how to use GraphQL and Spring Boot together and explains the main concepts to be aware of when working with GraphQL.
+
+
+https://hackernoon.com/how-to-build-graphql-api-with-spring-boot-neo4j-and-kong-part-1-1j523w3s?ref=hackernoon.com[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/TechieOK200[Pradeep^]:
+
+tweet::1280800652642451457[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* Sam O @LogicallyCross
+https://hackernoon.com/how-to-build-graphql-api-with-spring-boot-neo4j-and-kong-part-1-1j523w3s?ref=hackernoon.com
+https://hackernoon.com/building-graphql-api-with-spring-boot-neo4j-and-kong-part-2-t7w3uha?ref=hackernoon.com
+https://hackernoon.com/building-graphql-api-with-spring-boot-neo4j-and-kong-part-3-5y113yw2?source=rss&utm_source=dlvr.it&utm_medium=twitter
+https://hackernoon.com/how-to-build-graphql-api-with-spring-boot-neo4j-and-kong-part-4-4qq3upa
+
+Building GraphQL API with Spring Boot, Neo4j and Kong – Part 3 http://dlvr.it/RZJrqF 
+
+* http://blog.bruggen.com/2020/06/executives-of-belgian-public-companies.html
+
+
+* Matthias Mann Lab @labs_mann
+All data of the ‘Proteome Landscape of the Kingdoms of Life’ @nature are open access. We integrated 340,000 quantified proteins in a graph database of 8 mio nodes and 54 mio relationships - ready to be explored:
+http://www.proteomesoflife.org
+Juan Guillermo Gómez @jggomezt
+I have developed a python reference microservice with:
+- Pipfile dependencies
+- Clean Architecture - SOLID
+- Neo4j Database
+- Dependency Injection
+- Flask micro-framework and gunicorn
+- Unit  and integration tests with gherkin syntax
+- etc
+https://github.com/jggomez/Python-Reference-Microservice
+
+https://neo4j.com/blog/getting-started-with-neo4j-fabric/
+Neo4j Graph Database PlatformNeo4j Graph Database Platform
+Getting Started with Neo4j Fabric
+Learn everything you need to know to get started with Neo4j Fabric, a new 4.0 feature allowing you to store and retrieve data in multiple databases.
+
+Peter Rose @peterwrose
+We’ve created a transparent and reproducible workflow to build the COVID-19-Net @neo4j Knowledge Graph using @ProjectJupyter Notebooks and @nteractio  Papermill. Try our prototype on binder @mybinderteam. https://github.com/covid-19-net/covid-19-community https://pbs.twimg.com/media/EbymrWPU8AEEBNe.jpg
+
+Jesús Barrasa @BarrasaDV
+Check out all the code I used during my session in this repo:  #Cypher + #SPARQL (including a Jupyter notebook version).
+Combining Wikidata + MeSH + Disease Ontology and more...  #RDF #Neo4j #Neosemantics
+https://github.com/jbarrasa/connections-lifesci  https://twitter.com/neo4j/status/1278014196916129800
+TwitterTwitter | 30 Jun
+Neo4jNeo4j @neo4j
+Next up at #Neo4jConnections: “Using Public RDF Resources in #Neo4j” with Jesús Barrasa from Neo4j
+Watch here: https://r.neo4j.com/2ZkohFR
+
+Sebastian Daschner @DaschnerS
+In this video I'll show how to perform schema migrations of @neo4j instances that run in a managed Kubernetes environment, to enable zero-downtime deployments:
+https://blog.sebastian-daschner.com/entries/neo4j-migrations-k8s
+
+http://blog.bruggen.com/2020/06/executives-of-belgian-public-companies.html
+blog.bruggen.comblog.bruggen.com
+Executives of Belgian Public Companies - revisited!
+A blog about my work and fun with Neo4j, the world's leading graph database platform.
+
+https://thenewstack.io/illuminating-the-anonymous-with-neo4js-graph-database/
+The New StackThe New Stack
+Illuminating the Anonymous with Neo4j’s Graph Database
+How Meredith used Neo4j for Graph Data Science to turn data about its largely anonymous website visitors into customer profiles.
+
+
+Prashanth Athri, Ph.D. @prashanthathri
+Data integration in cheminformatics can get hairy, but extremely rewarding. Here,
+https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.202000013
+we show that building contexts onto integrated datasets bring true value to existing information.
+Used @neo4j to integrate data from compound DBs -  @ChEMBL & @DrugBankDB
+
+
+https://elixirforum.com/t/seraph-toolkit-for-data-mapping-and-querying-neo4j/32862
+Elixir ForumElixir Forum
+Seraph, toolkit for data mapping and querying Neo4j
+
+https://medium.com/neo4j/rock-n-roll-traffic-routing-with-neo4j-3a4b863c6030
+MediumMedium
+ROCK ’N’ ROLL TRAFFIC ROUTING, WITH NEO4J
+
+
+////

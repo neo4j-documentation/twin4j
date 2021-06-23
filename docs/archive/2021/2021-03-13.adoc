@@ -1,0 +1,174 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+In this week's video, Rik Van Bruggen and Marius Hartmann explain how to do fraud detection with graphs. 
+
+Zuye Zheng analyses r/WallStreetBets, Hadi Fadlallah migrates data from SQL Server to Neo4j, and Greg King explains some of the features of the Monaco editor introduced in Neo4j Browser.
+
+And finally, Shyam Pratap Singh shows how to apply Hidden Markov Models to Part of Speech tagging on graphs.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Michael Moore
+
+This week's featured community member is Michael Moore.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210312063412/this-week-in-neo4j-13-march-2021.jpg[name="Michael Moore"]
+
+Michael is an Executive Director in the Advisory Services practice of Ernst & Young LLP. He helps EY clients deploy large-scale knowledge graphs using cutting-edge technologies, real-time architectures and advanced analytics. 
+
+Michael is a long time member of the Neo4j community and has spoken at multiple GraphConnect and GraphTour events. His talks include https://neo4j.com/videos/knowledge-graphs-the-path-to-enterprise-michael-moore-and-ai-omar-azhar-ey/[Knowledge Graphs: The Path to Enterprise^], https://neo4j.com/videos/your-roadmap-for-an-enterprise-graph-strategy/[Your Roadmap for an Enterprise Graph Strategy^], and https://www.youtube.com/watch?v=9X4sVt9fi9s[Transforming the Enterprise AI at Scale with Neo4j^]. 
+
+A couple of weeks ago he spoke at the Neo4j and the Cloud Connections event, where he shared his https://www.youtube.com/watch?v=yCQjN8uaIp4[predictions for the future of graph databases^].
+
+https://www.linkedin.com/in/michaeldmoore/[Connect with Michael on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Fraud Detection with Graphs at Danish Business Authority
+
+Our video this week is a webinar featuring Neo4j's Rik Van Bruggen and Marius Hartmann from the Danish Business Authority.
+
+youtube::FAJaWAUTGOI[type={type}]
+
+In the presentation, they explain why graphs are a good fit for fraud detection and how to combine graph analysis with machine learning to prevent fraud.
+
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+////
+
+[[features-2]]
+=== Graphing r/Investing and r/WallStreetBets
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210312004306/1_xzgV9eVVA-A6w8JOno2mHA.jpeg" width="150px"  />
+</div>
+++++
+
+I first learnt about r/WallStreetBets while following the GameStop story at the end of January, so this blog post is fascinating to me.  Zuye Zheng has applied graph analysis to the r/WallStreetBets and r/Investing communities. 
+
+Using the Louvain and PageRank graph algorithms, Zuye analyses which stocks are being promoted together, in which posts and by whom, and how they differ between these 2 communities.
+
+And all the code used in the post is https://github.com/zuyezheng/RedditSentiment[available on GitHub^].
+
+https://medium.com/geekculture/graphing-r-investing-and-r-wallstreetbets-c9f9f9276d69[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Migrating SQL Server graph databases to Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210312004739/sql-server_logo-1.jpg" width="120px"  />
+</div>
+++++
+
+Hadi Fadlallah has written a blog post showing how to migrate data from Microsoft SQL Server to Neo4j. 
+
+https://www.sqlshack.com/migrating-sql-server-graph-databases-to-neo4j/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Phonetic search in Neo4j 4, Monaco Editor, OpenTelemetry Instrumentation
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Luanne Misquitta shows how to https://graphaware.com/neo4j/2021/03/11/neo4j-fulltext-phonetic-analyzer.html[register a custom analyser for phonetic search^] in the Neo4j 4.x series. 
+
+* Greg King explains some of the https://medium.com/neo4j/neo4j-browser-embraces-the-monaco-editor-bc8415cac22e[features of the Monaco editor^] introduced in Neo4j Browser 4.2.4 .
+
+* OpenTelemetry https://github.com/aspecto-io/opentelemetry-ext-js/tree/master/packages/instrumentation-neo4j[added instrumentation support for Neo4j^]. 
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Implementing Hidden Markov Model for POS Tagging using Neo4j graph
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210312004453/300px-HiddenMarkovModel.svg.png" width=150px"  />
+</div>
+++++
+
+Shyam Pratap Singh has written a blog post showing how to apply Hidden Markov Models to Part of Speech tagging on graphs.
+
+After explaining the background of Hidden Markov Models, Shyam builds a conditional probability graph in Neo4j and shows how to write queries to determine the part of speech for different terms.
+
+https://towardsdatascience.com/implementing-hidden-morkov-model-for-pos-tagging-using-neo4j-graph-7129e57aa9b7[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mesetatron[Yuan Gao^]:
+
+tweet::1368373743802855429[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+
+
+https://lju.medium.com/lets-model-and-l%CC%B5o%CC%B5a%CC%B5d%CC%B5-refactor-some-data-4161e768135
+* 
+
+* HΟWΛRD JVNCΛ @howardjunca
+A nice article by @dgg32 Sixing Huang on how to compile, compare and analyze all KEGG functional orthologs (KO numbers) inferred from all described bacterial species genomes using Neo4J graphs Cypher  https://github.com/dgg32/neo4j_genome_ko https://dgg32.medium.com/analyzing-genomes-in-a-graph-database-27a45faa0ae8
+
+
+
+
+
+
+
+https://medium.com/rancard/demystifying-graph-databases-29e69f8c33e8
+
+////

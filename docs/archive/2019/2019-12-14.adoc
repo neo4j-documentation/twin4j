@@ -1,0 +1,201 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Building a Fashion Knowledge Graph, Carrefour Basket Dataset Challenge, Community detection on Game of Thrones, Analysing Network Traffic
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Louise Söderström explains schema based security in Neo4j 4.0.
+
+Jorge Albarrán uses Neo4j to explore the Starwars Galaxy,  Jesús Barrasa enriches a knowledge graph with Wikidata, and Eric Solender released a Go OGM.
+
+And finally, Rik explores products that were bought together in the Carrefour Basket Data Challenge.
+
+Enjoy!
+
+Mark Needham, Karin Wolok, and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Keith Damiani
+
+Our featured community member this week is Keith Damiani, Principal Full Stack Developer at Tighten, a web development agency in Chicago.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191211090358/this-week-in-neo4j-14-december-2019.jpg[name="Keith Damiani"]
+
+Keith is very active in the Laravel community, recently working on the https://jigsaw.tighten.co/[Jigsaw static site generator^] for Laravel developers.
+
+He recently presented at Laracon NYC, where he shared the love for graphs and maths during his https://www.youtube.com/watch?v=eVkTIg2D7NY[really impressive talk].
+He also built Larapals.com, a graph based networking application.
+
+Keith recently started working on Neo4Laravel, a library that will make it easier to build graph backed Laravel applications. Matt Stauffer and Zuzana Kunckova have used Keith's groundwork and inspiration in their https://www.youtube.com/watch?v=jbsf4F_PpNQ[live-stream programming sessions^].
+
+On behalf of the Neo4j community, thanks for all your work Keith!
+
+
+https://www.linkedin.com/in/keithdamiani[Connect with Keith on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Schema-Based Security in Neo4j 4.0
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^], Louise Söderström gives us a sneak peak of security features that will be introduced in the upcoming Neo4j 4.0 release.
+
+youtube::jQIqXVVYPE0[type={type}]
+
+In the talk Louise explains how user and role administration has changed from the 3.x series, and describes the new administrative commands that will be available.
+
+[[features-2]]
+=== Neo4j and the Starwars Galaxy: Using graphs to explore the galaxy
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191211054000/1_S2grJ1mpPCjCKfo4AUcHMA.jpeg" width="150px"  />
+</div>
+++++
+
+
+Jorge Albarrán has written about his experience using Neo4j to explore the Starwars Galaxy. 
+
+Jorge explains his graph modeling choices before demonstrating exploratory queries. He concludes by optimising Santa's trip around the empire.
+
+
+https://medium.com/@jorgealbarran/neo4j-and-the-starwars-galaxy-using-graphs-to-explore-the-galaxy-198b328ec724[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Visualise Activities, Go OGM, Graphistry Release
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191211091324/screen-shot-2019-12-04-at-7.04.28-am-1.png" width="150px"  />
+</div>
+++++
+
+* In Max De Marzi's latest blog post he shows how to http://maxdemarzi.com/2019/12/04/visualizing-activities/[visualise a sequence of activities^] using a d3 Sequences Sunburst diagram.
+
+* https://twitter.com/@erictg97[Eric Solender^] released version 1.0.0 of https://github.com/mindstand/gogm[GoGM^], the first Object Graph Mapper library for GoLang.
+
+*  Graphistry https://www.graphistry.com/blog/graphistry-2-26-1-gpu-graph-investigations-with-rapids-blazingsql-neo4j-custom-pivots-and-more[released a new version^] of their popular visualisation tool. This release add smart pivots for Neo4j workflow automation and performance improvements for working with Multi GPU DataFrames.
+
+* https://NiklasKolster[Niklas Kolster^] https://www.windsor.ai/analysing-online-customer-journeys-in-3d-with-3d-force-graphs/[analyses online customer journeys^] using Neo4j and Sankey graphs.
+
+
+[[features-4]]
+=== QuickGraph #10 Enrich your Neo4j Knowledge Graph by querying Wikidata
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191211043715/screenshot-2019-12-04-at-12.51.20.png" width="200px"  />
+</div>
+++++
+
+In the latest article in https://twitter.com/BarrasaDV[Jesús Barrasa^]'s QuickGraph series, he shows us how to enrich a knowledge graph with data from Wikidata.
+
+Jesús uses https://neo4j.com/docs/labs/nsmntx/current/import/[neosemantics^] to import countries and their borders, and runs the path finding and centrality graph algorithms to make sense of the data. He then visualises the data in the Neo4j Browser and enriches the graph by importing continent information as well.
+
+https://jbarrasa.com/2019/12/05/quickgraph10-enrich-your-neo4j-knowledge-graph-by-querying-wikidata/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Carrefour Graph: Part 3 - Product combinations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191129004048/Screenshot-2019-11-27-at-17.51.57.png" width="150px"  />
+</div>
+++++
+
+Rik continues his series of blog posts based on data https://github.com/ging/carrefour_basket_data_challenge[from a coding challenge for Carrefour^], a big French retailer. 
+
+In part 3 Rik explores products that are frequently bought together, and makes the surprising observation that shoppers often seem to purchase the same phone in different colours. 
+
+https://blog.bruggen.com/2019/11/part-34-playing-with-carrefour-shopping.html[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/RenHeymer[Lauren Heymer^]:
+
+tweet::1203747608184938497[type={type}]
+
+
+////
+
+https://towardsdatascience.com/build-a-react-flask-app-that-suggests-novel-novels-with-a-python-graph-9491e714bbdf 
+Build a React + Flask App that Suggests Novel Novels with a Python Graph
+
+Yey! The second episode of the #neo4j #graphdb #graphistania #podcast is out. See http://blog.bruggen.com/2019/12/graphistania-20-episode-2-this-month-in.html or upd8 your feeds!
+
+* predicate functions, extract functions, patterns, all together, @neo4j 's Cypher rocks.
+https://stackoverflow.com/questions/59078599/matching-all-nodes-related-to-a-set-of-other-nodes-neo4j/59078847#59078847 
+
+
+
+
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+
+* Ben Albritton @bla222
+Learning about the Islamic Scientific Manuscripts Initiative with Dr. Sally Ragep this morning @SIMS_Mss . All data available in a @neo4j db: https://ismi.mpiwg-berlin.mpg.de/neo4j-graph-db
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+Our team member David shows you how to create a GRANDstack app using #GraphQL, React, Apollo, and #NeoJ4
+https://buff.ly/2q1NqHD 
+
+
+
+alicia.frame
+@here - we've just released graph algos 3.5.13.0 (available in desktop and from the download center).
+There are new algorithms (k1-coloring, modularity optimization, and node similarity/jaccard, a parallelized implementation of louvain), bug fixes (triangle count), new graph loader functionality (initial support for multiple nodes), as well as some previews of the new 1.0 surface.
+Full release notes are here: https://neo4j.com/graph-algorithms-3-5-13-0-release-notes/
+
+
+Quantyca @quantycabi
+New blog post is out!
+Matteo Cimini will show a practical example by making use of Neo4j and Cypher Query Language: https://buff.ly/354RQgh
+You can find our blogposts also on our website: https://quantyca.it/
+Quantyca Team Rocks! 
+#database #graph #recommendation #neo4j https://pbs.twimg.com/media/ELZ1-9OWoAAhxnn.jpg
+
+Gerrit Meier @meistermeier
+And here we go with our second part of the #SpringData @neo4j RX introduction. This time we’ll have a look at the Neo4jTemplate and the Neo4jClient. https://youtu.be/_-aGFW4huvg
+
+https://blog.graphcommit.com/2019/12/graph-commit-project.html
+https://blog.graphcommit.com/2019/11/import-vcenter-infrastructure-into.html
+https://blog.graphcommit.com/2019/11/configuring-neo4j-server-yes-there-are.html
+
+
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-dockerizing-part-1-bcb861dc0c83 
+Flights Search Application with Neo4j — Dockerizing (Part 1)
+How to build Neo4j Docker Image with a flights database imported using the neo4j-admin import tool
+
+new bloom guide: https://neo4j.com/developer/neo4j-bloom/
+
+
+
+
+
+////
+

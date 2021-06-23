@@ -1,0 +1,156 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, we have an interview with David Fox, Senior Software Engineer at Adobe.
+
+Rik Van Bruggen runs graph algorithms over the COVID-19 Contact Tracing Graph, Nathan Smith explores power laws, and Michael Simons demonstrates how to build a Neo4j backed Springboot application.
+
+And finally, Vlad Batushkov builds a GRANDstack flight search application on top of his flight graph.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Vivek Srivastava
+
+This week's featured community member is Vivek Srivastava, Graph DB Expert at Manikya Software Solutions.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200507010233/this-week-in-neo4j-9-may-2020.jpg[name="Vivek Srivastava"]
+
+Vivek is an engineer, architect, and product manager with specialized experience in data warehousing, business intelligence, analytics and machine learning. He is a https://neo4j.com/graphacademy/neo4j-certification[Neo4j Certified Professional] and has been working with Neo4j for a couple of years. Vivek, like the majority of our community, is a graph nerd. 
+
+Vivek is part of the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninjas program] and is a prolific answerer of questions on the https://community.neo4j.com[Neo4j Community site^]. Apart from Neo4j employees, Vivek is the top contributor over the last 12 months.
+
+This is an undeniable representation of his commitment to being of value to those who need help. Vivek, on behalf of the entire Neo4j community, thank you! 
+
+https://www.linkedin.com/in/vivek-srivastava-7a250118/[Connect with Vivek on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Lean Graph Data Models Drive Fast Innovation: A Fireside Chat with David Fox, Adobe
+
+This week's video is an interview with David Fox, Senior Software Engineer at Adobe.
+
+youtube::AbFr6Oz9KvM[type={type}]
+
+David explains how he first came across Neo4j, projects where graphs are being used at Adobe, how he persuaded his colleagues to use Neo4j, and more. 
+
+
+[[features-2]]
+=== COVID-19 Contact Tracing: Part 3 - Graph Analytics
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327023334/Covid-19-Image.jpg" width="150px"  />
+</div>
+++++
+
+Rik continues his series of blog posts showing how to build a COVID-19 Contact Tracing Graph using Neo4j.
+
+In part 3 Rik shows how to use the https://medium.com/neo4j/the-graph-algorithms-playground-and-graph-data-science-library-69575a0fb329[Graph Algorithms Playground^] to run centrality and community detection algorithms against a graph of people that have 'met' each other.
+
+https://blog.bruggen.com/2020/04/covid-19-contact-tracing-blogpost-part_61.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Exploring Power Laws with Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200506232820/1_bsrYb7l2kt0Zczxaz1eqMA.png" width="120px"  />
+</div>
+++++
+
+After a couple of months break, Nathan Smith resumes his series of blog posts about https://www.cs.cornell.edu/home/kleinber/networks-book/[Networks, Crowds, and Markets]. 
+
+In this blog post we learn about power laws and the rich-get-richer phenomenon. With help from the APOC library, Nathan shows how to write a Cypher query to simulate the evolution of web pages and the links between them.
+
+https://medium.com/neo4j/exploring-power-laws-with-neo4j-c5ba6203a2d5[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== APOC Docs Graph App, SDN RX Release, GraphQL on Neo4j Sandboxes
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Adam Cowley explains https://medium.com/neo4j/how-i-built-the-apoc-user-guide-graph-app-cb9d1dae7b9c[how he built the recently released APOC Docs Graph App^].
+
+* Lucas Jellema shows how to use Neo4j's shortest path function to https://medium.com/oracledevs/finding-the-shortest-path-from-country-a-to-country-b-using-neo4j-and-node-d36f3aa96fe4[explore the languages spoken in different European countries^].
+
+* Gerrit Meier and Michael Simons https://github.com/neo4j/sdn-rx/releases/tag/1.0.1[released version 1.0.1^] of Spring Data Neo4j RX. This version adds features to the Cypher DSL and has a couple of bug fixes.
+
+* In a live streamed presentation, Michael Simons demonstrates https://www.youtube.com/watch?v=NvbSjOOcKjc[how to build a Neo4j backed Springboot application^]. 
+
+* Will Lyon has added support for querying Neo4j sandbox instances with GraphQL and Sandbox. You can spin up your own sandbox at http://neo4j.com/sandbox[neo4j.com/sandbox^]
+
+[[features-5]]
+=== Flights Search Application with Neo4j — GRANDstack and GraphQL Custom Resolver (Part 3)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200506232757/1_MEPHiPP7fDO51cee-pMrMA.png" width="200px"  />
+</div>
+++++
+
+Part 3 Vlad Batushkov's series of posts about building a flight search application is all about the https://grandstack.io/[GRANDstack^]. The GRANDstack is a set of modern tools for building full stack graph applications.
+
+Vlad gives us a detailed walk through of each of the application's front end components, each time pointing out which feature of the GRANDstack is being used. The post concludes with Vlad building a custom resolver to retrieve the results of a particularly complicated query.
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-grandstack-and-graphql-custom-resolver-part-3-4d14d174d980[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was https://twitter.com/swainjo[John Swain^]'s exploration of the conversation around COVID-19:
+
+tweet::1257418025407569920[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+Rik Van Bruggen @rvanbruggen
+Picked up an old skill again: created a #neo4j browser guide for the #covid19 #contacttracing demo that I built last week. It has become so easy: from #asciidoc to browser guide in seconds. http://blog.bruggen.com/2020/04/contact-tracing-guide-for-neo4j-browser.html
+
+Guide to using Apollo Federation with Neo4j GraphQL (published on Monday) and the latest version of neo4j-graphql.js (written by Michael Graham): https://grandstack.io/docs/apollo-federation-gateway-with-neo4j.html
+grandstack.iograndstack.io
+Using Apollo Federation and Gateway With Neo4j · GRANDstack
+
+ https://medium.com/swlh/how-to-visualize-a-spring-integration-graph-with-neo4j-61927ba5bb5a 
+How to visualize a Spring Integration graph with Neo4j?
+https://www.youtube.com/watch?v=9mRIc6NpR6Y
+Cloud Native + Kubernetes Manchester, April 2020 Virtual Edition
+
+(Opens in new tab)Towards Data Science(Opens in new tab) @TDataScience(Opens in new tab)
+Movie Recommendations powered by Knowledge Graphs and Neo4j https://buff.ly/35smGQJ 
+
+(Opens in new tab)Tim Pavlick(Opens in new tab) @Timpavlick(Opens in new tab)
+An elegant way to show relationships amongst graph vertices https://medium.com/applied-data-science/how-to-analyse-chess-games-using-graph-networks-38dd3b77d4be #graphdb #neo4j
+
+
+////

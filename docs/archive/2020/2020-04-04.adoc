@@ -1,0 +1,183 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Michal Bachman uses the Hume insights engine for contact tracing and smart quarantine in the context of the current coronavirus pandemic.
+
+TasoX demonstrates a tool for importing Windows Events into Neo4j, Rik continues his journey in the world of supply chain management, and NEuler has been updated to use the Graph Data Science Library.
+
+And finally, Adam Cowley gives us a rundown of the new features in the latest release of the Neo4j Desktop.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Elena Kohlwey
+
+This week's featured community member is Elena Kohlwey
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200403011057/this-week-in-neo4j-4-april-2020.jpg[name="Elena Kohlwey"]
+
+Elena is based in Germany (near Cologne) and works as a developer in the automotive industry. She’s math and graph nerd, a https://neo4j.com/graphacademy/neo4j-certification[Certified Neo4j Developer] and a https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninja].
+
+She’s passionate about solving problems while learning from others.  As part of the Neo4j Ninja program, she’s committed to helping answer questions on the Neo4j Community Site and Stack Overflow. 
+
+This past week, highly engaged Ninjas, including Elena, joined an exclusive ask-me-anything session with https://www.linkedin.com/in/john-kennedy-5216b112[John Kennedy, Product Manager of Neo4j Aura]. After the session ended, Elena (along with a couple other amazing community members) stayed for a while to provide feedback and brainstorm ideas on the Ninja Program with https://www.linkedin.com/in/karinwolok[Karin Wolok, Neo4j Community Manager], which ultimately is going to change the community benefits of the program. 
+
+Her commitment for learning, helping, and providing scalable value to our community by providing insight to shape the programs, are characteristics we truly admire. We’re so thankful to have you as part of our community, Elena! 
+
+Thank you for all that you do and we hope we can bring as much value to you as you bring to us and our community!      
+
+https://www.linkedin.com/in/elena-kohlwey-00924a14b[Connect with Elena on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Contact Tracing Using GraphAware Hume (COVID-19)
+
+This week's video is a timely one about using the Hume insights engine for contact tracing and smart quarantine in the context of the current coronavirus pandemic.
+
+youtube::2RkaBufMNjc[type={type}]
+
+In the video Michal Bachman shows how to use Hume to identify people at risk using contact tracing, suggest who should be informed or quarantined, visually explain why someone is at risk, find quarantine offenders, and much more.
+
+https://graphaware.com/hume,graphaware,covid19/2020/04/01/corona-virus-contact-tracing-smart-quarantine-hume.html[Read the blog post, role="medium button"]
+
+[[features-2]]
+=== Supply Chain Management with graphs: Part 2 - Some Querying
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327015423/erp-supply_chain_management.png" width="120px"  />
+</div>
+++++
+
+Rik Van Bruggen continues his series of blog posts about supply chain management with graphs. 
+
+In part 2 Rik starts by verifying the data imported in part 1, an important task that helps flush out any mistakes in our import scripts. 
+
+In this case everything is fine, so we can move onto exploring http://cmuscm.blogspot.com/2014/01/multi-echelon-inventory-optimization.html[multi-echelon^] supply networks using Cypher's powerful https://neo4j.com/docs/cypher-manual/current/syntax/patterns/#cypher-pattern-varlength[variable length pattern matching^].
+
+http://blog.bruggen.com/2020/03/supply-chain-management-with-graphs_25.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Windows Events & Sysmon Visualization using Neo4j (part 2)
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327024011/windowsxp.jpg" width="120px"  />
+</div>
+++++
+
+TasoX continues a series of blog posts about Windows Events & Sysmon Visualization using Neo4j.
+
+In part 2 TasoX explains how to use a tool called https://github.com/tasox/Epimitheus[Epimitheus^] to import Windows Events into Neo4j, and then shows how to make sense of those events using Cypher queries and graph visualisations.
+
+https://medium.com/@pentesttas/windows-events-sysmon-visualization-using-neo4j-part-2-d4c2fd3c9413[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== NEuler for GDS, BloodHound 3.0 on Neo4j 4.0, Graphlytic for Fraud Detection
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200403015127/Sni%CC%81mka-obrazovky-2020-03-26-o-19.15.50.png" width="200px"  />
+</div>
+++++
+
+* The Graphlytic blog has an article showing how to https://graphlytic.biz/blog/graphlytic-for-fraud-detection-in-banking-insurance-or-e-commerce-industry[use Graphlytic graphs to fight fraud in banking, insurance and e-commerce^].
+
+* Do you need a Neo4j causal cluster in your integration tests? Michael Simons has got you covered with the https://github.com/michael-simons/junit-jupiter-causal-cluster-testcontainer-extension[JUnit Jupiter Causal Cluster Testcontainer extension^].
+
+* The team behind Neo4j Aura, Neo4j's cloud service, have updated the https://console.neo4j.io/#how-to-connect[How To Connect^] page to show how to connect to your Aura database from GraphQL and Spring Boot applications. 
+
+* We've updated NEuler to https://medium.com/neo4j/the-graph-algorithms-playground-and-graph-data-science-library-69575a0fb329[work with the recently released Graph Data Science Library^] (GDS).
+
+* f4bl has https://f4ble.wordpress.com/2020/02/25/bloodhound-vm-installation/[a great write up^] of the installation of the new 3.0 version of BloodHound on Ubuntu 18.0.4 LTE, with a Neo4j 4.0 database.
+
+
+
+[[features-5]]
+=== What’s new in Neo4j Desktop — Spring 2020
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200403012607/1_dOQdtqeXk44KigL0ywDCxQ.png" width="200px"  />
+</div>
+++++
+
+The Neo4j Dev Tools have been busy improving the Neo4j Desktop and, in his latest blog post, Adam Cowley explains all. 
+
+The new features Adam covers include:
+
+* A brand new first graph experience for new users
+* Add file functionality for adding Cypher scripts and Neo4j Browser guides
+* Activation keys for graph apps
+
+And more! You'll need to download Neo4j Desktop version 1.2.6 to get all these goodies.
+
+https://medium.com/neo4j/whats-new-in-neo4j-desktop-spring-2020-197c43bfcfe1[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/JiliJeanlouis/status/1244340305731571712[Jean-Louis Queguiner^], who's just discovered the power of graphs. Have fun!
+
+tweet::1244340305731571712[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+* Michael Simons @rotnroll666
+Neo4j, reactive database access, JDK 14 records: https://github.com/michael-simons/neo4j-examples-record-movies
+Even relationship mappings work ootb with records.
+Thanks @odrotbohm for the Spring record support.
+
+
+Live Data Concepts @LiveDataConcept
+Drug Development Knowledge Graph insights using visual and interactive cues https://link.medium.com/1HFl0jIej5 #Neo4j #Bloom #Knowledgegraph #drugdiscovery #visualization #cancer
+
+
+
+https://medium.com/neo4j/whats-new-in-neo4j-desktop-spring-2020-197c43bfcfe1
+What’s new in Neo4j Desktop — Spring 2020
+
+Lup Yuen Lee 李立源 @MisterTechBlog
+#Neo4j Metadata for Cultural Artifacts...
+"A Semantically Annotated JSON Metadata Structure For Open Linked Cultural Data In Neo4j"
+https://dl.acm.org/doi/pdf/10.1145/3368640.3368659
+
+
+* https://towardsdatascience.com/analyzing-multigraphs-in-neo4j-graph-data-science-library-35c9b6d20099
+Analyzing multigraphs in Neo4j Graph data science library
+
+Part 3/3 of my experiments with #supplychainmanagement (#scm) in #neo4j: applying some #graphalgo love (betweenness, pathfinding, ...) to a supply chain can be very interesting. See https://blog.bruggen.com/2020/03/supply-chain-management-with-graphs_27.html
+
+* William Lyon @lyonwj
+[new blog post] GraphQL ResolveInfo Deep Dive
+Building efficient #GraphQL resolvers by generating database queries.
+Uses examples from the @neo4j GraphQL integrations, but the concepts apply to any GraphQL API that fetches data from a database.
+https://blog.grandstack.io/graphql-resolveinfo-deep-dive-1b3144075866
+
+
+////

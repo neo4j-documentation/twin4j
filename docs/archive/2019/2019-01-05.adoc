@@ -1,0 +1,139 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Happy New Year everybody, and welcome to our first version of TWIN4j of 2019. I'd only just got used to writing the year as 2018!
+
+This is traditionally a quiet week, but we've still got some good stuff for you to read and listen to. I always enjoy Joe Depeau's webinars and he's produced another one showing how to use Neo4j for Anti-Money laundering. David Mack gives us a crash course in machine learning on graphs, Will Lyon replicates GitHub's GraphQL API, and Dan McCreary looks forward to 2019 in the world of graphs.
+
+[[featured-community-member]]
+=== Featured Community Member: Tim Hanssen
+
+This weeks featured community member is https://twitter.com/timhanssen[Tim Hanssen^], Founder at Prepr & Co-founder Syncable. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190104044057/this-week-in-neo4j-5-january-2019.jpg[name="Tim Hanssen"]
+
+Tim has been a member of the Neo4j community for several years and uses Neo4j as part of the 3rd generation of a media platform.
+
+Tim has presented about his project at local meetups, and recently presented https://www.youtube.com/watch?v=a1Hce03GvVU[Large-Scale Real-Time Recommendations with Neo4j^] at GraphConnect NYC 2018. 
+
+
+link:https://twitter.com/timhanssen[Thank Tim for his work, role="medium button"]
+
+[[features-1]]
+=== How to Improve Anti-Money Laundering Investigation using Neo4j
+
+At the start of December, https://twitter.com/joedepeau[Joe Depeau^] presented a webinar showing how to use Neo4j to help with anti money laundering investigations.
+
+youtube::J7BNKV2Lqy0[type={type}]
+
+Joe starts by giving an overview of money laundering and anti money regulations, before describing some of the common problems encountered. He then explains how AML with connected analysis can help solve these problems, and demos an AML investigation of a fictitious bank using Neo4j and the Bloom visualization tool.
+
+[[features-2]]
+=== Replicating The GitHub GraphQL API With Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190104032305/1_QmbRkMTpXwmlAFvJtq5zXw.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/lyonwj[Will Lyon^] has written a blog post showing how to build your own version of GitHub's GraphQL API using neo4j-graphql.js and data exported via the  download-all-of-your-GitHub-data feature. 
+
+In the post Will shows how to import the raw data into Neo4j, then builds GraphQL type definitions and auto generates a GraphQL schema, before writing GraphQL queries to explore the data.
+
+link:https://r.neo4j.com/2F8AR3g[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Neo4j and GraphQL with William Lyon
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="150px"  />
+</div>
+++++
+
+Will was also interviewed by the GraphQL Patterns podcast. 
+
+They discuss what Neo4j is, how it works, how the database integrates with GraphQL, and how to get started with the technologies.
+
+link:https://r.neo4j.com/2F6OaB5[Listen to the podcast, role="medium button"]
+
+
+[[features-4]]
+=== How to get started with machine learning on graphs 
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190104034759/1_4UOJiaoEV7om3dSLvUNh0A%402x.png" width="100px"  />
+</div>
+++++
+
+https://twitter.com/davidhhmack[David Mack^] has written a blog post in which he shares resources and approaches to get started with machine learning on graphs.
+
+David gives an overview of the field, explains the  common tasks in Graph ML and how we might go about solving them, and concludes with a long list of further reading to keep you busy into the new year!
+
+link:https://r.neo4j.com/2F7GZZx[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Looking Forward to 2019 in Graph Technologies
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190104035325/1_qlVNYN3GLwev-HSXWbHpsA.jpeg" width="200px"  />
+</div>
+++++
+
+Dan McCreary has written an excellent article in which he summarises the world of graphs in 2018, and looks forward to the coming year. 
+
+The post covers Knowledge Graphs, Google DeepMind's paper on Graph ML,  Custom Graph Hardware, and more. If you want a crash course in the state of graphs at the start of 2019, this is a good place to start.
+
+link:https://r.neo4j.com/2F8ATIq[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/AviAvni3[Avi Avni^]:
+
+tweet::1078216725328470016[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+Graphing the Floodlight Open Project data
+https://medium.com/@fbraga/graphing-the-floodlight-open-project-data-f566cc82a995
+
+[[articles-1]]
+=== This weeks articles and publications
+
+* https://technology.amis.nl/2019/01/01/finding-the-shortest-path-from-country-a-to-country-b-using-neo4j-and-node/ 
+
+Graphing the Poets 
+https://medium.com/@kirbyurner/graphing-the-poets-b600c86d6b9 
+
+////

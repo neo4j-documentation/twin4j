@@ -1,0 +1,186 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - New Book: Fullstack GraphQL Applications with GRANDstack, Leveraging Graph Algorithms In Visualizations, Marketing Activities in Neo4j
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+Neo4j's Database as a Service product had its official launch this week and it has a brand new name - Neo4j Aura. If you love developing graph applications but aren't experienced operating them in production, this is what you've been waiting for!
+
+Apart from that, Alicia Frame teaches us about graph embeddings, Matt Casters shows how to write a Kettle plugin, and David Allen gives a graph modeling master class.
+
+But before you read about any of those things, there's now less than one week to go for the Call for Papers for GraphConnect 2020. If you're not sure what to submit or just need a little bit of encouragement, be sure to read https://medium.com/neo4j/share-your-graph-story-with-the-world-at-graphconnect-2020-16a06b0dfe39[Will Lyon's blog post^].
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Mike Black
+
+Our featured community member this week is Mike Black.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191108094248/this-week-in-neo4j-9-november-2019.jpg[name="Mike Black"]
+
+
+Mike’s a https://neo4j.com/graphacademy/neo4j-certification[Neo4j Certified Developer^] who has been addicted to graphs for many years. 
+
+What’s awesome about having a person like Mike in our community? He does a little bit of everything and gets involved in a variety of ways.  To review some of the ‘hats’ Mike wears —  he organizes local events, like https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day[Global Graph Celebration Day]. This past week, he was a presenter at https://www.utahgeekevents.com/events/big-mountain-data-dev-2019[BIG MOUNTAIN DATA & DEV 2019] (and he managed to get a spot in the big room immediately following the keynote - woop woop!) :D  
+
+He also is a contributor on the https://community.neo4j.com/[Community site^] and frequently answering technical questions, which we are SO grateful for!!!. He was also one of the winners of the https://neo4j.com/online-summit[NODES 2019 Hunger Games]! 
+
+Oh, and he’s also a daddy and sent us a picture of his new baby girl earlier this year wearing a http://graphgearstore.com[Neo4j onesie].  Mike, we’re so thankful to have you in our community! Thank you so much for all of your contributions and all that you do!
+
+
+https://www.linkedin.com/in/michael-r-black/[Connect with Mike on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Graph Embeddings
+
+This week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference is Alicia Frame's talk about https://neo4j.com/online-summit/session/graph-embeddings-machine-learning-ml[graph embeddings^].
+
+youtube::oQPCxwmBiWo[type={type}]
+
+We're actively implementing prototypes for several embeddings, and in this talk Alicia explains how they work, why we chose them, and what they can be used for.
+
+[[features-2]]
+=== Introducing Neo4j Aura: A New Graph Database as a Service
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191105194052/neo4j-aura-social.jpg" width="200px"  />
+</div>
+++++
+
+On Wednesday Emil announced the launch of Neo4j Aura, Neo4j's fully managed Database as a Service. 
+
+You can learn more about the product's features by going to https://neo4j.com/aura/[neo4j.com/aura^], and we've also written some https://neo4j.com/developer/cloud-dbaas/[developer guides to help you get started^].
+
+https://neo4j.com/blog/introducing-neo4j-aura-a-new-graph-database-as-a-service/[Read the announcement post, role="medium button"]
+
+[[features-3]]
+=== Writing a Kettle connector, League of Legends, Reactive Transactions
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191108000554/1_c2-tzXFbb-Nl_KwWPX1piQ.png" width="150px"  />
+</div>
+++++
+
+
+* Matt Casters has written a blog post in which he shows how to https://medium.com/neo4j/writing-kettle-plugins-splunk-4b51ac426751[write a Kettle connector for a missing data source^].
+
+* The video of  https://www.twitter.com/lyonwj[Will Lyon^]'s https://youtu.be/eqbyUK4v_jA?t=3[GraphQL ResolveInfo Deep Dive^] at GraphQL Summit is now available on Apollo's YouTube channel. 
+
+* https://www.twitter.com/rotnroll666[Michael Simons^] shared the slides from his https://speakerdeck.com/michaelsimons/reactive-transactions-masterclass[reactive transactions masterclass^] talk at Devoxx 2019. 
+
+* Jimmy Crequer continues his series of posts around League of Legends and Neo4j, this time doing https://medium.com/neo4j/league-of-legends-with-neo4j-champions-diversity-in-worlds-2019-16999b21c457[analysis of the champions in the Worlds 2019 event^]. 
+
+
+* TIQSolutions' Neo4j backed https://community.qlik.com/t5/Qlik-Gallery/TIQSolutions-Fraud-Detection-in-eCommerce/ba-p/1633922[Fraud Detection in eCommerce application^] has been published on the Qlik gallery. 
+
+[[features-4]]
+=== Graph Data Modeling: All About Relationships
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191107230954/1_t1xyMHTrxNBYoa8K5Urtmw.jpeg" width="200px"  />
+</div>
+++++
+
+In the latest blog post in David Allen's graph data modeling series, he goes deep on what relationships are, what they mean in a domain, and how to use them.
+
+This post is a crash course in graph data modeling, covering a variety of topics, including:
+
+* data normalization
+* the connection between relationships and verbs
+* the different types of semantics a relationship can take on
+* reifying complicated relationships into more simple ones.
+
+https://medium.com/neo4j/graph-data-modeling-all-about-relationships-5060e46820ce[Read the blog post, role="medium button"]
+
+
+[[features-5]]
+=== Understanding alliances: Exploring structural balance with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025014324/41VaxWW3cqL._SX347_BO1204203200_.jpg" width="150px"  />
+</div>
+++++
+
+Nathan Smith continues to use Neo4j to explore the concepts in the https://www.cs.cornell.edu/home/kleinber/networks-book/[Networks, Crowds and Markets^] book.
+
+In his latest blog post, Nathan explores structural balance of triangles in the context of an alternative view of politics in the run up to World War I. 
+
+And if you want a blast from the past, Dr Jim Webber covered similar ground in his entertaining https://neo4j.com/blog/the-graph-space-jim-webber-graphconnect/[closing keynote at GraphConnect SF 2015^] .
+
+https://medium.com/neo4j/understanding-alliances-exploring-structural-balance-with-neo4j-71fc08f10985[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/tiagoooliveira[Tiago Oliveira^]:
+
+tweet::1192161181055635456[type={type}]
+
+
+////
+
+
+Next week:
+Nathan Smith @nsmith_piano
+When you need to stay a step ahead of the competition, a graph can help you understand the possible scenarios. See an example in my latest blog post. #Neo4j #Graph #Strategy https://medium.com/@nsmith_piano/into-the-multiverse-exploring-multiple-scenarios-for-structural-balance-48c460462510?source=friends_link&sk=54971bdd8afe093b7b753f5583d8fd48 
+
+https://blog.bruggen.com/2019/11/graphistania-20-episode-1-this-month-in.html
+Graphistania 2.0 - Episode 1 - This Month in Neo4j
+
+https://medium.com/neo4j/gr-r-andstack-the-2nd-r-stands-for-regraph-fca60f005e56
+GR-R-ANDstack (the 2nd ‘R’ stands for ReGraph)
+Using ReGraph as part of your GRANDstack application
+
+
+https://medium.com/neo4j/load-testing-neo4j-procedures-with-apache-jmeter-caff4c0d9d5a
+Load Testing Neo4j procedures with Apache JMeter
+For the Global GraphHack 2019, we extended JMeter to provide support for the Bolt protocol and the execution of Cypher queries.
+
+@rimllr
+The slides for "Graph-Based Analysis and Visualization of Software Traces" presented at 10th Symposium on Software Performance are now available: https://www.slideshare.net/RichardMller12/graphbased-analysis-and-visualization-of-software-traces-ssp-2019
+#SSP2019 #Neo4j #jQAssistant #yFiles
+
+@softvisresearch
+Software Analytics with #Jupyter notebooks using a prefilled #Neo4j database running on #MyBinder. Created with building blocks from @feststelltaste and @psychemedia.
+https://github.com/softvis-research/BeLL https://pbs.twimg.com/media/EISE7-FXUAEkaDj.jpg
+
+
+* Hi, Spring fans! In this installment @starbuxman talks to @springbootbuch author, Spring community legend and engineer working on the new, reactive @SpringData @neo4j project,  @rotnroll666
+https://soundcloud.com/a-bootiful-podcast/michael-simons-on-spring-boot-reactive-spring-data-neo4j-and-more
+
+@catchnkn
+Check out my latest blog post about Performance Testing Neo4j database using Bolt Protocol in Apache JMeter. https://qainsights.com/performance-testing-neo4j-database-using-bolt-protocol-in-apache-jmeter/ #jmeter #bolt #neo4j https://qainsights.com/performance-testing-neo4j-database-using-bolt-protocol-in-apache-jmeter/
+
+Jasper Blues @doctor_cerulean
+This is Atok, Benguet, 48KM from our house. Makes a nice backdrop for my two day old open-source project - which is a Node.js and  #TypeScript client for #GraphDatabase like @AgensGraph #Neo4J and others.
+https://github.com/liberation-data 
+
+////

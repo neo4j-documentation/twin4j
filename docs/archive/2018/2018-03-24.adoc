@@ -1,0 +1,114 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 24 March 2018, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have an interview with Dr Jim Webber about Knowledge Graphs and Modern AI, lots of resources for learning about GraphQL and Neo4j, the Open Beer DB Graph, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Andy Robbins
+
+This week’s featured community member is https://twitter.com/_wald0[Andy Robbins^], Adversary Resilience Lead at https://specterops.io/[SpecterOps^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180320152741/this-week-in-neo4j-24-march-2018.jpg[name="Andy Robbins"]
+
+Andy has been part of the Neo4j community for several years and is one of the authors of the https://github.com/BloodHoundAD/BloodHound[BloodHound^] security engineering tool. BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Andy presented on this at https://www.youtube.com/watch?v=cT4xEhssz0U[GraphConnect NYC 2017^].
+
+Andy has recently written https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604[a couple^] https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d[of blog posts^] about the Adversary Resilience Methodology where he explains how BloodHound can be used to defend against attackers. Andy's also created a short video showing how to https://www.youtube.com/watch?v=o22EMEUbrNkjj[get setup with BloodHound and Neo4j on your laptop^].
+
+On behalf of the security and Neo4j communities, thanks for all your work Andy!
+
+[[graphql]]
+=== GraphQL and Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+
+This week we've got several articles about Neo4j and GraphQL, Facebook's query language for your API.
+
+https://github.com/pm-dev[Peter Meyers^] has created a Starwars based example application which http://excusethedisruption.com/secret-sauce-web-app-kotlin-neo4j-graphql/[combines Neo4j, Kotlin, and GraphQL^]. You can find the code in the https://github.com/pm-dev/neo4j-exploration[neo4j-exploration^] GitHub repository.
+
+https://twitter.com/montykamath[Monty Kamath^] has written an https://montykamath.wordpress.com/2018/03/17/graphql-to-neo4j/[experience report about writing a GraphQL to Neo4j mapping layer^] in which he explains some of the challenges he had but concludes that it was a pretty fun journey.
+
+I also came across Marco Liberati's https://github.com/GraphRM/graphql-graphdb[graphql-graphdb^]. This one's in Italian, but with a bit (ok a lot!) of help from Google Translate I learnt that it contains the code from a talk where Marco showed how to build a GraphQL API on a meetup dataset stored in Neo4j.
+
+If you want to get started with Neo4j and GraphQL and you're a JavaScript Developer have a look at the https://www.npmjs.com/package/neo4j-graphql-js[neo4j-graphql-js^] library which automatically translates GraphQL queries to the Cypher query language. If you don't do JavaScript you can use the https://github.com/neo4j-graphql/neo4j-graphql[neo4j-graphql^] extension.
+
+If you try out either of these tools don't forget to send your feedback to devrel@neo4j.com. 
+
+
+[[knowledge-graphs]]
+=== Knowledge Graphs and Modern AI, Open Beer DB, Neo4j -> Kafka
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180321012854/semantic_graph_shutterstock_andrio-300x210.jpg" width="150px" />
+</div>
+++++
+
+* datanami have https://www.datanami.com/2018/03/20/why-knowledge-graphs-are-foundational-to-artificial-intelligence/[an interview^] with Neo4j's Chief Scientist https://twitter.com/jimwebber[Dr Jim Webber^]. In the first part of the interview Jim explains how important context is across a range of different applications such as fraud detection, retail recommendation engines, and knowledge sharing. In the second part he describes the important role that knowledge graphs play when building modern AI systems.
+
+* https://twitter.com/niklassaers?lang=en[Niklas Saers^] has written a blog post https://neo4j.com/blog/theo-4-0-swift-driver-for-neo4j/[about the latest release of Theo^], the Swift Neo4j driver. This release adds support for 4.0 and introduces a results-oriented API. 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180321021534/openbeer.png" width="150px" />
+</div>
+++++
+
+* https://twitter.com/aicfr[Kevin Heraud^] created https://github.com/aicfr/neo4j-openbeerdb[Open Beer DB^] - a Neo4j graph based on the data from http://openbeerdb.com/[openbeerdb.com^], inspired by Wai-Yin Kwan's https://neo4j.com/graphgist/beer-amp-breweries-graphgist#author[Beer & Breweries GraphGist^]. 
+
+* https://twitter.com/emehrkay[Mark Henderson^], whose Pypher library featured in the https://neo4j.com/blog/this-week-neo4j-nbc-russian-twitter-trolls-spring-boot-grand-stack/[February 17th 2018^] version of https://neo4j.com/tag/twin4j/[#twin4j^], is http://emehrkay.com/i-m-writing-an-o-g-m[creating a Python OGM^]. If you have any ideas for what Mark should call the library or have any other feedback he's https://twitter.com/emehrkay[@emehrkay^] on twitter.
+
+* https://twitter.com/mesirii[Michael Hunger^] has started working on https://github.com/neo4j-contrib/neo4j-kafka[neo4j-kafka^], a library that will stream transaction event handler events to a Kafka topic. This one is still in its infancy but worth keeping an eye on.
+
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| March 28th 2018 | https://www.meetup.com/graphdb-london/events/248662711/[Neo4j-Databridge: Enterprise-scale ETL for Neo4j^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/mambofish[Vince Bickers^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/crtr0[Carter Rabasa^]:
+
+tweet::976110138749698048[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

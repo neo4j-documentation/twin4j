@@ -1,0 +1,127 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 April 2018, including projects around Graph Visualization using Neovis.js, a write up of the Pink Programming event, analysing Debian packages.
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 31 March 2018
+
+[Headline:]
+This Week in Neo4j – 21 April 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have Graph Visualization using Neovis.js, a write up of the Pink Programming event, analysing Debian packages, and more. 
+
+
+[[featured-community-member]]
+=== Featured Community Member: Norbert Preining
+
+This week’s featured community member is https://twitter.com/norbusan[Norbert Preining^], Research and Development Engineer at Accelia Inc. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180419234259/this-week-in-neo4j-21-april-2018.jpg[name="Norbert Preining"]
+
+Norbert has been using Neo4j to analyse the  Ultimate Debian Database. In October 2017 he https://www.youtube.com/watch?v=lpqvv36SBQw[presented at our online meetup^] and showed how to write Cypher queries to explore dependencies between packages.
+
+More recently Norbert has started a blog series where he goes into more detail:
+
+* https://www.preining.info/blog/2018/04/analysing-debian-packages-with-neo4j-part-1-debian/[Part 1^] in which Norbert gives a short introduction to Debian and the life time and structure of Debian packages
+
+* https://www.preining.info/blog/2018/04/analysing-debian-packages-with-neo4j-part-2-udd-and-graph-db-schema/[Part 2^] in which Norbert describes the Ultimate Debian Database UDD and shows how to map the information presented from the UDD into Neo4j.
+
+You can also find Norbert's code in the https://github.com/norbusan/debian-graph[debian-graph^] GitHub repository.
+
+On behalf of the Neo4j community, thanks for all your work Norbert!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+[[pink-programming]]
+=== Neo4j <3 Pink Programming
+
+Last weekend my colleagues Louise Söderström and Maria Scharin https://nouw.com/lojjs/neo4j-3-pink-programming-33563176[hosted a Neo4j fundamentals workshop^] for the Pink Programming group.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180420004252/2018-04-20_08-42-44.png["Pink Programming at Neo4j", 770, 377, class="alignnone size-full wp-image-66813"]
+
+In the morning participants learned the basics of our query language Cypher and did some hands-on Cypher tutorials based on the Movies example database. 
+
+After lunch they got a sneak peek at the new date data type that will be introduced in Neo4j 3.4 and Louise explained all the weird corner cases when implementing support for dates, times and time zones. 
+
+[[podcast]]
+=== On the podcast: Irene Iriarte Carretero
+
+This week on the podcast Rik http://blog.bruggen.com/2018/04/podcast-interview-with-irene-iriarte.html[interviewed^] https://twitter.com/irenillap[Irene Iriarte Carretero^], Data Scientist at Gousto and our featured community member from https://neo4j.com/blog/this-week-neo4j-rmarkdown-new-apoc-release-finding-duplicates/[3rd March 2018^].
+
+Rik and Irene discuss the recipe-similarity problem and Irene explains all the different dimensions that go into building a hybrid recommendation model that combines collaborative and content based filtering. 
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/432074973&color=%2335a1cb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<br /><br />
+++++
+
+[[neovisjs]]
+=== Screencast: Graph Visualization With Neo4j Using Neovis.js
+
+My colleague https://twitter.com/lyonwj[Will Lyon^] has created a screencast in which he shows how to use https://github.com/neo4j-contrib/neovis.js[neovis.js^], a visualization tool he built that combines Neo4j with the http://visjs.org/[vis.js^] JavaScript library.
+
+youtube::0-1A7f8993M[type={type}]
+
+Will demonstrates how to find influential nodes and communities of users in the https://hackernoon.com/six-ways-to-explore-the-russian-twitter-trolls-database-in-neo4j-6e52394c38f1?gi=56a3eb06d9b2[Russian Twitter Troll dataset^] by combining Graph Algorithms and Graph Visualization. 
+
+[[other]]
+=== GORM with Neo4j, Visualizing GoT
+
+* Jorge Aguilera has written a post showing https://groovy-lang.gitlab.io/101-scripts/bbdd/neo4j_gorm-en.html[how to use GORM, Groovy-based data access toolkit,  with Neo4j^]. In the article Jorge describes how to write a Groovy based command line application to query the Panama Papers dataset. 
+
+* In https://tbgraph.wordpress.com/2018/04/18/neo4j-graph-visualizations-using-got-dataset/[Neo4j Graph Visualizations using GoT dataset^] https://twitter.com/tb_tomaz[Tomaz Bratanic^] shows how to combine Neo4j graph algorithms with various visualizations, including https://github.com/jexp/spoon-neo4j[SpoonJS^], https://github.com/jexp/neo4j-3d-force-graph[3d-force-graph^], and https://github.com/neo4j-contrib/neovis.js[neovis.js^] , to try and understand what's happening in Westeros.
+
+
+[[meetups]]
+=== Next Week
+
+What’s happening next two weeks in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| April 25th 2018 | https://www.meetup.com/graphdb-london/events/249198093/[The Fragment Network: A Chemistry Recommendation Engine Built Using Neo4j^]   | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | Richard Hall
+
+| April 25th 2018 | https://www.meetup.com/Philly-GraphDB/events/249356944/[Cypher Philly Initiative Kickoff^]   | https://www.meetup.com/Philly-GraphDB/[Philly GraphDB^] | 
+
+| April 25th 2018 | https://www.meetup.com/Minneapolis-Neo4j-User-Group/events/249467374/[Graph Algorithms on ACID: Combining OLTP+OLAP^]   | https://www.meetup.com/Minneapolis-Neo4j-User-Group/[Minneapolis Neo4j User Group^] | https://twitter.com/ryguyrg[Ryan Boyd^]
+
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ianhunter[Ian Hunter^]
+
+tweet::985917750911602689[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

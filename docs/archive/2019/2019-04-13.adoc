@@ -1,0 +1,161 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+The big news in the Neo4j Community this week came from the Google Cloud Next 2019 conference. Neo4j formally announced a new strategic partnership with Google Cloud that delivers Neo4j as a fully managed service deeply integrated with the Google Cloud Platform. We in the DevRel team have been internal customers of the upcoming Neo4j Cloud product, and we're looking forward to everyone else getting their hands on it. 
+
+Elsewhere, Irfan and I added support for similarity and path finding algorithms to NEuler - The Graph Algorithms Playground, Jennifer Reif published an awesome tutorial showing how to use Neo4j on Docker, and Michael Hunger showed off virtual nodes and relationships in a new video.
+
+[[featured-community-member]]
+=== Featured Community Member: Sacha Faust
+
+Our featured community member this week is https://twitter.com/sachafaust?lang=en[Sacha Faust^], Product Security Lead at Lyft.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190412121952/this-week-in-neo4j-13-april-2019.jpg[name="Sacha Faust"]
+
+Sacha has been part of the Neo4j Community for several years, and has been pioneering the use of graphs in security. He shared his work in a talk titled https://www.youtube.com/watch?v=8TV9TSNh7pA[Six Degrees of Infiltration: Using Graph to Understand your Infrastructure and Optimize Security Decision Making^] at BSidesSF 2018. 
+
+Sacha recently released https://github.com/lyft/cartography[cartography^], a Python tool that consolidates infrastructure assets and the relationships between them in an intuitive graph view powered by a Neo4j database.
+
+On behalf of the Neo4j community, thanks for all your work Sacha!
+
+https://twitter.com/sachafaust?lang=en[Follow Sacha on Twitter, role="medium button"]
+
+[[features-1]]
+=== Graph of Thrones - Graph Visualization 101 with GraphXR 
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], in preparation for Game of Thrones Season 8, Sony Green and Weidong Yang showed us how to analyse the data using GraphXR.
+
+youtube::ZXxBDPPWwYc[type={type}]
+
+Using various visualisations Sony and Wei explored different parts of this virtual world, including relationships between characters and the death graph. They also show how to run graph algorithms over the graph to find the most important characters. 
+
+[[features-2]]
+=== What’s Next for Graphs: Neo4j for Google Cloud
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190412083412/download-5.png" width="200px"  />
+</div>
+++++
+
+On Tuesday, at Google Cloud Next ’19, Neo4j formally announced a new strategic partnership with Google Cloud that delivers Neo4j as a fully managed service deeply integrated with the Google Cloud Platform.
+
+Now every GCP user has access to graph superpowers – without having to worry about operations and management – enabling them to focus on what they care about most: building applications in the cloud.
+
+link:https://neo4j.com/blog/whats-next-for-graphs-neo4j-google-cloud/[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Introducing NEuler — The Graph Algorithms Playground
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190412094159/1_B5HP76g8J-Oa2oYQFiK9rA.png" width="200px"  />
+</div>
+++++
+
+This week we announced the release of Neo4j Euler (NEuler) - The Graph Algorithms Playground.
+
+This is a Graph App built by Irfan Karaca and me to help make the Neo4j Graph Algorithms Library accessible to users who don't want to learn Cypher.
+
+We've got support for nearly all the centrality, community detection, path finding, and similarity algorithms, and will be adding support for the rest in the coming weeks. If you have the Neo4j Desktop installed and are using Windows or Mac, you can one click install with the link below:
+
+link:neo4j://graphapps/install?url=https://bit.ly/install-neuler[One Click Install Graph Algorithms Playground^]
+
+Don't forget to send me any thoughts and ideas to devrel@neo4j.com 
+
+link:https://medium.com/neo4j/introducing-neuler-the-graph-algorithms-playground-d81042cfcd56[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== New Docker Tutorial, Virtual Nodes and Rels, Taxonomy of Graph Use Cases
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190412124820/neo4j-docker-image-now-in-beta-235x300.jpg" width="150px"  />
+</div>
+++++
+* https://twitter.com/jmhreif[Jennifer Reif^] continues her overhaul of the Neo4j Developer pages, and as part of this work has https://neo4j.com/developer/docker-run-neo4j/[published a brand new Docker walkthrough/tutorial^]. 
+
+* Michael Hunger published a link:https://www.youtube.com/watch?v=x34FuSLt0l8&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=12&t=0s[new video on using virtual nodes and rels^] - a really powerful tool for graph visualization (summarization, collapsing transitive relationships, monopartite visualisation)
+
+* I'm a bit late with this one, but about a month ago Dan McCreary wrote https://medium.com/@dmccreary/a-taxonomy-of-graph-use-cases-2ba34618cf78[A Taxonomy of Graph Use Cases^], in which he shares the list of properties your data needs to have to need a graph database. He also describes some common use cases for graphs.
+
+* Roberto Previdi has written a cool post showing how to use graphs and graph algortihms to help with the https://graphaware.com/neo4j/2019/03/09/graph-assisted-typescript-refactoring.html[refactoring of a Typescript application^]. 
+
+[[features-4]]
+=== This Week in GRANDstack: New features in neo4j-graphql-java, GraphQL Foundation, 2nd Milestone of neo4j-graphql-java 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190412093015/1_ySa-dMy9VIYKHqFatQM-nw.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/lyonwj[Will Lyon^] has started writing a series of blog posts curating the activity in the GRANDstack community. This week we have the announcement Neo4j as a founding member of the GraphQL foundation, a new video course, and new features in the neo4j-graphql.js library. 
+
+Michael also announced the 2nd Milestone Release of neo4j-graphql-java, packed with a lot of newly implemented features. You can read more about that in the https://github.com/neo4j-graphql/neo4j-graphql-java/releases/tag/1.0.0-M02[release notes^].
+
+link:https://blog.grandstack.io/whats-new-in-grandstack-310c067fea4a[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/askkerush[Karin Wolok^], our Community Manager Extraordinaire:
+
+tweet::1116064633163370496[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://medium.com/neo4j/augment-intelligence-with-graph-power-878bce611a8f - Augment Intelligence with Graph Power 
+
+Eigenvector graph centrality analysis on Subreddit hyperlink network with #Neo4j #graph #algorithms and #cypher projection
+
+https://tbgraph.wordpress.com/2019/04/04/eigenvector-graph-centrality-analysis-on-subreddit-hyperlink-network-with-neo4j-and-cypher-projection/ 
+
+https://medium.com/neo4j/cosine-similarity-in-neo4j-d617b0442439
+Cosine Similarity in Neo4j
+
+* https://medium.com/neo4j/eventing-graph-data-neo4j-rabbitmq-e16b91274fbc  - Eventing Graph Data
+With Neo4j & RabbitMQ
+
+Overhaul to visualization tools page is complete! https://neo4j.com/developer/tools-graph-visualization/
+
+https://apiko.com/blog/neo4j-database-advantages/
+
+
+hĕdzˈŭpˈ :) BoltSips 1.5, the #Neo4j driver for #ElixirLang, is available at https://hex.pm/packages/bolt_sips
+
+This is a comprehensive release, containing the support for Bolt v1, v2 and v3.
+
+BoltSips is compatible with Neo4j versions: 3.0.x/3.1.x/3.2.x/3.4.x/3.5.x #MyElixirStatus :heart:
+
+
+
+
+////

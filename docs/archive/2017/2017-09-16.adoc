@@ -1,0 +1,133 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Bruno Peres
+
+This week’s featured community member is https://stackoverflow.com/users/6835358/bruno-peres[Bruno Peres^], Programmer at GeoSapiens. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170915003723/this-week-in-neo4j-16-september-2017.jpg["Bruno Peres - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Bruno Peres - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+If you've been following TWIN4j you'll almost certainly have heard Bruno mentioned in previous editions - he's one of the most frequent answerer of Neo4j and Cypher questions on StackOverflow.
+
+Every week when I write this blog post I take a look at the http://twin4j.s3.amazonaws.com/twin4j.html[StackOverflow active tab on the Neo4j community graph^], and Bruno is always in the top 3. 
+
+I've learnt some cool things from reading Bruno's answers such as https://stackoverflow.com/questions/45837277/is-it-possible-to-add-a-temporary-property-to-a-neo4j-node-for-return-only/45838433#45838433[how to add a temporary property to a node using map projections^] and just this week https://stackoverflow.com/questions/46168730/finding-mutual-friends-in-a-cypher-statement-starting-with-three-or-more-persons[how to write a query that finds the intersection of multiple starting nodes^].
+
+On behalf of the StackOverflow and Neo4j communities, thanks for all your work Bruno!
+
+=== Online Meetup: Analysing the Kaggle Instacart dataset
+
+In this week's online meetup Jonathan Freeman showed us how to analyse the data from https://twitter.com/kaggle[Kaggle^]'s https://www.kaggle.com/c/instacart-market-basket-analysis[Instacart Market Basket Analysis^] competition.  
+
+youtube::V-YDpoMLnTI[type={type}]
+
+Jonathan shows how to import a subset of the dataset using Cypher's http://neo4j.com/docs/developer-manual/current/cypher/clauses/load-csv/[LOAD CSV^] clause before using the https://neo4j.com/docs/operations-manual/current/tutorial/import-tool/[neo4j-import tool^] to load the full dataset. 
+
+He also writes queries to find vegetarians, vegans, and proposes Instafood - an (at the moment) imaginary application that sets people up on dates based on common food preferences!
+
+=== Cypher linter, Cypher on Flink, A Python object oriented interface for Cypher
+
+* https://twitter.com/cleishm[Chris Leishman^] updated  https://github.com/cleishm/libcypher-parser[libcypher-parser^], a parser library and lint tool for Cypher.
+
+* The video of the https://www.youtube.com/watch?v=dZ8_v_P1j98&feature=youtu.be[Cypher-based Graph Pattern Matching in Apache Flink^] talk that my colleagues https://twitter.com/kc1s[Martin Junghanns^] and https://twitter.com/darth_max[Max Kießling^] presented at https://flink-forward.org/[Flink Forward^] is now available.
+
+* https://twitter.com/DomWeldon[Dom Weldon^] created https://github.com/DomWeldon/oopycql[oopycql^], an object-oriented interface for managing Cypher queries in Python.
+
+=== Graphoetry: Poetry about graphs
+
+For something different this week we've got https://audioboom.com/posts/6268394-graphoetry[a poem about graph databases^] written by https://audioboom.com/comdotdom[Dom Gittins^]. 
+
+++++
+<iframe width="100%" height="300" style="background-color:transparent; display:block; padding: 0; max-width: 700px;" frameborder="0" allowtransparency="allowtransparency" scrolling="no" src="//embeds.audioboom.com/posts/6268394-graphoetry/embed/v4?eid=AQAAAB50u1nqpV8A" title="audioBoom player"></iframe>
+<br />
+++++
+
+=== On StackOverflow: MERGE confusion, Subqueries, Shortest path with predicate checks
+
+This week on https://stackoverflow.com/tags/neo4j/[Neo4j StackOverflow^]...
+
+* https://stackoverflow.com/users/92359/inversefalcon[Andrew Bowman^] helps solve some https://stackoverflow.com/questions/46125862/i-cant-create-a-relationship-between-nodes-and-predecessors-by-cypher-while-cre[confusion around the Cypher MERGE clause^].
+
+* https://stackoverflow.com/users/8505125/jonathan-march[Jonathan March^] https://stackoverflow.com/questions/46152025/can-this-neo4j-query-be-optimized[optimises a query^] that contains a https://neo4j.com/docs/developer-manual/current/cypher/execution-plans/shortestpath-planning/#_shortest_path_with_additional_predicate_checks_on_the_paths[shortest path search combined with predicate checks^]. 
+
+* https://stackoverflow.com/users/4989460/stdob[stdob--^] explains how to use https://neo4j.com/docs/developer-manual/current/cypher/syntax/expressions/#query-syntax-case[CASE expressions^] to https://stackoverflow.com/questions/46226137/running-calculations-against-cypher-subqueries[calculate passion and disdain scores in a social graph^].
+
+=== From The Knowledge Base
+
+This week in the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] Rohan Kharwar shows how to write a Cypher query to https://neo4j.com/developer/kb/query-to-kill-transactions-that-take-longer/[kill transactions that take longer than X seconds and don't contain certain keywords^].
+
+=== Telegram Recipes bot, Chemistry Recommendation Engine, Feature Toggles Graph
+
+* https://github.com/AlexeyKalina[Alexey Kalina^] created  https://github.com/AlexeyKalina/RecipesTelegramBot[RecipesTelegramBot^], a https://telegram.org/Telegram[Telegram^] bot that makes recipe recommendations. 
+
+
+* Richard J. Hall, Christopher W. Murray, and Marcel L. Verdonk published http://pubs.acs.org/doi/abs/10.1021%2Facs.jmedchem.7b00809[The Fragment Network: A Chemistry Recommendation Engine Built Using a Graph Database^]. The authors run a series of algorithms over Chemical compounds to  generate a graph of 23 million nodes and 107 million relationships explaining the similarity between them.
+
+* Pedro Moreira created https://github.com/the-pet-projects/toggling-it[toggling-it^], an application that lets you create toggles for your applications based on toggle-groups and tags. You can also run "what if" analysis to see the knock on effects of enabling/disabling your toggles.
+
+* I came across https://github.com/NORDUnet/python-norduniclient[python-norduniclient^], a Neo4j database client for https://portal.nordu.net/display/NI/Setting+up+a+NORDUni+3.0+instance[NORDUnet network inventory^]. NORDUni is a project for documenting and presenting physical network infrastructure as well as the logical connections between customers, services and hardware. It stores inventory data models in Neo4j.  
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header", cols="d,d,d,v"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+|September 19th 2017 |https://www.meetup.com/preview/graphdb-london/events/242948813[Fraud Detection using Neo4j^]| https://www.meetup.com/preview/graphdb-london[Neo4j - London User Group^] | https://twitter.com/markhneedham[Mark Needham^]
+
+|September 19th 2017 | https://www.meetup.com/preview/Graph-Database-Goteborg/events/242505931[Building A Full Stack Graph Application With GraphQL and Neo4j^]| https://www.meetup.com/preview/Graph-Database-Goteborg[Graph Database - Göteborg^] | https://twitter.com/lyonwj[Will Lyon^] 
+
+|September 19th 2017 | https://www.meetup.com/preview/Philly-GraphDB/events/242994214[Data science in Life science: Graphs, Machine Learning, and Notebooks^] | https://www.meetup.com/preview/Philly-GraphDB[Philly GraphDB^] | https://twitter.com/sjGoring[Simon Goring^]
+
+
+|September 20th 2017 | https://www.meetup.com/preview/Neo4j-Dubai/events/242640382[Machine Learning powered by graphs^] | https://www.meetup.com/preview/Neo4j-Dubai[Neo4j Dubai^] | https://twitter.com/alessandronegro[Dr. Alessandro Negro^] 
+https://twitter.com/mambofish[Vince Bickers^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/urma5h[Urmas Heinaste^]:
+
+tweet::908384495304409088[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

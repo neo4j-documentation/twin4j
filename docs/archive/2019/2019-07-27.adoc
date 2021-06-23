@@ -1,0 +1,150 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Anurag Tandon shows us how to do graph exploration from the Bloom canvas, and Max De Marzi builds a procedure that computes parallel k-Hop counts. 
+
+We also the release of a Scala Cypher DSL and a library that packages functionality for working with Neo4j and R. And Will Lyon and Amy Hodler published the slides from their Graph Algorithms talk at OSCON 2019.
+
+[[featured-community-member]]
+=== Featured Community Member: Nicole Forrester
+
+Our featured community members this week is https://twitter.com/treehouseops?lang=en[Nicole Forrester^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190726080559/this-week-in-neo4j-27-july-20191.jpg[name="Nicole Forrester"]
+
+
+Like many others in the Neo4j community, Nicole is one of those fascinating visionary people who is flowing with new and interesting ideas. What's even more inspirational about her is that she backs her ideas up with action! 
+
+We've contracted her idea and design work for a couple projects including some you may have seen, like the design of the https://www.simplebooth.com/pic/UPikAyF[photo-booth^] at GraphConnect, badges on the https://community.neo4j.com/badges[Neo4j community site^], and most recently, the design for the https://neo4j.com/blog/announcing-nodes-2019-global-graphhack/[Global GraphHack 2019^] t-shirts (they are going to be so awesome!)! 
+
+Thanks for being so involved with our community, Nicole. We're so lucky to have you as part of it. 
+
+https://www.linkedin.com/in/nicole-forrester-5b7390148/[Connect with Nicole on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Exploration from Bloom Canvas (Video #3 in Bloom Series)
+
+In the 3rd video of https://www.linkedin.com/in/tandonanurag[Anurag Tandon^]'s series of videos on Neo4j Bloom, the graph visualisation tool, we learn how to do graph exploration from the Bloom canvas.
+
+youtube::7LHXYKAu9Nk[type={type}]
+
+With the help of an Olympics dataset, Anurag shows us how to find and expand nodes, zoom the screen to fit  a selection, find the shortest path between a pair of nodes, and more. 
+
+[[features-2]]
+=== Build your first Neo4j Desktop Graph App in vanilla Javascript
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190726072500/update-1.png" width="100px"  />
+</div>
+++++
+
+Aldrin Misquitta has written a step by step tutorial showing how to build your first Graph App. You can find a list of all the available Graph Apps in the  https://install.graphapp.io/[Graph App Installer^]. 
+
+https://graphaware.com/neo4j/2019/07/25/desktop-graph-apps.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Parallel k-Hop counts
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190726071723/pancakes.jpg" width="150px"  />
+</div>
+++++
+
+In Max De Marzi's latest blog post he builds on https://maxdemarzi.com/2018/10/01/finding-your-neighbors-using-neo4j/[a previous post from October 2018^], in which he showed how to quickly count the number of nodes that a node has.
+
+In this post Max shows how to write a faster version of the procedure using Neo4j's Internal API. He also parallelises the computation to gain further speed improvements.
+
+https://maxdemarzi.com/2019/07/25/parallel-k-hop-counts/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Football Transfers Graph, Neo4jShell, SSIS and Neo4j, Graph Algorithms Slidedeck
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190726073017/0__sO-d5GEqHivEVjJ.jpg" width="150px"  />
+</div>
+++++
+
+* I  wrote a blog post showing how I built https://medium.com/neo4j/football-transfers-graph-e8ba7347169e[a football (soccer) transfers graph^], containing players, clubs, leagues, and of course transfers, based on data from the transfermarkt.co.uk website. 
+
+* Keith McNulty released https://github.com/keithmcnulty/neo4jshell[neo4jshell^], a library that packages functionality for working with Neo4j and R. The library includes rapid querying, and various functions to aid with ETL and management of the Neo4J server from within an R session.
+
+* Chris Skardon has started a series of blog posts showing how to use an existing SSIS (SQL Server Integration Services) infrastructure with Neo4j. In https://xclave.co.uk/2019/07/18/neo4j-ssis-connecting-and-executing-cypher-in-a-control-flow/[the first post^] he gives an overview of the two parts of the connector: the Neo4j Connection Manager (CM) and the Execute Cypher Task (ECT). 
+
+* Will Lyon and Amy Hodler https://docs.google.com/presentation/d/1PpC0nOWzkAXsUktQ82zvUOhmDxgGSj-zWwBVIJx11P0/edit#slide=id.g5a6dbda66e_1_2[published the slides^] from their OSCON talk, Graph Algorithms:  Predict Real-World Behavior
+
+[[features-5]]
+=== Introducing Scala Cypher DSL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190726064921/download-9.png" width="150px"  />
+</div>
+++++
+
+Manish Katoch released Scala-cypher-DSL, a type-safe, compile-time DSL for Neo4J Cypher Query Language in Scala.
+
+In the release blog post, Manish shows us how to install and use the library with the help of a small friends dataset. There's also more information on the https://github.com/manishkkatoch/scala-cypher-dsl/wiki[project Wiki^].
+
+https://medium.com/@manish.katoch/introducing-scala-cypher-dsl-51d28588cd51[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/gabidavila[ Gabriela D'avila Ferrara^]:
+
+tweet::1153310263787098113[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://medium.com/blogyuxiglobal/tracking-project-and-library-dependencies-with-graph-oriented-dbs-e55027d33adf
+
+https://www.xclave.co.uk/2019/07/19/using-a-data-flow-to-move-data-from-who-knows-where-to-neo4j-in-ssis/
+Using a Data Flow to move data from who knows where to Neo4j in SSIS
+
+"Defending with Graphs: Create a Graph Data Map to Visualize Pivot Paths": In her paper, 
+@thebriannefahey
+ presents an approach that uses graph technology to improves incident response readiness. (link: https://buff.ly/2xPvG2i) buff.ly/2xPvG2i #Neo4j #Cybersecurity
+https://www.sans.org/reading-room/whitepapers/logging/paper/39030
+https://www.sans.org/reading-room/whitepapers/logging/defending-graphs-create-graph-data-map-visualize-pivot-paths-39030
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+https://talks.rmoff.net/8Oruwt/on-track-with-apache-kafka-building-a-streaming-etl-solution-with-rail-data
+:steam_locomotive: On Track with Apache Kafka: Building a Streaming ETL solution with Rail Data by Robin Moffatt
+
+
+
+////

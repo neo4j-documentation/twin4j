@@ -1,0 +1,176 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi graphistas,
+
+It's been a bit of a hectic week over here. My highlight was presenting some online Neo4j training with the 1-year old playing in the background! I hope things are going well wherever you are in the world. 
+
+Our video this week is an introduction to Liquigraph from Florent Biville's live stream.
+
+Jesus Barrasa imports a SKOS taxonomy into Neo4j using n10s, Bhavesh Pandey explains how to build a graph backed asset management system, and Bert Radke writes up his experience playing with the Neo4j Traversal API.
+
+And finally, Dam Flavin helps us work out whether it's our query or the graph visualisation in Neo4j Browser that's actually slow.
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Dominic Kumar
+
+
+This week's featured community member is Dominic Kumar.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210122035816/this-week-in-neo4j-23-january-2020-1.jpg[name="Dominic Kumar"]
+
+Dominic is an Enterprise Data Architect at Deloitte, with 18 years of experience transforming Customer Data into Knowledge, providing 360-degree Insight on Data and value-based solutions. 
+
+He's been a member of the https://community.neo4j.com/u/dominicvivek06/activity[Neo4j community^] since 2018 and has been prolific in responding to people's questions in recent months. He's also http://www.dominickumar.com/blog/[written blog posts^] about Neo4j clusters, the GraphAware UUID Library, Neo4j Spatial, and more. 
+
+On behalf of the Neo4j community, thanks for your work Dominic!
+
+
+https://www.linkedin.com/in/dominickumar/[Connect with Dominic on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Introduction to Liquigraph with Florent Biville
+
+Our video this week is an introduction to Liquigraph from Florent Biville's live stream.
+
+youtube::qnlybCMy7lo[type={type}]
+
+https://www.liquigraph.org[Liquigraph^] is a database refactoring automation tool for Neo4j. In the video, Florent gives us a guided tour of the library, showing some of its main features and how it solves common problems.
+
+[[features-2]]
+=== QuickGraph #13 Using a SKOS taxonomy for semantic search on a document repository
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210121234829/image-2-2-1.png" width="250px"  />
+</div>
+++++
+
+It's time for another of Jesus Barrasa's QuickGraph posts, in which we learn how to query the TESEO database of PhD theses from Spanish Universities.
+
+The post covers a lot of ground, including:
+
+* Using n10s to import a SKOS taxonomy of nomenclature for the fields of science and technology.
+* Exploring the resulting graph using Neo4j Bloom
+* Running semantic search Cypher queries against the TESEO database of PhD theses
+
+https://jbarrasa.com/2020/12/30/quickgraph13-using-a-skos-taxonomy-to-run-semantic-queries-on-a-document-repository/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Where’s My Neo4j Cypher Query Results?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210121234725/1_1eRhpO0DD0vEWMrh-neO0A.jpeg" width="150px"  />
+</div>
+++++
+
+In Dan Flavin's latest blog post, he addresses the problem of working out whether your query is slow or if the rendering of the results in the Neo4j Browser is the problem.
+
+Dan shares tips for working out the culprit, as well as sharing alternative tools to use to process results if the Neo4j Browser isn't suitable.
+
+https://medium.com/neo4j/wheres-my-neo4j-cypher-query-results-%EF%B8%8F-%EF%B8%8F-9c3b150e6e19[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Obsidian Neo4j Plugin, Neo4j Traversal API, GraphAware UUID on Neo4j 4.x
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Joyjit Chatterjee published the paper 
+https://deepai.org/publication/xai4wind-a-multimodal-knowledge-graph-database-for-explainable-decision-support-in-operations-maintenance-of-wind-turbines[Graphs for Explainable Decision Support in Operations Maintenance of Wind Turbines^]. 
+
+* Obsidian is a knowledge base that works on top of a local folder of plain text Markdown files. Emile Van Krieken https://community.neo4j.com/t/obsidian-plugin-author-graphs-in-markdown-or-visualize-obsidian-vaults-in-neo4j/30743[published a plugin^] that lets you visualise Obsidian data in Neo4j. 
+
+* Bert Radke has been playing with the Neo4j Traversal API recently and https://faboo.org/2021/01/neo4j-traversal-api/[documented his experience^].
+
+* Dominic Kumar shows how to use the http://www.dominickumar.com/blog/neo4j-graphaware-uuid/[GraphAware framework and UUID module^] with a Neo4j 4.2 database. 
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Building an asset management system: Part 1
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210121234629/rv_sub_and_deps.png" width=200px"  />
+</div>
+++++
+
+Bhavesh Pandey has started building a graph backed asset management system to keep track of the assets generated during the production of visual effects (VFX) projects.
+
+In the blog post, Bhavesh takes us through the graph model for the system and the benefits experienced from using Neo4j to build the system instead of MySQL.
+
+https://bhaveshpandey.github.io/2020/12/09/legos-Asset-Management-System-Part1/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ThroughputDB[Throughput Database^]:
+
+tweet::1352311221391802368[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* https://medium.com/neo4j/using-neogma-to-build-a-type-safe-node-js-app-with-a-neo4j-graph-database-f289d79dbc52 
+Using Neogma to build a type-safe Node.js app with a Neo4j graph database
+
+
+* https://medium.com/neo4j/whats-new-in-bloom-1-5-f425df37e32f
+
+* https://jbarrasa.com/2021/01/19/quickgraph14-using-rdf-with-neo4j/
+
+* https://www.youtube.com/watch?t=90&v=1B1n38WmBm8&feature=youtu.be
+
+* https://towardsdatascience.com/hdbscan-clustering-with-neo4j-57e0cec57560
+
+
+////

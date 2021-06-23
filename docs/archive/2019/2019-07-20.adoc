@@ -1,0 +1,152 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Anurag Tandon shows us how to do Near Natural Language Search in Bloom, and we saw the release Neo4j Enterprise Causal Clustering on Pivotal Container Service (PKS). 
+
+We also learn how to use Siren, an investigative intelligence platform, with Neo4j, and Dave Fauth has started a series of posts connecting Neo4j, MySQL, and Kafka.
+
+[[featured-community-member]]
+=== Featured Community Member: Dr Vlasta Kus
+
+Our featured community members this week is https://twitter.com/vlastakus?lang=en[Dr Vlasta Kus^], Data Scientist at GraphAware.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190719015421/this-week-in-neo4j-20-july-2019.jpg[name="Dr Vlasta Kus"]
+
+
+Vlasta has been part of the Neo4j community for several years, and has been one of the main thought leaders in the area of graph based machine learning.
+
+Vlasta has presented at multiple Neo4j meetups on topics like https://www.slideshare.net/graphaware/graphpowered-machine-learning-90048080?ref=https://graphaware.com/resources/[Graph Based Machine Learning^] and https://www.slideshare.net/graphaware/signals-from-outer-space-98633653?ref=https://graphaware.com/resources/[Graph-Powered NLP^]. And this week Vlasta presented a very popular talk on AI and NLP at GraphTour Chicago.
+
+tweet::1151936786865827840[type={type}]
+
+
+On behalf of the Neo4j community, thanks for your work Vlasta!
+
+https://www.linkedin.com/in/vlastakus/[Connect with Vlasta on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Near Natural Language Search in Bloom (Video #2 in Bloom Series)
+
+In the 2nd video of https://www.linkedin.com/in/tandonanurag[Anurag Tandon^]'s series of videos on Neo4j Bloom, the graph visualisation tool, we learn about near natural language search.
+
+youtube::9rL8O0lsuDc[type={type}]
+
+With the help of a finance dataset, Anurag takes us on a guided tour of Bloom's search capabilities, including basic search terms, search phrases, and pattern based search.
+
+[[features-2]]
+=== Getting Started with Neo4j on Pivotal Container Service (PKS)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190718230507/1_34ypDSml_Na9UmrjwDb8Ow.png" width="100px"  />
+</div>
+++++
+
+David Allen announced the release of Neo4j Enterprise Causal Clustering on https://pivotal.io/platform/pivotal-container-service[Pivotal Container Service^] (PKS), Pivotal's Enterprise Kubernetes platform.
+
+This distribution makes it possible to quickly and easily spin up a clustered, highly available graph database on top of Kubernetes.
+
+https://medium.com/neo4j/getting-started-with-neo4j-on-pivotal-container-service-pks-49f5de5a8e52[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Browsing Neo4J data with Siren 10.2: For fun and fraud fighting
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190719011237/0_8AmhOTFYghTKu1oi.png" width="150px"  />
+</div>
+++++
+
+Siren is an investigative intelligence platform that recently added first level support for graph databases.
+
+Giovanni Tummarello has written a detailed tutorial explaining how to use this new functionality to hunt down fraudsters in a financed graph stored in Neo4j.
+
+https://siren.io/browsing-neo4j-data-with-siren-10-2/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j – Kafka – MySQL: Configuration – Part 1
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190719010108/220px-Apache_kafka.svg.png" width="80px"  />
+</div>
+++++
+
+Dave Fauth has started a series of posts showing how to stream data from MySQL into Kafka, and from there into Neo4j .
+
+In the first post Dave sets up https://maxwells-daemon.io/[Maxwell’s Daemon^] to stream data from MySQL to Kafka, and configures a Neo4j cluster with Neo4j Kafka Streams to connect to a Kafka server.
+
+http://www.intelliwareness.org/2019/07/neo4j-kafka-mysql-configuration-part-1/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Neo4j Graph Algorithms Release — Memory Requirements, Concurrency Settings, Bug Fixes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190718231551/0_UcNCXci5rGJC06lz1.png" width="200px"  />
+</div>
+++++
+
+We released a couple of new versions of the Graph Algorithms Library over the last few weeks.
+
+These releases introduce a procedure to compute the memory requirements of running graph algorithms, more fine grained control over concurrency settings, as well as usability and bug fixes.
+
+https://medium.com/neo4j/neo4j-graph-algorithms-release-memory-requirements-concurrency-settings-bug-fixes-37c501df105d[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ikwattro/[Christophe Willemsen^]:
+
+tweet::1150746002699292673[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+"Defending with Graphs: Create a Graph Data Map to Visualize Pivot Paths": In her paper, 
+@thebriannefahey
+ presents an approach that uses graph technology to improves incident response readiness. (link: https://buff.ly/2xPvG2i) buff.ly/2xPvG2i #Neo4j #Cybersecurity
+https://www.sans.org/reading-room/whitepapers/logging/paper/39030
+https://www.sans.org/reading-room/whitepapers/logging/defending-graphs-create-graph-data-map-visualize-pivot-paths-39030
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+https://xclave.co.uk/2019/07/18/neo4j-ssis-connecting-and-executing-cypher-in-a-control-flow/
+
+Graph Algorithms:  Predict Real-World Behavior - OSCON
+https://docs.google.com/presentation/d/1PpC0nOWzkAXsUktQ82zvUOhmDxgGSj-zWwBVIJx11P0/edit#slide=id.g5a6dbda66e_1_2
+
+
+https://talks.rmoff.net/8Oruwt/on-track-with-apache-kafka-building-a-streaming-etl-solution-with-rail-data
+:steam_locomotive: On Track with Apache Kafka: Building a Streaming ETL solution with Rail Data by Robin Moffatt
+
+////

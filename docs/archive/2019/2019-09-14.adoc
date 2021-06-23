@@ -1,0 +1,172 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Kafka Streams Graph Processing, GRANDstack Football Transfers, Spring Data Neo4j RX, Role Based Access Control In Neo4j 4.0, Learning Cypher, and More!
+
+[Body copy:]
+////
+
+
+This week we preview the GRANDstack and GraphQL talks at the NODES 2019 conference and we learn how to build a data warehouse with Neo4j. 
+
+Stefan Dreverman continues his series on building questionnaires using Neo4j, Jan Zak teaches us how to scale up d3.js graph visualisations, and we have a GRANDstack movies demo app. 
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Betsy Hilliard
+
+Our featured community member this week is Betsy Hilliard, Senior Scientist at Valkyrie Intelligence. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190913072436/this-week-in-neo4j-14-september-2019.jpg[name="Betsy Hilliard"]
+
+Betsy is a classic graph-nerd who is fortunate enough to work at a company with a slew of other graph-nerds (that’s what happens when the CEO is a graph-nerd).
+
+We first connected to Betsy when she read about Global Graph Celebration Day on ‘This Week in Neo4j’ and signed her company up to host an event in their office in Austin, Texas. 
+
+She even https://twitter.com/ValkyrieIntel/status/1117963860412125184?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1117963860412125184&ref_url=https%3A%2F%2Fneo4j.com%2Fblog%2Fheres-how-the-neo4j-community-celebrated-global-graph-celebration-day%2F[baked a seven bridges cake!] 
+
+From there, she signed up for the https://neo4j.com/speaker-program/[Neo4j Speaker Program^], and we’ve continued conversations on what other opportunities we can get her more involved with the community. 
+
+(PS. we love community suggestions, if you have any ideas for what you’d like to see, let us know community@neo4j.com).
+
+Betsy is a trailblazer who is passionate about graphs and helping others advance their knowledge. We’re so lucky and thankful to have someone like Betsy (and her team at Valkyrie) in our community.
+
+https://www.linkedin.com/in/betsy-hilliard/[Connect with Betsy on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019 Preview: GRANDstack and GraphQL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190604150332/nodes-2019-neo4j-online-developer-expo-summit-register-today.png" width="200px"  />
+</div>
+++++
+
+There's now only four weeks to go until our first https://neo4j.com/nodes-2019/[Neo4j Online Developer Summit^], and this week we're going to preview talks tagged https://neo4j.com/online-summit/session-topics/?topic=grandstack-graphql[GRANDstack and GraphQL^].
+
+==== Beginner
+
+In https://neo4j.com/online-summit/session/grandstack-graphql-deep-dive-neo4j[GRANDstack: Graphs ALL the Way Down^], Will Lyon will give an introduction to the GRANDstack and explain why it's the future of graph based applications.
+
+==== Intermediate
+
+In his talk, Alex Babeanu will explain why the https://neo4j.com/online-summit/session/user-management-iam-grandstack-graphql[GRANDstack is the perfect framework for implementing User Managed Access (AMA)^], an international security standard that gives users complete control over their personal data.
+
+==== All
+
+Michael Porter will present his experience https://neo4j.com/online-summit/session/grandstack-graphql-easy-data-handling[using the GRANDstack to build highly connect data applications^]. 
+
+https://www.crowdcast.io/e/nodes2019[Register for NODES 2019, role="medium button"]
+
+[[features-2]]
+=== Building a Data Warehouse with Neo4j
+
+Earlier this week, Nelson Sousa presented Building a Data Warehouse with Neo4j at the Pentaho London User Group.
+
+++++
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/359133813" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+++++
+
+Nelson shows how to load the Northwind dataset into Neo4j using https://www.hitachivantara.com/en-us/products/big-data-integration-analytics/pentaho-data-integration.html[PDI^], and then contrasts the modelling and querying approaches using a relational database. 
+
+[[features-3]]
+=== Building a Questionnaire with Neo4j — part 2/3: A static list
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190913022334/1_ELq3cgj0bcyk0TWtW1qsMg.png" width="150px"  />
+</div>
+++++
+
+Stefan Dreverman continues his series of blog posts showing how to use Neo4j to build a questionnaire.
+
+In part 2 he contrasts different ways of modeling a static list of questions, imports data into the chosen model, and shows the queries we can run against the model.
+
+https://medium.com/@stefan.dreverman/building-a-questionnaire-in-neo4j-part-2-3-a-static-list-7303839eee67[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Scale up your D3 graph visualisation, GRANDstack Movies Demo, Neo4j on the Cloud
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190913035111/final-result.png" width="150px"  />
+</div>
+++++
+
+* In Jan Zak's https://graphaware.com/visualization/2019/09/05/scale-up-your-d3-graph-visualisation-webgl-canvas-with-pixi-js.html[latest blog post^] he shows how to scale up D3 graph visualisations by replacing the default rendering engine with PIXI.js.
+
+* Will Lyon published http://movies.grandstack.io[movies.graphstack.io^], a simple movies and user ratings schema powered by neo4j-graphql-js. 
+
+* Max De Marzi has been exploring the world of hosting Neo4j on the cloud, and https://maxdemarzi.com/2019/09/12/its-getting-cloudy/[wrote a blog post^] describing his experiences.
+
+* Jennifer Reif published the slides from her talk https://speakerdeck.com/jmhreif/get-to-know-the-real-world-discovering-connected-data-with-a-graph-database-5cf44c1e-a396-4dc6-8738-1aae9f379ddf[Get to Know the Real World: Discovering Connected Data with a Graph Database^] at the Graph Databases Meetup in Kansas City.
+
+[[features-5]]
+=== Podcast: Connecting to Apache Kafka with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190913051315/noun_podcast_2594337.png" width="150px"  />
+</div>
+++++
+
+David Allen and Michael Hunger featured on the most recent episode of the Streaming Audio Kafka podcast. 
+
+They discuss features released in Neo4j versions 3.4 and 3.5, the history of integration with Kafka, and using Neo4j to add graph operations to a streaming application.
+
+https://cnfl.io/podcast-episode-52[Listen to the podcast, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/tekiegirl[Jacqui Read^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1172425857652051969[type={type}]
+
+
+////
+
+@dfahland
+Event data with multiple case ids in 1:n or n:m relation? Stefan Esser, student of @TUeindhoven and yt stores and queries multi-dimensional event data in a graph DB at @processquerying at #bpm2019. Paper and code using @neo4j available https://research.tue.nl/en/publications/storing-and-querying-multi-dimensional-process-event-logs-using-g  #processmining 
+
+
+The evolution of power— A graph analysis of game of thrones
+https://medium.com/@yvonneche/the-evolution-of-power-a-graph-analysis-of-game-of-thrones-dc71a8f59b44
+
+
+https://maxdemarzi.com/2019/09/12/its-getting-cloudy/
+
+https://graphlytic.biz/blog/how-to-install-graphlytic-in-neo4j-desktop
+
+https://towardsdatascience.com/an-introduction-to-graph-databases-cd81a0d5aa12
+https://towardsdatascience.com/getting-started-with-neo4j-in-10-minutes-94788d99cc2b
+
+
+Custom analyzer for fulltext search in #Neo4j https://graphaware.com/neo4j/2019/09/06/custom-fulltext-analyzer.html
+
+
+
+////

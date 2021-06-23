@@ -1,0 +1,135 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Greta Workman interviewed Mark Grover about Data Discovery at Lyft and we opened registration for the GraphConnect 2020 conference.
+
+We also learn about a tool for keeping track of applications in a micro services architecture, and Max De Marzi shows how to use motifs to solve link prediction problems.
+
+[[featured-community-member]]
+=== Featured Community Member: Mark Grover
+
+Our featured community members this week is https://www.linkedin.com/in/grovermark/[Mark Grover^], Product Manager at Lyft. He's a former software engineer at Cloudera, Qualcomm, and more.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190712125320/this-week-in-neo4j-13-july-20191.jpg[name="Mark Grover"]
+
+
+Mark impressed us with his desire to share his knowledge and experience to the world through being a committer and contributor to many open source projects in the big data space, writing a http://shop.oreilly.com/product/0636920033196.do[Hadoop Application Architectures^] book published by O'Reilly, and more.
+
+We hope you have a chance to watch his latest video (below) about the Amundsen which he founded. Amundsen is an https://github.com/lyft/amundsen[open source data discovery application^] that seeks to improve productivity for practitioners interacting with data.  And, of course, it's powered by graphs and Neo4j!
+
+On behalf of the Neo4j community, thanks for your work Mark!
+
+https://www.linkedin.com/in/grovermark/[Connect with Mark on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Live from Lyft HQ: How Lyft Drives Data Discovery
+
+We didn't have a https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] this week, but our colleague https://www.linkedin.com/in/gretaworkman[Greta Workman^] interviewed https://twitter.com/mark_grover?lang=en[Mark Grover^] about Data Discovery at Lyft.
+
+youtube::WVjss62XIG0[type={type}]
+
+Mark describes the problems that scientists had finding answers about internal data systems, explains how the https://github.com/lyft/amundsen[Amundsen Project^] was built to address those problems, and outlines parts of the project's roadmap.
+
+[[features-2]]
+=== GraphConnect 2020 Registration Now Open
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190712040556/GraphConnect-2020-registration-open1.jpg" width="200px"  />
+</div>
+++++
+
+Registration for GraphConnect 2020, which will be in New York from April 20-22, is now open. 
+
+This will be the first 2 day version of the conference, and will feature speakers from around the world presenting on their usage of Neo4j. There'll be a mix of talks for those just getting started, as well as more in depth sessions for expert graph technologists.
+
+The Early Bird Price is available until September 1st 2019, so if you're planning to come, now would be a good time to book your ticket. We hope to see you there!
+
+https://neo4j.com/blog/graphconnect-2020-registration-is-open/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Software Parade; the fun way to create an overview of hundreds of applications in Neo4J
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190712030938/logopodcast-2.jpg" width="150px"  />
+</div>
+++++
+
+Kristel Nieuwenhuys and Ronald Willems were interviewed on the bol.com TechLab podcast about Software Parade, a Neo4j based tool they built to keep track of the applications in their micro services architecture.
+
+https://techlab.bol.com/software-parade-the-fun-way-to-create-an-overview-of-hundreds-of-applications-in-neo4j/[Listen to the podcast, role="medium button"]
+
+[[features-4]]
+=== Finding Motifs in Cypher for Fun and Profit
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190712041650/screen-shot-2019-07-09-at-10.31.54-am.png" width="100px"  />
+</div>
+++++
+
+In https://twitter.com/maxdemarzi[Max De Marzi^]'s latest blog post he shows how to solve a link prediction problem using a machine learning classifier trained with features based on Higher Order Motifs.
+
+
+https://maxdemarzi.com/2019/07/11/finding-motifs-in-cypher-for-fun-and-profit[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Neo4j & SSIS, Arcade Analytics, Neo4j Client for Clojure
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190712043005/image-2-768x458.png" width="150px"  />
+</div>
+++++
+
+* Chris Skardon has written https://xclave.co.uk/2019/07/09/neo4j-ssis/[announced^] the beta launch of a Neo4j integration with Microsoft's SQL Server Integration Services (SSIS). 
+
+* Claus Engel-Christensen wrote http://claus.engel-christensen.com/2019/07/08/building-a-simple-neo4j-driver-for-clojure/[a blog post^] about https://github.com/full-spectrum/neo4clj[neo4clj^], a Neo4j Client for Clojure. Claus explains the limitations of existing Clojure drivers and provides a step by step example showing how to use neo4jclj.
+
+* I came across https://github.com/ArcadeAnalytics/arcadeanalytics[Arcade Analytics^], an open source graph analytics platform. It looks like it could be a fun project to play with this week.
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/joedepeau[Joe Depeau^]:
+
+tweet::1149360482052165633[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+
+
+////

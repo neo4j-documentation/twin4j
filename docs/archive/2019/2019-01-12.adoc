@@ -1,0 +1,162 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+We're almost half-way through January, so it must be time for another installment of This Week in Neo4j. 
+
+It's been a busy week as the community kicks back into action after the New Year's hangover. Jennifer Reif is back with a new installment of the Marvel Series, this time showing how to build the code for domain objects using Spring Data Neo4j. Jay Myers shows how to simplify tech support at home with a Neo4j backed Alexa skill, İrfan Nuri Karaca explains how to do better graph layouts using graph algorithms and machine learning techniques, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Greg Jordan
+
+This weeks featured community member is https://twitter.com/gmjordan[Greg Jordan^], Founder at https://www.graphstory.com/[Graph Story^], a company that provides graph databases, applications and solutions as a service.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111061922/this-week-in-neo4j-12-january-20191.jpg[name="Greg Jordan"]
+
+Greg is the author of https://www.apress.com/gb/book/9781484200230[Practical Neo4j^], a book that guides you all the way through the basics of graph databases to creating and supporting your own Neo4j-based application.
+
+Greg was a speaker at one of the early GraphConnect conferences in 2013 where he presented https://vimeo.com/68905993[Keeping User Generated Content Flexible with Neo4j^]. He has also presented at many other conferences, including https://twitter.com/gmjordan/status/1082832146971140097[two talks at CodeMash^] this week.
+
+On behalf of the Neo4j community, thanks for your work Greg!
+
+link:https://twitter.com/gmjordan[Thank Greg for his work, role="medium button"]
+
+[[features-1]]
+=== Monitoring Neo4j with Halin
+
+This week in the Neo4j Online Meetup, https://twitter.com/mdavidallen[David Allen^] presented https://medium.com/neo4j/monitoring-neo4j-with-halin-4c11429b46ff[Halin^] - a tool that he originally created to monitor Neo4j databases and clusters. 
+
+youtube::hKndQ2qF5ts[type={type}]
+
+During the demo heavy presentation, David shows that it's evolving into more of a database management tool that lets you handle user roles, diagnose cluster configuration, as well as get an overview of what's happening with your database. 
+
+If you've used tools like HortonWorks' Smartsense, this is as close as we have to an equivalent in Neo4j land.
+
+[[features-2]]
+=== Constructing Multi-Turn Conversational Voice Experiences with a Knowledge Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111071027/1_L8VjrdQxeG0kIZ2SKiW3_Q.png" width="150px"  />
+</div>
+++++
+
+Jay Myers has written a blog post in which he shows how you might use Neo4j to build an Alexa skill to help with support of internet related products in the home. 
+
+Jay starts by describing a knowledge graph of products, common issues, and potential issues, before going through a scenario where a user traverses the graph via Alexa's Voice User Interface.
+
+link:https://r.neo4j.com/2Fmk8cY[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Create a Data Marvel: Writing the Domain Classes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111063549/1_K5bopFzkWsdNQrsQ7ZW92Q.jpeg" width="150px"  />
+</div>
+++++
+
+In the 5th post in https://twitter.com/jmhreif[Jennifer Reif^]'s series of posts showing how to build a full stack application with Spring and Neo4j, Jennifer shows how to create the domain entity classes, and corresponding repositories and controllers. 
+
+link:https://r.neo4j.com/2FlMlQY[Read the blog post, role="medium button"]
+
+
+[[articles-1]]
+=== Graphing yourself, New Scala Driver, New Release on Google Cloud Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111074314/1_H4YN_BOKECgFDZ8icF7tMg.png" width="150px"  />
+</div>
+++++
+
+* Frederico Braga wrote a blog post in which he showed how to explain what a graph database is by https://medium.com/neo4j/introducing-myself-using-a-graph-16029b68b8ab[creating a graph of himself^]. The post is a nice, easy going introduction to graphs. 
+
+* Dmitry Feng http://dimafeng.com/2018/12/27/neotypes-1/[released neotypes^], a Scala lightweight, type-safe, asynchronous driver for Neo4j. 
+
+* Lucas Jellema wrote https://technology.amis.nl/2019/01/01/finding-the-shortest-path-from-country-a-to-country-b-using-neo4j-and-node/[a blog post^] showing how to find the shortest path between countries using Neo4j and Node.js.
+
+* David Allen https://community.neo4j.com/t/neo4j-3-5-1-added-to-google-cloud-platform-cluster-and-single-node-community-and-enterprise/4174[released Neo4j 3.5.1 on Google Cloud Platform^], with support for  Cluster and Single Node, Community and Enterprise. 
+
+
+
+[[features-4]]
+=== Graphing the Floodlight Open Project data
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111072409/understand-you.png" width="200px"  />
+</div>
+++++
+
+Frederico Braga has been exploring open data from the Roche Floodlight Open Project - a study that aims to one day allow participants, physicians and scientists to monitor MS symptoms and health over time using a smartphone.
+
+Frederico shows how to load the data into Neo4j using the LOAD CSV tool, and then shows how to write Cypher queries to find the most tests conducted by a subject, and explores which tests those are.
+
+link:https://r.neo4j.com/2FkjaO9[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Graph Layouts with Neo4j Graph Algorithms and Machine Learning
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111071413/1_BeleuI664MxymFB7_uVgwQ1.png" width="200px"  />
+</div>
+++++
+
+A couple of months ago İrfan Nuri Karaca and I explored how you might be able to use graph algorithms to help with graph layouts, and Irfan has now written up our discoveries.
+
+Irfan starts by explaining how force directed layouts don't work so well for some use cases, and then shows how we combined the Louvain community detection and tSNE dimensionality reduction algorithms to come up with a better graph layout of the movie graph.
+
+We think this is a very interesting area of research, so if you're interested in collaborating with us do get in touch by emailing devrel@neo4j.com. 
+
+link:https://r.neo4j.com/2Flvb5U[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ArtemYarulin[Artem Yarulin^]:
+
+tweet::1082757308768227328[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+* https://medium.com/neo4j/importing-rdfs-owl-ontologies-into-neo4j-23e4e28ebbad 
+
+
+
+[[articles-1]]
+=== This weeks articles and publications
+
+* https://technology.amis.nl/2019/01/01/finding-the-shortest-path-from-country-a-to-country-b-using-neo4j-and-node/ 
+
+Graphing the Poets 
+https://medium.com/@kirbyurner/graphing-the-poets-b600c86d6b9 
+
+////

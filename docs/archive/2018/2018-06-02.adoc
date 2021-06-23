@@ -1,0 +1,153 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 2 June 2018, including  new release of the Neo4j ETL Tool as well as a couple of new articles in our Graph Visualization series. A video of Adam Hill’s PyData London 2018 talk about building a UK corporate interests graph is online, Max De Marzi shows how to store documents as graphs, and more.
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 2 June 2018
+
+[Headline:]
+This Week in Neo4j – New Release of Neo4j ETL Tool, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have a new release of the Neo4j ETL Tool as well as a couple of new articles in our Graph Visualization series. A video of Adam Hill's PyData London 2018 talk about building a UK corporate interests graph is online, Max De Marzi shows how to store documents as graphs, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Dilyan Damyanov
+
+This week’s featured community member is https://twitter.com/dilyan_damyanov[Dilyan Damyanov^], Data Analyst at Snowplow Analytics.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180530220620/this-week-in-neo4j-2-june-2018.jpg[name="Dilyan Damyanov"]
+
+Dilyan has been part of the Neo4j community for a couple of years and has been using Neo4j to make sense of event data, which he's written about in a https://snowplowanalytics.com/blog/2018/03/26/building-a-model-for-atomic-event-data-as-a-graph/[couple of^]  https://snowplowanalytics.com/blog/2017/07/17/loading-and-analysing-snowplow-event-data-in-Neo4j/[blog posts^].
+
+Dilyan presented his work at the London Neo4j Meetup and https://www.youtube.com/watch?v=JValprxgn0w[Neo4j Online Meetup^] and also http://blog.bruggen.com/2018/03/podcast-interview-with-dilyan-damyanov.html[featured on the Graphistania podcast^] in March 2018.
+
+On behalf of the Neo4j community, thanks for all your work Dilyan!
+
+[[pydata]]
+=== Searching for Shady Patterns: Shining a light on UK corporate ownership
+
+A few weeks ago I https://markhneedham.com/blog/2018/04/29/pydata-london-2018/[attended^] the https://pydata.org/london2018/schedule/[PyData London 2018^] conference and one of my favourite talks was by https://twitter.com/astroadamh?lang=en[Adam Hill^]. 
+
+Adam gave an experience report of a DataKind UK and Global Witness project where they built the world’s first network graph mapping all of the UK public data on those who control corporate interests in the country
+
+
+youtube::mWzDXbmvFhQ[type={type}]
+
+It comprises in excess of 4.5 million companies and 4 million individual people as well as 
+company officer data and metrics of financial secrecy based upon geographic regions.
+
+Adam explained how Neo4j and the Cypher query language could be used to search for 'shady patterns' which could act as leads for investigative journalists to expose corrupt practices. 
+
+[[podcast]]
+=== a16z Podcast: When Journalism Goes Global
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="100px"  />
+</div>
+++++
+
+I came across https://a16z.com/2018/05/26/journalism-tech-global-icij-panama-papers/[an interesting interview on the a16z Podcast^] with ICIJ director Gerard Ryle in which he explains the role the ICIJ has played in bringing together news organisations from all over the world in the publication of OffShore Leaks, Panama Papers, Paradise Papers, and West Africa Leaks.
+
+In the middle of the interview Gerard goes through the different tools the ICIJ uses to help investigative journalists make sense of data, including Neo4j and graph visualization tool Linkurious.
+
+You can listen to their conversation below or on the https://a16z.com/2018/05/26/journalism-tech-global-icij-panama-papers/[a16z website^].
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/448164903&color=%2335a1cb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<br /><br />
+++++
+
+[[spring-data-neo4j-documents-gopher]]
+=== Spring Data Neo4j at Spring IO, Storing documents in graphs, Graph Gopher Release
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180530231411/2018-05-31_07-07-26.png" alt="Atlas - a smart GIS system" width="150px" />
+</div>
+++++
+
+* Gerrit Meier https://speakerdeck.com/meistermeier/time-to-graph-up-with-spring-data-neo4j[shared the slides^] from his talk at Spring IO in which he explains how to build Spring backed applications using Spring Data Neo4j.
+
+* In https://twitter.com/maxdemarzi[Max De Marzi^]'s http://maxdemarzi.com/2018/05/30/transmuting-documents-into-graphs/[latest blog post^] he shows how to take a document, such as a text file or PDF, use https://tika.apache.org/[Apache Tika^] to detect and extract metadata and text, and finally then run that text through a set of NLP models from OpenNLP to find interesting Entities which are then stored in Neo4j. All the code is available in the https://github.com/maxdemarzi/que_dicen[maxdemarzi/que_dicen^] GitHub repository.
+
+* Graph Gopher, the Neo4j browser for your iPhone or iPad https://itunes.apple.com/app/apple-store/id1327978961?pt=11740&ct=twitter-v103&mt=8[released version 1.0.3^]. This release includes bug fixes and the latest updates to Theo, the Neo4j Swift Driver.
+
+* Cristina Escalante created  https://github.com/whatSocks/FL-Division-of-Elections-scanners[FL-Division-of-Elections-scanners^], a set of scripts that can be used to import campaign finance data from http://dos.myflorida.com/elections/[Florida's Division of Elections^] website.
+
+[[neo4j-etl-release]]
+=== New Release of Neo4j ETL Tool 
+
+On Thursday we released https://neo4j.com/blog/neo4j-etl-1-2-0-release-whats-new-and-demo/[version 1.2.0 of the Neo4j ETL Tool^], a tool that makes it easy to convert your relational data into a Neo4j graph.
+
+This version contains multi schema support, additional driver support for Microsoft SQL Server, IBM DB2 and Oracle RDBMS, as well as general improvements around the loading process.
+
+youtube::V7zPe_jmNiw[type={type}]
+
+You can watch the above video to learn how to use the Neo4j ETL application  on Neo4j Desktop to import your relational data into Neo4j
+
+[[graphviz-series]]
+=== Graph Visualization Series: yWorks and Keylines
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180531112859/1_UlX2hlmnG_6jhHV16Db-oA.png" width="200px"  />
+</div>
+++++
+
+This week we have two new entries in our https://medium.com/neo4j/hands-on-graph-data-visualization-bd1f055a492d[series of posts on Graph Visualization tools^].
+
+https://twitter.com/sbstjn?lang=en[Sebastian Müller^] has https://medium.com/neo4j/neo4j-graph-visualization-like-a-pro-18651963ebd4[written a blog post^] in which he shows how to use https://www.yworks.com/yfileshtml[yWorks^] and Neo4j to create high-quality graph and diagram visualizations for end-user applications.
+
+You can download a https://www.yworks.com/products/yfiles-for-html/evaluate[free evaluation version of the yFiles for HTML^] software package if you want to try out the tool.
+
+Dan Williams has also https://medium.com/neo4j/hands-on-graph-visualization-keylines-neo4j-9c5aeb7a8d3a[written a post^] in which he  explains how to run a demo using Neo4j and Keylines. The examples uses Cypher queries and KeyLines’ incremental layout to explore a Neo4j dataset of movies and actors. 
+
+You can get a https://cambridge-intelligence.com/try-keylines/[trial license for Keylines^] if you want to reproduce Dan's post.
+
+////
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| May 21st 2018 | https://www.meetup.com/GraphDB-Sydney/events/jqvlhpyxhbcc/[Natural Language Processing (NLP), chatbot and graph database^] | https://www.meetup.com/GraphDB-Sydney[GraphDB Sydney^] | https://twitter.com/justosophy[Justin Anderson^]
+
+| May 24th 2018 | https://www.meetup.com/graphdb-berlin/events/250615392/[Neo4j 3.4 Release Demo & Meta-Path Exploration^]  | https://www.meetup.com/graphdb-boston/[Graph Database Boston^] | Sebastian Bischoff, Adrian Ziegler, Michael Hunger
+
+| May 24th 2018 | https://www.meetup.com/Neo4j-Online-Meetup/events/250906697/[GQL: It’s Time for a Single Property Graph Query Language^]  | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Amy Hodler, Alastair Green
+
+|=========================================================
+////
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/DinisCruz[Dinis Cruz^]:
+
+tweet::1001903400626376705[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

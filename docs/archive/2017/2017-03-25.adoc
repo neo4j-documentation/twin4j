@@ -1,0 +1,102 @@
+﻿We'll clarify more points on this template each week, but for now, all red text indicates where we'd need to change or update the item each week
+
+[Keywords/Tags:]
+Haskell, APOC, rstats, visualization, data journalism, cypher
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 25 March 2017, including projects around  APOC, Haskell, graph visualization, and data journalism.
+
+[Primary Image File Name:]
+this-week-neo4j-25-mar-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 25 March 2017
+
+[Headline:]
+This Week in Neo4j – 25 March 2017
+
+[Body copy:]
+Welcome to this week in Neo4j.<br /><br />
+
+This week we’ve got ...
+
+<h3>Heading</h3><br />
+
+<div style="text-align: center;"></div>
+[[Insert Image here]]
+<p style="font-size: .8em; line-height: 1.5em;" align="center"><strong>Image text</strong></p>
+
+
+
+
+Emil in Forbes - Growth Stories: The Magical Power Of A Name https://www.forbes.com/sites/alastairdryburgh/2017/03/22/growth-stories-the-magical-power-of-a-name/#5d48542f6db9 first part of the interview where Emil talks about the history of Neo4j and how he came up with the graph databases category.
+
+Johannes’ online meetup talk - https://www.youtube.com/watch?v=qvJ7V33NfsA
+
+<h3> </h3>
+
+Noonpost explain how they used Linkurious for large-scale investigations in a project on Egypt’s corruption networks.
+
+https://linkurio.us/data-driven-investigation-egyptian-army-influence/
+
+https://blog.tomsawyer.com/what-do-big-data-paris-and-the-panama-papers-have-in-common/ 
+used Tom Sawyer Perspectives to identify hidden and surprising connections between sports celebrities and corporate executive
+
+Dirk Mahler released version 0.8 http://buschmais.github.io/extended-objects/doc/0.8.0/neo4j/  of the object graph mapping library for Java extended-objects which now supports the Bolt protocol introduced in Neo4j 3.0. 
+
+Michael on sketching graph models + creating data using arrows - 
+embed?
+https://www.youtube.com/watch?v=fkD1agLtQ4I&feature=youtu.be 
+you can get something similar by using data from GraphCommons.com as a Neo4j Guide https://twitter.com/graphcommons/status/844552279214706690 
+
+
+Max - http://maxdemarzi.com/2017/03/20/searching-for-objects-using-multiple-dimensions
+
+
+http://blog.jpcert.or.jp/2017/03/malware-clustering-using-impfuzzy-and-network-analysis---impfuzzy-for-neo4j-.html
+Malware Clustering using impfuzzy and Network Analysis - impfuzzy for Neo4j -
+
+New release of the Haskell driver hasbolt https://github.com/zmactep/hasbolt#readme - version 0.1.1.2 https://hackage.haskell.org/package/hasbolt-0.1.1.2?utm_source=dlvr.it&utm_medium=twitter  which has some minor fixes to keep the strictness and laziness gods happy!
+
+Find your next hike using Neo4j and Python - https://bitbucket.org/amschaff/wta_hikes 
+Amanda Schaffer https://twitter.com/hoppyokapi - hiking recommendation engine. Uses content based filtering based on features (e.g. lakes, waterfalls) that hikes have in common. 
+
+Working With a Real-World Dataset in Neo4j - Import and Modeling - Presentation Will Lyon
+https://www.youtube.com/watch?v=oXziS-PPIUA&feature=youtu.be
+
+If you're interested in getting started with Neo4j's user defined procedures and functions, these two https://neo4j.com/developer/procedures-functions/  new pages https://neo4j.com/developer/procedures-gallery/  on the Neo4j developer site, will help you with the first steps.
+
+Our friends from Neueda released version 2.5.0 of the Graph Databases Plugin https://github.com/neueda/jetbrains-plugin-graph-database-support/releases  for the Jetbrains IDE family, it also works well with the latest version of IntelliJ IDEA 2017.1. The new version adds node and relationship editing and listing indexes and constraints.
+
+
+On the podcast:
+
+Alistair Jones on Causal Clustering - http://blog.bruggen.com/2017/03/podcast-interview-with-alistair-jones.html
+
+Ask fro LT / Talks form: x
+
+<h3>Next week<h3><br />
+
+So what’s there to look forward to in the world of graphs next week?
+
+<ul><ul>
+
+<li>
+
+</li>
+
+</ul></ul>
+
+<h3>Tweet of the Week</h3><br />
+
+My favourite tweet this week was by Jose Ramón Cajide https://twitter.com/jrcajide who’s been analyzing his twitter network using Neo4j and R: 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Visualizing my Twitter network using <a href="https://twitter.com/hashtag/Rstats?src=hash">#Rstats</a> and <a href="https://twitter.com/hashtag/Neo4j?src=hash">#Neo4j</a> using <a href="https://twitter.com/twitterapi">@twitterapi</a>  <a href="https://twitter.com/hashtag/DataScience?src=hash">#DataScience</a> CC <a href="https://twitter.com/esanchezrojo">@esanchezrojo</a> <a href="https://twitter.com/txemaskapao">@txemaskapao</a> <a href="https://twitter.com/sorprendida">@sorprendida</a> <a href="https://t.co/5pigMWa5P6">pic.twitter.com/5pigMWa5P6</a></p>&mdash; Jose Ramón Cajide (@jrcajide) <a href="https://twitter.com/jrcajide/status/844585395656556545">March 22, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+If you’re having fun playing with Neo4j tweet with the #neo4j hashtag https://twitter.com/hashtag/neo4j and maybe you’ll feature in next week’s post.<br /><br />
+
+Have a good weekend!

@@ -1,0 +1,121 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 18 November 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-18-november-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 18 November 2017
+
+[Headline:]
+This Week in Neo4j – 18 November 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Nicolas Mervaillie
+
+This week’s featured community member is https://twitter.com/nmervaillie[Nicolas Mervaillie^], Senior Consultant at https://twitter.com/graph_aware[GraphAware^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171116015127/this-week-in-neo4j-18-november-2017.jpg["Nicolas Mervaillie - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Nicolas Mervaillie - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Nicolas has been part of the Neo4j community for the past 4-5 years and started his graph journey analysing till receipts in Neo4j. He later https://vimeo.com/100721646[presented this project^] at the Neo4j meetup in Lille.
+
+Nicolas http://blog.bruggen.com/2017/11/podcast-interview-with-nicolas.html[goes into more detail^] about the project in his interview on https://twitter.com/rvanbruggen[Rik Van Bruggen^]'s https://soundcloud.com/graphistania[Graphistania^] podcast  that was released this week.
+
+Nicolas joined GraphAware in February 2017 and is a core developer on the Spring Data Neo4j and Neo4j OGM products.  He also consults for clients on Neo4j projects.
+
+Nicolas is also co-authoring https://www.d-booker.fr/146-neo4j-2[Neo4j : II. Déploiement^], a French language book that shows how to build a Neo4j backed applications from scratch all the way to production and beyond.
+
+On behalf of the Neo4j community, thanks for all your work Nicolas!
+
+=== Online Meetup: Spring Data Neo4j 5/ OGM3
+
+In this week's online meetup Nicolas, https://twitter.com/frant_hartm[Frantisek Hartman^], and https://twitter.com/meistermeier[Gerrit Meier^] presented the recently released Spring Data Neo4j 5.0 and showed off some of its new cool features.
+
+youtube::u4YYuQ-Zook[type={type}]
+
+You can read more about the project in the https://neo4j.com/blog/spring-data-neo4j-5-0-release/[release blog post^].
+
+=== Russian Twitter Trolls
+
+https://twitter.com/lyonwj[Will Lyon^] has been busy this week applying Natural Language Processing techniques to analyse the tweets of Russian Trolls.
+
+In the first part of http://www.lyonwj.com/2017/11/12/scraping-russian-twitter-trolls-python-neo4j/[Scraping Russian Twitter Trolls With Python, Neo4j, and GraphQL^] Will shows how to retrieve the tweets of 2752 Twitter accounts tied to Russia’s Internet Research Agency that were involved in spreading fake news. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171116042139/lyon-trolls-1024x633.png["Russian Twitter Trolls", 640, 396, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Russian Twitter Trolls
+</strong>
+</p>
+++++
+
+He then imports the data into Neo4j, writes queries to find out what they were tweeting about, before putting a GraphQL API on top of the dataset.
+
+In http://www.lyonwj.com/2017/11/15/entity-extraction-russian-troll-tweets-neo4j/[Applying NLP and Entity Extraction To The Russian Twitter Troll Tweets In Neo4j^] Will uses the https://github.com/aboSamoor/polyglot[Polyglot^] library to apply Named Entity Extraction algorithm to the tweets and discovers that the trolls are mostly tweeting about Trump and Clinton.
+
+=== More NLP, Relato Business Graph, GRANDstack
+
+* https://twitter.com/mesirii[Michael Hunger^] wrote https://medium.com/@mesirii/quick-import-relato-business-graph-database-from-data-world-into-neo4j-1b9f16404951[a blog post^] in which he shows how to import https://twitter.com/rjurney[Russel Jurney^]'s https://blog.datasyndrome.com/open-sourcing-relatos-business-graph-database-fca220daadd8[Relato Business Graph^] into Neo4j. Russel's graph contains companies and the links between them: partnerships, customers, competitors, and investors. After importing the data Michael shows how to use Neo4j graph algorithms to find the most influential companies in terms of PageRank and betweenness centrality.
+
+* https://twitter.com/mdavidallen[David Allen^] wrote  https://medium.com/@david.allen_3172/using-nlp-in-neo4j-ac40bc92196f[Neo4j: Natural Language Processing (NLP) in Cypher^], in which he shows how to use https://github.com/graphaware/neo4j-nlp[GraphAware's NLP library^] to enrich a Twitter graph and help analyse Donald Trump's twitter stream.  
+
+* And if that's not enough NLP for you Máté Thurzó wrote https://medium.com/@7307236/nlp-with-graphs-on-wedeploy-8be8b5c35b6f[NLP with graphs on WeDeploy^], in which he shows how to build a cloud based natural language processing framework using Neo4j and Spring Boot.
+
+* The video from Will Lyon's talk at ReactNYC - https://www.youtube.com/watch?v=Kz5HMIVgWK0[All about GRAND Stack: GraphQL, React, Apollo, and Neo4j^] - is now available. We've recently updated the https://neo4j.com/developer/graphql/[GraphQL developer pages^] so if you want to learn more that's a good place to start.
+
+* I've been watching some of the videos from GraphConnect NYC 2017 and was happy to see that https://www.youtube.com/watch?v=hRpmIeJjx-Y[Ajinkya Kale's talk on eBay ShopBot^] has been released. In this talk Ajinkya discusses their use of Neo4j as a backend to the AI technology in eBay's virtual shopping assistant. 
+
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| November 21st 2017 | https://www.meetup.com/Friends-of-Neo4j-Stockholm/events/244748623/[Graph Databases: what are they and where to use them?^] | https://www.meetup.com/Friends-of-Neo4j-Stockholm[Friends of Neo4j Stockholm^] | https://twitter.com/rvanbruggen[Rik Van Bruggen^]  
+
+| November 22nd 2017 | https://www.meetup.com/Neo4j-Dubai/events/244860372/[Knowledge Graphs and Chatbots with Neo4j and IBM Watson^] | https://www.meetup.com/Neo4j-Dubai[Neo4j Dubai^] | https://twitter.com/ikwattro[Christophe Willemsen^] 
+
+| November 23rd 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/243735883[Software Analytics with Jupyter, Pandas, jqAssistant, and Neo4j^] | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | https://twitter.com/feststelltaste[Markus Harrer^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ssb_poppy[Jp Pellet || Poppy^]:
+
+tweet::930698227925618693[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

@@ -1,0 +1,188 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+We're just started Lockdown #2 in London and Rik Van Bruggen has a timely blog post exploring the 100s of Zoom calls that he's been in since Lockdown #1 back in March.
+
+Florent starts building a Realworld.io example in Go, Kristof Neys approximates network centralities using Graph Neural Networks, and David Allen explains how queries work.
+
+And finally, NODES 2020 Extended is a series of talks that we couldn't quite fit into the NODES 2020 schedule. This week we had the first of those, featuring talks about Contentful and Enterprise Application Integration with graphs.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Liz Maida
+
+This week's featured community member is Liz Maida.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201106021043/this-week-in-neo4j-7-november-2020.jpg[name="Liz Maida"]
+
+Liz Maida is the Founder and CEO of https://www.uplevelsecurity.com/[Uplevel Security^], a security automation company that uses graphs for real-time alert correlation. She previously worked at Akamai Technologies where he played a lead role in Akamai’s initial efforts in DDoS mitigation, fraud detection, and mobile authentication. 
+
+Liz is a long time user of Neo4j, using it at Uplevel, along with machine learning approaches, to improve the effectiveness of cypher security teams. She recently presented https://www.youtube.com/watch?v=8fKHRJI6T1I[Which Comes First – The Data Model or the Algorithm?^] at the NODES 2020 conference, in which she explains some of the real world challenges of graph data modelling.
+
+In the talk, Liz gives us some background of the security domain, explains what data does and doesn't go into the graph, and explains how the model evolved over time. She also shows how to identity connected components and predict malicious nodes.
+
+https://www.linkedin.com/in/elisabethg2/[Connect with Liz on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Building a Realworld.io example in Go with Florent Biville
+
+Our video this week is from a new live stream being hosted by Florent Biville, Developer Experience Engineer for Drivers at Neo4j. 
+
+youtube::rJ0klPKqVnk[type={type}]
+
+In this session, Florent starts building the https://realworld.io[realworld.io^] Medium clone using Neo4j and the Go driver. 
+
+[[features-2]]
+=== A Graph Neural Network to approximate Network Centralities in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201106015609/1_XVURi5xanX5VleXtlgB1JQ.jpeg" width="200px"  />
+</div>
+++++
+
+Kristof Neys is currently doing an internship at Neo4j, where he's exploring how Graph Neural Networks can be used with Neo4j.
+
+In his first blog post he explores how a Graph Neural Network can be deployed to approximate network centrality measures, such as Harmonic centrality and Eigenvector centrality, before storing the results back into Neo4j.
+
+https://medium.com/neo4j/a-graph-neural-network-to-approximate-network-centralities-in-neo4j-2ee96705a464[Read the release post, role="medium button"]
+
+[[features-3]]
+=== How Queries Work in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201106015644/1_EqVUqWfK0pRNGbNqr-wV8w.png" width="200px"  />
+</div>
+++++
+
+Neo4j users often ask “what’s going on with my query” and in David Allen's latest blog post he answers this question.
+
+In the post, David explains the role of transactions, how their lifecycle works, and how transactions relate to queries. He also describes the procedures we can use to understand what's going on and explains how clusters come into all this.
+
+https://medium.com/neo4j/how-queries-work-in-neo4j-97229988941a[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== New Udemy course, Neo4j Commander release, NODES 2020 Extended
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Cristina Escalante launched a new udemy course - https://www.udemy.com/course/building-an-imdb-clone-with-python-flask-and-neo4j/[Building an IMDB clone with Python (Flask) and Neo4j^].
+
+* The Neo4j Commander data management tool https://twitter.com/netbizltd/status/1319665053243670529[released version 2.4^]. This version contains syntax highlighting in the FullScreen text editor for Markup (HTML/XML), Markdown, Cypher, and more.
+
+* We had our https://www.youtube.com/watch?v=DxniBWrgueA[first NODES 2020 Extended session^]. Christopher Eyre showed how to explore Contentful data in Neo4j. And Tim Reimer discussed semantic transformation with Enterprise Application Integration (EAI) using Graphs.
+
+* Michael Simons shows three ways of polyglot programming with GraalVM, including using it to https://medium.com/graalvm/3-ways-to-polyglot-with-graalvm-fb28c1542b45[write custom Neo4j stored procedures^].
+
+
+////
+https://twitter.com/mattredlon/status/1323627688289046528
+https://twitter.com/DmitryLyfar/status/1324601631699185672
+https://twitter.com/angryaustrian_/status/1323826638702829569 
+
+https://graphaware.com/nlp/2020/10/20/ere-jane-austen.html[Read the blog post, role="medium button"]
+
+
+
+////
+
+[[features-5]]
+=== Making sense of 2020's mad calendar with Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201106021340/image-27-1.png" width=200px"  />
+</div>
+++++
+
+Rik Van Bruggen's latest blog post is a really apt one for the Coronavirus enforced year of video calls.
+
+Rik shows how to get his Google Calendar meetings into Neo4j, and then runs Cypher queries to discover who he meets with most and his worst day for meetings. He definitely has a lot more meetings than I do!
+
+http://blog.bruggen.com/2020/11/making-sense-of-2020s-mad-calendar-with.html[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mattredlon[Matt Redlon^]:
+
+tweet::1323627688289046528[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* https://medium.com/neo4j/neo4j-aura-pubsub-on-google-cloud-image-annotation-ca7104cd493
+Neo4j Aura & PubSub on Google Cloud: Image Annotation
+
+* Alberto De Lazzari @albertodela80
+Here is an uncommon use of @neo4j
+Building an associative memory with Neo4j https://alberto-delazzari.medium.com/building-an-associative-memory-with-neo4j-1d0713322309 #NeuralNetwork #explainability
+
+* https://towardsdatascience.com/exploratory-network-analysis-of-marvel-universe-c557f4959048
+MediumMedium
+Exploratory network analysis of Marvel Universe
+Introducing the new k-nearest neighbors algorithm in the Graph Data Science library
+
+
+https://towardsdatascience.com/how-to-get-started-with-the-new-graph-data-science-library-of-neo4j-3c8fff6107b 
+
+
+
+
+
+@CSkardon
+Testing Neo4j.Driver (4.1.1) Part 2 - Session Config #neo4j #testing https://xclave.co.uk/2020/11/02/testing-neo4j-driver-4-1-1-part-2-session-config/
+
+
+https://medium.com/@h_bushroh/modeling-nodes-and-relationships-dynamically-on-neo4j-e4d07a03fc88
+Modeling nodes and relationships dynamically on neo4j
+
+
+
+////

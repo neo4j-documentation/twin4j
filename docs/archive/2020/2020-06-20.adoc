@@ -1,0 +1,168 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Will Lyon starts a series showing how to build a GRANDstack Real Estate Search App.
+
+Tomaz Bratanic explores the Node2vec embedding algorithm, Dan Flavin solves a triangle counting brain teaser, and Stefan Dreverman starts a blog series on building a low-code platform.
+
+And finally, Mike Lam builds a collaborative filtering based recommendation engine based on beer data extracted from brewDB’s Open API.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Stefan Dreverman
+
+
+This week's featured community member is Stefan Dreverman. He's working as a freelance IT consultant in the Netherlands mostly as an architect in larger companies and public institutions. 
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200618070827/this-week-in-neo4j-20-june-2020.jpg[name="Stefan Dreverman"]
+
+Stefan has been a member of the Neo4j community for a long time. In the past he already published articles and series, including https://medium.com/neo4j/building-a-questionnaire-in-neo4j-part-1-3-one-simple-question-c89a18956756["Building a Questionnaire with Neo4j"^]  and https://medium.com/@stefan.dreverman/analyzing-coinmarketcap-data-with-neo4j-4930ba0068e1[Analysing CoinMarketCap data^].
+
+This month he's started writing a new blog series on building a low-code platform with Neo4j. You can read more about that below. I'm looking forward to learning more about that topic.
+
+On behalf of the Neo4j community, thank you for all your work Stefan!
+
+https://twitter.com/SFDreverman[Follow Stefan on Twitter, role="medium button"]
+
+[[features-1]]
+=== Building A GRANDstack Real Estate Search App: Part 1 | Getting Started With Neo4j GraphQL & Netlify
+
+This week's video is part of a series by Will Lyon showing how to build a GRANDstack Real Estate Search App.
+
+youtube::i6X6oKJjx3g[type={type}]
+
+In this first video, Will explains how to build the skeleton of a GRANDstack application and then deploys it to the cloud.
+
+[[features-2]]
+=== Node embeddings: Node2vec with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200618024947/2020-06-18_10-49-27.png" width="150px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest blog post he explores the Node2vec graph embedding algorithm, with the help of Kaggle's Spoonacular Food Dataset.
+
+Tomaz combines the Graph Data Science random walk algorithm with the gensim Word2vec algorithm to generate embeddings for each food item. He then creates a food similarity graph using Cosine Similarity, before finding communities of food items using the Label Propagation algorithm.
+
+https://towardsdatascience.com/node-embeddings-node2vec-with-neo4j-5152d3472d8e[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building a low-code platform with Neo4j: Outline
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200618021632/1_YDbz1UMVxiN-Qu9iLKy_lA.png" width="180px"  />
+</div>
+++++
+
+Stefan Dreverman has started a blog post series showing how to build a low-code platform with Neo4j.
+
+In part 1, Stefan explains the architecture of the platform and describes the unique attributes of the low-code approach.
+
+https://medium.com/@stefan.dreverman/building-a-low-code-platform-with-neo4j-1-4-outline-f54049923856[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Node2vec, Contact tracing testbed, Dr Alexander Jarasch interview
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Dan Flavin shows how to use Neo4j and some variable length Cypher queries to https://medium.com/neo4j/using-the-neo4j-graph-database-and-cypher-to-solve-this-brain-teaser-why-argue-350fde86da14[solve a triangle counting brain teaser^].
+
+* Volodymyr Miz created https://github.com/epfl-lts2/sparkwiki[SparkWiki^], a set of tools for loading Wikipedia articles into Neo4j.
+
+* Rik Van Bruggen shows how to create a https://blog.bruggen.com/2020/06/creating-contact-tracing-testbed-with.html[contact tracing testbed using Neo4j and Faker^]. 
+
+* ODBMS Industry Watch has http://www.odbms.org/blog/2020/06/fighting-covid-19-with-graphs-interview-with-alexander-jarasch/[an interview with Dr Alexander Jarasch^], Head of Data and Knowledge management at the German Center for Diabetes Research (DZD) and founding member of https://covidgraph.org/team[CovidGraph^].
+ 
+* In M. David Allen's https://neo4j.com/blog/analytical-subgraph-overlays-in-neo4j/[latest blog post^], he shows how to look at a network of related companies, and compute the total value of a trading relationship, or impact if a company goes out of business.
+
+[[features-5]]
+=== Beer Recommendations using Collaborative Filtering with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200618031333/1_b6X5tiY64Soy7ZEI-4Me6g-1.jpeg" width="200px"  />
+</div>
+++++
+
+Mike Lam has built a collaborative filtering based recommendation engine based on beer data extracted from brewDB's Open API.
+
+Mike explains how to compute user similarity using Euclidean Distance based on beer ratings, before generating recommendations based on the preferences of users most similar to us.
+
+https://medium.com/swlh/beer-recommendations-using-collaborative-filtering-with-neo4j-e7c2416caac6[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/InfiniaMl[Infinia ML^]:
+
+tweet::1273239944664887298[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* https://medium.com/dev-genius/building-a-low-code-platform-with-neo4j-3-4-frames-and-views-ae7441eb051a
+
+* https://medium.com/@stefan.dreverman/building-a-low-code-platform-with-neo4j-4-4-the-rabbit-hole-1dbf376c452
+
+
+
+- @Michael Simons spring-bridge talk from last friday https://youtu.be/hi_zAj3tqeE?t=27128
+- slides https://speakerdeck.com/michaelsimons/introducing-neo4j-sdn-rx
+
+* Michael Simons @rotnroll666
+In case someone wants to migrate their MySQL data containing AES encrypted values to Neo4j, here's a custom function to do this: https://github.com/michael-simons/neo4j-aes-encryption
+Been reusing my old blog articles a lot these days https://info.michael-simons.eu/2011/07/18/mysql-compatible-aes-encryption-decryption-in-java/ 
+The user defined function is dependency free.
+
+
+* https://blog.bruggen.com/2020/06/what-recommender-systems-and-contact.html
+
+* https://blog.bruggen.com/2020/06/what-vat-fraud-detection-and-contact.html
+
+* https://www.ovh.com/blog/gaia-x-catalogue-search-engine-under-the-hood/
+
+* https://medium.com/neo4j/modeling-patient-journeys-with-neo4j-d0785fbbf5a2 
+
+
+
+* https://medium.com/@mahjoub.saifeddine/my-baby-steps-with-go-building-a-basic-web-crawler-with-neo4j-integration-9a439263d40d
+Medium
+My baby steps with Go — Building a basic web crawler with Neo4j integration
+
+https://medium.com/@stefan.dreverman/building-a-low-code-platform-with-neo4j-2-4-data-f712a9da248
+
+////

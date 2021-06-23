@@ -1,0 +1,127 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have a sandbox to play around with NBC's Russian Twitter Trolls dataset, modelling Pentaho ETL jobs and flights with Neo4j, a Python Cypher Querybuilder, Spring Boot, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Gábor Szárnyas
+
+This week’s featured community member is https://twitter.com/szarnyasg[Gábor Szárnyas^], Research assistant  at Hungarian Academy of Sciences. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180216020634/this-week-in-neo4j-17-february-2018.jpg[name="Gábor Szárnyas"]
+
+Gábor has been part of the Neo4j community for several years and  is currently working on a PhD which contains several graph related topics. He's researching how to incrementally query graphs and benchmark such an incremental graph query engine as well as analysing multiplex networks. He http://blog.bruggen.com/2017/02/podcast-interview-with-gabor-szarnyas.html[featured on the Graphistania podcast in February 2017^] where he explained this in more detail.
+
+Gábor is an active participant in the openCypher community and presented https://www.youtube.com/watch?v=uLu2w8JxMKo[ingraph: Live Queries on Graphs^] at GraphConnect Europe 2017. You can also find the https://www.slideshare.net/neo4j/graphconnect-europe-2017-ingraph-live-queries-on-graphs[slides^] from the talk. More recently Gábor showed how to https://www.slideshare.net/szarnyasg/compiling-opencypher-graph-queries-with-spark-catalyst[compile openCypher graph queries with Spark Catalyst^] and presented https://www.youtube.com/watch?v=dYBURFmH9Xk[graph-based source code analysis^] at FOSDEM 2018.
+
+On behalf of the openCypher and Neo4j communities, thanks for all your work Gábor! 
+
+=== Pick of the week: NBC's Russian Troll Tweets Database
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180216011944/161107-twitter-jpo-1216p_a8a1bb684161be7868e8967eb33df6e1.focal-860x430.jpg" width="200px" />
+</div>
+++++
+
+This week NBC News https://www.nbcnews.com/tech/social-media/now-available-more-200-000-deleted-russian-troll-tweets-n844731[publicly released a database of deleted Tweets from their investigation into how Russian Twitter Trolls^] may have influenced the 2016 US election.
+
+They've also written https://www.nbcnews.com/tech/social-media/russian-trolls-pushed-graphic-racist-tweets-american-voters-n823001[a couple^] https://www.nbcnews.com/tech/social-media/russian-trolls-went-attack-during-key-election-moments-n827176[of posts^] where they analyse the data.
+
+https://twitter.com/lyonwj[Will Lyon^] has written a post showing how to https://hackernoon.com/six-ways-to-explore-the-russian-twitter-trolls-database-in-neo4j-6e52394c38f1[explore The Russian Twitter Trolls Database In Neo4j^] including a new Neo4j sandbox prepopulated with the dataset. You can get up and running with that in just a couple of minutes at http://www.neo4j.com/sandbox[neo4j.com/sandbox^]. 
+
+=== 7,000 Slack Users!
+
+This week we had our 7,000th member of the community registered on the Neo4j-Users Slack, getting questions answered and helping others with their Neo4j journey.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180213053449/2018-02-13_04-32-52.png["7,000 Users on Neo4j Slack", 364, 353, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+7,000 Users on Neo4j Slack
+</strong>
+</p>
+++++
+
+Since 2015 there have been just under 400,000 messages posted and around 500 active users per day. This is still the best place to get help with your Cypher query, Cluster configuration, or data import questions.
+
+Thank you to everybody who's helped others get up to speed with graphs and if you haven't already joined, what are you waiting for?!
+
+++++
+<div style="text-align: center;">
+  <a class="medium button" href="https://www.neo4j.com/slack" target="_blank">Join the Neo4j-Users Slack here</a>
+</div>
+++++
+
+=== Neo4j gRaphs, Spring Boot, GRAND stack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180216071621/neo4j-schema-flights_orig.png" width="200px" />
+</div>
+++++
+
+* https://twitter.com/uweeegeee[Uwe Geercken^] has written a blog post about his experience https://datamelt.weebly.com/blog/neo4j-first-contact[using Neo4j and Cypher to model Pentaho ETL jobs and flights^]. Uwe has also started working on https://github.com/uwegeercken/neo4j-csv-processor[neo4j-csv-processor^], a Java application used for preparing data from a CSV file for the neo4j-import tool.
+
+* https://twitter.com/chucheria[Bea Hernández^] https://github.com/chucheria/neo4j-graphs[shared the content^] from her talk at the Neo4j España meetup about using Neo4j with R.
+
+* Jochen Weis released version 0.1.2 of https://github.com/joewhite86/frogr[frogr^], a Neo4j powered easy-to-use java framework for developing RESTful web services. 
+
+* Mark Henderson has started working on a simple query builder in Python called https://github.com/emehrkay/Pypher[Pypher^]. This one is in its infancy so don't forget to give Mark some feedback if you give it a try. 
+
+* https://twitter.com/adamcowley[Adam Cowley^] has written a detailed tutorial showing how to http://www.adamcowley.co.uk/neo4j/using-the-neo4j-driver-in-spring-boot/[use Neo4j with Spring Boot^]. 
+
+* Paul Krill from Infoworld https://www.infoworld.com/article/3254133/web-development/grand-stack-aims-to-simplify-data-intensive-app-development.html[covered the GRAND stack^] - GraphQL, React, Apollo, Neo4j Database - and explained how this stack simplifies the building of data intensive applications.
+
+* https://twitter.com/amyhodler[Amy Hodler^] https://neo4j.com/blog/network-science-hidden-field-dr-aaron-clauset-part-1[interviewed^] https://twitter.com/aaronclauset[Dr. Aaron Clauset^], winner of the 2016 Erdos-Renyi Prize in Network Science. Amy and Aaron talk about Aaron's group's recent research as well as the general direction of network science. 
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| February 19th 2017 | https://www.meetup.com/GraphDB-Sydney/events/247182035/[Algorithms, Graphs and Awesome Procedures^] | https://www.meetup.com/GraphDB-Sydney[GraphDB Sydney^] | Joshua Yu 
+
+| February 20th 2017 | https://www.meetup.com/graphdb-israel/events/247805129/[Tales of Graph Analytics with Neo4j^] | https://www.meetup.com/graphdb-israel[Graph Database - Israel^] | Yehonathan Sharvit, Tal Shainfeld, Svetlana Yaroshevsky
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Readywater[Andrew Lovett-Barron^]:
+
+tweet::963506732432592896[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

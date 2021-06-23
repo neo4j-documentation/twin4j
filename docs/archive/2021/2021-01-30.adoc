@@ -1,0 +1,184 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi graphistas,
+
+This was a big week for Neo4j Aura. First up was the https://neo4j.com/blog/neo4j-aura-enterprise-ga-release/[launch of Neo4j Aura Enterprise^], a version of the DBaaS aimed at large organisations building global-scale graph applications. 
+You can learn more at the https://neo4j.com/connections/neo4j-and-the-cloud/[Connections: Neo4j and the Cloud^] event on 24th February 2021.
+
+
+But I'm actually even more excited about https://neo4j.com/cloud/aura/free/[Neo4j Aura FREE^], which is coming soon. Don't forget to add yourself to the waiting list to be notified when it's ready. 
+
+Our video this week is Emil Eifrem's presentation at the Open Core Summit. 
+
+Lju Lazarevic shows off the new features of Bloom 1.5, Nathan Smith implements HDBSCAN Clustering, and Jesús Barrasa shows how to use RDF* with Neo4j.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Irfan Nuri Karaca
+
+This week's featured community member is Irfan Nuri Karaca.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210129024843/this-week-in-neo4j-30-january-2021-2.jpg[name="Irfan Nuri Karaca"]
+
+Irfan has been part of the community for more than 6 years, initially working on a graph data visualisation and ETL tool at Kale Yazilim. He presented that work at https://www.youtube.com/watch?v=S2bgO4vctVU[GraphConnect 2016^]. 
+
+Irfan joined Neo4j in early 2017 and has been very busy in that time. 
+
+He worked on the first few versions of Neo4j Bloom, the graph visualisation tool, and was instrumental in the creation of https://neo4j.com/developer/graph-data-science/neuler-no-code-graph-algorithms/[NEuler^], an education tool used to introduce users to the Graph Data Science Library.
+
+More recently, Irfan worked on https://medium.com/neo4j/drawing-graphs-with-arrows-app-ee5735caa04d[version 2 of Arrows^], a graph drawing tool that has been used to design and prototype many graph projects.
+
+Irfan is also one of the Lead Engineers on the Neo4j Aura team and has worked on both https://neo4j.com/blog/announcing-neo4j-aura-on-google-cloud-platform/[Neo4j on Google Cloud Platform^] and Neo4j Aura Enterprise, which was launched week. 
+
+On behalf of the Neo4j community, thanks for all your work Irfan!
+
+https://www.linkedin.com/in/irfannuri/[Connect with Irfan on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== OCS 2020 Keynote: Emil Eifrem, Co-Founder/CEO of Neo4j
+
+Our video this week is from a presentation by Emil Eifrem at the Open Core Summit in December 2020. 
+
+////
+youtube::qnlybCMy7lo[type={type}]
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+
+Emil explains how the team came up with the idea of the graph database, created the graph database category, and educated the community on the power of graphs. He also describes the balance between open source and building a company, as well as how he sees the future of Neo4j.
+
+[[features-2]]
+=== What’s new in Bloom 1.5?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210129025814/0_ZtCeu_VYFyokUDdR-1.jpeg" width="200px"  />
+</div>
+++++
+
+Neo4j Bloom 1.5 was released last month and Lju Lazarevic gives us the rundown of the new features and improvements. 
+
+This version of the library introduces the mini map to simplify graph navigation and a new style rule to uniquely colour nodes. There are also performance enhancements that significantly speed up the start time.
+
+https://medium.com/neo4j/whats-new-in-bloom-1-5-f425df37e32f[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== HDBSCAN Clustering with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210129063608/1_uwbwiAG3bnGGjhIIuVbHhw.png" width="150px"  />
+</div>
+++++
+
+HDBSCAN is a clustering algorithm that identifies islands of closely related elements in a sea of noisy outliers.
+
+In Nathan Smith's latest post, he shows how to implement this algorithm using the GDS Library and APOC.
+
+https://towardsdatascience.com/hdbscan-clustering-with-neo4j-57e0cec57560[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neogma Nodes.js OGM, Gram Data Graph Format
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Jason Athanasoglou https://medium.com/neo4j/using-neogma-to-build-a-type-safe-node-js-app-with-a-neo4j-graph-database-f289d79dbc52[released Neogma^], an open source Object-Graph-Mapper for Node.js which utilizes TypeScript. In the blog post, Jason shows how to Create, Read, Update, and Delete nodes and relationships in Neo4j.
+
+* Will Reynolds https://twitter.com/pdacommunity/status/1355122180854579200[gave some tips on getting started with graph databases^] during a Project Data Analytics meetup.
+
+* Andreas Kollegger launched https://medium.com/neo4j/gram-a-data-graph-format-a480a5d31a75[Gram^], a data graph format.
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== QuickGraph#14 Using RDF* with Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210129030732/image-31-1.png" width=250px"  />
+</div>
+++++
+
+The prolific Jesús Barrasa has another QuickGraph post for us, in which he explains how to use RDF* with Neo4j. 
+
+RDF* is an extension to RDF that means triples can include a triple as a subject or an object. One advantage of this is that we can define properties on relationships. 
+
+In this post, Jesús shows how to both export a Neo4j graph in RDF* format, as well as import RDF* triples into Neo4j. 
+
+https://jbarrasa.com/2021/01/19/quickgraph14-using-rdf-with-neo4j/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/therobbrennan[Rob Brennan^]:
+
+tweet::1354245231776944129[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+
+* https://www.youtube.com/watch?t=90&v=1B1n38WmBm8&feature=youtu.be
+
+
+* https://medium.com/neo4j/gram-a-data-graph-format-a480a5d31a75
+
+* https://towardsdatascience.com/importing-csv-files-in-neo4j-f3553f1a76cf
+
+* https://medium.com/neo4j/neodash-build-neo4j-dashboards-without-writing-any-front-end-code-7a132430ac50
+
+* https://jbarrasa.com/2021/01/22/quickgraph15-analysing-the-structured-data-embedded-in-web-pages/
+
+* https://towardsdatascience.com/finding-synergies-with-network-analysis-using-neo4j-to-identify-the-best-pok%C3%A9mon-teams-4ff89e791671
+
+////

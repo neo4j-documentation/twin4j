@@ -1,0 +1,173 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - NODES Preview: Data Science & Graph Algorithms, Graphing Brexit, Building a Chat Bot
+
+[Body copy:]
+////
+
+
+This week we preview some of my favourite talks from other categories  at the NODES 2019 conference and we have the second part of the chatbot series
+
+Jimmy Crequer explains how to use Neo4j to learn Japanese characters, David Allen and Will Lyon spoke at Kafka Summit, and the ETL tool is now cloud ready.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Dr. Estelle Scifo
+
+This week's featured Neo4j community is data scientist https://www.linkedin.com/in/estellescifo/[Dr. Estelle Scifo^] from Marseille France.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191003232700/this-week-in-neo4j-5-october-2019.jpg[name="Estelle Scifo"]
+
+Estelle has a broad range of experience, starting in nuclear and particle physics and working at CERN, before applying her data science skills in geo-spatial property and transportation projects.
+
+Estelle published  https://www.packtpub.com/application-development/exploring-graph-algorithms-neo4j-video[a video Course on Neo4j Graph Algorithms with Packt Publishing^], which you should definitely check out. She's also written a https://stellasia.github.io[number of articles on graph analytics^].
+
+Most recently Estelle participated in the Global Graph Hack, creating https://github.com/stellasia/neomap/[neomap^], an application for visualising nodes with geographical attributes on a map.
+
+On behalf of the Neo4j Community, thanks for all your work Estelle!
+
+https://twitter.com/st3llasia[Follow Estelle on Twitter, role="medium button"]
+
+[[features-1]]
+=== NODES 2019 Preview: Everything Else
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190604150332/nodes-2019-neo4j-online-developer-expo-summit-register-today.png" width="200px"  />
+</div>
+++++
+
+There's now less than a week until our first https://neo4j.com/nodes-2019/[Neo4j Online Developer Summit^], and this week we're going to preview my favourite talks from all other categories.
+
+==== Databases on Kubernetes Using a Custom Operator: Day 1, Day 2, and Beyond
+
+If you'd like to learn about the technology behind the upcoming Neo4j managed cloud, Johannes Unterstein will reveal all in his talk about building https://neo4j.com/online-summit/session/databases-kubernetes-k8s-custom-operator[Kubernetes custom operators^].
+
+==== Building a Graph of History with The Codex
+
+Iian Neill is the creator of The Codex, a digital humanities project that deeply integrates text and data. In his NODES talk he'll share his experience using Neo4j to build this project.
+
+==== Graph Visualization: Main aspects, challenges and solutions
+
+Irfan Nuri Karaca has been working on Neo4j Bloom, the graph visualization tool, for the last couple of years. In his NODES talk will share his experiences of working on graph visualization. He'll cover the challenges encountered, lessons learned, and solutions applied along the way.
+
+https://www.crowdcast.io/e/nodes2019[Register for NODES 2019, role="medium button"]
+
+[[features-2]]
+=== Learn Japanese characters using Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191004014235/1_9pPUqiDveHC_4BoOFD-LmA.png" width="150px"  />
+</div>
+++++
+
+
+During a company hackathon Jimmy Crequer used the GRANDstack to build a small quiz app, to learn the Japanese characters in a new and faster way.
+
+As well as the GRANDstack, Jimmy used the Graph Algorithms library to compute similarities between characters with the Jaccard Similarity and then found tougher characters using PageRank.
+
+https://medium.com/neo4j/learn-japanese-characters-using-neo4j-483585abc5b8?postPublishedType=repub/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building a Chat Bot in Neo4j: Part 2
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191004014546/chatbot-2.jpg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/maxdemarzi[Max De Marzi^] continues his series of blog posts showing how to build a chat bot using Neo4j.
+
+In part 2, we build a graph model for our application and we create a procedure that can reply to the questions by the user.
+
+https://maxdemarzi.com/2019/09/20/building-a-chat-bot-in-neo4j-part-2/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Aleph  Data Processing Toolkit, String to Date with APOC, ETL ready for Cloud
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191004024433/neo4j-etl-tool-icon1.jpg" width="150px"  />
+</div>
+++++
+
+* Last week Michael Hunger announced that the Neo4j ETL tool now has https://medium.com/neo4j/neo4j-etl-now-ready-for-the-cloud-f76abd3eda5[support for remote databases^]. 
+
+* I learnt about https://docs.alephdata.org/[Aleph^], a popular suite of data analysis tools for investigators. Users can import data from files and databases, or export to Neo4j and use Aleph as a data processing toolkit.
+
+* I wrote a knowledge base article showing how to https://neo4j.com/developer/kb/neo4j-string-to-date/[create a Date from a string^] using https://neo4j.com/developer/neo4j-apoc/[APOC^], the Neo4j standard library. 
+
+
+
+[[features-5]]
+=== Streams and Tables and Graphs, oh my!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191004031052/2019-10-04_11-09-14.png" width="100px"  />
+</div>
+++++
+
+At the Kafka Summit in San Francisco this week, David Allen and Will Lyon showed how to combine streams, tables, and graphs, in their talk Extending Duality into Trinity with Graphs. 
+
+This is a great introduction to how graphs and streams play together, and there's even a https://github.com/moxious/kafka-summit-fraud-demo[GitHub repository^] containing all the code samples used in the talk.
+
+https://docs.google.com/presentation/d/1aB8Qq2AOlOhqgSwhlHlrLr9twaFZ4hl4QUJOPt5kVnY/edit?usp=sharing[Download the slides, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mkheck[Mark Heckler^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1179127529023709187[type={type}]
+
+
+////
+
+
+
+* https://medium.com/neo4j/neo4j-etl-now-ready-for-the-cloud-f76abd3eda5
+
+* Gunnar Morling 🇪🇺 @gunnarmorling
+If you've missed it so far, check out this superb intro () to #Quarkus at @heisedcwritten by @rotnroll666; not only describing the usage, but also touching on custom Quarkus extensions using the example of Michael's extension for #Neo4j .
+https://www.heise.de/developer/artikel/Quarkus-Der-Blick-ueber-den-Tellerrand-4532556.html?seite=all
+
+* https://dzone.com/articles/analyzing-us-lobbying-data-in-neo4j
+
+* https://dzone.com/articles/lobbying-for-fun-and-pleasure 
+
+https://jqassistant.org/jqassistant-1-7-0-released/
+
+
+
+
+I'm proud to announce that I've achieved my Reverse Engineering Malware (GREM) Gold Certification. "Leveraging the PE Rich Header for Static Malware Detection and Linking" is now published in the SANS Reading Room!
+https://www.sans.org/reading-room/whitepapers/reverseengineeringmalware/leveraging-pe-rich-header-static-malware-detection-linking-39045 
+
+////

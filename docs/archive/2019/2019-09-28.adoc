@@ -1,0 +1,175 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - NODES Preview: Data Science & Graph Algorithms, Graphing Brexit, Building a Chat Bot
+
+[Body copy:]
+////
+
+
+This week we preview the Data Science and Graph Algorithms talks at the NODES 2019 conference and we do further analysis on the Brexit Graph.
+
+Max De Marzi starts a series of posts showing how to build a chat bot, František Hartman builds a custom analyser for Full Text Search, and the Graplytic modeling tool is now available as a Graph App.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Danielle Monteiro 
+
+Our featured community member this week is https://www.linkedin.com/in/danimonteirodba/[Danielle Monteiro^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190927070916/this-week-in-neo4j-28-september-2019.jpg[name="Danielle Monteiro"]
+
+Danielle is one of our active community members in Sao, Paulo, Brazil. We initially interacted with Danielle through the https://neo4j.com/speaker-program/[Neo4j Speaker Program^] as she was accepted to be a speaker at https://neo4j.com/speaker-program/[Oracle Code One / Oracle Open World^]. In the year 2018, she lectured at over 80 events!  She is also active in her local development community (along with our good friends, Jhonathan Soares and Leandro Domingues) in groups such as, Databases-SP, .Net-SP, and woMakersCode. We admire community members like Danielle, as she takes time to provide knowledge and inspiration to others around her. She’s an educator, a thought leader, and a friend. 
+
+Danielle, this is from us and the rest of our community, thank you for all that you do!
+
+
+
+On behalf of the Neo4j Community, thanks for all your work Danielle!
+
+
+https://www.linkedin.com/in/danimonteirodba/[Connect with Danielle on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019 Preview: Data Science and Graph Algorithms
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190604150332/nodes-2019-neo4j-online-developer-expo-summit-register-today.png" width="200px"  />
+</div>
+++++
+
+There's now only two weeks to go until our first https://neo4j.com/nodes-2019/[Neo4j Online Developer Summit^], and this week we're going to preview talks tagged https://neo4j.com/online-summit/session-topics/?topic=data-science-algos[Data Science and Graph Algorithms^].
+
+==== All
+
+Kenneth Schwartz will give an experience report on his use of Neo4j to build an https://neo4j.com/online-summit/session/uncovering-medical-fraud-nyc[in-house fraud, waste, and abuse platform^]. 
+
+==== Intermediate
+
+Next up is Joe Depeau who will show how to https://neo4j.com/online-summit/session/graph-algorithms-clique-highschool-social[use graph algorithms to analyse the characters, plots, and tropes of classic teen movies^].
+
+==== Advanced
+
+In https://neo4j.com/online-summit/session/large-scale-social-networks-challenges-opportunity-solutions[Large Scale Social Networks - Challenges and Opportunities^], Adam Cowley will model a large scale social network using Cypher and user defined procedures. He'll then apply graph algorithms to personalise content and improve engagement.
+
+https://www.crowdcast.io/e/nodes2019[Register for NODES 2019, role="medium button"]
+
+[[features-2]]
+=== Graphing Brexit: Average Positions, MPs vs Parties, Rebel MPs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190927061230/1_4oyL1JFF6cRgkincxNxgQQ.jpeg" width="150px"  />
+</div>
+++++
+
+While the UK parliament was https://www.bbc.co.uk/news/uk-politics-49810261[unlawfully suspended^], I revisited the Brexit Graph that I created earlier this year and did some more analysis.
+
+* I explored the ways that https://markhneedham.com/blog/2019/09/20/graphing-brexit-charting-how-the-parties-voted/[political parties voted on average^] in the indicative votes held in March 2019 and created charts using Python's matplotlib library.
+
+* I https://markhneedham.com/blog/2019/09/23/graphing-brexit-mps-vs-parties/[compared the way parties voted against individual MPs^], focusing particularly on the Conservatie MPs who had the party whip removed on 3rd September 2019.
+
+* And, based on a suggestion by Amy Hodler, I looked at the https://markhneedham.com/blog/2019/09/27/graphing-brexit-did-the-threat-work/[ways that Conservative MPs have voted with respect to a no deal Brexit^].
+
+https://markhneedham.com/blog/tag/brexit/[Read all Brexit blog posts, role="medium button"]
+
+[[features-3]]
+=== Building a Chat Bot in Neo4j: Part 1
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190927064320/brett-jordan-tfyhuf_-6_e-unsplash.jpg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/maxdemarzi[Max De Marzi^] has started writing a series of blog posts showing how to build a chat bot using Neo4j.
+
+In part 1, we create a procedure that takes in text and turn it into an intent and named entities, so we can “hear” what the user is trying to tell us. 
+
+https://maxdemarzi.com/2019/09/18/building-a-chat-bot-in-neo4j/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Graphlytic Graph App, APOC string matching, GoT Analysis
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190927071631/demo_grimoire.png" width="150px"  />
+</div>
+++++
+
+* Graplytic is a tool that can be used for graph modeling and analytics. It is now https://graphlytic.biz/blog/how-to-install-graphlytic-in-neo4j-desktop[available to Neo4j Desktop users in the form of a Graph app^]. 
+
+* I wrote a blog post showing how to to match the same MPs in two different data sets.  using https://markhneedham.com/blog/2019/09/18/neo4j-string-matching-similarity/[string similarity functions^] from https://neo4j.com/docs/labs/apoc/current/[APOC^], Neo4j's standard library.
+
+* Yvonne Che https://medium.com/@yvonneche/the-evolution-of-power-a-graph-analysis-of-game-of-thrones-dc71a8f59b44[analyses a Game of Thrones dataset^] using the Louvain community detection and ArticleRank centrality algorithms.
+
+* Cailin McDonald https://docs.google.com/presentation/d/16wKvaquVPqUNA-CzjBKuejJ0E7uBmSOZnchPWhFqPZQ/edit?usp=sharing[shared the slides^] from her talk on network evaluation techniques using Neo4j.
+
+
+[[features-5]]
+=== Custom analyzer for fulltext search in Neo4j 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190927065208/noun_File-Search_609527.png" width="100px"  />
+</div>
+++++
+
+František Hartman shows us how to extend Neo4j's built in Full Text Search capability to handle the Czech language. 
+
+https://graphaware.com/neo4j/2019/09/06/custom-fulltext-analyzer.html[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/_kunal_p_[Kunal Pattni^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1177229805143699456[type={type}]
+
+
+////
+
+* https://medium.com/neo4j/learn-japanese-characters-using-neo4j-483585abc5b8?postPublishedType=repub
+
+
+* https://medium.com/neo4j/neo4j-etl-now-ready-for-the-cloud-f76abd3eda5
+
+* Gunnar Morling 🇪🇺 @gunnarmorling
+If you've missed it so far, check out this superb intro () to #Quarkus at @heisedcwritten by @rotnroll666; not only describing the usage, but also touching on custom Quarkus extensions using the example of Michael's extension for #Neo4j .
+https://www.heise.de/developer/artikel/Quarkus-Der-Blick-ueber-den-Tellerrand-4532556.html?seite=all
+
+* https://dzone.com/articles/analyzing-us-lobbying-data-in-neo4j
+
+* https://dzone.com/articles/lobbying-for-fun-and-pleasure 
+
+
+* https://neo4j.com/developer/kb/neo4j-string-to-date/ 
+
+I'm proud to announce that I've achieved my Reverse Engineering Malware (GREM) Gold Certification. "Leveraging the PE Rich Header for Static Malware Detection and Linking" is now published in the SANS Reading Room!
+https://www.sans.org/reading-room/whitepapers/reverseengineeringmalware/leveraging-pe-rich-header-static-malware-detection-linking-39045 
+
+////

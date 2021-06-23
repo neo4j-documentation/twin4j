@@ -1,0 +1,222 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 23 June 2018, including the World Cup Graph and GraphQL API and the Intro to Graph Databases YouTube series is back!
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week Max De Marzi shows us how to build a dating website using Neo4j, Adam Cowley analyses Google Analytics in Neo4j, we learn how to manipulate data structures using APOC, and we find the shortest path from Århus to Rome.
+
+[[featured-community-member]]
+=== Featured Community Member: Andrea Santurbano 
+
+This week’s featured community member is https://twitter.com/@santand84[Andrea Santurbano^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713083227/this-week-in-neo4j-14-july-20182.jpg" alt="" width="800" height="400" class="alignnone size-full wp-image-80114[name="Andrea Santurbano "]
+
+Andrea has been part of the Neo4j community for several years, and in 2016 he https://medium.com/apache-zeppelin-stories/experimenting-with-neo4j-and-apache-zeppelin-d80b7bec8fd2[started experimenting^] with Neo4j support for https://zeppelin.apache.org/[Apache Zeppelin notebooks^].
+
+Andrea built the Zeppelin Interpreter that connects to Neo4j and allows users to query and display the graph data directly in the notebook (both in graph and tabular formats). The interpreter was released last week as part of the https://zeppelin.apache.org/docs/0.8.0/interpreter/neo4j.html[0.8 release^].  
+
+Andrea has written a blog post explaining how to https://medium.com/@andreasanturbano/building-a-graph-data-pipeline-with-zeppelin-spark-and-neo4j-8b6b83f4fb70[build a graph data pipeline^] using the two tools. He also added https://neo4j.com/blog/latest-release-apoc-library-march-2018/[HDFS support to the popular APOC library^].
+
+On behalf of the Neo4j community, thanks for all your work Andrea!
+
+[[dating-neo4j]]
+=== Building a dating website with Neo4j
+
+https://twitter.com/maxdemarzi[Max De Marzi^] has written a series of blog posts explaining how to build your own dating website using Neo4j.
+
+image:https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713062938/dating-site-neo4j.png[]
+
+++++
+<br />
+++++
+
+Max starts by introducing the graph model before showing how to build a backend API and frontend for user registration and sign-in. You can read all the posts below:
+
+* https://maxdemarzi.com/2018/07/11/building-a-dating-site-with-neo4j-part-one/[High fives, low fives, introducing the graph model^]
+
+* https://maxdemarzi.com/2018/07/12/building-a-dating-site-with-neo4j-part-two/[Building a backend HTTP API^]
+
+* https://maxdemarzi.com/2018/07/12/building-a-dating-site-with-neo4j-part-three/[Register and sign in a user^]
+
+[[apoc-series]]
+=== Creating and manipulating data structures with APOC 
+
+While Cypher can create and use literal maps/documents, APOC takes it to the next level by adding functions to create and update them dynamically and also convert or extract data from maps. 
+
+youtube::_Qdhouvx-Qw[type={type}]
+
+In the latest video of the APOC series https://twitter.com/mesirii[Michael^] shows how to use these functions to turbo charge your graph applications.
+
+[[european-roads-google-analytics-tibco-spitfire]]
+=== European road graph, Google Analytics -> Neo4j, TIBCO Spitfire
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713060902/A%CC%8ArhusE3-A101968.07.27.jpg" width="100px"  />
+</div>
+++++
+
+*  https://twitter.com/lassewesth[Lasse Westh-Nielsen^] has https://lassewesth.blogspot.com/2018/07/the-international-e-road-network-and.html[written a blog post^] in which he shows how to load European road data into Neo4j and then run path finding queries on the resulting graph. He starts with basic pattern matching, before showing the different routes that the weighted and unweighted shortest path algorithms come up with when going between Århus and Rome.
+
+* In https://twitter.com/adamcowley?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor[Adam Cowley^]'s latest blog post he explores https://www.adamcowley.co.uk/neo4j/importing-google-analytics-to-neo4j-via-bigquery-using-apoc-jdbc/[loading Google Analytics data into Neo4j^] via BigQuery automated periodic imports. Adam shows how to use APOC's Load JDBC procedure to load data into Neo4j and then writes some queries to determine the different paths users take during their time on a website.
+
+* Divya Jyoti Rajdev has written an article https://community.tibco.com/wiki/spotfire-tips-tricks-access-visualize-graph-data-neo4j-spotfire[showing how to connect, access, and display data from Neo4j in TIBCO Spotfire^], a data visualization and analytics product. 
+
+* Phanor Coll wrote a blog post showing how to https://www.phanorcoll.com/docker-neo4j-go[setup a clean workspace for Neo4j And Golang^] using Docker and Docker Compose.
+
+[[ml-models]]
+=== Graphs and ML: Remembering Models
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713072117/1_c-wlReFlN_WRaz9KS9yRxA.jpeg" width="150px"  />
+</div>
+++++
+
+Last week https://twitter.com/ML_auren[Lauren^] wrote an article explaining the linear regression procedures she added for Neo4j, and this week she's https://medium.com/neo4j/a-developers-look-ml-models-in-neo4j-7d4cbacb320c[written an article^] explaining some of the internals.
+
+Lauren explains her design decisions and looks at the advantages and disadvantages of different approaches. Lauren and https://twitter.com/mdavidallen[David Allen^] also have https://twitter.com/ML_auren/status/1017522612316983296[an interesting discussion on twitter^] about using Neo4j as a master data solution for machine learning systems.
+
+
+[[cytoscape-docker-godot-ml]]
+=== Cytoscape Release, Neo4j GraphQL Server, Machine Learning and Knowledge Graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713071339/download-7.jpeg" width="150px"  />
+</div>
+++++
+
+* Cytoscape is an open source software platform for visualizing complex networks and integrating these with any type of attribute data. This week there was a new release 0.3 of the https://github.com/corwur/cytoscapeneo4j[Neo4j plugin^] for http://www.cytoscape.org/[Cytoscape^] 3.6. This version of the plugin has enhanced import/export options and allows users to expand nodes or network using different methods, as well as find the  shortest path between selected nodes.  You can http://apps.cytoscape.org/apps/cytoscapeneo4jplugin[download the plugin^] from the Cytoscape app store.
+
+* In this week's https://dzone.com/articles/machine-learning-on-graphs-5-minute-interview-with[5 minute interview^] Ajinkya Kale, Senior Applied Researcher at eBay's New Product Development Group, tells us how he got started with Neo4j and about his vision for machine learning on knowledge graphs. 
+
+* https://github.com/michaeldgraham[Michael Graham^] published https://www.npmjs.com/package/neo4j-graphql-server[neo4j-graphql-server^], a tool that uses neo4j-graphql-binding  to provides a quick way to setup an Apollo GraphQL server with an API for Neo4j graph databases 
+
+* The https://twitter.com/MellonFdn[Mellon Foundation^], in collaboration with https://twitter.com/TrismegistosTM[Trismegistos^], C. Roueché , https://twitter.com/KingsCollegeLon[Kings College^] and https://twitter.com/palaeofuturist[Gabriel Bodard^] created https://godot.date/about[Graph of Dated Objects and Texts (GODOT)^], a Neo4j based gazetteer for ancient calendar dates.
+
+* I wrote https://markhneedham.com/blog/2018/07/10/neo4j-grouping-datetimes/[a blog post^] showing how to group date based data across different dimensions with new temporal datatype.
+
+
+
+////
+* https://github.com/neo4j/neo4j-ogm/releases/tag/v3.0.4 Neo4j OGM
+
+[[knowledge-base]]
+=== How deletes work in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+This week from the https://neo4j.com/developer/kb/[Neo4j Knowledge base^] we have ...
+
+[[projects-knowledge-mortality-rdf-graph]]
+=== Projects to play with: Knowledge Graph, Mortality Explorer, RDF -> Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070618/Octocat.png" width="120px"  />
+</div>
+++++
+
+On my GitHub travels I came across a few interesting projects that you can take a look at if you get some time over the weekend.
+
+* <text>
+
+[[podcast]]
+=== On the podcast: Matt Casters
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="100px"  />
+</div>
+++++
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] interviewed Matt Casters, Chief Solutions Architect at Neo4j.
+
+They talk about his experience building the https://sourceforge.net/projects/pentaho/[Pentaho Kettle^] integration tool, his more recent work extending it to load data from streaming data sources (like Kafka) into Neo4j, as well as his new role in the solutions team at Neo4j.
+
+You can listen to the interview below or http://blog.bruggen.com/2018/07/podcast-interview-with-matt-casters.html[read the transcript^].
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467548923&amp;color=44c13e"></iframe>
+<br /> <br />
+++++
+
+[[apoc-youtube]]
+=== APOC YouTube Series: Load JSON, Load JDBC, Bulk loading data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629061434/apoc-neo4j-user-defined-procedures1.gif" width="120px"  />
+</div>
+++++
+
+This week https://twitter.com/mesirii[Michael^] released 4 more videos in the Neo4j APOC YouTube series:
+
+* https://www.youtube.com/watch?v=yEN6TCL8WGk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4&t=0s[Exploring Neo4j Database Metadata in APOC (#3)^]
+
+* https://www.youtube.com/watch?v=M1P1IlQdb5M&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4[Loading Data from JSON Web APIs into Neo4j with apoc.load.json (#4)^]
+
+* https://www.youtube.com/watch?v=e8UfOHJngQA&index=5&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Load Data from Relational DBs with JDBC and APOC (#5)^]
+
+* https://www.youtube.com/watch?v=t1Nr5C5TAYs&index=6&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Efficiently Updating and Inserting Data With apoc.periodic.iterate (#6)^] 
+
+You can find a list of all the videos so far in https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[the Neo4j APOC Utility Library HowTo Series playlist^].
+
+////
+
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| July 16th 2018 | https://www.meetup.com/GraphDB-Sydney/events/jqvlhpyxkbvb//[Neo4j Bloom: An innovative tool for everyone to communicate with data^] | https://www.meetup.com/GraphDB-Sydney/[GraphDB - Sydney^] | Joshua Yu 
+
+| July 17th 2018 | https://www.meetup.com/GraphDB-DC/events/250338543/[Welcome to the Graph: Intro to Graphs^] | https://www.meetup.com/GraphDB-DC/[GraphDB DC^] | Hosted by Michael McKenzie
+
+| July 18th 2018 | https://www.meetup.com/PDX-Graph-Meetup/events/252608538/[#FullStackPDX + neo4j : Charity Drive and Critique : Rejected Oscon Talks^] | https://www.meetup.com/PDX-Graph-Meetup/[PDX Graph Meetup^] | Hosted by Will Lyon
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/eggyducktective[Anna Tran^]:
+
+tweet::1016509731593023488[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

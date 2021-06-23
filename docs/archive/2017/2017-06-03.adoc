@@ -1,0 +1,156 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Niklas Saers
+
+This week's featured community member is https://twitter.com/niklassaers?lang=en[Niklas Saers^], iOS Lead at Unwire and the co-maintainer of https://github.com/graphstory/neo4j-ios[Theo - the Neo4j Swift driver^] with Cory Wiles.
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170602092716/this-week-in-neo4j-3-june-2017.png" alt="" width="800" height="400" class="alignnone size-full wp-image-66237" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Niklas Saers - This week's featured community member
+</strong>
+</p>
+++++
+
+Niklas first came across Neo4j in a workshop hosted by Dr Jim Webber and Ian Robinson back in 2011 and had used it for several prototypes before getting involved with the port of Theo to https://swift.org/blog/swift-3-0-released/[Swift 3.0^] in December 2016.
+
+At that point Theo still used Neo4j's HTTP API so Niklas got to work porting it to use the Bolt protocol. 
+In the process he built https://github.com/niklassaers/Bolt-swift[Bolt-swift^], as well as https://github.com/niklassaers/PackStream-Swift[Packstream-Swift^]. 
+
+Next up for Niklas is integrating Theo with https://github.com/vapor/fluent[Fluent^], an ORM for the Server Side Swift framework Vapor.
+
+On behalf of the Neo4j and Swift communities, thanks for all your hard work Niklas!
+
+=== WikiMap: Analysing Wikipedia in Neo4j
+
+https://www.linkedin.com/in/raj-shrimali/[Raj Shrimali^] has written a series of articles around importing Wikipedia into Neo4j. 
+
+* https://medium.com/@scarca/wikimap-genesis-74e2a36d91d8[Genesis^] in which Raj explains the import process and loads in a subset of the full dataset.  
+* https://medium.com/@scarca/wikimap-pivot-8888c28d1dbc[Pivot^] in which Raj experiments with using different number of threads to import the data.
+* https://medium.com/@scarca/wikimap-optimization-7a979541ceb5[Optimization^] where the attempts to speed up the import process continue.
+* https://medium.com/@scarca/wikimap-processing-2054a52a4aed[Processing^] where Raj runs a mini retrospective on the import process so far.
+
+The code for Raj's project is available in the https://github.com/scarca/wiki-analysis[wiki-analysis^] repository on GitHub.
+
+=== Neo4j <3 Preact
+
+The https://neo4j.com/release-notes/neo4j-3-2-0/[release of Neo4j 3.2^] at GraphConnect Europe 2017 saw the release of a brand new version of the Neo4j browser. 
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">🎉 We&#39;re (<a href="https://twitter.com/neo4j">@neo4j</a>) now a proud sponsor of <a href="https://twitter.com/preactjs">@preactjs</a>. You should support them too! <a href="https://t.co/Bpf4DBFUJu">https://t.co/Bpf4DBFUJu</a> <a href="https://twitter.com/hashtag/opencollective?src=hash">#opencollective</a></p>&mdash; Oskar Hane (@oskarhane) <a href="https://twitter.com/oskarhane/status/869466077264261122">May 30, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+The browser was completely rewritten using https://twitter.com/preactjs[Preact^], the fast 3kB alternative to the popular https://facebook.github.io/react/[React^] library, and Neo4j are now a proud sponsor of the project. 
+
+On behalf of all users of the Neo4j browser, thank you Preact!
+
+=== Getting started with Neo4j
+
+This was a week where several people wrote about their experiences getting started with graph databases. 
+
+* https://twitter.com/jim_d_hughes[James Hughes^] has just finished applying for the PMP exam and created the http://blog.jimdhughes.com/2017/05/25/my-dive-into-neo4j-and-my-pmp/[Project Management Body of Knowledge graph^]. James then analyzes the dataset using a series of Cypher queries.
+
+* https://twitter.com/dianekierce[Diane Kierce^] is just getting into graph databases and has https://medium.com/@diane.kierce/graph-theory-and-graph-databases-a9c24ed53f65[written about her experience so far^]. 
+
+* Paweł Głowacki has been going through the http://graphdatabases.com/[Graph Databases book^] and https://community.embarcadero.com/blogs/entry/graph-databases-and-neo4j[wrote a brief article^] containing his thoughts so far.
+
+=== Friday is release day
+
+This week saw the release of 4 different versions of Neo4j.
+
+++++
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170602134754/release-day.jpg" alt="" width="640" height="480" class="alignnone size-full wp-image-66243" />
+<br /><br />
+++++
+
+
+
+* https://neo4j.com/release-notes/neo4j-3-3-0-alpha01/[3.3.0-alpha01^] - the first milestone release in the 3.3 series contains support for multiple bookmarks in the Bolt server, bug fixes for the Neo4j browser, and support for USING INDEX for OR expressions in Cypher. 
+
+* https://neo4j.com/release-notes/neo4j-3-2-1/[3.2.1^] contains support for multiple bookmarks in the Bolt server, bug fixes for the Neo4j browser, as well as a few Hazelcast related usability improvements. 
+
+* https://neo4j.com/release-notes/neo4j-3-1-5/[3.1.5^] contains some procedure bug fixes and improved batching in the import tool. 
+
+* https://neo4j.com/release-notes/neo4j-2-3-11/[2.3.11^] saw a few minor bug fixes.
+
+If you give any of these releases a try let us know how you get on by sending an email to devrel@neo4j.com
+
+=== Python for IoT, PHP crawler, relational db analysis
+
+* https://twitter.com/CarlTurechek[Carl Turechek^] created https://github.com/siteraiser/Reckless-Recluse[Reckless-Recluse^] - a powerful PHP crawler designed to dig up site problems.
+
+* https://twitter.com/technige[Nigel Small^] created https://github.com/technige/n4[n4^] - a Cypher console for Neo4j. n4 aims to consolidate the old http://py2neo.org/v3/[py2neo^] command line tooling in a new console application which takes inspiration from https://twitter.com/_nicolemargaret[Nicole White^]'s https://github.com/nicolewhite/cycli[cycli^] tool.
+
+* Matt Lewis created https://github.com/m4ttl/thingernet-graph[thingernet-graph^] - a Python script that creates a Neo4j graph showing how a set of Internet of Things (IoT) devices are connected. 
+
+* https://twitter.com/rubinsimons[Rubin Simons^] created https://github.com/rubin55/silver[silver^] - a tool for loading relational/dependency information from relational database systems into Neo4j for analysis and visualization. At the moment it works with Oracle and next up are PostgreSQL, MySQL, and DB2.
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article showing how to https://neo4j.com/developer/kb/resetting-query-cardinality/[reset query cardinality in Cypher queries^] to address the 'too much WIP' issue that you can sometimes run into. 
+
+
+
+=== On the Podcast: Steven Baker
+
+On the Graphistania podcast this week http://blog.bruggen.com/2017/06/podcast-interview-with-steven-baker-neo.html[we have an interview^] with https://twitter.com/srbaker[Steven Baker^], Neo4j Drivers Engineer and the creator of the Ruby behavior-driven development (BDD) framework http://rspec.info/[RSpec^]. 
+
+https://twitter.com/rvanbruggen[Rik^] and Steven talk about the history of BDD, Steven's work building out drivers test infrastructure, living in Sweden, and more.
+
+If you enjoy the podcast don't forget to add the http://feeds.soundcloud.com/users/soundcloud:user§s:141739624/sounds.rss[RSS feed] to your podcast software or https://itunes.apple.com/be/podcast/podcast-on-graph-databases/id975377379?mt=2[add it on iTunes^].
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Tuesday June 6th, 2017, we are hosting https://www.eventbrite.com/e/neo4j-graphday-amsterdam-tickets-33996421211[Neo4j GraphDay Amsterdam^] - a full day event featuring a morning of talks about Neo4j use cases before an afternoon training session.
+
+* Also on Tuesday June 6th, 2017, https://twitter.com/ryguyrg[Ryan Boyd^] and https://twitter.com/dhimmel[Daniel Himmelstein^] will be https://www.meetup.com/DataPhilly/events/240213100/[talking graphs^] at the https://www.meetup.com/DataPhilly/[DataPhilly^] meetup in Philadelphia. Ryan will present on the Panama Papers and Daniel will talk about https://thinklab.com/p/rephetio[Project Rephetio^]. 
+
+* On Thursday June 8th, 2017, Gabor Szarnyas will be https://www.meetup.com/neo4j-budapest-users/events/240363389/[presenting his GraphConnect presentation "Ingraph: Live Queries on Graphs"^] at the https://www.meetup.com/neo4j-budapest-users/[Neo4j Budapest meetup^]. 
+
+* Also on Thursday June 8th, 2017, we are hosting https://www.eventbrite.com/e/neo4j-graphtalks-london-tickets-33240002743[Neo4j GraphTalks London^], a half day event focusing on how graph technology can address key challenges relating to Data Quality, Governance and Metadata Management.
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/jamie_gaskins[Jamie Gaskins^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Since discovering <a href="https://twitter.com/neo4j">@neo4j</a>, debugging SQL queries with &gt;1 join feels archaic, like I should also be faxing this query to the DB.</p>&mdash; Jamie Gaskins (@jamie_gaskins) <a href="https://twitter.com/jamie_gaskins/status/870252979475140610">June 1, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+++++
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

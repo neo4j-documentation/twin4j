@@ -1,0 +1,137 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 13 January 2018, including projects around FOSDEM, Knowledge Graphs, and Azure.
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we've got the finalised FOSDEM Graph Processing Room schedule, an updated Azure template, knowledge graphs, and more!
+
+=== Featured Community Member: Chris Leishman
+
+This week’s featured community member is https://twitter.com/cleishm[Chris Leishman^], Head of Product - PegaSys at https://consensys.net/[ConsenSys^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112020701/this-week-in-neo4j-13-january-2018.jpg["Chris Leishman - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Chris Leishman - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Chris worked for Neo4j from 2012 - 2016 and spent a lot of time working with Neo4j customers, gaining knowledge which he shared in his https://www.youtube.com/watch?v=kGY8FVQc9E4[GraphConnect San Francisco 2015 talk^] and https://neo4j.com/blog/8-tips-succeeding-with-neo4j/[accompanying blog post^]. 
+
+Chris has also presented at many meetups and led Neo4j training courses in the US, across Europe, and in Australia.
+
+More recently Chris created and maintains the https://github.com/cleishm/libneo4j-client/releases/tag/v2.2.0[Neo4j C client^] and 
+https://github.com/cleishm/libcypher-parser[libcypher-parser^], a parser library and linter for the Cypher query language.
+
+On behalf of the Neo4j community, thanks for all your work Chris!
+
+=== From GraphConnect: Knowledge Graphs - The Path to Enterprise
+
+At GraphConnect NYC 2017 http://www.graphadvantage.com/author/michael-moore/[Michael Moore^] and AI Omar Azha shared their experience building knowledge graphs.
+
+youtube::tvSgRX9_vP4[type={type}]
+
+They explain why graphs are a terrific accelerator for mobilising data and show how to design an architecture that puts a graph layer over a data warehouse or data lake.
+
+=== FOSDEM Graph Processing Room Schedule
+
+The schedule for the https://fosdem.org/2018/schedule/track/graph_processing/[Graph Processing room^] at https://fosdem.org/2018/[FOSDEM^] has been finalised and it looks like it's going to be a fun day.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112012632/2018-01-12_08-47-53.png["FOSDEM Graph Processing Room", 800, 360, class="alignnone size-full wp-image-66813"]
+
+++++
+<br />
+++++
+
+FOSDEM is run over the weekend of the 3rd and 4th February 2018 at the ULB Solbosch Campus in Brussels, Belgium. The Graph Processing Room is on the Saturday. I attended in 2015 and it was great fun seeing all the different things people were doing with graphs. I'd recommend going along if you can.
+
+=== Neo4j on Azure template updated
+
+We've released a new version of the Azure template to support the latest version of Neo4j Enterprise.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112022548/public-ip-address-neo4j-microsoft-azure1-1024x455.png["Neo4j on Azure", 640, 284, class="alignnone size-full wp-image-66813"]
+
+++++
+<br />
+++++
+
+This update also address problems users have experienced with the template due to a change in the portal UI. You can find the updated template in the https://azuremarketplace.microsoft.com/en-us/marketplace/apps/neo4j.neo4j-enterprise-edition?tab=Overview[Azure marketplace^]
+
+=== Neo4j on Windows, xhprof analysis, What is a graph database?
+
+* https://twitter.com/cskardon[Chris Skardon^] shows off some of his favourite tips and tricks when installing http://xclave.co.uk/2018/01/11/using-neo4j-on-windows/[install Neo4j on Windows^] from the Zip file distribution. 
+
+* The video from Lju Lazarevic's https://www.youtube.com/watch?v=52AB97XBQp8[What is a graph database?^] talk at the Connected Data London conference is now available. If you're looking for a quick and easy to understand presentation to share with your colleagues this is a good one to share.
+ 
+* Rohit Khatana has written an article showing how to https://medium.com/@rohitkhatana/integrating-neo4j-with-java-8d602d9351b4[integrate Neo4j with Java^] using https://github.com/neo4j/neo4j-ogm[Neo4j OGM^].
+
+* https://twitter.com/docteur_klein[Florian Klein^] created https://github.com/docteurklein/xhprof-analyze[xhprof-analyze^], a suite of tools to store, analyze and compare output of https://github.com/tideways/php-profiler-extension[Tideways XHProf Extension^] - a hierarchical Profiler for PHP. 
+
+* If you're working on the bleeding edge we released https://neo4j.com/release-notes/neo4j-3-4-0-alpha05/[Neo4j 3.4.0-alpha05^] earlier this week. This release has bug fixes for handling concurrent constraint creation and returning array properties from Cypher.
+
+=== From The Knowledge Base
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px" />
+</div>
+++++
+
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article showing how to https://neo4j.com/developer/kb/how-to-generate-sysinfo-output-from-cypher/[write a Cypher query to generate equivalent output to the Neo4j browser :sysinfo command^].
+
+Don't forget that you can see all knowledge base articles by going to https://neo4j.com/developer/kb/[neo4j.com/developer/kb^]. If there's something that you'd like to know but can't figure out, send us an email devrel@neo4j.com and we'll help you out.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| January 17th 2017 | https://www.meetup.com/Graph-Database-NRW/events/244681455/[Querying graph data by example from genomics - Part 3^] | https://www.meetup.com/Graph-Database-NRW[Graph Database - NRW^] | https://twitter.com/ira_res[Iryna Feuerstein^]
+
+| January 17th 2017 | https://www.meetup.com/graphdb-berlin/events/246607644/[Twitter Bot Analysis with Graph Analytics and NLP^] | https://www.meetup.com/graphdb-berlin[Graph Database - Berlin^] | https://twitter.com/mesirii[Michael Hunger^]
+
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/4dri4nG4rrigos[Garrigos Adrian^]:
+
+tweet::951139126249537536[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

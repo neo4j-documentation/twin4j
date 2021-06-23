@@ -1,0 +1,119 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Leila Haddou
+
+This week’s featured community member is https://twitter.com/leilahaddou[Leila Haddou^], Data Journalist for The Times and Sunday Times.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170721042903/this-week-in-neo4j-22-july-2017.jpg["Leila Haddou - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Leila Haddou - This Week's Featured Community Member
+</strong>
+</p>
+++++
+Leila is a long time member of the Neo4j community and pioneered the use of graphs and Neo4j for investigative journalism while working for the Guardian. 
+
+She's presented numerous Neo4j tutorials to data journalists, the https://docs.google.com/presentation/d/1fR0-s6XQ3SrJuHJdV-6ZgqqdsXUAqXz6FUeSupWiDNw/edit#slide=id.g1f55b63659_0_0[most recent^] being at The http://www.journalismfund.eu/dataharvest-conferences[European Investigative Journalism & Dataharvest Conference^] in Mechelen, Belgium.
+
+Leila most recently participated in the https://www.youtube.com/watch?v=QB1aVGXXCKs&index=34&list=PL9Hl4pk2FsvUq2Ae2_C2hZUs0pW4F6Bxj[Data Journalism in the Connected Age panel^] at GraphConnect Europe 2017. 
+
+On behalf of the data journalism and graph communities, thanks for all your work Leila!
+
+=== The Graph of Thrones
+
+In case you missed it, on Sunday the first episode of Game of Thrones Season 7 was released and we also launched our https://neo4j.com/blog/graph-of-thrones/[Game of Thrones Season 7 contest^].
+
+image::https://dl.dropboxusercontent.com/u/14493611/got-bag.jpg["Game of Thrones Bag", 600, 300, class="alignnone size-full wp-image-66813"]
+
+If you create or publish graphy Game of Thrones content that uses Neo4j, graph visualizations, graph algorithms, combines datasets, or any other interesting variants, you’ll be eligible for our weekly GoT prize.
+
+The prize is a Game of Thrones T-shirt of your choice plus EUR 50 worth of GoT paraphernalia (sorry, no swords), e.g., from https://www.elbenwald.de/Game-of-Thrones/[Elbenwald^] or similar outlets.
+
+=== Getting started with Neo4j
+
+https://twitter.com/GeekRuthie[Ruth Holloway^] has written the final two articles in her series on graph databases. She looks at https://opensource.com/article/17/7/neo4j-graph-databases-getting-started[how to install Neo4j and write some queries in the Neo4j browser^], and then how to https://opensource.com/article/17/7/neo4j-your-own-software-very-basic-perl-hacking[query the graph from a Perl application] using the http://search.cpan.org/~majensen/REST-Neo4p-0.2252/lib/REST/Neo4p.pm[Neo4p driver^].
+
+If you're looking to getting started with Neo4j and Python, it's worth taking a look at https://twitter.com/_nicolemargaret[Nicole White^]'s http://nicolewhite.github.io/neo4j-flask/[microblog application powered by Flask and Neo4j tutorial^]. 
+
+Nicole walks through the process of building a graph backed web application step by step implementing both read and write queries and finishes by deploying the application to Heroku. 
+
+=== Genetic programming, BIM models, DeepPhe NLP, Instacart
+
+* https://twitter.com/freethejazz[Jonathan Freeman^] posted the https://docs.google.com/presentation/d/1C3iLwoMXUAwFLNbCOs8Hf8jE2pHATKalL7hGU72Mqhw/edit#slide=id.g23d8d914d4_0_18[slides^] and https://github.com/Spantree/instacart-neo4j[code^] from his talk https://www.meetup.com/windy-city-graphdb/events/240348871/[400 trash bags of grocery receipts + Neo4j^]. If you want to see an example of how to use Neo4j in practice, this is a great place to start. 
+
+* https://twitter.com/alisyria[Ali Ismail^], PhD Student & Research assistant-TU Dresden, shared the slides from his talk https://www.slideshare.net/AliIsmail7/convert-bim-ifc-models-into-graph-database-neo4j-based-on-ifcwebserverorg[Application of graph databases and graph theory concepts for advanced analysing of BIM (Building Information Modeling) models^]. 
+
+* Daniel Escasa has been building a music database in Neo4j and has written a https://www.codementor.io/descasa/adventures-in-neo4j-a-music-database-9vx2nwyfs[3^] https://www.codementor.io/descasa/a-slight-change-from-the-previous-post-s-cypher-match-and-create-9z8q9h6v8[part^] https://www.codementor.io/descasa/my-neo4j-music-album-model-gets-kind-of-blue-9zcqw34ll#.WWx3MrKBqz4.twitter[series^] in which he evolves the model and learns more about different Cypher constructs.
+
+* https://twitter.com/tbrantb[Brant Boehmann^], Sr. Software Engineer at https://twitter.com/ScrippsNet[Scripps Networks^], shared the slides from his http://conference.information-management.com/conferences/mdmsanfrancisco/[MDM & Data Governance San Francisco^] talk https://www.slideshare.net/BrantBoehmann/applying-graph-db-to-enterprise-mdm[Applying Graph DB to Enterprise MDM^]. MDM and data integration are popular use cases for graphs and Brant explains how the model simplicity/flexibility and query elegance have worked well for Scripps.
+
+* https://twitter.com/NicMcPhee[Nic McPhee^] shared the code from his http://gecco-2017.sigevo.org/index.html/HomePage[GECCO (Genetic and Evolutionary Computation Conference) 2017^] tutorial on https://gist.github.com/NicMcPhee/9acc7e841130be22c6cc2254d8bf964e[Expressive genetic programming^]
+
+* https://twitter.com/simonjupp[Simon Jupp^] shared the materials from his https://github.com/simonjupp/importing-lifesci-data-into-neo4j[Importing lifescience data into Neo4j^] session at the Graph Databases in Life and Health Sciences Workshop in June 2017.
+
+* https://github.com/yuanzhou[Zhou (Joe) Yuan^] created https://github.com/DeepPhe/DeepPhe-Viz[DeepPhe-Viz^] which is used to visualise cancer patient summaries generated by the https://healthnlp.hms.harvard.edu/cancer/wiki/index.php/Main_Page[DeepPhe NLP tools^]. Neo4j is used to store the graph output of the tool.
+
+=== An introduction to Neo4j Bolt Drivers
+
+In this week’s online meetup https://twitter.com/technige[Nigel Small^] gave an introduction to Neo4j Bolt drivers which were first introduced in Neo4j 3.0. 
+
+youtube::UixTSyGfAxU[type={type}]
+
+We'll be running a https://www.meetup.com/Neo4j-Online-Meetup/events/241874862/[Neo4j drivers roundtable online meetup^] on Thursday, August 3, 2017 at 15:00 UTC where a few driver authors from the community will join us to talk through their experiences.
+
+=== From StackOverflow: Query Profiling, Optional Relationship Creation, Causal Clusters on EC2
+
+We have a new section this week where we'll take a look at some of the most popular questions asked on https://stackoverflow.com/[StackOverflow^] with the https://stackoverflow.com/questions/tagged/neo4j[#neo4j tag^].
+
+* https://stackoverflow.com/users/7495230/afridi[Afridi^]'s question https://stackoverflow.com/questions/45188231/cypher-neo4j-query-profiling[Cypher - Neo4j Query Profiling^] led to an interesting discussion about how the Cypher query planner works and how to interpret profile output. 
+
+* https://stackoverflow.com/users/3953904/abayob[Abayob^] asks how to do https://stackoverflow.com/questions/45152257/optional-merge-on-relationships[Optional merge on relationships^] - and is introduced to conditional execution via another variant of the http://www.markhneedham.com/blog/2016/10/30/neo4j-create-dynamic-relationship-type/[FOREACH hack^]! 
+
+* https://stackoverflow.com/users/4264404/suryan[suryan^] had https://stackoverflow.com/questions/45160929/neo4j-causal-clustering-cant-form-with-ec2-instances[a problem spinning up a causal cluster on EC2^] which eventually turned out to be an issue with the advertised_address configuration.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Wednesday, July 26, 2017, Laura Drummer will present https://www.meetup.com/Columbia-GraphDB-MeetUp/events/241549162/[Using Neo4j to Explore Topic-Based Communities in Social Networks^] at the https://www.meetup.com/Columbia-GraphDB-MeetUp/[Columbia GraphDB meetup^] in Maryland. 
+* Also on Wednesday, July 26, 2017, Nikolas Pontikos will present https://www.meetup.com/graphdb-london/events/241608756/[Pheno4J: A Gene To Phenotype Graph Database^] at the https://www.meetup.com/graphdb-london/[Neo4j London meetup^].
+* On Thursday, July 27, 2017, Niek Bartholomeus  will present https://www.meetup.com/Neo4j-Online-Meetup/events/240904631/[OpenTheBox - a full view of Corporate Networks in Belgium^] at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online meetup^].
+* Also on Thursday, July 27, 2017, Dave Fauth will present https://www.meetup.com/Philly-GraphDB/events/240552729/[an introduction to Neo4j^] at https://www.meetup.com/Philly-GraphDB/[Philly GraphDB^]. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ikwattro[Christophe Willemsen^]:
+
+tweet::887798318151151616[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

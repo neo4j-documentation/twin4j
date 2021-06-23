@@ -1,0 +1,175 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 9 June 2018, including 
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – New Release of Neo4j ETL Tool, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have the GRANDstack starter kit, loading JSON APIs into Neo4j using the APOC library, analysing the Lightning Network, the v4 release of Py2neo, GraphAware's 5th birthday, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Dirk Mahler
+
+This week’s featured community member is https://twitter.com/dirkmahler[Dirk Mahler^], Senior Consultant at buschmais GbR , and Author of https://jqassistant.org/[jQAssistant^], the popular Neo4j based software analytics tool that we've featured in many previous editions of https://neo4j.com/tag/twin4j/[TWIN4j^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180608012656/this-week-in-neo4j-9-june-2018-.jpg[name="Dirk Mahler"]
+
+Dirk has been a member of the Neo4j community for several years, and presented at https://www.youtube.com/watch?v=IBpK2cYmY-A[GraphConnect Europe 2016^], https://jqassistant.org/geecon-krakow-2016-verify-your-design-and-architecture/[GeeCON 2016^], and was one of the first people interviewed on the Graphistania podcast in http://blog.bruggen.com/2015/03/podcast-interview-with-dirk-mahler.html[March 2015^].
+
+This week he https://jqassistant.org/jqassistant-1-4-0-and-sonarqube-plugin-released[released version 1.4 of jQAssistant^]. This version contains rules for Spring & Junit5, CSV & JUnit reports, as well as support for Neo4j 3.4 including the APOC library.
+
+On behalf of the Neo4j community, thanks for all your work Dirk!
+
+[[this-week-grandstack]]
+=== This Week in the GRANDstack
+
+It's been a busy week for the http://grandstack.io/[GRANDstack^].
+https://twitter.com/lyonwj[Will^] created a GRANDstack starter project which you can find in the https://github.com/grand-stack/grand-stack-starter[grand-stack/grand-stack-starter^] GitHub repository.
+
+He also recorded a screencast in which he shows how build and deploy a full stack application using the GRANDstack (GraphQL, React, Apollo, Neo4j Database). 
+
+youtube::rPC71lUhK_I[type={type}]
+
+
+We also announced https://blog.grandstack.io/announcing-the-grandstack-online-hackathon-for-graphql-europe-2018-7d256ebf68e1[The GRANDstack Online Hackathon For GraphQL Europe 2018^]. 
+This is an online hackathon to showcase the GraphQL community and the awesome things the community is building. 
+
+The hackathon will run during June 2018 and we'll be featuring a few projects during the closing keynote at https://www.graphql-europe.org/[GraphQL Europe^] on June 15th 2018. 
+Will, https://twitter.com/mesirii[Michael^], and https://twitter.com/akollegger?lang=en[Andreas^] will be at the conference so do come and say "hi" if you're attending.
+
+[[podcast]]
+=== On the podcast: Jeremy Miller
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="100px"  />
+</div>
+++++
+
+This week on the Graphistania podcast https://twitter.com/rvanbruggen[Rik^] interviewed https://twitter.com/xagronaut[Jeremy Miller^], our featured community member from https://neo4j.com/blog/week-neo4j-graph-visualization-graphql-python/[31st March 2018^].
+
+They discuss Jeffrey's introduction into the world of graphs via knowledge management, https://www.youtube.com/watch?v=Ko_UAe1IEWk[a dependency management graph^] he built to help his team keep track of where all their style sheets being used, and more.
+
+You can listen to their conversation below or https://blog.bruggen.com/2018/06/podcast-interview-with-jeffrey-miller.html[read the transcript on Rik's blog^]
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/455047998&color=%2335a1cb&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<br /><br />
+++++
+
+[[py2neo]]
+=== Py2neo v4: The Next Generation
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180608023354/py2neo-3-1-python-driver-neo4j1.png" width="200px"  />
+</div>
+++++
+
+This week https://twitter.com/technige?lang=en[Nigel Small^] released http://py2neo.org/v4/[v4 of Py2neo^], a client library and toolkit for working with Neo4j from within Python applications and from the command line. 
+
+This version of the library wraps the 1.6 release of the official Python driver, which means that Py2neo can now focus on higher-level features and proper pythonic API and integrations.
+
+If you're using other tools from the Python ecosystem Py2neo has you covered. The Cursor object now has methods to export to http://www.numpy.org/[numpy^], https://pandas.pydata.org/[pandas^], and http://www.sympy.org/en/index.html[sympy^] objects.
+
+You can read more in the https://medium.com/neo4j/py2neo-v4-2bedc8afef2[release blog post^].
+
+[[graphaware-graphql-neo4j-python]]
+=== GraphAware turn 5, GraphQL and Neo4j with Python, Installing plugins
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://pbs.twimg.com/media/DelibaAWsAACEXY.jpg" alt="GraphAware are 5" width="150px" />
+</div>
+++++
+
+* Neo4j Solution Partner https://graphaware.com/[GraphAware^] https://twitter.com/nmervaillie/status/1002440631166427136[turned 5 this week^]. Happy Birthday and thanks for all the work you do in the Neo4j community!
+
+* Elsewhere in GraphQL land Charles David https://medium.com/elements/diving-into-graphql-and-neo4j-with-python-244ec39ddd94[has written a report^] of his experiences combining GraphQL and Neo4j with Python to build a simple financial management API.  You can find all the code from the blog post in the https://github.com/elementsinteractive/flask-graphql-neo4j[elementsinteractive/flask-graphql-neo4j^] GitHub repositoyr.
+
+* https://twitter.com/jmhreif?lang=en[Jennifer Reif^] has written https://medium.com/neo4j/explore-new-worlds-adding-plugins-to-neo4j-26e6a8e5d37e[a blog post^] in which she explains how to add new plugins to Neo4j and then goes through some of her favourite procedures from the popular APOC library.
+
+* I spent last weekend playing around with the new Duration data type and have written a few blog posts explaining how to https://markhneedham.com/blog/2018/06/02/neo4j-3.4-comparing-durations/[compare^] and https://markhneedham.com/blog/2018/06/03/neo4j-3.4-formatting-instances-durations-dates/[format^] them, as well as some https://markhneedham.com/blog/2018/06/03/neo4j-3.4-gotchas-working-with-durations/[gotchas^] that I encountered along the way.  
+
+[[json-apis-apoc]]
+=== Importing the ZenDesk and Strava JSON APIs into Neo4j using APOC
+
+This week we have a couple of articles showing how to import data from JSON APIs directly into Neo4j using the APOC library's https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_load_json_2[apoc.load.jsonParams^] procedure.
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180608025602/strava-zendesk.png" width="170px"  />
+</div>
+++++
+
+First up, Neo4j's customer success team  https://neo4j.com/developer/kb/using_apoc_load_jsonparams_to_load_data_from_zendesk_into_neo4j_to_learn_about_article_subscribers/[show how to utilize the Zendesk API to load data from Zendesk into Neo4j^], specifically data about users who have chosen to subscribe or follow Knowledge Base sections.
+
+I've also written a blog post showing how to https://markhneedham.com/blog/2018/06/05/neo4j-apoc-loading-data-strava-paginated-json-api/[paginate through Strava's API and load the data into Neo4j^] using the Periodic Commit and Load JSON procedures. No scripting language in sight!
+
+[[lightning-reco-powershell]]
+=== Lightning Network Graph, Recommendation engines, Powershell and Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180608031800/Bloackchain.jpg" width="200px"  />
+</div>
+++++
+
+* The https://lightning.network/[Lightning network^] is a decentralized network using smart contract functionality in the blockchain, and https://medium.com/@bluetegu[bluetegu^] has https://medium.com/coinmonks/lightning-network-import-the-topology-to-the-neo4j-graph-database-7c38a6e93a50[written a blog post^] showing how to export a node’s local view of the network topology into Neo4j. There's also a https://github.com/Bluetegu/lnd/blob/neo4j/cmd/lnneo4j/guide/readme.adoc[Neo4j browser guide^] that accompanies the post.
+
+* My colleague https://twitter.com/joedepeau?lang=en[Joe Depeau^] presented a webinar in which he showed https://www.youtube.com/watch?v=TvLy8sxe3K4[How to build a recommendation engine with Neo4j^] using the Recon library. 
+
+* Glenn Sarti wrote a blog post explaining how to https://glennsarti.github.io/blog/graph-all-the-powershell-things/[use Powershell with Neo4j^]. He goes extremely meta and shows how to create a Neo4j graph of the Powershell help documents using Powershell!
+
+* My colleage https://twitter.com/logisima[Benoit Simard^] shows how to https://www.bsimard.com/2018/05/22/monitoring-neo4j-influxdb.html[monitor Neo4j with the influxdb TICK (Telegraf, Influx, Chronograf, Kapacitor)  stack^]. 
+
+* Rik continues to play around with Neo4j Bloom, and this week shows how to use it for http://blog.bruggen.com/2018/06/using-neo4j-bloom-for-fraud-detection.html[fraud detection, discovery and visualization^]. 
+
+
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| June 12th 2018 | https://www.meetup.com/graphdb-belgium/events/251061447/[Summer update: Neo4j 3.4, ETL into Neo4j, & advanced visualization with Bloom^] | https://www.meetup.com/graphdb-belgium/[Graph Database - Brussels^] | https://twitter.com/rvanbruggen[Rik Van Bruggen^] 
+
+| June 13th 2018 | https://www.meetup.com/graphdb-london/events/251511280/[Summer update: Neo4j 3.4 & advanced visualization & discovery with Bloom^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/rvanbruggen[Rik Van Bruggen^] 
+
+| June 14th 2018 | https://www.meetup.com/Graph-Database-NRW/events/250809519/[Graph data processing with Neo4j and Apache Spark^] | https://www.meetup.com/Graph-Database-NRW/[Graph Database - NRW^] | https://twitter.com/ira_res[Iryna Feuerstein^] 
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/algirdas_griot[William DeepFriedkin^]:
+
+tweet::1004379207437348865[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

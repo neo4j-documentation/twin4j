@@ -1,0 +1,162 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Greg Woods teaches us all about the new reactive Neo4j drivers.
+
+Alicia Frame officially launches the Graph Data Science Library and Tomaz Bratanic shows us how to use it with the help of two datasets.
+
+Rik continues his journey in the world of supply chain management and Lucas Moda shows how to create a graph of Sao Paulo's subway system.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Steven Mogg
+
+This week's featured community member is Steven Mogg, Solution architect at OGA.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200409010723/this-week-in-neo4j-11-april-2020-1.jpg[name="Steven Mogg"]
+
+Steven is a graph nerd and consultant at https://www.mentumsystems.com.au[Mentum Systems Australia], where he has a focus on governance, risk, semantic web and business management information systems. 
+
+He is an active part contributor in the Neo4j community and an advocate for graphs and graph thinking in his local community in Canberra, Australia.
+For two years in a row, he was one of the organizers for
+https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day[Global Graph Celebration Day], helping expand graph thinking around the world.
+
+But don’t take our word for it, he said it himself in his https://www.linkedin.com/feed/update/urn:li:activity:6523394188250275840[post about GGCD] when he said, “We celebrated [GGCD] help share the power of the graph and maybe bring one or two more into the wonderful world of knowledge graphs” 
+
+Steven, we admire your passion and are so grateful for your intentful contributions to open the eyes of others to how graphs can change the world! Thank you for being a part of the community. We look forward to doing more powerful things together with you in the years to come!
+
+https://www.linkedin.com/in/steven-mogg-0945a29/[Connect with Steven on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Reactive Database Connections with Neo4j Drivers
+
+This week's video is Greg Woods' presentation about Neo4j Drivers from https://www.bigmarker.com/series/neo4j-tech-talks/series_summit[Neo4j Tech Talks^], hosted on 7th April 2020.
+
+youtube::PryTTPJA9l4[type={type}]
+
+In the video Greg explains reactive programming and reactive streams, and then presents examples of how these concepts have been implemented in the 4.0 version of Neo4j drivers.
+
+[[features-2]]
+=== Supply Chain Management with graphs: Part 3 - SCM analytics
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327015423/erp-supply_chain_management.png" width="120px"  />
+</div>
+++++
+
+https://twitter.com/rvanbruggen[Rik Van Bruggen^] continues his series of blog posts about supply chain management with graphs. 
+
+In part 3 Rik executes analytics queries against the dataset, using both Cypher's in-built variable path query capabilities as well as centrality algorithms in the Graph Algorithms Library.
+
+http://blog.bruggen.com/2020/03/supply-chain-management-with-graphs_27.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== This Week in Graph Data Science
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200407125928/announcing-neo4j-for-graph-data-2.jpg" width="200px"  />
+</div>
+++++
+
+On Wednesday https://twitter.com/aliciaframe1[Alicia Frame^], Lead Product Manager of Data Science at Neo4j, announced the official launch of the https://neo4j.com/graph-data-science-library/[Graph Data Science (GDS) Library^]. 
+
+The GDS library provides data scientists with a library of parallelized, robust graph algorithms that quickly compute over very large graphs. It replaces the https://neo4j.com/docs/graph-algorithms/current/[Graph Algorithms Library^] that was launched in 2017.
+
+https://twitter.com/tb_tomaz[Tomaz Bratanic^] has also written a couple of blog posts showing how to use it:
+
+* In  https://towardsdatascience.com/analyzing-multigraphs-in-neo4j-graph-data-science-library-35c9b6d20099[the first post^], he does a deep dive into multi graphs and explains how to use them in GDS.
+
+* And in https://towardsdatascience.com/community-detection-of-the-countries-of-the-world-with-neo4j-graph-data-science-4d3a022f8399[the second^], he combines multi algorithms, including Connected Components, Louvain, and Cosine Similarity, to make sense of the CIA’s World Factbook.
+
+https://neo4j.com/blog/announcing-neo4j-for-graph-data-science/?ref=social-blog[Read the release post, role="medium button"]
+
+[[features-4]]
+=== GraphQL resolvers deep dive, SDN RX + JDK 14, Query Neo4j with SQL
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200409031908/noun_Document_466273.png" width="120px"  />
+</div>
+++++
+
+* Michael Simons shared the https://github.com/michael-simons/neo4j-examples-record-movies[neo4j-examples-record-movies^] repository, which has examples showing how to use Spring Data Neo4j RX with JDK 14. 
+
+* Michael also https://www.twitch.tv/videos/586359800[presented a Twitch live stream^] in which he showed how to use the Java driver using JShell and Spring Boot. The code from that session is in the https://github.com/michael-simons/neo4j-twitch[neo4j-twitch^] repository.
+
+* https://twitter.com/lyonwj[William Lyon^] has written https://blog.grandstack.io/graphql-resolveinfo-deep-dive-1b3144075866[a deep dive into the GraphQL resolvers^] used in the https://grandstack.io/[GRANDstack^].
+
+* Adam Cowley published an update for https://github.com/adam-cowley/vue-neo4j[vue-neo4j^] with some improvements to the <vue-neo4j-connect> component. If you are in Desktop mode it will display a list of Projects and Graphs, otherwise you will get a login form.
+
+* M. David Allen wrote a blog post showing how to https://medium.com/neo4j/using-the-bi-connector-to-query-neo4j-with-sql-372eacb08fbc[query Neo4j with SQL^].
+
+
+[[features-5]]
+=== Using Neo4j and Cypher to reproduce São Paulo’s subway system
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200409005421/1_LJFITL9F1V2k9T1vbjNRkA.jpeg" width="200px"  />
+</div>
+++++
+
+Lucas Moda has written a blog post showing how to create a graph of the subway system in São Paulo. 
+
+Lucas gives a Cypher crash course, before showing how to import data about São Paulo's train stations, and concludes with some shortest path queries executed with the https://py2neo.org/v4/[py2neo^] library.
+
+The code used in the blog post is available in the https://github.com/lukmoda/graph-subway[graph-subway^] GitHub repository.
+
+https://levelup.gitconnected.com/using-neo4j-and-cypher-to-reproduce-s%C3%A3o-paulos-subway-system-8becec817974[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/markus_guenther[Markus Günther^] after watching Michael Simons' Twitch live stream.
+
+tweet::1247877570122534915[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+@maxdemarzi
+Updating your @neo4j 3.x Unmanaged Extensions to 4.x http://maxdemarzi.com/2020/04/06/updating-your-neo4j-3-x-unmanaged-extensions-to-4-x/ https://pbs.twimg.com/media/EU7LNvJWoAEWqhn.png
+
+Live Data Concepts @LiveDataConcept
+Drug Development Knowledge Graph insights using visual and interactive cues https://link.medium.com/1HFl0jIej5  #Neo4j #Bloom #Knowledgegraph #drugdiscovery #visualization #cancer
+
+
+
+Lup Yuen Lee 李立源 @MisterTechBlog
+#Neo4j Metadata for Cultural Artifacts...
+"A Semantically Annotated JSON Metadata Structure For Open Linked Cultural Data In Neo4j"
+https://dl.acm.org/doi/pdf/10.1145/3368640.3368659 
+
+////

@@ -1,0 +1,110 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 2 September 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-2-september-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 2 September 2017
+
+[Headline:]
+This Week in Neo4j – 2 September 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Felienne Hermans
+
+This week’s featured community member is https://twitter.com/Felienne[Felienne Hermans^], Assistant Professor at Delft University of Technology.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170901015349/this-week-in-neo4j-2-september-2017.jpg["Felienne Hermans - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Felienne Hermans - This Week's Featured Community Member
+</strong>
+</p>
+++++
+Felienne became known in the Neo4j community for her popular talk 'spreadsheets are graphs', which she presented at https://www.youtube.com/watch?v=LAHJUcGXmZA[GraphConnect Europe 2015^], https://www.youtube.com/watch?v=2Cdgew5zvI4[GOTO Berlin 2015^], and several other conferences and meetups. You can also read a https://neo4j.com/blog/spreadsheets-are-graphs-too/[transcript of the talk^] if you're not a fan of video content.
+
+Felienne uses Neo4j to do graph analysis on spreadsheets to help find code smells and areas of spreadsheets that need refactoring. She explains this in detail in her http://blog.bruggen.com/2015/11/podcast-interview-with-felienne-hermans.html[interview on Rik Van Bruggen's Graphistania podcast^].
+
+And this week Felienne achieved tenure!
+
+tweet::902550313810395137[type={type}]
+
+On behalf of the Neo4j community, congratulations Felienne and thanks for all your work!
+
+=== Graph of Thrones, Salesforce, Fraud Analysis
+
+* https://twitter.com/jhomarolo[Jhonathan de Souza^] https://codigosimples.net/2017/08/31/slides-da-palestra-graph-of-thrones-neo4j-game-of-thrones/[shared the slides^] from "Graph of Thrones – Neo4j + Game of Thrones". This one's in Portuguese and if you're having Game of Thrones withdrawal symptoms now that Season 7 is over you can always watch our https://www.youtube.com/watch?v=UmBP-jz7CBc[Graph of Thrones online meetup^] from a couple of weeks ago.
+
+* https://github.com/gaskaj[Joe Gaska^] has created https://github.com/HardingPoint/graphconnect[graphconnect^], which allows you to quickly connect your Salesforce objects to the https://www.hardingpoint.com/[Harding Point^] object graph. Harding Point then uses an AI powered neural network to find hidden paths to revenue, cost savings, and reduce operational burden.
+
+* Bobby Narang wrote up https://www.sendergen.com/salesforce-bay-area-developer-recap[his experience attending the Streamsets + Salesforce + Neo4j meetup^] in San Francisco last week. This one was recorded so you can https://www.youtube.com/watch?v=HL_lKpurMkk[watch it on our YouTube channel^] if you weren't able to attend in person.
+
+*  Elise Devaux explains how https://linkurio.us/blog/bforbank-detects-fraud-with-linkurious/[BforBank detects and investigates fraud faster with Linkurious and Neo4j^], which includes this quote by https://www.bforbank.com/[BforBank^]'s Alexandre Dressayre:  "several factors motivated the choice of the Linkurious solution, notably the bundle offered by the company. An off-the-shelf visualization and analysis software along with the Neo4j graph database solution was a perfect fit for us."
+
+=== Online Meetup: Analysing the football transfer window
+
+In this week's online meetup https://twitter.com/barrasadv[Jesús Barrasa^] and I tried to figure out what's been going on in this http://www.bbc.co.uk/sport/football/40762417[crazy football transfer window^] with the help of graphs.
+
+youtube::MxOJW7X8GHs[type={type}]
+
+We showed how to import CSV data, clean it up, make implicit relationships explicit, and find some unexpected insights using the Cypher query language.
+
+In next week's online meetup https://twitter.com/mesirii[Michael Hunger^] will show us the https://www.meetup.com/Neo4j-Online-Meetup/events/242821512/[new Neo4j graph algorithms library^] that was released a few weeks ago.
+
+=== Work Order Management, Kotlin Procedures, Graphing Causal Events
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] wrote https://maxdemarzi.com/2017/08/25/work-order-management-with-neo4j/[Work Order Management with Neo4j^] in which he shows how to build an evented work order model.
+
+* https://twitter.com/thedevel[Byron Ruth^] shows how to use https://nats.io/documentation/streaming/nats-streaming-intro/[NATS Streaming^] with https://twitter.com/Minio[Minio^] and Neo4j for causal graphing of events in a https://www.youtube.com/watch?v=eMEz-G0FqaQ[short YouTube video^].
+
+* https://twitter.com/mfalcier[Marco Falcier^] has created https://github.com/mfalcier/neo4j-kotlin-procedure-example[neo4j-kotlin-procedure-example^], in which he shows how to create a Neo4j stored procedure using the Jetbrains' Kotlin programming language.
+
+* On StackOverflow I found a https://stackoverflow.com/questions/45957637/finding-indirect-paths-between-two-nodes-in-neo4j[couple of^] https://stackoverflow.com/questions/45919620/cypher-match-path-with-different-depths[interesting questions^] where the answer requires you to use http://neo4j.com/docs/developer-manual/current/cypher/syntax/patterns/#cypher-pattern-varlength[variable length pattern matching^]. This is one of the most fun features to use in Cypher, so have a look and see if you need those types of queries in your application.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+|September 5th 2017 |https://www.jug.ch/html/events/2017/neo4j_in_der_praxis.html?year=2017&event=neo4j_in_der_praxis[Neo4j in Practice^] | JUG Switzerland | https://twitter.com/dkrizic[Darko Krizic^] 
+|September 5th 2017 |https://www.meetup.com/graphdb-london/events/242057951/[Analysing the football transfer window with Neo4j^] | https://www.meetup.com/graphdb-london/[Neo4j London User Group^] | https://twitter.com/markhneedham[Mark Needham^] 
+
+|September 6th 2017 |https://www.meetup.com/graphdb-belgium/events/240967158/[Graphs in Pharma: Intro & UCB case study^] | https://www.meetup.com/graphdb-belgium/[Neo4j Belgium User Group^] | https://twitter.com/rvanbruggen[Rik Van Bruggen^] 
+
+|September 6th 2017 |https://www.meetup.com/Neo4j-Manchester/events/242559369/[Graphing GDPR Network , planning a data centre move, and football transfers^] | https://www.meetup.com/Neo4j-Manchester/[Neo4j Manchester User Group^] | https://twitter.com/markhneedham[Mark Needham^], Pete Moore, Simon Eversfield
+
+|September 7th 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/242821512/[Efficient Graph Algorithms in Neo4j^] | https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] | https://twitter.com/mesirii[Michael Hunger^]
+
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ira_res[Iryna Feuerstein^]:
+
+tweet::901891727753179136[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

@@ -1,0 +1,167 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Adam Cowley and Jesus Barrasa give a hands on introduction to n10s, the low-code UI for loading RDF data into Neo4j.
+
+Jasper Blues continues the series of blog posts showing how to build a Neo4j-powered mobile game, Mathias Tiberghien shows how to create a Neo4j backed application using TypeScript, and Sebastian Daschner shows how to perform schema migrations in Kubernetes.
+
+And finally, Adam Cowley launched the redesign of the Developer guides and a new beefed up Graph Data Science section.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Maxime Guery
+
+This week's featured community member is Maxime Guery.
+
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200731082531/this-week-in-neo4j-1-august-2020-2.jpg[name="Maxime Guery"]
+
+Maxime (a.k.a Cobra) is one of those community members that dived in full-force into the community soon after his discovery of graph databases. His experiences and interests are in AI and data science, so naturally, when he started a new role at Data Nostra working with Neo4j, he was hooked.
+
+Maxime quickly got his https://neo4j.com/graphacademy/neo4j-certification/[Neo4j Certification^] and started actively contributing to the community. He signed up for the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninja Program^] to help others while strengthening his own skills.
+
+He’s quickly become one of the most helpful people on the Neo4j community site. We haven’t shared this with him yet, but we even received internal feedback on how “this community member is really going above and beyond answering questions”.
+
+We see a lot of growth potential in Maxime and we’re super excited that he’s joined our community and become so active. His efforts are highly appreciated and we’re anticipating seeing the lives of many graph-enthusiast he’s going to help along his journey.
+
+Cobra, thanks for being such an integral part of the Neo4j community and if there’s anything you need from us along the way, we’re here for you!
+
+https://www.linkedin.com/in/maxime-guery/[Connect with Maxime on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Exploring DBpedia with neosemantics 
+
+This week's video is a presentation by Adam Cowley and Jesus Barrasa, in which they show how to import Dbpedia into Neo4j using the neosemantics (n10s) library.
+
+youtube::fUbgjo4qUBY[type={type}]
+
+In the talk they show how to query DBpedia's SPARQL API for Real Madrid football players and import the results into Neo4j using the n10s graph app.
+
+[[features-2]]
+=== Developer Guides Refresh and New Graph Data Science content
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200731040137/noun_Refresh_43339-1.png" width="100px"  />
+</div>
+++++
+
+Adam Cowley launched the refresh of the Developer guides, which you can find at https://neo4j.com/developer/get-started/[neo4j.com/developer/get-started^]. 
+
+We've also beefed up the https://neo4j.com/developer/graph-data-science/[Graph Data Science section^], including videos to explain all the main concepts. 
+
+Let us know what you think via the feedback option in the bottom right of each page.
+
+https://neo4j.com/developer/graph-data-science/[Check out the new Developer Guides, role="medium button"]
+
+
+
+[[features-3]]
+=== Rock 'n' Roll Traffic Routing: Part 2
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200724011227/0_Jb91UWqOS4HkpW_l.jpg" width="180px"  />
+</div>
+++++
+
+Jasper Blues continues the series of blog posts showing how to build a Neo4j-powered mobile game.
+
+In part 2, Jasper shows how to use algorithms from the Graph Data Science Library to run route finding queries that take road closures into account.
+
+
+https://medium.com/neo4j/rock-n-roll-traffic-routing-with-neo4j-part-2-f2a74fe7d7f[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Getting started with Neo4j Fabric, Kong, New Elixir driver, Migrations in Kubernetes
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="100px"  />
+</div>
+++++
+
+* Soham Dhodapkar explains how to https://neo4j.com/blog/getting-started-with-neo4j-fabric/[get up and running with Neo4j Fabric^], a new feature introduced in Neo4j 4.0 that makes it easier to store and retrieve data in multiple databases.
+
+* Dominique Vassard released https://elixirforum.com/t/seraph-toolkit-for-data-mapping-and-querying-neo4j/32862/5[Seraph^], an Elixir library that lets users query Neo4j databases.
+
+* Dike Goodluck https://hashnode.com/post/how-to-create-easier-relationships-using-neo4j-ckd1nlji3009rbts14ru282c0[wrote a quick introduction to Cypher and Neo4j^].
+
+* Preet Kanwar https://hackernoon.com/how-to-build-graphql-api-with-spring-boot-neo4j-and-kong-part-4-4qq3upa[continues the blog post series showing how to build a Neo4j backed application with Spring Boot and Kong^], an open-source API gateway and microservice management layer. In part 4, we learn how to configure the Kong API gateway and make it the single point of entry into the AWS EKS cluster.
+
+* Sebastian Daschner https://blog.sebastian-daschner.com/entries/neo4j-migrations-k8s[shows how to perform schema migrations of Neo4j instances^] that run in a managed Kubernetes environment, to enable zero-downtime deployments.
+
+
+
+[[features-5]]
+=== Exploring Graph Database Based Apps Using a Dynamic Model
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200731033343/Screenshot-from-2020-07-31-11-33-22.png" width="150px"  />
+</div>
+++++
+
+Mathias Tiberghien shows how to create a Neo4j backed application using TypeScript, Angular, and a movies dataset.
+
+In the blog post, Mattias takes us step by step through the class structure of the application, how that maps to the graph schema, and how the application evolved over time. The code for the application is https://github.com/mathiastiberghien/graph_based_coding[available on GitHub^].
+
+https://medium.com/swlh/exploring-graph-database-based-apps-using-a-dynamic-model-516fa8fc8336[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/snicoll[Stéphane Nicoll^]:
+
+tweet::1288539046537580544[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+
+
+Prashanth Athri, Ph.D. @prashanthathri
+Data integration in cheminformatics can get hairy, but extremely rewarding. Here,
+https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.202000013 
+we show that building contexts onto integrated datasets bring true value to existing information.
+Used @neo4j to integrate data from compound DBs -  @ChEMBL & @DrugBankDB
+
+
+
+* AnalyticsInnovations - Inspire Billion People @AnalyticsInnova
+Lifelong Learning Community - Institute of Analytics USA (TM) - Join me in 90 minutes.. to learn the beauty, simplicity, and power of Graph (Network) Database and its applications..."Analytics with Cloud Database - Neo4J - Introduc…https://lnkd.in/ecaMtVY https://lnkd.in/euZ8BCe
+
+* Goodluck Dike @GoodluckDike3
+Cheers to my first article on any platform. Opinions on how to improve are highly welcome
+Thanks to @hashnode
+#neo4j #nodejs #javascript
+#100DaysOfCode #DEVCommunity #BlackTechTwitter  https://hashnode.com/post/how-to-create-easier-relationships-using-neo4j-ckd1nlji3009rbts14ru282c0
+
+////

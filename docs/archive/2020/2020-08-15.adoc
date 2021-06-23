@@ -1,0 +1,153 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Will Lyon adds GraphQL Authorization With Auth0 into the GRANDstack Real Estate Search App.
+
+Siddhartha Sehgal shares tips and tricks for graph modeling with Neo4j, Lju Lazarevic introduces the online day out challenge in Summer of Nodes, and Gaurav Sarma explains Neo4j's storage internals.
+
+And finally, Mark Cleverley shows how to build an Instagram graph.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Roni Das
+
+This week's featured community member is Roni Das.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200814025139/this-week-in-neo4j-15-august-2020-1.jpg[name="Roni Das"]
+
+Roni was working as a Cyber Security Consultant at a large consultancy when he first encountered Neo4j in one of the Threat management tools he was working with.
+
+He is very interested in continuous learning and teaching and has been doing so in the open. He taught himself Cypher and Neo4j and shared his progress on the https://www.youtube.com/watch?v=uZqGKg0ad7k&list=PLI8raxzYtfGyQl1wYIasuZ01Znl3isjU0[Total Technology^] YouTube channel. So far he has created 74 Neo4j, Python, and Cypher videos. 
+
+Michael Hunger was pointed to Roni's channel during a https://twitch.tv/neo4j_[Twitch^] session by a viewer who was requesting more Python content around Neo4j. Michael invited Roni to appear on his weekly Twitch stream, and this week Roni presented https://www.youtube.com/watch?v=EeC6dITq3VE&list=PL9Hl4pk2FsvXjk0hrerr78pLN-477pDLo&index=2[Getting started with Neo4j and Python(Flask)^].
+
+Roni also offers consulting around Neo4j, Python and more.
+
+On behalf of the Neo4j community, thanks for all your work Roni!
+
+https://www.linkedin.com/in/roni-das-08b3b866/[Connect with Roni on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== GraphQL Authorization With Auth0 | Building A GRANDstack Real Estate Search App
+
+This week's video is part of Will Lyon's series of videos showing how to build a Real Estate Search App using the GRANDstack. The GRANDstack is a set of technologies that work together to enable developers to build data intensive full stack applications
+
+youtube::Ay7-RyX9XPM[type={type}]
+
+In this video Will shows how to secure GraphQL APIs using Auth0 & GraphQL Auth Directives.
+
+[[features-2]]
+=== Summer of Nodes: Week 2 — The online day out
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200814012330/1_a2-iwIGgF6U7FmryFMPT_w.png" width="150px"  />
+</div>
+++++
+
+It's week 2 of Lju Lazarevic's Summer of Nodes 2020, a series of graph challenges that are running for the month of August.
+
+The challenge this week is to import data from The New York's Met museum into Neo4j and then use the Bloom visualisation tool to answer a series of questions about the art displays.
+
+https://medium.com/neo4j/summer-of-nodes-week-2-the-online-day-out-944a57c6b7b4[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Neo4j Data modelling 101
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200814014559/1_tDd-FBTR8v3WBj65qpscHQ.png" width=200px"  />
+</div>
+++++
+
+Siddhartha Sehgal has written an extensive tutorial about graph modeling with Neo4j. 
+
+Siddhartha starts by explaining why graph databases are useful, before comparing and contrasting relational databases and graphs. He then shows how to evolve graph models for popular domains by understanding the questions being asked of the data and using query profiling tools to evaluate performance.
+
+https://medium.com/neo4j/neo4j-data-modelling-2982bd90aa0c[Read the blog post, role="medium button"]
+
+
+[[features-4]]
+=== Neo4j storage internals, Running Neo4j in Kubernetes, Generating SSL certificates
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+
+* Arseny Zinchenko shows https://itnext.io/neo4j-running-in-kubernetes-79633944f213[how to get up and running with Neo4j on Kubernetes^]. 
+
+* Victor Zhao explains how to https://medium.com/@victorhzhao/getting-valid-ssl-certificates-for-neo4j-with-lets-encrypt-c264d06f6897[generate SSL certificates for Neo4j using Let's Encrypt^].
+
+* Gaurav Sarma has done a cool write up on https://medium.com/@gauravsarma1992/neo4j-storage-internals-be8d150028db[Neo4j storage internals^], explaining how entities are stored on disk to enable queries that use index free adjacency.
+
+* Kashish Gakkar shows how to  https://medium.com/@kashish.gakkar/working-with-neo4j-using-python-131ccc074947[connect to Neo4j using the official Python driver^].
+
+[[features-5]]
+=== Instagram Landscapes: Building Network Graphs with Neo4J in Python
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200814015032/1_b2akbdgZiA7IpXdXjtWnUA-1.jpeg" width="150px"  />
+</div>
+++++
+
+Mark Cleverley has been exploring Instagram data and has written a blog post showing how to model this domain using graphs.
+
+Mark shows how to construct an Instagram graph using the py2neo library, and then goes through the types of questions that we can ask once the data is in graph format.
+
+https://medium.com/@mark.s.cleverley/instagram-landscapes-building-network-graphs-with-neo4j-in-python-e362c6de4797[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ikwattro[Christophe Willemsen^]:
+
+tweet::1293852998968520704[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* https://medium.com/swlh/create-rest-api-with-django-and-neo4j-database-using-django-nemodel-1290da717df9
+Create REST API With Django and Neo4j Database Using Django_nemodel
+
+* https://medium.com/neo4j/handling-neo4j-constraint-errors-with-nest-interceptors-6d0c5909af9c
+Handling Neo4j Constraint Errors with Nest Interceptors
+
+
+* Nikolas Santis @nikosantise
+I have added two examples using @neo4j (one with @apollographql ) with #Nextjs @vercel (waiting for the PR :face_with_cowboy_hat:). I'm looking forward to it being useful to other developers. (Improvement contributions are welcome) https://github.com/nikosantis/next.js/tree/canary/examples/with-apollo-neo4j-graphql
+https://github.com/nikosantis/next.js/tree/canary/examples/with-neo4j 
+#neo4j #GraphQL
+[Feature this when it's merged - https://github.com/vercel/next.js/pull/16081]
+
+////

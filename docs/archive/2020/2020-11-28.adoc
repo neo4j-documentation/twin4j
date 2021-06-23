@@ -1,0 +1,215 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+If you celebrate Thanksgiving I hope you had a good (but presumably quieter!) one this year. We're almost at the end of our latest national lockdown in the UK, so we'll soon be allowed to meet some people again. 
+
+Anyway...on with the content. Will Lyon gets us started this week with a video showing us how to use the new JSON Bolt serialisation format.
+
+Rik Van Bruggen analyses his Spotify playlist, Hantsy shows us how to test Spring Data Neo4j components, and there's a Neo4j 4.x ready version of the Perl driver.
+
+And finally, Egemen Zeytinci applies RFM analysis to an e-commerce graph.
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Will Reynolds
+
+This week's featured community member is Will Reynolds.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201126133800/this-week-in-neo4j-28-november-2020.jpg[name="Will Reynolds"]
+
+Will has been developing software for the construction industry for around 15 years. He started with tools and utilities for AutoCAD and Autodesk Revit. 
+
+He discovered graphs a couple of years ago and is now a firm graph data enthusiast set on revolutionising the buildings services industry with the power of graphs.
+
+I first came across Will when he presented one of my favourite talks of the NODES 2019 conference - https://www.youtube.com/watch?v=xcWysEpxz1Q[Graph data for the construction industry using the GRANDstack, C#, and Azure^]. 
+
+Will also presented https://www.youtube.com/watch?v=OOihIxbo0dE&feature=emb_title[Utilizing the GRANDstack: Neo4j and GraphQL in the Real World^] at the recent https://neo4j.com/connections/graph-architecture-integrations/[Neo4j Connections: Graph Architecture and Integrations event^].
+
+https://www.linkedin.com/in/will-reynolds-41122427/[Connect with Will on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Using Neo4j 4.2 With Cloudflare Workers
+
+Our video this week is from https://twitter.com/lyonwj[Will Lyon^]'s live stream.
+
+youtube::mVFPWlF8TWk[type={type}]
+
+This week, Will gives us an introduction to the new https://neo4j.com/docs/http-api/current/actions/result-format/#_jolt[Jolt (JSON Bolt)^] serialisation format that was introduced in Neo4j 4.2. Jolt can be used with the HTTP transactional Cypher endpoint.
+
+After giving an overview of the syntax and explaining how to enable it, Will shows how we can use Jolt with Cloudflare Workers to create a Function as a Service that queries a Neo4j database and returns localised results of the US election. Will has also https://lyonwj.com/blog/neo4j-http-api-edge-workers[written a blog post^] on the same topic.
+
+[[features-2]]
+=== Exporting Spotify Playlists into Neo4j - and creating a little dashboard
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201126090012/image-rik.png" width="200px"  />
+</div>
+++++
+
+In Rik Van Bruggen's latest blog post, he explores his Spotify playlist in Neo4j, building on a https://nielsdejong.nl/neo4j%20projects/2020/09/23/spotify-playlist-builder.html[blog post written by Niels De Jong^] a couple of months ago. 
+
+Rik also builds a dashboard on top of the Spotify graph, using https://nielsdejong.nl/neo4j%20projects/2020/11/16/neodash.html[NeoDash^], a dashboard that Niels recently released. NeoDash is available as a web app or Graph App, and makes it easy to create bar charts, line charts, graph visualisations, and more!
+
+http://blog.bruggen.com/2020/11/exporting-spotify-playlists-into-neo4j.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Testing Spring Data Neo4j Components
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201113012126/download-12.png" width="200px"  />
+</div>
+++++
+
+Hantsy continues the series of blog posts showing how to use Neo4j with Spring Boot.
+
+In the third post, Hantsy explains how to test our Spring Data Neo4j applications, using Testcontainers and the Neo4j test harness.
+
+
+////
+* https://hantsy.medium.com/update-accessing-neo4j-with-spring-boot-2-4-3951cb81d97d 
+* https://hantsy.medium.com/data-auditing-with-spring-data-neo4j-11d6461146ff 
+ * https://hantsy.medium.com/testing-spring-data-neo4j-components-299c6ec77378 
+* https://hantsy.medium.com/customizing-queries-with-spring-data-neo4j-304b03918549 - Customizing queries with Spring Data Neo4j
+////
+
+https://hantsy.medium.com/testing-spring-data-neo4j-components-299c6ec77378[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Modeling nodes and relationships dynamically, 4.0 Perl Driver, Emil on Graphistania 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Ola shows https://medium.com/@h_bushroh/modeling-nodes-and-relationships-dynamically-on-neo4j-e4d07a03fc88[how to use APOC procedures^] to create and merge nodes and relationships that have dynamic labels and relationship types.
+
+* Andreas Kollegger published https://medium.com/neo4j/graphs-on-tap-with-neo4j-relate-d9833ba64529[Neo4j Relate^], a tool that makes it easy to build your own applications that provision Neo4j databases.
+
+* Mark Jensen writes about the http://blogs.perl.org/users/mark_jensen/2020/11/restneo4p-catches-up-to-neo4j-v40.html[recent release of REST:Neo4jp^], the Neo4j 4.0 version of the Perl driver.
+
+* Christophe Willemsen announced the launch of https://graphaware.com/neo4j/2020/11/17/neo4j-sso-keycloak.html[neo4j-sso^], a third party security extension that lets Neo4j Enterprise users connect with their LDAP, Okta, Google or Azure Active Directory accounts in a seamless and secure way.
+
+* Version https://graphlytic.biz/blog/what-s-new-in-graphlytic-3-2[3.2 of Graphlytic^] was launched. This version has query templates, auto-refresh of data in the visualization, and more.
+
+* Rk http://blog.bruggen.com/2020/11/graphistania-20-episode-11-emil-update.html[interviews Neo4j's CEO, Emil Eifrem^], in the latest version of the Graphistania podcast.
+
+
+////
+
+https://twitter.com/hi_iam_chris_/status/1331687304008773634 
+https://twitter.com/nsmith_piano/status/1331607983030218753
+
+
+////
+
+[[features-5]]
+=== RFM Analysis using E-Commerce Data
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201126090726/1_v4DnfIL6MWwQRPo11BytkA.jpeg" width=200px"  />
+</div>
+++++
+
+Egemen Zeytinci has written a blog post in which he applies RFM analysis to an e-commerce graph. RFM analysis is an approach that groups customers into segments based on previous purchase behaviour.
+
+After loading some sample data, Egemen shows how to use py2neo and some custom logic in Python to categorise the best customers, those with no recent purchases, and new customers. Once the segmentation is done, we'd then want to decide on a course of action for each segment.
+
+https://towardsdatascience.com/working-with-neo4j-rfm-analysis-using-e-commerce-data-721f5bd5c851[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/hi_iam_chris_[Kristijan^]:
+
+tweet::1331687304008773634[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+https://towardsdatascience.com/using-neo4j-with-pyspark-on-databricks-eb3d127f2245 
+Using Neo4j with PySpark on Databricks
+Unleash the full potential of Spark and Graph Databases working hand in hand
+
+If you are a fan of Dark Netflix Series, here is a graph database for fun by Shyam Pratap Singh  https://towardsdatascience.com/if-you-are-a-fan-of-dark-netflix-series-here-is-a-graph-database-for-fun-4b9c17f50c5 
+
+Richard Müller @rimllr
+"Graph-Based Performance Analysis at System- and Application-Level" of monitored @kiekerapm log data using @jqassistant and @neo4j. The slides presented at the 11th Symposium on Software Performance (#SSP2020) are now available:
+https://www2.slideshare.net/RichardMller12/graphbased-performance-analysis-at-system-and-applicationlevel-ssp-2020 
+
+Hello. I have a recorded talk about this work of mine, which relies heavily on Neo4J:
+Paper: https://www.sciencedirect.com/science/article/pii/S2352914819300309?via%3Dihub
+This talk was already presented in Data Natives Summit 2020.
+Here is the link to the recording: https://quanamcorp-my.sharepoint.com/:v:/g/personal/flopez_quanam_com/EcRbOqvu08FJt_ndxdysN4gBT8uKEh9kMtBQK7q2s3hF9Q?e=3Vphnn
+
+https://youtu.be/ZsbgkzLXdAI - Gerrit Meier
+Spring Data Neo4j 6 - Episode 0 
+
+https://neo4j.com/blog/graphacademy-course-machine-learning-workflow-link-prediction/
+Neo4j Graph Database PlatformNeo4j Graph Database Platform
+Updated GraphAcademy Course: Using a Machine Learning Workflow for Link Prediction
+
+Jesús Barrasa @BarrasaDV
+Time for a new QuickGraph (it’s number 12) Working with a Multilingual Thesaurus in #Neo4j
+#RDF #SKOS ( @UNESCO Thesaurus)
+https://jbarrasa.com/2020/11/20/quickgraph12-working-with-a-multilingual-thesaurus/
+
+
+
+Neo4j 4.2 Reads on the Leader https://xclave.co.uk/2020/11/19/neo4j-4-2-reads-on-the-leader/
+
+
+charts galore:
+- https://medium.com/neo4j/creating-charts-from-your-graphs-2f5b4e86fd6c
+
+
+
+
+////

@@ -1,0 +1,153 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 14 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - XXXXX
+
+[Body copy:]
+////
+
+Hi Graph Friends-
+
+If you haven't already heard https://graphconnect.com/[GraphConnect 2020 in New York City^] has been postponed and the remainder of the https://neo4j.com/graphtour/[GraphTour Europe^] events have been moved to online only. We have some great ideas for more online events going forward so stay tuned for more ways to connect with the Neo4j community from the comfort and safety of home. If you're not a member of the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup group^] now is a great time to join to take part in virtual meetups! 
+
+In the data science corner of this week's edition of TWIN4j we have Alicia Frame's NODES talk on using graphs in Artificial Intelligence and Machine learning, a walkthrough of the new Graph Data Science Neo4j Sandbox with Bloom and the Graph Data Science library, and a look at using the graph catalog feature of the Neo4j Graph Data Science library.
+
+In the GRANDstack world we have a 5 (five!!) part blog series on GRANDstack access control, a blog post on using GraphQL for identity and access management and a new neo4j-graphql.js release.
+
+We also have graph analysis of COVID-19 data, a new Visual Studio Code extension for Cypher and Neo4j, and a new Wikipedia page for the GQL graph query language.
+
+Stay safe out there and we'll see you next week!
+
+Cheers,
+https://twitter.com/lyonwj[Will^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Weidong Yang
+
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200313154359/featured14march.png[name="Weidong Yang"]
+
+
+Our featured community member this week is Weidong Yang. Weidong is the founder and CEO of Kineviz. He holds a doctorate in Physics and a Masters in Computer and Information Science. After conducting theoretical and experimental research on quantum dots, he worked for 10 years as a product manager and R&D scientist in the Semiconductor industry. He has been awarded 11 US patents and contributed to 20+ peer review publications. Alongside Kineviz, Weidong co-founded Kinetech Arts, a non-profit organization that brings dancers and engineers together to explore the creative potential of new technologies in making art. 
+
+Weidong gave a https://www.youtube.com/watch?v=XZgwVRZBsAg[talk at NODES 2019 on graph business intelligence analysis^] where he demonstrated how to use Neo4j along with Kineviz GraphXR.
+
+Thanks so much Weidong for sharing your enthusiasm for graphs with the world! 
+
+https://twitter.com/wdyang[Follow Weidong on Twitter!, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Graphs in Artificial Intelligence and Machine Learning
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019^] online conference, Alicia Frame talks about how to use graphs to improve machine learning models. Alicia covers building and querying knowledge graphs, using Cypher and graph algorithms for feature engineering, graph embeddings, and graph neural networks.
+
+
+youtube::jx1_oSl6Yow[type={type}]
+
+https://neo4j.com/online-summit/session/graphs-machine-learning-artificial-intelligence-ml-ai[Watch Alicia's Talk, role="medium button"]
+
+[[features-2]]
+=== Hands-On With The Neo4j Graph Data Science Sandbox
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200313141346/bloom-ds.png" width="120px"  />
+</div>
+++++
+
+This week we launched a new Neo4j Sandbox project for Graph Data Science.
+
+If you're not familiar with Neo4j Sandbox, it's a great way to try out Neo4j in a hosted online environment with different datasets and a guided experience. The new Graph Data Science sandbox shows how to use the Neo4j Graph Data Science library to run graph algorithms such as PageRank, community detection, and node similarity. Also included is visualizing graph data with Neo4j Bloom, including results of the algorithms in the visualization. Just https://sandbox.neo4j.com/?usecase=graph-data-science[launch the new Neo4j Data Science sandbox^] to try it out.
+
+If you'd prefer to read a blog post about using Neo4j Graph Data Science with Neo4j Bloom then this post https://medium.com/neo4j/hands-on-with-the-neo4j-graph-data-science-sandbox-7b780be5a44f["Hands-On With The Neo4j Graph Data Science Sandbox"^] will walk you through the process of starting a sandbox, running graph algorithms, and creating rule-based styles in Neo4j Bloom to style the visualization relative to the results of the graph algorithms.
+
+https://medium.com/neo4j/hands-on-with-the-neo4j-graph-data-science-sandbox-7b780be5a44f[Read The Blog Post, role="medium button"]
+
+
+[[features-3]]
+=== Analyzing COVID-19 Data In Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200313144005/kineviz-covid.jpg" width="120px"  />
+</div>
+++++
+
+Understandably there's a lot of interest around data related to the COVID-19 pandemic and the Neo4j community has been working with analyzing some of this data in Neo4j. 
+
+https://twitter.com/mdavidallen[David Allen^] shared https://github.com/moxious/covid19-graph[queries for importing data^] from Johns Hopkins into Neo4j to model COVID-19 infections throughout the world. You can combine this dataset with the https://medium.com/neo4j/visualizing-shortest-paths-with-neomap-0-4-0-and-the-neo4j-graph-data-science-plugin-18db92f680de[Neomap Graph App^] to visualize infection data throughout the world in a heatmap.
+
+The folks at Keneviz have built an https://www.kineviz.com/sarscov2[interactive graph visualization] with data from Nextstrain and the Global Initiative on Sharing All Influenza Data (GISAID) that shows genetic mutations of the COVID-19 virus as it spreads across the globe.
+
+From the http://neo4j.com.cn/[Neo4j community in China^] is an example of using Neo4j to build a web application to find if you've been in a location with someone with the virus. Joshua Yu has kindly https://community.neo4j.com/t/fighting-fatal-coronavirus-using-knowledge-graph/14634[translated a blog post about this project and posted it to Neo4j Community Site^].
+
+Are you working on a project using public data with Neo4j? Please share it on the https://community.neo4j.com/[Neo4j Community Site^] to tell us what you're working on.
+
+https://community.neo4j.com/c/projects-collaboration[Explore Community Projects, role="medium button"]
+
+
+[[features-4]]
+=== 5 Quick Links: VSCode Extension, GQL on Wikipedia, GraphQL, Graph Data Science, and more GraphQL
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200308200950/image-152.jpg" width="120px"  />
+</div>
+++++
+
+* https://marketplace.visualstudio.com/items?itemName=Trinity.trinity[Trinity is a new Visual Studio Code extension^] for Cypher and Neo4j for previewing queries and database structure within Visual Studio Code. 
+* The GQL Graph Query Language gets https://en.wikipedia.org/wiki/GQL_Graph_Query_Language[a new Wikipedia page^] 
+* Alex Babeanu published https://neo4j.com/blog/neo4j-graphql-iam-graphconnect-nyc[a blog post on using GraphQL for identity and access management^]
+* https://medium.com/@bratanic.tomaz[Tomaz Bratanic^] wrote about https://towardsdatascience.com/exploring-the-graph-catalog-feature-of-neo4j-graph-data-science-plugin-on-a-lord-of-the-rings-d2de0d0a023[using the graph catalog feature of the Neo4j Graph Data Science library.^]
+* A new neo4j-graphql.js release with https://grandstack.io/docs/graphql-interface-union-types.html[improved support for interface and union GraphQL types^] is now available.
+
+
+
+[[features-5]]
+=== GRANDstack Access Control
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200313140043/grandstack-auth.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/imkleats[Ian Kleats^] published a 5 post blog series exploring access control in GraphQL APIs built with GRANDstack. He starts by building a GraphQL schema using neo4j-graphql.js then moves on to GraphQL query transformation, ultimately showing how to implement schema directives that can be used to add authorization rules that take advantage of the filtering functionality built into GRANDstack. 
+
+This is a great dive into the world of GraphQL tooling - along the way you'll learn about ASTs, visitor functions, GraphQL schema directives, query transformation and GraphQL filter arguments.
+
+
+
+https://dev.to/imkleats/grandstack-access-control-basics-and-concepts-4phd[Read the series role="medium button"]
+
+
+=== Tweet of the Week
+
+Our tweet of the week is a reminder that there are some awesome job opportunities at Neo4j:
+
+// https://twitter.com/neo4j/status/1238058125313409024
+tweet::1238058125313409024[type={type}]
+
+You can https://neo4j.com/careers/[head straight to the Neo4j jobs listing^] to learn more.
+
+
+
+
+

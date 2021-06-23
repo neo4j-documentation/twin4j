@@ -1,0 +1,120 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we've got real time food and event recommendation engines, a JavaScript OGM, a Neo4j Operational Dashboard, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Meredith Broussard
+
+This week’s featured community member is https://twitter.com/merbroussard[Meredith Broussard^], Assistant Professor at New York University, with a focus on data-driven reporting, computational journalism, and data visualization.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180309024551/this-week-in-neo4j-10-march-2018.jpg[name="Meredith Broussard"]
+
+Meredith has presented Neo4j workshops at NICAR https://ire.org/events-and-training/event/2702/3066/[2017^], showing attendees how to find connections in campaign finance data, and again in https://www.ire.org/events-and-training/event/3189/3652/[2018^], this time with a focus on social network analysis. 
+
+She will also be familiar to attendees of GraphConnect Europe 2017 where she participated in the https://www.youtube.com/watch?v=QB1aVGXXCKs[Data Journalism in the Connected Age panel^]. 
+
+Meredith is currently applying the finishing touches to her book https://www.amazon.co.uk/Artificial-Unintelligence-Computers-Misunderstand-World/dp/0262038005/[Artificial Unintelligence: How Computers Misunderstand the World^] which is due for release in May 2018. 
+
+On behalf of the Neo4j and data journalism communities, thanks for all your work Meredith!
+
+=== Recommendation Engines for Food Recipes and Events
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180309002928/NewGoustoBox_110361.jpg" width="200px" />
+</div>
+++++
+
+This week we have two stories about real time recommendation engines - a use case where graph databases excel.
+
+https://twitter.com/irenillap[Irene Iriarte Carretero^], link:++https://neo4j.com/blog/this-week-neo4j-rmarkdown-new-apoc-release-finding-duplicates/#featured-community-member++[last week's featured community member^], was link:++https://diginomica.com/2018/03/07/a-messy-recipe-for-tasty-success-with-graph-at-gousto/#.WqCxyQf926k.twitter++[interviewed by diginomica^] after her GraphTour London talk last week. 
+
+Irene explains how Gousto are using Neo4j to build a personalised recipe recommendation engine that takes "the subjective aspect" of cooking into account. 
+
+Suprfanz's Jennifer Webb presented https://conferences.oreilly.com/strata/strata-ca/public/schedule/detail/63762[Data science in practice: Examining events in social media^] at the Strata Data Conference in San Jose. 
+
+In the talk Jennifer shows how to build a recommendation engine for event promoters, starting from the https://github.com/community-graph[community graph^] and using graph algorithms to find influencers. You can https://cdn.oreillystatic.com/en/assets/1/event/269/Data%20science%20in%20practice_%20Examining%20events%20in%20social%20media%20Presentation.pptx[download the slides^] from Jennifer's talk.
+
+
+
+
+=== Neo4j Operational Dashboard, Javascript OGM, Graphs for Identity
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180309005342/1_v9rk16KrgpN3bB8KkSy0rQ-1024x529.png" width="200px" />
+</div>
+++++
+
+* https://twitter.com/mdavidallen[David Allen^] has written a blog post where he creates a https://medium.com/@david.allen_3172/neo4j-operational-dashboards-with-hawtio-69e5ac3a093f[Neo4j Operational Dashboard with Hawtio^], a modular dashboard for managing your Java stuff. David provides step by step instructions to expose Neo4j's JMX metrics to the web and then wires it up to Hawtio via its own plugin architecture.
+
+* After writing several posts showing how to use Neo4j in Java applications, https://twitter.com/adamcowley[Adam Cowley^] switches languages and show how to https://www.adamcowley.co.uk/javascript/using-the-neo4j-driver-with-nodejs/[use the Neo4j Driver with Node.js^]. Adam provides step by step instructions for using the driver and introduces https://github.com/adam-cowley/neode[Neode^], a JavaScript OGM that makes it easy to build graph backed CRUD applications.
+
+* https://twitter.com/alexb_imagina[Alex Babeanu^] explains how Nulli have been using https://identiverse.com/2018/03/01/graphs-for-identity/[Neo4j to build solutions that help clients manage identities and their defining attributes and contexts^].  In the second half of the post Alex shows how you might go about building an access control API using GraphQL and the http://grandstack.io/[GRANDstack^]. 
+
+* https://twitter.com/vizdatamodeler[Thomas Frisendal^] continues his fascinating series of posts on graph data modelling with his latest post http://www.dataversity.net/make-decisions-data-modeling-relationships-databases/[How to Make Decisions About Data Modeling Relationships in Databases^]. Thomas surveyed people working with graph and relational databases and summarises his findings in this post.
+
+=== Geek Out: Graph Theory Tutorial
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180309011022/cover.jpg" width="100px" />
+</div>
+++++
+
+I came across Michel Caradec's  excellent  https://github.com/michelcaradec/Graph-Theory[workshop about implementing graph theory with Neo4j^]. 
+
+Michel set himself the challenge of implementing graph theory concepts using pure Cypher, and in the tutorial he shows how to create random graphs, extract sub graphs, generate adjacency matrices, and more. 
+
+If you geek out on graph theory you're going to love this tutorial.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| March 14th 2018 | https://www.meetup.com/graphdb-lille/events/247877165/[Data-journalisme et Panama Papers, GraphQL, curieux d’en savoir plus ?^] | https://www.meetup.com/graphdb-lille/[Graph Database - Lille^] | Samuel Castillo, Benoît Simard
+
+| March 15th 2018 | https://www.meetup.com/Singapore-Neo4j-Meetup/events/248468097/[Neo4j Graph Platform March 2018 Meetup^] | https://www.meetup.com/Singapore-Neo4j-Meetup/[Singapore Neo4j Meetup^] | Joshua Yu, Brandon Richards 
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/KhairulAnwar[Khairul Anwar^]:
+
+tweet::969987431352037378[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

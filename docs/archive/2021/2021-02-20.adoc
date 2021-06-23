@@ -1,0 +1,171 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+Our video this week is an interview with NASA's David Meza from Ashleigh Faith’s IsADataThing YouTube channel.
+
+Jesús Barrasa analyses the structured data of the White House website, Clair Sullivan imports data from Python, and I show how to use Speaker Listener Label LPA.
+
+And finally, Jack Collins createsPokémon teams using  Neo4j and the Graph Data Science Library.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Tom Swinkels
+
+
+This week's featured community member is Tom Swinkels.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210219062011/this-week-in-neo4j-20-february-2021.jpg[name="Tom Swinkels"]
+
+Tom is a web developer at https://prepr.io[prepr.io], which is using Neo4j as the backing database for a headless, data-driven CMS system. They just released a forever-free plan so if you want a modern graph-powered CMS, check it out.
+
+Tim is active in the Neo4j community, helping folks with their questions on the Neo4j Slack channel. He is also working on a personal Dutch project called https://112pers.nl/wat-is-112pers[112pers], which provides personalised emergency, weather, and flight information using Neo4j and Elasticsearch.
+
+Thanks a lot for all your help Tom and good luck with your Neo4j based startup and projects.
+
+https://www.linkedin.com/in/tom-swinkels-0752641b/[Connect with Tom on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Neo4j at NASA: Chatting with David Meza
+
+Our video this week is an interview with NASA's David Meza from Ashleigh Faith's https://www.youtube.com/channel/UCZsTDApBUUdUpg024K33YNA[IsADataThing YouTube channel^].
+
+youtube::7rrYguolqZc[type={type}]
+
+They discuss machine learning ethics, how to get started in graphs, and David's experience using Neo4j to build the lessons learned database at NASA.
+
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+////
+
+[[features-2]]
+=== QuickGraph#15 Analysing the structured data embedded in web pages
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210219011143/image-10-1-1.png" width="200px"  />
+</div>
+++++
+
+In QuickGraph #15, Jesús Barrasa analyses the structured data embedded in the pages of the new White House website.
+
+Jesus extracts the structured data in JSON-LD form, imports it into Neo4j using APOC and n10s, before exploring the graph using the Neo4j Browser.
+
+https://jbarrasa.com/2021/01/22/quickgraph15-analysing-the-structured-data-embedded-in-web-pages/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Create a graph database in Neo4j using Python
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210219011049/1_Xtbvzx235TlvkHetOVfi6A.png" width="150px"  />
+</div>
+++++
+
+In Clair Sullivan's latest blog post she shows how to get data generated in Python into Neo4j.
+
+Clair imports an arXiv dataset into a Pandas DataFrame and cleans up the data before importing it into Neo4j using the Python driver. She also shows how to query the resulting graph and analyse it from Python. 
+
+
+https://towardsdatascience.com/create-a-graph-database-in-neo4j-using-python-4172d40f89c4[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Speaker Listener LPA, IT Network Infrastructure, New Release of Cypher-DSL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* I wrote a blog post showing https://markhneedham.com/blog/2021/02/08/neo4j-gdsl-overlapping-community-detection-sllpa/[how to use the Speaker Listener Label Propagation Algorithm^] that was added to the Graph Data Science Library in version 1.5.
+ 
+* Alexander Jarasch https://twitter.com/AJarasch/status/1359471068247900160[shares a short video^] showing how to look for hidden connections between diseases in a Neo4j knowledge graph.
+
+* Graphalytic published a blog post https://graphlytic.biz/blog/it-infrastructure-visualization[showing how to visualise your IT Network Infrastructure^].
+
+* Michael Simons published https://github.com/neo4j-contrib/cypher-dsl/releases/tag/2021.0.0[version 2021.0.0 of Cypher-DSL^]. This release has support for index hints, mathematical functions, dynamic property lookup, and more.
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Finding synergies with network analysis
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210219011233/1200px-International_Pokemon_logo.svg.png" width=200px"  />
+</div>
+++++
+
+Jack Collins uses Neo4j and the Graph Data Science Library to identify the best Pokémon teams. 
+
+After importing data from Smogon.com, a platform for online Pokémon battles, Jack uses the Louvain community detection algorithm to identify sets of Pokémon that are more frequently chosen together. He then visualises the results in the Neo4j Browser. 
+
+https://towardsdatascience.com/finding-synergies-with-network-analysis-using-neo4j-to-identify-the-best-pok%C3%A9mon-teams-4ff89e791671[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/retracement[Mark Broadbent^]:
+
+tweet::1362366974903353345[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+Jesús Barrasa @BarrasaDV
+Just published some initial graph analysis on the English #Wordnet
+Check out QuickGraph#17 and you'll learn among other things that there are 28 words to describe "the fleshy part of the human body that you sit on"
+#Neo4j
+https://jbarrasa.com/2021/02/05/quickgraph17-the-english-wordnet-in-neo4j-part-2/
+
+* https://www.youtube.com/watch?v=xJ5Q2iT1XcM
+
+* https://towardsdatascience.com/from-text-to-knowledge-the-information-extraction-pipeline-b65e7e30273e
+
+
+////

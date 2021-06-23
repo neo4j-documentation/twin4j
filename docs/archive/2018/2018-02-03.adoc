@@ -1,0 +1,132 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 February 2018, including projects around Thomson Reuters’ OpenPermID, Data Lineage at UBS, and Kubernetes on Google Cloud.
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have a graph of Thomson Reuters’ OpenPermID dataset, running Neo4j on Google Cloud, migrating from MySQL to Neo4, as well as a data lineage talk from GraphConnect NYC 2017.
+
+=== Featured Community Member: Suellen Stringer-Hye
+
+This week’s featured community member is https://twitter.com/suellenshye[Suellen Stringer-Hye^], Linked Data and Semantic Web Coordinator at https://twitter.com/VandyLibraries[Vanderbilt University^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180202004247/this-week-in-neo4j-3-february-2018.jpg[name="Suellen Stringer-Hye"]
+
+Suellen has been part of the Neo4j community for several years and presented her work using graphs to analyse digital humanities data at https://neo4j.com/blog/suellen-stringer-hye-vanderbilt-university/[GraphConnect San Francisco 2015^]. She also presented https://github.com/HeardLibrary/graphs-without-ontologies[Using Neo4j to Explore Nascent Research Networks^] with https://twitter.com/andersoncliffb[Clifford Anderson^] and https://twitter.com/mrwargames[Ed Warga^] at the http://vivoconference.org/[2015 VIVO Conference^].
+
+Suellen leads https://twitter.com/AdamSteffanick/status/957097505728225280[much^] https://twitter.com/vikeshojiorlati/status/956952041385091074[loved^] http://heardlibrary.github.io/workshops/edtech/2016/06/01/graphgists.html[graph database workshops^] at Vanderbilt and has helped attendees build https://gist.github.com/suellenstringer-hye?direction=asc&sort=created[GraphGists with their favourite data^]. 
+
+Suellen was also https://soundcloud.com/leadinglines/episode-006-suellen-stringer-hye-and-micheal-hunger[interviewed on the Leading Lines podcast^] alongside my colleague https://twitter.com/mesirii[Michael Hunger^] in 2016.
+
+On behalf of the Neo4j and humanities communities, thanks for all your work Suellen!
+
+=== Pick of the week: Thomson Reuters’ OpenPermID Graph
+
+In the latest installation of his https://jesusbarrasa.wordpress.com/tag/rdf/[Neo4j is your RDF store^] series https://twitter.com/barrasadv[Jesús Barrasa^] https://jesusbarrasa.wordpress.com/2018/02/01/neo4j-is-your-rdf-store-part-3-thomson-reuters-openpermid/[shows how to build a graph^] of https://permid.org/[Thomson Reuters OpenPermId dataset^].
+
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180202040940/screen-shot-2018-01-30-at-21-20-04-1.png["Thomson Reuters’ OpenPermID", 500, 273, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Thomson Reuters’ OpenPermID
+</strong>
+</p>
+++++
+
+In the first part of the post Jesus shows how to import the dataset using the https://github.com/jbarrasa/neosemantics[neosemantics^] extension. The dataset contains 127 million triples which is turned into a graph of 18.8 million nodes and 101 million relationships. 
+
+Jesus then goes on to show how to query the graph to do complex path analysis and how to build nice charts on the output of those queries using standard BI tools. He finishes the post by showing how to build an RDF API on top of the graph.
+
+You can get all the code from Jesus' blog post from the https://github.com/jbarrasa/openpermid2neo4j[openpermid2neo4j^] GitHub repository.
+
+=== iPhone Database Browser, MySQL to Neo4j, 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180202015820/2018-02-02_09-56-52.png" width="150px" />
+</div>
+++++
+
+* https://twitter.com/niklassaers[Niklas Saers^], the https://neo4j.com/blog/this-week-neo4j-3-june-2017/[featured community member from 3rd June 2017^], released https://itunes.apple.com/dk/app/graph-gopher-neo4j-client/id1327978961?mt=8[Graph Gopher^] - an iPhone Neo4j database browser.
+
+* Arjun Rajeev Nedungadi wrote a blog post showing how to  https://neo4j.com/blog/getting-started-data-analysis-neo4j/[get started with data analysis using Neo4j^]. Arjun shows how to import and query data from the Issuu Research Database.
+
+* https://twitter.com/otaviojava[Otavio Santana^] has written a post in which he shows how to https://dzone.com/articles/when-neo4j-faces-java-ee-ops-ee4j[build a career recommendation engine with Neo4j^]. Otavio explains how to build a REST API that executes graph queries using Java and the Apache Tinkerpop library under the hood.
+
+* https://twitter.com/fabiomercorio[Fabio Mercorio^] published https://github.com/fabiomercorio/GraphDBLP[GraphDBLP^] - a tool that models DBLP (the Computer Science Bibliography) as a graph database for performing graph-based queries and social network analyses. 
+
+* https://twitter.com/aCaltum[Ezra Caltum^] created https://github.com/ezrac/POLAR[POLAR^] (Path Of LeAst Resistance), a tool to help find relationships in binaries by loading them into a graph.
+
+=== From GraphConnect: Real-Time Data Lineage at UBS
+
+At GraphConnect NYC 2017 Wren Chan and Sidharth Goyal explained how Neo4j allows them to trace lineage of all metrics for all initiatives across the bank.  
+
+youtube::Y0KA5U81w3U[type={type}]
+
+In the talk they explain how they built a system that syncs data between Oracle and Neo4j and does lineage generation using Cypher queries. A fun dataset of the UK royal family is used to explain how it all works.
+
+=== Kubernetes on Google Cloud, Django, Excel
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180202034238/2810941.png" width="150px" />
+</div>
+++++
+
+* https://twitter.com/mdavidallen[M. David Allen^] wrote a step by step tutorial in which he shows how to https://medium.com/@david.allen_3172/running-neo4j-with-hosted-kubernetes-in-google-cloud-b479e87b74c0[deploy Neo4j on Google Cloud Platform using Kubernetes^].
+
+* In a blast from the past https://github.com/quentinplessis/[Quentin Plessis^] created https://github.com/quentinplessis/smalltalk-neo4j[smalltalk-neo4j^] - a tool for manipulating Neo4j data from Pharo Smalltalk via Cypher queries
+
+* https://twitter.com/webchad[Chad Shryock^] wrote about his experience using https://medium.com/@webchad/neo4j-and-django-c12c7a1581a3[Neo4j and Django^] while building https://cementjob.com/[CementJob^], a publication focused on high-school wrestling in Pennsylvania.
+
+* https://twitter.com/cskardon[Chris Skardon^] shows how to http://xclave.azurewebsites.net/2018/01/30/excel-neo4j-lets-code-that-vsto-edition/[create a Microsoft Excel Add-In using VSTO^] to execute Cypher queries and show the results in everyone's favourite spreadsheet! 
+
+* https://twitter.com/hascode[Micha Kops^] has a very detailed post showing how to do http://www.hascode.com/2017/12/software-architecture-exploration-and-validation-with-jqassistant-neo4j-and-cypher[Software Architecture Exploration and Validation with jqAssistant, Neo4j and Cypher^]. You might also like https://twitter.com/feststelltaste[Markus Harrer^]'s https://www.youtube.com/watch?v=LEbqyZVTLiI[presentation about jqAssistant^] from the Neo4j Online Meetup in November 2017.
+
+* https://twitter.com/roguequery[Michael Blum^] has written a guide showing how to https://engineering.logicgate.com/migrating-from-mysql-to-neo4j-2f6cb63a73c8[migrate data from MySQL to Neo4j^]. Michael used Python and SQLAlchemy to generate CSV files from the MySQL database and then uses https://neo4j.com/developer/cypher-query-language/[Cypher^]'s LOAD CSV command to import those into Neo4j.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| February 8th 2018 | https://www.meetup.com/Neo4j-Online-Meetup/events/247189231/[Data Science in Practice: Importing and Visualizing Facebook Data Using Graphs^] | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Ray Barnard 
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/atreayou[Nicholas P Moran^]:
+
+tweet::958108973688901633[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

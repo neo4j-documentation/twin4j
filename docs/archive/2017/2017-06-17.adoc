@@ -1,0 +1,132 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 17 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-17-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 17 June 2017
+
+[Headline:]
+This Week in Neo4j – 17 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Jasper Blues
+
+This week’s featured community member is https://twitter.com/bluesjasper[Jasper Blues^], a long time Neo4j user and contributor, living in Manila in the Philippines. 
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170616071745/this-week-in-neo4j-17-june-2017.jpg" alt="Jasper Blues - This Week&#039;s Featured Community Member" width="800" height="400" class="alignnone size-full wp-image-66813" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Jasper Blues - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Jasper is an experienced mobile developer and authored the popular Typhoon DI-framework for iOS.
+
+
+As part of his http://appsquick.ly/[AppsQuick.ly^] consultancy he started to use Neo4j from Kotlin in the backend of the social network for musicians "Vampr".
+
+Jasper was an early SpringSource consultant, and after joining our partner https://twitter.com/graph_aware[GraphAware^] Jasper contributed a lot to the development of https://projects.spring.io/spring-data-neo4j/[Spring Data Neo4j^] and https://github.com/neo4j/neo4j-ogm[Neo4j-OGM^].
+
+He most recently published a comprehensive example for using https://github.com/neo4j-examples/movies-kotlin-spring-data-neo4j-4[Spring Data Neo4j with Spring Boot and Kotlin^] which he plans to extend with Spring Security and Spring Social features.
+
+Jasper is also a regular answerer of questions on the Neo4j tag on StackOverflow, helping out new users as they get started with their graph journey.
+
+On behalf of the Neo4j community, thanks for all your work Jasper!
+
+=== OSCON recommendations, Static code analysis, Marvel Social Graph
+
+* https://twitter.com/lyonwj[Will Lyon^] posted the video for his https://www.youtube.com/watch?list=PLYXrHS_RtDZ2fbH6Ml9K5DxYBATYGeCgN&v=wbI5JwIFYEM[popular OSCON recommendation engines tutorial^]. Will starts with a gentle introduction to recommender systems before moving onto a hands on example where the participants build a meetup recommendation engine. 
+
+* Pierre-Alexandre Voye wrote an interesting article - https://greenspector.com/en/articles/2017-06-12-analyse-statique-code-bdd-orientee-graphe/[static analysis of a code in a graph database^] -  which goes through different approaches to analysing code eventually arriving at the 'Call Graph'. https://greenspector.com/en/[Greenspector^], where Pierre-Alexandre works as an R&D Engineer, are now using Neo4j and Cypher as part of their toolkit.
+
+* Yash Sharma shows how to use Neo4j to store the http://yasharmaster.github.io/blog/2017/metadata-in-neo4j/[Intermine meta graph^]. 
+
+* https://twitter.com/tb_tomaz[Tomaž Bratanič^] shows how to build a https://tbgraph.wordpress.com/2017/06/10/neo4j-marvel-social-graph/[Neo4j Marvel Social Graph^] from https://www.kaggle.com/csanhueza/the-marvel-universe-social-network[Kaggle competition data^]. The post has a nice example showing how to use https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_apoc_periodic_iterate[apoc.periodic.iterate^] to batch the creation of a weighted undirected hero network.
+
+*  In http://www.dataversity.net/state-art-data-modeling/[State of the Art of Data Modeling?^] Thomas Frisendal goes through the data modeling landscape, covering the different meanings assigned to the term, knowledge graphs, and the future of data modeling. 
+
+* ElixirConf 2017 announced their schedule and https://twitter.com/stabbymcduck[Regina Imhoff^] will be presenting https://elixirconf.com/speakers/#regina_imhoff[a talk about Neo4j and Elixir^] where attendees will learn how to combine Elixir Phoenix with Neo4j to make a clone of a popular social networking site with real time updates to the social graph.
+
+* https://twitter.com/szarnyasg[Gabor Szarnyas^] shared the slides from https://www.slideshare.net/neo4j/graphconnect-europe-2017-ingraph-live-queries-on-graphs[ingraph: Live Queries on Graphs^], presented at the Budapest meetup.
+
+* https://twitter.com/niekbartho[Niek Bartholomeus^] shared the slides from https://speakerdeck.com/niekbartho/openthebox[OpenTheBox - A view of Corporate Networks in Belgium^], presented at the Brussels meetup.
+
+* https://twitter.com/monkchips[James Governor^] mentions https://neo4j.com/developer/graphql/[neo4j-graphql^] in the article http://redmonk.com/jgovernor/2017/06/15/what-is-graphql-and-why-should-you-care-the-future-of-apis/[What is GraphQL and why should you care? The future of APIs^]. 
+
+=== Online Meetup: Visualizing and Analyzing Salesforce Data with Neo4j 
+
+In this week's online meetup https://twitter.com/metadaddy[Pat Patterson^], Community Champion at https://streamsets.com/[StreamSets^], showed us how to use https://streamsets.com/products/sdc/[StreamSets Data Collector^] to import Salesforce data into Neo4j. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-IAalFGuty0" frameborder="0" allowfullscreen></iframe>
+<br /><br />
+++++
+
+Pat also has https://streamsets.com/blog/visualizing-analyzing-salesforce-data-neo4j/[a blog post^] on the same subject.
+
+=== On GitHub: Medical knowledge graph, Generating fake data, versioning graphs
+ 
+* https://github.com/kbogas[Bougiatiotis Konstantinos^] created  https://github.com/kbogas/medknow[medknow^] - a library that can be used to create a disease-specific knowledge base by deriving medical relations using entity extraction on biomedical free text. 
+ 
+* https://github.com/rhblind[Rolf Håvard Blindheim^] has released several versions of https://github.com/inonit/django-chemtrails[django-chemtrails^], a project which uses a graph to help determine if a user has permissions to perform some action on an object, based on the relationship between entities. The project is in a pre alpha state but if you're working in this area there might be some useful ideas to take away. 
+ 
+* https://neo4j.com/staff/kees-vegter/[Kees Vegter^] created  https://github.com/neo4j-contrib/neo4j-faker[neo4j-faker^], a tool for generating fake demo or test data via Cypher functions. 
+ 
+* Marco Falcier created  https://github.com/h-omer/neo4j-versioner-core[neo4j-versioner-core^], a collection of procedures to manage the entity-state model - a way of modeling multiple versions of data in a graph.
+
+=== On the Podcast: Sébastien Heymann
+
+On the Graphistania podcast this week we have http://blog.bruggen.com/2017/06/podcast-interview-with-sebastien.html[an interview with Sébastien Heymann^], the CEO of https://twitter.com/Linkurious[Linkurious^].
+
+https://twitter.com/rvanbruggen[Rik^] and Sébastien talk about Sébastien's work on https://gephi.org/[Gephi^] and how it contrasts to Linkurious, how Sébastien got into graphs in the first place, and the use cases he sees Neo4j being used for in the future.
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/328013975&amp;color=00cc11"></iframe>
+++++
+
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Saturday June 17th, 2017 it's http://graphday.com/[Graph Day San Francisco^]. Neo4j's https://twitter.com/ryguyrg[Ryan Boyd^] and Will Lyon will be attending. Ryan will be talking about http://graphday.com/sf2017/sessions#ryan[openCypher^] and Will about http://graphday.com/sf2017/sessions#lyon[building a full stack graph application using GraphQL and Neo4j^].
+
+* On Tuesday June 20th, 2017 Martin Preusse and Thilo Muth will be speaking about https://www.meetup.com/graphdb-berlin/events/240383049/[graph databases in life sciences, healthcare, and bio-tech^] at the https://www.meetup.com/graphdb-berlin/[Neo4j Berlin meetup^].
+
+* On Wednesday June 21st, 2017 https://twitter.com/mesirii[Michael Hunger^] and Petra Selmer will be hosting a https://www.eventbrite.com/e/neo4j-life-health-sciences-day-berlin-tickets-33238223421[Graph Databases in Life and Health Sciences Workshop^], also in Berlin. If you'll be in the area it's not too late to sign up. 
+
+* On Thursday June 22nd, 2017 Nikolas Pontikos  will present https://www.meetup.com/Neo4j-Online-Meetup/events/240609128/[Pheno4J: A Gene To Phenotype Graph Database^] at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^]. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Snugug[Sam Richard^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Me learning Neo4j === syntax highlighting IRL <a href="https://t.co/WRCqzAxn9D">pic.twitter.com/WRCqzAxn9D</a></p>&mdash; Sam Richard (@Snugug) <a href="https://twitter.com/Snugug/status/875114798438121472">June 14, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

@@ -1,0 +1,122 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 6 January 2018, including projects around Azure, Causal Clustering, and Geneaology.
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 6 January 2018
+
+[Headline:]
+This Week in Neo4j – 6 January 2018
+
+[Body copy:]
+////
+
+Happy New Year everybody and welcome to our first version of TWIN4j in 2018.
+
+I hope you had an enjoyable Christmas and New Year and managed at least a few days not working. My extended family had two babies experiencing it all for the first time - I think they were pretty bemused by the whole thing!
+
+The graph community has been busy over the holidays. We've got Docker compose scripts to spin up a causal cluster, easy loading of datasets on Azure, clever use of https://www.opencypher.org/[Cypher^], and more.
+
+=== Featured Community Member: Iian Neill
+
+This week’s featured community member is https://twitter.com/iianneill[Iian Neill^], Technical Lead at Art Renewal Center in Brisbane, Australia.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180105010631/this-week-in-neo4j-6-january-2018.jpg["Iian Neill - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Iian Neill - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Iian has been a member of the Neo4j community for many years and is best known for his project http://the-codex.net/[The Codex^], a Neo4j based digital humanities project that aims to create an atlas of events, people, and locations from primary sources of any topic or period. The published version uses letters from the Italian Renaissance. You can learn more in https://www.youtube.com/watch?v=_R0ESfLBuHo[a video^] that Iian recorded about it.
+
+Iian http://blog.bruggen.com/2016/02/podcast-interview-with-iian-neill-codex.html[featured on Rik's podcast^] in early 2016 where the explained the project in more detail. 
+
+Iian uses Neo4j from .NET and has published extensions to neo4jclient as well as providing feedback and help to other .NET users.
+
+On behalf of the digital humanities and Neo4j communities, thanks for all your work Iian!
+
+=== Pick of the week: Interview with Dr Philip Garnett
+
+In the https://neo4j.com/blog/this-week-neo4j-2-december-2017/[2nd December 2017^] edition of TWIN4j we featured an article by https://twitter.com/prgarnett?lang=en[Dr Philip Garnett^] about his https://www.prgarnett.net/daniel-morgan-murder/[work on the murder of Daniel Morgan^]. 
+
+I found Philip's work fascinating so I was delighted to find out that he was the http://blog.bruggen.com/2017/12/this-weeks-podcast-episode-is-another.html[latest person to be interviewed^] on https://twitter.com/rvanbruggen[Rik^]'s https://soundcloud.com/graphistania[Graphistania podcast^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180105031555/Screen-Shot-2017-11-21-at-09.01.12-1024x618-1-1024x618.png["The Daniel Morgan Murder Graph", 640, 386, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The Daniel Morgan Murder Graph
+</strong>
+</p>
+++++
+
+They discuss Philip's work mapping the way organisations interact with people, his blog post about Daniel Morgan, as well as ideas about future areas for investigation. It's well worth a listen (or read!).
+
+=== Datasets in Azure, Online Learning Course Graph, Geneaology
+
+* https://twitter.com/hasssaaannn[Syed Hassaan Ahmed^] created https://github.com/syedhassaanahmed/aci-deploy-neo4j[aci-deploy-neo4j^], a tool that allows you to load publicly available datasets onto Azure. There are lots of datasets supported including the https://github.com/syedhassaanahmed/neo4j-shodan-iot[Shodan IoT search engine^], https://github.com/syedhassaanahmed/neo4j-game-of-thrones[Game of Thrones^], https://github.com/syedhassaanahmed/neo4j-stackexchange[StackExchange^], and https://github.com/syedhassaanahmed/neo4j-inside-airbnb[Airbnb^]. 
+
+* https://github.com/JavascriptMick[JavascriptMick^]'s https://github.com/JavascriptMick/learntree.org[learntree.org^] is a project that aims to create a curated graph of learnable ideas, practices, and technologies based on the best free and paid online learning material. 
+
+* https://twitter.com/barrasadv?lang=en[Jesús Barrasa^] released a new version of https://github.com/jbarrasa/neosemantics[neosemantics^], a tool for importing RDF data into Neo4j and serialising Neo4j graphs as RDF. This version is compatible with the Neo4j 3.3 series.
+
+* I came across a post from late 2016 where https://www.linkedin.com/in/simon-thordal-6308091/[Simon Thordal^] https://simonthordal.github.io/neo4j/2016/12/22/Graphs-and-Geneaology-Finding-inbred-nobles-with-Neo4j/[explores the family trees of noble families^] and calculates the inbreeding coefficient - a measure used by dog breeders and geneaologists to determine how inbred the children of a set of parents will be. He also has a follow up post here he explains how he went about https://simonthordal.github.io/neo4j/genealogy/2017/01/03/Graphs-and-Geneaology.-Modelling-the-Data/[modeling the data^].
+
+* My colleague Lju Lazarevic has written a blog post in which she shows how to https://lju-lazarevic.github.io/ArchiMateNeo4j1.html[use Neo4j to explore your ArchiMate enterprise architecture models^]. Lju covers importing the data, querying it using Cypher, and using graph algorithms to explore element strengths further.
+
+=== Causal Clustering Quickstart
+
+https://twitter.com/spiegelbergeric[Eric Spiegelberg^] has written a  https://graphaware.com/neo4j/2018/01/03/casual-cluster-quickstart.html[Causal Cluster Quickstart^] and has Docker Compose scripts to boot. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180105032004/causal-1024x536.png["Causal Cluster ready to go!", 640, 335, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Causal Cluster ready to go!
+</strong>
+</p>
+++++
+
+This is an excellent walk through explaining some nuances of Neo4j clustering as well as how to use it from your applications.
+
+
+=== This Week on StackOverflow
+
+This week on https://stackoverflow.com/tags/neo4j[Neo4j StackOverflow^]…​
+
+* My colleague https://stackoverflow.com/users/92359/inversefalcon[Andrew Bowman^] shows how to https://stackoverflow.com/questions/48083552/neo4j-how-to-return-deep-node-data[remove a cartesian product from a Cypher query using pattern comprehensions and map projections^]. This query is a great example combining several of Cypher's most powerful features.
+
+* https://stackoverflow.com/users/4989460/stdob[stdob--^] solves a problem https://stackoverflow.com/questions/48029983/neo4j-delete-a-node-in-linked-list[deleting a node in a linked list^] using a combination of the OPTIONAL MATCH, FOREACH, and CASE statements.
+
+* https://stackoverflow.com/users/974731/cybersam[cybersam^] comes up with a query to find the https://stackoverflow.com/questions/48069036/neo4j-chyper-game-of-thrones[average number of interactions per character^] in the http://www.lyonwj.com/2016/06/26/graph-of-thrones-neo4j-social-network-analysis/[Game of Thrones dataset^]. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/GDBolinger[Gregg Bolinger^]:
+
+tweet::948787221531955200[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That's all for this week. 
+
+Cheers, Mark

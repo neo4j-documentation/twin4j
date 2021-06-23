@@ -1,0 +1,163 @@
+++++
+<style type="text/css">
+p { margin-top: 0.5em; }
+</style>
+++++
+
+:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 14 April 2018, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-14-April-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 14 April 2018
+
+[Headline:]
+This Week in Neo4j – 14 April 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+As my colleague Mark Needham is still on his well earned vacation, I'm filling in this week.
+
+[[featured-community-member]]
+=== Featured Community Member: Martin Preusse
+
+https://www.linkedin.com/in/martinpreusse/[Martin Preusse^] is a cell biology researcher and integrator working in Munich.
+
+Martin is working at the https://www.helmholtz-muenchen.de/icb/institute/staff/staff/ma/3081/-Preusse/index.html[Helmholtz Institute of Computational Biology] and runs his own startup, https://knowing-health.com/["Knowing Health"^] which focuses on biological data integration to build an universal "cell map".
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180414070714/this-week-in-neo4j-14-april-2018-martin-preusse.jpg[name="Martin Preusse"]
+
+Martin has been promoting and teaching the use of graphs in life-sciences for a long time. 
+Most of his work is dealing with large graphs with hundreds of millions of elements capturing the intrinsic relationships between DNA, RNA, Proteins and their creation, mutation and use in biological pathways.
+
+He gave several meetup and conference talks and represented Neo4j at healthcare hackathons.
+Martin presented at and helped ourganize our https://neo4j.com/blog/neo4j-life-sciences-healthcare-workshop-berlin/[Graphs in Life Sciences Workshop^] in Berlin.
+
+On behalf of the Neo4j community, thanks for all your work Martin and good luck for your research & work.
+
+=== GraphTour 2018
+
+This week in Milano, Italy, Graph Tour EMEA finished with a great event with impressive presentations and interesting discussions.
+
+We really enjoyed meeting so many of you during the tour and want to https://neo4j.com/blog/thank-you-neo4j-community-graphtour/[*thank everyone* involved making the events around Graph Tour so successful^].
+
+For those of you in North America, it's only getting started, with the first event in DC this last week, the https://neo4j.com/graphtour/[upcoming stops of GraphTour^] are:
+
+* May 2nd, San Francisco
+* May 3rd, Toronto
+* May 8th, Boston
+* July 12th Seattle
+* July 19th Chicago
+
+You'll find members of our developer relations team (Jennifer, Karin, Ryan, Will) at any of these.
+
+=== From our Team: GraphGear, Survey, Medium Publication, CLI, Visualization
+
+This week we launched the long awaited https://neo4j.com/blog/neo4j-on-all-the-swag-graphgear-store/[Graph Gear Store^] where you can order *Neo4j Swag* to your heart's contempt.
+
+Thanks to everyone who https://neo4j.typeform.com/to/V9OFyl[answered our developer survey^].
+We were really thrilled by the postitive response and suggestions for improvements.
+So far already 400 of you have claimed their $10 discount for the new swag store.
+
+To make it easier for everyone to publish and promote articles around graphs and Neo4j, we launched a https://medium.com/neo4j/welcome-to-the-neo4j-publication-d7e7cf7a8562[Neo4j Publication on *Medium*^].
+
+We already have 15 interesting stories for our more than 6000 followers there. 
+If you want to be considered as a contributor and contribute articles, please drop us an email to link:mailto:devrel@neo4j.com[devrel@neo4j.com].
+Feel free to submit your existing Medium posts but especially new ones.
+
+Something to share with your friends and colleagues that wanted to try out Neo4j:
+Jennifer Reif wrote a quick https://medium.com/@jennifer.reif/neo4j-get-off-the-ground-in-30min-or-less-3a226a0d48b1[30-minute guide^] on how to get started.
+
+After coming across the open CLI framework (OCLIF) from Heroku, I decided to give it a spin and write a small bolt-shell, https://medium.freecodecamp.org/writing-a-command-line-database-client-in-10-minutes-aa608536ae4b[read more about it here^].
+
+This week we started the article series on https://medium.com/neo4j/hands-on-graph-data-visualization-bd1f055a492d[Graph Visualisation with Neo4j^] 
+In the first post we looked at efficient Cypher queries for visualization needs with the Javascript driver.
+Stay tuned for a weekly update, the next one is from Will on Neovis.js.
+
+
+=== GraphQL
+
+* Will wrote an article showing https://blog.grandstack.io/using-the-neo4j-graphql-plugin-in-neo4j-desktop-c8a60aa014d9[how to use the neo4j-graphql plugin^] that is now available within Neo4j Desktop.
+
+* Two weeks ago I missed this really great post by Arne, on https://blog.grandstack.io/using-and-accessing-neo4j-graphql-with-nodejs-a687ecc7db0e[Using Neo4j GraphQL with Node.js^] that was published on the https://blog.grandstack.io[GRANDstack.io blog^]
+
+* A https://github.com/Crevax/neo4j-graphql-node-starter-kit[starter kit for Graphql + Neo4j + Node^] was created by CJ Davis.
+
+* Will Lyon published a new version of https://www.npmjs.com/package/neo4j-graphql-js[neo4j-graphql-js^]. It now includes support for Cypher schema directives on GraphQL Query types.
+
+If you have interesting feedback or use-cases to share for GraphQL and Neo4j, let us know, we're happy to publish your articles.
+Also please make sure to send your feedback via the `#neo4j-graphql` channel in the http://neo4j.com/slack[Neo4j-Users slack^] or via GitHub issues at the projects in the https://github.com/neo4j-graphql[neo4j-graphql organization^].
+
+////
+=== Releases and Libraries
+
+This week two Neo4j releases saw the light, a [3.3.5 patch release^] and the [2nd Beta of Neo4j 3.4^] as well.
+That version already has most of the newly released features in it. You should use it to check if anything in your (non-public) API usage was affected.
+////
+
+=== Articles & More
+
+Chris Betz announced a new https://github.com/gorillalabs/neo4j-clj[Clojure library called `neo4j-clj`] which is built on top of the Java Bolt driver. It has some cool concepts. Check it out!
+
+Thorsten Liebig of Derivo published his second blog post on the https://neo4j.com/blog/semspect-different-approach-graph-visualization/[visual inference tool Semspect on top of Neo4j^].
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180411120912/semspect-node-expansion.gif[]
+
+A really https://github.com/cmr-exchange/cmr-graph[cool experiment^] is this CMR (https://earthdata.nasa.gov/about/science-system-description/eosdis-components/common-metadata-repository[Common Metadata Repository^]) which uses Neo4j as storage for NASA's EODIS (Earth Observing System Data and Information System). It can be used for recommendations and visualization of metadata related to https://earthdata.nasa.gov/[earthdata.nasa.gov].
+
+The http://lexicon.gavagai.se/[Gavaagi Lexicon^] is a live representation of term usage in many languages. "Our semantic memories learn language constantly from live data feeds with millions of documents per day from both social and news media." This https://github.com/fredriko/gavagai-lexicon-graph[project creates a Neo4j Graph^] from entries of the lexicon.
+
+This https://github.com/kdekooter/passwordless-neo4jstore[library implements a tokenstore in Neo4j^] for the "passwordless" Express extension that allows building webapps whose users can be authenticated without passwords.
+
+=== Interviews 
+
+You remember Niklas Saers' articles on Theo and GraphGopher? Now Rik van Bruggen http://blog.bruggen.com/2018/03/podcast-interview-with-niklas-saers.html[interviewed Niklas in his podcast^] with interesting insights for Swift and iOS developers.
+
+Rik also interviewed http://blog.bruggen.com/2018/03/podcast-interview-with-dilyan-damyanov.html[Dilyan Damyanov from Snowplow Analytics^] about how you can use a graph database for enhancing your event analytics, specifically for clickstream analysis. You might remember the https://snowplowanalytics.com/blog/2017/07/17/loading-and-analysing-snowplow-event-data-in-Neo4j/[Snowplow articles^] on that topic.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Where | Speaker 
+
+| April 20 | http://datasciencefestival.com/speaker/live/2018/iryna-feuerstein/[Distributed processing of graph data with Neo4j and Apache Spark^] | DataScienceFest | Iryna Feuerstein
+| April 20 | https://www.pycon.it/conference/talks/quick-and-clean-data-analysis-with-python-pandas-and-neo4j[Discovering the power of graph databases with Python and Neo4j^] | PyConIT | https://twitter.com/fblamanna[Fabio Lamanna^]
+| April 20 | https://www.eventbrite.it/e/registrazione-data-beers-italy-42422206963[Detecting immigrant communities in cities through the language of Twitter] | DataBeersItaly | https://twitter.com/fblamanna[Fabio Lamanna^]
+| April 23 | https://www.meetup.com/GraphDB-Sydney/events/jqvlhpyxgbvb/[Building Knowledge Graph Using Neo4j^] | GraphDB Sydney | Joshua Yu
+| April 19/20 | http://neo4j.com/events[Fundamentals & Modeling Training^] | Seattle | Michael Kilgore
+|=========================================================
+
+
+=== Tweet of the Week
+
+// easter tweet
+
+// My favourite tweet this week was by Boris del Pixel, showing off his Neo4j shoelaces.
+// TODO featured ?
+
+// https://twitter.com/PxlPhile/status/984682414134972416
+// https://twitter.com/PxlPhile/status/984071783107133440
+// sandbox https://twitter.com/rodrigodsdev/status/984813325434441728
+// tweet::982307620655525888[type={type}]
+tweet::984682414134972416[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Michael

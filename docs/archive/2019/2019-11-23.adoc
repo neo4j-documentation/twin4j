@@ -1,0 +1,196 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - New Book: Fullstack GraphQL Applications with GRANDstack, Leveraging Graph Algorithms In Visualizations, Marketing Activities in Neo4j
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Craig Taverner demonstrates a new library that we've been working on to prototype new spatial algorithms.
+
+Tomaz Bratanic builds a graph analytics pipeline to explore the transport system in Rome, Rik tries out the Colruyt Data Science assignment, and Christian Miles shows off the ReGraph toolkit.
+
+We also have releases of APOC and Halin, as well as a brand new Graph App called Neomap, a Neo4j Desktop application for spatial data.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Satoshi Mayumi
+
+Our featured community member this week is Satoshi Mayumi
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191122085147/this-week-in-neo4j-23-november-2019.jpg[name="Satoshi Mayumi"]
+
+Satoshi is a graph-addict who initially became intimately involved with the graph community via one of our most active community members, https://www.linkedin.com/in/kojiannoura[Koji Annoura] and https://www.linkedin.com/in/morihaya[Mr. Yukiya Hayashi].
+
+Similar to his friends in the local graph community, Satoshi has a strong passion for helping the rest of the world see the benefits of graphs. So much so, that a couple months ago, he submitted a project for GraphHack - https://medium.com/neo4j/baryon-the-neo4j-react-ui-component-e8484dbae38f[Bayron] - a React component to visualize Neo4j graph as a Media. What struck us about his submission is that he specified that why he was building this project: “the reason why I created Baryon is that I wanted to show the power of graph to ordinary people.”
+
+Satoshi is driven by his motivation to share knowledge with others and sets aside his time to enable that. We are so grateful for his passion and are looking forward to seeing a lot more from him in our community!  
+
+Thanks, Satoshi, we’re so thankful for you!  We can’t wait to see what’s more to come! 
+
+https://www.linkedin.com/in/satoshi-mayumi-1b048420/[Connect with Satoshi on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Building Spatial Search Algorithms for Neo4j
+
+This week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference is Craig Taverner's talk about spatial functionality in Neo4j.
+
+youtube::2nb2y_ZSdSo[type={type}]
+
+In the talk Craig builds on the https://neo4j.com/graphconnect-2018/session/neo4j-spatial-mapping[Going Spatial in Neo4j 3.4^] GraphConnect 2018 talk that he co-presented with Will Lyon. 
+
+We learn how to write our own spatial algorithms for more complex analyses and how to integrate them into a web-app through user defined functions accessible with Cypher queries. Craig also demonstrate a new library we've been working on to prototype complex spatial algorithms within Neo4j.
+
+[[features-2]]
+=== Building a graph analytics pipeline in Neo4j to explore the transport system in Rome
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191121234909/colosseum-ancient-rome-rome-italy-europe_980x650.jpg" width="200px"  />
+</div>
+++++
+
+Tomaz Bratanic uses the https://neo4j.com/docs/graph-algorithms/current/[graph algorithms library^] to analyse Rome's transport system.
+
+First Tomaz explains how the recently introduced relationship de-duplication feature works. He then shows how another new feature - support for multiple relationship types - can be used to find the shortest path based on different modes of transport.
+
+He concludes by building a graph analytics pipeline that makes it easy to run centrality and community detection algorithms over the dataset.
+
+https://towardsdatascience.com/building-a-graph-analytics-pipeline-in-neo4j-to-explore-the-transport-system-in-rome-281d05dfbf88[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Releases: APOC, Halin, Neomap
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191009085529/noun_Download_711090.png" width="100px"  />
+</div>
+++++
+
+This week we had releases of two prominent projects in the Neo4j ecosystem, as well as a brand new project. 
+
+https://twitter.com/mdavidallen[David Allen^] released version 0.12.0-beta of Halin, the open source monitoring tool for Neo4j. This is the first version of Halin that supports Neo4j 4.0 milestone releases. David is so 2019 that he announced this release via https://twitter.com/mdavidallen/status/1197226930631839745[a twitter thread^].
+
+tweet::1197226930631839745[type={type}]
+
+++++
+<br />
+++++
+
+Jennifer Reif and I released version 3.5.0.6 of https://neo4j.com/docs/labs/apoc/3.5/[APOC^], Neo4j's standard library. This release contains streaming support for the export JSON and GraphML formats, new string multiplication and fill functions, as well as bug fixes. Learn more in the https://medium.com/neo4j/neo4j-apoc-release-export-streaming-support-delete-custom-procedures-new-string-functions-82224c68be78[release blog post^].
+
+And last but not least, Estelle Scifo wrote https://medium.com/neo4j/introducing-neomap-a-neo4j-desktop-application-for-spatial-data-3e14aad59db2[a blog post introducing Neomap^], a Neo4j Desktop application for spatial data.
+
+
+[[features-4]]
+=== Playing with the Colruyt Data Science assignment
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191122002924/colruyt-map-markers.png" width="200px"  />
+</div>
+++++
+
+Rik came across Dries De Dauw's https://www.linkedin.com/posts/driesdedauw_dataengineering-dataanalysis-datadriven-activity-6593395526404710400-jmfd/[take home assignment for data engineering candidates^] and decided to play around with the assignment dataset in Neo4j.
+
+Rik takes us on a journey in which he shows us how to:
+
+* Import the data using APOC's https://neo4j.com/docs/labs/apoc/current/import/load-json/[`apoc.load.json`^] procedure
+* Analyse it using Cypher queries
+* Visualise it using Estelle Scifo's Neomap Graph App
+
+You can find the data and scripts in a https://gist.github.com/rvanbruggen/533ef8c16f005b1f2a3d1c61627f680e[GitHub gist^] that Rik shared.
+
+https://blog.bruggen.com/2019/11/playing-with-colruyt-data-science.html[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== GR-R-ANDstack (the 2nd ‘R’ stands for ReGraph)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191122002603/0_0S9C_NKWOE4DLOar.png" width="150px"  />
+</div>
+++++
+
+Cambridge Intelligence recently launched ReGraph, a React toolkit for graph visualization. 
+
+In this blog post Christian Miles explains how to use it as part of a GRANDstack application that explores the Women's World Cup Graph.
+
+
+https://medium.com/neo4j/gr-r-andstack-the-2nd-r-stands-for-regraph-fca60f005e56[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/creatules[Andreas Steffen^]:
+
+tweet::1197264222540963840[type={type}]
+
+
+////
+
+=== Projects
+
+* @Kirtar_Oza
+Python Code for 
+- fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND
+- building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage.
+https://github.com/Kirtar22/ATTACK-Threat_Intel
+
+* @manojlds
+I have been loving playing around with #kotlin and #neo4j
+thepill is a decision tree evaluation plugin for Neo4j, now includes an extension and also step by step traversal of trees.
+https://github.com/manojlds/thepill 
+
+* @artwisanggeni
+cwf2neo 0.37.0: cwf2neo is a Python library use to download, parse and import the NICE Cybersecurity Workforce Framework into a Neo4j graphing database, which can be used to run complex queries against. https://pypi.org/project/cwf2neo/0.37.0/?
+
+
+* https://medium.com/@bratanic.tomaz/game-of-thrones-community-iterations-a2e520a6c79f
+Game of thrones community iterations
+
+* @jorge_albarran
+I just published Neo4j and the Starwars Galaxy: Using graphs to explore the galaxy https://link.medium.com/oNHeU3BgM1
+
+@ikwattro
+Handling Synomyms with @neo4j Full Text Search https://dev.to/ikwattro/handling-synonyms-in-neo4j-full-text-search-232p
+
+https://towardsdatascience.com/build-a-react-flask-app-that-suggests-novel-novels-with-a-python-graph-9491e714bbdf 
+Build a React + Flask App that Suggests Novel Novels with a Python Graph
+
+Our team member David shows you how to create a GRANDstack app using #GraphQL, React, Apollo, and #NeoJ4
+https://buff.ly/2q1NqHD
+
+* @softvisresearch
+Software Analytics with #Jupyter notebooks using a prefilled #Neo4j database running on #MyBinder. Created with building blocks from @feststelltaste and @psychemedia.
+https://github.com/softvis-research/BeLL https://pbs.twimg.com/media/EISE7-FXUAEkaDj.jpg
+
+
+* Hi, Spring fans! In this installment @starbuxman talks to @springbootbuch author, Spring community legend and engineer working on the new, reactive @SpringData @neo4j project,  @rotnroll666
+https://soundcloud.com/a-bootiful-podcast/michael-simons-on-spring-boot-reactive-spring-data-neo4j-and-more
+
+
+
+////

@@ -1,0 +1,120 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 10 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-10-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 10 June 2017
+
+[Headline:]
+This Week in Neo4j – 10 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Lorenzo Speranzoni
+
+This week's featured community member is https://twitter.com/inserpio[Lorenzo Speranzoni^] - Founder & CEO of http://www.larus-ba.it/[LARUS Business Automation^], Neo4j’s premier Italian partner especially for data integration.
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170609064724/this-week-in-neo4j-10-june-2017.jpg" alt="" width="800" height="400" class="alignnone size-full wp-image-66420" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Lorenzo Speranzoni - This week's featured community member
+</strong>
+</p>
+++++
+
+Lorenzo has been part of the Neo4j community since 2013. He started with mapping out https://inserpio.wordpress.com/?s=gogh[Vincent van Gogh’s journey] using Spring Data Neo4j and Neo4j-Spatial which led to the http://www.neo4art.org/about.html[Neo4Art initiative]. Lorenzo prefers graph databases over other NoSQL databases because of the flexible and expressive connected data model. 
+
+To make it easier to integrate other databases with Neo4j he and his team worked on connectors for RDBMS, http://www.larus-ba.it/neo4j/en/tag/doc2graph/[Couchbase, and MongoDB]. They also developed and are maintaining http://www.larus-ba.it/neo4j/en/tag/jdbc/[Neo4j’s JDBC driver] which allows you to use existing ETL and BI Tools with our graph database. In the recent months the Larus team has been supporting https://github.com/neo4j-contrib/neo4j-apoc-procedures/projects/1[APOC development] and improving the https://github.com/neo4j-contrib/neo4j-etl-components/projects/1[neo4j-etl-components].
+
+Lorenzo's https://www.youtube.com/watch?v=0teVUF9NCdU[spoken^] https://www.youtube.com/watch?v=dkXq66zSXPk[multiple times^] at GraphConnect conferences and he has team at LARUS are very active members in the community. 
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My team finished up our engagement with <a href="https://twitter.com/AgileLARUS">@AgileLARUS</a> today. I cannot say enough good things. If you want <a href="https://twitter.com/neo4j">@neo4j</a> guidance I highly recommend.</p>&mdash; Don Abney (@DonAbney) <a href="https://twitter.com/DonAbney/status/870474181321916416">June 2, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+Thanks you Lorenzo and team for all your work on behalf of the Neo4j community!
+
+=== Visualizing crime patterns data as a graph
+
+Christian Miles wrote an article showing how to combine Neo4j and Keylines to https://cambridge-intelligence.com/visualizing-crime-patterns-data-graph[visualize crime patterns data as a graph^]. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H0CynPXVvvk" frameborder="0" allowfullscreen></iframe>
+++++
+
+In the post Christian imports data from the https://data.boston.gov/group/public-safety[data.boston.gov^] initiative into Neo4j using https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_load_json[APOC's Load JSON procedure^], before analysing it by district and crime category. 
+
+He goes on to add generated people, phone, and vehicle data to the graph to simulate the type of investigation a police officer might undertake.
+
+=== Game of Thrones, Fighting Financial Crime, H2O
+
+* Swapnil Kumar has built a https://medium.com/@swapnil31kgp/graph-of-thrones-3cbddf0eec74[Game of Thrones graph^] in preparation for Season 7 which should be released in the next month or so. 
+
+* The https://twitter.com/NfqAdvisory[NfqAdvisory^] team wrote up their experience of a http://nfq.es/en/blog/graph-databases-and-fraud-detection/[Graph Databases applied to Fraud Detection^] event in Spain. 
+
+* https://twitter.com/intercax[Intercax^] released version 3.1 of http://intercax.com/products/syndeia[Syndeia^] - a software platform for integrated model-based engineering - which now allows users to generate graphs from SysML models or/and its interconnections to model elements in other enterprise repositories. Users can then execute Cypher queries on these graphs to make sense of the data.
+
+* Giovanni T. Parra put the code for https://boardthreads.com/[boardthreads.com^] - a service that used Mailgun and Neo4j to turn a Trello board/list into a helpdesk - https://github.com/fiatjaf/boardthreads[on GitHub^] after deciding to shut it down.
+
+* https://twitter.com/elise_deux[Elise Devaux^], Marketing Project Manager at https://twitter.com/Linkurious[Linkurious^], explains how graphs can be used to http://www.analyticbridge.datasciencecentral.com/profiles/blogs/fighting-financial-crimes-and-money-laundering-with-graph-data?xg_source=activity[fight financial crimes and money laundering^]. Elise shows how you can setup a fraud watch-list to keep you informed when money laundering patterns occur and then use Linkurious' graph visualization interface to investigate and assess the different cases.
+
+* http://www.graphadvantage.com/author/michael-moore/[Michael Moore^] created https://github.com/graphadvantage/neo4j-h2o-template[neo4j-h2o-template^], which contains a set of iPython notebooks that show how to combine Neo4j with https://www.h2o.ai/[H2O.ai^] - the open source machine learning platform.
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have a couple of https://neo4j.com/developer/kb/post-union-processing/[workarounds for the lack of post UNION processing in Cypher^].
+
+=== openCypher: Transactions and Analytics with Neo4j and Cypher for Spark 
+
+We're releasing roughly one video a day from http://graphconnect.com/gc2017-europe/[GraphConnect Europe 2017^], and this week saw the release of the openCypher talk given by Alastair Green, https://twitter.com/boggle[Stefan Plantikow^], and https://twitter.com/aethelraed[Petra Selmer^].
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y5GtnoFg6os" frameborder="0" allowfullscreen></iframe>
+++++
+
+In the talk they cover using Cypher for OLTP workloads on Neo4j and OLAP workloads on Spark. They also propose a syntax for multi graph queries and the ability to return graphs from Cypher.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Tuesday June 13th, 2017 Rik Van Bruggen will be showing how to https://www.meetup.com/graphdb-belgium/events/240368721/[explore corporate networks in Neo4j^] at the https://www.meetup.com/graphdb-belgium/[Neo4j Belgium meetup^]. 
+
+* On Wednesday June 14th, 2017 https://twitter.com/ikwattro[Christophe Willemsen^] will show how to https://www.meetup.com/Graph-Database-Czech-Republic/events/240107791/[create a Chatbot with Amazon Alexa and Neo4j based NLP^] at the Graph Database - Czech Republic meetup in Prague.
+
+* On Thursday June 15th, 2017 https://twitter.com/metadaddy[Pat Patterson^] will be joining the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] to talk about https://www.meetup.com/Neo4j-Online-Meetup/events/240413114/[visualizing and analyzing Salesforce data with Neo4j^]. 
+
+* Also on Thursday June 15th, 2017 Preston Hendrickson will show how to https://www.meetup.com/graphdb-baltimore/events/239370768/[implement some of the new enterprise security features^] at the Graph Database Baltimore meetup. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by the https://twitter.com/sinarproject[Sinar Project^] - an initiative using open source technology, development and ideas to make Malaysian government transparent and accountable.
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Unmasking complex systematic corruption requires innovative approaches to data &amp; civic tech. Help fund our R&amp;D work <a href="https://t.co/4o47pJxOZK">https://t.co/4o47pJxOZK</a> <a href="https://t.co/vBwUapAAVT">pic.twitter.com/vBwUapAAVT</a></p>&mdash; Sinar Project (@sinarproject) <a href="https://twitter.com/sinarproject/status/872258561803378688">June 7, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

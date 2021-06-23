@@ -1,0 +1,139 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Regina Imhoff
+
+This week’s featured community member is https://twitter.com/stabbymcduck[Regina Imhoff^], Web Developer at Markedly More.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170908051846/this-week-in-neo4j-9-september-2017.jpg["Regina Imhoff - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Regina Imhoff - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Regina came onto the Neo4j scene earlier this year when she presented at the http://reginaimhoff.com/2017/08/graph-databases-neo4j/[AustinRB^] and http://reginaimhoff.com/2017/03/neo4j-ror/[Austin on Rails^] meetup groups.
+
+This week Regina https://elixirconf.com/speakers/#regina_imhoff[spoke at ElixirConf^], where she showed how to combine Elixir Phoenix with Neo4j to make a clone of a popular social networking site with real time updates to the social graph. You can find the materials from the talk in the https://github.com/StabbyMcDuck/elixir_ravelry[elixir_ravelry^] GitHub repository, and the https://www.youtube.com/watch?v=fWQy7aS_gd8[video^] and https://www.slideshare.net/ReginaImhoff/elixir-neo4j[slides^] from the talk are also available.
+
+On behalf of the Elixir and Neo4j communities, thanks for all your work Regina!
+
+=== Online Meetup: Efficient Graph Algorithms in Neo4j
+
+In this week's online meetup https://twitter.com/mesirii[Michael Hunger^] showed us how to use the new Neo4j graph algorithms package that was https://neo4j.com/blog/efficient-graph-algorithms-neo4j/[released at the beginning of August^].
+
+youtube::55uB_t0RKTE[type={type}]
+
+We also had guest appearances by https://github.com/mknblch[Martin Knobloch^] and https://github.com/knutwalker[Paul Horn^] who did all the heavy lifting.
+
+https://twitter.com/tb_tomaz?lang=en[Tomaz Bratanic^], who wrote most of the documentation for the graph algorithms project, also has a couple of blog posts showing how to use them:
+
+* https://tbgraph.wordpress.com/2017/08/31/neo4j-london-tube-system-analysis/[Neo4j London tube system analysis^], in which he finds the shortest weighted path between different stations and works out which stations are the most important in the network.
+
+* https://tbgraph.wordpress.com/2017/09/05/neo4j-facebook-ego-network-analysis/[Neo4j Facebook ego network analysis^], in which he shows how to use the triangle count and betweenness centrality algorithms on an undirected graph.
+
+You can download the algorithms from the https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases[neo4j-graph-algorithms^] GitHub repository.
+
+=== New to graph databases?
+
+If you're new to graph databases and Neo4j, this is a good week for you, the community has been busy creating content for you to consume.
+
+Vindya Hettige wrote http://mitrai.com/tech-guide/an-insight-to-working-with-neo4j-graph-databases/[An Insight to working with Neo4j Graph Databases^], a very thorough tutorial which compares relational and graph databases, before showing how to get up and running with Neo4j on a variety of operating systems. Vindya then goes on to give an introduction to the Cypher query language, covering the main clauses and data types available.
+
+https://twitter.com/benzvan[Ben Zvan^] presented https://www.youtube.com/watch?v=Ul6gTcoKzB8[WTF is a graph database?^] at the https://www.meetup.com/preview/DevOps-Minneapolis/events/242124032[DevOps Minneapolis meetup^].
+
+And finally, this week Neo4j featured in https://twitter.com/JulieTorero[Julia Torres^] and https://twitter.com/kiaaaana[Kiana T^]'s https://twitter.com/crush_code[Code Crush podcast^] this week. In the https://codecrush.simplecast.fm/episodes/4e99bafb/everyone-s-a-node-with-neo4j[Everyone's A Node With Neo4J!^] episode, Julia and Kiana talk about the https://neo4j.com/sandbox-v2/[TrumpWorld sandbox^], https://neo4j.com/developer/language-guides/[language drivers^], https://neo4j.com/developer/guide-create-neo4j-browser-guide/[browser guides^], and more.
+
+=== Discovering Awesome Female Engineers in the GraphQL Community
+
+Late last week https://twitter.com/peggyrayzis[Peggy Rayvis^] tweeted that she was trying to find ladies in the GraphQL community so that she could follow them on Twitter:
+
+tweet::902651646483861511[type={type}]
+
+In response, Michael Hunger wrote https://medium.com/@mesirii/discovering-awesome-female-engineers-in-the-graphql-community-88ddf45e4ce1[a blog post^] in which he shows how to use https://gender-api.com/[gender-api.com^] in combination with the GraphQL community graph to find those people. The GraphQL community graph is a Neo4j database that we populate hourly with data from Twitter, GitHub, Meetup, and StackOverflow. 
+
+If you'd like to explore the GraphQL community graph you can find it at https://graphql.communitygraph.org/[graphql.communitygraph.org^]. You can also see a http://s3-eu-west-1.amazonaws.com/twigraphql/twigraphql.html[summary page of what's happened this week in GraphQL^].
+
+If you'd like to create a community graph for your community we'd love to help - send us an email devrel@neo4j.com. 
+
+=== CityGML change detection, Dependency Analysis, California Road Networks
+
+* https://github.com/evagian[Eva Giannatou^] wrote a report https://github.com/evagian/California-road-network-NEO4J-CYPHER-graph-and-queries/blob/master/neo4j_report_done.pdf[Graph data mining with Neo4j (PDF)^] in which she shows how to import a dataset containing  California’s road networks and points of interest and then write Cypher queries against it. The source code for the project is also https://github.com/evagian/California-road-network-NEO4J-CYPHER-graph-and-queries[available on GitHub^].
+
+* A really cool project I came across is https://github.com/tum-gis/citygml-change-detection[citygml-change-detection^] by http://www.gis.bgu.tum.de/en/our-team/staff/son-nguyen/[Son Nguyen^] from the https://github.com/tum-gis[Department of Civil, Geo and Environmental Engineering at Technical University of Munich^]. This tool can be used to detect spatio-semantic changes between two arbitrarily large-sized CityGML datasets using Neo4j.
+
+* https://twitter.com/feststelltaste[Markus Harrer^] shows how to do https://www.feststelltaste.de/java-type-dependency-analysis/[Java Type Dependency Analysis^] by combining jQAssistant, Cypher, and d3.js. 
+
+* https://twitter.com/haraldpehl[Harald Pehl^] created https://github.com/hal/model-graph[model-graph^], a tool for analysing the https://twitter.com/WildFlyAS[WildFlyAS^] (formerly known as JBossAS) management model
+
+=== On the podcast: Kevin Madden, Tom Sawyer Software
+
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] spoke to Kevin Madden, Chief Software Engineer of https://twitter.com/TSawyerSoftware[Tom Sawyer Software^].
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/341055488&amp;color=00cc11"></iframe>
+++++
+
+They talk about Kevin's history with graphs, from the early 90's where he built network visualization platforms for the early days of the networking systems to 2017 and the https://www.tomsawyer.com/products/perspectives/[Tom Sawyer Perspectives product^]. 
+
+Kevin also discusses the adoption and use of graph visualisation in high-end engineering such as airline and auto manufacturing.  
+
+If you've any interest in graph visualisation at all this you're going to enjoy this one.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+|September 12th 2017 |https://www.meetup.com/preview/graphdb-france/events/242027065[RDF vs Graphe de propriété and Efficient Graph Algorithms in Neo4j^] | https://www.meetup.com/preview/graphdb-france[Graph Database - Paris^]| https://twitter.com/barrasadv[Jesús Barrasa^] https://twitter.com/mesirii[Michael Hunger^]
+
+|September 12th 2017 |https://www.meetup.com/preview/graphdb-london/events/242948751[Intro to Graphs with Neo4j^]| https://www.meetup.com/preview/graphdb-london[Neoj4 - London User Group^]| https://twitter.com/markhneedham[Mark Needham^]
+
+|September 12th 2017 | https://www.meetup.com/preview/graphdb-sf/events/243154640[Artificially Intelligent Graphs @ Intuit & Neo4j^] | https://www.meetup.com/preview/graphdb-sf[Graph Database - San Francisco^]| https://twitter.com/lyonwj[William Lyon^] https://twitter.com/prathle[Philip Rathle^] Yogish Pai
+
+| September 14th 2017 | https://www.meetup.com/preview/Neo4j-Online-Meetup/events/242615295[400 trash bags of grocery receipts + Neo4j^] | https://www.meetup.com/preview/Neo4j-Online-Meetup[Neo4j Online Meetup^] | https://twitter.com/freethejazz[Jonathan Freeman^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ericrohlfs[Eric Rohlfs^]:
+
+tweet::905432809510141952[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

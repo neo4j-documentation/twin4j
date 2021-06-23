@@ -1,0 +1,226 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+In this week's video, Adam Cowley shows off the React Hooks For Neo4j library that he created to make it easier for React users to build graph based applications.
+
+Kristof Neys compares NetworkX and Neo4j, Hantsy shows how to build a Spring Boot application, and we launched the Neo4j Connector for Apache Spark.
+
+And finally, David Allen builds an image annotation pipeline using GCP and Neo4j Aura.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Luanne Misquitta
+
+
+This week's featured community member is Luanne Misquitta, Vice President Of Engineering at GraphAware. 
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201113025608/this-week-in-neo4j-14-november-2020-1.jpg[name="Luanne Misquitta"]
+
+Luanne is one of the earliest Neo4j community members and has now been using Neo4j for more than a decade.
+
+Luanne did a lot of the early work on Neo4j OGM and Spring Data Neo4j and has been a consistent writer of blog posts over the years.
+
+She has also presented countless training sessions, meetups, and conferences. Most recently,  Luanne presented two talks at the NODES 2020 conference: 
+
+* Post-Union processing with Cypher, in which Luanne showed off a much requested language feature.
+* Malt Aware: Discovering what to drink with Neo4j, in which Luanne explained how to build a whisky recommendation engine.
+
+On behalf of the Neo4j community, thanks for all your work Luanne!
+
+https://www.linkedin.com/in/luannemisquitta/[Connect with Luanne on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Neo4j and Typescript - Using the new useSchema React Hook
+
+Our video this week is from Adam Cowley's weekly live stream.
+
+youtube::B6mOmSL9Wiw[type={type}]
+
+In this week's stream, Adam demonstrates the https://github.com/adam-cowley/use-neo4j[React hooks^] for Neo4j library, and in particular how to use the useSchema hook. Adam also creates a useDatabases hook that lets you introspect the available databases on a Neo4j server.
+
+[[features-2]]
+=== Fire up your Centrality Metric engines: Neo4j vs NetworkX - a drag race, of sorts…
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201113015611/1_2fHNIPZ7c_uCPgbmmhc-0Q-1.png" width="200px"  />
+</div>
+++++
+
+In Kristof Neys' latest blog post, he stages a drag-race between Python's NetworkX package and Neo4j's Graph Data Science library. 
+
+Kristof runs Betweenness and Harmonic centrality measures on undirected graphs using both approaches, compares the results, and sees which approach is fastest.
+
+https://towardsdatascience.com/fire-up-your-centrality-metric-engines-neo4j-vs-networkx-a-drag-race-of-sorts-18857f25be35[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Accessing Neo4j with Spring Boot 2.4
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201113012126/download-12.png" width="200px"  />
+</div>
+++++
+
+Hantsy has started writing a series of blog posts showing how to use Neo4j with Spring Boot. 
+
+In the first post, Hantsy creates the skeleton of a project using  http://start.spring.io[start.spring.io^], before building a REST API that creates and retrieves data from Neo4j using Spring Data Neo4j. 
+
+
+////
+* https://hantsy.medium.com/update-accessing-neo4j-with-spring-boot-2-4-3951cb81d97d 
+* https://hantsy.medium.com/data-auditing-with-spring-data-neo4j-11d6461146ff 
+ * https://hantsy.medium.com/testing-spring-data-neo4j-components-299c6ec77378 
+* https://hantsy.medium.com/customizing-queries-with-spring-data-neo4j-304b03918549 - Customizing queries with Spring Data Neo4j
+////
+
+https://hantsy.medium.com/update-accessing-neo4j-with-spring-boot-2-4-3951cb81d97d[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j Connector for Apache Spark, Testing Neo4j.Driver, New Graphistania Episode
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Maya Natarajan & David Allen announced the https://neo4j.com/blog/announcing-neo4j-connector-for-apache-spark/[launch of Neo4j Connector for Apache Spark^]. Neo4j Connector for Apache Spark is an integration tool that moves and reshapes data bi-directionally between Neo4j and Apache Spark.
+
+* Cory Waddingham has https://neo4j.com/blog/thank-you-from-neo4j-to-veterans/[written a blog post^] about his experience as a Veteran of the US Navy, and gives his thanks to those working in the armed services.
+
+* Lju Lazarevic published a list of all the confirmed scheduled NODES 2020 Extended talks on the https://neo4j.com/developer/online-meetup/#upcoming-meetups[Neo4j Online Meetup page^].
+
+
+* Chris Skardon takes us through https://xclave.co.uk/2020/11/02/testing-neo4j-driver-4-1-1-part-2-session-config/[some of the techniques^] that he used to test Neo4j.Driver.
+
+* Rik Van Bruggen https://blog.bruggen.com/2020/11/graphistania-20-episode-10-this-month.html[published episode 10^] of the Graphistania podcast. In this episode Stefan and Rik talk about the NODES 2020 conference, FinCEN files, Graph Databases for Dummies book, and more. 
+
+
+
+
+
+////
+https://twitter.com/taseroth/status/1326531877113651200 
+
+
+https://graphaware.com/nlp/2020/10/20/ere-jane-austen.html[Read the blog post, role="medium button"]
+
+
+
+////
+
+[[features-5]]
+=== Neo4j Aura & PubSub on Google Cloud: Image Annotation
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201113020019/1_w1MFj8t6ktAGP6eqhQD2DQ.png" width=200px"  />
+</div>
+++++
+
+Neo4j Aura, Neo4j's Graph Database as a Service offering, recently launched on the Google Cloud Platform Marketplace, and David Allen has taken it for a test drive.
+
+David shows how to build an image processing pipeline that:
+
+. Processes images from a Google storage bucket
+. Generates annotations using the Cloud Vision API
+. Writes those annotations into Neo4j via a PubSub topic.
+
+
+https://medium.com/neo4j/neo4j-aura-pubsub-on-google-cloud-image-annotation-ca7104cd493[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/rotnroll666[Michael Simons^]:
+
+tweet::1327151894884720640[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* 
+
+https://towardsdatascience.com/working-with-neo4j-rfm-analysis-using-e-commerce-data-721f5bd5c851
+MediumMedium
+Working with Neo4j: RFM Analysis using E-Commerce Data
+
+  (edited) 
+07:15
+
+
+
+
+
+* Alberto De Lazzari @albertodela80
+Here is an uncommon use of @neo4j
+Building an associative memory with Neo4j https://alberto-delazzari.medium.com/building-an-associative-memory-with-neo4j-1d0713322309 #NeuralNetwork #explainability
+
+* https://towardsdatascience.com/exploratory-network-analysis-of-marvel-universe-c557f4959048
+MediumMedium
+Exploratory network analysis of Marvel Universe
+Introducing the new k-nearest neighbors algorithm in the Graph Data Science library
+
+
+https://towardsdatascience.com/how-to-get-started-with-the-new-graph-data-science-library-of-neo4j-3c8fff6107b 
+
+* Tomaz Bratanic @tb_tomaz
+Dumping and loading a database in Neo4j Desktop
+Yes, I know, no GDS library this time :rolling_on_the_floor_laughing:
+#neo4j #database #management
+https://tbgraph.wordpress.com/2020/11/11/dump-and-load-a-database-in-neo4j-desktop/
+
+
+
+
+
+
+
+https://medium.com/@h_bushroh/modeling-nodes-and-relationships-dynamically-on-neo4j-e4d07a03fc88
+Modeling nodes and relationships dynamically on neo4j
+
+
+
+////

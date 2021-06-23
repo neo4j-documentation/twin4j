@@ -1,0 +1,157 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Neo4j & Python, Model Git Commits, Slack to Discord, Open Names Data,
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, Madison shows us how to use Neo4j with Python using the Py2neo package and includes steps and template code for recreating her walkthrough.
+
+Tom shows us how to model git commits with Neo4j and explains some contrasts between the same use case in graph and relational setups. Alex announces a Neo4j community migration from Slack to Discord to expand more interactive features. EarthlingDavey on Github published an early release repository for OS Open Names data in Neo4j that provides latitude and longitude for a location in Great Britain.
+
+And finally, Neo4j hosts a variety of use cases each week for 30 minutes in weekly live demos, Lju discusses some scenarios that fit a graph database, Elaine highlights the new Neo4j certifications, and Sixing publishes a post exploring the KEGG disease database with Neo4j.
+
+Cheers,
+https://twitter.com/jmhreif[Jennifer^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Andreas Kollegger
+
+This week's featured community member is Andreas Kollegger.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210414142317/this-week-in-neo4j-17-april-2021.jpeg[name="Andreas Kollegger"]
+
+Andreas is Developer Relations Community Representative here at Neo4j, recently taking on quite a bit of the community leadership and efforts. He has been a part of the Neo4j community since the early days of the company (before he was an employee!) and has continued to be involved in giving his all to provide the best experience for Neo4j users.
+
+In the early years, Andreas created a lot of community content, including training materials and online presentations. As one of the first 10 employees at Neo4j, he devoted much of his time to community efforts and presenting at meetups and road-shows. He became Director of Product Management for Developer Tools where he led the strategy and development for Neo4j Desktop and Browser. He also was influential in the early days of Neo4j Bloom. Through his efforts in that area, he introduced the concepts of the https://github.com/neo4j-devtools/relate[Relate framework^] and https://neo4j.com/developer/graph-apps/[graph apps^] in Neo4j Desktop. Recently, he created https://neo4j.com/developer-blog/gram-a-data-graph-format/[Gram^], a textual format for graph data. You can find him on many of our community platforms like Discord, the Community Forum, and Medium. Thank you, Andreas, for your dedicated commitment to improving Neo4j and encouraging current and new users!
+
+https://www.linkedin.com/in/akollegger/[Connect with Andreas on LinkedIn, role="medium button"]
+
+
+[[features-1]]
+=== Integrating Python Code with Py2neo
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210414142349/twin4j-py2neo-blog-post.jpeg" width="150px"  />
+</div>
+++++
+ 
+Madison writes a helpful post on using Neo4j with Py2neo, which is a Python package that operates similar to a driver for connecting to Neo4j. We get a bit of background and how it works, then dive right in to a walkthrough! First, our environment gets set up with details for both Windows and Mac to prepare a Python virtual environment, start a Neo4j database, and install required packages.
+
+Next, Madison gives us a template code sample that we can substitute into our environment for easy spin-up, which we can tweak later, if needed. She even gives us some ideas for using parameters and lists in Py2neo with a link for the https://py2neo.org/2021.0/[documentation^] included. Wrapping up, she leaves us with a couple of other helpful articles to continue our learning and hints at a future follow-up from her. We’d love to see more!
+
+https://python.plainenglish.io/making-the-most-of-neo4j-integrating-python-code-with-py2neo-6a7eb281fddb[Read the blog post, role="medium button"]
+
+[[features-2]]
+=== Modeling Git Commits with Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210414142416/twin4j-git-commit-model.png" width=150px"  />
+</div>
+++++
+
+Tom published an excellent article on his process for modeling git commits for the https://github.com/reflectoring/coderadar[coderadar^] project. At the start, Tom tested his approach with JPA entities and a relational database. Queries were cumbersome and join tables occupied a large amount of space. He felt there must be a better way.
+
+Enter graphs! Neo4j was the choice, as it would store the relationships of commits and files more simply and also provided good support for https://projects.spring.io/spring-data-neo4j/[Spring Data Neo4j^]. He was able to get up and running pretty quickly with the skills he needed and walks us through his graph data model and querying the data with Cypher. While he agrees the relational model was feasible, he advocates that the graph model improved and simplified his use case.
+
+https://reflectoring.io/git-neo4j/[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Neo4j Community is migrating from Slack to Discord
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210414142549/twin4j-slack-to-discord.png" width="200px"  />
+</div>
+++++
+
+Neo4j announced that we are moving our Slack community to Discord! Our community was growing too big, and we wanted to take advantage of some features available in Discord that weren’t possible in Slack, such as group video calls and screen sharing.
+
+In Discord, we have the ability to pop into different channels (as with Slack) and even have continuous video/audio channels so you can virtually co-work, ask questions, or chat live with others. We have created a couple of specific channels for our NODES 2021 event and a general AMA channel where you can join office hours with Neo4j staff for questions or chat. Join our https://discord.gg/neo4j/[Discord community^] to join in the fun!
+
+https://medium.com/neo4j/neo4j-community-is-migrating-from-slack-to-discord-20f7317b449c[Read the Blog Post, role="medium button"]
+
+[[features-4]]
+=== OS Open Names to Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210414142621/twin4j-opennames-repo.png" width="200px"  />
+</div>
+++++
+
+https://github.com/EarthlingDavey[EarthlingDavey^] created an early release of https://github.com/EarthlingDavey/opennames-to-neo4j[opennames-to-neo4j^], which is a public API of places, roads, and postal codes in Great Britain. The data can be downloaded as CSV, GML, API, and Geopackage formats for automatically importing into Neo4j.
+
+The Github repository gives a great overview of the architecture, graph data model, system requirements, and installation/usage for the data. We even get some examples and ways to extend functionality. It’s still an early release, but the library is intriguing and useful. EarthlingDavey is using it for a project to convert user location search to latitude and longitude coordinates for the purpose of distance calculations. For any feedback or questions, the author points us to create a Github issue or contact him on the https://discord.gg/neo4j[Neo4j Discord community^].
+
+https://github.com/EarthlingDavey/opennames-to-neo4j/[Clone the Github Repository, role="medium button"]
+
+
+[[features-5]]
+=== Weekly Live Demos, Spotting a Graph-Shaped Problem, Neo4j Certifications
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Neo4j hosts https://neo4j.com/live-demos/[live demos^] with Neo4j experts for 30 minutes every week. The demos rotate, so if you miss one you wanted to see, just check the schedule again for the next offering! Right now, there are demos for supply chain, algorithms playground (NEuler), and fraud detection.
+
+* Lju writes a great https://medium.com/geekculture/spotting-a-graph-shaped-problem-b1f126bf8c03[blog post^] on graphs and some scenarios that fit a graph database. We get an introduction to graphs in general, then walk through 4 scenarios where graphs are often the best fit. Each scenario is covered in-depth and even lists some use cases that apply to each. Lju’s post is super helpful if you are new to graphs or just trying to explain it to others!
+
+* Elaine walks us through the https://medium.com/neo4j/everything-you-need-to-know-about-our-neo4j-certifications-a71dbaec049c[new Neo4j certifications^] and what we can expect from each of the offerings. There are now 3 exams available to demonstrate and test your knowledge of Neo4j, including the new graph data science certification.
+
+* Sixing published https://towardsdatascience.com/neo4j-for-diseases-959dffb5b479[another article^] on Neo4j and medical analysis, this time using the KEGG disease database. Here, he analyzes multipurpose drugs, as well as the COVID-19 and similar SARS viruses.
+
+
+=== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/FANTASIA4UE/[FANTASIA4UE^]:
+
+tweet::1378286876184940546[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+////

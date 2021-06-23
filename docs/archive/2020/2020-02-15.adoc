@@ -1,0 +1,184 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Analyzing .NET Dependencies, Coloring a Sudoku Graph, Christmas Messages Graph, Making Graph Algorithms ‘Clique’
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video Vlasta Kůs and Golven Leroy's show us how to do social media monitoring using Neo4j and NLP techniques. 
+
+We have the preview release of the Graph Data Science Library, a Neo4j 4.0 Treasure Map, and a flight search application
+
+And finally, I show how to enrich a Neo4j graph with data from Wikidata's SPARQL API.
+
+Enjoy!
+
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Elena Williams
+
+This week's featured Neo4j Community member is Elena Williams
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200214091853/this-week-in-neo4j-15-february-2020.jpg[name="Elena Williams"]
+
+Elena is a Python developer, an elected member of the Django Software Foundation, and a recent https://neo4j.com/graphacademy/neo4j-certification/[Neo4j Certified Developer^], all wrapped up with a passion for community building. She’s an avid speaker and has great interest in empowering women in technology. Elena is based in Canberra, Australia. 
+
+Elena became a graph-addict after her natural thirst for knowledge caused her to stumble across a ‘random talk online’ (https://www.youtube.com/watch?v=3vleFxDGoEs[Graph Databases will Change your Freaking Life^]). 
+
+Since then, as she’s stated in https://community.neo4j.com/u/elena/summary[her intro on the Neo4j community site^], she’s been “keen as beans to start being an advocate for it [graphs] in my local communities and intend to give some talks about my experiences so far in the next few months/years.”  
+
+And she’s already begun - Elena already arranged an event for https://neo4j.com/blog/calling-all-nodes-join-us-for-global-graph-celebration-day-on-april-15-2020/?ref=social-blog[Global Graph Celebration Day 2020^] with her local Python user group.  
+
+Elena, we’re so grateful for your passion and contributions and will to support you every way we can to help you be more successful at everything you do! Thanks for being part of our community & giving back!   
+
+https://twitter.com/elequ[Follow Elena on Twitter, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Social media monitoring with ML-powered Knowledge Graph
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference, Vlasta Kůs and Golven Leroy show us how to do https://neo4j.com/online-summit/session/social-media-monitoring-knowledge-graph-ml[social media monitoring using Neo4j and NLP techniques^].
+
+youtube::ykpxtKYyyXA[type={type}]
+
+After showing how to import data into Neo4j from social platforms using unofficial APIs, they explain how to updated a graph with features extracted using GraphAware's NLP tools. And once they've done that they show how to write Cypher queries against the enriched graph.
+
+
+[[features-2]]
+=== Neo4j Treasure Map — Where to find all of the 4.0 resources you need
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200214062250/0_u1SbWyPaet6bkt7z.jpeg" width="150px"  />
+</div>
+++++
+
+It's been hard to keep track of all the content generated covering the features in the 4.0 release of Neo4j.
+
+Lucky for us, Jennifer Reif comes to the rescue with a blog post that curates all the content.
+So whether it's multi database, security features, reactive drivers, or Neo4j Fabric that you're interested in, Jennifer's got you covered.
+
+https://medium.com/neo4j/neo4j-treasure-map-where-to-find-all-of-the-4-0-resources-you-need-948cf71004f9[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Arrows Hacks, 3.5 to 4.0 Upgrade Guide, GDS Preview 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200214063041/0_3ai_TtLpyC7VRw68.jpeg" width="120px"  />
+</div>
+++++
+
+* http://www.apcjones.com/arrows/#[Arrows^] is Neo4j's graph modelling tool, and in Lju Lazarevic's latest blog post she https://medium.com/neo4j/arrows-hacks-tricks-for-your-graph-models-and-diagrams-371ca2810c56[shares her best usage tips and tricks^].
+
+* https://twitter.com/mdavidallen[David Allen^] has created a short video showing https://www.youtube.com/watch?v=GcaJ-aVLzr4[the upgrade process from Neo4j 3.5 to 4.0^]
+
+* Max De Marzi shares some ideas for https://maxdemarzi.com/2020/01/21/going-faster-in-2020/[improving Neo4j so that queries can be executed even faster^].
+
+* Alicia Frame announced the https://community.neo4j.com/t/graph-data-science-library-preview/14633[preview release of the Graph Data Science Library^]. You can also https://neo4j.com/docs/graph-data-science/1.0-preview/[read the docs^] if you'd like to give it a try.
+
+
+[[features-4]]
+=== Flights Search Application with Neo4j —Using Cypher queries and APOC Custom Procedures (Part 2)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200214070459/1_iSRAEJoliDg4jMcaUVWUHw.jpeg" width="150px"  />
+</div>
+++++
+
+Vlad Batushkov  published the 2nd post in his series on building a Neo4j backed flight search application.
+
+In this post we learn how  to create an APOC custom procedure to query for Flights, taking into account as many real-life travel requirements as possible. We also learn how to configure procedure and index scripts inside a Docker Image using Cypher Shell.
+
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-using-cypher-and-apoc-custom-procedures-part-2-401fd90bf5c4[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Enriching an existing graph by querying the Wikidata SPARQL API
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200214065743/wiki-enrich-banner.png" width="150px"  />
+</div>
+++++
+
+I wrote a blog post showing how to enrich the Australian Open Neo4j graph with data queried from the Wikidata SPARQL API.
+
+We then write queries to find out which finalists each country had and the lowest average age of the finalists.
+
+https://markhneedham.com/blog/2020/02/04/neo4j-enriching-existing-graph-wikidata-sparql-api/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/EvaDelier[Eva Delier^]:
+
+tweet::1227905576279183362[type={type}]
+
+////
+
+* #Bioinformatics projects with public @neo4j databases, including @reactome and Hetionet by @dhimmel: https://graphdb-bio.com/projects-using-neo4j-1
+
+
+* https://github.com/trinitor/netstat2neo4j 
+
+* Is #GlobalGraphCelebrationDay on your radar? Check out this blog post for ways to get started with the GGCD Attendee Graph - powered by @neo4j Aura
+Examples in GraphQL, iPython Notebooks with @GoogleColab, data visualization, and more!
+https://medium.com/neo4j/5-ways-to-explore-the-global-graph-celebration-day-attendee-graph-7bd2ed7768dc 
+
+* Multi Tenant GraphQL with Neo4j
+https://blog.grandstack.io/multitenant-graphql-with-neo4j-4-0-4a1b2b4dada4 
+
+
+* Software platform dependency analysis with F# and Neo4j
+It's common for software platforms to consist of many deployed services that communicate with each other and connect to resources over the…
+https://chester.codes/software-platform-dependency-analysis-with-fsharp-and-neofourj/
+
+* https://posts.specterops.io/introducing-bloodhound-3-0-c00e77ff0aa6 - BloodHound 3.0
+
+* @MartinPreusse
+I wrote a tutorial on loading gene id mappings from @NCBI Gene and @ensembl to a @neo4j database with my #Python package #graphio: https://graphdb-bio.com/graphio-tutorial-idmapping 
+
+* Sylvain ROUSSY @SylvainRoussy
+Meet the grapes! Importing wine data into @neo4j  with the powerful of @Norconex  web crawler: https://neo4j.com/blog/importing-data-from-the-web-norconex-neo4j/
+
+@adamcowley
+#Neo4j 4.0 now makes it possible to build a SaaS company on top of Neo4j.  Here's how you can build a lightweight control panel to automate the process
+https://adamcowley.co.uk/neo4j/sass-control-panel-graph-app/ 
+
+@gorillalabs_de
+Our new version of the #Neo4j #Clojure driver is out, supporting Version 4.0.0. http://bit.ly/2UyrmRR 
+
+https://neo4j.com/developer/neo4j-fabric-sharding/
+Sharding Graph Data with Neo4j Fabric - Neo4j Graph Database Platform
+
+@rvanbruggen
+Just before the weekend: after securing my #beergraph, I managed to separate administrative from investigative access in a #fraud graph as well - thanks to #neo4j 4.0's fine grained access control features. It's really easy and powerful - look at http://blog.bruggen.com/2020/02/securing-sample-fraud-graph-with-neo4j.html 
+
+https://neo4j.com/developer/multi-tenancy-worked-example/ 
+Multi Tenancy in Neo4j: A Worked Example - 
+
+Subqueries - https://neo4j.com/developer/subqueries/
+
+////
+

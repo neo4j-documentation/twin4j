@@ -1,0 +1,124 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Dave Bennett
+
+This week’s featured community member is https://twitter.com/winswan[Dave Bennett^], Identity Solution Architect at http://www.nulli.com/[Nulli^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170728042245/this-week-in-neo4j-29-july-2017.jpg["Dave Bennett - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Dave Bennett - This Week's Featured Community Member
+</strong>
+</p>
+++++
+Dave is a regular answerer of https://stackoverflow.com/users/4187346/dave-bennett[questions on the #neo4j tag on StackOverflow^] and most recently has been https://stackoverflow.com/questions/45188231/cypher-neo4j-query-profiling/45193490#45193490[helping people^] https://stackoverflow.com/questions/45274319/cypher-query-optimization/45282135#45282135[understand the output of the Cypher query profiler^] and how to use it to optimise their queries.
+
+Dave's also https://www.meetup.com/Calgary-Neo4j-Graph-Meetup/events/237621040/[presented at the Calgary Neo4j meetup^] and co-presented https://www.youtube.com/watch?v=R9Vdm2ZqlpQ[Access Management: injecting identity into the graph^] at GraphConnect San Francisco 2015.
+
+He also http://blog.bruggen.com/2016/08/podcast-interview-with-dave-bennett.html[featured on the podcast in August 2016^] which is well worth listening to if you want to learn how graphs and identity management play together.
+
+On behalf of the Neo4j community thanks for all your work Dave!
+
+=== Security Engineering with graphs
+
+I came across quite a few interesting things security engineering related this week.
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170728030247/timesketch_bloodhound2.jpg["Timesketch and BloodHound", 800, 339, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Timesketch and BloodHound - two security engineering tools
+</strong>
+</p>
+++++
+
+https://github.com/google/timesketch[Timesketch^], the open source collaborative forensic timeline analysis tool, https://medium.com/@jberggren/timeline-analysis-from-the-future-59a7ad7da498[now has Neo4j graph database support^]. Timesketch is a project created by https://twitter.com/jberggren[Johan Berggren^], a Senior Security Engineer at Google. 
+
+In Johan's post he says "With an interface for communicating with the open source graph database Neo4j we are prepared for graph exploration of timeline data. Our goal is to provide an intuitive and powerful graph exploration frontend." We're looking forward to that!
+
+On my GitHub travels I came across the https://github.com/BloodHoundAD/BloodHound[BloodHound^] project created by https://twitter.com/_wald0[Andrew Robbins^], https://twitter.com/CptJesus[Rohan Vazarkar^], and https://twitter.com/harmj0y[Will Schroeder^]. 
+
+BloodHound is an application which uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Attackers can use BloodHound to easily identify highly complex attack paths that would otherwise be impossible to quickly identify and defenders can use BloodHound to identify and eliminate those same attack paths.
+
+Last but not least, https://twitter.com/Antonlovesdnb[Anton^] wrote a blog post showing how to https://haveyousecured.blogspot.co.uk/2017/07/visualize-windows-logs-with-neo4j.html[visualize and analyse Windows Logs With Neo4j^]. 
+
+=== OpenTheBox - a full view of Corporate Networks in Belgium
+
+In this week’s online meetup https://twitter.com/niekbartho[Niek Bartholomeus^] showed us  how he took publicly accessible data about Belgian corporations, processed it using Spark/Scala, and made it available in Neo4j in a matter of weeks.
+
+youtube::7aVCyb3ST9E[type={type}]
+
+Niek's now published his work on http://openthebox.be/#/home[openthebox.be^] so give it a try and let him know how you get on. He's https://twitter.com/niekbartho[@niekbartho^] on twitter.
+
+=== Knowledge Graphs, GoT NLP analysis, The Workflowy Graph
+
+* Over the last few months John Singer has written a series of articles about Knowledge Maps or Knowledge Graphs as they are sometimes known. He starts with a post that looks at http://www.dataversity.net/knowledge-maps-problem-trying-solve/[what problem we're trying to solve^] - "Many people in their daily jobs lack the information they need to make well informed decisions, take decisive action, or solve problems.". Graphs can help solve this by bringing decision making data together and John goes on to explain more in http://www.dataversity.net/knowledge-maps-connecting-dots/[Connecting the Dots^] and http://www.dataversity.net/knowledge-maps-new-model-metadata/[A New Model for Metadata^]. 
+
+* https://twitter.com/ikwattro[Christophe Willemsen^] has got his entry for the https://neo4j.com/blog/graph-of-thrones/[Game of Thrones Season 7 contest^] with a blog post in which he https://graphaware.com/neo4j/2017/07/24/reverse-engineering-book-stories-nlp.html[reverse engineers the A Song of Ice and Fire books with Neo4j and GraphAware NLP^].  
+
+* https://twitter.com/silverlokk[Daniel Escasa^] has written a couple of new posts about his music database that we featured last week. Daniel https://www.codementor.io/descasa/neo4j-chases-the-blues-away-a054jacrk[refactors the model^] further to answer questions such as 'who played the Soprano Sax on track 3' and then starts https://www.codementor.io/descasa/ok-google-i-mean-neo4j-abr2hq2gi[asking more questions of the new model^].
+
+* https://twitter.com/dracan[Dan Clarke^] wrote a blog post explaining how to https://www.danclarke.com/workflowy-to-neo4j[visualise your Workflowy database in Neo4j^].  https://workflowy.com/[Workflowy^] is a list/note taking application which encourages you to store information in a very hierarchical manner i.e. it's perfect for graphs.
+
+* https://twitter.com/CarlTurechek[Carl Turechek^] created https://github.com/siteraiser/Organization-Organizer[Organization-Organizer^], a system for organizing web account info for organizations and locations, built with PHP and Neo4j
+
+=== Summer 2017 Release of the APOC Procedures Library
+
+Earlier this week https://twitter.com/mesirii[Michael^] did the https://neo4j.com/blog/apoc-summer-2017-release/[Summer 2017 release of APOC procedures^]. 
+
+Some of the take away features introduced in this release are fuzzy matching and Levenshtein distance functions, executing atomic operations on properties, and improvements to the Cypher export procedures.
+
+If you haven't given APOC a try yet https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/3.2.0.4[now could be the time^]!
+
+=== Next Week
+
+Next week is a busy one in the world of graph databases.
+
+* On Sunday, July 30, 2017 https://www.meetup.com/Philly-GraphDB/[Philly GraphDB^] are going to https://www.meetup.com/Philly-GraphDB/events/242069934/[explore Neo4j's Sandbox v2 and learn how to play with the data^].
+
+* On Tuesday, August 1, 2017 Vasanti Mahajan will present https://www.meetup.com/graphdb-boston/events/242005916/[Detecting Bitcoin Fraud with Graphs^] at https://www.meetup.com/graphdb-boston/[GraphDB Boston^].
+
+* On Wednesday, August 2, 2017 https://www.meetup.com/windy-city-graphdb/[Windy City GraphDB^] are hosting a https://www.meetup.com/windy-city-graphdb/events/241721697/[Graph Hack Night^] 
+
+* On Thursday, August 3, 2017 we'll be hosting a https://www.meetup.com/Neo4j-Online-Meetup/events/241874862/[Neo4j Bolt Drivers Roundtable^] as part of the https://www.meetup.com/Neo4j-Online-Meetup/[online meetup^]. 
+
+We hope to see you at one of the events if they're in your vicinity. If there aren't any events in your local area and you wish there were drop us an email devrel@neo4j.com and we'll try and help out.
+
+=== Tweet of the Week
+
+My favourite tweet this week comes from my colleague https://twitter.com/KevinVanGundy[Kevin Van Gundy^]:
+
+tweet::890220703961686016[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

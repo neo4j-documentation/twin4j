@@ -1,0 +1,174 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Kafka Streams Graph Processing, GRANDstack Football Transfers, Spring Data Neo4j RX, Role Based Access Control In Neo4j 4.0, Learning Cypher, and More!
+
+[Body copy:]
+////
+
+Hello everybody!
+
+I'm back after a few weeks off. Thanks to Jennifer and Will for writing TWIN4j in my absence, I enjoyed reading their take on the week's graph related news. 
+
+This week we preview the modeling talks at the NODES 2019 conference and we have network analysis of the Prisoners of Zenda book.
+
+We learn how to build a questionnaire with Neo4j, there's a video introducing Spring Data Neo4j RX, and a new release of the Neo4j for Kettle plugin.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Matt Casters
+
+Our featured community member this week is https://twitter.com/mattcasters[Matt Casters^], Chief Solutions Architect at Neo4j.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190906081855/this-week-in-neo4j-7-september-2019.jpg[name="Matt Casters"]
+
+Matt has been part of the Neo4j community for 18 months, focusing mostly on a https://github.com/knowbi/knowbi-pentaho-pdi-neo4j-output[tighter integration^] between Neo4j and the Kettle data integration tool.  
+
+He presented https://neo4j.com/graphconnect-2018/session/matt-casters-kettle-etl-data-integration[Integrating Relational, Big Data, and other Sources into Neo4j using Kettle^] at GraphConnect 2018, and regularly blogs about his work on his http://www.ibridge.be/[personal blog^], and on the https://medium.com/@mattcasters[Neo4j Developer blog^].
+
+On behalf of the Neo4j community, thanks for all your work simplifying data import Matt!
+
+https://www.linkedin.com/in/mattcasters/[Connect with Matt on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019 Preview: Modeling
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190604150332/nodes-2019-neo4j-online-developer-expo-summit-register-today.png" width="200px"  />
+</div>
+++++
+
+With just 5 weeks to go until the first https://neo4j.com/nodes-2019/[Neo4j Online Developer Summit^], it's time to preview the finalised schedule.
+
+One of the biggest challenges for both new and seasoned users of graphs is coming up with a good graph model. The full list of talks on this topic is available by searching for the https://neo4j.com/online-summit/session-topics/?topic=modeling[modeling tag^], but here's a preview of what's on offer. 
+
+==== Beginner
+
+In https://neo4j.com/online-summit/session/dependency-modeling[It Depends (and why it's the most frequent answer to modelling questions)^], Luanne Misquitta, VP of Engineering at GraphAware, will show how our use case should guide the model we come up with. 
+
+==== Intermediate
+
+Max De Marzi, one of the best graph modelers in the business, will share his 7 years of experience helping Neo4j customers in his talk https://neo4j.com/online-summit/session/graph-data-modeling-tricks[Graph Data Modeling Tips & Tricks^]. 
+
+==== Advanced
+
+Axel Morgner, Managing Director of Structr GmbH, will do a https://neo4j.com/online-summit/session/software-application-graphs-how-structr-works[deep dive into Structr^], the graph application platform. 
+
+https://www.crowdcast.io/e/nodes2019[Register for NODES 2019, role="medium button"]
+
+[[features-2]]
+=== Network analysis of Prisoners of Zenda book with Spacy and Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190906024137/1_a5vuCyuioh3wzR-KVCVRCw.png" width="200px"  />
+</div>
+++++
+
+Tomaz Bratanic combines natural language processing, graph algorithms, and graph visualisation techniques to make sense of the Prisoner of Zenda, an adventure novel written in the 19th century.
+
+Tomaz also shared a https://github.com/tomasonjo/blogs/blob/master/Spacy_Neo4j_Gutenberg_Book/Spacy%20NER%20with%20Neo4j%20Clustering%20on%20Gutenberg%20book.ipynb[Jupyter Notebook^] containing all the code used in the blog post.
+
+
+https://towardsdatascience.com/network-analysis-of-prisoners-of-zenda-book-with-spacy-and-neo4j-b0839a640105[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building a Questionnaire with Neo4j — part 1/3: One simple question
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190906025022/1_BMDoc478VoWAty9_qcy69w1.png" width="150px"  />
+</div>
+++++
+
+Stefan Dreverman has started a series of blog posts showing how to use Neo4j to build a questionnaire. 
+
+In the first post we start with a single question that has multiple choices. Stefan shows how to create a graph model, import sample data, and then query it across different dimensions.
+
+https://medium.com/@stefan.dreverman/building-a-questionnaire-in-neo4j-part-1-3-one-simple-question-c89a18956756[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Spring Data Neo4j RX introduction, Nested Path Comprehensions, An Introduction to Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190906031613/springdata.png" width="150px"  />
+</div>
+++++
+
+* Gerrit Meier https://www.youtube.com/watch?v=Nfk4782Da0E[published a video^] showing how to create a sample application using the upcoming Spring Data Neo4j RX. You can find the project in the https://github.com/neo4j/sdn-rx[neo4j/sdn-rx^] GitHub repository.
+
+* I wrote a couple of blog posts exploring Cypher's https://markhneedham.com/blog/2019/08/22/neo4j-cypher-nested-pattern-comprehensions/[nested path comprehensions^], and contrasting them to the https://markhneedham.com/blog/2019/08/23/neo4j-cypher-path-comprehensions-optional-match/[OPTIONAL MATCH^] clause.
+
+* The video from https://twitter.com/spirnbaum[Stephan Pirnbaum^]'s https://www.youtube.com/watch?v=EWRc9FtRWuc[An Introduction to Neo4j^] talk at Neos Con 2019  is now available. 
+
+* Amy Hodler and I wrote a blog post for the O'Reilly Ideas blog, titled https://www.oreilly.com/ideas/how-graph-algorithms-improve-machine-learning[How graph algorithms improve machine learning^]. 
+
+[[features-5]]
+=== Better Neo4j plugins for Kettle
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190906033156/1_W4b0GJJVVZ3JL6H4xpBo2A.png" width="200px"  />
+</div>
+++++
+
+Last week Matt Casters released version 4.1.0 of the Neo4j plugins for Kettle. This release contains performance improvements for the Neo4j Output step, data conversion improvements in the Neo4j Cypher step, as well as bug fixes.
+
+https://medium.com/neo4j/better-neo4j-plugins-for-kettle-a7453ba71814[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/knowtheory[Ted Han^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1169602062759235584[type={type}]
+
+
+////
+
+https://medium.com/@stefan.dreverman/building-a-questionnaire-in-neo4j-part-2-3-a-static-list-7303839eee67
+
+
+
+@dfahland
+Event data with multiple case ids in 1:n or n:m relation? Stefan Esser, student of @TUeindhoven and yt stores and queries multi-dimensional event data in a graph DB at @processquerying at #bpm2019. Paper and code using @neo4j available https://research.tue.nl/en/publications/storing-and-querying-multi-dimensional-process-event-logs-using-g  #processmining 
+
+https://www.oreilly.com/ideas/how-graph-algorithms-improve-machine-learning 
+How graph algorithms improve machine learning
+
+Scale up your D3 graph visualisation - WebGL & Canvas with PIXI.js | GraphAware
+https://graphaware.com/visualization/2019/09/05/scale-up-your-d3-graph-visualisation-webgl-canvas-with-pixi-js.html 
+
+The evolution of power— A graph analysis of game of thrones
+https://medium.com/@yvonneche/the-evolution-of-power-a-graph-analysis-of-game-of-thrones-dc71a8f59b44
+
+https://medium.com/neo4j/better-neo4j-plugins-for-kettle-a7453ba71814
+Better Neo4j plugins for Kettle
+
+
+////

@@ -1,0 +1,222 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi graphistas,
+
+This week's video is from a new series about Spring Data Neo4j by Gerrit Meier. 
+
+Adam Cowley announced the launch of Charts, we launched the new Neo4j 4.0 certification, and Hantsy concludes the Spring Data Neo4j series by showing how to write custom queries.
+
+And finally, Jesús Barrasa builds a graph of the UNESCO Thesaurus.
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Chuck Frisbie 
+
+This week's featured community member is Chuck Frisbie.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201204033839/this-week-in-neo4j-5-december-2020.jpg[name="Chuck Frisbie"]
+
+Chuck is a Principal Sales Engineer at Sisense, where he's been working for the last 5 years. Prior to that, he worked as a Solutions Consultant at Axis Group, where he was a certified QlikView developer. He has a Bachelor of Science in Nuclear Engineering from Penn State University.
+
+Chuck recently presented https://www.youtube.com/watch?v=FpJdPBSAjSA[Turbocharging Advanced Analytics with Sisense and the Neo4j Connector for BI^] at the https://neo4j.com/connections/[Neo4j Connections: Graph Architecture and Integrations^] event. 
+
+In the talk, using a dataset from the Metropolitan Museum of Art, Chuck shows how to build an interactive analytics application. 
+
+https://www.linkedin.com/in/chuck-frisbie-592759b5/[Connect with Chuck on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Spring Data Neo4j 6 - Episode 0
+
+Our video this week is from a new Spring Data Neo4j Series by Gerrit Meier.
+
+youtube::ZsbgkzLXdAI[type={type}]
+
+In the first video, Gerrit shows how to install Neo4j, import the movies graph, and then query it using the Neo4j Java driver.
+
+[[features-2]]
+=== Creating Charts from your Graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201204002922/1_D3_e0-1ia6Ag7Fgb9inghA.jpeg" width="200px"  />
+</div>
+++++
+
+Adam Cowley announced the launch of http://charts.graphapp.io/[Charts^], a Neo4j Graph App that makes it easy to create charts on top of your graph data.
+
+Charts has a visual query builder that generates the queries the charts are based on. Those queries can then be used in dashboards to create tables, bar charts, line charts, and more.
+
+https://medium.com/neo4j/creating-charts-from-your-graphs-2f5b4e86fd6c[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Customizing queries with Spring Data Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201113012126/download-12.png" width="200px"  />
+</div>
+++++
+
+Hantsy continues the series of blog posts showing how to use Neo4j with Spring Boot.
+
+In the fourth post, Hantsy shows how to write our own custom queries using the @Query annotation in Spring Data Neo4j. 
+
+////
+* https://hantsy.medium.com/update-accessing-neo4j-with-spring-boot-2-4-3951cb81d97d 
+* https://hantsy.medium.com/data-auditing-with-spring-data-neo4j-11d6461146ff 
+ * https://hantsy.medium.com/testing-spring-data-neo4j-components-299c6ec77378 
+* https://hantsy.medium.com/customizing-queries-with-spring-data-neo4j-304b03918549 - Customizing queries with Spring Data Neo4j
+////
+
+https://hantsy.medium.com/customizing-queries-with-spring-data-neo4j-304b03918549[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j 4.0 Certification exam, Entity Extraction, Reads on the Causal Cluster Leader
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Elaine Rosenberg launched the new https://neo4j.com/blog/new-certification-exam-neo4j-4-0/[Neo4j 4.0 Certification exam^]. It's 30 questions, you've got 45 minutes, what are you waiting for?!
+
+* We published a new developer guide showing how to https://neo4j.com/developer/graph-data-science/nlp/entity-extraction/[build an entity graph with APOC NLP^].
+
+* Lju Lazarevic published a https://www.youtube.com/watch?v=n2wgFTTZGps[hands-on crash course introduction to Neo4j^]. 
+
+* Chris Skardon explains how a new config setting in Neo4j 4.2 makes it possible to https://xclave.co.uk/2020/11/19/neo4j-4-2-reads-on-the-leader/[execute read queries on the leader of a causal cluster^]. 
+
+* https://twitter.com/ySebp[Sebastian Müller^] and https://twitter.com/JirosMunro[Jiros^] published a video showing https://www.youtube.com/watch?v=x6KIKGtxt84[how to export data from the CovidGraph visualisation tool as Cypher queries^]. 
+
+* https://github.com/odedshimon/BruteShark[BruteShark^] released version v1.1.2, which is now compatible with Neo4j for visualizing network diagram by analyzing PCAP file connections.
+
+* Linkurious Enterprise released version https://doc.linkurio.us/admin-manual/2.9.10/release-notes/[2.9.10^], which is now compatible with Neo4j Aura.
+
+* Elaine Rosenberg announced the launch of the updated https://neo4j.com/blog/graphacademy-course-machine-learning-workflow-link-prediction/[Using a Machine Learning Workflow for Link Prediction^] training course. This course now works with Neo4j 4.0.
+
+
+
+////
+
+https://twitter.com/st3llasia/status/1333828205694787585 
+https://twitter.com/RJElsinga/status/1333881287661203462 
+https://twitter.com/ldziedziul/status/1333790835708575744 
+////
+
+[[features-5]]
+=== QuickGraph#12 Working with a Multilingual Thesaurus
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201204003114/screenshot-2020-10-08-at-13.18.15.png" width=200px"  />
+</div>
+++++
+
+It's been almost a year since the last QuickGraph, but https://twitter.com/BarrasaDV[Jesús Barrasa^] is back with QuickGraph #12, in which he graphs the UNESCO Thesaurus.  
+
+After showing how to import the thesaurus using https://neo4j.com/labs/neosemantics/4.1/[n10s^], Jesús shows how to make sense of the data using pure Cypher queries, as well as the GDS Library.
+
+https://jbarrasa.com/2020/11/20/quickgraph12-working-with-a-multilingual-thesaurus[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/st3llasia[Estelle Scifo^]:
+
+tweet::1333828205694787585[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* CambridgeIntel @CambridgeIntel
+Timeline and graph visualization are a perfect partnership for an effective anomaly detection platform. See how @cjlmiles used @neo4j and the #GRANDstack to build a graph and timeline visualization tool that drives fraud investigations.
+https://hubs.li/H0BM2yc0 https://pbs.twimg.com/media/EoOKi-uXcAAMxfF.jpg
+
+* Tomaz Bratanic @tb_tomaz
+My latest blog post. Feels more like a short course than a blog post really :)
+#neo4j #ArXiv #NLP #Graph #DataScience
+Network analysis of ArXiv dataset to create a search and recommendation engine
+https://tbgraph.wordpress.com/2020/12/01/network-analysis-of-arxiv-dataset-to-create-a-search-and-recommendation-engine-of-articles/
+
+* https://github.com/michael-simons/neo4j-from-the-jvm-ecosystem
+michael-simons/neo4j-from-the-jvm-ecosystem
+Examples of how to connect to Neo4j on the JVM, reading and writing data.
+
+* Luanne Misquitta @luannem
+IT Operations and graphs, brought together by Hume insights - our latest blog is just out! https://graphaware.com/hume/2020/11/30/insightful-it-operations-with-hume.html @TryHume #Neo4j
+
+* I have just published an article on implementing a survey in Neo4j on TowardsDataScience.
+(https://towardsdatascience.com/why-you-should-store-your-survey-data-in-a-graph-database-beac1ae7958b)
+
+* https://medium.com/neo4j/a-real-world-adventure-with-golang-and-neo4j-af3c6172c13b
+MediumMedium
+A real world adventure with Golang and Neo4j
+This post summarizes the recent live-streams by Florent Biville about the official Neo4j Golang Driver and the realworld.io application.
+
+* https://medium.com/neo4j/building-an-election-night-dashboard-with-neo4j-graph-apps-bloom-charts-and-neomap-6763f86a4a32
+MediumMedium
+Building An Election Night Dashboard With Neo4j Graph Apps: Bloom, Charts, And Neomap
+Using low code graph apps to build data visualizations with Neo4j.
+
+
+
+
+https://towardsdatascience.com/using-neo4j-with-pyspark-on-databricks-eb3d127f2245 
+Using Neo4j with PySpark on Databricks
+Unleash the full potential of Spark and Graph Databases working hand in hand
+
+If you are a fan of Dark Netflix Series, here is a graph database for fun by Shyam Pratap Singh  https://towardsdatascience.com/if-you-are-a-fan-of-dark-netflix-series-here-is-a-graph-database-for-fun-4b9c17f50c5 
+
+Richard Müller @rimllr
+"Graph-Based Performance Analysis at System- and Application-Level" of monitored @kiekerapm log data using @jqassistant and @neo4j. The slides presented at the 11th Symposium on Software Performance (#SSP2020) are now available:
+https://www2.slideshare.net/RichardMller12/graphbased-performance-analysis-at-system-and-applicationlevel-ssp-2020 
+
+Hello. I have a recorded talk about this work of mine, which relies heavily on Neo4J:
+Paper: https://www.sciencedirect.com/science/article/pii/S2352914819300309?via%3Dihub
+This talk was already presented in Data Natives Summit 2020.
+Here is the link to the recording: https://quanamcorp-my.sharepoint.com/:v:/g/personal/flopez_quanam_com/EcRbOqvu08FJt_ndxdysN4gBT8uKEh9kMtBQK7q2s3hF9Q?e=3Vphnn
+
+
+////

@@ -1,0 +1,153 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Kafka Streams Graph Processing, GRANDstack Football Transfers, Spring Data Neo4j RX, Role Based Access Control In Neo4j 4.0, Learning Cypher, and More!
+
+[Body copy:]
+////
+
+Greetings, Graph Gang!
+
+I’m happy to share another edition of This Week In Neo4j with you.
+
+This week we have a look at using Neo4j with Kafka Streams, how to build a GRANDstack application to analyze football transfers, a beta release of Spring Data Neo4j RX, a guide for learning Cypher in 30 minutes, an overview of the new role based access control features coming in Neo4j 4.0, a look at NLP with graphs, a guide to knowledge graphs, a how-to on cloning subgraphs between Neo4j instances using RDF, a video example of using the Hume insights engine, and building an organization graph.
+
+Enjoy!
+
+Cheers,
+
+William Lyon and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Members: Nathan Smith & Erin Schuberth
+
+Our featured community members this week are Nathan Smith and Erin Schuberth.
+
+Nathan Smith is a Senior Principal Data Scientist at PLA Health leading their data science strategy. Working very closely with Nathan, is Data Scientist, Erin Schuberth. Like most of us, when Nathan and Erin discovered graphs, they were hooked. They began to think of all the endless possibilities! What they also realized is that many people in their area of Kansas City were not aware of graph databases and their capabilities. Because of this, Nathan and Erin reached out to the Neo4j community team and expressed their desire to help spread the knowledge and understanding of this technology and have now started the https://www.meetup.com/Kansas-City-Graph-Databases-Meetup-Group/events/263948424[Kansas City Graph Databases Meetup Group!^]
+
+They took it upon themselves to spearhead the development of their local Graph Community. We couldn’t be more proud and we’re so lucky to have folks like you in our community!
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190829145719/this-week-neo4j-31-aug-2019.png[name="Nathan Smith and Erin Schuberth"]
+
+
+[[features-1]]
+=== Using Graph Processing for Kafka Stream Visualizations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190829100347/Kafka_Neo4j_Link_Prediction.png" width="200px"  />
+</div>
+++++
+
+In the article https://www.confluent.io/blog/kafka-graph-visualizations[Using Graph Processing For Kafka Stream Visualization^], https://twitter.com/mdavidallen[David Allen^] walks through an  example of how to integrate graph analytics together with Kafka, using the Neo4j Streams Kafka integration and Graph Algorithms. Starting with a social network Kafka stream, David shows how to install and configure the https://neo4j.com/labs/kafka/[Neo4j Streams plugin^], setting up Neo4j to be a consumer of the stream. He then adds the Common Neighbors link prediction algorithm from the Neo4j Graph Algorithms package to generate friend recommendations, writing these recommendations back to the graph, which in turn are published back to a Kafka stream, effectively building a recommendation microservice using Neo4j and Kafka.
+
+David will be sharing more about using Neo4j and Kafka during his session at Kafka Summit San Francisco, https://kafka-summit.org/sessions/extending-stream-table-duality-trinity-graphs/[Extending the Stream/Table Duality into a Trinity, with Graphs^], for anyone who might be interested in learning more. If you haven’t gotten your ticket yet, you can register for Kafka Summit San Francisco using the code Neo4j20KS19 for a 20% discount.
+
+
+https://www.confluent.io/blog/kafka-graph-visualizations[Read the article, role="medium button"]
+
+[[features-2]]
+=== Football Transfers Graph App with the GRANDstack Starter Kit
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190829112925/0_K9uNqYHwfmuI1XBe.png" width="200px"  />
+</div>
+++++
+
+Mark Needham takes us into the world of using GraphQL with Neo4j in his post https://blog.grandstack.io/football-transfers-graph-app-with-the-grandstack-starter-kit-b8dfa62c322e[Football Transfers Graph App with the GRANDstack Starter Kit^]. Mark starts off by using the https://grandstack.io/docs/getting-started-grand-stack-starter.html[GRANDstack starter project template^], replacing the GraphQL schema with one generated from his football transfers Neo4j instance using the https://grandstack.io/docs/neo4j-graphql-js-api.html#inferschemadriver-options-promise[inferSchema functionality^] of https://grandstack.io/docs/neo4j-graphql-js.html[neo4j-graphql.js^]. Then he uses the https://grandstack.io/docs/neo4j-graphql-js.html#cypher-directive[@cypher GraphQL schema directive^] to enhance the functionality of the GraphQL schema with a Cypher query to calculate aggregations. Finally, he shows us how to update the React UI to explore the football player transfer data.
+
+If you’re interested in learning more about using GraphQL with Neo4j and https://grandstack.io/[GRANDstack^], consider https://summit.graphql.com/speakers[coming to see us at GraphQL Summit^] in San Francisco in October. I’ll be giving a talk about using the GraphQL ResolveInfo object and we’ll have a Neo4j booth as well. You can register with discount code SPEAKERFRIEND for a 15% discount.
+
+https://blog.grandstack.io/football-transfers-graph-app-with-the-grandstack-starter-kit-b8dfa62c322e[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Spring Data Neo4j⚡️RX
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190829115357/sdnrx.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/meistermeier[Gerrit Meier^] and https://twitter.com/rotnroll666[Michael Simons^] announce the first beta release of Spring Data ⚡️ RX and give us a sneak peek of some of the new reactive features and how to get started in the post https://medium.com/neo4j/welcome-sdn-%EF%B8%8Frx-22c8fe6cd955[Welcome SDN⚡️RX^]. 
+
+SDN/RX is a new implementation of Spring Data Neo4j and will leverage the new reactive capability coming to Neo4j but also support an imperative synchronous programming model. The beta01 release is now available in Maven central and also via the SDN/RX Spring Boot starter. 
+
+Please give it a try and https://community.neo4j.com/c/drivers-stacks/spring-data-neo4j-ogm[send us any feedback^] you have!
+
+https://medium.com/neo4j/welcome-sdn-️rx-22c8fe6cd955[Read the announcement, role="medium button"]
+
+[[features-4]]
+=== Role Based Access Control in Neo4j 4.0 MR2 - An Exploration With Examples
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190829121647/rbac.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/PaulONeillUK[Paul O’Neill^] covers the new role based access control features included in the recent Neo4j 4.0 MR2 release in his post https://pablissimo.com/904/neo4j-4-0-mr2-rbac-an-exploration-with-examples[Neo4j 4.0 MR2 RBAC – an exploration (with examples)^]
+
+First, Paul shows us how to download and start the latest milestone release of Neo4j 4.0 using Docker. Then, using an example of a multi-tenant cloud-based accounting SaaS application, he shows us how to use the new multi-database support in Neo4j 4.0 to add privileges using the system database.  He then demonstrates how the RBAC functionality works for roles with different privileges, including access control on node traversals as well as properties. 
+
+https://pablissimo.com/904/neo4j-4-0-mr2-rbac-an-exploration-with-examples[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Learn Cypher Basics in 30 Minutes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="http://cdn.neo4jlabs.com/images/learn_cypher.png" width="150px"  />
+</div>
+++++
+
+Adapted from a Neo4j Workshop he put together for the Tech@Agoda Meetup group, https://www.linkedin.com/in/vladbatushkov/[Vlad Batushkov^] published the tutorial, https://medium.com/@vladbatushkov/learn-neo4j-cypher-basics-in-30-minutes-94d68a52544[Learn Neo4j Cypher Basics In 30 Minutes^]. This guided tutorial shows how to use Neo4j Sandbox and Neo4j Browser, and covers graph data modeling, data import, and Cypher querying using graph patterns. The tutorial finishes with a handful of challenges for the reader to reinforce their learning.
+
+https://medium.com/@vladbatushkov/learn-neo4j-cypher-basics-in-30-minutes-94d68a52544[Read the tutorial, role="medium button"]
+
+[[features-6]]
+=== Knowledge Graphs, Natural Language Processing, Cloning Subgraphs, The Organization Graph, and Text Analysis With Hume
+
+
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190829152320/cloning_subgraphs1.png" width="150px"  />
+</div>
+++++
+
+* Hot on the heels of the latest release of https://github.com/jbarrasa/neosemantics[NSMNTX^] last week, https://twitter.com/BarrasaDV[Jesús Barrasa
+^] has published https://jbarrasa.com/2019/08/25/quickgraph8-cloning-subgraphs-between-neo4j-instances-with-cypher-rdf/[Cloning Subgraphs Between Neo4j Instances With Cypher & RDF^].
+*https://www.linkedin.com/in/sohamdhodapkar/[Soham Dhodapkar^] wrote https://neo4j.com/blog/accelerating-towards-natural-language-search-graphs/[Accelerating Towards Natural Language Search with Graphs^] which shows how graphs can be leveraged for Natural Language Processing using tools such as NLTK, SpaCy, CoreNLP, and the GraphAware NLP plugin for Neo4j.
+* Speaking of GraphAware, https://twitter.com/ikwattro[Christophe Willemsen^] published a https://www.youtube.com/watch?v=4v7450n4W70[video demo of importing and analyzing research papers^] using https://hume.graphaware.com/[Hume], a knowledge graph platform built on top of Neo4j.
+* https://twitter.com/unixdaemon[Dean Wilson^] published an https://www.unixdaemon.net/programming/orggraph-update-2019-08/[update in his series about Building the Organization Graph^] showing how to enrich the graph with third-party systems.
+* Curious about knowledge graphs? https://twitter.com/AkashTandon[Akash Tandon]^ wrote an overview of knowledge graphs: https://humansofdata.atlan.com/2019/08/reconciling-your-data-and-the-world-with-knowledge-graphs/[Reconciling Your Data and the World with Knowledge Graphs^]
+
+
+
+=== Tweet of the Week
+
+Our tweet of the week is a sneak peek at a talk from our upcoming NODES online conference:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1166494387016101889[type={type}]
+
+Are you speaking at NODES 2019? Feel free to let the world know about it!

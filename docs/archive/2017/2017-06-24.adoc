@@ -1,0 +1,122 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 24 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-24-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 24 June 2017
+
+[Headline:]
+This Week in Neo4j – 24 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we look at how to create a Neo4j powered Alexa bot, analysing the Neo4j community on twitter, and a write up from the life sciences and healthcare workshop. 
+
+=== Featured Community Member: Daniel Himmelstein
+
+This week’s featured community member is https://twitter.com/dhimmel[Daniel Himmelstein^], Postdoctoral Fellow at University of Pennsylvania. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170622041720/this-week-in-neo4j-24-june-2017.jpg["Daniel Himmelstein - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Daniel Himmelstein - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Daniel is the creator of https://github.com/dhimmel/hetionet[Hetionet^] - an integrative network of biology, disease, and pharmacology. 'hetnet' is actually a word coined by Daniel to describe networks with many types of relationships
+
+There's a hosted Neo4j instance including a walk through guide, which you can play with at https://neo4j.het.io/browser/[neo4j.het.io^] and Daniel https://www.youtube.com/watch?v=jwhAlNgjvMA[spoke about Hetionet at GraphConnect San Francisco 2016^].
+
+Daniel has appeared http://blog.bruggen.com/2016/08/podcast-interview-with-daniel.html[interviewed on the Graphistania podcast^] and recently launched https://github.com/cognoma/cognoma[cognoma^] in collaboration with the DataPhilly and Code for Philly meetups. This project puts machine learning in the hands of cancer biologists.
+
+On behalf of the graph and biology communities, thanks Daniel for all your work!
+
+=== Neo4j life sciences and healthcare workshop in Berlin
+
+Often invisible to the people outside of the field, life-science researchers have been embracing graph databases instead of the traditional triple- and relational-stores.
+
+This week https://twitter.com/aethelraed[Petra Selmer^] and http://twitter.com/mesirii[Michael Hunger^] invited life-science and healthcare researchers and practitioners to Berlin to share their experiences in a full day workshop.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170622040008/neo4j-life-sciences-berlin-group-1024x445.jpg["Neo4j life sciences and healthcare workshop", 640, 278]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Neo4j life sciences and healthcare workshop
+</strong>
+</p>
+++++
+
+And a full day it was: link:https://www.eventbrite.com/e/neo4j-life-health-sciences-day-berlin-tickets-33238223421#[11 planned and 3 ad-hoc presentations and 2 longer workshops^], covering everything from genome, proteome, pathway and systems biology model databases and interactions to actual drug development efforts and plans for improving healthcare, all with the help of graphs.
+
+We were stunned by the breadth of applications and by the enthusiasm and happiness of the presenters. 
+
+Thank you so much to everyone for presenting, discussing and attending, we will definitely run similar events elsewhere and possibly coordinated with the industry conferences. 
+We will publish a longer blog post about the event and also proper proceedings. Daniela Butano from InterMine.org shared her https://intermineorg.wordpress.com/2017/06/23/researchers-connected-in-berlin/[impressions here^]. 
+
+
+=== Analysing Neo4j tweets, IEEE Graph Challenge, Neo4j Alexa Chatbot
+
+* https://twitter.com/ikwattro[Christophe Willemsen^] shared the slides from https://fr.slideshare.net/christophewillemsen/chatbots-and-voice-conversational-interfaces-with-amazon-alexa-neo4j-and-graphaware-nlp[Chatbots and Voice Conversational Interfaces with Amazon Alexa, Neo4j and GraphAware NLP] which was presented at the https://www.meetup.com/Graph-Database-Czech-Republic/[Neo4j Czech Republic meetup^] last week. 
+
+* In https://blog.godatadriven.com/dont-be-a-lonely-document[Don't be a lonely document^] https://twitter.com/rweverwijk[Ron van Weverwijk^] shows how to analyse the GraphConnect/Neo4j tags on twitter and discovers that https://twitter.com/rvanbruggen[Rik Van Bruggen^] is the most retweeted person in the community. 
+
+* The IEEE launched http://graphchallenge.mit.edu/darpa-hive[Graph Challenge^], which aims to provide a well-defined community venue for stimulating research and highlighting innovations in graph analysis software, hardware, algorithms, and systems. You've got until 1st July if you want to submit something. 
+
+* Yash Sharma explains how InterMine are http://yasharmaster.github.io/blog/2017/path-query-cypher-puzzle/[converting PathQuery queries into Cypher^] as part of a a prototype of InterMine which uses Neo4j database at the backend.
+ 
+* Kevin Tardivel wrote https://sonra.io/2017/06/12/benefits-graph-databases-data-warehousing/?d=1[What are the Benefits of Graph Databases in Data Warehousing?^] in which he talks about the benefits of using graphs for data lineage, data orchestration, data cataloguing, and master data management. 
+
+=== Online Meetup: Pheno4J - a gene to phenotype graph databases
+
+In this week’s online meetup https://twitter.com/npontikos[Nikolas Pontikos^] showed us Pheno4J - a gene to phenotype graph database created to make it easier to analyze human DNA and genetic mutations.
+
+youtube::257GarPLym4[type={type}]
+
+You can also find the code in the https://github.com/phenopolis/pheno4j[pheno4j^] repository on GitHub.
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article showing how to use https://neo4j.com/developer/kb/amazon-cloudwatch-configuration-for-neo4j-logs/[Amazon CloudWatch to monitor Neo4j logs^].
+
+And if you're planning to deploy Neo4j on AWS, we've recently created a guide showing how to https://neo4j.com/developer/neo4j-cloud-aws-ec2-ami/[install Neo4j using a custom AMI with AWS command line tools^].
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Wednesday June 28th, 2017 Jhonathan Soares will be presenting https://www.meetup.com/nosqlsp/events/240846850/[an introduction to Neo4j^] at the https://www.meetup.com/nosqlsp/[NoSQL Sao Paulo meetup^]. 
+
+* Also on Wednesday June 28th, 2017 https://twitter.com/danielabutano[Daniela Butano^] and https://twitter.com/barrasadv[Jesús Barrasa^] will be presenting at the https://www.meetup.com/graphdb-london/events/240602643/[Neo4j London meetup^]. Daniela will explain how Intermine use graph databases to explore biological data models and Jesus will debunk some RDF-vs-Property Graph fake news. 
+
+* On Thursday June 29th, 2017 Luciano Almeida will present https://www.meetup.com/Neo4j-Online-Meetup/events/240603466/[OGMNeo - building an Object Graph Mapper for Node.js^] at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online meetup^]. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/_rkstar[David Fudge^]:
+
+tweet::877189378182918144[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

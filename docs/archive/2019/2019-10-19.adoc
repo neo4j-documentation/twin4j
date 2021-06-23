@@ -1,0 +1,190 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - NODES Preview: Data Science & Graph Algorithms, Graphing Brexit, Building a Chat Bot
+
+[Body copy:]
+////
+
+After last week's trip to Sweden for our team offsite and the https://neo4j.com/online-summit[NODES 2019 conference^], this week was a quieter one back at home base. We spent the first half of the week going over all the videos and collecting speakers' slides, which are all now available at https://neo4j.com/online-summit[neo4j.com/online-summit^].
+
+We'll be featuring some of our favourite presentations from the conference in TWIN4j, starting this week with Tuning Cypher by Andrew Bowman, our resident Cypher guru. Andrew even inspired Tomaz Bratanic to try out some of these tuning techniques and has written a blog post of his findings.
+
+Now that NODES is over, we're getting ready for GraphConnect 2020 and need your help to make the developer track as exciting as possible. Read more below to get involved.
+
+And finally, the brand new Neo4j Educator Program was launched, we learn how British MPs vote via the Pearson Similarity algorithm, and there's a comparison of the Northwind dataset in Neo4j and PostgreSQL.
+
+
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Ryan Boyd
+
+This week's featured Neo4j community member is https://twitter.com/ryguyrg[Ryan Boyd^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191018093402/this-week-in-neo4j-19-october-2019.jpg[name="Ryan Boyd"]
+
+Ryan worked at Google and several startups before joining Neo4j, where he led the Developer Relations team alongside Michael Hunger for almost 5 years.
+
+He was instrumental in many highly successful efforts, including the https://www.youtube.com/watch?v=5Tl8WcaqZoc&list=PL9Hl4pk2FsvWM9GWaguRhlCQ-pa-ERd4U[Intro to Graph Databases^] YouTube series and https://neo4j.com/sandbox-v2/[Neo4j Sandbox^], both of which have acted as the first touch point for many users. He also worked on many of the emails you receive when using our services.
+
+But for us he's been at the heart of our team, making sure every member had all the support they needed and helping many of us learn new skills and technologies. 
+
+This week Ryan started a new job as the Head of Developer Relations at Databricks, the creators of Apache Spark. Ryan, we wish you all the best in your new role but will miss you a lot.
+
+https://twitter.com/ryguyrg[Follow Ryan on twitter, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Tuning Cypher
+
+We've started publishing the videos from the recent NODES 2019 conference on YouTube, and first up is Andrew Bowman's talk on Tuning Cypher. 
+
+youtube::QnozzFP_fPo[type={type}]
+
+Andrew is a Customer Success Engineer at Neo4j and prominent member of the Neo4j community on StackOverflow and the community forum. He has helped hundreds (perhaps thousands!) of people with their Cypher queries. In this talk he takes us through the anatomy of a Cypher query, as well as sharing his favourite tips and tricks for making Cypher queries run as fast as possible.
+
+[[features-2]]
+=== GraphConnect 2020: Call for Papers Closing November 15
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191017224602/graphconnect-2020-call-for-papers-deadline1.jpg" width="150px"  />
+</div>
+++++
+
+There's only six months until GraphConnect 2020 and we're approaching the last month of the Call For Papers, which closes on November 15th 2019.
+
+https://twitter.com/lyonwj[Will Lyon^] is responsible for the Developer track on the conference committee, and he needs your help to fill in the schedule! If you're an experienced graphista or are just getting started on your first graph project, we'd love for you to present an experience report so that we can all learn together.
+
+If you're short of ideas, you can always get inspiration by looking at the talks from https://neo4j.com/online-summit/[NODES 2019^] or https://neo4j.com/graphconnect-2018/[GraphConnect 2018^]. And if you'd like to bounce talk ideas off someone, send us an email to devrel@neo4j.com. 
+
+https://www.papercall.io/graphconnect2020/?ref=twin4j[Submit your talk, role="medium button"]
+
+[[features-3]]
+=== British MPs voting similarity, Loading US Lobbying Data, Northwind: Neo4j vs PostgreSQL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191018000455/12498651-the-white-house.jpg" width="150px"  />
+</div>
+++++
+
+* I enjoyed reading Joshua's blog post on https://productmetrics.net/blog/neo4j-graph-database-similarity/[British MP voting similarity^]. Joshua builds a graph of all the votes by MPs since 2017, and then uses the https://neo4j.com/docs/graph-algorithms/current/labs-algorithms/pearson/[Pearson Similarity algorithm^] to compute similarities.
+
+* The video and slides from https://twitter.com/mdavidallen[David Allen^] and https://twitter.com/lyonwj[Will Lyon^]'s https://www.confluent.io/kafka-summit-san-francisco-2019/extending-the-stream-table-duality-into-a-trinity-with-graphs[talk on Neo4j and Kafka^] at Kafka Summit SF 2019 are now available.
+
+* Scott Sosna has written a blog post showing how to https://dzone.com/articles/lobbying-for-fun-and-pleasure[load US lobbying data into Neo4j^], using Neo4j OGM.
+
+* Ray Robinson has written a blog post https://towardsdatascience.com/how-i-learned-to-stop-worrying-and-love-the-graph-database-ef8af4ac7a8[exploring how graph databases can be applied to data analytics projects^]. He also looks at different approaches to visualising graph data.
+
+* I came across a cool blog post showing how to https://ubiquis.co.uk/uncategorized/graph-databases-loading-data-with-neo4j/[load and query the Northwind dataset using Neo4j and PostgreSQL^].
+
+[[features-4]]
+=== Empowering Educators: Neo4j’s New Program for Classroom Instruction
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191017234230/neo4j-educator-program-suad-kamardeen-2-1.jpg" width="150px"  />
+</div>
+++++
+
+This week Jennifer launched the new Neo4j GraphAcademy Educators Program. The new look program has updates specifically for instructors teaching Neo4j in a classroom lab setting.
+
+Members of the educator program will get:
+
+* license and installation of Neo4j Desktop 
+* access to official training materials
+* a dedicated support channel on the https://community.neo4j.com/[community site^]
+ 
+https://neo4j.com/blog/new-neo4-program-empowers-educators/[Read the blog post, role="medium button"]
+
+
+[[features-5]]
+=== Graph model of Facebook post reactions in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191017234612/attribute.png" width="200px"  />
+</div>
+++++
+
+Inspired by Andrew Bowman's Tuning Cypher talk at NODES, Tomaz Bratanic has written a blog post sharing some of his favourite Cypher query optimisations.
+
+Tomaz goes through different models of a synthetic Facebook dataset, comparing query profiles and run times of each approach. After reaching the limits of pure Cypher, Tomaz shows how to squeeze out even more performance using https://neo4j.com/docs/labs/apoc/current/[APOC^], Neo4j's standard library.
+
+https://tbgraph.wordpress.com/2019/10/17/graph-model-of-facebook-post-reactions-in-neo4j-part-1/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mwoerhe[Maria Wörheide^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1182392000680792064[type={type}]
+
+
+////
+
+* I wrote a blog post covering some of the common questions that https://neo4j.com/developer/dates-datetimes-durations/
+
+* https://dzone.com/articles/analyzing-us-lobbying-data-in-neo4j
+
+I'm proud to announce that I've achieved my Reverse Engineering Malware (GREM) Gold Certification. "Leveraging the PE Rich Header for Static Malware Detection and Linking" is now published in the SANS Reading Room!
+https://www.sans.org/reading-room/whitepapers/reverseengineeringmalware/leveraging-pe-rich-header-static-malware-detection-linking-39045 
+
+https://towardsdatascience.com/how-i-learned-to-stop-worrying-and-love-the-graph-database-ef8af4ac7a8
+
+
+https://medium.com/@nsmith_piano/the-perfect-dorm-room-assignment-exploring-the-bipartite-matching-problem-with-neo4j-c59ade420acb
+
+
+
+
+You want to be able to not just put data in to Neo4j, but also get it out??!? Using SSIS?!?!?
+OK then, I got your back - read / watch all about it. https://xclave.co.uk/2019/10/16/using-a-data-flow-to-move-data-from-neo4j-in-ssis/
+
+And one more made it to the @qlik Gallery, think Graph!
+https://community.qlik.com/t5/Qlik-Gallery/TIQSolutions-Fraud-Detection-in-eCommerce/ba-p/1633922 @neo4j #graph #fraudanalysis @TIQSolutions
+
+chris farrellchris farrell @seajay
+Releasing my bloodhound helper tool, cypheroth.
+It helps save time you would have spent running bloodhound cypher queries in the neo4j web interface by dumping all the important info out to spreadsheets. Comes with a great set of starting queries.
+https://github.com/seajaysec/cypheroth https://pbs.twimg.com/media/EG83s1BWwAA4jJ1.png
+
+
+https://towardsdatascience.com/how-i-learned-to-stop-worrying-and-love-the-graph-database-ef8af4ac7a8
+
+https://medium.com/@nsmith_piano/the-perfect-dorm-room-assignment-exploring-the-bipartite-matching-problem-with-neo4j-c59ade420acb
+
+
+https://medium.com/@nsmith_piano/a-market-for-matches-finding-prices-with-neo4j-71ab085f8cd2 
+A market for matches: Finding prices with Neo4j
+
+
+Integration of RDKit and Neo4j #RDKit #Neo4j #GraphDB #Chemoinformatics
+https://iwatobipen.wordpress.com/2019/10/12/integration-of-rdkit-and-neo4j-rdkit-neo4j-graphdb-chemoinformatics/
+
+
+////

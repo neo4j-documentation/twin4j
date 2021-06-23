@@ -1,0 +1,136 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 20 May 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-20-may-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 20 May 2017
+
+[Headline:]
+This Week in Neo4j – 20 May 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Ben Nussbaum
+
+This week's featured community member is Ben Nussbaum, CTO of Neo4j Solution Partner https://www.atomrain.com/[AtomRain^]. 
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170519094945/this-week-neo4j-20-may-2017.jpg" alt="" width="800" height="400" class="alignnone size-full wp-image-65842" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Ben Nussbaum - This week's featured community member
+</strong>
+</p>
+++++
+
+Ben has been an active member of the Neo4j community for the last five years, while building out the https://www.graphgrid.com/[GraphGrid data platform^], which provides hosted Neo4j, graph algorithms, and advanced analytics. 
+
+Ben http://blog.bruggen.com/2016/04/podcast-interview-with-ben-nussbaum.html[appeared^] http://blog.bruggen.com/2016/06/another-podcast-with-ben-nussbaum.html[twice^] on https://twitter.com/rvanbruggen[Rik van Bruggen^]'s https://soundcloud.com/graphistania[Graphistania^] podcast in the first half of 2016 and frequently runs Neo4j training sessions in Los Angeles. 
+
+=== The Neo4j GraphQL Community Graph Hackathon 
+
+My colleague https://twitter.com/lyonwj[Will Lyon^] announced the start of the https://dev-blog.apollodata.com/announcing-the-neo4j-graphql-community-graph-hackathon-c9a94f246c7[Neo4j GraphQL Community Graph hackathon^] which will finish on Monday after the https://graphql-europe.org/[GraphQL-Europe conference^] in Berlin. 
+
+++++
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170519081722/graphql-neo4j-1024x435.jpeg" alt="" width="640" height="272" class="alignnone size-large wp-image-65826" />
+<br /><br />
+++++
+
+If you'd like to take part, https://twitter.com/stubailo[Sashko Stubailo^] has created https://github.com/neo4j-graphql/community-graph-starter-kit[the community graph starter kit^] which provides the skeleton of an application that uses the https://github.com/apollographql/apollo-client[Apollo GraphQL client^] to connect to and query the http://graphql.communitygraph.org/[GraphQL community graph^]. 
+
+=== The Salesforce graph, Software analytics, Automated menu planning
+
+* https://twitter.com/metadaddy[Pat Patterson^] wrote a cool post showing how to https://streamsets.com/blog/visualizing-analyzing-salesforce-data-neo4j/[analyse Salesforce data using Neo4j^]. Pat shows how to import data using the JDBC connector and then shows how to write a query to find the biggest outstanding opportunity. 
+
+* https://twitter.com/d_pawlukiewicz[Dariusz Pawlukiewicz^] has been writing a series of posts  on Neo4j and Cypher, and this week shows how to http://foreverframe.net/neo4j-cypher-2-creating-complex-query/[write complex queries^] as well as explaining the http://foreverframe.net/neo4j-cypher-3-union-with-clasuse/[UNION & WITH clauses^]. 
+
+
+* https://twitter.com/feststelltaste[Markus Harrer^], who featured in https://neo4j.com/tag/twin4j/[#twin4j^] on https://neo4j.com/blog/this-week-neo4j-11-march-2017/[11 March 2017^] and https://neo4j.com/blog/this-week-neo4j-18-march-2017/[18 March 2017^], presented https://www.slideshare.net/feststelltaste/software-analytics-for-pragmatists-devops-camp-2017[Software Analytics for Pragmatists^] at https://devops-camp.de/[DevOps Camp 2017^] in Nürnberg. 
+
+* https://twitter.com/dirkmahler[Dirk Mahler^] has a very detailed post showing how to https://jqassistant.org/shadows-of-the-past-analysis-of-git-repositories/[analyse Git repositories using jQAssistant^] in all sorts of ways. He shows how to write Cypher queries to find experts in domains and technologies, distribution of development activity, potential hotspots in the code, and much more. 
+
+* On the https://techbrunch.gousto.co.uk/[Gousto Tech blog^] https://twitter.com/irenillap[Irene Iriarte^] explains how they've been https://techbrunch.gousto.co.uk/2017/05/18/decyphering-recipes/[combining graph databases and genetic algorithms^] to create an automated menu planning algorithm which produces new recipes for their customers.
+
+* Quackit released a https://www.quackit.com/neo4j/tutorial/[tutorial for learning Neo4j^]. If you've been meaning to give Neo4j a try, this could be your weekend to get started!
+
+=== State of graph databases survey
+
+IBM released the results of their  http://www.zdnet.com/pictures/the-state-of-graph-databases-worldwide/[State of graph databases survey^] where people were asked why they're using graph databases and what they're planning to use them for in future.
+
+++++
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170519085631/ibm-state-of-graphdbs.png" alt="" width="961" height="878" class="alignnone size-full wp-image-65833" />
+<br /><br />
+++++
+
+=== Democratising data at Airbnb
+
+Following on from their talk at GraphConnect Europe last week, Chris Williams and John Bodley explain how Airbnb have developed Dataportal, a novel data resource search and discovery tool 
+https://medium.com/airbnb-engineering/democratizing-data-at-airbnb-852d76c51770[to make sense of their internal data^]. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gayXC2FDSiA" frameborder="0" allowfullscreen></iframe>
+++++
+
+Dataportal combines Flask, ElasticSearch, and Neo4j to help employees discover and then search data that would usually only be available in team specific silos. 
+
+ComputerWorld UK also have a detailed http://www.cio.com/article/3196730/data-management/article.html#tk.rss_all[write up of the talk^].
+
+=== Neo4j available on AWS & Azure Marketplace
+
+As of this week Neo4j is now https://neo4j.com/blog/neo4j-microsoft-azure-marketplace-part-1/[available in the Azure Marketplace^] as well as the https://aws.amazon.com/marketplace/pp/B071P26C9D[AWS Marketplace^]. 
+
+++++
+<div style="text-align: center;">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170519083351/azure-1024x542.png" alt="" width="640" height="339" class="alignnone size-large wp-image-65831" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Neo4j is now available in the Azure Marketplace
+</strong>
+</p>
+++++
+
+If you use either of those cloud providers be sure to give it a try and let us know how you get on. 
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article showing how to https://neo4j.com/developer/kb/how-do-i-compare-two-graphs-for-equality/[compare two graphs for equality^] using Cypher and http://neo4j-contrib.github.io/neo4j-apoc-procedures/#_utilities[APOC's md5 function^]. 
+
+=== On the Podcast: Darko Križić
+
+On the Graphistania podcast this week we have http://blog.bruggen.com/2017/05/podcast-interview-with-darko-krizic.html[an interview with Darko Križić^], the CTO of Neo4j partner https://twitter.com/PRODYNAAG[PRODYNA^].
+
+Darko has been working on Neo4j projects for the last couple of years and chats with Rik about how they got into graph databases at PRODYNA, why graphs work well for modeling complex domain models, and the Cypher query language. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/NovasTaylor[Tim Williams^]:
+
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/LinkedData?src=hash">#LinkedData</a> This is not a graph *of* the data, the graph *IS* the data. <a href="https://twitter.com/hashtag/clinicaltrials?src=hash">#clinicaltrials</a> <a href="https://twitter.com/PhUSETwitta">@PhUSETwitta</a> <a href="https://twitter.com/CDISC">@CDISC</a> <a href="https://twitter.com/hashtag/rstats?src=hash">#rstats</a> <a href="https://twitter.com/hashtag/RDF?src=hash">#RDF</a> <a href="https://twitter.com/hashtag/SemanticWeb?src=hash">#SemanticWeb</a> <a href="https://t.co/QFmY5fNT5t">pic.twitter.com/QFmY5fNT5t</a></p>&mdash; Tim Williams (@NovasTaylor) <a href="https://twitter.com/NovasTaylor/status/862676517280731137">May 11, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

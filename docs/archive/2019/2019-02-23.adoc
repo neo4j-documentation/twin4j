@@ -1,0 +1,180 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+It's been another fun week in the world of Neo4j, the highlight of my week being the online meetup where Lju and I had a great time showing off the BBC GoodFood graph that we've been working on. There were lots of questions about graph modeling, so be sure to check that out. 
+
+Andrea Santurbano continues with his series of posts about integrating Neo4j with Kafka, and If you're deploying to the cloud this is your lucky week as David Allen shares scripts for automating the whole process on AWS and GCP. 
+
+And if that wasn't enough, we also had the winter release of the APOC library, and Luanne Misquitta shows us how to build and query a software dependency graph.
+
+Elsewhere, our colleagues in marketing land are halfway through GraphTour EU, having already visited Milan, Tel Aviv, Amsterdam, and Madrid. If you want to see what's been going on, our colleague Eva has been https://www.instagram.com/stories/highlights/18003677119192763/[sharing pictures and videos from the events on Instagram^]. 
+
+
+[[featured-community-member]]
+=== Featured Community Member: Calin Constantinov
+
+This week's featured community members is https://www.linkedin.com/in/calinconstantinov/[Calin Constantinov^], SAP Hybris Java Technical  Lead and Neo4j Specialist.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190222063736/this-week-in-neo4j-23-february-2019.jpg[name="Calin Constantinov"]
+
+Calin is a PhD at University of Craiova in Bucharest, Romania. He is a graph-enthusiast and a Neo4j Certified Developer. Last year, during Graph Tour in Europe, Calin submitted himself as a speaker for our community events and was booked at Bucharest Big Data as a presented on 'Uncovering Hidden Insights through Graphs'. 
+
+To our surprise, we discovered this wasn't his first presentation when we found https://www.youtube.com/watch?v=D09NuL8K_fY[this video^] (it's in Romanian) of his presentation at iQuest on 'Socially Enhanced Data Analysis' earlier that year. 
+
+As you would expect, Calin didn't stop spreading graph-love. He continued his advocacy and involvement in the community. His passion of graphs and wanting to help others learn recently got him accepted to give https://bigdata.ro/2019/02/06/introduction-to-neo4j[a training session on Neo4j at Big Data Romania^]. We're grateful to have you in the community, Calin. Thank you for sharing your knowledge with others. 
+
+link:https://www.linkedin.com/in/calinconstantinov/[Connect with Calin on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== How to ingest data into Neo4j from a Kafka stream
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190222051137/1_0RNrK1OSS779TJ6F3sysjQ.png" width="350px"  />
+</div>
+++++
+
+In the 2nd article of his series about leveraging Neo4j Stream, https://twitter.com/santand84[Andrea Santurbano^] explains how to bring Neo4j into your Apache Kafka flow by using the Sink module of the Neo4j Streams project in combination with Apache Spark’s Structured Streaming Apis.
+
+This is all done using an Italian Ministry of Health dataset, and Andrea provides a https://github.com/conker84/leveraging-neo4j-streams[Docker compose template^] to help others quickly get up and running. 
+
+link:https://medium.freecodecamp.org/how-to-ingest-data-into-neo4j-from-a-kafka-stream-a34f574f5655[Read the blog post, role="medium button"]
+
+[[features-2]]
+=== Lean Dependencies- Reduce Project Delivery Chaos with Graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190222070321/business_value_model.png" width="200px"  />
+</div>
+++++
+
+Dependency management is a very common use case for graphs, and in her latest post  https://twitter.com/luannem[Luanne Misquitta^] shows how we can build a dependency graph of tasks in a software project.
+
+Once the graph is created, Luanne describes the types of problems it can solve, including task prioritisation and evaluating the impact of tasks on the rest of the project.
+
+link:https://graphaware.com/neo4j/lean/2019/02/20/lean-dependencies-graph.html[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== How to Automate Neo4j Deploys on AWS and GCP
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190222061933/neo4j-cloud.jpg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/mdavidallen[David Allen^] has started writing a series of blog posts on automating Neo4j deploys on cloud platforms.
+
+David shares shell scripts that automate the whole process. These are especially useful for when you want to integrate Neo4j into your CI/CD pipeline and be able to create/destroy instances temporarily, and also just to spin up a sample instance. 
+
+* https://medium.com/neo4j/how-to-automate-neo4j-deploys-on-aws-2f36b7386e4c[How to Automate Neo4j Deploys on AWS^]
+
+* https://medium.com/neo4j/how-to-automate-neo4j-deploys-on-google-cloud-platform-gcp-6e123eccfd5e[How to Automate Neo4j Deploys on Google Cloud Platform (GCP)^]
+
+[[features-4]]
+=== Building the BBC GoodFood Graph
+
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], https://twitter.com/ellazal[Lju Lazarevic^] and I showed how to build a graph of https://www.bbcgoodfood.com/[BBC GoodFood^] recipes. 
+
+youtube::nEIJmH6FIjs[type={type}]
+
+In the talk we showed how to model the raw data as a graph, how to import it using the https://neo4j.com/developer/neo4j-apoc/[APOC library^], and after showing some basic queries, wrote a more complex one that found recipes that didn't contain any of my allergens.
+
+We've also written a couple of blog posts about our work. In https://medium.com/neo4j/whats-cooking-approaches-for-importing-bbc-goodfood-information-into-neo4j-64a481906172[part one^] Lju walks through the data import and modeling, and in https://medium.com/neo4j/whats-cooking-part-2-what-can-i-make-with-these-ingredients-7df9dc129993[part two^] I show how to build up queries.
+
+[[features-5]]
+=== APOC Winter Release and Documentation Refresh
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190222060246/neo4j-larus-logo-apoc-200.png" width="150px"  />
+</div>
+++++
+
+This week we had the winter release of the popular APOC library, which contains a new procedure to clone and re-anchor sub graphs, functions for fingerprinting graphs, as well as a function to allow inspection of free storage. 
+
+My favourite part of this release, however, is the http://neo4j-contrib.github.io/neo4j-apoc-procedures/3.5/[brand new documentation pages^]. Functionality is now grouped by type, so no longer will you need to search across the whole page to find what you're looking for. 
+
+You can install the latest version of the APOC library from the https://neo4j.com/developer/neo4j-desktop/[Neo4j Desktop application^]. 
+
+
+
+link:https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/3.5.0.2[Read the release post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/nunenuh[Lalu Erfandi Maula Yusnu^]:
+
+tweet::1097496827153113089[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+[[articles-1]]
+=== Elsewhere, 
+
+s
+
+Jamie Gaskins@jamie_gaskins
+Just released the @neo4j @Crystallang driver v0.3.0 with an experimental streaming API and support for Neo4j 3.4+ temporal and spatial types https://github.com/jgaskins/neo4j.cr#streamquery--string-parameters--hashstring-neo4jtype-experimental 
+
+Bert@taseroth
+played around the the data from @opencorporates and imported the german handelsregister into @neo4j. Fun experience and learned quite a bit.
+
+https://faboo.org/2019/02/handelregister-neo4j/
+
+abc
+
+
+
+link:https://r.neo4j.com/2TpqlIn[Read the blog post, role="medium button"]  
+
+
+
+
+
+[[articles-1]]
+=== Graphing yourself, New Scala Driver, New Release on Google Cloud Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111074314/1_H4YN_BOKECgFDZ8icF7tMg.png" width="150px"  />
+</div>
+++++
+
+* tada  - https://tech.findmypast.com/graphical-family-tree/ 
+
+Graphing the Poets 
+https://medium.com/@kirbyurner/graphing-the-poets-b600c86d6b9 
+
+////

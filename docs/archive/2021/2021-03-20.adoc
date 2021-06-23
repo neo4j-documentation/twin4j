@@ -1,0 +1,168 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+In this week's video, Dr Jim Webber talks about the growing importance of Graph Data Science. 
+
+Pavan Kumar Kattamuri visualises Google Cloud IAM, Papa Yaw Ofori-Afriyie gives us an intro to graph databases, and Rik Van Bruggen published The Lockdown Anniversary session of Graphistania.
+
+And finally, Sixing Huang analyses genomes using graphs
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Frédéric Daniel
+
+This week's featured community member is Frédéric Daniel.
+
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210318000748/this-week-in-neo4j-20-march-2021.jpg[name="Frédéric Daniel"]
+
+Frédéric is the Chief Technology Officer at Transparency-One,  who make supply chain software that helps businesses create a healthier, safer, and more sustainable world for consumers. He's been in the software industry for more than 20 years and previously worked at SAP, BusinessObjects, and Deloitte & Touche.
+
+Frédéric's colleagues at Transparency-One have https://neo4j.com/case-studies/transparency-one/[presented on their use of graphs at multiple GraphConnect conferences^], and Frédéric himself recently presented  https://www.youtube.com/watch?v=0DTPNY9dCIs&t=68s[Leveraging Graphs for Sustainable and Responsible Sourcing^] at the https://neo4j.com/connections/risk-mitigation/[Graphs for Risk Mitigation in Supply Chains Connections^] event.
+
+In the talk, Frédéric explains why graphs are great at querying supply chains and takes us through some of the questions that they've been able to answer. 
+
+
+https://www.linkedin.com/in/fredericdaniel/[Connect with Frédéric on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== The Growing Importance of Graph Data Science
+
+Our video this week is a two part interview about Graph Data Science with Dr Jim Webber, Neo4j's Chief Scientist. 
+
+image::https://dist.neo4j.com/wp-content/uploads/20210318003624/Screenshot-from-2021-03-18-07-36-08.png[link="https://datastorageasean.com/video-executive-interviews/neo4j-chief-scientist-explains-growing-importance-graph-data-science-part", window="_blank"]
+
+In part 1, Jim defines Graph Data Science and explains the benefits that it provides to Data Scientists. He also covers some popular use cases. In part 2, Jim describes the tools that comprise the graph platform and shares his experiences getting businesses started with graphs.
+
+////
+
+youtube::FAJaWAUTGOI[type={type}]
+////
+
+[[features-2]]
+=== Exploring Neo4j by visualizing Google Cloud IAM hierarchy
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210318001246/social-icon-google-cloud-1200-630.png" width="150px"  />
+</div>
+++++
+ 
+Pavan Kumar Kattamuri has written a blog post showing how to use Neo4j for identity and access management.
+
+Pavan visualises some dummy data which replicates Google Cloud IAM resource hierarchy, roles, permissions and Identities. He then writes queries to find the roles associated with users and service accounts.
+
+https://pavankumarkattamuri.medium.com/explore-neo4j-by-visualizing-google-cloud-iam-hierarchy-2da562eaa855[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Analyzing Genomes in a Graph Database
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210318001133/1_iz3dnqvS8-A7JEYui-tZEg.png" width="200px"  />
+</div>
+++++
+
+Sixing Huang explains how to compile, compare and analyze KEGG functional orthologs (KO numbers) inferred from all described bacterial species genomes using graphs.
+
+After importing the data using Cypher's LOAD CSV command, Sixing explores the data using both Cypher queries and the Neo4j Bloom visualisation tool. 
+
+https://medium.com/geekculture/analyzing-genomes-in-a-graph-database-27a45faa0ae8[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Graphistania: The Lockdown Anniversary session, Refactoring Graphs, Performance Testing
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* In the latest episode of Graphistania, Rik and Stefan go through http://blog.bruggen.com/2021/03/graphistania-20-lockdown-anniversary.html[all the graph content produced^] since the first Coronavirus lockdowns in March 2020.
+
+* Lju Lazarevic shows https://lju.medium.com/lets-model-and-l%CC%B5o%CC%B5a%CC%B5d%CC%B5-refactor-some-data-4161e768135[how to refactor a graph model^].
+
+* NaveenKumar Namachivayam published https://github.com/QAInsights/neo4j-locust[neo4j-locust^], a library that helps you to performance test Neo4j from Locust.
+
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Demystifying Graph Databases
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210318001041/0_27VbxNIEzTcgROgw.jpeg" width=150px"  />
+</div>
+++++
+
+Papa Yaw Ofori-Afriyie gives us an introduction to graph databases with the help of graph containing Uncle Kojo's family tree.
+
+Papa shows how the graph model contrasts with a relational model and also describes use cases where graphs excel.
+
+https://medium.com/rancard/demystifying-graph-databases-29e69f8c33e8[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/amorgner[Axel Morgner^]:
+
+tweet::1371970387253280774[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+
+* https://medium.com/larus-team/testing-polyglot-libraries-with-github-actions-20669ae19238
+
+
+
+////

@@ -1,0 +1,166 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 24 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-17-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – New Data Science Online Courses, Finding Fraud, Using Neo4j With Laravel, New NSMNTX Release, Graph Algorithms From OSCON, and More!
+
+[Body copy:]
+////
+
+Howdy folks-
+
+Included this week are several great videos to share with you, so find your headphones and pop some popcorn before settling into another edition of This Week In Neo4j!
+
+This week we have two new data science focused online trainings that are now available, a blog series about finding fraud with Neo4j, a new release of NSMNTX (a Neo4j plugin for working with RDF data), a graph algorithms talk from OSCON, a post about using GraphQL with Neo4j, a look at exploring League of Legends in Neo4j, Cypher index hints, powering data discovery systems with Neo4j, and a look at migrating dimensional models into property graphs.
+
+Before digging in to Twin4j this week, if you’ve used the https://grandstack.io/docs/neo4j-graphql-overview.html[Neo4j GraphQL integrations^] or https://grandstack.io/[GRANDstack^] I’d appreciate if you could take a few minutes to fill out https://grandstack.io/survey[this short survey^] to help guide the future of Neo4j GraphQL.
+
+Thanks and enjoy!
+
+Cheers,
+William Lyon and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Andreas Berger
+
+Our featured community members this week is Andreas Berger
+
+Andreas Berger is a freelance software developer from Dresden, Germany. Usually he works for clients in energy, retail and telecommunication. He fell in love with Neo4j about 2 years ago and started to use it successfully in some of his client projects.
+
+featured::http://cdn.neo4jlabs.com/images/twin4j_8.24.2019.png[name="Andreas Berger"]
+
+Andreas has been actively contributing to a number of open-source projects, for Neo4j those were Spring-Data-Neo4j and Neo4j-OGM. Most recently he contributed a massive amount of work to the https://grandstack.io/docs/neo4j-graphql-java.html[neo4j-graphql-java project^], improving it in many areas and adding substantial new features. Thanks a lot for your contributions Andreas!
+
+If you want to connect to Andreas, please follow https://twitter.com/Andreas_8erger[him on Twitter].
+
+[[features-1]]
+=== New Data Science And Applied Graph Algorithms Online Trainings
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://cdn.neo4jlabs.com/graphacademy/data-science/img/datascience.png" width="200px"  />
+</div>
+++++
+
+The https://neo4j.com/graphacademy/[GraphAcademy team^] has released two new free online courses to help you take advantage of graph based data science and machine learning techniques. 
+
+The first course, https://neo4j.com/graphacademy/online-training/data-science/[Data Science with Neo4j^] shows how to use Neo4j with Python data science tools like Pandas, matplotlib, and scikit-learn, including how to use Neo4j graph algorithms like PageRank and graph based feature extraction for machine learning models. 
+
+The second course, https://neo4j.com/graphacademy/online-training/applied-graph-algorithms/[Applied Graph Algorithms^] is designed for the application developer who wants to take advantage of graph algorithms to enhance applications. This course starts with a simple business search web application that uses React, Neo4j, and the Yelp public dataset then shows how to use graph algorithms like PageRank, community detection, and similarity metrics to add personalization features.
+
+https://neo4j.com/blog/announcing-data-science-with-neo4j-and-applied-graph-algorithms-online-training-courses/[Read more about the new courses^] or check out this brief overview video:
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fx5KefPFrJ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++
+
+https://neo4j.com/graphacademy/online-training/[Enroll today, role="medium button"]
+
+[[features-2]]
+=== Finding Fraud With Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190823114026/ccthief.png" width="200px"  />
+</div>
+++++
+
+Graph champ https://twitter.com/maxdemarzi[Max De Marzi^] wrote a two-part series on finding fraud with Neo4j.
+
+In the https://maxdemarzi.com/2019/08/19/finding-fraud/[first post^] he walks us through modeling credit card transactions as a graph and how to create a linked list of the transactions. Then he shows us how to use the Cypher variable length path operator and date range filters to zero in on merchants where credit card fraud occurred and all the users impacted. He then shows how to optimize the model for scale and performance. In the https://maxdemarzi.com/2019/08/20/finding-fraud-part-two/[second post^] Max digs into finding fraud rings with Neo4j and the graph algorithms plugin for Neo4j. He uses the union find algorithm to find connected components and group suspicious actors into fraud rings.
+
+Like all of Max’s posts these are filled with lots of Cypher examples so you can see exactly how to apply these techniques.
+
+https://maxdemarzi.com/2019/08/19/finding-fraud/[Read the blog series, role="medium button"]
+
+[[features-3]]
+=== Connecting the Dots: Graph Databases and Laravel
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="http://cdn.neo4jlabs.com/images/laracon.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/keithdamiani[Keith Damiani^] presented https://www.youtube.com/watch?v=eVkTIg2D7NY[Connecting the Dots: Graph Databases and  Laravel^] at Laracon US 2019. Keith starts off the talk with a fun graph-based introduction, compares relational databases and graph databases, then hits us with some graph theory. Then after walking through some common graph database use cases and discussing the advantages of using graphs for each he shows how to use Cypher and Neo4j Browser. Finally he introduces the various options for using Neo4j with Laravel including https://github.com/Vinelab/NeoEloquent[NeoEloquent^], the https://github.com/graphaware/neo4j-php-client[GraphAware PHP client^], and a new driver that he’s working on which he used to build https://larapals.com[Larapals^] a social network with the goal of helping you meet people that are outside your current network of friends. We’re looking forward to seeing the new driver when Keith releases it!
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eVkTIg2D7NY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++
+
+https://www.youtube.com/watch?v=eVkTIg2D7NY[Watch the video, role="medium button"]
+
+[[features-4]]
+=== New Release of NSMNTX For Working With RDF In Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="http://cdn.neo4jlabs.com/images/neosemantix.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/BarrasaDV[Jesús Barrasa^] has released a https://github.com/jbarrasa/neosemantics[new version of NSMNTX^], a Neo4j plugin that enables the use of RDF (a W3C standard model for data interchange) in Neo4j. NSMNTX makes it possible to store RDF data in Neo4j, export property graph data from Neo4j as RDF, as well as model mapping and inferencing on Neo4j graphs. As part of the release Jesús has also written a very comprehensive  http://jbarrasa.github.io/neosemantics/[user manual^] for NSMNTX with lots of usage examples. You can also find examples of using NSMNTX on https://jbarrasa.com/category/graph-rdf/[Jesús’ blog^]
+
+https://github.com/jbarrasa/neosemantics[Check out the plugin, role="medium button"]
+
+[[features-5]]
+=== Graph Algorithms: Predict Real-World Behavior
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="http://cdn.neo4jlabs.com/images/oscon_algos.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/amyhodler[Amy Hodler^] and I gave a talk at OSCON 2019 in Portland showing how to use graph algorithms with Neo4j and this week the video recording became available on the http://r.neo4j.com/youtube[Neo4j YouTube channel^].
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z6V242UPQSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++
+
+The talk covers graph algorithms, when and why you should use them, how to use them in Neo4j and in the context of a web application powered by Neo4j. Then we also introduce the https://medium.com/neo4j/introducing-neuler-the-graph-algorithms-playground-d81042cfcd56[Graph Algorithms Playground^] (also known as NEuler) a graph app for Neo4j Desktop that makes it super easy to use graph algorithms without writing any code. If you haven’t tried NEuler you can install it from the https://install.graphapp.io[Graph Apps Gallery^].
+
+For our friends in the Pacific Northwest, see how many Portland memes you can find hidden in the presentation ;-)
+
+https://www.youtube.com/watch?v=Z6V242UPQSo[Watch the video, role="medium button"]
+
+[[features-6]]
+=== GraphQL With Neo4j, League of Legends, Data Discovery at Airbnb and Lyft, Cypher Index Hints, and Dimensional Models In Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="http://cdn.neo4jlabs.com/images/dataportal_arch.png" width="150px"  />
+</div>
+++++
+
+* https://twitter.com/MuddyBootsCode[Michael Porter^] gives us some insight into his experience working with https://grandstack.io/[GRANDstack^] in his post https://dev.to/muddybootscode/neo4j-graphql-a-match-made-in-heaven-43a6[Neo4j & GraphQL A Match Made in Heaven^]. And no, Michael, the match wasn’t made in heaven but rather in https://neo4j.com/labs/[Neo4j Labs^] ;-)
+* https://medium.com/@jimmy.crequer[Jimmy Crequer^] shows us how to explore League of Legends data in Neo4j, including data import, verifying the data model and querying with Cypher in this post, https://medium.com/@jimmy.crequer/playing-around-league-of-legends-with-neo4j-prologue-87650ceae1c[Playing Around With League of Legends with Neo4j -Prologue^]. Be sure to https://medium.com/@jimmy.crequer[follow Jimmy on Medium^] to catch the next posts where he plans to show how to build a more complex graph and dig into match statistics.
+ * In the post https://towardsdatascience.com/how-linkedin-uber-lyft-airbnb-and-netflix-are-solving-data-management-and-discovery-for-machine-9b79ee9184bb[How LinkedIn, Uber, Lyft, Airbnb and Netflix are Solving Data Management and Discovery for Machine Learning Solutions^], https://twitter.com/jrdothoughts[Jesus Rodriguez^] digs into how companies like Airbnb and Lyft are using Neo4j to power data discovery systems as part of their machine learning stacks.
+* https://twitter.com/luannem[Luanne Misquitta^] shows us how to get more performance out of Cypher by hinting which index to use in https://graphaware.com/neo4j/2019/08/19/cypher-index-hints.html[Cypher: Using Index Hints^]
+* Ever wondered how to deal with dimensional models in Neo4j? https://twitter.com/ElLazal[Lju Lazarevic^] shows us how to migrate dimensionally modelled data into Neo4j https://medium.com/@lju/how-to-recreate-a-dimensional-model-in-neo4j-a-quick-example-3fbed9ee6f0d[in this post^].
+
+
+
+=== Tweet of the Week
+
+Our tweet of the week is an early review of the new data science online trainings.
+
+// https://twitter.com/nsmith_piano/status/1164909455575851009
+
+tweet::1164909455575851009[type={type}]
+
+Feel free to share your feedback with us on twitter as well, we love hearing from you!

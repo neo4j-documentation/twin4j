@@ -1,0 +1,202 @@
+﻿:linkattrs:
+:type: "web"
+
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 24 February 2018, including projects around <insert-topics-here>
+
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+
+[Body copy:]
+////
+
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have a new release of APOC, Neo4j in RMarkdown, finding duplicate users, Cypher for Gremlin, and more.
+
+
+=== Featured Community Member: Irene Iriarte Carretero
+
+
+This week’s featured community member is https://twitter.com/irenillap[Irene Iriarte Carretero^], Data Scientist at https://twitter.com/GoustoTech[Gousto^]. 
+
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180301235016/this-week-in-neo4j-3-march-2018.jpg[name="Irene Iriarte Carretero"]
+
+
+I first met Irene at a Neo4j London meetup 18 months ago when she was exploring whether her team could use graphs to make sense of recipe data.
+
+
+Within 6 months of attending that meetup Irene had https://speakerdeck.com/goustotech/decyphering-recipes[presented at the London meetup^] and https://techbrunch.gousto.co.uk/2017/05/18/decyphering-recipes/[written a blog post^] explaining how her team were now using Neo4j to build recipe ontologies.
+
+
+Irene went on to present at GraphConnect NYC 2017 and at this week's GraphTour London event. The London event wasn't recorded but you can find the video from Irene's talk in New York below.
+
+
+youtube::la2orTKxynw[type={type}]
+
+
+On behalf of the Neo4j community, thanks for all your work Irene!
+
+
+=== Documentum Recommendation Engine, Russian Twitter Trolls, Finding Duplicate Users
+
+
+++++
+<div style="float:right; padding: 2px        ">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180126035408/konstantin.png" width="150px" />
+</div>
+++++
+
+
+* https://twitter.com/artika4biz[Yuri Simione^] has https://www.linkedin.com/pulse/graph-databases-ecm-yuri-simione/[written a blog post^] about a content recommendation engine for the Documentum Content Server that he's been working on. Yuri is looking for Documentum users to beta test the technology so get in touch if that's you.
+
+
+* In https://twitter.com/maxdemarzi[Max De Marzi^]'s https://maxdemarzi.com/2018/02/23/replicants/[latest blog post^] he shows how to write a user defined procedure that combines graph pattern matching and fuzzy text search to find duplicate people in a graph.
+
+
+* https://twitter.com/lyonwj[Will Lyon^] presented https://www.youtube.com/watch?v=wtP2Y8S2XBE[Graph Analysis of Russian Twitter Trolls Using Neo4j^] at Stanford's EE Computer Systems Colloquium.
+
+
+* https://twitter.com/donvito[Melvin Vivas^] https://www.melvinvivas.com/neo4j-in-docker/[wrote an experience report^] of using Neo4j for the first time. Melvin shares some useful resources for learning about Cypher and shows how to build a graph of your family tree.
+
+
+=== APOC adds HDFS support, aggregation functions, and path functions
+
+
+This week https://twitter.com/mesirii[Michael^] https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/3.3.0.2[released^] a new version of the popular https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC^] library. The library just crossed 500 GitHub stars so thanks to everyone for your support.
+
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180301031041/apoc-library-release-march-2018-neo4j-desktop.jpg["APOC Release", 800, 352.8, class="alignnone size-full wp-image-66813"]
+
+
+++++
+<br />
+++++
+
+
+This release has lots of new goodies to play with, including support for writing and reading from HDFS, using S3 URIs when loading data, aggregation functions, full document indexing, path expander sequences, and much more.
+
+
+The library now contains more than 400 procedures and functions so there's bound to be something in there that's useful for your project. 
+
+
+Don't forget to star the project if it's been helpful so that more people can find it.
+
+
+++++
+<!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/neo4j-contrib/neo4j-apoc-procedures" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star neo4j-contrib/neo4j-apoc-procedures on GitHub">Star</a>
+++++
+
+
+
+
+=== Cypher for Gremlin, Neo4j in RMarkdown, Cypher vs SQL aggregations
+
+
+* Benjamin Raethlein https://blogs.sap.com/2018/02/27/recap-neo4j-graphtour-berlin-2018/[shared his notes from GraphTour Berlin^], at which the Cypher for Gremlin plugin https://groups.google.com/forum/#!msg/gremlin-users/XyNyokDN1A8/1eUfLscRBgAJ[was announced^]. If you want to give it a try you can grab it from the https://github.com/opencypher/cypher-for-gremlin[cypher-for-gremlin^] repository.
+
+
+* https://twitter.com/_colinfay[Colin Fay^] has started working on https://github.com/ThinkR-open/rmd4j[rmd4j^], which aims to provide a knitr engine for running Neo4J inside RMarkdown. This one is still in its early stages so don't forget to give Colin some feedback if you try it out.
+
+
+* Conrad Taylor has https://netikx.wordpress.com/2018/02/27/making-true-connections-in-a-complex-world-graph-database-technology-and-linked-open-data/[written up some notes^] from the NetIKX January meeting. There's an interesting comparison of Relational and Graph Databases and also a discussion of linked data and the semantic web.
+
+
+* I rediscovered a 2015 post on the JOOQ blog that https://blog.jooq.org/2015/05/05/how-sql-group-by-should-have-been-designed-like-neo4js-implicit-group-by/[compares and contrasts the way that Cypher and SQL deal with aggregation queries^]. If you've ever wondered how Cypher's count() function works this post has a great explanation.
+
+
+* In http://www.hascode.com/2018/02/implementing-testing-and-running-procedures-for-neo4j/[Implementing, Testing and Running Procedures for Neo4j^] Micha Kops shows how to implement a stored procedure to fetch quality metrics from a graph in a step by step tutorial.
+
+
+=== On the podcast: Jonathan Schmidt
+
+++++
+<div style="float:right; padding: 2px        ">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180302022459/jonathan-podcast.jpg" width="150px" />
+</div>
+++++
+
+This week on the podcast Rik http://blog.bruggen.com/2018/02/podcast-interview-with-jonathan-schmidt.html[interviewed^] Jonathan Schmidt, founder and CTO of https://twitter.com/waykonect[Waykonect^], a startup that offers intelligent vehicle management based on Neo4j. 
+
+
+Jonathan explains how Waykonect use Neo4j to map the relationship between the telematic dongle, the vehicle, the account that manages the vehicle, the driver that drives the vehicle, the trips that are recorded, events that happen on that trip, and the maintenance of the vehicle.
+
+
+In a very interesting technical discussion they also talk about the rest of Waykonect's architecture, including Kafka as the messaging back bone and InfluxDB for time series analysis.
+
+
+
+
+=== Next Week
+
+
+What’s happening next week in the world of graph databases?
+
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+
+| March 5th 2017 | https://www.meetup.com/graphdb-france/events/247647877/[Machine learning, Knowledge base & Amazone Alexia, le tout avec du Graphe !^] | https://www.meetup.com/graphdb-france/[Graph Database - Paris^] | https://twitter.com/VlastaKus[Dr. Vlasta Kus^], https://twitter.com/ikwattro[Christophe Willemsen^]
+
+
+| March 6th 2017 | https://www.eventbrite.com/e/neo4j-graphtour-paris-tickets-41753339362[GraphTour Paris^] | https://www.meetup.com/graphdb-france/[Graph Database - Paris^] | Mix of Neo4j and customer speakers 
+
+
+| March 6th 2017 | https://www.meetup.com/Copenhagen-Graph-Databases-Meetup/events/247707206/[Copenhagenizing Graph Databases: Demos and Real-World Applications^] | https://www.meetup.com/Copenhagen-Graph-Databases-Meetup[Copenhagen Graph Databases Meetup^] | Thomas Frisendal, Maria Scharin, Fabio Lamanna and Omar Rampado, Thomas Thejn, Pedro Parraguez 
+
+
+| March 8th 2017 | https://www.eventbrite.com/e/neo4j-graphtour-stockholm-tickets-41753388509[GraphTour Stockholm^] | https://www.meetup.com/Friends-of-Neo4j-Stockholm/[Friends of Neo4j Stockholm^] | Mix of Neo4j and customer speakers 
+
+
+| March 8th 2017 | https://www.meetup.com/graphdb-sf/events/247840227/[Data Science in Practice: Importing and Visualizing Facebook Data Using Graphs!^] | https://www.meetup.com/graphdb-sf[Graph Database - San Francisco^] | Ray Bernard, Jennifer Webb
+
+
+|=========================================================
+
+
+
+
+=== Tweet of the Week
+
+
+My favourite tweet this week was by https://twitter.com/davidmeza1[David Meza^]:
+
+tweet::968250401798742027[type={type}]
+
+
+Don't forget to RT if you liked it too. 
+
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+
+++++
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+++++

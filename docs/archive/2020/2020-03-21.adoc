@@ -1,0 +1,134 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hello, fellow nodes!
+
+It’s been a busy week in the world - in general and at Neo4j! We hope everyone is staying safe out there and finding new and creative ways to engage and contribute. We have a variety of opportunities coming up for projects, events, and content, and we hope to (virtually) see you there!
+
+Our GraphTour Europe is going digital. Join us in https://neo4j.com/graphtour/paris/[Mar 26 in Paris^], https://neo4j.com/graphtour/rome/[Mar 31 in Rome^] and https://twitter.com/AgileLARUS/status/1239855241773879296[on Mar 30 for the Rome pre-meetup^].
+
+This week we announce the Graphs4Good Hackathon, look at Cypher Projections in the Graph Data Science Library, learn about Cypher Tuning, and a found lot of cool articles, projects and repositories.
+
+Cheers,
+https://twitter.com/mesirii[Michael^], https://twitter.com/JMHReif[Jennifer^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Members: Nikita Wootten and Eric Solender
+
+This week's featured community members Eric (CTO) and Nikita (Chief Data Scientist) work at the startup https://mindstand.com/[Mindstand^] in Catonsville, MD (just the place my wife Tina spent a year as an exchange student in '92). At Mindstand they work on a safety management tool that detects online harassment, hate speech, and other troubling behaviors.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200320152958/featured-21march.png[name="Nikita Wootten, Eric Solender"]
+
+As many other Go users, they wanted to connect their applications to Neo4j without a c-binding and so couldn't use the official driver. They took the driver that John Nadratowski had started a while ago and rewrote the internals, upgraded the supported bolt protocol, added https://github.com/mindstand/gogm[an OGM^] (https://github.com/mindstand/gogm-example[(example)^] and https://github.com/mindstand/go-cypherdsl[a Cypher DSL^]. Pretty impressive work. You find their https://github.com/mindstand/go-bolt[Go driver implementation here^], with more documentation and an introductory article to follow.
+
+Thanks a lot Eric and Nikita for all your hard work, looking forward to the feedback from our Go user community and collaboration with the drivers team.
+
+https://twitter.com/erictg97[Follow Eric on Twitter!, role="medium button"]
+
+[[features-1]]
+=== Join the Graphs4Good GraphHack
+
+Leading up to Leonard Euler's birthday on April 15, we encourage all of you to join or realize an idea that makes our world a better place. We can definitely need it in these times.
+
+Just create a GitHub project and sign up, then we can highlight your project and hopefully others will chime in.
+
+We will have demos around the world of the projects submitted during Global Graph Celebration Day and will showcase them as well. 
+
+Please read the blog post and get started, have a really creative weekend!
+
+https://medium.com/neo4j/graphhackers-lets-unite-to-help-save-the-world-graphs4good-2020-fed53562b41f[Read More, Start Hacking, role="medium button"]
+
+
+[[features-2]]
+=== NODES 2019: Improve Cypher Performance with the Query Log Analyzer
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019^] online conference, Kees Vegter shows us how to monitor and improve Cypher performance with the https://medium.com/neo4j/neo4j-query-log-analyzer-and-db-analyzer-update-for-neo4j-4-0-with-new-features-181081a464a7[query log analyzer graph app^]. You can install the application in Neo4j Desktop through the Graph App Gallery.
+
+The query log analyzer takes the query log from Neo4j and shows different charts and statistics about the queries run on the instance. There are a variety of views for viewing costly or intensive queries, as well as filtering for specific user queries and timelines. The video covers how Neo4j processes a Cypher query, as well, before diving into strategies and things to watch for in optimizing. Kees has also https://medium.com/neo4j/search?q=kees[written up more about the tool and how to use it on our developer blog^].
+
+If you want to learn a bit more about how Cypher and Neo4j work and a few steps to take in optimizing queries, this video is a great resource!
+
+youtube::aPQVAiBAkTg[type={type}]
+
+https://neo4j.com/online-summit/session/cypher-performance-query-log-analyzer[Watch Kees's Talk, role="medium button"]
+
+[[features-3]]
+=== Hands-on Twitch Stream: Neo4j Sandbox
+
+New to Neo4j or want to gain some hands-on experience? Lju is here to help with a virtual, hands-on session with Neo4j on March 25th! 
+No download or technical experience is required. 
+You’ll learn about graph data, Cypher, and then get some time and steps to put you well on your way to graphista status!
+
+tweet::1241070998885187584[type={type}]
+
+Whether you are a student, employee, or anything in between, this session will be fun and educational. Join us on March 25th at 11AM (GMT) to learn how to get started with Neo4j!
+
+http://twitch.tv/neo4j_[Follow the Neo4j Twitch Channel, role="medium button"]
+
+[[features-4]]
+=== How to use Cypher projection on a Lord of the Rings social network
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200320162500/lotr-star.png" width="120px"  />
+</div>
+++++
+
+Tomaz continues his tale by tackling the topic of Cypher projection with updated syntax using a dataset near and dear to my heart - Lord of the Rings. In this post, he shows how to import the data into the graph, then explains Cypher projection and steps through loading the whole graph and parts of the graph (with Cypher projection) into memory. 
+
+From there, we see how to run a variety of algorithms and analysis on our projection and how to remove one projection and create others. Weakly-connected components, random walk, triangle count and clustering coefficient, and categorical pagerank are all discussed and covered to help us understand how they work and what the code syntax and results are like. The code is even all published on Github, so check it out!
+
+https://tbgraph.wordpress.com/2020/03/17/how-to-use-cypher-projection-in-neo4j-graph-data-science-library-on-a-lord-of-the-rings-social-network/[Read The Blog Post, role="medium button"]
+
+[[features-5]]
+=== Quick Links: 
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200320164116/kineviz-covid-19.png" width="120px"  />
+</div>
+++++
+
+* Our friends from Kineviz continued their impressive work around https://www.kineviz.com/blog/2020/3/19/tutorial-covid-19-graphxr-and-neo4j[visualizing the impact and spread^] of COVID-19 also including https://www.kineviz.com/sarscov2[text analysis and migration patterns^]
+* Joshua Görner created an https://github.com/jgoerner/metabolic-query-generator[Metabolic Query Generator^] for self-teaching: "Human biology is tough 🤯- but learning about it isn't anymore"
+* Dave Voutila published part 3 of the PaySim  series https://www.sisu.io/posts/paysim-part3/[Analyzing First Party Fraud with Neo4j^] with a really cool application of the graph data science library
+* Speaking of fraud detection, Max de Marzi https://maxdemarzi.com/2020/03/20/finding-fraud-part-two-revised/[shows the data creation and application of weakly connected components on a fraud graph^]
+// * if you are quick, the udemy https://twitter.com/md_baseer7/status/1240711073633689601[Getting started with Neo4^]j course by Mohammed Abdul Baseer is available for FREE for 2 days
+* Martin Preusse started a https://graphdb-bio.com/[blog for biomedical applications of Neo4j^] e.g. gene-id mapping, he created also a https://github.com/kaiserpreusse/covid_graph[covid-19 + population data sandbox^]
+* Mayur Bansal created a https://github.com/MB4511/Knowledge-Graph---Lego-Database[Knowledge Graph and Recommendation System for Lego Sets^]
+* Jan Zak our featured member from 3 weeks ago, published the 2nd part of his blog post on https://medium.com/neo4j/scale-up-your-d3-graph-visualisation-part-2-2726a57301ec[high performance graph visualizations with PIXI.js^]
+
+=== Tweet of the Week
+
+In this week's coolest tweet, Will Reynolds shows how to use space bounding info to find shortest travel paths between doors/open boundaries. Video included and a short explainer thread.
+
+// https://twitter.com/d2liYmxl/status/1239603650563096578
+
+tweet::1239603650563096578[type={type}]
+
+Please share and like it if you think it's cool. Btw. Will gave a really https://neo4j.com/online-summit/session/graphs-construction-industry-modeling[impressive talk^] at last year's NODES 2019 conference.
+
+
+
+

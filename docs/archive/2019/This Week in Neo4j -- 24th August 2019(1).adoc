@@ -1,0 +1,166 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 24 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-17-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week ....
+
+We also have a ...
+
+[[featured-community-member]]
+=== Featured Community Member: Paul O'Neill
+
+
+Our featured community members this week is Paul O'Neill
+
+NEW: Paul is a software developer from Edinburgh, who's currently taking a career break to focus on his family and learning new topics (like graphs).His career so far has been a mixture of firmware, on-premise, and cloud software development at a mixture of startups, consultancies and financial sector clients.
+
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/xxxx/this-week-in-neo4j-10-august-2019.jpg[name="yxxxx"]
+
+NEW: Paul has been very active in the Neo4j community in the last few months creating a lot of very interesting content on Neo4j especially around data modeling and a whole series of representing Minecraft Craft Trees as a Graph (see below). Thank you for all of your contributions, Paul!
+
+
+
+
+[[features-1]]
+=== First Neo4j 4.0 Milestone Release for Public Testing Available
+
+In preparation for the 4.0 major release of Neo4j this fall, engineering has released a public milestone release for everyone to test out some of the new features coming up! The 4.0 version will include exciting capabilities such as reactive support, multiple databases, additional security and role management, new Spring capabilities, and optimizations for the database and algorithms. This is just the beginning, and we can’t give away all our secrets. :) Check out the blog post from Ivan to see more details about what’s in this milestone release and take it for a spin!
+
+https://neo4j.com/blog/neo4j-enterprise-edition-4-0-milestone-release-2/
+
+Get it here: 
+https://neo4j.com/download-center/#prerelease
+
+https://neo4j.com/blog/neo4j-enterprise-edition-4-0-milestone-release-2/[Read the announcement post, role="medium button"]
+
+[[features-2]]
+=== Popularity and PageRank at Westerburg High
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190805122721/heathers-1.jpg" width="200px"  />
+</div>
+++++
+
+Many of us can relate to or have seen movies on the popularity battles in a typical high school. But what if we could actually present concrete evidence of popularity scores? Our very own Joe Depeau combined the power of the PageRank algorithm with high school relationships from a film to find the real results and determine the social hierarchy. He shows us how to use the relationships and weighting to calculate the score and then analyzes the results. To top it off, the results are visualized in Neo4j Bloom, showing how you can drill down and explore the network.
+
+I think it’s easier (or at least, more fun) to explain PageRank as a High School popularity contest. I’ll do this using the characters and plot from the classic 1988 dark comedy teen film “Heathers.” – by @joedepeau
+
+https://r.neo4j.com/2YLCKrQ
+#GraphDatabase #GraphAlgorithm
+
+https://neo4j.com/blog/popularity-and-page-rank-at-westerberg-high/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== A Minecraft Crafting Tree as a Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://pablissimo.com/blog/wp-content/uploads/2019/07/Carrot-on-a-stick.png" width="150px"  />
+</div>
+++++
+
+Paul O'Neill has finished his 6-part series on the topic with a retrospective this week. He reviews the takeaways throughout the project and discussed what worked really well between Neo4j and their use case and what didn’t. He touches many of the concepts that are vital to developers in any solution - data import and cleanup, Cypher, and data modeling and refactoring. APOC gets a special mention, noting the power provided in a single procedure. The series concludes with the business questions that Neo4j can help users solve.
+
+https://pablissimo.com/category/projects/minecraft-crafting-in-neo[Read the blog series, role="medium button"]
+
+[[features-4]]
+=== Navigating a Social Feed with Pagination
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/todoxxx.png" width="150px"  />
+</div>
+++++
+
+Our own Adam Cowley was inspired to write some code for traversing a social graph with a custom procedure for pagination. Starting with some background on why a social feed fits well in a graph, he compares other solutions to the capabilities graph can provide before launching into the data model. He then walks through creating user-defined procedures with Neo4j and each step of the code to write one for paging results. It even goes into testing and deploying the custom code!
+
+https://adamcowley.co.uk/neo4j/social-feed-cursor-based-pagination/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Interrogating a Cancer Graph with Neo4j Bloom
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/todo.png" width="150px"  />
+</div>
+++++
+
+@LiveDataConcept published a blog post on exploring an knowledge graph of cancer data in Neo4j Desktop using our Bloom visualization tool. The authors shows how the tool can help segment the data to highlight the segments of interest and help users explore a complex and highly-related domain. There is also a wish list of features for the Bloom tool! Through the writing, we can see that connecting cancer data in a knowledge graph has the potential to grow and provide more value as we explore the universe of data around us.
+
+https://medium.com/@LiveDataConcept/visual-interrogation-of-a-cancer-knowledge-graph-using-neo4j-bloom-d00687969da2[Read the blog post, role="medium button"]
+
+[[features-6]]
+=== New version of Neo4j OGM, Graphlytic Tutorial, Neo4j at Kafka Summit, New yFiles Version for Java
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/todo.png" width="150px"  />
+</div>
+++++
+
+* Neo4j’s Spring team released an https://twitter.com/meistermeier/status/1159842281031000067[update to Neo4j OGM^].
+* Graphlytic has a tutorial with a video showing how to https://graphlytic.biz/blog/how-to-install-graphlytic-in-neo4j-desktop[install their tool as a graph app^] in Neo4j Desktop.
+* David Allen and others from Neo4j will be at https://www.linkedin.com/posts/mdavidallen_extending-the-streamtable-duality-into-a-activity-6566777269480632320-WA4Z[Kafka Summit^] at the end of September. If you are attending, be sure to come say hi!
+* yWorks released a https://twitter.com/yworks/status/1159801913464033280[new version of yFiles for Java^] with a superb integration with Neo4j. Be sure to check out the changes.
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/TheMellyBee[Melly Burns^]:
+
+// https://twitter.com/TheMellyBee/status/1159591554660491264
+
+tweet::1159591554660491264[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Xxx
+
+////
+
+"Defending with Graphs: Create a Graph Data Map to Visualize Pivot Paths": In her paper, 
+@thebriannefahey
+ presents an approach that uses graph technology to improves incident response readiness. (link: https://buff.ly/2xPvG2i) buff.ly/2xPvG2i #Neo4j #Cybersecurity
+https://www.sans.org/reading-room/whitepapers/logging/paper/39030
+https://www.sans.org/reading-room/whitepapers/logging/defending-graphs-create-graph-data-map-visualize-pivot-paths-39030
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+Blog post by 17-yr-old:
+https://neo4j.com/blog/visualizing-this-week-in-tech/
+
+Blog post by Max:
+https://maxdemarzi.com/2019/08/15/testing-apoc-inside-your-stored-procedures/
+
+* https://twitter.com/xatkit/status/1158687764105302016
+* https://twitter.com/mrgretzky/status/1158710067702751232
+* https://twitter.com/m3g9tr0n/status/1159399143514824704
+
+////

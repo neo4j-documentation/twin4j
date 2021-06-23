@@ -1,0 +1,177 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+It's been another busy week. 
+
+This Neo4j community has had another busy week. We launched Neo4j Administration course, Amy Hodler and I shared our research into the world of link prediction, and David Allen showed us how to implement log shipping with Google's Stackdriver.
+
+This week also saw the launch of Neo4j Labs - a one-stop shop of solution offerings that provide fertile ground for innovation, while allowing us to iterate quickly and provide high-value tooling for your development work.
+
+On Tuesday 26th March 2019 it's time for GraphTour to visit London. I'll be there with my colleagues from the London office, so do come and say "hi". You can https://www.eventbrite.com/e/neo4j-graphtour-london-tickets-52536557257#tickets[register for the event here^]. 
+
+
+[[featured-community-member]]
+=== Featured Community Member: Dr. Alexander Jarasch 
+
+https://www.linkedin.com/in/dr-alexander-jarasch-b4b46b68/[Dr. Alexander Jarasch^] is Head of Data at https://www.dzd-ev.de/[German Center for Diabetes Research^], where they work to combine research data sources from genetics, epigenetics, and metabolic pathways with data from clinical studies to develop effective prevention and treatment measures for one of the most prevalent diseases our society faces. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190322113530/this-week-in-neo4j-23-march-2019.jpg[name="Dr. Alexander Jarasch "]
+
+He not only uses graphs-for-good, but also inspires others scientists and researchers in the life science & biotech communities to take a graph-based approach to understanding their connected data. He’s not only leading innovation with his research, but with his contributions to the community as a whole. 
+
+Thank you, Dr. Jarasch, for fighting for positive causes and sharing your knowledge with our community.
+
+
+link:https://www.linkedin.com/in/dr-alexander-jarasch-b4b46b68/[Connect with Alexander on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Link Prediction with Neo4j
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], https://twitter.com/amyhodler[Amy Hodler^] and I presented Link Prediction with Neo4j.
+
+youtube::5tuWnq_18Qw[type={type}]
+
+We started by explaining the problem in more detail, describe the approaches that can be taken, and the challenges that have to be addressed.
+
+In the 2nd half we went through a worked example showing how to apply these approaches using Graph Algorithms and the popular scikit-learn machine learning library.
+
+This meetup built on top of https://medium.com/neo4j/link-prediction-with-neo4j-part-1-an-introduction-713aa779fd9[a blog post^] that we published a couple of weeks ago. If you have any questions from the meetup you can https://community.neo4j.com/t/online-meetup-link-prediction-with-neo4j/5952[ask us on the community forum^].
+
+
+[[features-2]]
+=== Announcing Neo4j Labs: Incubating the Next Generation of Graph Developer Tooling
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190320124126/introducing-neo4j-labs-3.jpg" width="200px"  />
+</div>
+++++
+
+On Thursday Michael Hunger announced the launch of Neo4j Labs - a one-stop shop of solution offerings that provide fertile ground for innovation, while allowing us to iterate quickly and provide high-value tooling for your development work.
+
+Projects that become part of Neo4j Labs will be actively worked on and supported by at least one Neo4j engineer. Successful projects will eventually graduate into the Neo4j Graph Platform.
+
+
+link:https://neo4j.com/blog/announcing-neo4j-labs/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Geospatial with Uber H3
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190322095600/51969863_1968306779934201_3337839503443230720_o-1024x701.jpg" width="150px"  />
+</div>
+++++
+
+In the 3rd post of Dave Fauth series on using graphs for healthcare search, he shows how to combine Uber H3's line between locations feature with turn-by-turn directions to find a doctor while on the way to find coffee.
+
+link:http://www.intelliwareness.org/2019/02/neo4j-uber-h3-geospatial/[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Zendesk to Neo4j, Building the Marvel UI, Log Shipping with Google’s Stackdriver
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190322101706/1_7qVIr-TXu50rG92bWs3-Vg.jpeg" width="200px"  />
+</div>
+++++
+
+* https://twitter.com/JMHReif[Jennifer Reif^] published https://medium.com/neo4j/create-a-data-marvel-part-9-building-the-webpage-for-comics-1ceb26f8a5be[part 9^] of the Marvel Series, in which she shows how to build a web page for comics. Jennifer shows how to manipulate the data retrieved from the API build earlier in the series, and then processes it to create a d3 visualization. 
+
+* In https://medium.com/neo4j/showing-charts-for-neo4j-query-results-using-amcharts-and-structr-efae0b7a04f0[part 3^] of his series showing how to integrate ZenDesk with Neo4j, https://twitter.com/dmcanzano[Dana Canzano^] explains how to render Cypher results as charts within a Structr application.
+
+* https://twitter.com/mdavidallen[David Allen^] has written a blog post showing how to https://medium.com/neo4j/configuring-stackdriver-logging-for-neo4j-vms-on-gcp-d175f32e2e1b[implement log shipping from a Neo4j VM on Google Cloud Platform into Google's Stackdriver monitoring system^]. 
+
+* David spends a lot of his time working with customers helping them to simulate workloads, and has written a JavaScript module called https://github.com/moxious/graph-workload[graph-workload^] to automate some of the process. David explains https://medium.com/neo4j/generating-test-workloads-on-neo4j-97acc71298e6[how to use the tool^], and then use https://medium.com/neo4j/monitoring-neo4j-with-halin-4c11429b46ff[Halin^] to see how well the database is handling the traffic.
+
+[[features-4]]
+=== Revamped Neo4j Administration Course
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190305115555/neo4j-administration.png" width="200px"  />
+</div>
+++++
+
+Last week, Elaine Rosenberg launched the newly revamped Intro to Neo4j online training course.
+
+This course introduces you to Neo4j and some of the most common administration tasks for a production Neo4j application using Neo4j Enterprise Edition 3.5
+
+This course is intended for administrators, It’s completely free, and you can register to take it now!
+
+
+link:https://neo4j.com/graphacademy/online-training/neo4j-administration/[Take the course, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/unterstein[Johannes Unterstein^]:
+
+tweet::1106475109416615937[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://blog.semanticscholar.org/finding-experts-in-grapal-b97ef280e585 
+Finding experts in GrapAL
+
+
+https://graphaware.com/neo4j/2019/03/09/graph-assisted-typescript-refactoring.html
+Graph-assisted Typescript refactoring
+
+
+https://medium.com/@tonyhammond/property-graphs-and-elixir-13672940804b 
+Property graphs and Elixir
+
+https://medium.com/neo4j/generating-test-workloads-on-neo4j-97acc71298e6
+Generating Test Workloads on Neo4j
+
+https://medium.com/neo4j/showing-charts-for-neo4j-query-results-using-amcharts-and-structr-efae0b7a04f0
+Showing Charts for Neo4j Query Results using amCharts and Structr
+
+https://medium.freecodecamp.org/how-to-detect-a-users-preferred-color-scheme-in-javascript-ec8ee514f1ef
+How to detect a user’s preferred color scheme in JavaScript
+
+https://medium.com/@dmccreary/a-taxonomy-of-graph-use-cases-2ba34618cf78
+A Taxonomy of Graph Use Cases
+
+https://neo4j.com/developer/kb/import-csv-locations/
+Importing CSV Files: Neo4j Desktop and Sandbox - Neo4j Graph Database Platform
+
+Pass Temporal Objects as Parameters - Neo4j Graph Database Platform
+https://neo4j.com/developer/kb/pass-temporal-objects-parameters/
+
+https://speakerdeck.com/jmhreif/get-to-know-the-real-world-discovering-connected-data-with-a-graph-database
+Get to Know the Real World
+
+https://neo4j.com/blog/keep-calm-drink-tea-graphing-britains-most-beloved-hot-beverage/
+Keep Calm and Drink Tea: Graphing Britain’s Most Beloved Hot Beverage
+
+
+
+////

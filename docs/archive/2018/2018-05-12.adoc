@@ -1,0 +1,134 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 12 May 2018, including 
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 12 May 2018
+
+[Headline:]
+This Week in Neo4j – 12 May 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we go hands on with Neo4j Bloom, there's a new release of Popoto - the visual query builder for Neo4j, we learn how to build a personalised recommender as well as parse Neo4j's query log, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Thomas Frisendal
+
+This week’s featured community member is https://twitter.com/vizdatamodeler[Thomas Frisendal^], Graph Data Architect and Visual Data Modeler.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180511065551/this-week-in-neo4j-12-may-2018.jpg[name="Thomas Frisendal"]
+
+Thomas has been part of the Neo4j community for several years and has written multiple articles about data modelling with graphs and knowledge graphs.
+
+* http://www.dataversity.net/make-decisions-data-modeling-relationships-databases/[How to Make Decisions About Data Modeling Relationships in Databases^]
+
+* http://www.dataversity.net/not-get-lost-2018-map-graph-go/[How Not to Get Lost in 2018 with Knowledge Graphs: Map, Graph, Go!^]
+
+* http://www.dataversity.net/property-graphs-swiss-army-knife-data-modeling/[Property Graphs: The Swiss Army Knife of Data Modeling^]
+
+* http://www.dataversity.net/surrogate-keys-paving-way-graph-nosql-data-models/[Surrogate Keys: Paving the Way for Graph / NoSQL Data Models^]
+
+He published a new article this week in which he shows how to http://www.dataversity.net/detecting-data-models/[use the betweenness and closeness centrality graph algorithms to explore data models^].
+
+Thomas has also written a book titled https://www.amazon.co.uk/Graph-Data-Modeling-NoSQL-SQL/dp/1634621212/ref=asap_bc?ie=UTF8[Graph Data Modeling for NoSQL and SQL: Visualize Structure and Meaning^]. 
+
+On behalf of the Neo4j community, thanks for all your work Thomas!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+[[neo4j-bloom-hands-on]]
+=== Neo4j Bloom: Hands On with the Beer Graph
+
+In https://neo4j.com/blog/this-week-in-neo4j-3-4-and-bloom-announced-analyzing-wifi-traffic-text-analysis-using-graph-visualization-azure-functions/#_neo4j_3_4_and_bloom_visualization_tool_announced[last week's version of TWIN4j^] we mentioned the announcement of Neo4j Bloom, a graph communication and data visualization product that we've been working on.
+
+youtube::pHobzFMEOz0[type={type}]
+
+Since then https://twitter.com/rvanbruggen[Rik^] has been busy putting it through its paces with a http://blog.bruggen.com/2018/05/part-12-graphs-are-bloom-ing.html[two^] http://blog.bruggen.com/2018/05/part-22-graphs-are-bloom-ing.html[part^] tutorial in which he shows how to explore the Belgian Beer Graph.
+
+He gives an introduction to the basic functionality before explaining the more advanced custom search phrases feature. 
+This post will certainly whet your appetite for the types of exploration you'll be able to do on your own datasets in the coming months.
+
+If you don't have time to work through the blog posts you can always watch the accompanying 5 minute video linked above.
+
+[[popoto]]
+=== Popoto 2.0 Released
+
+Staying in the world of graph visualization, this week https://twitter.com/FredCiminera[Ciminera Frederic^] released version 2.0 of https://github.com/Nhogs/popoto[Popoto^], a visual query builder for Neo4j. 
+
+++++
+<video width="600" controls>
+  <source src="https://video.twimg.com/tweet_video/Dc1H1GFW4AAr8xj.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+++++
+
+This release sees an update to d3 v5, donut representation of node relations around the node in graph, and support for 'not', 'and', 'or' constraints in graph.
+
+You can find a list of popoto example applications in the https://github.com/Nhogs/popoto-examples[popoto-examples^] repository. Hopefully one of them will grab your attention.
+
+[[recommender]]
+=== Building a personalized recommender, Visualizing Game of Thrones, 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180511080041/2018-05-11_16-00-38.png" width="150px" />
+</div>
+++++
+
+* https://twitter.com/datatheque[Grace Tenorio^] shared the slides from her talk titled https://github.com/datatheque/datatheque.com/blob/master/presentations/Building%20A%20Recommender%20Using%20Neo4j.pdf['Building a Recommender Using Neo4j'^]. Grace shows how to build a recommendation engine for an online grocery store using different approaches including user-user collaborative filtering and K nearest neighbours. 
+
+* It really is the week for graph visualization. https://twitter.com/tocttou[Ashish Chaudhary^] has https://ashishchaudhary.in/game-of-thrones-visualization[written a blog post^] in which he explores the Game of Thrones universe using the http://visjs.org/[vis.js library^].
+
+* My colleague https://twitter.com/logisima[Benoit Simard^] rounds off the week of graph visualization with a post showing how to https://www.bsimard.com/2018/04/25/graph-viz-with-sigmajs.html[display and customize a graph in a browser^] with the help of http://sigmajs.org/[SigmaJS^]. In the first half of the post Benoit explains how to build a graph visualization using SigmaJS directly and in the second half he shows a much easier way using a library he's built called https://github.com/sim51/neosig[NeoSig^] which integrates Neo4j and SigmaJS.
+
+* Vindya Hemali has posted the https://mitrai.com/tech-guide/transformation-of-graph-databases-towards-graph-platforms/[2nd part^] of a Neo4j series. This post explains the Neo4j Desktop in detail and includes a guide to get you up and running.
+
+[[knowledge-base]]
+=== From the Knowledge Base: Parsing query.log
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+
+This week from the Neo4j Knowledge Base we have an entry that shares a script that https://neo4j.com/developer/kb/an-approach-to-parsing-the-query-log/[parses the query log^] available in the Neo4j Enterprise Edition.
+
+The script summarises the total number of queries, their running time, the date and time of the first and last queries, and more.
+
+If you want to understand what's happening on your Neo4j server this is a good place to start.
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/LeticiaFogaca[Leticia Becker^]:
+
+tweet::994384571264262144[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

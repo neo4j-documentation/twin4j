@@ -1,0 +1,169 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Lju Lazarevic teaches us how to find graph based problems.
+
+Helena Deus explains how to navigate the virus regulation pathway for COVID-19, Anders Brams builds a movie recommendation engine, and Nathan Smith explores small-world phenomena.
+
+And finally, this week we announced several new online training classes.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Nathan Smith
+
+
+This week's featured community member is Nathan Smith. Nathan is a Senior Principal Data Scientist at PRA Health Sciences leading their data science strategy.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200605014547/this-week-in-neo4j-6-june-2020.jpg[name="Nathan Smith"]
+
+Since Nathan began working with Neo4j, he started a https://www.meetup.com/Kansas-City-Graph-Databases-Meetup-Group[local GraphDB meetup group in Kansas City], organized events for https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day[Global Graph Celebration Day], started https://medium.com/@nsmith_piano[blogging about his graph-y projects and discoveries], and started speaking to educate the community. He was also one of the https://neo4j.com/blog/announcing-global-graphhack-winners[winners of GraphHack] around NODES 2019!   
+
+When we first connected to Nathan last year, he started dipping his toes in the water, and within less than a year, his name is ringing bells in the community.  
+Nathan, we’re so proud to see how far you’ve come this year! We can’t wait to see all the groundbreaking things you bring to our world. Thank you!
+
+For all you readers out there, check out https://medium.com/@nsmith_piano[Nathan’s blog posts]. If you like it, let him know! You can reach Nathan right on the https://community.neo4j.com/u/nsmith_piano/summary[Neo4j Community Site].  
+
+https://www.linkedin.com/in/nathansmithit/[Connect with Nathan on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Identifying Graph Shaped Problems
+
+This week's video is a webinar by Lju Lazarevic in which she teaches us how to identify graph shaped problems.
+
+youtube::keZURbOo4-M[type={type}]
+
+In the talk, Lju goes through the different questions that we can ask ourselves about our dataset and identifies use cases that fall into each category. 
+
+[[features-2]]
+=== Announcing New Neo4j Online Training Courses
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200605013416/new-neo4j-online-training-courses-suad-kamardeen-1-1.jpg" width="150px"  />
+</div>
+++++
+
+Elaine Rosenberg announced the release of three new online training courses:  Introduction to Neo4j 4.0, Graph Data Modeling for Neo4j, and Basic Neo4j 4.0 Administration.
+
+These courses are self paced and *completely free*. And once you've completed the Introduction to Neo4j 4.0 you'll be ready to take the free certification exam!
+
+https://neo4j.com/blog/announcing-new-neo4j-online-training-courses/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Exploring small-world phenomena with Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200605012117/41VaxWW3cqL._SX347_BO1204203200_-2.jpg" width="120px"  />
+</div>
+++++
+
+Nathan Smith, this week's featured community member, continues his series of blog posts about Networks, Crowd, and Markets. We're now up to chapter 20, which is about small-world phenomena.
+
+In the post, Nathan builds a social network and, with the help of the https://neo4j.com/docs/graph-data-science/current/[Graph Data Science Library^], shows how to compute the connectivity of people in the graph.
+
+https://medium.com/neo4j/exploring-small-world-phenomena-with-neo4j-58c767dcbafd[Read the blog post, role="medium button"]
+
+
+[[features-4]]
+=== Virus regulation pathway, PHP package, Alicia Frame Interview
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Steve McDougall https://www.juststeveking.uk/an-adventure-with-graph-databases/[shared his experience^] creating a PHP package to interact with Neo4j.
+
+* David Allen has https://medium.com/neo4j/getting-certificates-for-neo4j-with-letsencrypt-a8d05c415bbd[updated the instructions^] for doing SSL and HTTPS in Neo4j with Let's Encrypt to cover Neo4j 4.0.
+
+* Helena Deus https://pharma.elsevier.com/covid-19/navigating-the-virus-regulation-pathway-through-text-mining-and-knowledge-graph/[wrote a blog post^] about a graph that she's built to navigate the virus regulation pathway for COVID-19. 
+
+* Alicia Frame, Lead Product Manager of Graph Data Science at Neo4j, https://medium.com/authority-magazine/female-disruptors-how-alicia-frame-of-neo4j-is-shaking-up-the-data-science-industry-4fd5ebd47cdf[has an interview in Authority Magazine^] as part of the Female Disruptors series. 
+
+
+
+[[features-5]]
+=== Movie Recommendations powered by Knowledge Graphs and Neo4j 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200605015153/1_17PggH6PpLJhvEGtcQUgWg.png" width="200px"  />
+</div>
+++++
+
+
+Anders Brams has been working on https://mindreader.tech/dataset/[MindReader], a novel dataset providing explicit user ratings over a knowledge graph within the movie domain. 
+
+In the blog post, Anders explains how they built an application to collect this data and make movie recommendations to users using Personalised PageRank based content based filtering.
+
+https://buff.ly/35smGQJ[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/AJarasch[Alexander Jarasch^]:
+
+tweet::1266408389355200513[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+Confluent @confluentinc
+Use @ksqlDB to build stateful aggregations that can be queried in place or pushed downstream to other data stores. @rmoff shares how in our latest blog post, leveraging @apachekafka, @MongoDB, @elastic, and @neo4j for building apps and analysis: https://cnfl.io/wi-fi-data-with-kafka-and-friends
+
+
+
+
+- release https://www.jhipster.tech/using-neo4j/ <- 
+- @Michael Simons spring-bridge talk from last friday https://youtu.be/hi_zAj3tqeE?t=27128
+- slides https://speakerdeck.com/michaelsimons/introducing-neo4j-sdn-rx
+
+
+
+* https://medium.com/neo4j/game-of-phones-modeling-diffusion-of-innovations-with-neo4j-98d8be724d9b
+MediumMedium
+Game of Phones: Modeling Diffusion of Innovations With Neo4j
+
+* really good one: https://medium.com/authority-magazine/female-disruptors-how-alicia-frame-of-neo4j-is-shaking-up-the-data-science-industry-4fd5ebd47cdf 
+
+
+* M. David Allen @mdavidallen
+New technical article on a #neo4j graph analysis technique:  how do you look at a network of related companies, and know the total value of a trading relationship, or the impact if a company goes out of business?
+https://neo4j.com/blog/analytical-subgraph-overlays-in-neo4j/ 
+
+* https://tbgraph.wordpress.com/2020/05/31/node-embeddings-node2vec-with-neo4j/
+Graph people | tbgraph
+Node embeddings: Node2vec with Neo4j
+
+
+
+////

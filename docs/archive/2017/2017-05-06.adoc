@@ -1,0 +1,158 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 6 May 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-6-may-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 6 May 2017
+
+[Headline:]
+This Week in Neo4j – 6 May 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Alessio De Angelis
+
+This week's featured community member is https://twitter.com/alexotter89[Alessio De Angelis^], working as an IT Consultant in the Data Warehouse and Business in Italy.
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170505134840/this-week-in-neo4j-6-may-2017.jpg" alt="" width="512" height="512" class="alignnone size-full wp-image-65112" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+This week's featured community member: Alessio De Angelis
+</strong>
+</p>
+++++
+Alessio fell in love with Neo4j during this Master's thesis, when he was looking for a database to analyse the interest of visitors of historical places and monuments via their social networks.
+A few years ago he won in our GraphGist competition by submitting an entry showing http://neo4j.com/graphgist/92064364-ae62-405b-bfa7-a46e5e85e22b[Santa's shortest weighted path^] around the world. If you want to learn more about Alessio, Rik van Bruggen interviewed him on the http://blog.bruggen.com/2016/10/podcast-interview-with-alessio-de.html[Graphistania podcast^].
+
+This week Alessio demonstrated how to use APOC for  https://gist.github.com/AlessioDeAngelis/8a99043c74317b6c33f677c3dbb7038b[importing and pathfinding on spatial data^]. 
+
+=== Querying the Neo4j TrumpWorld Graph with Amazon Alexa
+
+The coolest Neo4j project of the week award goes to https://twitter.com/ikwattro[Christophe Willemsen^], our featured community member on https://neo4j.com/blog/this-week-neo4j-2-april-2017/[2 April 2017^].
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M7HgZvSi2Nw" frameborder="0" allowfullscreen></iframe>
+++++
+
+Christophe has created a tool that executes Cypher queries in response to commands issue to his Amazon Alexa.
+We will demonstrate it live in the developer zone at GraphConnect Europe next week.
+
+=== Rare diseases research, APOC spatial, Twitter Clone
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170505084210/Linkurious-Fig-1-1024x282.png" alt="Rare diseases research" width="640" height="176" class="alignnone size-large wp-image-65089" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Rare diseases research using graphs and Linkurious
+</strong>
+</p>
+++++
+
+* https://linkurio.us/[Linkurious^] partner https://www.scibite.com/[SciBite^] explain how they've been able to use graphs to combine complex data from multiple sources to https://linkurio.us/blog/graph-technologies-help-rare-diseases-research/[help solve the challenges of rare diseases research^].
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] is back with parts https://maxdemarzi.com/2017/05/02/building-a-twitter-clone-with-neo4j-part-seven/[seven^] and https://maxdemarzi.com/2017/05/03/building-a-twitter-clone-with-neo4j-part-eight/[eight^] of his building a Twitter clone series in which he builds a front end application to go with the back end system he's built over the last couple of months.
+
+* Michael Morley shows how to use the spatial features in the https://www.menome.com/wp/using-neo4j-with-a-google-map/[APOC library to create a map view of  a Neo4j graph^]. 
+
+=== Online Meetup: Planning your next hike with Neo4j
+
+In this week's online meetup https://twitter.com/hoppyokapi[Amanda Schaffer^] showed us how to plan hikes using Neo4j.
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6uTggNtrRY4" frameborder="0" allowfullscreen></iframe>
+++++
+
+There's lots of Cypher queries and a hiking recommendation engine, so if that's your thing give it a watch.
+
+=== From The Knowledge Base
+
+This week from the  link:https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we've got an article showing how to https://neo4j.com/developer/kb/how-do-i-improve-the-performance-of-counting-number-of-relationships-on-a-node/[improve the performance of a query that counts the number of relationships on a node^].
+
+
+=== On the podcast: Andrew Bowman
+
+In his latest podcast interview Rik van Bruggen http://blog.bruggen.com/2017/05/podcast-interview-with-andrew-bowman.html[interviews our newest Neo4j employee, Andrew Bowman^]. You'll remember that Andrew was our very first featured community member on https://neo4j.com/blog/this-week-neo4j-25-february-2017/[25 February 2017^]. 
+
+Rik and Andrew talk about Andrew's contributions to the community and Andrew's introduction to Neo4j while building social graphs for https://www.athenahealth.com/[Athena Health^].
+
+
+=== On GitHub: Graph isomorphisms, visualization, natural language processing
+
+There's a variety of different projects on my GitHub travels this week.
+
+* Rui Jia created https://github.com/jiatistuta/subgraph-isomorphism-neo4j[subgraph-isomorphism-neo4j^], which given a query graph and a target graph will calculate all possible subgraphs of the target graph isomorphic to the query graph. 
+
+* Julian Woodward created https://github.com/jhwoodward/visual-knowledge[visual-knowledge^], a visualization library  using http://visjs.org/[vis.js^]. Julian also has a http://52.56.227.23:50008/#/explore/Goya[cool demo of the library showing how artists are connected to each other^].
+
+* https://twitter.com/hyperparticle[Dan Kondratyuk^] created https://github.com/Hyperparticle/graph-nlu[graph-nlu^] - a library which builds a graph based on the output Python's http://www.nltk.org/[NLTK^] library and then uses it to make predictions.
+
+* https://twitter.com/funkatron[Ed Finkler^] created https://github.com/OSMIHelp/osmi-survey-graph[osmi-survey-graph^] - a project to import and analyse the https://osmihelp.org/research/[2016 OSMI Survey^] results in Neo4j. 
+
+=== Next Week
+
+It's http://graphconnect.com/[GraphConnect Europe 2017^] week so the European graph community will be at the https://qeiicentre.london/[QE2^] in London on Thursday 11th May 2017. 
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170505083649/graphconnecteurope.jpg" alt="The venue for GraphConnect Europe 2017" width="453" height="340" class="alignnone size-full wp-image-65084" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The QE2 in London, the venue for GraphConnect Europe 2017
+</strong>
+</p>
+
+
+++++
+
+
+If you would like to be in with a chance of winning a last minute ticket don't forget to register for our https://www.meetup.com/Neo4j-Online-Meetup/events/239719366/[online preview meetup^] on Monday 8th May 2017 at 11am UK time.
+
+We'll be joined by a few of the speakers who'll give a sneak peek of their talks as well as talk about what they love about GraphConnect.
+
+Hope to see you there!
+
+=== Tweet of the Week
+
+I'm going to cheat again and have two favourite tweets of the week. 
+
+First up is https://twitter.com/@cleishm[Chris Leishman^] sharing his favourite font for writing Cypher queries:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New favorite font for writing Cypher in! Fira Code - monospace font with programming ligatures: <a href="https://t.co/kofvVdXKfd">https://t.co/kofvVdXKfd</a> <a href="https://twitter.com/hashtag/neo4j?src=hash">#neo4j</a> <a href="https://twitter.com/hashtag/cypher?src=hash">#cypher</a> <a href="https://t.co/oEDJxXLoKZ">pic.twitter.com/oEDJxXLoKZ</a></p>&mdash; Chris Leishman (@cleishm) <a href="https://twitter.com/cleishm/status/858367775529619456">April 29, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+And there was also a great tweet by https://twitter.com/@caitiewrites[Caitlin McDonald^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Dancing Graph&quot; <a href="https://t.co/ldmN6kDj5S">https://t.co/ldmN6kDj5S</a> on <a href="https://twitter.com/LinkedIn">@LinkedIn</a> My early experiments using <a href="https://twitter.com/neo4j">@neo4j</a> to graph <a href="https://twitter.com/hashtag/socialnetwork?src=hash">#socialnetwork</a> data about a dance company.</p>&mdash; Caitlin McDonald (@caitiewrites) <a href="https://twitter.com/caitiewrites/status/858310584076521472">April 29, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+That’s all for this week. Have a great weekend and I'll hopefully see some of you next week at GraphConnect.
+
+Cheers, Mark

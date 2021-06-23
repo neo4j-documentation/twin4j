@@ -1,0 +1,148 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Karin Wolok
+
+This week’s featured community member is https://twitter.com/hellojewfro[Karin Wolok^], Community Manager at Neo4j. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170825030547/this-week-in-neo4j-26-august-2017.jpg["Karin Wolok - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Karin Wolok - This Week's Featured Community Member
+</strong>
+</p>
+++++
+Karin has been working with the Neo4j community since just before GraphConnect Europe 2017, and jumped straight in at the deep end by organising and running the Developer Zone at the conference. 
+
+Attendees were able to view demos, ask questions to Neo4j engineers, and even get Neo4j certified on the spot! We'll be running the Developer Zone again at http://graphconnect.com/[GraphConnect New York^] on 24th October so we hope you can join us. 
+
+Since GraphConnect Karin has been organising and promoting hackathons, meetups, contests, and this week was responsible for an amazing turnout at our online GraphQL meetup as well as in person meetups in San Francisco and New York. 
+
+tweet::900904047246319616[type={type}]
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170825052710/20170823_184946.jpg["New York Meetup", 800, 450, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The New York Meetup
+</strong>
+</p>
+++++
+
+On behalf of all the Neo4j community thanks for all your work Karin!
+
+=== Want to share your project? 
+
+Is there a tool or library that you love and use with Neo4j? 
+
+Tell others about it in a quick 15 minutes lightning talk at your local or our online Neo4j Meetup
+
+Just https://goo.gl/forms/SRiTXLK71W09BVAY2[fill in our meetup form^] and let us know what you'd like to talk about.
+
+=== Online Meetup: Graph of Thrones & GraphQL
+
+We hosted two events as part of the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j online meetup^] this week. 
+
+On Tuesday https://twitter.com/mesirii[Michael Hunger^] hosted a Graph of Thrones with https://twitter.com/ikwattro[Christophe Willemsen^], https://twitter.com/lyonwj[Will Lyon^], and https://twitter.com/tb_tomaz[Tomaz Bratanic^]. 
+
+youtube::UmBP-jz7CBc[type={type}]
+
+They showed how to use graph algorithms, NLP, and GraphQL with various Game of Thrones datasets.
+
+On Thursday Will Lyon presented Query Graphs with "Graph"QL to our biggest live audience yet - there was a peak of 150 attendees so thankyou to everyone who joined us!
+
+youtube::0EmZjheYv-U[type={type}]
+
+Will showed how to combine http://graphql.org/[GraphQL^], Neo4j, and https://neo4j.com/developer/cypher-query-language/[Cypher^] to build an end to end graph application. 
+
+=== Data Lineage, Rules Engines, Debian Package Analysis
+
+* https://twitter.com/xuxoramos[Jesus Ramos^] has written  http://www.datasciencecentral.com/profiles/blogs/data-lineage-the-history-of-your-data[an excellent overview of Data Lineage^] with examples using Neo4j. Jesus starts with a simple graph model tracking inputs and outputs, and shows how it can be evolved to handle more complex requirements. 
+
+* https://twitter.com/norbusan[Norbert Preining^] has started working on a project to https://www.preining.info/blog/2017/08/debian-packages-as-graph-database/[Analyse Debian packages with Neo4j^]. It reminded me of a similar project that Will Lyon created last year to https://github.com/johnymontana/npm-graph[analyse NPM repositories^].
+
+* Will has also written https://github.com/johnymontana/neovis.js#quickstart-example[a quickstart example tutorial for creating graph visualizations with neovis.js^]
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] shows how to  http://maxdemarzi.com/2017/08/25/building-a-boolean-logic-rules-engine-in-neo4j/[build a Boolean Logic Rules Engine in Neo4j^]
+
+* https://twitter.com/CSkardon[Chris Skardon^] created a tool to  https://github.com/cskardon/ImportCsvToGraphite[Import Neo4j metrics CSV files into Graphite^] to make it easier to figure out what's going on with your database. 
+
+* On my StackOverflow travels I came across a really neat use of Cypher's map projections to https://stackoverflow.com/questions/45837277/is-it-possible-to-add-a-temporary-property-to-a-neo4j-node-for-return-only[add a property to a Neo4j node that would only be seen when it's returned in a query^] but would never be stored in the database.
+
+=== Learning Neo4j
+
+Earnest Chestnut Jr has written an excellent https://www.sharpnotions.com/blog/an-introduction-to-graph-databases-with-neo4j[An Introduction to Graph Databases with Neo4j^] on the https://twitter.com/SharpNotions[Sharp Notions blog^]. 
+
+[role="image-heading"]
+image::https://www.sharpnotions.com/assets/images/expand-player-node.gif.pagespeed.ce.ttdMGrcXIC.gif["Hall of Fame player’s Batting and Fielding statistics", 600, 306, class="alignnone size-full wp-image-66813"]
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Hall of Fame player’s Batting and Fielding statistics
+</strong>
+</p>
+++++
+
+Using a https://github.com/chadwickbureau/baseballdatabank[baseball dataset^], Ernest shows how to build Cypher queries from scratch to the point where we can answer questions such as “Who were this Hall of Fame player’s teammates?” or “What teams did this Hall of Fame player play for?”. And all of this is done inside the Neo4j sandbox!
+
+If you want to get started with Neo4j you can be up and running with https://neo4j.com/sandbox-v2[your own sandbox instance in just a few minutes^].
+
+In a similar vein, https://twitter.com/LauraHKahn[Laura Kahn^] has written  https://thedatalass.com/2017/08/23/a-summer-of-learning-neo4j-and-cypher-part-1/[about her experiences learning Neo4j^] over the summer. 
+
+=== The Omics Database Generator
+
+A couple of weeks ago https://twitter.com/JosephGuhlin[Joseph Guhlin^] http://josephguhlin.com/odg-omics-database-generator-published/[released the Omics Database Generator (ODG)^] - a tool for generating, querying, and analyzing multi-omics comparative databases to facilitate biological understanding. ODG uses Neo4j’s graph database as the backend. 
+
+This week Joseph wrote an article showing how to http://josephguhlin.com/odg-neo4j-web-console/amp/[Use ODG from the Neo4j Web Console^]. He provides step by step instructions to get up and running and then writes queries to explore gene ontologies and find specific genes. 
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Wednesday, August 30, 2017 the https://www.meetup.com/nosqlsp/[NoSQL - São Paulo meetup^] will be hosting a hands on https://www.meetup.com/nosqlsp/events/241990494/[Graph of Thrones - Neo4j + Game of Thrones^] event. 
+
+* Also on Wednesday, August 30, 2017 Dom Davis and I https://www.meetup.com/graphdb-london/events/241394465/[will present^] at the https://www.meetup.com/graphdb-london/[Neo4j London meetup^]. Dom will talk about Decyphering your graph model  and I'll show how to Query Graphs with "Graph"QL. 
+
+* On Thursday, August 31, 2017 Paul Thomas will present https://www.meetup.com/Dublin-Insurance-Data-Analytics-Community/events/242644727/?a=socialmedia[Introduction to graph analytics using Neo4j^] at the https://www.meetup.com/Dublin-Insurance-Data-Analytics-Community/[Dublin Insurance Data Analytics meetup^]. 
+* Also on Thursday, August 31, 2017 https://www.meetup.com/Philly-GraphDB/[Philly GraphDB^] will host https://www.meetup.com/Philly-GraphDB/events/242570956/[An Instructional Course for learning to Install & Launch Neo4j^]. 
+
+* Also on Thursday, August 31, 2017 https://twitter.com/barrasadv[Jesús Barrasa^]  and I will present https://www.meetup.com/Neo4j-Online-Meetup/events/242025407/[Analysing football transfers with Neo4j^] at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^]. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/DomWeldon[Dom Weldon^]:
+
+tweet::900780552667766784[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

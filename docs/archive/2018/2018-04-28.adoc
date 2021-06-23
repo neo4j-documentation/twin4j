@@ -1,0 +1,103 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 28 April 2018, including product review predictions with Tensorflow and Neo4j, tips and tricks for passing the Neo4j Certification, combining Neo4j APOC spatial functions with the Neo4j Graph Algorithms A* Algorithm, and more.
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 31 March 2018
+
+[Headline:]
+This Week in Neo4j – 28 April 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have product review predictions with Tensorflow and Neo4j, tips and tricks for passing the Neo4j Certification, combining Neo4j APOC spatial functions with the Neo4j Graph Algorithms A* Algorithm, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Fabio Lamanna
+
+This week’s featured community member is https://twitter.com/fblamanna[Fabio Lamanna^], Consultant at http://www.larus-ba.it/en/[LARUS Business Automation^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180426092540/this-week-in-neo4j-28-april-2018.jpg[name="Fabio Lamanna"]
+
+Fabio has a background in transportation networks, urban mobility and data analysis and I first came across him from https://www.behance.net/gallery/55657171/Open-Data-per-la-Cultura-2017[his work analysing migration patterns^] in 2017.
+
+Fabio presented at the Data Science Milan meetup last September, where he showed https://www.youtube.com/watch?v=yl5uSzyNsXI[how to combine Neo4j and Python (Italian)^] and last week presented https://speakerdeck.com/fblamanna/discovering-the-power-of-graph-databases-with-python-and-neo4j[Discovering the Power of Graph Databases with Python and Neo4j^] at  https://www.pycon.it/en/[PyCon Italia^].
+
+On behalf of the Neo4j community, thanks for all your work Fabio!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+=== GraphQL, Neo4j Certification, A* Algorithm
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180427025458/download-7.png" width="100px" />
+</div>
+++++
+
+*  https://twitter.com/michellesanver[Michelle Sanver^] has written a blog post titled https://www.liip.ch/en/blog/neo4j-and-graphql-a-perfect-match[Neo4j graph database and GraphQL: A perfect match^], in which she shows how to install and use the GraphQL plugin to execute GraphQL queries against Neo4j. 
+
+* My colleague https://twitter.com/jmhreif[Jennifer Reif^] shares some https://medium.com/neo4j/neo4j-certification-how-to-pass-like-a-pro-eed6daa7c6f7[tips and tricks on studying for and passing the Neo4j Certification^].
+
+* In https://twitter.com/tb_tomaz[Tomaz Bratanic^]'s latest blog post he shows how to https://tbgraph.wordpress.com/2018/04/25/neo4j-a-algorithm/[combine Neo4j APOC spatial functions with the Neo4j Graph Algorithms A* Algorithm^] to help plan your next trip around Europe.
+
+=== Tensorflow and Neo4j, New Release of Pypher, Cypher on Node-RED
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180427025603/q8sc1KuZ_200x200.jpg" width="100px" />
+</div>
+++++
+
+* David Mack has written a new installment in his series of posts on graph based machine learning. This time he https://medium.com/octavian-ai/review-prediction-with-neo4j-and-tensorflow-1cd33996632a[creates an embedding to predict product reviews using Neo4j and Tensorflow^]. 
+
+* https://twitter.com/Emehrkay[Mark Henderson^] released version 0.7 of https://github.com/emehrkay/Pypher[Pypher^], a small library that aims to make it easier to use Neo4j from Python by constructing Cypher queries from pure Python objects. This version includes property map, map, and map projection support, as well as a simple CLI app that allows you test your Pypher scripts in real time.
+
+* https://github.com/sandman0[sandman0^] released https://github.com/nullibrew/node-red-contrib-nulli-neo4j[node-red-contrib-nulli-neo4j^], a https://nodered.org/[Node-RED^] node that lets you run generic cypher queries on a Neo4j graph database. Node-RED is a programming tool for wiring together Internet of Things devices in new and interesting ways.
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| May 3rd 2018 | https://www.meetup.com/Neo4j-Online-Meetup/events/250059789/[Thinking = Connecting. Text Network Visualization — Tagcloud 2.0^]   | https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] | Dmitry Paranyushkin
+
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/aaronlelevier[Aaron Lelevier^]:
+
+tweet::989156704972558338[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

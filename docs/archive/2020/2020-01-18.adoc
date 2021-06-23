@@ -1,0 +1,188 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Analyzing .NET Dependencies, Coloring a Sudoku Graph, Christmas Messages Graph, Making Graph Algorithms ‘Clique’
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Pat Brown and Karim Shehadeh explain how they used Neo4j to discover the soul of a product at Under Armour.
+
+Nathan Smith finds the optimal solution for Sudoku, Luanne Misquitta teaches us all about Post-Union processing in the newly released Neo4j 4.0, and Adam Cowley builds a real-time UI using Kafka and Vue.js.
+
+And finally, I created a QuickGraph of the UK Official Singles Chart.
+
+Enjoy!
+
+Mark Needham, Karin Wolok, and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Oscar Arcia
+
+This week's featured Neo4j Community member is Oscar Arcia, Cloud Engineer at Laboratorio Internacional Web.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200117035042/this-week-in-neo4j-18-january-2020.jpg[name="Michael Porter"]
+
+He is using Neo4j in production on two mobile applications (both available in the app store): 
+
+* https://monific.com/[Monific^] - a real-estate crowdfunding app 
+* https://play.google.com/store/apps/details?id=com.cherrybit.mitzuapp2019&hl=es_419[Mitzu^] -  an e-commerce information app.  
+
+Oscar came to us after the https://neo4j.com/graphtour/[Neo4j Graph Tour] in Mexico City in November. Already being very active in the community, Oscar and a couple of his friends / colleagues were interested in bringing graphs into their local technology community. They reached out to us https://www.facebook.com/CherryBitio-114706743288058/[Mexico City] and requested our support.
+
+Of course we said yes and Oscar, Pablo José, Daniel Murillo, and Emeralda Montsserrat are now running a brand graph database meetup group in https://www.meetup.com/GraphDB-MX[CMDX]!  
+
+Thank you for being so active in your local tech community. Your passions really show and we’re so happy to be part of your creations!   
+
+https://www.linkedin.com/in/oscar-arcia-a48388162[Connect with Oscar on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Discovering the Soul of a Product With Neo4j
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^], Pat Brown and Karim Shehadeh explain how they used Neo4j to https://neo4j.com/online-summit/session/discover-soul-product-neo4j[discover the soul of a product^].
+
+youtube::EffxEv5d0fU[type={type}]
+
+In the talk they explain how they build an X-Ray Graph that sits on top of various data sources and makes it easy to search across the product catalogue. They also show some parts of the GRANDstack application that was built on top of the graph.
+
+[[features-2]]
+=== Solving Sudoku with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200110052540/1_DdkBg8BULdQRjtRquo1g9w.png" width="150px"  />
+</div>
+++++
+
+Following on from last week's blog post where he coloured a Sudoku Graph using the K-1 Coloring algorithm, this week https://twitter.com/nsmith_piano[Nathan Smith^] shows how to build an algorithm for Sudoku that finds the optimum solution.
+
+Nathan shows how to model Sudoku as an exact cover problem using Neo4j, and then explains how to use Donald Knuth's Algorithm X to solve it. The code is all available in a https://github.com/smithna/neo4j-sudoku/blob/master/Sudoku.ipynb[Jupyter notebook^].
+
+https://medium.com/neo4j/solving-sudoku-with-neo4j-a5258d545daf[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Real-time UI using Kafka and Vue.js, Flask Login, Inference in Graph Databases
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200117013011/1_IhJsNuWD4mfjhlVGesXxqw.jpeg" width="150px"  />
+</div>
+++++
+
+* Adam Cowley starts the new year with a blog post in which he builds a https://adamcowley.co.uk/neo4j/real-time-ui-vuejs-neo4j-kafka/[real-time UI on top of Neo4j with Vue.js and Kafka^]
+
+* Taiwo O. Adetiloye shows how to https://medium.com/@taiwo.adetiloye/implementing-flask-login-with-neo4j-database-54a3ac0d4cdf[integrate Flask Login with Neo4j^] and creates a simple dashboard to log into.
+
+* Martin Preusse released https://github.com/kaiserpreusse/graphio[graphio^], a Python library to quickly build data sets and load them into Neo4j.
+
+* If you prefer your TWIN4j content in audio format, Rik released http://blog.bruggen.com/2020/01/graphistania-20-episode-3-this-month-in.html[episode 3 of Graphistania 2.0^]. They discuss content from December's TWIN4j posts, including managing VMware infrastructure, visualising breast cancer data, and analysing customer journeys.
+
+* Atakan Güney explains https://towardsdatascience.com/inference-in-graph-database-7203938932a0[what inference is on the Semantic Web^] and shows how it can be applied in Neo4j.
+
+[[features-4]]
+=== Neo4j 4.0: Post-Union Processing Explained
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200117055535/1_oQiAvoegTNKFH-gjGRhjiQ-2-scaled.jpeg" width="150px"  />
+</div>
+++++
+
+https://neo4j.com/release-notes/neo4j-4-0-0/[Neo4j 4.0 was released this week^], and Luanne Misquitta has written a blog post about an eagerly awaited feature - post union processing. 
+
+Luanne describes the problem that this feature solves, shows some examples of how to use, and concludes by listing some gotchas to keep in mind.
+
+https://graphaware.com/neo4j/2020/01/17/post-union-processing-explained.html[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== QuickGraph: UK Official Singles Chart 2019
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200116235513/official-charts-header.png" width="200px"  />
+</div>
+++++
+
+In my latest QuickGraph post I showed how to create a graph of the UK Official Singles Chart using data from https://officialcharts.com/[officialcharts.com^] and the Spotify API.
+
+After importing the data using APOC's https://neo4j.com/docs/labs/apoc/current/import/load-json/[Load JSON^] procedure, we explore the top charting artists, the number 1 songs of 2019, as well as the biggest climbing songs from week to week.
+
+https://markhneedham.com/blog/2020/01/04/quick-graph-uk-official-charts/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mckenzma[Michael McKenzie^]:
+
+tweet::1216735759836696577[type={type}]
+
+////
+
+Knowledge Graphs in Action - @neo4j GraphTour Mexico City - by @ikwattro  - https://youtu.be/pRSEs9V6-4U
+
+https://faboo.org/2020/01/implementing-a-searchbox-with-neo4j/ 
+
+
+* https://markhneedham.com/blog/2019/12/23/quick-graph-itsu-allergens/
+* https://markhneedham.com/blog/2020/01/16/interactive-uk-charts-quickgraph-neo4j-streamlit/
+
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+
+https://tagtaxa.com/getting-an-insight-of-blockchain-transactions-with-neo4j-graph-database/
+Sinisa DrpaSinisa Drpa
+Getting an Insight of Blockchain Transactions Flow with Neo4j Graph Database
+In the previous post I described how to explore and better understand information on Lisk blockchain by running SQL queries directly on the blockchain database. In this article I'll try to explain how to export the data from Lisk relational database to Neo4j graph database in order to be able
+
+* Indoor navigation with ReactJS and Neo4j: https://ordina-jworks.github.io/iot/2019/12/20/ar-signpost.html
+
+
+* https://github.com/trinitor/netstat2neo4j
+
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+* https://info.michael-simons.eu/2019/08/22/whats-a-bill-of-material-bom-file/
+
+* https://maxdemarzi.com/2020/01/16/getting-the-latest-transactions/
+
+
+https://blog.graphcommit.com/2019/12/graph-commit-project.html
+https://blog.graphcommit.com/2019/11/create-veeam-backup-knowledge-graph-via.html 
+https://blog.graphcommit.com/2019/11/import-vcenter-infrastructure-into.html
+
+
+
+https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf
+Human Genes Graph
+
+Visualize Clinical Data in Graph Database in 20 Minutes
+https://medium.com/@hongpingliang/visualize-clinical-data-in-graph-database-in-20-minutes-f4de223449a2 
+
+
+
+////
+

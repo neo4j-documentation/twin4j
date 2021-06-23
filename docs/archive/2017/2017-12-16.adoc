@@ -1,0 +1,133 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 16 December 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Greg Walker
+
+This week’s featured community member is https://twitter.com/in3rsha[Greg Walker^], the creator of http://learnmeabitcoin.com/[learnmeabitcoin.com^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171214011622/this-week-in-neo4j-16-december-2017.jpg["Greg Walker - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Greg Walker - This Week's Featured Community Member
+</strong>
+</p>
+++++
+Greg imported the whole Blockchain into Neo4j, creating a huge database that powers the learning website. The database is updated as new blocks are created and as of May 2017 had 1,587,199,550 nodes, 2,503,359,310 relationships, and a total size of 625 GB.
+
+He's presented his work at the London meetup, https://www.youtube.com/watch?v=NSaYAPiJc-M[online meetup^], and this week as part of the Neo4j webinar series. 
+
+You can find the code in Greg's https://github.com/in3rsha/bitcoin-to-neo4j[bitcoin-to-neo4j^] GitHub repository.
+
+On behalf of the bitcoin and Neo4j communities, thanks for all your work Greg!
+
+=== Beta Release: Java Driver with Async API for Neo4j
+
+My colleague Konstantin Lutovich released https://neo4j.com/blog/beta-release-java-driver-async-api-neo4j/[version 1.5.0-beta03^] of the Neo4j Java driver which is now built on an asynchronous, Netty-based infrastructure.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171208030122/beta-java-driver-1-5-async-api-neo4j.png["1.5.0-beta03 pre-release version of the Bolt Java driver", 300, 150, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+1.5.0-beta03 pre-release version of the Bolt Java driver
+</strong>
+</p>
+++++
+
+This version of the driver uses non-blocking I/O, which means it can now be used more effectively in environments where code should block as little as possible such as Akka actors or Spring Data reactive.
+
+We'd love to get your feedback, so please give the new driver a try and let us know how well it works for your use case. You can either send an email to devrel@neo4j.com or create an issue on the https://github.com/neo4j/neo4j-java-driver[neo4j-java-driver^] repository.
+
+=== On the podcast: The BloodHound Team and Ray Bernard
+
+There have been two recent interviews on https://twitter.com/rvanbruggen[Rik^]'s https://soundcloud.com/graphistania[Graphistania^] podcast.
+
+A couple of weeks ago Rik spoke to http://blog.bruggen.com/2017/11/podcast-interview-with-ray-bernard.html[Ray Bernard^], the TWIN4j https://neo4j.com/blog/this-week-neo4j-28-october-2017/[featured community from 28th October 2017^]. They discussed http://www.suprfanz.com/[Suprfanz^], a product Ray is building to drive traffic to events via social media, the https://www.youtube.com/watch?v=hDIcgyMdZuI[Graph Karaoke Machine^], and more.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171214010819/bloodhound-suprfanz.png["BloodHound and SuprFanz", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+BloodHound and SuprFanz
+</strong>
+</p>
+++++
+
+Late last week Rik interviewed http://blog.bruggen.com/2017/12/podcast-interview-with-andy-robbins.html[Andy Robbins and Rohan Vazarkar^] - creators of https://github.com/BloodHoundAD/BloodHound[BloodHound^], a security engineering tool that uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. We featured BloodHound in TWIN4j in https://neo4j.com/blog/this-week-neo4j-29-july-2017/[July^] and https://neo4j.com/blog/this-week-neo4j-14-october-2017/[October^] so I was quite excited to listen to this one. They explain the origin story of BloodHound and go into more detail on some of its common use cases.
+
+=== Poker Analytics, Cypher via gRPC, Bolt for asyncio
+
+* https://twitter.com/davebshow[David Michael Brown^] created  https://github.com/davebshow/asyncbolt[asyncbolt^], an implementation of the Neo4j Bolt client/server protocol for Python https://docs.python.org/3/library/asyncio.html[asyncio^]. It's still in its infancy but certainly one to keep an eye on.
+
+* My colleague https://twitter.com/maxdemarzi[Max De Marzi^] has written a couple of posts this week.  He shows how to https://maxdemarzi.com/2017/12/13/stored-procedure-to-import-data/[write a  stored procedure to import data^] in batches and creates a https://maxdemarzi.com/2017/12/13/adding-grpc-to-neo4j/[a Neo4j Kernel Extension to process Cypher queries via gRPC^]. 
+
+* Rimma Shafikova has an excellent presentation where she shows how to  https://www.youtube.com/watch?v=R18LrYTlL6I&feature=youtu.be[use a graph database for Poker analytics^]. 
+
+* The second part of https://twitter.com/SylvainRoussy/[Sylvain Roussy^]'s French Neo4j book https://www.d-booker.fr/neo4j-2/188-deploiement.html[has been released^]. This section shares tips on running Neo4j in production. 
+
+* https://twitter.com/tb_tomaz[Tomaz Bratanic^] has https://tbgraph.wordpress.com/2017/12/13/neo4j-got-social-graph-analysis/[written a blog post^] in which he find communities of people in Game of Thrones that have a similar position of power in the network. Tomaz calculates various centrality scores using the https://neo4j-contrib.github.io/neo4j-graph-algorithms/[Neo4j graph algorithms^] package and then works out the similarity of characters using https://neo4j-contrib.github.io/neo4j-apoc-procedures/[APOC^]'s cosine similarity function.
+
+* https://twitter.com/byvlstr[Valentin Lungenstrass^] has written a blog post in which he shows how to https://medium.com/@vlstr/configure-both-mysql-and-neo4j-in-a-spring-boot-jhipster-project-e52b5d91f04d[Configure both MySQL and Neo4J in a Spring Boot / JHipster project^]
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article explaining https://neo4j.com/developer/kb/parsing-of-quotes-for-load-csv-and-or-Import/[how to deal with quotes when importing data into Neo4j^]. The article details common issues using LOAD CSV and neo4j-import. 
+
+You can learn more import tips and tricks in https://twitter.com/_nicolemargaret[Nicole White^]'s https://www.youtube.com/watch?v=Eh_79goBRUk[Using LOAD CSV in the Real World^] presentation.
+
+=== Next Week
+
+We're closing in on Christmas but there are still a couple of events organised for next week.
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+
+| December 18th 2017 | https://www.meetup.com/graphdb-toulouse/events/245694902/[Des graphes pour mieux modéliser avec neo4j et linkurious^] | https://www.meetup.com/graphdb-toulouse[Graph Database - Toulouse^] | https://twitter.com/rrrouyer[Nicolas Rouyer^], https://twitter.com/cedricfauvet[Cédric Fauvet^], Christian Guichou
+
+| December 19th 2017 | https://www.meetup.com/Graph-Database-NRW/events/244681397/[Querying graph data by example from genomics - Part 2^] | https://www.meetup.com/Graph-Database-NRW[Graph Database - NRW^] | https://twitter.com/ira_res[Iryna Feuerstein^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/flutui[Jonny Flutey^]:
+
+tweet::941079349171818496[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

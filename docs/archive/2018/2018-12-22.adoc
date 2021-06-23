@@ -1,0 +1,177 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+In the week of the longest night, Mark is enjoying a well earned vacation, so I can use the opportunity to thank him for his relentless work reading through all the amazing things that happen in our Neo4j community every week to present them to you in a compact format. 
+
+This week is no exception and it was way too much to give everything enough credit. So enjoy this last 2018 edition of this week in Neo4j. We're back in January, until then enjoy your Holidays and have a Happy New Year.
+
+[[featured-community-member]]
+=== Featured Community Member: Raik Lochau
+
+This weeks featured community member is Raik Lochau, also known as ThirstForKnowledge on StackOverflow. Raik lives in Brühl, Germany, which you might know for its PhantasiaLand theme park (also the venue for JavaLand).
+
+Raik recently left a position as an IT manager of large corporate projects in enterprise environments to found a fashion startup with his wife.
+
+To realize his passion he was looking for a better data model to handle the different aspects of such an application (master data management, recommendations, price management, customer preferences, social, predictive analytics and more) and came across Neo4j. 
+He uses Spring Data Neo4j for the backend implementation, and is looking forward to explore all possibilities of the library and provide feedback to the (also German) SDN team which lives close by.
+
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20181220165703/this-week-in-neo4j-22-december-2018.jpg[name="Raik Lochau"]
+
+Since starting the effort, Raik has been very active on StackOverflow answering 41 Neo4j-related questions in the last few months, which is really impressive. 
+Especially the depth and care of his answers is remarkable.
+
+In the name of the Neo4j Community, thanks a lot for all your work Raik, and we're looking forward to seeing more answers from you and perhaps even articles and talks on Neo4j related topics (e.g at Java User Groups in your region).
+
+
+link:https://www.xing.com/profile/Raik_Lochau/cv?sc_o=da980_e[Thank Raik for his work, role="medium button"]
+
+[[features-1]]
+=== New Online Introduction Class Launched
+
+This week we launched a more comprehensive online introduction class for Neo4j.
+
+The new course is a seven hour, comprehensive introduction to Neo4j and Cypher that includes 16 hands-on exercises. 
+You are guided through the exercises, and also receive a Certificate of Completion at the end of the course if you answered the quizzes correctly.
+
+youtube::haanomzfZbc[type={type}]
+
+link:https://neo4j.com/graphacademy/online-training/introduction-to-neo4j/[Take the course, role="medium button"]
+
+[[features-2]]
+=== Rik interviewed a very particual guest
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="150px"  />
+</div>
+++++
+
+Inspired by Radiotopia's "Everything is Alive", Rik imagined a Neo4j instance willing to answer his questions.
+
+link:https://blog.bruggen.com/2018/12/podcast-interview-with-jep-graph.html[Listen to the podcast, role="medium button"]
+
+[[articles-1]]
+=== This weeks articles and publications
+
+* Will released version https://grandstack.io/docs/neo4j-graphql-js.html[v2.1.0 of neo4j-graphql-js], which powers the GRANDstack. +
+This release includes support for @neo4j native temporal types as relationship properties and a few fixes.
+* Will also published an https://blog.grandstack.io/using-neo4js-full-text-search-with-graphql-e3fa484de2ea[article about using Neo4j 3.5's full-text search with GRANDstacks `@cypher` directive].
+* Michael Simons talk https://www.youtube.com/watch?v=GXtHJZ07L8o&feature=youtu.be["Going from relational databases to databases with relations with Neo4j and SpringData"] from Devoxx Ukraine was published
+* David Stafford wrote https://www.sql-cubed.com/breadcrumb-in-sql-and-graph[an article comparing hierarchy representation in SQL and Neo4j]
+* Dana Canzano showed how you can use the graph application builder structr.com to https://medium.com/neo4j/zendesk-to-neo4j-integration-better-control-over-your-reporting-needs-and-building-a-ui-7ba7f17380b9[quickly build an UI for your application], in his case the Zendesk Dashboard
+
+[[features-3]]
+=== Exploring relationships on the ledger: Part Two - Import and Exploration 
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://xrpcommunity.blog/content/images/2018/12/payments_dates.png" width="150px"  />
+</div>
+++++
+
+Thomas Silkjær published the second part of his XRP (Ripple) analysis series with Neo4j.
+Here he demonstrates the data ingestion (45M nodes, 89M relationships) and the initial exploration of the data with some really interesting queries.
+
+Looking forward to the hosted version of this dataset, with a full Neo4j Browser guide. Stay tuned.
+
+link:https://xrpcommunity.blog/exploring-relationships-on-the-ledger-part-two/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== EggHead Course: Build a Neo4J & GraphQL API
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20181220172137/egghead-graphq.jpg" width="150px"  />
+</div>
+++++
+
+Comcast engineer, Scott Ross published a fast paced and hands-on course on egghead.io on how to create a Neo4j powered GraphQL API using GRANDstack.
+
+link:https://egghead.io/courses/build-a-neo4j-graphql-api[Watch the Course, role="medium button"]
+
+[[features-5]]
+=== Halin Release 0.6.0
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://pbs.twimg.com/media/DuFxThFW0AEMWl5.jpg:large" width="150px"  />
+</div>
+++++
+
+David Allen released a new version of Halin, the Neo4j monitoring tool and graph app.
+This release contains: diagnostics & user management for Neo4j Community Edition!
+
+I really like to use it, it helped me already several times to track issues on my Neo4j server.
+
+link:http://halin.s3-website-us-east-1.amazonaws.com/[Try Halin Now, role="medium button"]
+
+[[features-6]]
+=== Testcontainers Galore, now with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://rnorth.org/public/testcontainers/logo.png" width="250px"  />
+</div>
+++++
+
+Michael Simons contributed Neo4j support to https://github.com/testcontainers/testcontainers-java/releases/tag/1.10.3[testcontainers].
+Thanks so much for that!
+Now you can spin up Neo4j test instances for your JVM projects, find https://www.testcontainers.org/usage/neo4j_container.html[more in the docs here].
+
+Michael started to apply it to Spring Data Neo4j and we plan the same for APOC and other libraries.
+
+Also this week, František Hartman from our partner GraphAware published an article "Integration testing with Docker Neo4j image and Testcontainers" by using a Generic Container.
+Some of the feature are now built in, others like custom extensions are still relevant.
+
+link:https://graphaware.com/docker,/testing/2018/12/16/integration-testing-with-docker-neo4j-image-and-testcontainers.html[Read the article, role="medium button"]
+
+[[features-7]]
+=== Create a Data Marvel — Part 4: How To Design the Application
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://cdn-images-1.medium.com/max/1600/1*hlS83SdmNoqwDtyMajRo7Q.jpeg" width="200px"  />
+</div>
+++++
+
+Jennifer published part 4 of her amazing Marvel series, now explaining the choice of Spring Data Neo4j as the persistence layer and the underpinning of this convenient library (one of my babies).
+
+link:https://medium.com/neo4j/create-a-data-marvel-part-4-how-to-design-the-application-874ba6ea08a5?sk=2290eb2d238a54f2f048ad3a01472f03[Learn how to build an SDN application, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/unterstein[Johannes Unterstein^]:
+
+tweet::1072771005817352192[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+For the next week I hope that you are enjoying yourself and have fun with whatever makes you happy.
+
+See you again in January, Happy New Year.
+
+Cheers, Michael
+

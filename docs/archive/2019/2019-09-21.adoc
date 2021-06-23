@@ -1,0 +1,171 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Kafka Streams Graph Processing, GRANDstack Football Transfers, Spring Data Neo4j RX, Role Based Access Control In Neo4j 4.0, Learning Cypher, and More!
+
+[Body copy:]
+////
+
+
+This week we preview the Knowledge Graph talks at the NODES 2019 conference and we learn how to do sentiment analysis with Neo4j and GCP NLP. 
+
+Stefan Dreverman continues his series on building questionnaires using Neo4j, Max De Marzi builds a property graph, and there's a paper showing how to query multi dimensional events.
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Kenny Bastani
+
+Our featured community member this week is an old friend of the Neo4j Developer Relations team, https://twitter.com/kennybastani[Kenny Bastani^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190920070730/this-week-in-neo4j-21-september-2019.jpg[name="Kenny Bastani"]
+
+Kenny worked on the Developer Relations team in 2013 and 2014, creating a ferocious amount of content via https://neo4j.com/blog/contributor/kenny-bastani/[blog posts^] and meetup or conference presentations. 
+
+He presented on topics including https://vimeopro.com/neo4j/videos-2013/video/79438638[Natural Language Search^] at GraphConnect 2013 and https://www.youtube.com/watch?v=2IjIMCJbLhc[Document Classification with Neo4j^]. 
+
+Kenny did pioneering work in the graph analytics space, integrarating with Neo4j with Spark via the https://github.com/neo4j-contrib/neo4j-mazerunner[Mazerunner^] project. He presented on this in the talk https://www.slideshare.net/KennyBastani/graph-analytics[Big Graph Analytics on Neo4j with Apache Spark^]. This project acted as the inspiration for the https://neo4j.com/docs/graph-algorithms/current/[Neo4j Graph Algorithms Library^] that was launched in 2017. 
+
+After leaving Neo4j Kenny went to work at Pivotal, where he continued to contribute to the Neo4j community, via presentations like https://www.youtube.com/watch?v=dvVhRSv3xSM[Using Docker, Neo4j, and Spring Cloud^] and https://www.youtube.com/watch?v=bKFiLeyCVzE[Polyglot Persistence for Microservices using Spring Cloud and Neo4j].
+
+On behalf of the Neo4j community, thanks for all your work Kenny!
+
+https://www.linkedin.com/in/kennybastani/[Connect with Kenny on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019 Preview: Knowledge Graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190604150332/nodes-2019-neo4j-online-developer-expo-summit-register-today.png" width="200px"  />
+</div>
+++++
+
+There's now only three weeks to go until our first https://neo4j.com/nodes-2019/[Neo4j Online Developer Summit^], and this week we're going to preview talks tagged https://neo4j.com/online-summit/session-topics/?topic=knowledge-graph[Knowledge Graphs^].
+
+==== All
+
+Wolfgang Hoeck will get us started in this category, with his talk titled https://neo4j.com/online-summit/session/knowledge-graph-cancer-modeling-import-explore-bloom[How to build a knowledge graph from scratch even if you are not really a full-blown developer^]. 
+
+==== Intermediate
+
+Jan Zak will talk about a topic that's often neglected when it comes to knowledge graphs - the UI! Jan will summarise current approaches and then https://neo4j.com/online-summit/session/challenges-knowledge-graph-visualization[describe a new novel user interaction pattern^]. 
+
+==== Advanced
+
+You won't want to miss https://neo4j.com/online-summit/session/neosemantics-linked-data-rdf-toolkit[the talk^] by our resident RDF expert, Jesus Barrasa. Jesus will be showing off https://github.com/jbarrasa/neosemantics[Neosemantics^], a linked data toolkit that he created to enable the use of RDF in Neo4j. 
+
+https://www.crowdcast.io/e/nodes2019[Register for NODES 2019, role="medium button"]
+
+[[features-2]]
+=== Performing sentiment analysis on Twitter data using Neo4j graph algorithms and GCP NLP
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190920081003/2019-09-20_16-09-49.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/kennybastani[Kenny Bastani^] shows us how to design a graph algorithm processing engine on top of Neo4j that discovers the influence and sentiment of tweets in your Twitter network.
+
+https://www.kennybastani.com/2019/09/sentiment-analysis-on-twitter-data.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building a Questionnaire with Neo4j — part 3/3: A dynamic list
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190920072315/1_C2PxUNIoqOxhrOvfttzaLg.png" width="150px"  />
+</div>
+++++
+
+Stefan Dreverman continues his series of blog posts showing how to use Neo4j to build a questionnaire.
+
+In part 3, we learn how to create a graph model that reveals question to a user based on their answers to previous questions. The approach described in this post would enable us to create a SurveyMonkey or Kahoot style application.
+
+As with the other posts in the series, Stefan shows how to both create and query sample quizzes using the Cypher query language.
+
+https://medium.com/@stefan.dreverman/building-a-questionnaire-with-neo4j-part-3-3-a-dynamic-list-995c7fa8cabd[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== An Introduction to Neo4j, Reactive Programming with Neo4j, Querying Multi-Dimensional Events
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190920084054/1_P7fURS9fxrf-demxxWXhCg.png" width="150px"  />
+</div>
+++++
+
+* Hantsy Bai wrote a blog post showing how to get https://medium.com/@hantsy/reactive-programming-with-neo4j-fb926a423d33[up and running with Spring Data Neo4j RX and an early release of Neo4j 4.0^]. 
+
+* Steffan Esser and Dirk Fahland published a paper showing how to https://research.tue.nl/en/publications/storing-and-querying-multi-dimensional-process-event-logs-using-g[store and query multi-dimensional process event logs using Neo4j^].
+
+* As part of his exploration of NoSQL databases, John Clarke https://towardsdatascience.com/an-introduction-to-graph-databases-cd81a0d5aa12[explores what graph databases can do and shows some use cases where they shine^].
+
+* Got 10 minutes to spare? That's more than enough for Félix Revert to https://towardsdatascience.com/getting-started-with-neo4j-in-10-minutes-94788d99cc2b[get data from a spreadsheet into Neo4j^].
+
+
+[[features-5]]
+=== The Real Property Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190920082702/spoiler_on_a_van.jpg" width="150px"  />
+</div>
+++++
+
+In Max De Marzi's latest blog post he shows how to build a graph based on data from the Marin County, Florida Property Appraiser. 
+
+Max explains his simple approach to data import, runs some basic Cypher query, and then runs the Union Find graph algorithm to find clusters of properties.
+
+https://maxdemarzi.com/2019/09/13/the-real-property-graph/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/freethejazz[Jonathan Freeman^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1172631090365906944[type={type}]
+
+
+////
+
+
+The evolution of power— A graph analysis of game of thrones
+https://medium.com/@yvonneche/the-evolution-of-power-a-graph-analysis-of-game-of-thrones-dc71a8f59b44
+
+
+
+Custom analyzer for fulltext search in #Neo4j https://graphaware.com/neo4j/2019/09/06/custom-fulltext-analyzer.html
+
+
+https://graphlytic.biz/blog/how-to-install-graphlytic-in-neo4j-desktop
+
+Building a Chat Bot in @neo4j http://maxdemarzi.com/2019/09/18/building-a-chat-bot-in-neo4j/
+
+I'm proud to announce that I've achieved my Reverse Engineering Malware (GREM) Gold Certification. "Leveraging the PE Rich Header for Static Malware Detection and Linking" is now published in the SANS Reading Room!
+https://www.sans.org/reading-room/whitepapers/reverseengineeringmalware/leveraging-pe-rich-header-static-malware-detection-linking-39045 
+
+////

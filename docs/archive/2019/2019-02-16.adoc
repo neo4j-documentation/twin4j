@@ -1,0 +1,150 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to This Week in Neo4j, where we round up the last week in the world of graph databases. This week our Chief Scientist Dr Jim Webber describes how to run Neo4j in a Multi Data Center Environment, Max De Marzi shows us how to find the shortest path on a rail network, and Stefan Bieliauskas shows us why graphs are a perfect fit for modeling data provenance
+
+
+[[featured-community-member]]
+=== Featured Community Members: David Stevens
+
+This week's featured community members is https://twitter.com/englishsid[David Stevens^], Global Technology Transformation Lead, DXC. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190215010713/this-week-in-neo4j-16-february-2019.jpg[name="David Stevens"]
+
+David is the author of the https://github.com/dxc-technology/dxc-digitalexplorer[DXC DigitalExplorer^], an Enterprise knowledge graph built using Neo4j. The platform provides the means to understand, shape, and enable Digital Transformation projects, and David won a Graphie for his work at GraphConnect NYC 2018. 
+
+David presented https://www.youtube.com/watch?v=hadvEvP-1yw[The Enterprise Knowledge Graph Explorer^] as part of this week's Neo4j Online Meetup, and also recently featured in the  https://www.youtube.com/watch?v=zFy4h_0CRjc[5 minute interviews series^].
+
+He'll will be presenting at https://neo4j.com/graphtour/[GraphTour^] Madrid next week, so if you're going don't forget to say hi!
+
+link:https://twitter.com/englishsid[Learn more about David, role="medium button"]
+
+[[features-1]]
+=== Graph versioning Episode one — Time Based
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190214233352/1_XyVIqGaYsVH3XGJkNtnlGA.png" width="120px"  />
+</div>
+++++
+
+Versioning graphs is a commonly asked question, and Tom Geudens has started a series of post explaining the different approaches. 
+
+Installment 1 focuses on time-based versioning of graphs. Using an e-commerce example, Tom shows how to separate identity from state, where the name of shops and the products that they sell can vary over time.
+
+link:https://medium.com/neo4j/graph-versioning-episode-one-time-based-564ac897c59e[Read the blog post, role="medium button"]
+
+[[features-2]]
+=== Community detection of survey responses based on Pearson correlation coefficient with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190214231200/1_PQXl6hjaDJZnnfKFWt5X-g.png" width="200px"  />
+</div>
+++++
+
+A couple of weeks ago we added the Pearson Similarity algorithm to the Graph Algorithms library, and Tomaz Bratanic wrote a blog post showing how we could use it to make sense of Kaggle's https://www.kaggle.com/miroslavsabo/young-people-survey/home[Young People Survey^] dataset.
+
+This dataset contains amongst other things, music preferences, phobias, and health habits, and Tomaz initially shows how to use the algorithm to work out correlations between the answers in these different categories. 
+
+He then builds a similarity graph of users based on their answers, and uses the Louvain algorithm to find communities of users, before creating a Gephi visualisation of those communities.
+
+link:https://towardsdatascience.com/community-detection-of-survey-responses-based-on-pearson-correlation-coefficient-with-neo4j-a522e2264c1c[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Provenance with Neo4j, Playbook for graph database projects
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190214225233/1_cgrKoUQX8LkVBeus-PCu1Q.png " width="150px"  />
+</div>
+++++
+
+* Stefan Bieliauskas wrote a blog post showing https://medium.com/neo4j/getting-started-with-provenance-and-neo4j-b50f666d8656[how to model provenance data in Neo4j^]. 
+
+* Mihai Raulea https://hackernoon.com/from-zero-to-graph-hero-in-5-days-and-5-steps-34a1853b75c8[shared his playbook^] for graph database projects.
+
+* In https://maxdemarzi.com/2019/02/15/calculating-the-best-rail-road-paths-in-neo4j/[calculating the best rail road paths^], Max De Marzi shows how to write a procedure to find the quickest routes between train stations.	 
+
+[[features-3]]
+=== Running Neo4j in Multi Data Center Environments
+
+https://twitter.com/jimwebber[Dr Jim Webber^] was back in the video studio, this time recording a video explaining how to run Neo4j in Multi Data Center Environments. 
+
+youtube::4q8JklXN7kA[type={type}]
+
+Jim describes how to configure Neo4j servers with metadata to optimise the way that data is both queried and moved between them. You can learn more about the concepts Jim covers in the https://neo4j.com/docs/operations-manual/current/clustering/multi-data-center/configuration/[Multi DC documentation^].
+
+[[features-4]]
+=== Create a Data Marvel — Part 8: Controlling and Servicing our Comic Endpoints
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190214233158/1__x9tCYEuNWBmBgL38hnymg.jpeg" width="200px"  />
+</div>
+++++
+
+https://twitter.com/jmhreif[Jennifer Reif^]'s Marvel Series is back, and this week Jennifer shows us how to build the  controller and service classes for handling requests and shaping results.
+
+Everything is now in place to feed the data into d3 to better visualize the Marvel Universe in the next installment!
+
+link:https://medium.com/@jennifer.reif/create-a-data-marvel-part-8-controlling-and-servicing-our-comic-endpoints-4dd08b81e0e[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Draekenn[Thibault Chevrin^]:
+
+tweet::1094624495623700482[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+link:https://r.neo4j.com/2TpqlIn[Read the blog post, role="medium button"]  
+
+
+
+
+
+[[articles-1]]
+=== Graphing yourself, New Scala Driver, New Release on Google Cloud Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111074314/1_H4YN_BOKECgFDZ8icF7tMg.png" width="150px"  />
+</div>
+++++
+
+* tada  - https://tech.findmypast.com/graphical-family-tree/ 
+
+Graphing the Poets 
+https://medium.com/@kirbyurner/graphing-the-poets-b600c86d6b9 
+
+////

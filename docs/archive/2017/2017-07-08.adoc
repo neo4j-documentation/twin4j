@@ -1,0 +1,80 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Person
+
+This week’s featured community member is Person
+
+[role="image-heading"]
+image::[IMAGE SRC]["Person Name - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Person - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+More text + thank them for their work.
+
+=== Heading 1
+
+
+++++
+[Inline video from YouTube or anything else embedded]
+++++
+
+
+=== Heading 2
+
+* list item 1
+
+* list item 2
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have ...
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* event 1
+* event 2
+
+=== Tweet of the Week
+
+My favourite tweet this week was by [Person]:
+
+++++
+[EMBED LINK]
+++++
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

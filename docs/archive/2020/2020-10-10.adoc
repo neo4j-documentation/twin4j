@@ -1,0 +1,168 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+I hope you all had a good week. There's now only one week until https://neo4j.com/nodes-2020/[NODES 2020^], so it's probably time to work out what talks you're going to attend. And this week we have virtual training sessions for the Neo4j Certified Professionals. 
+
+Our video this week is from Will Lyon’s Building A Travel Guide With Gatsby, Neo4j, and GraphQL series.
+
+Rik Van Bruggen explores the FinCEN Files using Apache Zeppelin, Bert Radke explores Twitter data with Vue.js and the GRANDstack, and Chris Skardon released Neo4j.Driver.Extensions. 
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Brent O. Phillips
+
+This week's featured community member is Brent O. Phillips
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201009020747/this-week-in-neo4j-10-october-2020.jpg[name="Brent O. Phillips"]
+
+Brent has been a graph enthusiast in the Neo4j community for a couple of years. He is the organizer of https://humanitarianai.org/[Humanitarian AI]. Humanitarian AI is a collective group of meetups, https://soundcloud.com/humanitarian-ai-today[a podcast series^], and an open-source initiative. 
+
+The groups are interested in connecting AI developers and humanitarian actors. Members also have the opportunity to work on volunteer projects, developing training datasets, algorithms, and prototype applications useful to the humanitarian community.
+
+Cool right? 
+
+Brent is also a community partner for https://neo4j.com/nodes-2020[NODES 2020]. On behalf of the Neo4j community, thanks for all your work Brent!
+
+https://www.linkedin.com/in/brentophillips/[Connect with Brent on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Images and Wikipedia Data with GraphQL
+
+Our video this week comes from Will Lyon's https://www.youtube.com/playlist?list=PL9Hl4pk2FsvUza4kdPSKQrcl3MGGutOe2[Building A Travel Guide With Gatsby, Neo4j, and GraphQL^] series. 
+
+youtube::_DBVYEgr73E[type={type}]
+
+In the video, Will shows 2 different ways to add custom logic in Neo4j GraphQL, adding images of our points of interest from the Mapillary API and then adding data from Wikipedia.
+
+[[features-2]]
+=== Using Apache Zeppelin with Neo4j to analyse the FinCEN Files
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201009020215/Screenshot-from-2020-10-09-10-02-01.png" width="200px"  />
+</div>
+++++
+
+https://neo4j.com/blog/analyzing-fincen-files-data-neo4j/[FinCEN files^] is an ICIJ investigation into the role of global banks in industrial-scale money laundering. 
+
+In Rik Van Bruggen's latest blog post, he shows how to explore the data using the https://sandbox.neo4j.com/?usecase=fincen[FinCEN sandbox^], Apache Zeppelin, and Neo4j.
+
+http://blog.bruggen.com/2020/09/using-apache-zeppelin-with-neo4j-to.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Exploring Twitter data with Vuejs and GRANDstack
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201009020315/header.png" width=200px"  />
+</div>
+++++
+
+Bert Radke has written a blog post showing how to build an app to explore his twitter data, using Vue.js, Neo4j, and GraphQL. 
+
+Bert generates the GraphQL schema from existing data, tweaks it to deal with an issue with Tweet ids, and adds an extra attribute using a Cypher directive. He then adds authentication to the GraphQL API using AWS Cognito, before a Vue front end.
+
+https://faboo.org/2020/09/vuejs-grandstack-cognito/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Link Prediction with AutoML, Testing Nest.js applications, Covid-Graph on The Andy Show
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+
+
+
+
+* We added a new Graph Data Science developer guide showing how to https://neo4j.com/developer/graph-data-science/link-prediction/aws-sagemaker-autopilot-autom[solve a link prediction problem^] using the GDS Library and SageMaker Autopilot, the AWS AutoML product. 
+
+* Emil Eifrem, Neo4j's CEO, was https://www.informationweek.com/cloud/cockroach-labs-neo4j-snowflake-talk-infrastructure-future/a/d-id/1338845[part of a panel^] at the virtual SaaStr Annual conference. Emil and his co-panellists gave their opinions on paradigm shifts and the future of data infrastructure.
+
+* Adam Cowley shows us how to https://medium.com/neo4j/testing-your-neo4j-nest-js-application-49959313a32c[test our Neo4j-based Nest.js applications^] using unit tests and End-to-End testing.
+
+* I missed this one, but a few months Dr Alexander Jarasche was https://www.youtube.com/watch?v=V_mruweEw5k&feature=youtu.be[interviewed about the Covid-Graph project on The Andy Show^].   
+
+
+////
+https://twitter.com/emileifrem/status/1314323736745705472
+https://twitter.com/gabrielpires/status/1314224980373233669 
+https://twitter.com/SilverDeGeneral/status/1313319485030518785 
+https://twitter.com/alexanderkell_/status/1313167537996271616 
+////
+
+[[features-5]]
+=== Using Neo4j.Driver? Now you can EXTEND it!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201009025527/Neo4j.Driver.Extensions.First_.jpg" width="200px"  />
+</div>
+++++
+
+This week Chris Skardon released https://github.com/DotNet4Neo4j/Neo4j.Driver.Extensions[Neo4j.Driver.Extensions^], a library that makes the Neo4j .NET Driver easier to use. It does this by removing the boilerplate that you normally need to write.
+
+In the blog post, Chris takes us through the various functions that the library provides to do this. 
+
+https://xclave.co.uk/2020/10/06/using-neo4j-driver-now-you-can-extend-it/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mdavidallen[M. David Allen^]:
+
+tweet::1313877743537393665[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* https://neo4j.com/graphacademy/online-training/intro-graph-algos-40/ - waiting for blog post
+
+* Graph Database for Dummies -  https://blog.bruggen.com/2020/10/graphistania-20-episode-9-one-about.html 
+https://www.youtube.com/watch?v=zFAQDo7ahyE 
+
+////

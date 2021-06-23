@@ -1,0 +1,199 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hey graphistas,
+
+I hope your week's going well. I've been playing around with the GDSL's https://neo4j.com/docs/graph-data-science/1.4-preview/algorithms/pregel-api/[Pregel API^], which provides a vertex-centric computation model for writing graph algorithms. I'll write something up on my experiments soon. 
+
+We're getting close to the NODES 2020 virtual conference on October 20th, and Karin Wolok and Reshama Shaikh have both written blog posts that will get you excited if you aren't already. Reshama https://neo4j.com/blog/how-the-global-tech-community-is-coming-together-for-nodes-2020/?ref=social-blog[explains what tech communities around the world are looking forward to^] and Karin gives us https://medium.com/neo4j/release-your-inner-graph-nerd-at-nodes-2020-c497ae002b42[the low-down on what to expect on the day^].
+
+Content-wise, we have an excellent video explaining graphs in life sciences, Adam Cowley shows how to import streams of data, and the GOV.UK team explain the graph to rule them all.
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Oleg Nikolsky
+
+This week's featured community member is Oleg Nikolsky, Services Application Developer at DXC Technology.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201002022339/this-week-in-neo4j-3-october-2020.jpg[name="Oleg Nikolsky"]
+
+Oleg has been a https://community.neo4j.com/u/oleg_neo4j/summary[part of the Neo4j community^] for a couple of years and is a regular on the Neo4j community site. Month after month Oleg ranks in the top 10 on the Neo4j Ninja leaderboard, which tracks the number of questions that members have helped with.
+
+He keeps a sharp eye on the https://medium.com/neo4j/release-your-inner-graph-nerd-at-nodes-2020-c497ae002b42[Neo4j Developer Blog^], and this week pointed out that Karin Wolok had undersold NODES 2020 as having 9 hours of content when it has almost 50 hours! We've sorted that blog post out now, so thanks Oleg!
+
+Oleg recently started a Masters Program in Data Science at the University of Michigan, and he's hoping to sneak in a bit of Neo4j (and maybe convert some of his classmates?!). If you have any ideas for cool projects, do let Oleg know on LinkedIn or the community site.
+
+https://www.linkedin.com/in/olegnikolsky/[Connect with Oleg on LinkedIn, role="medium button"]
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+[[features-1]]
+=== Graphs in Life Sciences - The Cure for Connecting Complex Data
+
+Our video this week comes from a webinar by Rik van Bruggen and Kristen Langendor about Graphs in Life Sciences.
+
+youtube::eA4_qMXnnd8[type={type}]
+
+In the first half of the talk, Rik gives an overview of graphs and graph databases, before explaining how they can be used for contact tracing of COVID-19. Kirsten then talks about her experience working on https://covidgraph.org/[Covid-Graph^], a research and communication platform containing coronavirus resources.
+
+You can also find the slides from https://www.slideshare.net/neo4j/graphs-in-life-sciences[Rik^] and https://www.slideshare.net/neo4j/bringing-clinical-data-together-with-neo4j/neo4j/bringing-clinical-data-together-with-neo4j[Kristen^]'s talks.
+
+[[features-2]]
+=== Analyzing ArXiv data using Neo4j: Part 1
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002005833/1_OjN17hB76TKXF2efx-rJQg.png" width="200px"  />
+</div>
+++++
+
+ArXiv is a website that provides access to over 1.7 millions scientific papers in the fields of mathematics, physics, computer science, and more. It's maintained by Cornell University, who last week released the articles as a https://www.kaggle.com/Cornell-University/arxiv[Kaggle dataset^].
+
+Estelle Scifo, the author of https://www.packtpub.com/product/hands-on-graph-analytics-with-neo4j/9781839212611[Hands on Graph Analytics^], has started a series of blog posts exploring the data. In part 1 she gets the data into Neo4j using the Import Tool and writes some exploratory queries.
+
+This looks like a super fun dataset, I'm already looking forward to part two.
+
+https://medium.com/@st3llasia/analyzing-arxiv-data-using-neo4j-part-1-ccce072a2027[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Kickstart your transition from SQL analytic and window functions to Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002034808/0_6CzyAGt7iwvI0DSh-1.jpeg" width=200px"  />
+</div>
+++++
+
+SQL supports window functions, which enable users to run calculations for each row in a table while having the calculation include values from other rows within an offset around the current row. 
+
+In Nathan Smith's latest blog post, he shows how to achieve the same functionality in Cypher with a bit of help from APOC, Neo4j's standard library.
+
+https://medium.com/neo4j/kickstart-your-transition-from-sql-analytic-and-window-functions-to-neo4j-987d67f7fdb4[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Data Import using RxJS, Link Prediction Guide, Interview with ICIJ's Emilia Struck
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* In Adam Cowley's latest blog post, he demonstrates how to https://medium.com/neo4j/importing-data-into-neo4j-using-rxjs-ed017004bb25[import data from a bunch of files into Neo4j using RxJS^], a reactive programming language for JavaScript and TypeScript.
+
+* Lju wrote a summary blog post about the https://medium.com/neo4j/so-long-summer-of-nodes-2020-832f259baac6[Summer of Nodes^], an event that she hosted with Alex Erdl during August 2020.
+
+* We added a new Graph Data Science developer guide showing how to https://neo4j.com/developer/graph-data-science/link-prediction/scikit-learn/[solve a link prediction problem^] using the GDS Library and scikit-learn, a popular Python machine learning library.
+
+* Last week Chris Skardon announced the launch of version 4.0 of Neo4jClient, a .NET client for Neo4j. This week Chris has written a https://blog.xclave.co.uk/2020/09/28/neo4jclient-4-0/[detailed write-up ^], explaining all the new and shiny things in the release.
+
+* Datanami https://www.datanami.com/2020/09/25/icij-turns-to-big-data-tech-to-unravel-fincen-files/[has an interview^] about the FinCEN files with Emilia Struck,  the ICIJ research editor who oversaw the data and research teams. Emilia explains how they cleaned the data, and then used Neo4j and Linkurious to make sense of the data.
+
+[[features-5]]
+=== One graph to rule them all
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002011809/download-11.png" width="200px"  />
+</div>
+++++
+
+Felisia Loukou and Dr Matthew Gregory work at GOV.UK in the https://gds.blog.gov.uk/2020/06/11/introducing-the-gov-uk-data-labs/[Data Labs team^], which was formed to improve data science capabilities with government data. One of the projects they've been working on is govGraph, a Neo4j Knowledge Graph that contains user journey data, website content, and more.
+
+In the blog post, they explain how they're able to make sense of the data with Cypher queries and the Graph Algorithms (now GDS) library. They also describe a prototype that they built using https://github.com/neo4j-contrib/neovis.js/[neovis.js^] to understand the ways that users navigate website content.
+
+https://insidegovuk.blog.gov.uk/2020/08/07/one-graph-to-rule-them-all/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/AJarasch[Alexander Jarasch^]:
+
+tweet::1310674018798833672[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+
+
+[[features-4]]
+=== Graph Databases For Dummies, GraphQL Mutations, SDN 6
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+* https://www.youtube.com/watch?v=_DBVYEgr73E&list=PL9Hl4pk2FsvUza4kdPSKQrcl3MGGutOe2&index=3 
+Images & Wikipedia Data w/ GraphQL | Building A Travel Guide With Gatsby, Neo4j, & GraphQL: Part 3 
+
+* Exploring Twitter data with Vuejs and GRANDstack
+Building a Vue.js application atop of Grandstack with user authentification against AWS Cognito
+https://faboo.org/2020/09/vuejs-grandstack-cognito/
+
+* https://twitter.com/rvanbruggen/status/1310878005791776768
+Rik Van BruggenRik Van Bruggen @rvanbruggen
+Now that the @ICIJorg's #FinCENFiles are furiously hot in the news, it felt like the right time to write up my experience doing some early analysis of the filings with @ApacheZeppelin and #neo4j.  Kudos to @santand84 of @AgileLARUS for his kind help. See http://blog.bruggen.com/2020/09/using-apache-zeppelin-with-neo4j-to.html https://pbs.twimg.com/media/EjEsUy1X0AA2MwO.png
+
+
+* https://neo4j.com/graphacademy/online-training/intro-graph-algos-40/
+
+* https://neo4j.com/developer/graph-data-science/link-prediction/aws-sagemaker-autopilot-automl 
+
+* https://medium.com/neo4j/testing-your-neo4j-nest-js-application-49959313a32c
+
+* https://www.informationweek.com/cloud/cockroach-labs-neo4j-snowflake-talk-infrastructure-future/a/d-id/1338845
+
+InformationWeekInformationWeek
+Cockroach Labs, Neo4j, Snowflake Talk Infrastructure Future - InformationWeek
+
+* https://www.youtube.com/watch?v=V_mruweEw5k&feature=youtu.be 
+
+YouTubeYouTube | Disruptive LIVE
+On episode 50 of The Andy Show, Andy is joined by Dr Alexander Jarasche from DZD
+
+https://twitter.com/technige/status/1309560467917021187
+https://twitter.com/DaviesJeremy/status/1309520542563741699
+* https://twitter.com/karinwolok/status/1311412050380361729 
+
+////

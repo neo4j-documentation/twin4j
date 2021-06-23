@@ -1,0 +1,154 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Lju Lazarevic and Andrea Santurbano show us how to do event driven graph analytics using Neo4j and Apache Kafka, and we have the Spring Release of the APOC library.
+
+We also learn how to load data into a remote Neo4j instance, model Instancart data, and build an Incident Response Knowledge Graph.
+
+[[featured-community-member]]
+=== Featured Community Member: Vlad Batushkov
+
+Our featured community member this week is https://www.linkedin.com/in/vladbatushkov/[Vlad Batushkov^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190531015843/this-week-in-neo4j-1-june-2019.jpg[name="Vlad Batushkov"]
+
+Vlad is a Senior Software Engineer in Bangkok, Thailand.  He's a graph nerd, like all of us, however, he gave himself a pretty hefty goal for the month of May. In his https://community.neo4j.com/t/one-month-graph-challenge/7295['1-Month Graph Challenge'^] , Vlad committed to writing 1 blog post per day for one full month (and that's a 31-day month, not a 30-day month!).
+
+If you've ever written a blog post, you know how much of a commitment it is.  We're so proud of you, Vlad! You did it!!!!! 
+
+Vlad has created a graphs of flights from the Cayman Islands, applied similarity algorithms to European flags, computed shortest paths in the Hero City, and much more!
+
+Now that he's completed his challenge, he's challenging someone in our community to do an OMGChallenge for June... who knows...maybe the next challenger is you...?   
+
+https://www.linkedin.com/in/vladbatushkov/[Connect with Vlad on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Event-driven Graph Analytics using Neo4j and Apache Kafka
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], https://twitter.com/ellazal[Lju Lazarevic^] and https://twitter.com/santand84[Andrea Santurbano^] showed us how to do event driven graph analytics using Neo4j and Apache Kafka.  
+
+youtube::ncrART5vDfY[type={type}]
+
+Andrea first gives an overview of Kafka and the Neo4j Streams library, before Lju shows how Kafka can be used to stream data between causal cluster instances. 
+
+[[features-2]]
+=== Methods for Loading Data into a Remote Neo4j Instance — Part 1
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190530232930/1_rKg188E1HqNBqXrEhQ3odw.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/EastlondonDev[Andrew Jefferson^] has started a series of posts describing solutions to deal with the situation where you want to import data into Neo4j, but can’t put the source data on the same filesystem as the Neo4j instance or make it available from a URL that the Neo4j instance can access.
+
+In the first article Andrew shows how to make a local directory accessible over the internet using the ngrok.io tunneling service, before importing CSV data using the https://neo4j.com/developer/guide-import-csv/[LOAD CSV^] command.
+
+link:https://medium.com/@aejefferson/methods-for-loading-data-into-a-remote-neo4j-instance-part-1-abea3328dedf[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== SRE: Knowledge Graphs: Increased Context in Human Involved Incident Response(IR)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190530232900/1_jPE6_DZ0PHLHqyJQeDUG1Q.png" width="150px"  />
+</div>
+++++
+
+dm03514 explains how to build an Incident Response Knowledge Graph that stores the structure of services and their dependencies. We then see some of the queries that users can write on such a graph, like:
+
+* understanding why an increase in latency has been detected on a service 
+* finding the deploy status for all the components that a user depends on.
+
+link:https://medium.com/dm03514-tech-blog/sre-knowledge-graphs-increased-context-in-human-involved-incident-response-ir-301fd831070c[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== APOC Spring Release, Loading tweets into Kafka and Neo4j, Bible in a Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190531005504/apoc-300x284.png" width="150px"  />
+</div>
+++++
+
+* Michael https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/3.5.0.4[released version 3.5.0.4^] of the APOC library. This release contains new functions for working with dates, procedures for merging nodes and relationships, as well as the usual bug fixes.
+
+
+* I https://markhneedham.com/blog/2019/05/29/loading-tweets-twint-kafka-neo4j/[wrote a blog^] post showing how to load tweets into Kafka, and then use the Kafka Connect Sink to load them into Neo4j as well.
+
+* Kavitha Raju has https://technology.bible/t/the-bible-in-a-graph-database/98[written a post^] explaining her experience using Neo4j to build a graph of the Bible. Kavitha also https://bridgeconn-my.sharepoint.com/personal/kavitha_raju_bridgeconn_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fkavitha_raju_bridgeconn_com%2FDocuments%2FPresentations%2FGraphDB_presentation%2Emp4&parent=%2Fpersonal%2Fkavitha_raju_bridgeconn_com%2FDocuments%2FPresentations&cid=d9c91303-2018-4ba1-a222-ddfa360c5fe2[shared a video^] of her presenting on this topic.
+
+
+[[features-4]]
+=== Modeling Events in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190530234537/top-modeling-agencies-in-los-angeles-for-trade-show-models-promo-models-convention-models-and-event-staff-promotional-models-event-staffing.-victoriae28099s-secret-models..jpg" width="150px"  />
+</div>
+++++
+
+Max De Marzi shows us how to create a graph model of https://www.instacart.com/datasets/grocery-shopping-2017[The Instacart Online Grocery Shopping Dataset^].
+
+He then writes powerful queries to find frequently co-ordered items from the same aisle in the supermarket, both in the same order and across previous orders.
+
+link:http://maxdemarzi.com/2019/05/24/modeling-events-in-neo4j/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/eddywongch[Eddy Wong^]:
+
+tweet::1133835679476199424[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+
+https://neo4j.com/blog/seven-bridges-of-konigsberg-dogs-eye-view/?
+
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+Neo4j - A Graph Project Story : a play about #Neo4j, where protagonists are Neoj4 experts and the plot starts when a client come in with his project. A book written by @nmervaillie @SylvainRoussy @rrouyer and Frank Kutzler. http://d-booker.jo.my/neo4j-book-amz-us @neo4j @askkerush @neo4j https://pbs.twimg.com/media/D6iWgG6WkAElvJA.jpg
+
+
+
+
+Just published v2.6.2 of neo4j-graphql.js which should improve performance when using the orderBy argument. Thanks to @roschaeferDE !!
+
+Let us know if you notice an improvement with ordering with this release.
+
+https://grandstack.io/docs/neo4j-graphql-js.html
+
+
+////Fandreas

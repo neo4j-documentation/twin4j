@@ -1,0 +1,127 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Paradise Papers
+
+The big news this week was the https://www.icij.org/[ICIJ^]'s release of the https://www.icij.org/investigations/paradise-papers/[Paradise Papers^] - a global investigation that has revealed the offshore activities of some of the world’s most powerful people - including U.S Secretary Wilbur Ross and multinational companies.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171109013401/Paradise-Papers-FB-Share.jpg["The Paradise Papers", 800, 420, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The Paradise Papers
+</strong>
+</p>
+++++
+
+The https://www.icij.org/investigations/paradise-papers/about/[Paradise Papers documents^] include nearly 7 million loan agreements, financial statements, emails, trust deeds and other paperwork from nearly 50 years at Appleby, a leading offshore law firm with offices in Bermuda and beyond.
+
+The ICIJ used Neo4j and visualisation tool https://linkurio.us/[Linkurious^] to http://uk.businessinsider.com/swedish-database-startup-neo4j-cracked-paradise-papers-2017-11?r=US&IR=T[provide a way^] for the 382 journalists to explore the data and share visualisations from the stories they were working on.
+
+=== Featured Community Member: Manuel Villa
+
+This week’s featured community member is https://twitter.com/manuelvilla1859[Manuel Villa^], the https://www.icij.org/blog/2017/08/meet-icijs-first-ever-neo4j-connected-data-fellow/[first-ever Neo4j Connected Data Fellow^] at the ICIJ. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171109021235/this-week-in-neo4j-11-november-2017.jpg["Manuel Villa - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Manuel Villa - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Manuel graduated from Columbia University’s J-school where he was a fellow of the Stabile Center for Investigative Journalism in May 2016. 
+
+He used Neo4j in his investigations at Columbia University and presented https://www.youtube.com/watch?v=nz5CgHK-890[Neo4j and Investigative Journalism^] at GraphConnect Europe 2017. 
+
+In August 2017 Manuel joined the ICIJ as a Neo4j Connected Data Fellow and has since worked on the Paradise Papers that were released this week. 
+
+On behalf of the Neo4j community, and in fact the whole world, thanks for all your work Manuel!
+
+=== Online Meetup: Spatio-semantic Comparison of Large 3D City Models in CityGML using Neo4j
+
+In this week's online meetup Son Nguyen showed off a Java-based tool capable of detecting spatio-semantic changes between two arbitrarily large-sized CityGML datasets using the graph database Neo4j. 
+
+youtube::fI4Ze_I6OjE[type={type}]
+
+You can find the source code for the tool in the https://github.com/tum-gis/citygml-change-detection[citygml-change-detection^] GitHub repository.
+
+=== Amazon Rekognition API, Collaborative filtering, Fraud rings
+
+* Ilker Yuemsek has an article in http://www.bookware.de/kaffeeklatsch/archiv/KaffeeKlatsch-2017-09.pdf[the September 2017^] edition of the German software development magazine KaffeeKlatsch which shows how data be imported into Neo4J using Python. The source code for the article is https://github.com/lkmsk/OpenDataToNeo4J/[available on GitHub^].
+
+* https://twitter.com/maxthomais[Paul Thomas^] published https://medium.com/@paul13thomas/graph-analytics-of-shareholder-data-6f6b5333bd1[Graph Analytics of Shareholder Data^] in which he shows how to write Neo4j queries to find potential fraud rings in a financial dataset.
+
+* https://twitter.com/datatheque[Grace Tenorio^] explains http://www.datatheque.com/posts/collaborative-filtering/[how to build a personalised recommendation engine^] using the user-user collaborative filtering algorithm. Grace Tenorio shows how to import the https://www.instacart.com/datasets/grocery-shopping-2017[Instacart Online Grocery Shopping Dataset^] into Neo4j, calculate the https://en.wikipedia.org/wiki/Jaccard_index[Jaccard Index^] between users, and make user targeted product recommendations.
+
+* Derek Graeber and Kyle Johnson wrote https://aws.amazon.com/blogs/ai/understand-movie-star-social-networks-using-amazon-rekognition-and-graph-databases/[Understand Movie Star Social Networks Using Amazon Rekognition and Graph Databases^] in which they show how to detect movie stars from images and determine how they're connected by querying the Neo4j movie graph. The authors demonstrate how to do this using Python, the AWS Rekognition API, and d3.js all inside a Jupyter Notebook.
+
+* https://twitter.com/sydketes[Sydney Ketebu^] created a video showing how to implement https://www.youtube.com/watch?v=-MhrHJNnSVg&feature=youtu.be[CRUD operations in Neo4j^]
+
+* Late last week https://twitter.com/structr[Structr^] released https://structr.org/blog/structr-2-2-released[version 2.2^] . This version adds schema-based import wizards for CSV and XML, improves overall performance, and has various other bug fixes.
+
+* We've released the first Developer Zone interview from GraphConnect NYC 2017 in which https://twitter.com/ashleycsun[Ashley Sun^] https://www.youtube.com/watch?v=iFgCvCOJeAo&feature=youtu.be[explains how Lending Club use Neo4j to manage their infrastructure^]. 
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article explaining https://neo4j.com/developer/kb/explanation-of-error-noclassdeffounderror-org-neo4j-kernel-impl-util-jobscheduler/[an exception you may get if you use mismatching versions of APOC and Neo4j^].
+
+If you've just upgraded to Neo4j 3.3 make sure you check this one out.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| November 15th 2017 | https://www.meetup.com/graphdb-netherlands/events/243738811/[Graphs in the real world: Philips Lighting and Graphlr tell their story^] | https://www.meetup.com/graphdb-netherlands[Graph Database - Amsterdam^] | Tim Hanssen,  Marcin Gramza, Marcin Klecha
+
+| November 16th 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/243975401[Spring Data Neo4j 5/ OGM3^] | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Gerrit Meier, Nicolas Mervaillie, František Hartman
+
+| November 16th 2017 | http://connected-data.london/[Connected Data Conference^] | http://datatovalue.co.uk/[Data to Value^] | https://twitter.com/barrasadv[Jesús Barrasa^], https://twitter.com/data_enthusiast[James Phare^], https://twitter.com/countculture[Chris Taggart^]
+
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/akbarzamir[Akbar Zamir^]:
+
+tweet::927287311955648512[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

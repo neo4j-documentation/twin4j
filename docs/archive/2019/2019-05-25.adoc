@@ -1,0 +1,156 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Jake Graham and Alicia Frame explain How Graph Technology is changing AI, David Allen shows us how to use the ELK stack to analyse Neo4j logs and metrics, and there's a new release of the Halin monitoring and management tool. 
+
+We also have slides from talks at KubeCon and Spring IO, as well as slides and a blog post about Neo4j Streams, the Neo4j Kafka integration.
+
+[[featured-community-member]]
+=== Featured Community Member: Simon Goring
+
+Our featured community member this week is Simon Goring.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190524032145/this-week-in-neo4j-25-may-2019.jpg[name="Simon Goring"]
+
+Simon is an Assistant Scientist at University of Wisconsin-Madison and an Adjunct Professor at University of British Columbia (Computer Science). In his research, he primarily focuses on working with large spatio-temporal data sets to understand the causes of vegetation change at continental scales over the past 21,000 years. 
+
+He is also working with EarthCube, an NSF funded project, to develop and implement outreach activities to help improve cyberinfrastructure and to bridge end-users and developers to help geoscientists tackle complex questions with big (linked) data solutions.  
+
+He's not only advocating for open data, but he's advancing our world through research and education. And if you cannot see through his work, he's also a collaborator at heart. He's also in the https://neo4j.com/neo4j-speaker-program[Neo4j Speaker Program^] and just got accepted to speak at https://odsc.com/california[ODSC in San Francisco^] in October. 
+
+We couldn't be more proud!  Thanks, Simon, for all that you do for our world! 
+
+https://www.linkedin.com/in/simon-goring-376105b3/[Connect with Simon on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== How Graph Technology is Changing AI
+
+The video from Jake Graham and Alicia Frame's 'How Graph Technology is changing AI' talk at Spark Summit is now available. 
+
+youtube::v6QI3YlYPrE[type={type}]
+
+The talk focuses on the steps of graph data science. In the first part of the talk, Alicia and Jake describe techniques that we can use right now, like knowledge graphs and graph feature engineering. And in the second part, they envision the future of Graph Based AI in the shape of graph embeddings and graph neural networks.
+
+[[features-2]]
+=== Neo4j Logging/Monitoring with Elastic Cloud and ELK Stack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190524035032/1_SuFJLY3HKIGMhTNFUj2eng.png" width="200px"  />
+</div>
+++++
+
+David Allen shows us how to configure Neo4j logs and metrics to stream effortlessly to an Elastic instance so that we can take advantage of the https://www.elastic.co/elk-stack[ELK Stack^] - a set of components that have powerful capabilities for monitoring and dashboarding.
+
+Once he's done that, we learn how to use Kibana dashboards to learn more about the state of our database.
+
+link:https://medium.freecodecamp.org/how-to-produce-and-consume-data-streams-directly-via-cypher-with-streams-procedures-52cbc5f543f1[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Halin Release: Structured Log Inspection, Download running tasks, UI clean up
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190503010016/images.png" width="150px"  />
+</div>
+++++
+
+David Allen released version 0.10.0 of Halin, the Neo4j monitoring and management tool. This release has a set of new features that were heavily influenced by customer feedback. Highlights include:
+
+* An overhaul of the log inspector, which in some cases presents the logs parsed, broken out by emitting class, timestamp, and log level.
+
+* New "Explainers".  Click the green "i" for info in Halin  to get background on what this component is telling you, why you need it, and where to get links to additional resources.
+
+* Update to the"Tasks" view so that you can download running tasks as CSV, where you can see much more information about connections, transactions, etc.  Including query parameters
+
+* UI clean up of user management functions, with success / error messages arriving by "toast" rather than cluttering the screen as they did in previous releases.
+
+If you don’t already have Halin installed on your Neo4j Desktop instance, you can install it from the Graph Apps Gallery. You can also connect your Neo4j instance to the deployed version at https://halin.graphapp.io/[halin.graphapp.io^]. 
+
+link:https://install.graphapp.io/[Install Halin from the Graph Apps Gallery, role="medium button"]
+
+[[articles-1]]
+=== Neo4j at KubeCon, Spring Data Neo4j RX, Network Connection Footprinting
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190524042350/neo4j-k8s1.jpg" width="150px"  />
+</div>
+++++
+
+* This week Johannes Unterstein presented https://www.youtube.com/watch?v=qgtlztEFqr4[Databases on Kubernetes Using a Custom Operator^] at KubeCon. In this talk Johannes shared his experience working on Neo4j Cloud, the upcoming managed service
+
+* Connor wrote http://ijustwannared.team/2019/04/22/network-connection-footprinting-with-wmi-and-neo4j/[a blog post^] explaining how to remotely enumerate established TCP connections via WMI and import that data into a Neo4j database.   
+
+* Gerrit Meier https://speakerdeck.com/meistermeier/what-the-graph[shared the slides^] from his talk at Spring IO. In the talk, Gerrit gives us a sneak peak at the new reactive version of Spring Data Neo4j.
+
+[[features-4]]
+=== Neo4j Graph Streaming Services with Apache Kafka
+
+https://twitter.com/mesirii[Michael Hunger^] shared the slides from his talk Neo4j Graph Streaming Services with Apache Kafka. 
+
+++++
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ccN9jzwu1U776G" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+++++
+
+Michael gives an overview of the use cases where Kafka is used, explains the various components in the https://github.com/neo4j-contrib/neo4j-streams[Neo4j Streams^] integration, and shares future features that will be added to the library. 
+
+I also wrote a blog post showing how to process Neo4j Transaction Events using KSQL and Kafka Streams.
+
+link:https://markhneedham.com/blog/2019/05/23/processing-neo4j-transaction-events-ksql-kafka-streams/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by our partner https://twitter.com/AgileLARUS[LARUS^], who this week celebrated their 15th birthday:
+
+tweet::1131116563585732608[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+
+https://neo4j.com/blog/seven-bridges-of-konigsberg-dogs-eye-view/?
+
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+Neo4j - A Graph Project Story : a play about #Neo4j, where protagonists are Neoj4 experts and the plot starts when a client come in with his project. A book written by @nmervaillie @SylvainRoussy @rrouyer and Frank Kutzler. http://d-booker.jo.my/neo4j-book-amz-us @neo4j @askkerush @neo4j https://pbs.twimg.com/media/D6iWgG6WkAElvJA.jpg
+
+
+https://technology.bible/t/the-bible-in-a-graph-database/98
+Bible in a Graph Database
+
+
+
+
+////Fandreas

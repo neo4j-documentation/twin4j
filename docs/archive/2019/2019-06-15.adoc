@@ -1,0 +1,164 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Mike Morley and Sony Green show us how to model and visualize borehole data with Neo4j and GraphXR, and we have a Neo4j Graph for the Women's World Cup.
+
+We also have a Bloom Sandbox, exploration of shell companies using graph algorithms, and a redesign of the developer mini site. 
+
+[[featured-community-member]]
+=== Featured Community Member: Sony Green
+
+Our featured community member this week is https://twitter.com/sonygreen[Sony Green^], Co-founder and Director of Business Development at Kineviz.  
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190614054445/this-week-in-neo4j-15-june-2019.jpg[name="Sony Green"]
+
+We first ‘connected’ (pun-intended) with Sony in 2017, when Sony emailed our Director of Developer Relations, Ryan Boyd. At the time, https://www.kineviz.com/[Kineviz^] had built a graph visualization in virtual reality. If you haven’t had the opportunity to explore your data in an alternate universe, it’s definitely a unique experience. 
+
+Later that year, Kineviz set up a VR station in DevZone at GraphConnect NY where you could wander the connected world of GraphConnect attendees. Fast forward a lot of emails and a lot of love, Kineviz became an official https://neo4j.com/partners/[Neo4j Partners^]. They also shifted their focus to GraphXR as their main visualization tool.  
+
+We can’t lie, it’s pretty darn cool! Sony and the Kineviz team have always made community a priority. They get involved in almost everything we do, contribute to the growth of the community, provide content, and more. 
+
+We are so appreciative for people like Sony. His enthusiasm for partnership and collaboration is unmatched and brings so much more substance to our whole community. Thank you, Sony, for being part of this movement with us!
+
+
+https://www.linkedin.com/in/sony-green-9758883b/[Connect with Sony on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== 3D Geological Modelling and Visualization with Neo4j and Kineviz GraphXR
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Mike Morley and Sony Green show us how to model and visualize borehole data with Neo4j and GraphXR. 
+
+youtube::1fTSB9rvcls[type={type}]
+
+You can read more about the project and ask the authors questions on https://community.neo4j.com/t/neo4j-spatial-experiments-2-modelling-borehole-data-with-neo4j-visualizing-with-graphxr/7268/4[this thread^]	 on the Neo4j Community Forum.
+
+[[features-2]]
+=== New Sandbox! Bloom - the Neo4j Graph Visualization Tool
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190613233033/Selection_754.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/ryguyrg[Ryan Boyd^] launched a sandbox for Bloom, the Neo4j graph visualization, exploration, and communication tool.
+
+This sandbox comes with the new web based version of Bloom and a Neo4j database containing a fraud dataset. Try out codeless exploration of graph data. We think you're gonna love it!
+
+link:https://neo4j.com/sandbox-v2/bloom/[Try out the Bloom Sandbox, role="medium button"]
+
+
+[[features-3]]
+=== Graph databases for journalists: Using graph algorithms to explore the participation of shell companies in public procurement
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190613233828/1_yC45RaUWcPJRHh3QrjYGBQ.jpeg" width="100px"  />
+</div>
+++++
+
+In the 2nd part of the Graph databases for journalists series, Dagoberto José Herrera Murillo shows how to use graph algorithms to explore the participation of shell companies in public procurement. 
+
+link:https://medium.com/@a00808906/part-ii-graph-databases-for-journalists-3bf2a5046975[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Google Cloud Infrastructure Graph, Neo4j Developer Mini Site redesign, Importing data from Google Cloud Storage
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190614070038/Selection_760.png" width="150px"  />
+</div>
+++++
+
+
+* https://twitter.com/jmhreif[Jennifer Reif^] launched the redesign of the https://neo4j.com/developer/get-started/[Neo4j Developer mini site^]. We hope you like it, and if you have any feedback or ideas, please let us know by sending an email to devrel@neo4j.com
+
+* Carly Schneider and Fredrik Gustafsson wrote  https://labs.spotify.com/2019/06/04/painting-a-picture-of-your-infrastructure-in-minutes/[an experience report of a Spotify Hackday^], during which they created a Neo4j graph of their Google Cloud infrastructure.
+
+ 
+* https://twitter.com/marceljankr[Marcel-Jan Krijgsman^]  https://marcel-jan.eu/datablog/2019/06/08/loading-rocket-data-in-a-graph-database-neo4j/[created a video^] showing how to load data on all orbital launches and satellites into Neo4j, and visualize the data in Neo4j Desktop.
+
+
+* In https://medium.com/@aejefferson/how-to-use-cloud-storage-to-securely-load-data-into-neo4j-d97b72b2ad8f[part 2^] of his series on loading data into a remote Neo4j instance, https://twitter.com/EastlondonDev[Andrew Jefferson^] shows us how to upload a local directory to Google Cloud storage and create secure, time-limited URLs that we can use to read the csv files from Neo4j.
+
+
+[[features-4]]
+=== Women's World Cup Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190613234022/0_yngFG355Zy_OiuyA.jpg" width="200px"  />
+</div>
+++++
+
+The Women's World Cup started last weekend, so we dusted off our World Cup scraping scripts and created a Women’s World Cup Graph.
+
+If you want to explore the data, we've created a https://neo4j.com/sandbox-v2/womens-world-cup/[World Cup Sandbox^] that contains the data and a built in guide with queries to find top scorers, tournament winners, and more.
+
+link:https://medium.com/neo4j/now-available-womens-world-cup-2019-graph-cf3bd9e44e22[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/traustid[Trausti Dagsson^]:
+
+tweet::1138509509951991809[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://neo4j.com/blog/seven-bridges-of-konigsberg-dogs-eye-view/?
+
+New Pages for the #Neo4j Labs projects.
+
+Would love your feedback if those are helpful:
+
+* https://neo4j.com/labs/kafka/
+* https://neo4j.com/labs/grandstack-graphql/
+* https://neo4j.com/labs/halin/
+* https://neo4j.com/labs/apoc/
+* https://neo4j.com/labs/etl-tool/
+
+And our recent graduate:
+
+https://neo4j.com/developer/graph-algorithms/ 
+
+* We took a look at the 990 Forms published by the IRS for the Key Worldwide Foundation and visualized the relationships we found in the data to help tell the story of the college admissions scandal.
+https://akaritechnologies.com/college-admissions-scandal-visualized/ 
+#neo4j #bloom #graphviz #collegeadmissionscandal
+
+William Lyon@lyonwj
+I just made the #GRANDstack starter a template project with @github's new repository template feature.
+
+Just click the "Use this template" to create a new repo, no need to fork/download to get started with GraphQL and Neo4j!
+
+Try it out here: https://github.com/grand-stack/grand-stack-starter   https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+* https://posts.specterops.io/visualizing-bloodhound-data-with-powerbi-part-1-ba8ea4908422
+
+////

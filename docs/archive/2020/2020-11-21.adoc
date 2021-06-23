@@ -1,0 +1,225 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+I hope your week is going well. After receiving a lot of feedback about the lack of usage examples in the https://neo4j.com/labs/apoc/4.1/overview/[APOC documentation^], Jennifer Reif and I have been busy adding those examples!
+
+So far we've written examples for 340 functions and procedures, so we're just over halfway there. Let us know if we can improve these examples using the feedback form that's on every page. 
+
+This week's video is Jan Zak's NODES 2020 presentation where he shows how to create a graph visualization using PIXI.js. 
+
+This was a big week for software releases, with Neo4j 4.2 and Hume 2.6.0 being launched into the world. 
+
+We have a couple of great blog posts about the Graph Data Science Library and Hantsy shows how to create an audit trail using Spring Data Neo4j. 
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Julia Neagu
+
+
+This week's featured community member is Julia Neagu.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201119041358/this-week-in-neo4j-21-november-2020.jpg[name="Julia Neagu"]
+
+Julia is the Director of Analytics at Tamr, where she is expanding the company's analytics and data science solutions. Tamr is a startup that uses machine learning to solve the data curation problem. 
+
+Before joining Tamr, Julia led the development of data science products at Aon's Intellectual Property Solutions group. She also has a Ph.D. in Physics from Harvard.
+
+Julia recently presented https://www.youtube.com/watch?v=YJiQKYZE4Ug&feature=emb_title[Neo4j with Cloud-Native Data Mastering for the Enterprise^] at the https://neo4j.com/connections/graph-architecture-integrations/[Neo4j Connections: Graph Architecture and Integrations event^]. 
+
+After giving a high-level overview of Neo4j and Tamr, Julia and Nav Mathur demonstrate how to build an anti-money laundering solution using Tamr and Neo4j. Tamr handles the import of data and subsequent entity disambiguation before Neo4j is used to apply graph analysis.
+
+https://www.linkedin.com/in/julianeagu/[Connect with Julia on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Building a Graph Visualization with PIXI.js
+
+Our video this week is Jaz Zak's Building a Graph Visualization with PIXI.js, from the NODES 2020 virtual conference. 
+
+youtube::pe2PgFVvtLs[type={type}]
+
+In the talk, Jan shows how to do basic visualization tasks using WebGL and Canvas. He then shows how we can simplify our lives by using a higher-level library like PIXI.js. After explaining its basic features, Jan gives a quick demo of a graph visualization created using PIXI.js.
+
+[[features-2]]
+=== How to get started with the Graph Data Science Library of Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201119031114/1_5pRS0_W3JbJYCmDNWaWI5Q.png" width="200px"  />
+</div>
+++++
+
+Clair Sullivan has written an extensive introduction to the Graph Data Science Library.
+
+Clair shows how to import a Game of Thrones graph, before showing how to run the PageRank centrality and Louvain community detection algorithms over the graph.
+
+https://towardsdatascience.com/how-to-get-started-with-the-new-graph-data-science-library-of-neo4j-3c8fff6107b[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Data Auditing with Spring Data Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201113012126/download-12.png" width="200px"  />
+</div>
+++++
+
+Hantsy continues the series of blog posts showing how to use Neo4j with Spring Boot. 
+
+In the second post, Hantsy extends a Spring Data Neo4j project to have data auditing support, which results in all database changes being streamed to a log file.
+
+
+////
+* https://hantsy.medium.com/update-accessing-neo4j-with-spring-boot-2-4-3951cb81d97d 
+* https://hantsy.medium.com/data-auditing-with-spring-data-neo4j-11d6461146ff 
+ * https://hantsy.medium.com/testing-spring-data-neo4j-components-299c6ec77378 
+* https://hantsy.medium.com/customizing-queries-with-spring-data-neo4j-304b03918549 - Customizing queries with Spring Data Neo4j
+////
+
+https://hantsy.medium.com/data-auditing-with-spring-data-neo4j-11d6461146ff[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j 4.2 released, Hume 2.6 released, Dump and Load in Neo4j Desktop
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Richard Macaskill announced the https://neo4j.com/blog/introducing-neo4j-4-2/[release of Neo4j 4.2^]. This version has an enhanced Cypher planner, improved OLTP optimisation runtime, as well as enhanced security features.
+
+* Dr. Alessandro Negro announced the https://graphaware.com/hume/2020/11/13/hume-2.6.0-released.html[release of version 2.6.0 of Hume^], the graph-powered insights engine. This version has a perspectives feature that makes knowledge graph management easier, improved graph visualisation, and  simplified management of multiple projects.
+
+* Daniel Heward-Mills shows how to https://medium.com/openlink-odbc-jdbc-ado-net-data-access-drivers/making-an-odbc-connection-to-neo4j-bi-connector-macos-29977c05472d[connect to Neo4j using OpenLink Software’s ODBC-JDBC Bridge Drivers^]. This makes it possible to use Neo4j with ODBC-compliant applications such as Excel for Mac, Virtuoso Universal Server, and FileMaker Pro.
+
+* Tomaz Bratanic walks us through https://tbgraph.wordpress.com/2020/11/11/dump-and-load-a-database-in-neo4j-desktop/[how to dump and load a database using Neo4j Desktop^].
+
+* Alberto De Lazzari builds a https://alberto-delazzari.medium.com/building-an-associative-memory-with-neo4j-1d0713322309[Hopfield neural network model in Neo4j^] and then uses it to predict images of people in the Neo4j community.
+
+////
+https://twitter.com/technige/status/1328329123958231040
+https://twitter.com/lyonwj/status/1328723834023804930
+https://twitter.com/krishnan/status/1328544266004533248 
+
+
+https://graphaware.com/nlp/2020/10/20/ere-jane-austen.html[Read the blog post, role="medium button"]
+
+
+
+////
+
+[[features-5]]
+=== Introducing the new k-nearest neighbors algorithm in the Graph Data Science library
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201119034142/1_9S7wmKNFm-_gQrIcwbYxQ.png" width=200px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest blog post, he explores the k-Nearest neighbours algorithm that was recently added to the Graph Data Science Library.
+
+After employing his web scraping skills to build a Marvel Universe graph, Tomaz does some exploratory analysis to find the most popular characters and groups. 
+
+He then explores communities of allies and relatives, writing a custom algorithm based on the weakly connected components algorithm to find communities that don't contain any enemies.
+
+And finally, Tomaz creates a characters similarity graph based on their stats and runs community detection algorithms on top of that graph as well. 
+
+https://towardsdatascience.com/exploratory-network-analysis-of-marvel-universe-c557f4959048[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/technige[Nigel Small^]:
+
+tweet::1328329123958231040[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* 
+
+https://towardsdatascience.com/working-with-neo4j-rfm-analysis-using-e-commerce-data-721f5bd5c851 - Working with Neo4j: RFM Analysis using E-Commerce Data
+
+
+
+https://medium.com/@h_bushroh/modeling-nodes-and-relationships-dynamically-on-neo4j-e4d07a03fc88
+Modeling nodes and relationships dynamically on neo4j
+
+perl news @perlnews
+http://blogs.perl.org: REST::Neo4p catches up to Neo4j V4.0+ (Mark Jensen) - http://blogs.perl.org/users/mark_jensen/2020/11/restneo4p-catches-up-to-neo4j-v40.html
+
+charts galore:
+- https://medium.com/neo4j/creating-charts-from-your-graphs-2f5b4e86fd6c
+- https://nielsdejong.nl/neo4j%20projects/2020/11/16/neodash.html
+
+Christophe Willemsen @ikwattro
+Happy to share something we've worked on since a while : Single Sign-On for @neo4j with @keycloak
+https://graphaware.com/neo4j/2020/11/17/neo4j-sso-keycloak.html
+
+https://medium.com/openlink-odbc-jdbc-ado-net-data-access-drivers/making-an-odbc-connection-to-neo4j-bi-connector-macos-29977c05472d 
+MediumMedium
+Making an ODBC Connection to Neo4J (macOS)
+
+https://towardsdatascience.com/using-neo4j-with-pyspark-on-databricks-eb3d127f2245
+MediumMedium
+Using Neo4j with PySpark on Databricks
+Unleash the full potential of Spark and Graph Databases working hand in hand
+
+If you are a fan of Dark Netflix Series, here is a graph database for fun by Shyam Pratap Singh  https://buff.ly/334MXF5
+
+Richard Müller @rimllr
+"Graph-Based Performance Analysis at System- and Application-Level" of monitored @kiekerapm log data using @jqassistant and @neo4j. The slides presented at the 11th Symposium on Software Performance (#SSP2020) are now available:
+https://www2.slideshare.net/RichardMller12/graphbased-performance-analysis-at-system-and-applicationlevel-ssp-2020
+
+https://medium.com/neo4j/graphs-on-tap-with-neo4j-relate-d9833ba64529
+MediumMedium
+Graphs on Tap with Neo4j Relate
+Neo4j Relate delivers graphs on tap. From the CLI, from your app, or from a local server, you can easily provision Neo4j databases.
+
+
+
+
+////

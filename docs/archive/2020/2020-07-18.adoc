@@ -1,0 +1,220 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Will Lyon shows off a tool that enables a low-code approach to building GraphQL APIs.
+
+Rik Van Bruggen revisits the graph of Belgian executives, Lju Lazarevic announces the Neo4j Summer of Nodes, and Sephi Berry builds a graph network pipeline with Dagster.
+
+And finally, Preet Kanwar has started a blog post series showing how to build a Neo4j backed application with Spring Boot and Kong.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Demian Bellumio
+
+This week's featured community member is Demian Bellumio, Global Vice President of Augmented Intelligence at NEORIS. 
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200717053642/this-week-in-neo4j-18-july-2020.jpg[name="Demian Bellumio"]
+
+Demian has been a graph enthusiast for many years. He’s a Neo4j user (obviously!) and a https://neo4j.com/partners/[Neo4j Partner^]. He was https://neo4j.com/blog/augmented-intelligence-5-minute-interview-demian-bellumio-neoris/[recently interviewed^] as part of the 5-Minute interview series about his experience using graphs for machine learning.
+
+If you’ve been to any of the https://neo4j.com/connections/[Neo4j Connections events], his name may ring a bell, as that is where he  https://www.youtube.com/watch?v=aXLlJCnDACM&feature=emb_title[presented] on the https://www.neoris.com/healthcheck[Neoris COVID-19 HealthCheck Graph].
+
+https://www.neoris.com[Neoris], is a digital accelerator that services companies in industries such as tech and media, financial services, heath, and energy and utilities. They are partners for some of the biggest companies in the world. Demian specializes in innovation in augmented intelligence (soooo cool, right!?!).
+
+Demian, we love hearing about all your interesting use cases and projects and we hope you continue to share. Thank you for being part of our graph-lovin’ community and giving-back by sharing with us your knowledge and experience!
+
+https://www.linkedin.com/in/dbellumio/[Connect with Demian on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Low Code GraphQL with Neo4j GraphQL Architect 
+
+This week's video is a presentation by Will Lyon about Neo4j GraphQL Architect, a graph app that enables low-code development of GraphQL APIs.
+
+youtube::Hh_n9Sj692E[type={type}]
+
+In the video Will gives us a walk through of the tool, showing how to infer a schema for an existing database, import new data using mutations, and query it using the in-built GraphiQL IDE.
+
+
+[[features-2]]
+=== Implementing a graph network pipeline with Dagster
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200717011108/postBanner.png" width="150px"  />
+</div>
+++++
+
+Dagster is a system for building modern data applications and Sephi Berry has written a blog post showing how to use it to build a graph network pipeline.
+
+Using data from StatsBomb, a football analytics company, Sephi shows how to load CSV data, massage it to fit the graph schema, before exporting new CSV files that are imported into Neo4j.
+
+https://dev.to/sephib/implementing-a-graph-network-pipeline-with-dagster-3i3a[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Executives of Belgian Public Companies - revisited!
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200717012513/2020-07-17_09-24-42.png" width="180px"  />
+</div>
+++++
+
+Back in 2017, Rik Van Bruggen wrote a couple of blog posts exploring the network of executives of Belgian public companies, based on an article in the De Tijd newspaper. Fast forward a few years and they sent him the 2020 version of the dataset to verify their analysis. 
+
+In this post, Rik shows how to use the Graph Data Science Library to find the most influential executives and the communities that they form.
+
+http://blog.bruggen.com/2020/06/executives-of-belgian-public-companies.html[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j TypeScript OGM, Summer of Nodes, More Graph Embeddings
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="100px"  />
+</div>
+++++
+
+* Alicia Frame explains why users of the Graph Algorithms Library https://neo4j.com/blog/upgrade-your-graph-data-science-library-now/[need to upgrade to the Graph Data Science Library^]. 
+
+* Lju Lazarevic announced the https://medium.com/neo4j/get-ready-for-neo4j-summer-of-nodes-3aa110652662[Neo4j Summer of Nodes^],  a series of graph challenges starting in August 2020.
+
+* Shuyi Yang has written https://towardsdatascience.com/neo4j-cypher-python-7a919a372be7[an introduction to using Neo4j with the Python driver^].
+
+* Estelle Scifo shows how to use the Graph Data Science Library to https://towardsdatascience.com/computing-node-embedding-with-a-graph-database-neo4j-its-graph-data-science-library-d45db83e54b6[compute node embedding and extract them into a pandas DataFrame using pygds^]. 
+
+* We also have a new developer guide showing how to https://neo4j.com/developer/applied-graph-embeddings/[use graph embeddings to make sense of the European Roads graph^].
+
+* Jason Athanasoglou released version 1.3.1 of https://github.com/themetalfleece/neogma[neogma^], a Neo4j OGM using TypeScript. It's fully typed, and has lots of cool features like creating multiple nodes and associations with a single function call.
+
+* https://twitter.com/@CSkardon[Chris Skardon^] has added syntax support for Neo4j 4.1 keywords and functions to the Sublime Text editor. You can find them in the https://github.com/cskardon/sublime-cypher[sublime-cypher^] GitHub repository.
+
+
+
+[[features-5]]
+=== How To Build Graphql API with Spring Boot, Neo4j and Kong
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200717012623/lBhQoqjIaMU4EX9kZOsv7rSkzzx1-n02d3whc.jpeg" width="150px"  />
+</div>
+++++
+
+Preet Kanwar continues the blog post series showing how to build a Neo4j backed application with Spring Boot and Kong, an open-source API gateway and microservice management layer.
+
+In part 2, Preet explains how to query GraphQL API using GraphiQL, how relationships work in graph databases, and exception handling using the ‘GraphQLErrorHandler’ part of GraphQL servlet.
+
+https://hackernoon.com/building-graphql-api-with-spring-boot-neo4j-and-kong-part-2-t7w3uha[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/kaerumy[Khairil Yusof^]:
+
+tweet::1282199489176956928[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+https://hackernoon.com/building-graphql-api-with-spring-boot-neo4j-and-kong-part-3-5y113yw2?source=rss&utm_source=dlvr.it&utm_medium=twitter
+https://hackernoon.com/how-to-build-graphql-api-with-spring-boot-neo4j-and-kong-part-4-4qq3upa
+
+Building GraphQL API with Spring Boot, Neo4j and Kong – Part 3 http://dlvr.it/RZJrqF 
+
+* Matt Cockayne @phpboyscout
+Pre-populating Neo4J using Kubernetes Init Containers and neo4j-admin import https://phpboyscout.uk/pre-populating-neo4j-using-kubernetes-init-containers-and-neo4j-admin-import/ 
+
+* William Lyon @lyonwj
+(7/?) Implementing Custom GraphQL Resolvers & Photos
+:lower_left_fountain_pen: Adding custom logic to the #Neo4j GraphQL API
+:camera_with_flash: Including photos in our #GraphQL API from @mapillary
+:scroll: Using the GridList component from @MaterialUI for displaying photos in our #GRANDstack app
+https://www.youtube.com/watch?v=IQ05VQxFcK0
+
+
+* Matthias Mann Lab @labs_mann
+All data of the ‘Proteome Landscape of the Kingdoms of Life’ @nature are open access. We integrated 340,000 quantified proteins in a graph database of 8 mio nodes and 54 mio relationships - ready to be explored:
+http://www.proteomesoflife.org
+
+Juan Guillermo Gómez @jggomezt
+I have developed a python reference microservice with:
+- Pipfile dependencies
+- Clean Architecture - SOLID
+- Neo4j Database
+- Dependency Injection
+- Flask micro-framework and gunicorn
+- Unit  and integration tests with gherkin syntax
+- etc
+https://github.com/jggomez/Python-Reference-Microservice
+
+https://neo4j.com/blog/getting-started-with-neo4j-fabric/
+Neo4j Graph Database PlatformNeo4j Graph Database Platform
+Getting Started with Neo4j Fabric
+Learn everything you need to know to get started with Neo4j Fabric, a new 4.0 feature allowing you to store and retrieve data in multiple databases.
+
+Peter Rose @peterwrose
+We’ve created a transparent and reproducible workflow to build the COVID-19-Net @neo4j Knowledge Graph using @ProjectJupyter Notebooks and @nteractio  Papermill. Try our prototype on binder @mybinderteam. https://github.com/covid-19-net/covid-19-community https://pbs.twimg.com/media/EbymrWPU8AEEBNe.jpg
+
+Jesús Barrasa @BarrasaDV
+Check out all the code I used during my session in this repo:  #Cypher + #SPARQL (including a Jupyter notebook version).
+Combining Wikidata + MeSH + Disease Ontology and more...  #RDF #Neo4j #Neosemantics
+https://github.com/jbarrasa/connections-lifesci  https://twitter.com/neo4j/status/1278014196916129800
+TwitterTwitter | 30 Jun
+Neo4jNeo4j @neo4j
+Next up at #Neo4jConnections: “Using Public RDF Resources in #Neo4j” with Jesús Barrasa from Neo4j
+Watch here: https://r.neo4j.com/2ZkohFR
+
+Sebastian Daschner @DaschnerS
+In this video I'll show how to perform schema migrations of @neo4j instances that run in a managed Kubernetes environment, to enable zero-downtime deployments:
+https://blog.sebastian-daschner.com/entries/neo4j-migrations-k8s
+
+
+https://thenewstack.io/illuminating-the-anonymous-with-neo4js-graph-database/
+The New StackThe New Stack
+Illuminating the Anonymous with Neo4j’s Graph Database
+How Meredith used Neo4j for Graph Data Science to turn data about its largely anonymous website visitors into customer profiles.
+
+
+Prashanth Athri, Ph.D. @prashanthathri
+Data integration in cheminformatics can get hairy, but extremely rewarding. Here,
+https://onlinelibrary.wiley.com/doi/abs/10.1002/minf.202000013
+we show that building contexts onto integrated datasets bring true value to existing information.
+Used @neo4j to integrate data from compound DBs -  @ChEMBL & @DrugBankDB
+
+
+https://elixirforum.com/t/seraph-toolkit-for-data-mapping-and-querying-neo4j/32862
+Elixir ForumElixir Forum
+Seraph, toolkit for data mapping and querying Neo4j
+
+https://medium.com/neo4j/rock-n-roll-traffic-routing-with-neo4j-3a4b863c6030 
+MediumMedium
+ROCK ’N’ ROLL TRAFFIC ROUTING, WITH NEO4J
+
+
+////

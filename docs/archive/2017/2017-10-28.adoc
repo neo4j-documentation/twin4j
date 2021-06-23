@@ -1,0 +1,116 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Ray Bernard and Jennifer Webb
+
+This week we have two featured community members: Ray Bernard and Jennifer Webb, co-founders of Suprfanz, a tool that uses data science techniques and graph theory with Neo4j to generate live event attendance from social media platforms, email, and SMS.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171027080106/this-week-in-neo4j-28-october-2017.jpg["Ray Bernard and Jennifer Webb - This Week's Featured Community Members", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Ray Bernard and Jennifer Webb - This Week's Featured Community Members
+</strong>
+</p>
+++++
+
+Ray and Jennifer were at GraphConnect NYC 2017 this week and created a https://www.youtube.com/watch?v=r2_iKahY4l8&feature=youtu.be[Graph Karaoke machine^] which was a big hit in the Developer Zone. 
+
+We've previously featured their talk https://www.youtube.com/watch?v=fz6kdkT0D38&feature=youtu.be[Data Science in Practice: Using the Facebook API and Neo4J to Drive Real World Attendance to Events^] in https://neo4j.com/tag/twin4j/[#twin4j^], a talk they'll also be giving at the https://conferences.oreilly.com/strata/strata-ca/public/schedule/speaker/298225?locale=zh[Strata Data Conference on March 6th 2018^].
+
+On behalf of the Neo4j community and especially the GraphConnect attendees thanks for all your work Ray and Jen!
+
+=== GraphConnect NYC 2017 Keynotes
+
+On Tuesday we hosted the latest version of the GraphConnect conference, this time in New York City. Well over 1,000 people got to hear Neo4j CEO https://twitter.com/emileifrem[Emil Eifrem^] https://www.theregister.co.uk/2017/10/24/neo4j_native_graph_platform/[announce the graph platform^] which adds analytics, data import, and visualisation on top of the database.
+
+You can see Emil's keynote below:
+
+youtube::sF_36fX5jFo[type={type}]
+
+In the evening Neo4j Chief Scientist https://twitter.com/jimwebber[Dr Jim Webber^] explained https://neo4j.com/blog/note-native-graph-databases/[the power of graph native^] and https://twitter.com/apcj[Alistair Jones^] showed how Neo4j Causal Clustering can be used to handle https://en.wikipedia.org/wiki/Hybrid_transactional/analytical_processing_(HTAP)[HTAP^]  workloads.
+
+You can see Jim's keynote below:
+
+youtube::u1yZrGLdR40[type={type}]
+
+=== Releases: Neo4j 3.3, Graph Algorithms, APOC
+
+This week saw the https://neo4j.com/release-notes/neo4j-3-3-0/[release of Neo4j 3.3^], which is the centre piece of The Neo4j Graph Platform, Neo4j 3.3 focuses on empowering users to work with native graphs at scale more effectively and faster.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171020075618/GraphPlatform-RN.png["The Neo4j Graph Platform", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The Neo4j Graph Platform
+</strong>
+</p>
+++++
+
+You can download Neo4j 3.3 from https://neo4j.com/download/[the normal place^]. This is the first release of the Neo4j Desktop which makes it even easier to get up and running so give it a try and let us know how you get on by sending an email to devrel@neo4j.com. 
+
+We also released https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases/tag/3.3.0.0[a new version of graph algorithms^] which now has support for huge graphs as well as the TriangleCounting/Triangle-Coefficients and Louvain Clustering algorithms. 
+
+Finally there are new goodies to play with in the https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/3.3.0.1[APOC fall release^]. This release sees lots of new features including a procedure to access other databases via Bolt and support for multi value JSON sources.
+
+=== Knowledge Graphs, Graph Versioning, 
+
+* John Singer has http://www.dataversity.net/knowledge-maps-structure-versus-meaning/[another installment^] in his series on knowledge graphs. In this article he considers what meaning is and how software  can know what something means. 
+
+* In https://www.feststelltaste.de/a-graphical-approach-towards-bounded-contexts/[A graph(ical) approach towards Bounded Contexts^] https://twitter.com/feststelltaste[Markus Harrer^] shows how to use jQAssistant to work out where intertwined components can be cut into separate ones. 
+
+* This week on the podcast https://twitter.com/rvanbruggen[Rik^] http://blog.bruggen.com/2017/10/podcast-interview-with-marco-falcier.html[interviewed Marco Falcier and Alberto d'Este^], creators of Neo4j Versioner - a collection of procedures, aimed to help developers to manage the Entity-State model, by creating, updating and querying the graph. They talk about Marco and Alberto's work on the JDBC connector, graph modeling, and of course Neo4j Versioner. 
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| October 30th 2017 | https://www.meetup.com/graphdb-sf/events/243887779[All about GRAND Stack: GraphQL, React, Apollo, and Neo4j Database^] | https://www.meetup.com/graphdb-sf[Graph Database - San Francisco^] | http://www.twitter.com/lyonwj[William Lyon^]
+
+| November 2nd 2017 | https://www.meetup.com/preview/graphdb-london/events/243359028[Running your graphs on containers with Kontena^] | https://www.meetup.com/preview/graphdb-london[Neo4j - London User Group^] | Jussi Nummelin
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Suprfanz[Suprfanz^]:
+
+tweet::923576525579939840[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

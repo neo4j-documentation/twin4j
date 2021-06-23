@@ -1,0 +1,174 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi graphistas,
+
+Welcome to the last version of TWIN4j for 2020. We'll be taking a couple of weeks off over Christmas and the New Year, so we'll see you again in 2021!
+
+Our video this week features a couple of talks from the NODES 2020 Extended series. 
+
+Luanne Misquitta shows how to analyse IT Operations data using Hume, Will Lyon builds an Election Dashboard, and Lju Lazarevic launches the New York Central Park sandbox.
+
+And finally, Will Lyon has started building a podcast application with the GRANDstack.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Klaus Blass
+
+This week's featured community member is Klaus Blass.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201210221927/this-week-in-neo4j-19-december-2020.jpg[name="Klaus Blass"]
+
+Klaus is a Consultant at the Development Data Group at the World Bank, assisting National Statistical Offices worldwide to conduct surveys and censuses.
+
+He has been working in the IT industry for more than 40 years. During that time, he's worked as an IBM Systems Engineer, supervisor of the Computer Centre for the Engineering Division at Kuwait Oil Company, and run his own company creating satellite communication solutions for telemetry applications
+
+Recently, he's been doing a lot of work with CAPI surveys and censuses and converted the census data for a Health and Demographic Surveillance System (HDSS) in Burkina Faso to a Neo4j graph. Klaus presented his work in the https://www.youtube.com/watch?v=ExkAKEGj3oE&feature=emb_title[A Survey As A Graph^] talk at the NODES 2020 conference.
+
+And this week Klaus also https://towardsdatascience.com/why-you-should-store-your-survey-data-in-a-graph-database-beac1ae7958b[published a blog post^] based on his talk. 
+
+https://www.linkedin.com/in/blassklaus/[Connect with Klaus on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2020 Extended with Monojit Basu, Reuben Teijeiro and Aleksandra Asanin
+
+Our video this week is from the NODES 2020 Extended series of talks. 
+
+youtube::uiDEP-0xUhY[type={type}]
+
+There are two talks in this session. In the first talk, Monojit Basu discusses manifold structures in semi-supervised and multiview learning. In the second one, Aleksandra Asanin and Reuben Teijeiro explain how Neo4j helps in the recruiting process.
+
+[[features-2]]
+=== IT Operations and graphs, brought together by Hume insights
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201210225426/itops-cover.png" width="200px"  />
+</div>
+++++
+
+Luanne Misquitta has written a blog post, in which she shows how to model IT Operations as a knowledge graph in Hume.
+
+She also demonstrates how to derive actionable insights, including single points of failure and dependency analysis.
+
+https://graphaware.com/hume/2020/11/30/insightful-it-operations-with-hume.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building An Election Night Dashboard With Neo4j Graph Apps: Bloom, Charts, And Neomap
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201210225510/0_fMOyTiiX_9QTv59O.png" width="200px"  />
+</div>
+++++
+
+
+In Will Lyon's latest blog post, he shows how to use low code graph apps to build data visualizations around the US election with Neo4j.
+
+The first part of the post is all about data import, before Will covers the rule based styling feature in Neo4j Bloom, as well as the recently added hierarchical layout. After that he builds some charts using Adam Cowley's Charts Graph App, before conclusion with some spatial visualisations using Neomap.
+
+https://medium.com/neo4j/building-an-election-night-dashboard-with-neo4j-graph-apps-bloom-charts-and-neomap-6763f86a4a32[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Central Park Sandbox, JMeter Bolt Sampler, Neo4j on Windows Server 2019 Core Server
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Lju Lazarevic https://medium.com/neo4j/new-sandbox-in-town-e126246d2605[launched the New York Central Park sandbox^].
+
+* Chris Skardon explains how to https://xclave.co.uk/2020/12/09/running-neo4j-on-a-windows-server-2019-core-server/[run Neo4j on a Windows Server 2019 Core Server^]. 
+
+* Michael Simons has https://github.com/michael-simons/neo4j-from-the-jvm-ecosystem[created a repository^] in which he shares examples of how to connect to Neo4j on the JVM, reading and writing data. 
+
+* Mark Lilley wrote a blog post showing https://martkos-it.co.uk/blog/jmeter-bolt-protocol[how to use the Bolt sampler^] that was added in Apache JMeter 5.2 This sample lets users run Cypher queries through the Bolt protocol and is a good way to test Neo4j procedures.
+
+* David Stevens announced the release of full text analytics support into https://github.com/EnglishSid/Blog/tree/master/NLPinGraph[Digital Explorer^]
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Podcast Search GraphQL API With Neo4j And The Podcast Index
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201210225538/0_o70pFKes7XMox-_R.png" width=200px"  />
+</div>
+++++
+
+This week on Will Lyon's live stream he kicked off a new project: building a podcast application with the GRANDstack.
+
+In this first blog post, Will designs the graph model and implements the podcast search using data from the Podcast Index API. 
+
+https://medium.com/neo4j/podcast-search-graphql-api-with-neo4j-and-the-podcast-index-97c5cf4bade6[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/st3llasia[Estelle Scifo^]:
+
+tweet::1333828205694787585[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+Richard Müller @rimllr
+"Graph-Based Performance Analysis at System- and Application-Level" of monitored @kiekerapm log data using @jqassistant and @neo4j. The slides presented at the 11th Symposium on Software Performance (#SSP2020) are now available:
+https://www2.slideshare.net/RichardMller12/graphbased-performance-analysis-at-system-and-applicationlevel-ssp-2020 
+
+
+Outbrain Engineering @OutbrainEng
+In this blog post, we tell the story of how to add a graph database to a service using @neo4j DB and the embedded approach we’ve decided to continue with. #BigData #datavisualizations https://medium.com/outbrain-engineering/embedding-neo4j-graphdb-to-deal-with-data-flow-complexity-31b17a08304c
+
+https://t.co/pkjTBDNuFo?amp=1
+legos - An asset management system - Part 1
+
+////

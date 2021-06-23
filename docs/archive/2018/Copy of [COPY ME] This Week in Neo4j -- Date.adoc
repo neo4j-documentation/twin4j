@@ -1,0 +1,99 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Person
+
+This week’s featured community member is Person
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180202004247/this-week-in-neo4j-3-february-2018.jpg[name="Suellen Stringer-Hye"]
+
+More text + thank them for their work.
+
+=== Online Meetup: Analysing the football transfer window
+
+In this week's online meetup
+
+youtube::mTCqQ2e08Q8[type={type}]
+
+
+=== Pick of the week: Thomson Reuters’ OpenPermID Graph
+
+text
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180202040940/screen-shot-2018-01-30-at-21-20-04-1.png["Thomson Reuters’ OpenPermID", 500, 273, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Thomson Reuters’ OpenPermID
+</strong>
+</p>
+++++
+
+more text
+
+
+=== Heading 2
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180126035408/konstantin.png" width="150px" />
+</div>
+++++
+
+* list item 1
+
+* list item 2
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have ...
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+|September 5th 2017 |Title| Group| Speaker 
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by [Person]:
+
+tweet::885787776049979392[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

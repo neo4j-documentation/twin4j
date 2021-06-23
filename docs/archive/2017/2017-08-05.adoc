@@ -1,0 +1,123 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 5 August 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-5-august-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 5 August 2017
+
+[Headline:]
+This Week in Neo4j – 5 August 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Samuel Yang
+
+This week’s featured community member is Samuel Yang, a.k.a https://stackoverflow.com/users/974731/cybersam[@cyphersam^], Senior Software Engineer at Comcast.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170804051905/this-week-in-neo4j-5-august-2017.jpg["Samuel Yang - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Samuel Yang - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Sam is one of the most prolific repliers on the https://stackoverflow.com/questions/tagged/neo4j[#neo4j tag on StackOverflow^] and is currently 3rd behind Neo4j employees https://twitter.com/mesirii[Michael Hunger^] and https://twitter.com/darthvader42?lang=en[Stefan Armbruster^].
+
+Sam has answered more than 1,000 questions, showing people how to solve problems with the Cypher query language, optimise queries, and configure their Neo4j servers. 
+
+On behalf of newcomers to graphs and Neo4j everywhere, thanks Sam for all your efforts!
+
+=== Release all the things
+
+There were release galore this week so there's lots of new stuff to get your hands on.
+
+Neo4j itself released versions https://neo4j.com/release-notes/neo4j-3-0-11/[3.0.11^], https://neo4j.com/release-notes/neo4j-3-1-6/[3.1.6^], https://neo4j.com/release-notes/neo4j-3-2-3/[3.2.3^], and https://neo4j.com/release-notes/neo4j-3-3-0-alpha05/[3.3.0-alpha05^]. There is now IPv6 support for clusters and improved support for really large imports in versions 3.1, 3.2, and 3.3. Check the release notes of the individual versions for more details.
+
+This week also saw the https://neo4j.com/blog/efficient-graph-algorithms-neo4j/[first public release of the Neo4j graph algorithms library^]. The library contains all your favourite graph algorithms for page rank, betweenness centrality, minimum weight spanning trees, and more. https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases[Give it a try^] and let us know how you get on.
+
+Finally we had the first release of the new Neo4j desktop which you can find on the https://neo4j.com/download/other-releases/['Other releases' download page^] on neo4j.com.  If you have any feedback there's https://twitter.com/mesirii/status/892721591242690560[a twitter thread^] you can contribute to.
+
+=== A Graph of Thrones
+
+Game of Thrones Season 7 is in full flow and there have been more articles analysing the data as well. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170804064844/game-of-graphs.png["A Game of Graphs", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Enter our Game of Thrones competition
+</strong>
+</p>
+++++
+
+https://twitter.com/j_skoog[Joakim Skoog^] has created https://www.anapioficeandfire.com/[an API of ice and fire^], which contains data from all the books and TV episodes. The API was even featured in https://www.wsj.com/articles/fans-geek-out-over-game-of-thrones-data-1499877067?mod=e2tw[an article in the Washington Street Journal^]. If you want to do your own analysis this is the best place to start. 
+
+https://twitter.com/tb_tomaz[Tomaž Bratanič^] makes immediate use of the new graph algorithms library to try and https://tbgraph.wordpress.com/2017/07/30/neo4j-got-graph-analysis/[figure out what's going on in our favourite imaginary world^]. Tomaž shows how to use various algorithms to analyse the strength of each House.  
+
+Michael Hunger has also been busy playing with the dataset and https://medium.com/@mesirii/a-game-of-data-and-graphql-97ee2ca297ce[shows how to make the GoT dataset available through a GraphQL endpoint^].
+
+And if you're as much of a Game of Thrones enthusiast as us don't forget to register for our https://www.meetup.com/Neo4j-Online-Meetup/events/242060500/[Graph of Thrones online meetup^] on Thursday, August 17, 2017 at 16:00 UTC.
+
+=== Online Meetup: Neo4j Bolt Drivers Roundtable
+
+In this week’s online meetup we hosted a Neo4j Bolt Drivers roundtable where https://twitter.com/ikwattro[Christophe Willemsen^], https://twitter.com/adamcowley[Adam Cowley^], and https://twitter.com/bluesjasper[Jasper Blues^] joined https://twitter.com/technige[Nigel Small^] and me to talk about their experiences building a driver or framework for Neo4j.
+
+youtube::dKqExECpirU[type={type}]
+
+If there isn't a driver for your language of choice and you wish there was, there's some good advice on how to get started.
+
+Our next online meetup is on Thursday, August 10, 2017 at 16:00 UTC. Marco Falcier and Alberto D'Este will present https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Versioner Core - Versioning your Neo4j graph through entity-state model^]. 
+
+=== Fake News, GraphQL command line tools, GrapheneDB
+
+*  My colleague Nir Avrahamov wrote the first part of his series on https://neo4j.com/blog/machine-learning-graphs-fake-news-epidemic-part-1/[Machine Learning, Graphs and the Fake News Epidemic^]. In this post Nir outlines the problem of fake news around the US election and how a combination of machine learning along with a 'news graph' might be able to help combat it.
+
+* In the theme of using Neo4j for security engineering, a post that https://twitter.com/dave_vassallo[David Vassallo^] wrote a few years ago - http://blog.davidvassallo.me/2014/08/03/getting-started-with-neo4j-and-security-data-analysis/[Getting started with Neo4J and security data analysis^] - resurfaced this week. In the post David shows how to create a graph based on the firewall logs from a server to see who's trying to attack it and whether there are any vulnerabilities that need addressing.
+
+* Adam Cowley shows how to https://github.com/adam-cowley/cypherify-userstory[turn a user story into a Cypher query^] using the https://www.npmjs.com/package/compromise[compromise NLP library^] 
+
+* link:++https://twitter.com/_ricky_brown_++[Ricky Brown^] created the https://github.com/rickybrown/graphenedb[graphenedb project^] which provides a thin Ruby layer around the https://www.graphenedb.com/[GrapheneDB^] API. 
+
+* Earlier in the week Graphcool released https://www.graph.cool/blog/2017-08-01-graphql-config-and-cli-aeghee3di9/#graphql-cli-the-swiss-army-knife-for-your-graphql-project[graphql-cli - The Swiss Army Knife for your GraphQL Project^], and Michael https://medium.com/@mesirii/first-steps-with-graphcools-graphql-command-line-tools-3aa137271420[gave it a try with his Game of Thrones GraphQL backend^].
+
+* Ali Habib shared his dissertation - https://github.com/habiba29/Dissertation[AutoReco: A Graph Database Driven Car Marketing and Recommendation System^] - in which he builds and evaluates an online car marketing system. Ali uses Christophe Willemsen's https://github.com/graphaware/reco4php[graph4php^] library as part of the project.
+
+=== Graph databases vs Relational databases
+
+There were a couple of articles comparing and contrasting graph databases and relational databases this week.
+
+Anupama Natarajan focused more on the http://www.anupamanatarajan.com/2017/07/graph-database-vs-relational-database.html[use cases where each database excels^], while Joe Swanson and Gian Luis Delgado compare the two with a product catalog example in http://blog.westmonroepartners.com/graph-databases-connecting-dots/[Graph Databases: Connecting the Dots^]. 
+
+If you have a background in relational databases and want to get into graphs, I'll be presenting a webinar https://info.neo4j.com/170810-register.html[RDBMS to graphs^] on Thursday, August 10th at 10.00 BST.
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/songlink_[Songlink^]:
+
+tweet::893311667899125760[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

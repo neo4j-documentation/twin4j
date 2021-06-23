@@ -1,0 +1,185 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Karin Wolok gives us a 10 minute introduction to graph databases.
+
+Tomaz Bratanic explores Lord of the Ring data, Chris Prenninger launches Neo4j Commander, and Nigel Small announces the new Go Driver.
+
+And finally, Nathan Smith demonstrates how innovations spread across networks.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Sebastian Daschner
+
+
+This week's featured community member is Sebastian Daschner, a Java Champion, who works from Germany as a Developer Advocate at IBM but also as consultant and trainer on a broad range of Java and development related topics. 
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200612034629/this-week-in-neo4j-13-june-2020.jpg[name="Sebastian Daschner"]
+
+Sebastian is very passionate about helping other developers to get better and more effective in their daily work. 
+He has published a lot of articles, amazing videos, and even a https://blog.sebastian-daschner.com/entries/effective-developer-podcast[podcast to that purpose^]. Definitely make sure to check out his https://blog.sebastian-daschner.com[content and channels^] and his frequent https://blog.sebastian-daschner.com/entries/developer-productivity-question-answer-session-june[developer productivity sessions^].
+
+
+In the last few months Sebastian got his hands into Neo4j, https://blog.sebastian-daschner.com/entries/neo4j-ogm-with-quarkus[showing how to use Neo4j via Neo4j-OGM in Quarkus^], the modern, native Java Microservice framework from RedHat.
+Following that he dove into the Kubernetes/Helm setup and operations for Neo4j demoing it on the IBM IKS service (https://blog.sebastian-daschner.com/entries/neo4j-deployment-managed-k8s[setup^], https://blog.sebastian-daschner.com/entries/neo4j-single-core-managed-k8s[single instance^], https://blog.sebastian-daschner.com/entries/neo4j-backup-instance-k8s[backup^], https://blog.sebastian-daschner.com/entries/neo4j-restore-backup-k8s[restore^]). 
+He even went so far as contributing fixes to the https://github.com/neo4j-contrib/neo4j-helm[Neo4j Helm chart^]. 
+
+Thanks so much Sebastian for all your contributions.
+
+https://twitter.com/DaschnerS[Follow Sebastian on Twitter, role="medium button"]
+
+[[features-1]]
+=== What is a graph database? (in under 10 min)
+
+This week's video is by Karin Wolok, Neo4j's Program Manager for Community Development & Enablement. 
+
+youtube::SwXeQlVYAp0[type={type}]
+
+In this video Karin explains what a graph database is and why you'd want to use one, before going through some use cases that are particularly suited to graphs.
+
+[[features-2]]
+=== Lord of the Wiki Ring: Importing Wikidata into Neo4j and analyzing family trees
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200612025555/lord-of-the-rings-e1510686480965.jpg" width="150px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest blog post, we explore Lord of the Ring data extracted from Wikidata.
+
+After importing and cleaning up the data, Tomaz shows how to use the Graph Data Science Library to find communities within the family network and bridge nodes between those communities.
+
+https://towardsdatascience.com/lord-of-the-wiki-ring-importing-wikidata-into-neo4j-and-analyzing-family-trees-da27f64d675e[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Editing Data in Neo4j Graphs doesn’t have to be hard
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200612025353/1__4gdIsa1ZzYk8efBfFnN1g.jpeg" width="120px"  />
+</div>
+++++
+
+Chris Prenninger launched https://netbizltd.com/neo4j/[Neo4j Commander^], a Graph App that makes it easy to update graph data without having to write Cypher queries.
+
+It also keeps an undo history of changes made to help recover from any mistakes, and can be installed directly from the https://install.graphapp.io/[Graph App installer^].
+
+https://medium.com/neo4j/editing-data-in-neo4j-graphs-doesnt-have-to-be-hard-8e9791c731bc[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Pure Go Driver, cyberSW Knowledge Discovery System, Analysing Political Contributions
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+* Nigel Small https://medium.com/neo4j/having-another-go-e50823b6fc79[announced the launch of version 1.8^] of the Neo4j Go Driver. This version removes the dependency of the C connector library, which was causing installation issues for a lot of users. It has been built for the Neo4j 3.5 series, but also has preliminary support for the Neo4j 4.0 series.
+
+* In Robin Moffatt's https://www.confluent.io/blog/stream-analyze-visualize-data-with-kafka-ksqldb-and-friends/[latest blog post^], he shows how to analyse Wi-Fi data from his Raspberry Pi with help from Kafka, Neo4j, Elastic, and friends.
+
+* The cyberSW team https://www.archaeologysouthwest.org/2020/06/09/introducing-cybersw-1-0/[announced the release of version 1.0^] of their Knowledge Discovery System, which can be used to search, explore, and analyse the pre-Hispanic archaeological record of the U.S. Southwest and Northwest Mexico
+
+* Cristina Escalante presented https://www.facebook.com/PalmBeachTech/videos/300379600985550/[Analysing Political Contributions with Neo4j^] at Palm Beach Tech. 
+
+[[features-5]]
+=== Game of Phones: Modeling Diffusion of Innovations With Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200612025902/1_Zetdds0BhzRU3Z0VeVXVXg.jpeg" width="200px"  />
+</div>
+++++
+
+Nathan Smith continues his series of blog posts about Networks, Crowd, and Markets. This week we explore Chapter 19, which is about the way that innovations spread across networks.
+
+With the help of a Game of Thrones dataset, Nathan shows how to write Cypher queries to explore how the adoption of a strategy would (or indeed wouldn't) spread across a social network.
+
+https://medium.com/neo4j/game-of-phones-modeling-diffusion-of-innovations-with-neo4j-98d8be724d9b[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Arch_SW[Archaeology Southwest^]:
+
+tweet::1270742707120402434[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* https://tbgraph.wordpress.com/2020/05/31/node-embeddings-node2vec-with-neo4j/
+Graph people | tbgraph
+Node embeddings: Node2vec with Neo4j
+* https://blog.bruggen.com/2020/06/creating-contact-tracing-testbed-with.html
+
+
+* https://www.ovh.com/blog/gaia-x-catalogue-search-engine-under-the-hood/
+
+
+* https://medium.com/neo4j/modeling-patient-journeys-with-neo4j-d0785fbbf5a2 
+
+
+* M. David Allen @mdavidallen
+New technical article on a #neo4j graph analysis technique:  how do you look at a network of related companies, and know the total value of a trading relationship, or the impact if a company goes out of business?
+https://neo4j.com/blog/analytical-subgraph-overlays-in-neo4j/ 
+
+
+* http://www.odbms.org/blog/2020/06/fighting-covid-19-with-graphs-interview-with-alexander-jarasch/
+
+
+- @Michael Simons spring-bridge talk from last friday https://youtu.be/hi_zAj3tqeE?t=27128
+- slides https://speakerdeck.com/michaelsimons/introducing-neo4j-sdn-rx
+
+
+
+
+* 	https://medium.com/neo4j/using-the-neo4j-graph-database-and-cypher-to-solve-this-brain-teaser-why-argue-350fde86da14
+Medium
+Using the Neo4j Graph Database and Cypher To Solve This Brain Teaser. Why Argue?
+
+
+
+* https://maxdemarzi.com/2020/05/25/declarative-query-languages-are-the-iraq-war-of-computer-science/
+Max De Marzi | maxdemarzi
+Declarative Query Languages are the Iraq War of Computer Science
+
+
+
+* Op Dreef @SFDreverman
+Part 2 of 4 in a mini-series about building a low-code platform with Neo4j. It's about the design of the data (structures) and how to use them.
+https://link.medium.com/UwoUYWJ436
+#neo4j #lowcodelove #software #php #graphdb
+
+* 
+
+
+
+////

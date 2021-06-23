@@ -1,0 +1,187 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 19 May 2018, including 
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 26 May 2018
+
+[Headline:]
+This Week in Neo4j – 12 May 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have West Africa Leaks from the ICIJ, an online meetup about the GQL proposal, a Deep Drive into the Geospatial Data Type, analysis of CoinMarketCap data, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Jérôme Baton
+
+This week’s featured community member is https://twitter.com/wadael[Jérôme Baton^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525053523/this-week-in-neo4j-26-may-20182.jpg[name="Jérôme Baton"]
+
+Jérôme has been part of the Neo4j community for several years and has been a regular at real life and online meetups over the last couple of years. He's been helping a lot of users on StackOverflow and Neo4j, built tools for data import and contributed to projects like APOC.
+As part of his work he's teaching graphs and Neo4j to university students.
+
+He is perhaps best known as the author of https://www.packtpub.com/big-data-and-business-intelligence/learning-neo4j-3x-second-edition[Learning Neo4j 3.x – Second Edition^], a book that aims to quickly get you up to speed with Neo4j via a series of real world use cases and examples. This version of the book has been updated to cover the new features released in the 3.x series of the database. Jérôme currently translates the https://www.d-booker.fr/neo4j-2/188-deploiement.html["Neo4j: Data and Graphs - II. Deployment"^] book by the team around Sylvain Roussy from French into English.  That book is more fun than most, becauses it follows the adventures of a project team developing a Neo4j app, through their discussions.
+
+
+Jérôme shares useful tools that he's built as part of his Neo4j projects, including the delightfully named https://github.com/wadael/neoloadcsvskelgen[neoloadcsvskelgen^], which generates the  Cypher code for importing a given CSV file with headers. Jérôme lives in Paris and is happy to help any project with their graph problems.
+
+On behalf of the Neo4j community, thanks for all your work Jérôme!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+[[podcast]]
+=== On the podcast: Iryna Feuerstein
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="100px"  />
+</div>
+++++
+
+This week on the https://soundcloud.com/graphistania[Graphistania podcast^] Rik http://blog.bruggen.com/2018/05/podcast-interview-with-iryna-feuerstein.html[interviewed^] https://twitter.com/ira_res?lang=en[Iryna Feuerstein^], our featured community member from https://neo4j.com/blog/this-week-neo4j-property-based-access-control-intro-cypher-user-path-analysis/[17th March 2018^].
+
+They talk about Iryna's introduction into the world of graphs via graph theory in a Mathematics degree, the https://www.javaland.eu/formes/pubfiles/9947734/2018-nn-iryna_feuerstein-zwischen_den_zeilen_lesen_-_datenanalyse_mit_graphen-praesentation.pdf[German law graph^] she recently presented at JavaLand in Germany, and Iryna's predictions for the future of graph technology.
+
+You can listen to their conversation below or http://blog.bruggen.com/2018/05/podcast-interview-with-iryna-feuerstein.html[read the transcript^].
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/445758594&amp;color=44c13e"></iframe>
+++++
+
+
+
+
+
+[[gql]]
+=== Online Meetup: GQL - A Single Property Graph Query Language
+
+In this week's online meetup https://twitter.com/amyhodler?lang=en[Amy Hodler^] interviewed Alastair Green, https://twitter.com/boggle?lang=en-gb[Stefan Plantikow^], and https://twitter.com/aethelraed?lang=en[Petra Selmer^] about the https://gql.today/[GQL proposal^] that was published last week. 
+
+youtube::Iq518iZXxA4[type={type}]
+
+GQL is a proposal for a single property graph query language that brings together the best features from http://pgql-lang.org/[PGQL^], https://arxiv.org/abs/1712.01550[G-CORE^], and http://www.opencypher.org/[Cypher^]. 
+
+In the session the authors explain why they came up with the proposal, how languages such as Tinkerpop/Gremlin fit into the picture, graph composability, and the next steps for the project.
+
+[[gis-graph-grouping-bloom-word2vec]]
+=== Building a smart GIS system, West Africa Leaks, Graph Grouping, New Neo4j Bloom Demo
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525064504/1_6xLLeQ1M5HDIsfy3vKhvxA-1.png" alt="Atlas - a smart GIS system" width="120px" />
+</div>
+++++
+
+* Mihai Raulea wrote a blog post in which he shows https://medium.com/neo4j/how-i-put-the-world-map-in-a-graph-422b651780e9[how to use Neo4j to build Atlas^], a smart GIS system based on OpenStreetMap. In the article Mihai gives an introduction to graphs, explains the use cases this graph would serve, and goes through some the modelling decisions taken. You can find the code behind the post in the https://github.com/mihairaulea/atlas[mihairaulea/atlas^] GitHub repository.
+
+* Earlier this week the https://www.icij.org/[ICIJ^] released https://www.icij.org/investigations/west-africa-leaks/[West Africa Leaks^], a bid to shine a light on abuses of trust and ethics by business and political leaders in 15 countries occupying the west coast of the impoverished continent of 367 million people. datanami also https://www.datanami.com/2018/05/23/analytics-power-discoveries-in-icijs-west-africa-leaks/[cover the story^] and have an interview with my colleague https://twitter.com/lyonwj[Will Lyon^] in which he explains how the techniques used can also be applied by large banks and retailers to spot fraudulent activity in their systems.
+
+* Following on from his two part series a couple of weeks ago, https://twitter.com/rvanbruggen?lang=en[Rik Van Bruggen^] has another post where he explores some of the http://blog.bruggen.com/2018/05/graphs-are-blooming-again.html[new features of Neo4j Bloom^]. He shows off Bloom's advanced visualisation features, how to do data editing and cleaning, and advanced graph pattern search. There's also an https://www.youtube.com/watch?v=hI0_aUQ4bFE[accompanying video^].
+
+* https://twitter.com/mesirii[Michael Hunger^] created https://github.com/neo4j-examples/neo4j-grouping[neo4j-grouping^], an example project in which he shows how to do graph grouping using the https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC library^].
+
+* I've been doing some exploration about how graphs can be used to explore the output of machine learning models and wrote a post showing how to https://markhneedham.com/blog/2018/05/19/interpreting-word2vec-glove-embeddings-sklearn-neo4j-graph-algorithms/[use graph algorithms to explore Word2vec embeddings^]. It only works on small datasets at the moment but I'm working to make it more scalable.
+
+[[spatial-deepdive]]
+=== Deep Dive: Neo4j 3.4 Geospatial Data Type
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525065706/1_KPflW09j6yfD3Ff1FpSjDA.png" width="100px"  />
+</div>
+++++
+
+In his latest blog post https://twitter.com/mdavidallen[David Allen^] takes a https://medium.com/neo4j/whats-new-in-neo4j-spatial-features-586d69cda8d0[deep dive into the geospatial data type^] that was introduced in Neo4j 3.4. 
+
+David starts by showing how to create points via Cypher's https://neo4j.com/docs/developer-manual/current/cypher/clauses/load-csv/[LOAD CSV^] command, before computing distances between points on the globe. He concludes the post by suggesting different applications that can be built with this new functionality.
+
+[[windows-tracer-cypher-builder]]
+=== Windows Logon Tracer, Cypher Query Builder, Analyzing Cryptocurrencies
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525072754/timeline-1024x586.png" width="150px"  />
+</div>
+++++
+
+
+* https://twitter.com/colonel_pan1c/status/997279288805220352[Charlie Kroll^] shared https://github.com/JPCERTCC/LogonTracer[LogonTracer^], a Neo4j backed tool that allows you to investigate malicious Windows logons by visualizing and analyzing the Windows event log.  
+
+* James Ferguson created https://github.com/jamesfer/cypher-query-builder[cypher-query-builder^], a flexible and intuitive query builder for Neo4j and Cypher. It also has support for streaming records using RxJS. 
+
+* The 2nd edition of https://www.amazon.com/Seven-Databases-Weeks-Modern-Movement/dp/1680502530/[Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement^] was released this week. It has an in-depth chapter on Neo4j containing lots of Cypher examples.
+
+* In https://medium.com/@stefan.dreverman/analyzing-coinmarketcap-data-with-neo4j-4930ba0068e1[Analyzing CoinMarketCap data with Neo4j^],  Stefan Dreverman loads data from the https://coinmarketcap.com/api/[CoinMarketCap API^] into Neo4j and then shows how to query the database to find the current exchange rate between two Crypto currencies. He goes on to visualise this exchange rate over time and suggests other uses of the dataset, such as Portfolio based balanced switching, Spotting low cap high potentials, and correlating Volumes and Social media attention. 
+
+* Brett Taylor has written a post in which he shows how to how to https://www.hitfuturenow.com/blog/2018/05/17/2018-05-14-leveraging-python-in-r-to-access-the-bolt-protocol-of-neo4j/[integrate Neo4j via the Python language in the R environment^]. 
+
+/////
+[[knowledge-base]]
+=== From the Knowledge Base: Parsing query.log
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+
+This week from the Neo4j Knowledge Base we have an entry that shares a script that https://neo4j.com/developer/kb/an-approach-to-parsing-the-query-log/[parses the query log^] available in the Neo4j Enterprise Edition.
+
+The script summarises the total number of queries, their running time, the date and time of the first and last queries, and more.
+
+If you want to understand what's happening on your Neo4j server this is a good place to start.
+/////
+
+////
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| May 21st 2018 | https://www.meetup.com/GraphDB-Sydney/events/jqvlhpyxhbcc/[Natural Language Processing (NLP), chatbot and graph database^] | https://www.meetup.com/GraphDB-Sydney[GraphDB Sydney^] | https://twitter.com/justosophy[Justin Anderson^]
+
+| May 24th 2018 | https://www.meetup.com/graphdb-berlin/events/250615392/[Neo4j 3.4 Release Demo & Meta-Path Exploration^]  | https://www.meetup.com/graphdb-boston/[Graph Database Boston^] | Sebastian Bischoff, Adrian Ziegler, Michael Hunger
+
+| May 24th 2018 | https://www.meetup.com/Neo4j-Online-Meetup/events/250906697/[GQL: It’s Time for a Single Property Graph Query Language^]  | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Amy Hodler, Alastair Green
+
+|=========================================================
+////
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Chucheria[Bea Hernández^]:
+
+tweet::999402266795872256[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

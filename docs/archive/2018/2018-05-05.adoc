@@ -1,0 +1,136 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 5 May 2018, including 
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 5 May 2018
+
+[Headline:]
+This Week in Neo4j – 28 April 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have the announcement of Neo4j 3.4 and the Bloom visualization tool, analyzing Wifi traffic, gaining insights into text using graph visualization, Neo4j with Azure Functions, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Dmitry Paranyushkin
+
+This week’s featured community member is Dmitry Paranyushkin, Senior Researcher at https://noduslabs.com/[Nodus Labs^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180504074626/this-week-in-neo4j-5-may-20181.jpg[name="Dmitry Paranyushkin"]
+
+Dmitry has been in the Neo4j community for a number of years, and started using Neo4j in the 1.9 series back in 2013. Dmitry used Neo4j to build https://infranodus.com/[InfraNodus^], a tool that can be used to easily gain insights from text using graph visualization.
+
+Dmitry showed off InfraNodus during this week's online meetup.
+
+youtube::N6RRyvILBPk[type={type}]
+
+The tool uses http://sigmajs.org/[sigma.js^] as its visualization component. 
+For almost the entire hour Dmitry did a live demo of the tool and showed off its voice to text to graph feature, as well as how to analyse the text of Wikipedia pages and Twitter hashtags.
+The tool is available on the https://github.com/noduslabs/infranodus[noduslabs/infranodus^] repository, so give it a try and let Dmitry know how you get on.
+
+On behalf of the Neo4j community, thanks for all your work Dmitry!
+Oh...and watch the video, it's amazing!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+=== Neo4j 3.4 and Bloom Visualization Tool Announced
+
+On Tuesday, at GraphTour San Francisco, https://twitter.com/emileifrem[Emil^] announced the arrival of an entirely new product being added to the Neo4j Graph Platform: https://neo4j.com/blog/introducing-neo4j-bloom-graph-data-visualization-for-everyone/[Neo4j Bloom^].
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180504065758/GPU-accelerated-rendering-Neo4j-Bloom-graph-visualization-768x322.png[]
+
+++++
+<br />
+++++
+
+Bloom is a graph communication and data visualization product that aims to make it easier for non Developers to explore and make sense of graphs in the same way that Cypher did for non Java Developers.
+
+Emil also announced Neo4j 3.4, which will be released in the next few weeks with native support for Spatial and DateTime data types. We're looking forward to see the new applications you're able to build with the new functionality. 
+
+You can watch a recording of Emil's announcement as well as a https://www.youtube.com/watch?v=SA7kEms_Scs[live stream from the whole of the GraphTour San Francisco^] event.
+A.R. Guess also has http://www.dataversity.net/neo4j-democratizes-connected-data-businesses-users-3-4-release/[an article covering the release announcement^].
+
+=== Release of GraphAware NLP Libraries, Azure Functions, Plotting Wifi Traffic
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180504081155/sql-neo4j-768x246.png" width="200px"  />
+</div>
+++++
+
+* https://twitter.com/roybaileybiz[Roy Bailey^] has written a post in which he shows how to   http://www.roybailey.biz/blog/data-importing-into-neo4j-graph-database-with-apoc/[import data into Neo4j graph database with APOC^]. Roy wanted to hydrate and join data from approx 20 sources on a regular basis into an embedded Neo4j store and was able to use https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC^]'s JDBC and periodic iterate procedures to get the job done. 
+
+* GraphAware have upgraded their Graph-Based Natural Language Processing modules for Neo4j. There's more than 60% performance improvement, custom NER and better keywords. You can download the latest version from https://products.graphaware.com/[products.graphaware.com^]
+
+* In https://twitter.com/cskardon?lang=en[Chris Skardon^]'s latest post he shows how to write http://xclave.co.uk/2018/05/02/neo4j-with-azure-functions/[an Azure function^] that executes a Cypher query against Neo4j.
+
+* https://twitter.com/bitsrot[bitsrot^] shows how to use Neo4j to  https://bitrot.sh/code/02-05-2018-plotting-wifi-traffic/[graphically plot and analyze the relationships between Wi-fi nodes using the air around us^]. Python and https://github.com/secdev/scapy[scapy^] are used for packet capture and Cypher is used to explore the dataset. You can try find the code from the post in the https://github.com/bitrot-sh/wispy[bitrot-sh/wispy^] repository.
+
+=== Graph Analytics vs Graph Queries, Neo4j and Java, Data Viz in Mixed Reality
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180504080914/facebook_social_graph_by_rafiq_phillips_cc_by-sa_2-0_700x467px-100756671-large.jpg" width="150px" />
+</div>
+++++
+
+* https://twitter.com/danwoodsearly[Dan Woods^] attended and spoke at the GraphTour Washington D.C. event and has written an article in which he wonders https://www.forbes.com/sites/danwoods/2018/04/30/improve-your-graph-iq-what-are-graph-queries-graph-algorithms-and-graph-analytics/#5d1a87a61961[what the difference is between graph analytics and a really good graph query?^] Dan discusses the three levels to graph analytics - graph queries, graph algorithms, and finally graph analytics - and shows examples in each category. 
+
+* Amir Bozorgzadeh has an interesting article about data visualization in mixed reality, and https://www.kineviz.com/graphxr/[Kineviz’s GraphXR platform^] gets a mention for being used to explore Russian troll data. 
+
+* Steven Haines has written the 2nd part of his series covering https://www.javaworld.com/article/3269575/application-development/big-data-analytics-with-neo4j-and-java-part-2.html[Big data analytics with Neo4j and Java^]. In this post Steven shows how to get up and running with the Java driver, explains the way all the pieces work together, and shares sample code for building a social graph based application.
+
+* https://twitter.com/_colinfay[Colin Fay^] shows how to http://colinfay.me/rstatsnyc-neo4j/[import Twitter data into Neo4j and analyse it using the RNeo4j^] driver that he recently started working on.
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| May 8th 2018 | https://www.eventbrite.com/e/graphtour-boston-ma-tickets-43258097133[GraphTour Boston^]  | https://www.meetup.com/graphdb-boston/[Graph Database Boston^] | Neo4j and Customer speakers
+
+| May 8th 2018 | https://www.meetup.com/Graph-Databases-Sachsen/events/249492036/[Signals from outer space^]  | https://www.meetup.com/Graph-Databases-Sachsen/[Graph Databases Sachsen^] | Vlasta Ku
+
+| May 9th 2018 | https://www.meetup.com/Neo4j-Dubai/events/250135470/[Uncover Opportunities and Mitigate Risk with Neo4j & Thomson Reuters Data^]  | https://www.meetup.com/Neo4j-Dubai/[Neo4j Dubai^] | https://twitter.com/mambofish[Vince Bickers^], https://twitter.com/samermahfouz[Samer Mahfouz^]
+
+| May 9th 2018 | https://www.meetup.com/graphdb-london/events/250143036/[Intro to Graphs^]  | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/markhneedham[Mark Needham^]
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by my colleague https://twitter.com/oskarhane[Oskar Hane^]:
+
+tweet::992080641520005120[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

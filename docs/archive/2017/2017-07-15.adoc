@@ -1,0 +1,97 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 15 July 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 15 July 2017
+
+[Headline:]
+This Week in Neo4j – 15 July 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Jonathan Freeman
+
+This week’s featured community member is https://twitter.com/freethejazz[Jonathan Freeman^], Senior Software Engineer at Spantree Technology. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170714114606/this-week-in-neo4j-15-july-2017.jpg["Jonathan Freeman - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Jonathan Freeman - This Week's Featured Community Member
+</strong>
+</p>
+++++
+Jonathan has been a member of the Neo4j community for a number of years now and presented on https://vimeo.com/79431583[Hadoop and Graph Databases^] at one of the very early GraphConnect conferences in New York in 2013
+
+Jonathan has also trained Neo4j classes and been a great advocate for Neo4j wherever he's worked. 
+
+More recently Jonathan has been organising the https://www.meetup.com/windy-city-graphdb/[Neo4j Chicago meetup^], and this week presented https://www.meetup.com/windy-city-graphdb/events/240348871/[400 trash bags of grocery receipts + Neo4j^] in which he analysed Instacart's open dataset using Neo4j.
+
+On behalf of the Neo4j community, thanks to Jonathan for all your work!
+
+=== Natural Language Understanding with Neo4j
+
+In this week’s online meetup https://twitter.com/hyperparticle[Dan Kondratyuk^] showed us Graph NLU - a project he built to understand natural language dialogue in an interactive setting by representing memory of previous dialogue states using a persistent graph
+
+youtube::mTCqQ2e08Q8[type={type}]
+
+You can also find the code in the https://github.com/Hyperparticle/graph-nlu[graph-nlu^] repository on GitHub.
+
+https://twitter.com/Phil_Gooch[Phil Gooch^] presented https://www.meetup.com/textanalytics/events/240960410/[Graph databases and text analytics^] at the https://www.meetup.com/textanalytics/[London Text Analytics^] meetup. The code from Phil's talk is available in the https://github.com/philgooch/neo4j-nlp[neo4j-nlp^] GitHub repository.
+
+=== Game of Thrones, GraphQL, Cuckoo Filters, Mulesoft
+
+* Just in time for Season 7 of Game of Thrones this week, https://twitter.com/tb_tomaz[Tomaž Bratanič^] has written the 4th post of his https://tbgraph.wordpress.com/2017/07/14/game-of-thrones-part-4-analysis/[GoT analysis series^]. In this post Tomas looks at allegiances between houses and finds communities of people who have fought together.
+
+* https://twitter.com/lyonwj[Will Lyon^] has written an article for O'Reilly showing how to https://www.oreilly.com/learning/building-a-simple-graphql-server-with-neo4j[build a GraphQL server using Neo4j^]. Will contrasts GraphQL with REST based APIs and shows how to wire up a GraphQL application that uses the https://neo4j.com/sandbox-v2/[Neo4j recommendations sandbox^] as its source of data.
+
+* https://twitter.com/nathannam[Nathan Nam^] showed how to create a demo application using the https://blogs.mulesoft.com/dev/connectivity-dev/anypoint-connector-neo4j/[Neo4j connector for Mulesoft^]. 
+
+* https://twitter.com/GeekRuthie[Ruth Holloway^] wrote the first of a multi part series - https://opensource.com/article/17/7/fundamentals-graph-databases-neo4j[Fundamentals of graph databases with Neo4j^]. If you're just getting started with graphs this is a great place to start.
+
+* https://twitter.com/adamcowley[Adam Cowley^] shows how to load http://www.adamcowley.co.uk/neo4j/loading-tweets-into-neo4j-with-apoc/[Twitter data into Neo4j using the APOC library^]. Adam shows how to get setup with a token for the twitter API, before making calls to the https://dev.twitter.com/rest/reference/get/statuses/show/id[/statuses API endpoint^] to pull Twitter data into the graph via the https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_load_json_2[apoc.load.json procedure^].
+
+* Joanna Bitton created https://github.com/jbitton/neo4j-graph-renderer[neo4j-graph-renderer^] - a React component that can be used to render a Neo4j graph. 
+
+* https://twitter.com/maxdemarzi[Max de Marzi^] shows how to https://maxdemarzi.com/2017/07/13/using-a-cuckoo-filter-for-unique-relationships/[use a cuckoo filter for unique relationships^]. A cuckoo filter is a probabilistic data structure that in this case results in 50x higher throughput when searching for duplicate relationships.
+* Łukasz Szeremeta created https://github.com/lszeremeta/neo4j-sparql-extension-yars[neo4j-sparql-extension-yars^] - a Neo4j unmanaged extension that provides RDF storage and SPARQL 1.1 query features. 
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article showing how to https://neo4j.com/developer/kb/a-light-weight-approach-to-validating-network-port-connectivity/[easily validate network port connectivity^] on your Neo4j clusters.
+
+=== Next Week
+
+On Wednesday, July 19, 2017 https://twitter.com/technige[Nigel Small^], Tech Lead of the Neo4j Drivers Team, will be presenting https://www.meetup.com/Neo4j-Online-Meetup/events/240413579/[An introduction to Neo4j Bolt Drivers^] as part of the Neo4j online meetup.
+
+Don't forget to https://www.youtube.com/watch?v=UixTSyGfAxU[join us on YouTube^] for that one.
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ViniciusPach[Vinicius Feitosa
+^] from the https://ep2017.europython.eu/en/[Euro Python^] conference:
+
+tweet::885787776049979392[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

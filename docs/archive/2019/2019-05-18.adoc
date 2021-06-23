@@ -1,0 +1,156 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Igor Rozani taught us about the pokémon universe in a fun online meetup, Andrea Santurbano showed how easy it is to produce and consume Kafka data streams in Cypher, and Tomaz Bratanic explored the Depth First Search algorithm. 
+
+Elsewhere Jennifer Reif dived into the world of data import and asked why you'd use Kettle for data import, and I went extremely meta in analysing the Twitter network of the Graph Database community. 
+
+[[featured-community-member]]
+=== Featured Community Member: Mayank Gupta
+
+Our featured community member this week is Mayank Gupta, a Certified Neo4j Developer and student at Netaji Subhash Engineering College in Kolkata, India. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190517011504/this-week-in-neo4j-18-may-2019.jpg[name="Mayank Gupta"]
+
+After using Neo4j for one year, Mayank started creating Neo4j tutorial videos in Hindi, the national language of a 1.2 billion populated country. His https://www.youtube.com/mayankgbrc[Code House^] YouTube channel already has 500+ subscribers, and he recently a playlist dedicated to Neo4j. 
+
+With so many different languages in the world, it makes it difficult to make everything accessible to everyone. We are very grateful to have people like Mayank who help eliminate many of those obstacles. 
+
+
+Thank you, Mayank, for your contributions to your local community!
+
+https://www.linkedin.com/in/mayankgbrc/[Connect with Mayank on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== The Mega Evolution of Pokémons in a Graph
+
+In this week's Neo4j Online Meetup, Igor Rozani educated us about pokémons using graphs.
+
+youtube::052tqeB8zCk[type={type}]
+
+Igor shows us a web scraper he built to load the pokémon universe in Neo4j and then explores the data using Cypher queries. He also shares his experience learning about graph modelling and we discuss different data import approaches.
+
+[[features-2]]
+=== How to produce and consume data streams directly via Cypher with Streams Procedures
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190517014205/1_jKm1lkhj8iDEWVVyEPRl5Q.png" width="150px"  />
+</div>
+++++
+
+In the 3rd part of his Leveraging Neo4j Streams series, https://twitter.com/santand84?lang=en-gb[Andrea Santurbano^] shows how to bring Neo4j into your Apache Kafka flow using the streams procedures provided by the https://neo4j-contrib.github.io/neo4j-streams/[Neo4j Streams Library^].
+
+Using Apache Zeppelin notebooks, Andrea takes us through a worked example where we learn how to write Cypher queries to publish and consume Kafka events. 
+
+link:https://medium.freecodecamp.org/how-to-produce-and-consume-data-streams-directly-via-cypher-with-streams-procedures-52cbc5f543f1[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Finding influencers and communities in the Graph Community
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190517014301/1_OJil5lDhSyAl84REETFUrg.jpeg" width="150px"  />
+</div>
+++++
+
+I wrote a blog post showing how to use algorithms from the https://neo4j.com/docs/graph-algorithms/current/[Neo4j Graph Algorithms Library^] to explore the Twitter graph of users in the Graph Database community.
+
+We use two two types of algorithms:
+
+* The Degree Centrality, Betweenness Centrality, and PageRank centrality algorithms to find users with different types of influence. 
+* The Louvain Modularity community detection algorithm to find sub communities of users, including GraphQL, the Semantic web, and Neo4j. 
+
+link:https://medium.com/neo4j/finding-influencers-and-communities-in-the-graph-community-e3d691296325[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Depth First Search on the Tube, Relationships vs Properties, Intro to Neo4j Slides
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190517021753/390px-depth-first-tree.svg_.png" width="150px"  />
+</div>
+++++
+
+* Tomaz Bratanic shows how to https://tbgraph.wordpress.com/2019/04/30/depth-first-search-analysis-on-london-tube-network-with-neo4j-graph-algorithms/[use the Depth First Search algorithm^] in the https://neo4j.com/docs/graph-algorithms/current/[Neo4j Graph Algorithms Library^] to explore the London Tube Network. 
+
+* https://twitter.com/spirnbaum[Stephan Pirnbaum^] shared the slides from his https://speakerdeck.com/stephanpirnbaum/an-introduction-to-neo4j[Introduction to Neo4j^] talk from the https://twitter.com/neoscms[Neos Conference^].
+
+* I wrote a blog post showing how to https://markhneedham.com/blog/2019/05/12/neo4j-keep-filter-keys-map-apoc/[create a node based on a subset of keys in a map^].
+* Dominic Kumar http://www.dominickumar.com/blog/neo4j-relationship-modelling-performance/[explores the performance differences^] between “Relationship as Types” vs “Relationship as Properties”. 
+
+
+
+[[features-4]]
+=== Why Choose Kettle for Neo4j Data Import?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190517014328/1_6nF0vtjj1GMlnFAoKlfJaQ.jpeg" width="150px"  />
+</div>
+++++	
+
+After completing her epic Marvel Series, https://twitter.com/jmhreif?lang=en[Jennifer Reif^] is now exploring Neo4j data import tools, starting with Kettle, an open source ETL tool. 
+
+Jennifer gives some background on the project, its Neo4j integrations, and explains why you might choose this method of import over LOAD CSV, APOC, or Cypher. 
+
+link:https://medium.com/@jennifer.reif/data-import-decisions-why-choose-kettle-for-neo4j-data-import-1bd91ab85300[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/gunnarmorling[Gunnar Morling^]:
+
+tweet::1128301888343035904[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+
+* Network Connection Footprinting with WMI and Neo4j http://ijustwannared.team/2019/04/22/network-connection-footprinting-with-wmi-and-neo4j/  https://pbs.twimg.com/media/D4uHRMnWsAISuMW.jpg
+
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+Neo4j - A Graph Project Story : a play about #Neo4j, where protagonists are Neoj4 experts and the plot starts when a client come in with his project. A book written by @nmervaillie @SylvainRoussy @rrouyer and Frank Kutzler. http://d-booker.jo.my/neo4j-book-amz-us @neo4j @askkerush @neo4j https://pbs.twimg.com/media/D6iWgG6WkAElvJA.jpg
+
+
+https://technology.bible/t/the-bible-in-a-graph-database/98
+Bible in a Graph Database
+
+New Halin - https://twitter.com/mdavidallen/status/1128077077264130048
+
+How Graph Technology is Changing AIJake Graham Neo4j,Alicia Frame Neo4j 
+https://www.youtube.com/watch?v=v6QI3YlYPrE
+
+
+////Fandreas

@@ -1,0 +1,112 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 27 May 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-27-may-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 27 May 2017
+
+[Headline:]
+This Week in Neo4j – 27 May 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Florin Pătraşcu
+
+This week's featured community member is https://twitter.com/florin[Florin Pătraşcu^], System Architect at Masterfile and creator/maintainer of the https://github.com/florinpatrascu/bolt_sips[Neo4j Elixir driver^].
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170525074953/this-week-in-neo4j-27-may-2017.png" alt="" width="800" height="400" class="alignnone size-full wp-image-65982" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Florin Pătraşcu - This week's featured community member
+</strong>
+</p>
+++++
+
+Florin has been a member of the Neo4j community for the last couple of years and has spent most of his time making it easy for people in the Elixir community to get into graphs. 
+
+As well as creating drivers for the HTTP and Bolt protocols, Florin has also ported the https://github.com/florinpatrascu/movies_elixir_phoenix[movies starter kit^] so that people have a ready made example to work with. 
+
+Thanks Florin for all your work!
+
+=== Graph databases and RDF: It's a family affair
+
+ZDNet have an interview with Neo4j's CEO https://twitter.com/emileifrem[Emil Eifrem^] in which he talks about http://www.zdnet.com/article/graph-databases-and-rdf-its-a-family-affair/[graph databases and RDF^]. The article references https://twitter.com/barrasadv[Jesús Barrasa^]'s GraphConnect talk ''Debunking some RDF-vs-PropertyGraph Alternative Facts' which you can watch below.
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t1Mn178sEYg" frameborder="0" allowfullscreen></iframe>
+++++
+
+Jesus also released a new version of https://github.com/jbarrasa/neosemantics[neosemantics], a set of experiments that bridge the worlds of graphs and RDF. It's been updated to Neo4j 3.2 and has some performance improvements as well as bug fixes. 
+
+=== Flight search, Node.js OGM, 
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] revisits https://maxdemarzi.com/2017/05/24/flight-search-with-neo4j/[modeling flight search^], a topic he https://maxdemarzi.com/2015/08/26/modeling-airline-flights-in-neo4j/[first wrote about a couple of years ago^]. Max shows how to build a multi dimensional model and then call it from a user defined procedure to achieve maximum performance. 
+
+* https://twitter.com/intermineorg[Intermine^], who featured in https://neo4j.com/tag/twin4j/[#twin4j^] on https://neo4j.com/blog/this-week-neo4j-8-april-2017/[8th April 2017^],  wrote up https://intermineorg.wordpress.com/2017/05/19/graphconnect-a-neo4j-conference/[their experience of GraphConnect Europe^]. They were particularly happy that https://stackoverflow.com/questions/37418207/bad-performance-with-or-operator[queries containing the OR keyword^] use indexes as of the 3.2 release.
+
+* https://twitter.com/LucasMajerowicz[Lucas Majerowicz^] shows how to add http://hecodes.com/2017/05/event-sourcing-in-node-js-add-git-like-functionality-to-your-application/[versioning, branching and merging^] functionality to an eCommerce application using the power of Node.js, Cypher, and Neo4j, while implementing an event sourcing architecture. Lucas goes on to show how we can answer complex questions with simple Cypher queries. 
+
+* https://twitter.com/jeffmmorris[Jeff Morris^] appears on https://twitter.com/NeilCHughes[Neil Hughes^]' Tech Blog Writer podcast talking about http://techblogwriter.co.uk/neo4j-graph-database/[How Neo4j is unlocking the value of data relationships^]. 
+
+* https://github.com/in3rsha[Greg Walker^], who featured in #twin4j on https://neo4j.com/blog/this-week-neo4j-2-april-2017/[2 April 2017^], has created https://github.com/in3rsha/bitcoin-to-neo4j[bitcoin-to-neo4j^], which contains the code that powers http://learnmeabitcoin.com/browser/node/[learnmeabitcoin.com^]. 
+
+* Luciano Almeida released a couple of new versions of https://github.com/LucianoPAlmeida/OGMNeo[OGMNeo^] - an npm module that abstracts operations on the Neo4j Javascript driver to make it easier to use from an application.
+
+=== GraphQL meets Neo4j
+
+Last weekend a few of the Neo4j team travelled to Berlin to attend the first https://graphql-europe.org/[GraphQL Europe conference^]. GraphQL is a Facebook invented data query language that provides an alternative to REST web service architectures.
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170524034757/graphql-community-graph.png" alt="The GraphQL Community Graph powered by a Neo4j integration" width="800" height="800" class="alignnone size-full wp-image-65940" />
+
+</div>
+++++
+
+Will and Michael https://neo4j.com/blog/graphql-neo4j-graph-database-integration/[wrote a detailed post with their experiences^] of the conference and the GraphQL hackathon that we ran during the conference. 
+
+If you're interested in learning more, take a look at the http://graphql.communitygraph.org/[GraphQL Community Graph^] - a Neo4j backed GraphQL API that lets you find out what's been happening on twitter, GitHub, and more. 
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have a tip for https://neo4j.com/developer/kb/useful-cypher-statements-for-suspending-and-reactivating-users/[suspending and reactivating users^], which comes in handy if you're in 'maintenance mode' and want to keep the database up and running but restrict access to certain users. 
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+* On Wednesday May 31st, 2017, Kristof Van Tomme will present https://www.meetup.com/graphdb-london/events/240055368/[‘Graph the docs - What happens if you use Neo4j for a documentation project?’^] at the Neo4j London meetup. 
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/giannagruen[Gianna Grün^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great <a href="https://twitter.com/hashtag/neo4j?src=hash">#neo4j</a> workshop for graph-database newbies by <a href="https://twitter.com/LeilaHaddou">@LeilaHaddou</a> First network graph after 1 hour 👏  looking at Brexit donations <a href="https://twitter.com/hashtag/EIJC17?src=hash">#EIJC17</a> <a href="https://t.co/sJ2NWuMKbn">pic.twitter.com/sJ2NWuMKbn</a></p>&mdash; Gianna Grün (@giannagruen) <a href="https://twitter.com/giannagruen/status/866208543652892672">May 21, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+++++
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

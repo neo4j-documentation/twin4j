@@ -1,0 +1,127 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. You can find previous versions on the https://neo4j.com/tag/twin4j/[#twin4j^] page.
+
+=== Featured Community Member: Laura Drummer
+
+This week’s featured community member is Laura Drummer, Director of Software & Engineering at https://twitter.com/novettasol[Novetta Solutions^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171130040040/this-week-in-neo4j-2-december-2017.jpg["Person Name - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Laura Drummer - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Laura organises the https://www.meetup.com/Columbia-GraphDB-MeetUp/[Columbia GraphDB^] meetup and has also presented on Neo4j at the https://www.meetup.com/Data-Science-MD/events/240982895/[Data Science meetup^] in Maryland
+
+Laura presented https://www.youtube.com/watch?v=x5PBXX1CZQs[Sentiment and Social Network Analysis^] at our most recent GraphConnect conference in New York City. In this talk Laura showed how https://socialbee.io/[SocialBee^] enriches social network analysis with topic modelling, sentiment analysis, and trending over time.
+
+A few days after returning home from the conference Laura had her first baby!
+
+On behalf of the Neo4j community, congratulations and thanks for all your work Laura!
+
+=== Online Meetup: How Project Rephetio used Neo4j to predict drug repurposing
+
+In this week's online meetup https://twitter.com/dhimmel[Daniel Himmelstein^] explained how he used Neo4j to predict drug repurposing in http://het.io/repurpose/[Project Rephetio^].
+
+youtube::sNqp0IZQkB0[type={type}]
+
+Daniel also presented https://www.youtube.com/watch?v=jwhAlNgjvMA[lightning talk^] on the same topic at GraphConnect SF 2016. He also wrote an https://neo4j.com/blog/integrating-biology-public-neo4j-database/[accompanying blog post^].
+
+=== Geocoding Paradise Papers, Graphs for Telecoms, Graph Algorithms
+
+* In http://www.lyonwj.com/2017/11/28/geocoding-paradise-papers-neo4j-spatial-visualization/[Geocoding Paradise Papers Addresses In Neo4j To Build Interactive Geographical Data Visualizations^] my colleague https://twitter.com/lyonwj[Will Lyon^] shows how to retrieve detailed address information from Google's geocoding API using an APOC procedure. He then builds several visualizations using http://leafletjs.com/[Leaflet.js^]. 
+
+* In https://twitter.com/tb_tomaz[Tomaz Bratanic^]'s latest blog post he shows how to https://tbgraph.wordpress.com/2017/11/27/neo4j-graph-algorithms-projecting-a-virtual-graph/[run graph algorithms over a projected movie graph^]. 
+
+* https://twitter.com/prgarnett[Dr Philip Garnett^] has written a https://www.prgarnett.net/daniel-morgan-murder/[really interesting blog post^] where he builds a graph containing people, companies, and organisations related to the http://www.untoldmurder.com/book-1/[murder of Daniel Morgan^]. Philip also runs the http://algorithmicindexing.net/[Algorithmic Indexing^] research project, which aims to integrate open source text processing tools to assist with the analysis, navigation, and reading of large document based data sets.
+
+* My colleague https://twitter.com/barrasadv[Jesús Barrasa^]  presented a webinar https://www.youtube.com/watch?v=aPI1Als3Jv8[Graph Solutions for Telecoms^], in which he shows how to use graphs to solve common problems in the telecoms domain such as finding single points of failure, fraud detection, and root cause analysis.
+
+=== Paradise Papers at ada_CONF
+
+My colleague https://github.com/Lojjs[Louise Söderström^] explained how we build the Cypher query language as well as covering common graph use cases in a talk at https://twitter.com/ada_conf[ada_CONF^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171129222722/DPeUSTPW0AEaAxV-1024x538.jpg["Louise Söderström presenting at ada_CONF", 640, 336, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Louise Söderström presenting at ada_CONF
+</strong>
+</p>
+++++
+
+https://adaconf.org/[ada_CONF^] is a one day hands-on tech and IT conference for women and/or trans people with the focus on sharing skills. 
+
+The slides from Louise's talk are https://www.slideshare.net/neo4j/cypher-enabling-the-paradise-papers[on slideshare^].
+
+=== This Week on StackOverflow
+
+This week on https://stackoverflow.com/tags/neo4j/[Neo4j StackOverflow^]...
+
+* cypbersam shows how to https://stackoverflow.com/questions/47512635/neo4j-percentage-of-attribute-for-social-network[calculate the percentage of an attribute for all the connections of a social network^]. 
+
+* I enjoyed reading the discussion about https://stackoverflow.com/questions/47559016/test-variable-not-defined-in-case-statement[scoping of variables in Cypher^].
+
+* Bruno Peres shows how to https://stackoverflow.com/questions/47517257/neo4j-syntax-error-when-using-where-not-in[workaround the lack of support for sub queries in Cypher^] by using the WITH clause.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| December 5th 2017 | https://www.meetup.com/Philly-GraphDB/events/245287696/[Holly Jolly Data Party!^] | https://www.meetup.com/Philly-GraphDB[Philly GraphDB^] | DataPhilly Organizing Team
+
+| December 6th 2017 | https://www.meetup.com/Graph-Database-NRW/events/244681353/[Querying graph data by example from genomics - Part 1^] | https://www.meetup.com/Graph-Database-NRW[Graph Database - NRW^] | https://twitter.com/ira_res[Iryna Feuerstein^] 
+
+| December 6th 2017 | https://www.meetup.com/Graph-Database-Czech-Republic/events/245331386/[Introduction to Neo4j (Brno)^] | https://www.meetup.com/Graph-Database-Czech-Republic[Graph Database - Czech Republic^] | https://twitter.com/frant_hartm[František Hartman^]
+
+| December 7th 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/245461674/[Breaking down enterprise data silos with Neo4j^] | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | https://twitter.com/menometech[Mike Morley^], Mark Barley, Konrad Aust
+
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/ftTomAndJerry[Anjani Dhrangadhariy^]:
+
+tweet::934980048095866880[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

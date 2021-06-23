@@ -1,0 +1,161 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Hackathon, SQL Server to Neo4j, Hexology Startup, Recap GGCD 2021
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, Tara gives us details on the Leonard Euler Idea Contest - registrations now open!
+
+Hadi published an article on how to export indexes and constraints from SQL Server graph tables to Neo4j. Darrel explains how Hexology is utilizing Neo4j Aura through the Neo4j Startup Program to power their mobile application and AI. Will gives us a recap of the Global Graph Celebration Day meetup covering graph history and foundations, innovations in the community, the new GraphQL library beta, and a hackathon.
+
+And finally, Will and Lju released Episode #3 of the GraphStuff.FM podcast on the graph data platform, David announced a new version of the Neo4j Apache Connector for Spark, Nikita implemented a Neo4j module for Youpal Group, and Fantasia shared resources for their UE4 plugin.
+
+Cheers,
+https://twitter.com/jmhreif[Jennifer^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Craig Taverner
+
+This week's featured community member is Craig Taverner.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210423124747/this-week-in-neo4j-24-april-2021.jpeg[name="Craig Taverner"]
+
+Craig Taverner is a legendary master in the Neo4j community. He has been building libraries and capabilities for Neo4j since before he became an employee. Craig has been and continues to be an expert and innovator on spatial capabilities with graphs.
+
+His initial contributions were for Amanzitel, where he was CTO. He built https://github.com/craigtaverner/amanzi-index[multi-property indexes^] to do cellular network data management and signal quality statistics at Amanzitel, which later led Craig to join Neo4j and build the https://github.com/neo4j-contrib/spatial[Neo4j Spatial library^] - one of the first extensions to the Neo4j database - in 2010. The library has been extremely successful and some of the features have been included into the core product. However, there are still many features in the library that Craig continues to build and innovate as a valuable extension to Neo4j.
+
+Outside of code contributions, Craig has participated in several hackathons and spoken at many events, including last year’s NODES 2020 on https://youtu.be/pxjIX7Yu8TA[building spatial search algorithms for Neo4j^]. We can also find Craig on the community answering questions in the https://community.neo4j.com/c/integrations/geospatial/24[geospatial topic^]. Thank you, Craig, for your foundational work and continued contributions in the community!
+
+https://www.linkedin.com/in/craigtaverner/[Connect with Craig on LinkedIn, role="medium button"]
+
+
+[[features-1]]
+=== Build with Neo4j and GraphQL at the Leonard Euler Idea Contest
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210423051556/twin4j-leonhard-euler-idea-contest.png" width="150px"  />
+</div>
+++++
+ 
+Tara published a Neo4j blog post with all the details for the newly-announced Leonard Euler Idea Contest! This hackathon was announced at the end of the https://globalgraphcelebrationday.com/[Global Graph Celebration Day event^] with a prize pool of up to $10,000 USD. In return, Neo4j wants your ideas and examples using the Neo4j database and https://github.com/neo4j/graphql[beta-release Neo4j GraphQL library^]. No experience with Neo4j or GraphQL is required.
+
+The blog post outlines the timeline for the hackathon, plus gives criteria for submitted projects. There are also some resources Neo4j makes available to get you started, including access to Neo4j Aura Free tier (Neo4j’s database-as-a-service) for the first 100 registrants. So, you don’t want to miss out! :) Registration is already open, so join the enthusiasm and learn and build with Neo4j and GraphQL by https://neo4j-idea-contest-2021.devpost.com/[registering for the hackathon^]!
+
+https://neo4j.com/developer-blog/neo4j-graphql-leonhard-euler-idea-contest/[Read the Blog Post, role="medium button"]
+
+[[features-2]]
+=== Export Indexes and Constraints from SQL Server Graph Databases to Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210423051650/twin4j-sqlserver-to-graph.png" width=150px"  />
+</div>
+++++
+
+Hadi wrote an article demonstrating how to export indexes and constraints from SQL Server graph tables to Neo4j. There is also a previous article for exporting the data in the tables themselves to Neo4j.
+
+We see how to migrate 3 types of indexes (single property, composite property, full-text) and 4 types of constraints (unique node, node property existence, relationship property existence, node key) from SQL Server graph tables to Neo4j. A Github repository with all the code, plus code snippets in the blog post, show us exactly how this is done.
+
+https://www.sqlshack.com/export-indexes-and-constraints-from-sql-server-graph-databases-to-neo4j/[Read the Blog Post, role="medium button"]
+
+
+[[features-3]]
+=== Hexology Joins Neo4j Startup Program
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210423051722/twin4j-hexology-startup.jpeg" width="200px"  />
+</div>
+++++
+
+Darrel wrote a blog post about how Hexology uses Neo4j to power their mobile application and AI through the https://neo4j.com/startup-program/[Neo4j Startup Program^]. First, we see how graphs provide needed capabilities for data management, especially with regards to AI, responsive applications, and startups. Next, we get an exciting look into what Hexology is building with Neo4j and how it’s used. The blog post wraps up with how Neo4j and the Startup Program, in particular, is helping give them a competitive advantage in the market.
+
+We are so thrilled to hear Hexology’s story and glad that Neo4j can help others be successful in their endeavors!
+
+https://blog.hexology.co/hexology-joins-neo4j-startup-program[Read the Blog Post, role="medium button"]
+
+[[features-4]]
+=== Recapping Global Graph Celebration Day 2021
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210423051753/twin4j-ggcd2021-recap.png" width="200px"  />
+</div>
+++++
+
+Missed Global Graph Celebration Day? Will published a blog post and the live stream video highlighting what happened during the Neo4j-hosted meetup!
+
+Starting out, we saw how the foundations of graph theory were developed and got some resources for getting started and involved with the graph community, as well as a https://r.neo4j.com/ggcdquiz[fun quiz^] (due by April 30). Next, we heard from visionaries doing amazing things with connected data. From medical research to data analysis insights to creating powerful models of the physical world, these individuals are at the forefront of graph innovation and inspiration!
+
+The event concluded with a GraphQL Community Update call, where Neo4j engineers showed the new https://neo4j.com/docs/graphql-manual/current/[Neo4j GraphQL library^]. Neo4j then announced the Leonard Euler Idea Contest - a hackathon using Neo4j and GraphQL open to everyone!
+
+https://neo4j.com/developer-blog/recapping-global-graph-celebration-day-2021/[Read the Blog Post or Watch the Video, role="medium button"]
+
+
+[[features-5]]
+=== GraphStuff.FM Episode #3, Neo4j Spark Connector, Neo4j Module for Youpal, Fantasia UE4 Plugin
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Will and Lju released another podcast episode (#3) for GraphStuff.FM on the https://graphstuff.fm/episodes/overview-of-the-neo4j-graph-data-platform[Overview of the Neo4j Graph Data Platform^]. Get insight into Neo4j Aura, APOC, Bloom, graph apps, and more!
+
+* David announced a new version of the Neo4j Connector for Apache Spark. Check out the new details on the https://neo4j.com/product/connectors/apache-spark-connector/?version=4.0.1[dedicated neo4j.com page^].
+
+* Nikita implemented a Neo4j module for Youpal Group to use the graph database from Youpal. He also implemented visualization in 3D to view the graph data in three dimensions. Check out the https://twitter.com/YoupalGroup/status/1379467365251956742[short video^].
+
+* If you caught last week’s Tweet of the week by https://twitter.com/FANTASIA4UE/[@FANTASIA4UE^], they broadcast more info in a https://twitter.com/FANTASIA4UE/status/1378270088126681090[tweet^] with links to their website, Github repository, and a YouTube video.
+
+
+=== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/earnaud4[Elie k. arno^]:
+
+tweet::1379355789484261376[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+////

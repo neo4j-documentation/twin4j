@@ -1,0 +1,161 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week was a bumper one for content in the Neo4j community. 
+
+We go into the world of blockchain with an online meetup on XRP and a blog post showing how to import bitcoin into Neo4j in less than 24 hours. I started a series of posts on link prediction and wrote a post explaining the modelling decisions we made in the BBC GoodFood Graph.
+
+David Allen does a deep dive into what happens when you query a Neo4j cluster, Dave Fauth shows us how to model a healthcare graph, and more!
+
+
+[[featured-community-member]]
+=== Featured Community Member: Dr. Lena Wiese
+
+This week's featured community members is Dr. Lena Wiese, Head of research group Knowledge Engineering at Georg August University Göttingen.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190308092920/this-week-in-neo4j-9-march-2019.jpg[name="Dr. Lena Wiese"]
+
+Lena works and teaches on a wide variety of database topics and came across Neo4j a few years ago.  She wrote a book on "Advanced Data Management" which also covers graph databases and presented about them at various events.
+
+Lena been using graphs in work with linked-data, ontologies, knowledge graphs and similarity computation. This week she presented a half day hands-on tutorial on "Data Analytics with Graph Algorithms" at the scientific BTW-conference (German Equivalent to VLDB).
+She covered graph data management and how and when to use which algorithms for graph data analytics.
+
+On behalf of the Neo4j community, thanks for your work Lena!
+
+
+link:https://www.linkedin.com/in/lena-wiese-87a40a111/[Connect with Lena on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Building a graph of the XRP ledger
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Thomas Silkjær and Sony Green showed us how to build a graph of the XRP ledger.
+
+youtube::bRst2uuydf4[type={type}]
+
+Thomas started by giving an overview of XRP and why he decided to load the data into Neo4j. Thomas has also written a https://xrpcommunity.blog/exploring-relationships-on-the-ledger-part-one/[couple of^] https://xrpcommunity.blog/exploring-relationships-on-the-ledger-part-two/[blog posts^] about his experiences so far.
+
+In the 2nd part of the talk Sony shows how to analyse the data using GraphXR, a browser-based visualization tool that allows exploration of data in 2D and XR. 
+
+In related news, this week GraphXR was made available as a Graph App in the Neo4j Desktop. You can read more about that in https://neo4j.com/blog/graphxr-graph-app-neo4j-desktop/[the release post^].
+
+[[features-2]]
+=== Link Prediction with Neo4j Part 1: An Introduction
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190308085025/0_Yc1gPqzLPao_SFxZ.png" width="200px"  />
+</div>
+++++
+
+
+I've started a series of posts about link prediction and the algorithms that we https://neo4j.com/docs/graph-algorithms/current/algorithms/linkprediction/[recently added^] to the Neo4j Graph Algorithms library. 
+
+In the first post I give an overview of the problem, describe a few link prediction measures, and explain the challenges we have when building a link prediction machine classifier. We're now setup for a worked example in the next post in the series.
+
+Thanks also go to Michael Hunger and Amy Hodler for their extensive review of this post.
+
+link:https://medium.com/neo4j/link-prediction-with-neo4j-part-1-an-introduction-713aa779fd9[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Leveraging a graph for healthcare search
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190308083051/Screen-Shot-2019-02-18-at-2.53.11-PM-1024x692-1.png" width="150px"  />
+</div>
+++++
+
+Dave Fauth has started a series of posts showing how to leverage graphs for healthcare search. In the first post Dave lists several datasets from the US Government’s Centers for Medicare and Medicaid Services that will be loaded into Neo4j, and describes the graph model that we'll be using.
+
+
+link:http://www.intelliwareness.org/2019/02/neo4j-leveraging-a-graph-for-healthcare-search/[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== PageRank meets Full Text Search, Querying Neo4j Clusters, Bitcoin graph within a day
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190308082952/1_RIb3e7fDARcqVbFs3TVw3Q-1.png" width="150px"  />
+</div>
+++++
+
+Have you ever wondered what happens when you query a Neo4j cluster using one of the official drivers? If so David Allen https://medium.com/neo4j/querying-neo4j-clusters-7d6fde75b5b4[has got you covered^] in his latest post. David explains cluster roles, routing tables, connection management, the importance of the advertised address, and more. 
+
+I wrote a blog post showing how to https://medium.com/neo4j/article-recommendation-with-personalized-pagerank-and-full-text-search-c0203dd833e8[make article recommendations^] by combining Neo4j 3.5's Full Text Search with the Personalized PageRank graph algorithm. 
+
+Cesar Pantoja https://medium.com/tokenanalyst/how-to-load-bitcoin-into-neo4j-in-one-day-b555219ed9d2[wrote a blog post^] in which he explains an innovative approach to get all the data from the bitcoin ledger into Neo4j within 24 hours. Cesar will be presenting on this topic at the Neo4j Online Meetup on https://www.meetup.com/Neo4j-Online-Meetup/events/259469439/[4th April 2019^]. 
+
+Codex's https://github.com/argimenes/Neo4jClient-Vector[extension to the Neo4j Driver^] has been been enhanced to now to take an optional path pattern, which lets you specify node variable names with the strongly-typed Match statement.
+
+
+[[features-4]]
+=== What’s cooking? Part 3: A segue into graph modelling
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190308085239/1_p7D4NpC-W96z6njcbUbWlw.png" width="200px"  />
+</div>
+++++
+
+
+In the 3rd part of the What's cooking? series, we take a brief detour into the world of graph modelling to go into more detail on the modelling questions we received during the online meetup a couple of weeks ago.
+
+I explain why we chose to model certain things as nodes rather than properties, and also identify a part of the model where the opposite approach would make sense. 
+
+You can also read parts https://medium.com/neo4j/whats-cooking-approaches-for-importing-bbc-goodfood-information-into-neo4j-64a481906172[1^] and https://medium.com/neo4j/whats-cooking-part-2-what-can-i-make-with-these-ingredients-7df9dc129993[2^] of the series if you haven't seen those yet.
+
+link:https://medium.com/neo4j/whats-cooking-part-3-a-segue-into-graph-modelling-5666d1b05037[Read the transcript, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/blm849[Bernie Michalik^]:
+
+tweet::1103680061226536960[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+Introduction to yWorks and yFiles 
+https://www.youtube.com/watch?v=br3momUyCsI 
+
+https://medium.com/neo4j/neo4j-considerations-in-orchestration-environments-584db747dca5
+Neo4j Considerations in Orchestration Environments
+
+
+https://blog.semanticscholar.org/finding-experts-in-grapal-b97ef280e585 
+Finding experts in GrapAL
+
+https://medium.com/@coppettim/the-power-of-graphs-for-risk-forecast-e5e54f63ddbf
+The power of graphs for risk forecast 
+
+Running neo4j with Docker
+https://gosubdba.wordpress.com/2019/03/03/docker-and-neo4j/
+
+////

@@ -1,0 +1,197 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Analyzing .NET Dependencies, Coloring a Sudoku Graph, Christmas Messages Graph, Making Graph Algorithms ‘Clique’
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Brandon Campbell and Kelson Smith use Neo4j to solve a ‘who done it?’ problem.
+
+Jennifer Reif gives us a walk through on multiple databases, Hongping Liang graphs the Personal Genomre Project, and Adam Cowley explains how and when to use sharding.
+
+And finally, I created a QuickGraph of the Australian Open tennis tournament.
+
+Enjoy!
+
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Adam Cowley
+
+This week's featured Neo4j Community member is https://twitter.com/adamcowley[Adam Cowley^], Senior Professional Services Consultant at Neo4j.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200124085222/this-week-in-neo4j-25-january-2020.jpg[name="Adam Cowley"]
+
+Adam started as a graph-enthusiast and active community member. He participated in contests, helped answer technical questions for others in the community, wrote blog posts, and more! Fast forward a couple of years, Adam was brought in as a Neo4j employee. 
+
+He joined the London office and has been working with customers, helping them to be successful with their graph projects, ever since.  His passions and hard work developed into an opportunity. We’re so grateful to have him as part of the community and part of the Neo4j team.
+
+Adam is a https://adamcowley.co.uk/[prolific blogger^], covering topics from https://adamcowley.co.uk/neo4j/temporal-native-dates/[temporal types in Neo4j 3.4^] to https://adamcowley.co.uk/neo4j/wordpress-recommendations-neo4j-part-1-data-modelling/[WordPress recommendations^], from https://adamcowley.co.uk/neo4j/loading-tweets-into-neo4j-with-apoc/[analysing Twitter data^] to https://adamcowley.co.uk/neo4j/calculating-tf-idf-score-cypher/[calculating TF/IDF scores^].
+
+Adam also presented at the GraphConnect conference on https://neo4j.com/blog/journey-planning-why-i-love-cypher/[journey planning with Cypher^], and participated in several Neo4j online meetups.
+
+On behalf of the Neo4j community, thanks for all your work Adam!
+
+https://www.linkedin.com/in/adamcowley/[Connect with Adam on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Ten to Dine: Building Possibility Spaces with Neo4j and ReactJS
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^], Brandon Campbell and Kelson Smith https://neo4j.com/online-summit/session/murder-mystery-app-fullstack[use Neo4j to solve a 'who done it?' problem^].
+
+youtube::QHJIljT5K6E[type={type}]
+
+In the talk they show how to use a possibility space meta graph to generate the story arc for a game. If you're interested in learning more about the project, there are more details  on https://holomorph.dev/[holomorph.dev^].
+
+[[features-2]]
+=== Managing Multiple Databases in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200124000833/noun_Multiple-Databases_1719061-1.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/JMHReif[Jennifer Reif^] has written a developer guide explaining how to use multiple databases, a new feature in the latest version of Neo4j. 
+
+Jennifer explains the use case for this feature and, with the help of worked examples, takes us through the syntax of common operations.
+
+Adam Cowley covers similar ground in https://adamcowley.co.uk/neo4j/multi-tenancy-neo4j-4.0/[his blog post^], but also shows how to query a specific database using the Javascript driver.
+
+https://neo4j.com/developer/manage-multiple-databases/[Read the guide, role="medium button"]
+
+[[features-3]]
+=== Personal Genome Project, Data Centre Knowledge Graphs, Causal Clusters on GCP/AWS
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200124011813/pgp-logo.png" width="100px"  />
+</div>
+++++
+
+* Hongping Liang shows us how to https://medium.com/@hongpingliang/visualize-clinical-data-in-graph-database-in-20-minutes-f4de223449a2[visualise data from the Personal Genome Project^], using the Neo4j Browser, in less than 20 minutes.
+
+* Paul Drangeid has created a https://blog.graphcommit.com/2019/12/graph-commit-project.html[Powershell "interpreter" for Cypher^]. 
+
+* Paul has also written a couple of blog posts showing how to build knowledge graphs of https://blog.graphcommit.com/2019/11/create-veeam-backup-knowledge-graph-via.html[VM backups^]  and https://blog.graphcommit.com/2019/11/import-vcenter-infrastructure-into.html[vCenter infrastructure^].
+
+* Bert Radke shows https://faboo.org/2020/01/implementing-a-searchbox-with-neo4j/[how to build a Google style search box^] using Neo4j's full text search functionality.
+
+* Bhuvanesh has written a couple of posts about Neo4j Causal clusters. In the first he explains how to https://thedataguy.in/setup-neo4j-causal-cluster-on-gcp-and-aws/[setup a Neo4j cluster on AWS and GCP^], and in the second we do https://thedataguy.in/setup-multi-data-center-neo4j-cluster-in-aws-and-gcp/[a multi datacenter deployment^].
+
+* Lju Lazarevic has written a blog post explaining some of the https://medium.com/neo4j/introducing-neo4j-drivers-for-the-next-gen-database-96981f65e8b8[new features in the Neo4j Drivers^] for the latest release of Neo4j.
+
+[[features-4]]
+=== When and how to implement Sharding in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200124005033/noun_ice-shards_497277-1.png" width="150px"  />
+</div>
+++++
+
+Adam Cowley has written a comprehensive walkthrough of https://neo4j.com/docs/operations-manual/current/fabric/introduction/[Neo4j Fabric^]. Fabric is a recently released feature that gives users a way to store and retrieve data in multiple databases using a single Cypher query.
+
+With the help of a flight dataset, Adam shows us how to:
+
+* configure the Fabric server 
+* decide where we should partition our data
+* query a single shard or multiple shards
+
+https://adamcowley.co.uk/neo4j/sharding-neo4j-4.0/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== QuickGraph: Australian Open
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200124005515/aus-open-banner.png" width="200px"  />
+</div>
+++++
+
+In my latest QuickGraph, we explore data from the Australian Open tennis tournament that's currently in progress in Melbourne.
+
+We explore previous winners, their route to the final, losing finalists who subsequently won the tournament, and more.  
+
+https://markhneedham.com/blog/2020/01/23/quick-graph-australian-open/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/wrongbat[Halfdan Rump^]:
+
+tweet::1219853706180481024[type={type}]
+
+////
+
+https://markhneedham.com/blog/2020/01/16/interactive-uk-charts-quickgraph-neo4j-streamlit/
+Creating an Interactive UK Official Charts Data App with Streamlit and Neo4j
+
+https://markhneedham.com/blog/2019/12/23/quick-graph-itsu-allergens/ 
+QuickGraph #3: Itsu Allergens
+
+Use spatial data in GraphQL w/ neo4j-graphql.js and @neo4j Aura to build a GraphQL API for finding businesses near me #GRANDstack
+https://blog.grandstack.io/working-with-spatial-data-in-neo4j-graphql-in-the-cloud-eee2bf1afad 
+
+Knowledge Graphs in Action - @neo4j GraphTour Mexico City - by @ikwattro  - https://youtu.be/pRSEs9V6-4U
+
+https://faboo.org/2020/01/implementing-a-searchbox-with-neo4j/ 
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+https://tagtaxa.com/getting-an-insight-of-blockchain-transactions-with-neo4j-graph-database/
+Sinisa DrpaSinisa Drpa
+Getting an Insight of Blockchain Transactions Flow with Neo4j Graph Database
+In the previous post I described how to explore and better understand information on Lisk blockchain by running SQL queries directly on the blockchain database. In this article I'll try to explain how to export the data from Lisk relational database to Neo4j graph database in order to be able
+
+* Indoor navigation with ReactJS and Neo4j: https://ordina-jworks.github.io/iot/2019/12/20/ar-signpost.html
+
+
+* https://github.com/trinitor/netstat2neo4j 
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+* https://info.michael-simons.eu/2019/08/22/whats-a-bill-of-material-bom-file/
+
+* https://maxdemarzi.com/2020/01/16/getting-the-latest-transactions/
+
+https://maxdemarzi.com/2020/01/21/going-faster-in-2020/
+
+
+
+
+
+https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf
+Human Genes Graph
+
+XRPLORE: A Sneak Peek on XRPLORER
+Ramon Ramentol
+https://coil.com/p/moncho/XRPLORE-A-Sneak-Peek-on-XRPLORER/qXYmWJ3HI 
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-using-cypher-and-apoc-custom-procedures-part-2-401fd90bf5c4
+Flights Search Application with Neo4j —Using Cypher queries and APOC Custom Procedures (Part 2)
+////
+

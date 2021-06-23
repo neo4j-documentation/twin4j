@@ -1,0 +1,180 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hey everyone,
+
+The big news in graph land this week was the publication of the FinCEN Files by the ICIJ. The dataset contains a vast network of industrial-scale money laundering running through Western banks. In this week's video Michael Hunger makes sense of the data using Neo4 and friends. 
+
+As Coronavirus related restrictions are tightened in European countries, Rik Van Bruggen's timely blog post explains exponential growth.
+
+In lighter news, Niels de Jong builds a Spotify playlist generator and Ng Wai Foong navigates Singapore's transport network. And we have releases of NEuler: The Graph Data Science Playground, the Neo4jClient .NET library, and Graphlytic visualisation tool.
+
+Finally, if you haven't yet registered for NODES 2020, https://www.youtube.com/watch?v=b0OiD68ytFY[watch this short video^], which explains all the fun stuff you've got to look forward to.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Max De Marzi
+
+This week's featured community member is Max De Marzi.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200925045634/this-week-in-neo4j-26-september-2020.jpg[name="Max De Marzi"]
+
+Max joined the Neo4j field team in 2012, helping customers with their most difficult graph problems. If a customer had to get a query to return in less than 50ms, Max was the first one they'd call, and he'd figure out how to do it. 
+
+As well as coaching field colleagues, Max shared his knowledge with the community in https://www.youtube.com/results?search_query=max+de+marzi[conference and meetup talks^], including https://www.youtube.com/watch?v=oALqiXDAYhc&feature=emb_title[Secret Sauce of Neo4j: Modeling and Querying Graphs^] at GraphConnect 2018. Max frequently answers users' questions on StackOverflow, Neo4j User Slack, and the Neo4j Community site.
+
+He writes a popular blog at https://maxdemarzi.com/[maxdemarzi.com^], where he shares tips for writing faster queries. He's also written numerous graph-based tutorials. From building a Twitter clone or a chatbot to finding fraud and calculating the best railroad paths, Max has covered it all.
+
+Max is currently https://www.linkedin.com/feed/update/urn:li:activity:6714947194664865792/[looking for a new role or consulting around graph databases^], so get in touch with him on LinkedIn if you have any opportunities.
+
+https://www.linkedin.com/in/maxdemarzi/[Connect with Max on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Analyzing the FinCEN Files in Neo4j
+
+This week's video is an analysis of the ICIJ's FinCEN Files by Michael Hunger.
+
+youtube::NIzx3kVUAJk[type={type}]
+
+After giving an overview of the raw dataset, Michael shows how to import it into Neo4j and then explores the graph using Neo4j Bloom, neomap, and NEuler.
+
+You can also https://neo4j.com/blog/analyzing-fincen-files-data-neo4j/[read a blog post^] about the FinCEN Files that Michael wrote with Rik Van Bruggen and Will Lyon.
+
+[[features-2]]
+=== Build a Subway Journey Planner Using Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200925015823/1_wvXGj68-2HiYELTxdqo1fg.jpeg" width="200px"  />
+</div>
+++++
+
+Using a dataset of Singapore's public transport network, Ng Wai Foong explores how to find the best travel path between two subway stations.
+
+After constructing a transport graph, Ng Wai uses APOC's Dijkstra algorithm to find the top 3 shortest weighted paths between two stations. He then wraps the query in a Python backed API and React web application. 
+
+
+https://towardsdatascience.com/build-a-subway-journey-planner-using-neo4j-566b1a53670a[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Neo4j Playlist Builder: Organize your Music with Graph Data Science
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200925021524/spotifyteaser2.png" width=200px"  />
+</div>
+++++
+
+Niels de Jong liked songs on Spotify got a bit out of control, so he turned to Neo4j to try to make sense of it, intending to generate playlists of similar songs.
+
+After importing his Spotify data and running some exploratory queries, Niels realised that his list of songs fell into more than 700 different genres. Creating playlists by genre would result in way too many playlists, so a different approach was needed.
+
+Niels shows how to use the Graph Data Science Library to create clusters of genres and then uses k-means clustering on tracks' audio properties to group tracks into playlists. Finally, Niels shows off a neat Cypher query to create a name for each playlist.
+
+https://nielsdejong.nl/neo4j%20projects/2020/09/23/spotify-playlist-builder.html[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Releases: NEuler, Graphlytic, Neo4jClient
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200925023605/noun_launch_1679136.png" width="200px"  />
+</div>
+++++
+
+* Over the last few months, we've been making https://medium.com/neo4j/neuler-refresh-perspectives-light-gds-sandbox-integration-community-detection-layout-170f2e53f3fd[lots of improvements to NEuler^], a UI tool to onboard users of the Graph Data Science Library. We've added perspectives-light to improve the results view, redesigned the results view for community detection algorithms, added a GDS Sandbox integration, and more.
+ 
+* This week saw the release of https://graphlytic.biz/blog/what-s-new-in-graphlytic-3-1[version 3.1 of Graphlytic^], a customisable web application for collaborative graph visualisation and analysis. This release includes new visualization features, auditing, and improved documentation.
+
+* Chris Skardon https://twitter.com/CSkardon/status/1306946281714200577[released version 4.0.0^] of https://github.com/DotNet4Neo4j/Neo4jClient[Neo4jClient^], a .NET client for Neo4j. This version supports all of Neo4j's URI schemes, has multi-database support, and is now NetStandard 2.0.
+
+[[features-5]]
+=== Exponential growth in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200925023756/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f362f36342f4578706f6e656e7469616c2e7376672f36303070782d4578706f6e656e7469616c2e7376672e706e67.png" width="200px"  />
+</div>
+++++
+
+There's been a big debate in the UK this week over whether the number of positive Coronavirus cases is increasing exponentially, and if so how many days it takes for that number to double.  
+
+It seems like the same type of discussion has been happening in other countries as well, which led to Rik Van Bruggen's latest blog post. 
+
+Rik explains how exponential growth works and then shows how to simulate the spread of a virus through a population in Neo4j using Cypher subqueries.
+
+http://blog.bruggen.com/2020/09/exponential-growth-in-neo4j.html[Read the blog post, role="medium button"]
+
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/jamie_gaskins[Jamie Gaskins^]:
+
+tweet::1308555984651124736[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* Rik Van Bruggen @rvanbruggen
+Last week's @biodataworld webinar recording together with @KirstenLangendo from @scubedglobal is online: https://youtu.be/eA4_qMXnnd8 . Great fun to do - hope it illustrates the power of #graphdb's and #neo4j in #pharmaindustry.
+
+[[features-4]]
+=== Graph Databases For Dummies, GraphQL Mutations, SDN 6
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+* https://neo4j.com/developer/graph-data-science/link-prediction/scikit-learn/
+
+* https://neo4j.com/developer/graph-data-science/link-prediction/aws-sagemaker-autopilot-automl 
+
+* Khalid @buhakmeh
+Check it out! "Use NEO4J To Find The Shortest Path" (04/28/2020) by @buhakmeh #database RTs appreciated. https://khalidabuhakmeh.com/use-neo4j-to-find-the-shortest-path  (09/09/2020)
+
+
+* https://medium.com/@st3llasia/analyzing-arxiv-data-using-neo4j-part-1-ccce072a2027
+
+* https://medium.com/neo4j/importing-data-into-neo4j-using-rxjs-ed017004bb25 -Importing Data into Neo4j using RxJS 
+
+* https://medium.com/neo4j/testing-your-neo4j-nest-js-application-49959313a32c
+
+* https://medium.com/neo4j/kickstart-your-transition-from-sql-analytic-and-window-functions-to-neo4j-987d67f7fdb4?source=collection_home---5------3-----------------------
+
+
+* Exploring Twitter data with Vuejs and GRANDstack
+Building a Vue.js application atop of Grandstack with user authentification agains AWS Cognito
+https://faboo.org/2020/09/vuejs-grandstack-cognito/
+
+
+////

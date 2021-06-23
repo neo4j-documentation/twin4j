@@ -1,0 +1,127 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 4 November 2017, including projects around Cypher on Apache Spark, Neo4j Browser, and user path analysis.
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have new about running Cypher on Apache Spark, an introduction to APOC, and user path analysis using Neo4j.
+
+=== Featured Community Member: Person
+
+This week’s featured community member is my colleague https://twitter.com/rvanbruggen[Rik Van Bruggen^], Regional VP at Neo4 and founder of the https://soundcloud.com/graphistania[Graphistania podcast^].
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171102121156/this-week-in-neo4j-4-november-20171.jpg["Rik Van Bruggen - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Rik Van Bruggen - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Rik has been part of the Neo4j community for over 5 years, and apart from interviewing almost 100 people for his podcast, also did a lot of the early running with the Neo4j London meetup in 2012-2013 - helping to educate the local community. 
+
+Rik authors http://blog.bruggen.com/[a popular blog^] and wrote the https://www.amazon.co.uk/Learning-Neo4j-Rik-Van-Bruggen/dp/1849517169[Learning Neo4j book^] in 2014, which many people have used as their first introduction to the world of graph databases. 
+
+Rik's most recent innovation is https://www.youtube.com/watch?v=aj1_PEpmMcQ&index=3&list=PLafMLthLibc8osvCRXK7Jqwqm-S8iAD91[producing short videos^] with his GoPro at GraphConnect conferences so that people following the conference online can feel part of the action. He's also facilitated many training sessions and https://www.youtube.com/watch?v=K6vzdkG9yzM[presented^] https://www.youtube.com/watch?v=gL0kVohVuZk[at^] https://www.youtube.com/watch?v=1d7g7wi3TnA[countless^] https://www.youtube.com/watch?v=J0QuehShO5c[meetups^].
+
+On behalf of the Neo4j community, thanks for all your work Rik!
+
+=== Cypher Is Now Available for Apache Spark
+
+One of the announcements from GraphConnect that we didn't cover in last week's TWIN4j was the https://neo4j.com/blog/cypher-for-apache-spark/[public alpha release^] of Cypher for Apache Spark™ (CAPS).
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171101140027/cypher-for-apache-spark-alpha-release-768x384.png["Cypher Is Now Available for Apache Spark", 400, 200]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Cypher Is Now Available for Apache Spark
+</strong>
+</p>
+++++
+
+Cypher for Apache Spark enables the execution of Cypher queries on property graphs stored in an Apache Spark cluster in the same way that SparkSQL allows for the querying of tabular data
+
+The code for the project is https://github.com/opencypher/cypher-for-apache-spark[available on GitHub^] so give it a try and let us know how you get on. 
+
+=== Asset management, traversal timeouts, Intro to APOC
+
+* http://www.twitter.com/anuragknoldus[Anurag Srivastava^] presented an   https://blog.knoldus.com/2017/10/31/knolx-introduction-to-neo4j-apoc/[Introduction to Neo4j APOC^] at a recent meetup in Toronto. Anurag gives an introduction to Neo4j and APOC before showing how to use the procedure for loading data from a relational database into Neo4j.
+
+* I wrote a short blog post which shows how to http://www.markhneedham.com/blog/2017/10/31/neo4j-traversal-query-timeout/[timeout a shortest path query using a custom expander^] from the traversal API.
+
+* SearchDataManagement have http://searchdatamanagement.techtarget.com/news/450429127/Connectedness-is-king-as-Neo4j-graph-database-ports-to-Spark[an interview^] with https://twitter.com/tbrantb[Brant Boehmann^] in which he explains how https://twitter.com/ScrippsNet[Scripps^] have used Neo4j to build a new system for managing assets which range from cooking-segment recipes to digital-rights royalties for series and beyond.
+
+=== Online Meetup: User path analysis in Neo4j
+
+In this week's online meetup https://twitter.com/dilyan_damyanov[Dilyan Damyanov^] showed us how to analyse user journeys through your website using Neo4j.
+
+youtube::JValprxgn0w[type={type}]
+
+Dilyan has previously https://snowplowanalytics.com/blog/2017/07/17/loading-and-analysing-snowplow-event-data-in-Neo4j/[blogged on this topic^], building on https://snowplowanalytics.com/blog/2014/07/30/loading-snowplow-web-event-data-into-graph-databases-for-pathing-analysis/[some^] https://snowplowanalytics.com/blog/2014/07/31/using-graph-databases-to-perform-pathing-analysis-initial-experimentation-with-neo4j/[articles^] written by Nick Dingwall back in 2014.
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article showing how to https://neo4j.com/developer/kb/how-do-i-set-a-breakpoint-in-a-cypher-statement-for-further-analysis/[set a breakpoint in a Cypher statement for further analysis^]. 
+
+=== Counting nodes, Neo4j browser with images, Marvel Social Graph
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] https://maxdemarzi.com/2017/10/25/counting-nodes-with-multiple-labels/[wrote a blog post^] in which he shows how to write a stored procedure which uses the Roaring Bitmap library to do fast counting of nodes with multiple labels.
+
+* https://github.com/graphadvantage[Michael Moore^] created https://github.com/graphadvantage/neo4j-browser-images[neo4j-browser-images^], a clone of the Neo4j browser that renders images in nodes.
+
+* https://twitter.com/tb_tomaz[Tomaz Bratanic^] continued working on his https://tbgraph.wordpress.com/2017/10/28/neo4j-marvel-social-graph-analysis/[Neo4j Marvel Social Graph Analysis^], this time showing how to calculate the clustering coeffecient using the triangle count graph algorithm which was released last week. Tomaz also goes on to show how to use connected component algorithms as part of a preprocessing step to check that the graph is structured as we expect it to be.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| November 8th 2017 | https://www.meetup.com/graphdb-lille/events/244711680/[InterActor : du graphe aux tableaux de bord, il n'y a qu'un pas !^] | https://www.meetup.com/graphdb-lille[
+Graph Database - Lille^] | https://twitter.com/tomzeppenfeldt[Tom Zeppenfeldt^], https://twitter.com/nmervaillie[Nicolas Mervaillie^]
+
+| November 8th 2017 | https://fimaeurope.wbresearch.com/jesus-barrasa-speaker[How to Use Metadata Management and Analysis Using Graph Technology to Optimise Data Governance^] | https://fimaeurope.wbresearch.com[FIMA 2017^] | https://twitter.com/barrasadv[Jesús Barrasa^]
+
+| November 9th 2017 | https://www.meetup.com/preview/neo4j-budapest-users/events/244121886[Graphs ❤ NLP^] | https://www.meetup.com/preview/neo4j-budapest-users[Neo4j - Budapest^] | https://twitter.com/AlessandroNegro[Dr. Alessandro Negro^], Gábor Berend
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/nudro[Catherine Ordun^]:
+
+tweet::925776787241652225[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

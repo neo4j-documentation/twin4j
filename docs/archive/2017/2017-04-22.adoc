@@ -1,0 +1,140 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 April 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-22-apr-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 April 2017
+
+[Headline:]
+This Week in Neo4j – 22 April 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Dmitry Vrublevsky
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170421072903/this-week-neo4j-22-april-2017.jpg" alt="This Week in Neo4j - 22 April - Dmitry Vrublevsky from Neueda Labs" width="310" height="320" class="alignnone size-full wp-image-64560" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Dmitry Vrublevsky from Neueda Labs
+</strong>
+</p>
+++++
+
+This week's featured community member is link:https://twitter.com/fylmtm[Dmitry Vrublevsky^] who works for link:https://github.com/neueda[Neueda Labs^] and has been very active in Neo4j's community for quite some time.
+
+He started helping people on StackOverflow and Slack and then started the development of the Neo4j plugin for all the Jetbrains IDEs. That work has evolved into a full featured database tool, which was link:https://neo4j.com/blog/jetbrains-ide-plugin-graph-database/[recently featured on this blog^]. 
+
+Dmitry also spoke at the link:http://www.opencypher.org/event/2017/02/08/event-ocim1/[openCypher implementers meeting in February^] and will be at link:http://graphconnect.com/[GraphConnect^] in London. He and his team is currently helping us to add some cool features to the Neo4j Browser.
+
+=== Neo4j at the Galway-Mayo Institute of Technology
+
+Multiple students from link:https://www.gmit.ie/[GMIT^] have been using Neo4j as part of their graph theory course and have been building a graph of the link:https://timetable.gmit.ie/[university timetable].
+
+* link:https://github.com/MartinFen/Graph-theory-neo4j-timetable-graphDB[Martin Fennell^]
+* link:https://github.com/damienj252/Graph-Theory[Damien Joyce^]
+* link:https://github.com/DonalMcGahon/Graph-Theory-Project-2017[Donal McGahon^]
+* link:https://github.com/Sarlianth/GraphTheory2017[Adrian Sypos^]
+* link:https://github.com/vaidaabelkyte/Neo4jProjectTimetable2017[Vaida Abelkyte^]
+
+I wish I'd got to use Neo4j at university so I'm very jealous - it was Oracle all the way where I studied!
+
+=== APOC, Call Data Records, GORM, Twitter Clone
+
+* Nicolle Cysneiros posted 
+link:https://medium.com/labcodes/graph-databases-talking-about-your-data-relationships-with-python-b438c689dc89[Graph Databases: Talking about your Data Relationships with Python^] in which Nicolle shows how to model and build  a mini social network using Python and the py2neo driver. 
+
+* link:https://twitter.com/anuragknoldus[Anurag Srivastava^] wins a prize in link:https://neo4j.com/blog/april-is-apoc-awareness-month/[APOC awareness month^]. He demoed several data import features from APOC for relational databases in his post link:https://blog.knoldus.com/2017/04/16/neo4j-apoc-a-blessing-for-developer/[Neo4j Apoc : A Blessing For Developers^]
+
+* The link:https://neo4j.com/blog/neo4j-object-mapping-gorm-groovy-spring-boot/[Neo4j GORM Plugin released version 6.1^] with a lot of new capabilities and features. You can use it with either Spring Boot or Grails and other web frameworks. The team around https://twitter.com/graemerocher[Graeme Rocher^] also published a complete http://guides.grails.org/neo4j-movies[Getting Started Guide^] and two example applications as https://github.com/neo4j-examples?q=gorm[GitHub repositories^]. link:https://objectcomputing.com/news/2017/04/19/neo4j-object-mapping-graeme-rocher[Neo4j Object Mapping^]
+
+* link:https://twitter.com/tb_tomaz[Tomaz Bratanic^] did it again and published a new https://tbgraph.wordpress.com/2017/04/20/neo4j-apoc-graph-algorithms-part-1[post on using the kNN and Euclidean coefficient algorithms in APOC^]. He also demonstrates how to visualize query results quickly with the neo4j-spoon browser bookmarklet.
+
+* link:https://neo4j.com/blog/contributor/kamal-murthy/[Kamal Murthy^] detailed the use of Neo4j for link:https://neo4j.com/blog/neo4j-call-detail-records-analytics[analyzing Call Data Records (CDRs)^] on the Neo4j Blog. Based on an link:http://portal.graphgist.org/graph_gists/by_url?url=https%3A%2F%2Fdl.dropboxusercontent.com%2Fu%2F14493611%2Fkamal_cdrgist_032717.adoc[original GraphGist^]. He looks at call distributions, traces calls that go to voicemail and determines sources and timings of incoming calls. A great example to start with for exploring this domain.
+
+* link:http://twitter.com/maxdemarzi[Max de Marzi^]  continues his link:https://maxdemarzi.com/2017/04/19/building-a-twitter-clone-with-neo4j-part-six/[Building a Twitter Clone^] series with part 6 which looks into using node-degrees, low-level index access and some caching to provide trending tags, saved searches and most-recent changes.
+
+* For our Portuguese readers 
+Jhonathan Souza Soares shared the slides from  link:https://www.slideshare.net/jhonathanmarolo/neo4j-nodejs[Neo4j + Node.js^]. 
+
+* link:http://twitter.com/rvanbruggen[Rik van Bruggen^] introduces his multi-part series of link:http://blog.bruggen.com/2017/04/autocompleting-neo4j-part-14-of-googly-q.html[Neo4j explainers based on Google search auto-completion question suggestions^].
+
+=== Online Meetup: Building the Wikipedia Knowledge Graph
+
+In this week's link:https://neo4j.com/developer/online-meetup/[Neo4j online meetup], link:https://twitter.com/barrasadv[Dr Jesús Barrasa^] and I showed how to load the Wikipedia Knowledge Graph into Neo4j and write queries against it.
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o6wueyweC34" frameborder="0" allowfullscreen></iframe>
+++++
+
+We've been hosting meetups almost every week for the last couple of months so if you want to catch up on earlier episodes you can find all of them on the link:https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVnz4oi0F8UXiD3nMNqsRO2[Neo4j Online Meetup playlist].
+
+=== From The Knowledge Base
+
+This week from the  link:https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have link:https://neo4j.com/developer/kb/How-do-I-convert-Neo4j-logs-from-base-UTC-to-local-timezone/[a Perl script to help you convert the timezone in Neo4j log files from UTC to your local timezone^].
+
+We also have a really cool discussion of https://neo4j.com/developer/kb/limiting-match-results-per-row/[ways to limit MATCHes^] in subqueries by link:http://stackoverflow.com/users/92359/inversefalcon[Andrew Bowman^], our featured community member in the link:https://neo4j.com/blog/this-week-neo4j-25-february-2017/[25 February 2017 edition^] of link:https://neo4j.com/tag/twin4j/[TWIN4j^].
+
+=== On GitHub: Mahout, Holocaust Research, Kafka Connector
+
+There's been an incredible amount of activity on GitHub this week. These were the most interesting projects that I came across.
+
+* link:https://github.com/THIBER-ORG/userline[UserLine^] 
+automates the process of creating logon relations from MS Windows Security Events by showing a graphical realtion among users domains, source and destination logons as well as session duration.
+
+
+* link:https://twitter.com/technige[Nigel Small^] created link:https://github.com/technige/memgraph[Memgraph^] - a Python library that provides a Neo4j-compatible in-memory graph store.
+
+* There were some updates to the link:https://github.com/EHRI/ehri-rest[European Holocaust Research Infrastructure] project, which provides a  business layer and JAX-RS resource classes for managing holocaust data. 
+
+* Erick Peirson created link:https://github.com/diging/cidoc-crm-neo4j[cidoc-crm-neo4j^] which is a meta-implementation of the link:http://cidoc-crm.org/[CIDOC Conceptual Reference Model (CRM)^]. The CIDOC CRM provides definitions and formal structure for describing the implicit and explicit concepts and relationships used in cultural heritage documentation. The project uses Python's link:https://github.com/robinedwards/neomodel[neomodel^] to interact with a Neo4j database 
+
+* link:https://github.com/gbrodar[gbrodar^] created link:https://github.com/gbrodar/pcap4j[pcap4j^] - a repository of scripts for analysing the output of the link:https://en.wikipedia.org/wiki/Pcap[Unix pcap tool^].  
+
+* Mark Wood created link:https://github.com/Ents24/neo4j-mahout/commits/master[neo4j-mahout^] which wraps calls to link:http://mahout.apache.org/[Mahout functions^] in Neo4j user defined functions. I played around with Mahout a couple of years ago so I'm quite excited to try combine it with Neo4j using this tool. 
+
+* JunfengDuan created link:https://github.com/JunfengDuan/kafka-neo4j-connector[kafka-neo4j-connector^], which transfers data from Kafka to Neo4j. 
+
+=== Neo4j Jobs
+
+I've not listed jobs in TWIN4j before but I came across an interesting one posted by link:https://www.musimap.net[Musimap^], a B2B cognitive music intelligence company in Brussels. They're hiring  a link:https://www.musimap.net/jobs/full_stack_web_developer[Full-Stack Web Developer^] with Neo4j and Python experience so if that sounds like your type of thing it might be worth applying. 
+
+If you have any jobs that you'd like me to feature in future versions, drop me a tweet link:https://twitter.com/markhneedham[@markhneedham^]. 
+
+=== Next Week
+
+What's happening next week in the world of graph databases?
+
+* On Wednesday April 26th, 2017, link:https://twitter.com/ryguyrg[Ryan Boyd^] will be presenting 'Graph Algorithms on ACID' at NASA's link:https://fal.jsc.nasa.gov/DSD/index.htm[JSC Data Science Day 2.0^] in Houston, Texas.
+* On Thursday April 27th, 2017, we'll have link:https://twitter.com/diegomrodz[Diego Rodrigues^] and Fernando Izquierdo on the online meetup showing link:https://www.meetup.com/Neo4j-Online-Meetup/events/239292412/[how to learn Chinese using Neo4j^]. You'll remember that Diego and his project link:https://github.com/diegomrodz/chinese_exp[chinese_exp^]  featured in link:https://neo4j.com/blog/this-week-neo4j-8-april-2017/[TWIN4j on 8 April 2017^].
+
+=== Tweet of the Week
+
+My favorite tweet this week was by link:https://twitter.com/FlxVctr[Felix Victor Münch^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just falling in love with Cypher Query Language by <a href="https://twitter.com/neo4j">@neo4j</a> again 😍 <a href="https://t.co/NY6fVIMKuf">pic.twitter.com/NY6fVIMKuf</a></p>&mdash; Felix Victor Münch (@FlxVctr) <a href="https://twitter.com/FlxVctr/status/854576177343639552">April 19, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+Don't forget to retweet Felix's post if you liked it as well!
+
+That’s all for this week. Have a great weekend. 
+
+Cheers, Mark

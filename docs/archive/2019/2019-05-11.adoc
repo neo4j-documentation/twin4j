@@ -1,0 +1,146 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week we learn how to use graphs for Real Time Inventory and Topology for Network Automation, exploring public contracting data, and filtering connected dynamic forms. There's also an overhaul to the RDBMS to Graph page and a crash course in how to choose unique identifiers for nodes when using Neo4j-OGM and Spring Data Neo4j.
+
+[[featured-community-member]]
+=== Featured Community Member: Francesca Ferretti
+
+Our featured community member this week is Francesca Ferretti, Head of CIO Governance Architecture in UniCredit Services.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190510072748/this-week-in-neo4j-11-may-2019.jpg[name="Francesca Ferretti"]
+
+Francesca Ferretti is a true Cypher nerd. As staff unit to the CIO, Francesca leads the architecture evolution for the overall area, including 5 major IT factories covering local and group Operations functions (Credit and Financial Risk, Planning & Control, Audit and Compliance and Human Resource) and the BigData farm, which is +900 people and 700 applications. 
+
+Oh, and did we fail to mention that she has a Cypher tattoo on her back? She might just be a true graph hero!
+
+https://www.linkedin.com/in/francesca-ferretti-127a6912/[Connect with Francesca on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Graph-Based Real Time Inventory and Topology for Network Automation
+
+In a recent webinar, Teemu Nykänen and https://twitter.com/barrasadv?lang=en[Jesús Barrasa^] discuss their experience building a live inventory and topology store with Neo4j. 
+
+youtube::zcF35BpVUXQ[type={type}]
+
+[[features-2]]
+=== Graph databases for journalists - Using Neo4j to explore public contracting data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190510003254/1_NUwtHbWVfI04OQfM4UY0Jw-1.png" width="150px"  />
+</div>
+++++
+ 
+Dagoberto José Herrera Murillo explains how to analyze and visualize open contracting data using Neo4j, in an article that will be particularly interesting to data journalists.
+
+After modelling and importing the data, we learn how to query the graph to find the winners of tenders, irregularities in contracts, and tenders bid on by shell companies.
+
+link:https://medium.com/@a00808906/graph-databases-for-journalists-5ac116fe0f54[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Neo4j-OGM and Spring Data Neo4j: Choosing a Unique Identifier
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190510010656/1_ScS4soya5-WJWWwh1Qf8_A.jpeg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/rotnroll666[Michael Simons^] gives us a crash course in how to choose unique identifiers for nodes when using Neo4j-OGM and Spring Data Neo4j.
+
+Michael explains the advantages and disadvantages of using internal ids, surrogate keys, and business keys, and also identifies identifier anti patterns.
+
+link:https://medium.com/neo4j/neo4j-ogm-and-spring-data-neo4j-a55a866df68c[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== RDBMS to Graph Page Overhaul
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190510011357/rdbms-to-graphs-12-638.jpg" width="150px"  />
+</div>
+++++
+
+The RDMBS to Graph Developer Guide is the latest one to be overhauled by https://twitter.com/jmhreif?lang=en[Jennifer Reif^]. This page is the ultimate resource for learning about all the options for getting your relational data into Neo4j. 
+
+If you've ever found yourself asking:
+
+* Should I use LOAD CSV or Neo4j Import?
+* What type of data can I import using APOC?
+* Do you support any enterprise ETL Tools?
+
+Head on over to the guide and you'll find the answers to these questions and more.
+
+link:https://neo4j.com/developer/relational-to-graph-import/[Read the developer guide, role="medium button"]
+
+[[features-4]]
+=== Filtering Connected Dynamic Forms
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190510003434/christa-dodoo-485704-unsplash.jpg" width="150px"  />
+</div>
+++++	
+
+In https://twitter.com/maxdemarzi[Max De Marzi^]'s latest blog post he shows how Neo4j can be used to build dynamic form based applications. 
+
+Max shows how we might write queries to explore the responses given in these forms, and explains how a slight change to the data model enables more powerful queries to be written.
+
+
+link:https://maxdemarzi.com/2019/04/28/filtering-connected-dynamic-forms/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/jocelyn_neo4j[Jocelyn Hoppa^]:
+
+tweet::1125837047460237314[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://tbgraph.wordpress.com/2019/04/30/depth-first-search-analysis-on-london-tube-network-with-neo4j-graph-algorithms/
+Depth First Search Analysis
+
+
+
+* Network Connection Footprinting with WMI and Neo4j http://ijustwannared.team/2019/04/22/network-connection-footprinting-with-wmi-and-neo4j/  https://pbs.twimg.com/media/D4uHRMnWsAISuMW.jpg
+
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+
+
+
+
+
+////

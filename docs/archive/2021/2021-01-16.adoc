@@ -1,0 +1,199 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi graphistas,
+
+We've only had two weeks of 2021 but it feels a lot longer than that to me! I hope you're all doing ok whenever you are. 
+
+Our video this week is from Will Lyon’s Building A GRANDstack Podcast App live stream. 
+
+Antonin Smid continues his exploration of the MET Art Collections, Tomaz Bratanic shows how to use GraphSAGE, and we have a new release of the Neo4j Desktop.
+
+And finally, Alistair Jones and İrfan Nuri Karaca launched Arrows.app, a brand new version of the popular graph drawing tool. 
+
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Brandon Campbell
+
+
+This week's featured community member is Brandon Campbell.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210115084814/this-week-in-neo4j-16-january-2020-1.jpg[name="Brandon Campbell"]
+
+Brandon is a Principal Software Engineer at Northrop Grumman. He describes himself as an engineer & graph architect by day and a hopeless romantic by night, which is a complicated way of saying that he likes to make up stories and colour things.
+
+Brandon has been part of the Neo4j community for a couple of years and presented https://neo4j.com/online-summit/session/murder-mystery-app-fullstack[Ten to Dine: Building Possibility Spaces with Neo4j and ReactJS^] at the NODES 2019 virtual conference. In this talk he demonstrated how a database becomes a universe using a combination of Neo4j, ReactJS, and the sultry-but-familiar backdrop of a noir murder mystery.
+
+In 2020 Brandon presented https://www.youtube.com/watch?v=bUmWND8U3wE&feature=emb_title[Slaying Monsters in the Department of Defense with Graph Analysis^] at the Neo4j Connections: Graphs in Government event. His talk was so popular that it also featured in the Best of 2020 Sessions as well. 
+
+On behalf of the Neo4j community, thanks for your work Brandon
+
+https://www.linkedin.com/in/brandon-campbell-17358b78/[Connect with Brandon on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Parsing & Importing XML | Building A GRANDstack Podcast App: Episode 3
+
+Our video this week is from Will Lyon's Building A GRANDstack Podcast App live stream.
+
+youtube::WdClRB_-Egs[type={type}]
+
+In the latest episode, Will explores how to parse and import XML data into Neo4j as part of a feature to add podcast episodes and playlists to the GraphQL API. You can also read more in https://lyonwj.com/blog/grandstack-podcast-app-parsing-xml-neo4j-rss-episodes-playlists[Will's blog post^].
+
+
+
+[[features-2]]
+=== Drawing graphs with Arrows.app
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210115003555/1_96ELuL-DUrI3xAz7UCCaNg.png" width="220px"  />
+</div>
+++++
+
+Alistair Jones arrows graph drawing tool is the starting point on many people's graph journey, and now there's a brand new version - https://arrows.app/[arrows.app!^].
+
+arrows.app improves on the graph drawing features from the original arrows, making it easy to drag nodes around and line them up and apply different styling to your graph. You can also save your graphs to Google Drive and export them in PNG, SVG, JSON, of Cypher format.
+
+https://medium.com/neo4j/drawing-graphs-with-arrows-app-ee5735caa04d[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Exploring The MET Art Collections with Hume #2
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210107085112/knowledge-graph-schema.png" width="150px"  />
+</div>
+++++
+
+Antonin Smid continued the blog post series showing how to analyse The MET Art Collection, using GraphAware Hume.
+
+In part 2, we use Hume Visualisations to explore tag’s context, create Hume Actions to analyse the donors, and use the Graph Data Science Library to suggest similar paintings.
+
+https://graphaware.com/hume/2021/01/06/exploring-the-met-art-collections-2.html[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j Desktop and Power BI Connector Releases
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Elaine Rosenberg announced https://neo4j.com/blog/announcing-new-introduction-to-neo4j-4-x-online-training-courses/[5 new 2-hour long online training courses^] that together form the Introduction to Neo4j 4.0 course.
+
+
+* Sergey Goncharov describes his team's experience https://medium.com/outbrain-engineering/embedding-neo4j-graphdb-to-deal-with-data-flow-complexity-31b17a08304c[adding Neo4j into Outbrain’s WorkFlowEngine (WFE) service^]. WFE is responsible for orchestrating hundreds of data-oriented jobs run every hour.
+
+* Liza Shkirando https://medium.com/neo4j/neo4j-desktop-1-4-0-release-c50de440c535[announced the release of Neo4j Desktop 1.4.0^], which has a new user interface to match the mental model of a file system.
+
+* Chris Skardon released version https://github.com/cskardon/Neo4jDataConnectorForPowerBi/releases/tag/1.4.0[1.4.0 of the Neo4j Power BI connector^], which now has multi-line Cypher support.
+
+* Richard Müller shared slides from the 
+https://www2.slideshare.net/RichardMller12/graphbased-performance-analysis-at-system-and-applicationlevel-ssp-2020[Graph-Based Performance Analysis at System- and Application-Level^] talk, which was presented at the 11th Symposium on Software Performance.
+ 
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Using GraphSAGE embeddings for downstream classification model
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210115003526/1_t3ODGTJC5bcRFDKVaih3pA.png" width=200px"  />
+</div>
+++++
+
+
+In Tomaz Bratanic's latest blog post, he shows how to train the GraphSAGE convolutional graph neural network and integrate it into your machine learning workflow to improve downstream classification model accuracy.
+
+https://towardsdatascience.com/using-graphsage-embeddings-for-downstream-classification-model-4492e01ae54e[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/nsmith_piano[Nathan Smith^]:
+
+tweet::1347191917361164299[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* Jesús Barrasa @BarrasaDV
+Graphs for Explainable Decision Support in Operations Maintenance of Wind Turbines by @joyjitchat
+#Neo4j  #KnowledgeGraphs  
+https://deepai.org/publication/xai4wind-a-multimodal-knowledge-graph-database-for-explainable-decision-support-in-operations-maintenance-of-wind-turbines 
+
+https://community.neo4j.com/t/obsidian-plugin-author-graphs-in-markdown-or-visualize-obsidian-vaults-in-neo4j/30743
+
+
+* https://medium.com/neo4j/using-neogma-to-build-a-type-safe-node-js-app-with-a-neo4j-graph-database-f289d79dbc52
+Using Neogma to build a type-safe Node.js app with a Neo4j graph database
+
+* https://jbarrasa.com/2020/12/30/quickgraph13-using-a-skos-taxonomy-to-run-semantic-queries-on-a-document-repository/ 
+QuickGraph#13 Using a SKOS taxonomy for semantic search on a document repository
+
+* Bert @taseroth
+ave been playing with the Neo4j Traversal API recently and decided to document it a bit:
+https://faboo.org/2021/01/neo4j-traversal-api/
+
+
+
+* https://github.com/infinispan/infinispan-quarkus/issues/44#issuecomment-760142208
+galderzgalderz
+Comment on #44 Native server fails to build due to Elytron Credential unsupported combination
+
+* https://medium.com/neo4j/wheres-my-neo4j-cypher-query-results-%EF%B8%8F-%EF%B8%8F-9c3b150e6e19
+MediumMedium
+Where’s My Neo4j Cypher Query Results? :angry: :zap: :interrobang:
+
+
+https://bhaveshpandey.github.io/2020/12/09/legos-Asset-Management-System-Part1/  
+legos - An asset management system - Part 1
+
+////

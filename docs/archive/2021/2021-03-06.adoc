@@ -1,0 +1,163 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+In this week's video, Florent Biville builds out an Angular.js frontend for the Spring Data 6 application.
+
+Jesús Barrasa computes similarity metrics of a taxonomy, Daniel Heward-Mills integrates Virtuoso and Neo4j, and Lju Lazarevic shows how to import and model a Retail Food Store dataset.
+
+And finally, Kristof Neys integrates Neo4j and the Deep Graph Library
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Eric Wespi
+
+This week's featured community member is Eric Wespi.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210305064507/this-week-in-neo4j-6-march-2021.jpg[name="Eric Wespi"]
+
+Eric is a Data Scientist at Boston Scientific, where he's worked for the last 5 ½ years. Before that, he was a Process Engineer for a decade at Intel.
+
+Eric has been part of the Neo4j community for several years and presented https://graphaware.com/resources/all/how-boston-scientific-improves-manufacturing-quality-using-graph-analytics-video/[How Boston Scientific Improves Manufacturing Quality Using Graph Analytics^] with Eric Spiegelberg at GraphConnect NY 2018. 
+
+Eric recently presented https://www.youtube.com/watch?v=4PTRG_XVllM[The Journey to Cloud: Implementing Aura at Boston Scientific^] at the https://neo4j.com/connections/neo4j-and-the-cloud/[Neo4j and the Cloud Connections^] event. In this interview, Eric explains why Aura Enterprise has worked well for his Data Science team and their plans for new use cases going forward.
+
+https://www.linkedin.com/in/eric-wespi-5931698/[Connect with Eric on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Building the frontend with Angular.js | Starting an application with SDN 6
+
+Our video this week is from Florent Biville's Starting an application with SDN 6 live stream.
+
+youtube::n77MUKM_Sgs[type={type}]
+
+In this episode, Florent builds out an Angular.js frontend that calls the API developed in previous episodes.
+
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+////
+
+[[features-2]]
+=== QuickGraph#18 Semantic similarity metrics in taxonomies
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210305030916/image-17-4.png" width="250px"  />
+</div>
+++++
+
+In Jesús Barrasa's latest QuickGraph he shows how to make sense of the taxonomy around the Perseverance rover that recently landed on Mars.
+
+After using n10s to import the dataset from MediaWiki, Jesús makes sense of the graph using similarity metrics that compute path structure, path depth, and common ancestry. 
+
+https://jbarrasa.com/2021/02/27/quickgraph18-semantic-similarity-metrics-in-taxonomies-a-wikipedia-example-on-uncrewed-spacecraft/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Neo4j & DGL — a seamless integration
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210305041613/0_bLyyNvhjjTEz62Wx.png" width="120px"  />
+</div>
+++++
+
+Kristof Neys illustrates how to integrate a Graph Attention Network model using the Deep Graph Library into the Neo4j workflow and deploying the Neo4j Python driver.
+
+https://kristof-neys-58246.medium.com/624ad6edb6c0[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== The Spark of Neo4j, Modelling and loading data, Merging Nodes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Davide Fantuzzi shared the slides from his https://www.slideshare.net/DavideFantuzzi/the-spark-of-neo4j[The Spark of Neo4j^] talk at  https://twitter.com/Graph_RM[GraphRM^]. 
+
+* Lju Lazarevic shows how to https://lju.medium.com/lets-revisit-modelling-and-loading-data-10d601bbccb6[import and model a Retail Food Store dataset^]. 
+
+* Adam Cowley https://twitter.com/adamcowley/status/1366436203264892932[shows how to merge records in Neo4j^] with just a couple of lines of Cypher.
+
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Integrating Virtuoso SPARQL Query Results into a Neo4j Property Graph
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210305040856/1_9ZTPHSjJvVobVqDbdb0uJw.png" width=100px"  />
+</div>
+++++
+
+Daniel Heward-Mills demonstrates how to combine the power of SPARQL, SQL, and Cypher using Neo4j and OpenLink Virtuoso.
+
+https://medium.com/virtuoso-blog/adding-virtuoso-sparql-results-to-a-neo4j-property-graph-e73786cff87e[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/tb_tomaz[Tomaz Bratanic^]:
+
+tweet::1367452815036153862[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+
+
+https://lju.medium.com/lets-model-and-l%CC%B5o%CC%B5a%CC%B5d%CC%B5-refactor-some-data-4161e768135
+* 
+
+
+////

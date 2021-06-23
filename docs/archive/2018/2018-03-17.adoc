@@ -1,0 +1,142 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have a sneak peak at property based access control in Neo4j 3.4, user path analysis with Snowplow analytics, resources to get started with the Cypher query language, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Iryna Feuerstein
+
+This week’s featured community member is https://twitter.com/ira_res[Iryna Feuerstein^], Software Engineer at https://twitter.com/PRODYNAAG[PRODYNA^] - Neo4j Partner and sponsor of the https://neo4j.com/graphtour/[GraphTour^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316020405/this-week-in-neo4j-17-march-2018.jpg[name="Iryna Feuerstein"]
+
+Iryna has been part of the Neo4j community for several years, is the organiser of the https://www.meetup.com/Graph-Database-NRW/[Düsseldorf Neo4j Meetup group^], and has given a number of talks and workshops on Neo4j around the German speaking region.
+
+This week Iryna gave an https://programm.javaland.eu/2018/#/scheduledEvent/549166[introduction to Neo4j for kids at the JavaLand conference^] and a talk on modeling and importing each paragraph and section of the German laws into the graph. 
+
+Iryna's work on importing and querying the Comparative Toxicogenomics Database is really interesting too in relating environmental factors to human health. She will give https://www.meetup.com/graphdb-berlin/events/247988255/[a workshop on this topic on May 25 in Berlin^].
+
+On behalf of the Neo4j community, thanks for all your work Iryna!
+
+[[properties-secret]]
+=== Keeping properties secret in Neo4j
+
+We are frequently asked how to do property based access control in Neo4j and https://twitter.com/maxdemarzi[Max De Marzi^] has https://maxdemarzi.com/2018/03/12/keeping-properties-secret-in-neo4j/[written a post^] in which he gives a sneak peak of this feature which will be released in Neo4j 3.4.
+
+[role="image-heading"]
+image::https://maxdemarzidotcom.files.wordpress.com/2018/03/secret-media-network.gif["Keeping properties secret in Neo4j", 540, 147, class="alignnone size-full wp-image-66813"]
+
+++++
+<br />
+++++
+
+Max shows us how this works by going through an example based on node properties indicating the existence (or not!) of aliens. You can download an alpha version of Neo4j that has this feature from the https://neo4j.com/download/other-releases[other releases page^] of neo4j.com
+
+[[intro-to-cypher]]
+=== Intro to Cypher
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316030908/jw-osjp-graph-analytics-100752148-large.jpg" width="175px" />
+</div>
+++++
+
+This week we have a couple of excellent resources for getting started with the graph query language https://www.opencypher.org/[Cypher^].
+
+In https://www.javaworld.com/article/3256278/application-development/big-data-analytics-with-neo4j-and-java-part-1.html[Big data analytics with Neo4j and Java, Part 1^]  Steven Haines shows how to model a social network in MySQL and Neo4j using examples from the Neo4j In Action book.
+
+He shows how to create and query a social graph of his family and their friends, with detailed explanations of Cypher's CREATE and MATCH clauses.
+
+If you prefer video content https://twitter.com/nosoccomtothom[Esteve Serra Clavera^] released the https://www.youtube.com/watch?v=lUIhPNuMG9I[Cypher Syntax^] part of his https://www.experfy.com/training/courses/an-introduction-to-neo4j[Introduction to Neo4j online course^].
+
+[[graphql-rstats-indiemusic]]
+=== Neo4j-GraphQL, Extending R for Neo4j, Indie Music Network
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="175px" />
+</div>
+++++
+
+* https://twitter.com/lyonwj[Will Lyon^] has written a blog post describing https://blog.grandstack.io/five-common-graphql-problems-and-how-neo4j-graphql-aims-to-solve-them-e9a8999c8d43[five common GraphQL problems and how Neo4j-GraphQL aims to solve them^]. Will also provides a list of resources to get started with your GraphQL and Neo4j applications.
+
+* https://twitter.com/_ColinFay[Colin Fay^] is submitting a proposal to the RConsortium to https://github.com/ThinkR-open/isc-proposal[Reboot and Extend R for Neo4J^]. He's looking for  feedback, beta testers, and any other kind of help so https://twitter.com/_ColinFay[get in touch^] if you're interested.
+
+* https://twitter.com/traustid[Trausti Dagsson^] has written up an excellent post showing how he created a https://github.com/traustid/neo4j-indie-music[Neo4j Indie Music Network^]. Trausti created a Chrome extension to extract band information from their Wikipedia pages, before importing the data into Neo4j. He finishes the post by writing queries to see how bands and their members are connected.
+
+* Nulli and their client EnerNOC have released a whitepaper showing how to do https://nulli.com/blog/context-based-access-control-using-graph-databases-for-iot/[Context-Based Access Control using Graph Databases for IoT^]. Their solution makes it possible to quickly work out which things people have access to by querying a graph containing users, organizations, resources, and policy rules.
+* I wrote a couple of blog posts explaining error messages I encountered http://www.markhneedham.com/blog/2018/03/07/neo4j-import-java-lang-illegalstateexception-mixing-specified-unspecified-group-belongings-single-import-isnt-supported/[using the Neo4j Import Tool^] and when http://www.markhneedham.com/blog/2018/03/14/neo4j-cypher-neo-clienterror-statement-typeerror-dont-know-add-double-string/[porting an application from Neo4j 3.2 to 3.3^]. I also presented a webinar in which I showed how to https://www.youtube.com/watch?v=aWqQNDi7p9I[model and import^] data from the https://www.yelp.co.uk/dataset/challenge[Yelp Dataset Challenge^] into Neo4j.
+
+[[podcast]]
+=== On the Podcast: Dilyan Damyanov
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316021401/dilyan-podcast.jpg" width="150px" />
+</div>
+++++
+
+This week on the podcast Rik http://blog.bruggen.com/2018/03/podcast-interview-with-dilyan-damyanov.html[interviewed^] https://twitter.com/dilyan_damyanov[Dilyan Damyanov^], Data Scientist at Snowplow Analytics.
+
+They talk about Dilyan's work doing path analysis and how Snowplow have been able to use graphs to track people moving through the different stages of a marketing funnel and work out which marketing twitch causes them to convert.
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/411028326&amp;color=44c13e"></iframe>
+++++
+
+Dilyan also https://www.youtube.com/watch?v=JValprxgn0w&index=7&list=PL9Hl4pk2FsvVnz4oi0F8UXiD3nMNqsRO2[presented at the Neo4j Online Meetup^] where he showed how to write Cypher queries that enable this kind of analysis.
+
+[[events]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| March 20th 2018 | https://www.meetup.com/houston-graph-database/events/247493533/[Improving Graph Based Entity Resolution using Data Mining and NLP^] | https://www.meetup.com/houston-graph-database/[Houston Graph Database Meetup^] | https://twitter.com/bechbd[Dave Bechberger^]
+
+| March 20th 2018 | https://www.meetup.com/graphdb-netherlands/events/248333968/[GraphTour Warmup: Efficient Graph Algorithms, with Michael Hunger^] |  https://www.meetup.com/graphdb-netherlands/[Graph Database - Amsterdam^] | https://twitter.com/mesirii[Michael Hunger^]
+
+| March 21st 2018 | https://www.eventbrite.com/e/neo4j-graphtour-amsterdam-tickets-41753412581#tickets[GraphTour Amsterdam^] |  https://www.meetup.com/graphdb-netherlands/[Graph Database - Amsterdam^] | Neo4j and customer speakers
+
+| March 23rd 2018 | https://www.meetup.com/BigData-and-NoSQL-Meetups-India/events/247895050/[Introduction to Neo4j^] | https://www.meetup.com/BigData-and-NoSQL-Meetups-India/[BigData and NoSQL Meetups, India^] | Amit Fegade 
+
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/DanielGallagher[Daniel Gallagher^]:
+
+tweet::973377664617779200[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

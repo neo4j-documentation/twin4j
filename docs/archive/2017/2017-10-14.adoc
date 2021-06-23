@@ -1,0 +1,138 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 13 October 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Axel Morgner
+
+This week’s featured community member is https://twitter.com/amorgner[Axel Morgner^], Co-Founder and CEO of Neo4j partner https://structr.org/[Structr^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171012225417/this-week-in-neo4j-14-october-2017.jpg["Axel Morgner - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Axel Morgner - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+https://twitter.com/structr[Structr^] is a graph-based low-code development and runtime environment for building data-centric web and mobile Applications and uses Neo4j as its backend datastore.
+
+I did a bit of searching on the Structr GitHub repository and found out that Axel has been working with Neo4j since https://github.com/structr/structr/commit/3615595f8c4935ef8a904f3a74abaf6f73902ace#diff-645b09775593053754cd8e50f2e1140fR23[at least version 1.6^] back in early 2012.
+
+Axel presented at https://vimeo.com/76818240[GraphConnect SF 2013^], https://vimeo.com/80480434[GraphConnect London 2013^], https://www.youtube.com/watch?v=Ahe8rcyAdbI[GraphConnect EU 2015^], https://www.youtube.com/watch?v=CS4EzYFoxAo[GraphConnect EU 2016^], http://blog.bruggen.com/2015/09/podcast-interview-with-axel-morgner.html[featured on the podcast a couple of years ago^], and has written 
+https://neo4j.com/blog/contributor/axel-morgner/[several articles for the Neo4j blog^].
+
+Structr are sponsors of http://graphconnect.com/[GraphConnect New York 2017^] so you'll be able to meet Axel and the team on October 24th at Pier 36, NYC. 
+
+On behalf of the Neo4j community thanks for all your work Axel!
+
+=== SDN 5.0 release
+
+For over half a year the SDN/OGM team has been working on new features in https://neo4j.com/developer/neo4j-ogm/[Neo4j Object Graph Mapping library (OGM)^] and https://projects.spring.io/spring-data-neo4j/[Spring Data Neo4j (SDN)] framework. 
+
+We are happy to announce the release of OGM 3.0 and SDN 5.0 earlier this week and a detailed blog post coming next week. 
+
+If you used either library before, make sure to check out our migration guides (http://neo4j.com/docs/ogm-manual/3.0/migration/[OGM^], https://docs.spring.io/spring-data/neo4j/docs/5.0.0.RELEASE/reference/html/#migration.5-0[SDN^])
+
+We're also welcoming http://twitter.com/meistermeier[Gerrit Meier^] to the Spring Data Neo4j team within Neo4j engineering.
+
+If you are attending http://graphconnect.com[GraphConnect, NYC Oct 23-24^] you can take the "Building Microservices with Spring" training by Kenny Bastani which will have a section on Spring Data Neo4j 5.0. And make sure to attend the "Spring Data Neo4j 5.0" talk by Nicolas and Gerrit. Also find Nicolas, Gerrit and Michael at GraphConnect for questions and discussions.
+
+=== From GraphConnect: Real-Time Recommender Systems Made Easy with Neo4j 
+
+We didn’t have an online meetup this week so we'll flash back to one of the most popular talks from GraphConnect Europe 2017 - https://www.youtube.com/watch?v=4vlWlr58SgI[Real-Time Recommender Systems Made Easy with Neo4j^]  - presented by my colleague https://twitter.com/cailliaup[Pieter Cailliau^]. 
+
+youtube::4vlWlr58SgI[type={type}]
+
+Pieter talks through his experiences helping Neo4j customers build recommendation engines and shows a library he built to simplify the process.
+
+The online meetup is back this week. Norbert Priening will show us how to https://www.meetup.com/preview/Neo4j-Online-Meetup/events/243206424[analyse Debian packages with Neo4j^] at the earlier time of 14.00 BST. You can always watch the video afterwards if that's too early for you!
+
+=== Ethereum, RDF to Neo4j, Network Automation, BloodHound release
+
+* Sander created https://github.com/sardinois/eth_graph[eth_graph], a project which syncs the Ethereum blockchain to Neo4j. It's still in its infancy but looks like a cool one to keep an eye on.
+
+* https://twitter.com/ThomasVanderWal[Thomas Vander Wal^] wrote up his initial experiences learning about graph databases after coming across them in http://thomasvanderwal.blogspot.co.uk/2017/10/blog-iiii-its-rdbms-its-nosql-its-graph.html[a networks module^] at university.
+
+* In https://medium.com/@schubert.inf/how-neo4j-could-help-fighting-crime-3a26abdc3c29[how Neo4j could help fighting crime^] Stefan Schubert compares and contrasts relational and graph models, before going on to show how you might model a crime network in Neo4j. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171013010209/2017-10-13_09-01-29.png["Netgraph - model IP networks in Neo4j", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+[L3 SVIs: Yellow] [L2 VLANs: Green] [Switches/Routers: Blue] 
+</strong>
+</p>
+++++
+
+* https://github.com/yantisj/netgrph[Netgrph^] is a project created by Jonathan Yantis that models IP networks in Neo4j for network automation and troubleshooting. Once you've loaded your data you can run queries to find paths between devices or find all the devices of a particular type across a network. 
+
+* https://github.com/matheusteixeira[Matheus Teixeira^] created https://github.com/matheusteixeira/rdf2multimodel[rdf2multimodel^], a tool that imports RDF triples into Neo4j. The project also has a SPARQL to Cypher adapter.
+
+* https://github.com/BloodHoundAD/BloodHound[BloodHound^] https://posts.specterops.io/bloodhound-1-4-the-object-properties-update-9932c5b1f3ca[ version 1.4^] was released. BloodHound is a tool that uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. This release contains ShortestPath bug fixes and added a feature that allows you to collect properties of objects.
+
+=== On StackOverflow: Common ancestors, nested union, logging
+
+This week on https://stackoverflow.com/questions/tagged/neo4j[Neo4j StackOverflow^]…​
+
+* https://stackoverflow.com/users/1190376/antimony[Antimony^] writes a query to find a https://stackoverflow.com/questions/46627258/neo4j-get-middle-node-in-path[common ancestor^] between words in a Wordnet graph.
+
+*  https://stackoverflow.com/users/6893866/tezra[Tezra^] shows several ways to write https://stackoverflow.com/questions/46650175/nested-unions-in-cypher-neo4j[a nested union query^] against a http://www.biopax.org/[BioPAX graph^]. COLLECT, UNION, and path filtering all feature.
+
+* https://twitter.com/cleishm[Chris Leishman^] explains https://stackoverflow.com/questions/46650975/neo4j-3-logging-customization[how logging works in Neo4j^] and options for configuring it.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| October 15th 2017 | https://www.meetup.com/Philly-GraphDB/events/243988819[Sunday Morning Neo4j GraphGists Project^] | https://www.meetup.com/Philly-GraphDB[Philly GraphDB^] | Jess M
+
+| October 16th 2017 | https://www.meetup.com/graphdb-sf/events/243838525[Managing inter-component complexity: Securing products with Graph databases^] | https://www.meetup.com/graphdb-sf[Graph Database - San Francisco^] | Ravi Krishnaswamy  
+
+| October 17th 2017 | https://www.meetup.com/graphdb-sp/events/243739558[Creating recommendation systems with Neo4j^] (Brazilian) | https://www.meetup.com/graphdb-sp[Graph Database - São Paulo^] | Jhonathan Soares
+
+| October 19th 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/243206424[Analysing Debian packages with Neo4j^] | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Norbert Preining
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/paulgoetze[Paul Götze^]:
+
+tweet::917473487631142913[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

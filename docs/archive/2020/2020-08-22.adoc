@@ -1,0 +1,166 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Michael Hunger gives us a walk through of the Neo4j language drivers.
+
+David Allen announces Neo4j Aura on GCP, Lju Lazarevic introduces the murder mystery challenge in Summer of Nodes, and Elaine Rosenberg launched a new online training course on Cypher Query Tuning. 
+
+And finally, Sihem Bouhenniche builds a REST API  using django_neomodel.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Nur Aini Rakhmawati
+
+This week's featured community member is Nur Aini Rakhmawati.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200821040606/this-week-in-neo4j-22-august-2020.jpg[name="Nur Aini Rakhmawati"]
+
+We’re not sure how Nur originally found us, but we’re glad she did! 
+Nur has quite an https://nurainir.github.io[impressive background].  She’s a PhD with educational experience from institutes focused on informatics, electronic engineering, and data analytics! What a spread! 
+
+Just from this alone, you can assume she has a natural yearning for learning. While it’s obvious that Nur has a curiosity and desire to educate herself, she’s also passionate about educating others. In 2019 she hosted a https://twitter.com/nuraini/status/1117721117639102464[Global Graph Celebration Day] at Postgraduate Information Systems Department, Insitut Teknologi Sepuluh Nopember.  
+
+We assume that she decided to expand her impact globally, as she was just accepted to speak at https://neo4j.com/nodes-2020[Neo4j Online Developer Expo & Summit (NODES 2020)]! Her talk is on “Halal detection Using Graph Algorithms”. We’re still working through the submitted talks, but she’s in the first round of accepted speakers. 
+
+Congratulations, Nur, and thank you so much for taking your time to help others learn and grow!  
+We’re excited to see your talk in October! 
+  
+
+https://twitter.com/nuraini[Follow Nur on Twitter, role="medium button"]
+
+[[features-1]]
+=== Neo4j Drivers All The Things 
+
+This week's video is a live stream by Michael Hunger about the Neo4j language drivers.
+
+youtube::JwgxkGY-36Q[type={type}]
+
+In the video, Michael explains the new driver protocols introduced in the 4.x series, and then shows how to query Neo4j databases using Python, .NET, JavaScript, and more.
+
+[[features-2]]
+=== Summer of Nodes: Week 3 - Whodunit - Murder Mystery?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200821041326/1_TjQcTDlAsjZEW1A8UqecUg.png" width="150px"  />
+</div>
+++++
+
+It’s week 3 of Lju Lazarevic’s Summer of Nodes 2020, a series of graph challenges that are running for the month of August.
+
+The challenge this week is to figure out which group of people committed a crime in Graphville. This one will put your Cypher skills to the test.
+
+https://medium.com/neo4j/summer-of-nodes-week-3-whodunit-5a511cac6e13[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Announcing Neo4j Aura on Google Cloud Platform
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200818121241/image1-10.png" width=200px"  />
+</div>
+++++
+
+Earlier this week, David Allen announced the launch of Neo4j Aura on Google Cloud Platform.
+
+Neo4j Aura is now listed on the GCP Marketplace and can be easily installed by GCP users. You can now launch Aura from the Google console and billing will appear alongside other Google Services.	
+
+https://neo4j.com/blog/announcing-neo4j-aura-on-google-cloud-platform/[Read the release post, role="medium button"]
+
+
+[[features-4]]
+=== New Training: Cypher Query Tuning, py2neo and Graph Gopher releases 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+* Elaine Rosenberg launched a new online training course on https://neo4j.com/graphacademy/online-training/cypher-query-tuning-40/[Cypher Query Tuning^]. In this half day course you'll learn how to improve query performance and monitor currently running and historical queries.
+
+* Nigel Small launched py2neo version https://py2neo.org/2020.0/[2020.0^]. This release adds a bunch of bug fixes and other improvements, especially in the OGM module.
+
+ * Niklas Saers announced https://apps.apple.com/dk/app/graph-gopher-neo4j-client/id1327978961[version 1.5 of Graph Gopher^], the Neo4j client for iPhone. This release adds support for the Neo4j 4.x series.
+
+* Adam Cowley published  https://github.com/adam-cowley/neo4j-nestjs-realworld-example-app[neo4j-nestjs-realworld-example-app^], a project that contains a Thinkster real world example app using Neo4j and Nest.js
+
+
+
+
+
+
+
+[[features-5]]
+=== Create REST API With Django and Neo4j Database Using Django_nemodel
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200821005206/neomodel-300.png" width="150px"  />
+</div>
+++++
+
+Sihem Bouhenniche has written a tutorial showing how to build a REST API that fronts a Neo4j database, with help from the django_neomodel Object Graph Mapper library.
+
+https://medium.com/swlh/create-rest-api-with-django-and-neo4j-database-using-django-nemodel-1290da717df9[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/bibleviz[Robert Rouse^]:
+
+tweet::1296434218810191872[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* Nikolas Santis @nikosantise
+I have added two examples using @neo4j (one with @apollographql ) with #Nextjs @vercel (waiting for the PR :face_with_cowboy_hat:). I'm looking forward to it being useful to other developers. (Improvement contributions are welcome) https://github.com/nikosantis/next.js/tree/canary/examples/with-apollo-neo4j-graphql
+https://github.com/nikosantis/next.js/tree/canary/examples/with-neo4j 
+#neo4j #GraphQL
+[Feature this when it's merged - https://github.com/vercel/next.js/pull/16081]
+
+* triniqua @triniquaAG
+On “Terrific Tuesday” we want to remain true to form and deliver a fantastic example of a semantic data model. Using flight data we show how fun and beautiful semantic graph models are and how a perfectly created one can quickly deliver answers.
+#dataisbeautiful  #DataEngineering
+
+
+
+* Steen Dupont @LegoMoth
+Playing with the @CollectionTrust  SPECTRUM 5.0 procedures (using @neo4j neo4J and @GraphXr) as they are core to our collections management system. Seeing how the procedures map and how the links focus the procedures towards Object Entry Information is oddly reassuring
+
+* https://medium.com/neo4j/handling-neo4j-constraint-errors-with-nest-interceptors-6d0c5909af9c
+Handling Neo4j Constraint Errors with Nest Interceptors
+
+2019:
+* Dr Alan Beckles @Ritmonegro
+Getting started with neo4j in 10 minutes | by Félix Revert | Towards Data Science https://towardsdatascience.com/getting-started-with-neo4j-in-10-minutes-94788d99cc2b
+
+////

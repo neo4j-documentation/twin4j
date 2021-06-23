@@ -1,0 +1,188 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Building a Fashion Knowledge Graph, Carrefour Basket Dataset Challenge, Community detection on Game of Thrones, Analysing Network Traffic
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Christophe Willemsen gives us a crash course in Neo4j's full text search functionality.
+
+Jimmy Crequer uses Neo4j to learn the countries of the world, Andrea Santurbano converts MongoDB collections to graphs, and Michal Trnka shares GRANDstack tips and tricks
+
+And Rik shows us how to query the data from the Carrefour Basket Data Challenge.
+
+Enjoy!
+
+Mark Needham, Karin Wolok, and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Jimmy Crequer
+
+Our featured community member this week is Jimmy Crequer, Application Engineer at Rakuten.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191205032109/this-week-in-neo4j-7-december-2019.jpg[name="Jimmy Crequer"]
+
+Jimmy has been one of the most prolific bloggers in the Neo4j community over the last 6 months or so. I first came across Jimmy via his blog post in which he created a graph based on data from the https://medium.com/neo4j/playing-around-league-of-legends-with-neo4j-prologue-87650ceae1c[League of Legends European Championship^]. 
+
+He also added a follow on blog post https://medium.com/neo4j/league-of-legends-with-neo4j-champions-diversity-in-worlds-2019-16999b21c457[graphing the World Finals^], and more recently built a GRANDstack application to help learn https://medium.com/neo4j/learn-japanese-characters-using-neo4j-483585abc5b8[Japanese characters^] and a graph based CLI tool to learn European countries.
+
+I've really enjoyed reading Jimmy's blog posts. He covers lots of different topics, providing detailed instructions if the reader wants to follow along. 
+
+On behalf of the Neo4j community, thanks for your work Jimmy!
+
+https://www.linkedin.com/in/jimmy-crequer-532772149/[Connect with Jimmy on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: To be or not to be. Full Text Search tips and tricks
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^] Christophe Willemsen shares his best https://neo4j.com/online-summit/session/full-text-search-tips-to-be-or-not-to-be[tips and tricks for using the full text search functionality in Neo4j^].
+
+youtube::TFXoYQBHl4Q[type={type}]
+
+In the talk Christophe:
+
+* gives a crash course in Lucene's most common syntax
+* explains how to write a custom analyzer
+* shows how to use graph structure in full text search results
+
+[[features-2]]
+=== Learn geography using Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191204232806/0_RBtYVUbx5rgRDXYb.png" width="150px"  />
+</div>
+++++
+
+Jimmy Crequer wants to remember all the countries in the world, and is using graphs to help him do it. 
+
+In the blog post Jimmy explains how to build a country graph from Wikipedia data and then explores the data using Cypher queries. He also builds a command line application to test his knowledge on capital cities and bordering countries.
+
+
+
+https://towardsdatascience.com/build-a-react-flask-app-that-suggests-novel-novels-with-a-python-graph-9491e714bbdf[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Spring Data Neo4j, GRANDstack, Graph Algorithms
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191204233455/avatars-000517350273-cve1m4-t500x500.jpg" width="150px"  />
+</div>
+++++
+
+* Michael Simons was https://soundcloud.com/a-bootiful-podcast/michael-simons-on-spring-boot-reactive-spring-data-neo4j-and-more[interviewed on the A Bootiful Podcast^] about his work on the new reactive Spring Data Neo4j project. 
+
+* Michal Trnka has written a blog post in which he https://graphaware.com/neo4j/2019/11/18/grandstack-tips-and-tricks.html[shares advanced tips and tricks for building applications with the GRANDstack^]. The GRANDstack is a combination of technologies that enable developers to build data intensive full stack applications. 
+
+* In Nathan Smith's latest blog post he https://medium.com/neo4j/the-world-wide-web-is-like-a-bow-tie-discovering-graph-structure-with-neo4j-5d1b684cd4ee[uses graph algorithms to explore a graph of web pages and the links between them^].
+
+[[features-4]]
+=== Transform MongoDB collections automagically into Graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191204225447/1_e0D1pkuvLbVMBQdma2ltqg.jpeg" width="100px"  />
+</div>
+++++
+
+Andrea Santurbano gives us a guided tour of the https://neo4j.com/docs/labs/apoc/current/[APOC^] library's `apoc.graph.fromDocument` procedure. This procedure automates the creation of graph structures from JSON documents
+
+In the post, Andrea shows us how to use it to import data from both JSON files and MongoDB collections.
+
+
+https://medium.com/neo4j/transform-mongodb-collections-automagically-into-graphs-9ea085d6e3ef[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Carrefour Graph: Part 2 - Querying the graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191129004048/Screenshot-2019-11-27-at-17.51.57.png" width="150px"  />
+</div>
+++++
+
+Rik continues his series of blog posts based on data https://github.com/ging/carrefour_basket_data_challenge[from a coding challenge for Carrefour^], a big French retailer. 
+
+In part 2 Rik shows how to write queries to find our most prolific customers, biggest spenders, and clients who purchase the same product in different stores.
+
+https://blog.bruggen.com/2019/11/part-24-playing-with-carrefour-shopping.html[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/BarrasaDV[Jesús Barrasa^]:
+
+tweet::1201793607151366145[type={type}]
+
+
+////
+
+=== Projects
+
+* predicate functions, extract functions, patterns, all together, @neo4j 's Cypher rocks.
+https://stackoverflow.com/questions/59078599/matching-all-nodes-related-to-a-set-of-other-nodes-neo4j/59078847#59078847 
+
+* @Graphistry
+We're delighted to share our latest investigation power ups!
+- Smart pivots for @neo4j workflow automation
+- @rapidsai & @blazingsql speedups + notebooks: multi-gpu dataframes made easy
+- Customize pivots for #LowCodeSecOps
+#GraphThePlanet
+https://www.graphistry.com/blog/graphistry-2-26-1-gpu-graph-investigations-with-rapids-blazingsql-neo4j-custom-pivots-and-more
+
+* jorge_albarran @jorge_albarran
+I just published Neo4j and the Starwars Galaxy: Using graphs to explore the galaxy https://medium.com/@jorgealbarran/neo4j-and-the-starwars-galaxy-using-graphs-to-explore-the-galaxy-198b328ec724 
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+* @softvisresearch
+Software Analytics with #Jupyter notebooks using a prefilled #Neo4j database running on #MyBinder. Created with building blocks from @feststelltaste and @psychemedia.
+https://github.com/softvis-research/BeLL   https://pbs.twimg.com/media/EISE7-FXUAEkaDj.jpg
+
+* Niklas Kolster @NiklasKolster
+Analysing online customer journeys in 3d https://www.windsor.ai/analysing-online-customer-journeys-in-3d-with-3d-force-graphs/ 
+
+* Ben Albritton @bla222
+Learning about the Islamic Scientific Manuscripts Initiative with Dr. Sally Ragep this morning @SIMS_Mss . All data available in a @neo4j db: https://ismi.mpiwg-berlin.mpg.de/neo4j-graph-db
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+https://towardsdatascience.com/build-a-react-flask-app-that-suggests-novel-novels-with-a-python-graph-9491e714bbdf 
+Build a React + Flask App that Suggests Novel Novels with a Python Graph
+
+Our team member David shows you how to create a GRANDstack app using #GraphQL, React, Apollo, and #NeoJ4
+https://buff.ly/2q1NqHD 
+
+
+
+
+
+
+
+
+
+
+////

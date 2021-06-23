@@ -1,0 +1,135 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Michelle Sanver
+
+This week’s featured community member is https://twitter.com/michellesanver[Michelle Sanver^], Software Developer at Liip. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170818112153/this-week-in-neo4j-19-august-2017.jpg["Michelle Sanver - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Michelle Sanver - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Michelle has been a member of the Neo4j community since 2013 and has presented https://speakerdeck.com/michellesanver/graph-databases-with-php-and-neo4j[multiple^] https://speakerdeck.com/michellesanver/handling-highly-connected-data-with-the-neo4j-graph-database[presentations^] focused frequently on the use of PHP and Neo4j, but also going into the https://speakerdeck.com/michellesanver/graph-databases-the-internal-works-of-neo4j[internals of the database^]. 
+
+Michelle also created https://github.com/Omnomhub/omnomhub[omnomhub^], a recipe site for people who like to alter recipes, if ever so slightly. It's like Github, but for cooking. 
+
+Outside of the Neo4j ecosystem Michelle is the President of https://twitter.com/phpwomen[PHP Women^] and is a https://blog.liip.ch/archive/2017/08/17/lets-talk-gender-diversity-not-taboo.html[strong advocate for gender diversity^] in the industry. 
+
+On behalf of the Neo4j community thank you for all your work Michelle!
+
+[[articles-1]]
+=== Thinking in Graphs, OWL to Neo4j, Analysing event data
+
+* https://twitter.com/danwoodsearly[Dan Woods^] wrote https://www.forbes.com/sites/danwoods/2017/08/17/learning-to-think-in-graphs-a-task-for-every-business#3070ef7370ef[Learning To Think In Graphs: A Task For Every Business^] in which he suggests that businesses need to learn to think about questions in terms of graphs. He goes on to point out the success that Google, Facebook, and LinkedIn have had by thinking about data in just this way. 
+
+* Massimiliano Izzo created https://github.com/ISA-tools/FAIRsharing-Owl2Neo[FAIRsharing-Owl2Neo^] for importing data in the https://en.wikipedia.org/wiki/Web_Ontology_Language[OWL format^] into Neo4j for the https://fairsharing.org/[FAIRsharing project^], which is a curated, informative and educational resource on data and metadata standards, across all disciplines, inter-related to databases and data policies.
+
+* Our friends at https://snowplowanalytics.com[Snowplow Analytics^] are back after a few years, and https://twitter.com/dilyan_damyanov[Dilyan Damyanov^] has written an article showing how to https://snowplowanalytics.com/blog/2017/07/17/loading-and-analysing-snowplow-event-data-in-Neo4j/[load and analyze event data in Neo4j^]. If you've ever wanted to analyse the paths that users take through your website or find out how people get to certain pages this is the article for you. 
+
+++++
+<blockquote class="tweet">
+Thinking in Graphs, OWL to Neo4j, Analysing event data in this week's #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Thinking in Graphs, OWL to Neo4j, Analysing event data in this week's #twin4j" data-url="https://neo4j.com/blog/this-week-neo4j-19-august-2017/#articles-1" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+
+[[intro-to-cypher]]
+=== Intro to Cypher
+
+We didn't have an online meetup this week so our video of the week is an Intro to Cypher presented by my colleague https://twitter.com/lyonwj[Will Lyon^]. 
+
+youtube::pMjwgKqMzi8[type={type}]
+
+If you're new to Neo4j or the https://neo4j.com/developer/cypher-query-language/[Cypher query language^] this is a great starting point. 
+Will takes you on a journey where he uses data from the https://www.yelp.co.uk/dataset_challenge[Yelp Dataset Challenge^] to introduce the graph data model, import the data into Neo4j, and then run queries against it
+
+++++
+<blockquote class="tweet">
+Learn about Cypher with @lyonwj in this week's #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="Learn about Cypher with @lyonwj in this week's #twin4j" data-url="https://neo4j.com/blog/this-week-neo4j-19-august-2017/#intro-to-cypher" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+
+=== Swagger UI for Intermine, The Note taking graph, Hybrid recommendations
+
+* Yash Sharma wrote http://yasharmaster.github.io/blog/2017/documenting-intermine-neo4j-api-with-swagger/[Documenting InterMine-Neo4j API with Swagger UI^], which talks about the http://intermine-neo4jwebapp.herokuapp.com/[Swagger API^] created so that https://github.com/intermine/bluegenes[BlueGenes^] can be configured to work with it easily in future.
+
+* https://twitter.com/cotoami[Cotoami^] is an experimental note-taking app which advertises itself as a place where people can weave a large network of wisdom from tiny ideas and uses Neo4j to store some of the data. You can find the https://github.com/cotoami/cotoami[code on GitHub^] and try it out at https://cotoa.me[cotoa.me].
+
+* https://github.com/marcusmchale[Marcus McHale^] created a https://github.com/marcusmchale/breedcafs[Flask based web portal to the Neo4j database^] for http://www.cirad.fr/en/news/all-news-items/articles/2017/science/breedcafs-new-coffee-varieties-for-agroforestry[BREEDCAFS^], an EU research project adapting coffee varieties for agroforestry. 
+
+* Damiano Cancemi created https://github.com/damianoc90/Hybrid-Recommendation-System[Hybrid-Recommendation-System^] which shows how to do content based and collaborative filtering using R and Neo4j for car selling. It's a bit of a work in progress but there are still some good ideas to take away.
+
+[[events]]
+=== Next Week
+
+Next week is a very busy one for events in the world of graph databases. 
+Hopefully there's something near you and if not there's always the online meetup.
+
+* On 
+Tuesday, August 22, 2017 we'll have a https://www.meetup.com/Neo4j-Online-Meetup/events/242060500/[Game of Thrones special^] where a few of the participants in the https://neo4j.com/blog/graph-of-thrones/[Season 7 contest^] present their work at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^]. 
+
+* On Wednesday, August 23, 2017 Dave Fauth will present https://www.meetup.com/Columbia-GraphDB-MeetUp/events/241985292/[Welcome to the Graph^] at the https://www.meetup.com/Columbia-GraphDB-MeetUp/[Columbia GraphDB meetup^].  
+
+* Also on Wednesday, August 23, 2017 Ray Bernard will present https://www.meetup.com/nycneo4j/events/242005751/[Data Science in Practice: Importing and Visualizing Facebook Data Using Graphs!^] in a co-partnered meetup of the https://www.meetup.com/nycneo4j/[NYC Neo4j^], https://www.meetup.com/NYC-PythonFlask-Neo4J-Startup-meetup/[Python & Neo4J Startup^], https://www.meetup.com/DigitalOceanNYC/[DigitalOcean NYC^], and https://www.meetup.com/Metis-New-York-Data-Science/[Metis: New York Data Science^] meetup groups. 
+
+* On Thursday, August 24, 2017 Will Lyon will present  https://www.meetup.com/Neo4j-Online-Meetup/events/242057752/[Query Graphs with "Graph"QL­^] at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^].
+
+* Also on Thursday, August 24, 2017 https://twitter.com/mesirii[Michael Hunger^] will present https://www.meetup.com/graphdb-berlin/events/242545840/[Game of Data and GraphQL^] at the https://www.meetup.com/graphdb-berlin/[Neo4j Berlin meetup group^].
+
+* And finally, also on 
+Thursday, August 24, 2017 Pat Patterson will present https://www.meetup.com/graphdb-sf/events/241573243/[Visualizing and Analyzing Salesforce Data with StreamSets and Neo4j^] in a co-partnered meetup of the https://www.meetup.com/ForceDotCom/[Bay Area Salesforce^], https://www.meetup.com/Metis-San-Francisco-Data-Science/[Metis SF Data Science^], https://www.meetup.com/Salesforce-Integration-Analytics/[Salesforce Data Analytics^], and https://www.meetup.com/graphdb-sf/[GraphDB SF^] meetup groups.
+
+++++
+<blockquote class="tweet">
+#neo4j events next week in Berlin, Columbia, and New York! #twin4j
+<br /><br />
+<a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-text="#neo4j events next week in Berlin, Columbia, and New York! #twin4j" data-url="https://neo4j.com/blog/this-week-neo4j-19-august-2017/#events" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+</blockquote>
+++++
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/asciimike[Michael McDonald^]:
+
+tweet::898346265833951232[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

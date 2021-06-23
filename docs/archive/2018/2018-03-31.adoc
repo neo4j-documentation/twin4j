@@ -1,0 +1,137 @@
+﻿++++
+<style type="text/css">
+p { margin-top: 0.5em; }
+</style>
+++++
+
+:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 30 March 2018, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 31 March 2018
+
+[Headline:]
+This Week in Neo4j – 31 March 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+As my colleague Mark Needham is on his well earned vacation, I'm filling in this week.
+
+Next week we plan to do something different. Stay tuned!
+
+[[featured-community-member]]
+=== Featured Community Member: Jeffrey Miller
+
+https://twitter.com/xagronaut[Jeffrey A. Miller^] works as a Senior Consultant in Columbus, Ohio supporting clients in a wide variety of topics. 
+Jeffrey has delivered presentations (https://github.com/xagronaut/neo4j-slides[slides^]) at regional technical conferences and http://www.cojug.org/frontPage/2018-02-13-lunch-Neo4j-249/[user groups^] on topics including Neo4j graph technology, knowledge management, and humanitarian healthcare projects.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180330192050/this-week-in-neo4j-31-march-2018.jpg[name="Jeffrey A. Miller"]
+
+
+Jeffrey published a really interesting https://neo4j.com/graphgist/software-development-process-model[Graph Gist on the Software Development Process Model^].
+He was recently interviewed at the https://crosscuttingconcerns.com/Podcast-074-Jeffrey-Miller-Neo4j[Cross Cutting Concerns Podcast^] on his work with Neo4j.
+
+
+Jeffrey and his wife, Brandy, are aspiring adoptive parents and have written a fun children’s book called http://skeeterbooks.com/[“Skeeters”^] with proceeds supporting adoption.
+
+On behalf of the Neo4j community, thanks for all your work Jeffrey!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+=== Interesting, Neo4j Related Projects
+
+* The infamous Max De Marzi demonstrates how to use Neo4j for a common https://maxdemarzi.com/2018/03/23/scheduling-meetings-with-neo4j/[meeting room scheduling task^]. Quite impressive Cypher queries in there.
+* Max also demos another new feature of *Neo4j 3.4 - geo-spatial indexes*. In his https://maxdemarzi.com/2018/03/21/neo4j-geospatial-queries/[blog post^], he describes how to use them to find the right type of food place for your tastes via the geolocation of the city that you're both in.
+* There seems to be a lot of recent interest in Python front-ends for Neo4j, Timothée Mazzucotelli created https://github.com/Pawamoy/neopy[NeoPy] which is early alpha but contains some nice ideas
+* Zeqi Lin has a https://github.com/linzeqipku[number of cool repositories^] of importing different types of data into Neo4j, e.g. Java classes, Git Commits or parts of Docx documents, and even SnowGraph a software data analytics platform built on Neo4j.
+// * https://twitter.com/tomasperezv[Tomás Pérez^] created a [Neo4j workshop^] based on your own LinkedIn data, which is really cool.
+* I think I came across this before, but the https://github.com/legraphista/newrelic-neo4j[newrelic-neo4j^] is really a neat way of getting Neo4j metrics into NewRelic, thanks https://twitter.com/legraphista[Ștefan-Gabriel Muscalu^]. While browsing his repositories I also came across this https://github.com/findie/wikidata-neo4j-importer[WikiData Neo4j Importer^] which I need to test out
+* This https://github.com/weihesdlegend/Auto-complete-System[AutoComplete system^] uses Neo4j which stores terms, counts and other associated information. It returns top 10 suggestions for auto-complete and tracks usage patterns.
+* Sam answered a question on counting distinct paths on https://stackoverflow.com/questions/49501213/counting-distinct-undirected-paths-in-cypher[StackOverflow^]
+
+.Nigel is teasing us
+____
+A new version of py2neo is coming soon. Designed for Neo4j 3.x, this will remove the previously mandatory HTTP dependency and include a new set of command line tools and other goodies. Expect an alpha release within the next few days.
+____
+
+=== Graph Visualizations
+
+I had some fun this week with https://github.com/jexp/neo4j-3d-force-graph[3d-force-graph^] and neo4j. It was really easy to combine the 3d graph visualization project based on three.js and available in 2D, 3D, for VR and as React Components with the Neo4j javascript driver. The graphs up to 5000 relationships load sub-second. 
+
+See the results of my experiments in https://github.com/jexp/neo4j-3d-force-graph[my repository^] which also links to several https://rawgit.com/jexp/neo4j-3d-force-graph/master/index.html[live versions^] of different setups (thanks to rawgit)
+
+// tweet::979564536888942593[type={type}]
+image::https://raw.githubusercontent.com/jexp/neo4j-3d-force-graph/master/weights-got.jpg[width=800]
+
+My colleague Will got an access key to https://twitter.com/graphistry[Graphistry^] and used this https://github.com/johnymontana/pygraphistry/blob/neo4j-example/demos/Neo4jTwitter.ipynb[Jupyter Notebook^] to load the Russian Twitter trolls from Neo4j.
+
+image::https://github.com/johnymontana/pygraphistry/raw/4533989c0033d50c86894a485fa390877017b962/demos/img/graphistry1.png[width=800]
+
+I also came across another https://github.com/corwur/cytoscapeneo4j[Cytoscape plugin for Neo4j^], which looks quite useful.
+
+https://twitter.com/bluejoe2008[Zhihong SHEN^] created a https://github.com/bluejoe2008/grapheco-browser-src[Data Visualizer^] for larger Neo4j graphs using vis.js, you can see an https://bluejoe2008.github.io/gebrowser/examples/example1.html[online demo here^]
+
+=== Desktop & GraphQL
+
+This weeks update of Neo4j Desktop has seen the addition of the neo4j-graphql extension that our team has been working on for a while. 
+
+There will be more detail around it from Will next week but I wanted to share a sneak preview for all of you that want to have some fun with https://neo4j.com/developer/graphql[GraphQL & Neo4j^] over the weekend.
+
+youtube::J-J90uwugb4[type={type}]
+
+
+=== Next Week
+
+What’s happening next two weeks in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| April 3rd | https://www.meetup.com/graphdb-Lyon/events/249115536/[Importer massivement dans une base graphe !^]| GraphDB Lyon | Gabriel Pillet
+| April 5th | https://www.meetup.com/graphdb-belgium/events/248475612/[GraphTour Afterglow: Lightning Talks^] | GraphDB Brussels | Tom Michiels, Dirk Vermeylen, Ignaz Wanders, Surya Gupta
+| April 9-10th | https://training.xebia.com/data-engineering/neo4j-masterclass[Training - Neo4j Masterclass - Amsterdam^] | GoDataDriven | Ron van Weverwijk
+| April 10th | https://www.eventbrite.com/e/billets-atelier-les-basiques-neo4j-paris-41315260055[Training - Atelier - Les basiques Neo4j - Paris^] | Paris | Benoit Simard
+| April 10th | https://www.eventbrite.com/e/the-night-before-the-graphs-tickets-44506717791[Meetup - The Night Before the Graphs - Milan^] | Milan | Michele Launi, Matteo Cimini, Roberto Franchini, Omar Rampado, Alberto De Lazzari
+| April 11th | https://neo4j.com/graphtour/[Conference - Neo4j GraphTour - Milan^] | Milan | several
+| April 12th | https://www.eventbrite.com/e/workshop-graph-data-modelling-with-neo4j-milan-tickets-41450777391[Training Data Modeling^] | Milan | Lorenzo Speranzoni, Fabio Lamanna
+| April 12th | https://www.eventbrite.com/e/graphtour-washington-dc-tickets-43101288113[Neo4j GraphTour USA #1^] | Arlington, VA | several
+| April 12th | https://www.meetup.com/graphdb-munich/events/248770553/[Meetup: Paradise Papers^] | Munich | Stefan Armbruster
+| April 13th | https://www.eventbrite.com/e/workshop-graph-data-modelling-with-neo4j-amsterdam-tickets-41277079857[Training Graph Data Modeling^] | Amsterdam | Kees Vegter
+| April 29th | https://pydata.org/london2018/schedule/presentation/17/[Searching for Shady Patterns^] | PyData London | Adam Hill
+|=========================================================
+
+
+=== Tweet of the Week
+
+// easter tweet
+
+My favourite tweet this week was our own Easter Bunny
+
+tweet::979546056974323712[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+And Happy Easter or Passover, if you celebrate it.
+
+Cheers, Michael

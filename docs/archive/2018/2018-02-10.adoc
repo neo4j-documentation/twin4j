@@ -1,0 +1,143 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 10 February 2017, including the Neo4j GraphTour, ETL Tool, Reactome, and Google Cloud Functions.
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Neo4j GraphTour is here
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180209000859/DT0KSsWU8AABjFx.jpg" width="200px" />
+</div>
+++++
+
+The https://neo4j.com/graphtour/[Neo4j GraphTour^] gets started next week with our first stops in Tel Aviv and Madrid. This is your chance to hear how Neo4j customers are using graphs and learn all about the Graph Platform.
+
+We'll also be running GraphClinics at each event where you can come and ask Neo4j engineers for one-on-one help with your project and get all your graph related questions answered.
+
+https://twitter.com/mesirii[Michael Hunger^] or I will be at each event and will be presenting Utilizing Powerful Extensions for Analytics & Operations where we'll show how you how to supercharge your Neo4j experience.
+
+There are still seats available for some of the events but don't procrastinate too long, https://neo4j.com/graphtour/[register now^]!
+
+=== Featured Community Member: Tim Williamson
+
+This week’s featured community member is https://twitter.com/timwilliate[Tim Williamson^], Data Scientist and Associate Fellow at Monsanto Company. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180209022134/this-week-in-neo4j-10-february-2018.jpg[name="Tim Williamson"]
+
+Tim has been a member of the Neo4j community for several years now and is a strong advocate for graphs on social media, frequently helping people out with their graph questions.
+
+I first came across Tim during his presentation https://www.youtube.com/watch?v=6KEvLURBenM[Graphs Are Feeding The World^] at GraphConnect SF 2015, which he then followed up with a   https://neo4j.com/blog/tim-williamson-data-scientist-monsanto[5 minute interview^]. You can also https://speakerdeck.com/timwilliate/graphs-are-feeding-the-world[find the slides^] from Tim's talk.
+
+Tim also presented https://speakerdeck.com/timwilliate/using-graph-databases-to-operationalize-insights-from-big-data[Using Graph Databases to Operationalize Insights from Big Data^] at Strata 2016 with Neo4j CEO https://twitter.com/emileifrem[Emil Eifrem^]. 
+
+On behalf of the Neo4j community, thanks for all your work Tim!
+
+=== Online Meetup: Data Science in Practice: Importing and Visualizing Facebook Using Graphs
+
+In this week's online meetup Ray Barnard and Jen Webb from https://twitter.com/suprfanz[Suprfanz^] showed us how to import Facebook events into Neo4j and visualise them using d3.js.
+
+youtube::G9T_9AyYaWM[type={type}]
+
+They guided us through a Python based tutorial which you can find in the https://github.com/suprfanz/flask-fb-neo4j-d3[suprfanz/flask-fb-neo4j-d3^] GitHub repository.
+
+=== Pick of the week: Reactome -  Efficient access to complex pathway data
+
+A couple of weeks ago http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005968[the paper^] behind https://reactome.org/dev/graph-database[Reactome^] - a free, open-source, open-data, curated and peer-reviewed knowledgebase of biomolecular pathways - was published. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180209005104/DVi7tOkU0AAdWdh-1.jpg["Reactome – Efficient access to complex pathway data", 500, 228, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Reactome – Efficient access to complex pathway data
+</strong>
+</p>
+++++
+
+Reactome annotates processes in a consistent pathway model to create a resource for researchers as a core reusable pathway dataset for systems biology approaches. It also provides infrastructure and bioinformatics tools for search, visualisation, interpretation and analysis of pathways
+
+In the paper the authors explain how they were able to use Neo4j and Cypher to greatly improve query efficiency, reducing the average query time by 93% from when they stored the data in MySQL.
+
+=== APOC, ETL Tool, Google Cloud Functions
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180209013817/apoc.png" alt="" class="alignnone size-full wp-image-74783" width="150px" />
+</div>
+++++
+
+* https://twitter.com/cskardon[Chris Skardon^] has started writing a http://xclave.co.uk/betterknowapoc/[Better Know APOC^] series of posts on the popular library. In the first post Chris shows http://xclave.co.uk/2018/02/02/better-know-apoc-0-introduction/[how to install APOC^] and explains the basic structure of all its procedures. He then has a post looking at the http://xclave.co.uk/2018/02/02/better-know-apoc-1-apoc-export-csv/[procedures available for exporting data from Neo4j^].
+
+* https://twitter.com/mdavidallen[David Allen^] wrote https://medium.com/@david.allen_3172/capturing-and-integrating-service-data-with-google-cloud-functions-and-neo4j-588855f1695e[Capturing and Integrating Service Data with Google Cloud Functions and Neo4j]. He also shared the Google Cloud functions mentioned in the post in the https://github.com/moxious/neo4j-serverless-functions[neo4j-serverless-functions^] repository.
+
+* https://twitter.com/praveenasekhar[Praveena Fernandes^] presented a webinar - https://www.youtube.com/watch?v=BxFIvEjBT98[Interpreting Relational Schema to Graphs^] -  in which she showed how to use the https://neo4j-contrib.github.io/neo4j-etl/#_neo4j_desktop[ETL Tool from the Neo4j Desktop^].  You can also https://www.slideshare.net/neo4j/interpreting-relational-schema-to-graphs[view Praveena's slides^].
+
+* A question on StackOverflow about https://stackoverflow.com/questions/48651073/is-there-a-need-to-create-bi-directional-relationship-in-neo4j-graph[bidirectional relationships^] led me to rediscover https://graphaware.com/neo4j/2013/10/11/neo4j-bidirectional-relationships.html[a timeless article^] written by https://twitter.com/bachmanm[Michal Bachman^] back in 2013 where he covers this topic in detail.
+
+=== On the Podcast: Laura Drummer
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180209003728/laura-podcast.jpg" width="150px" />
+</div>
+++++
+
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] http://blog.bruggen.com/2018/02/podcast-interview-with-laura-drummer.html[interviewed^] https://twitter.com/LawsyZ[Laura Drummer^], Director of Software & Engineering at Novetta Solutions.  
+
+They talk about Laura's work building social networks of not only people, but also things that they're talking about. Laura explains how she's been able to use Python Data Science tools http://scikit-learn.org/[scikit-learn^] and https://radimrehurek.com/gensim/[gensim^] to build these graphs.
+
+Laura presented the talk https://www.youtube.com/watch?v=x5PBXX1CZQs[Sentiment and Social Network Analysis^] at GraphConnect NYC 2017 so I'd recommend watching that if you want to learn more.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| February 12th 2017 | https://www.meetup.com/graphdb-israel/events/247130197/[Domain-Driven Design and GRANDstack (GraphQL, React, Apollo, Neo4j Database)^] | https://www.meetup.com/graphdb-israel[Graph Database - Israel^] | Shahar Shaked, https://twitter.com/markhneedham[Mark Needham^]
+
+| February 13th 2017 | https://www.meetup.com/graphdb-israel/events/246074727/[GraphTour Tel Aviv^] | https://www.meetup.com/graphdb-israel[Graph Database - Israel^] | Mix of Neo4j and customer speakers
+
+| February 14th 2017 | https://www.meetup.com/graphdb-spain/events/247130579/[Graph Analytics (hands-on) + Neo4j gRaphs (intro)^] | https://www.meetup.com/graphdb-spain[Neo4j España^]  | https://twitter.com/Chucheria[Bea Hernández^], https://twitter.com/barrasadv[Jesús Barrasa^], https://twitter.com/markhneedham[Mark Needham^]
+
+| February 15th 2017 | https://www.meetup.com/graphdb-spain/events/246074963/[GraphTour Madrid^] | https://www.meetup.com/graphdb-spain[Neo4j España^] | Mix of Neo4j and customer speakers
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/billstidham[Bill J. Stidham^]:
+
+tweet::960306523460251650[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

@@ -1,0 +1,191 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Will Lyon shows how to import spatial data for the GRANDstack Real Estate Search App.
+
+Stefan Dreverman explains how to read and write data in the low code platform, Neo4j 4.1 is released, and Amr Khaled showed how to build an Instagram clone.
+
+And finally, Matt Holford and Ravi Anthapu give us a crash course in modelling patient journeys in healthcare. 
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Ben Squire
+
+This week's featured community member is Ben Squire, Senior Data Scientist at Meredith Corporation.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200626013839/this-week-in-neo4j-27-june-2020.jpg[name="Ben Squire"]
+
+He has been a Neo4j community member since 2018, and if you’ve ever googled a particularly mysterious problem you’ve had with Neo4j (especially if it involved lots of data!) you’ve probably come across his posts.
+
+Ben spent last year working closely with our product engineering team as an early adopter for our Graph Data Science library. He ultimately used our graph algorithms to accomplish entity resolution at scale, but also provided invaluable feedback to help us make the library what it is today. He suggested useful features like seeding our community detection algorithms, and pushed the bounds of what was possible with memory and performance! 
+
+Ben has been a great advocate for graphs, and is always keen to share what he’s been working on. You can watch https://www.youtube.com/watch?v=atPc_qeq_Ic&feature=emb_title[Identity Graph at Scale^], a presentation from the Connections conference where he shared his experience doing Graph Data Science. He was also http://www.odbms.org/2020/06/data-science-and-graphs-qa-with-ben-squire-meredith/[interviewed about his experience^] on ODBMS.org. 	
+
+https://www.linkedin.com/in/benjamin-squire/[Connect with Ben on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Building A GRANDstack Real Estate Search App: Part 2 | Data modeling and import
+
+This week's video is https://www.youtube.com/watch?v=1JLs166lPcA&list=PL9Hl4pk2FsvV_ojblDzXCg6gxdv437PGg[part of a series^] by Will Lyon showing how to build a GRANDstack Real Estate Search App.
+
+youtube::WB--CkjKJMQ[type={type}]
+
+In the second video, Will extends the graph data model to include geospatial information, and then uses https://neo4j.com/docs/labs/apoc/current/import/load-json/[APOC's Load JSON procedure^] to import that data into Neo4j.
+
+[[features-2]]
+=== Modeling Patient Journeys with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200626015710/1_7mdCzq7rjW7hf-o-j1d0Xw.jpeg" width="150px"  />
+</div>
+++++
+
+Matt Holford and Ravi Anthapu give us a crash course in modelling patient journeys in healthcare.
+
+After explaining why graphs are uniquely positioned for this type of data, they iterate through different models, describing the use cases that each enable. In the second half of the post they show how to write queries to assess the performance of each model when answering different questions.
+
+https://medium.com/neo4j/modeling-patient-journeys-with-neo4j-d0785fbbf5a2[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Building a low-code platform with Neo4j: Data
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200618021632/1_YDbz1UMVxiN-Qu9iLKy_lA.png" width="180px"  />
+</div>
+++++
+
+Stefan Dreverman continues his series of blog posts showing how to build a low-code platform with Neo4j.
+
+In part 2, Stefan explains the way that we're going to read and write data. He also shows outlines of the screens in the application and how they'll interact with our data structures.
+
+https://medium.com/@stefan.dreverman/building-a-low-code-platform-with-neo4j-2-4-data-f712a9da248[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j 4.1 Released
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200626011740/noun_rocket-ship_1841426.png" width="100px"  />
+</div>
+++++
+
+https://neo4j.com/blog/introducing-neo4j-4-1/[Neo4j 4.1 was released^] this week and we've created content to help get you up to speed on the new features.
+
+* Jennifer Reif created the https://neo4j.com/developer/neo4j-database/[Neo4j Graph Database developer guide^], which acts as a useful starting point for discovering the features introduced in each release.
+
+* Adam Cowley explains how to https://medium.com/neo4j/role-based-access-control-in-neo4j-4-1-3e65d5b3f45[use the new Role Based Access Control^] features with the help of the Northwind Graph.
+
+* I wrote an article showing how to https://neo4j.com/developer/memory-management/[manage the memory^] used by transactions,
+
+* Michael Hunger gave us a https://www.youtube.com/watch?v=of53lUFs5hc[whirlwind tour of 4.1^] in his weekly live stream.
+
+
+[[features-5]]
+=== Microservices In Practice: Developing Instagram Clone —Graph Service
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200626021059/1_6uTTXbwC1XyeL9vtOvVywg.png" width="100px"  />
+</div>
+++++
+
+Amr Khaled has been writing a series of blog posts showing how to build an Instagram clone based on various microservices.
+
+In part 6 Amr builds a follow system with help from Neo4j, the Spring Data Neo4j Library, and Cypher query language.
+
+https://medium.com/javarevisited/microservices-in-practice-developing-instagram-clone-graph-service-193364c062df[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Cyb3rWard0g[Roberto Rodriguez^]:
+
+tweet::1274491190247899138[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* * https://medium.com/dev-genius/building-a-low-code-platform-with-neo4j-3-4-frames-and-views-ae7441eb051a
+
+* https://medium.com/@stefan.dreverman/building-a-low-code-platform-with-neo4j-4-4-the-rabbit-hole-1dbf376c452
+
+
+* https://blog.bruggen.com/2020/06/what-recommender-systems-and-contact.html
+
+* https://blog.bruggen.com/2020/06/what-vat-fraud-detection-and-contact.html
+
+* https://www.ovh.com/blog/gaia-x-catalogue-search-engine-under-the-hood/
+
+
+
+
+
+* https://medium.com/@mahjoub.saifeddine/my-baby-steps-with-go-building-a-basic-web-crawler-with-neo4j-integration-9a439263d40d
+Medium
+My baby steps with Go — Building a basic web crawler with Neo4j integration
+
+https://medium.com/@stefan.dreverman/building-a-low-code-platform-with-neo4j-2-4-data-f712a9da248
+
+* Sam O @LogicallyCross
+Building GraphQL API with Spring Boot, Neo4j and Kong – Part 3 http://dlvr.it/RZJrqF
+
+* Gerrit Meier @meistermeier
+We released SDN/RX 1.1.1 today with another bunch of improvements and bug fixes. As always thanks to @rotnroll666 🥰https://github.com/neo4j/sdn-rx/releases/tag/1.1.1
+
+
+* BuildforCovid19 @BuildforCovid19
+The Effect of the Seasons "Use of Natural Language Processing (NLP) and graph database technology to facilitate the process of knowledge..." http://buildforcovid19.io/the-effect-of-the-seasons/  #COVID2019 #BuildforCovid19
+
+* javinpaul @javinpaul
+Microservices In Practice: Developing Instagram Clone —Graph Service by Amr Khaled https://link.medium.com/7TIk8P1Ts7  #Java #Microservice #Programming via @javarevisited @Medium #springdata @neo4j  #graph #datastructure
+
+* @EarthlingDavey
+@lyonwj hey man, I thought you might like to see GRANDstack out in the wild. Check http://idenavoice.com & open-source at: https://github.com/EarthlingDavey/idenavoice
+
+* Ring3API @rimpq
+:fire:Epimitheus is a  #python tool that uses graphical database #Neo4j for #Windows Events visualization by @taso_x :muscle: Thanks!!
+:cog:[GIT]:https://github.com/tasox/Epimitheus
+:blue_book:[BLOG-p1]:https://medium.com/@pentesttas/windows-events-sysmon-visualization-using-neo4j-part-1-529ca5ab4593
+:blue_book:[BLOG-p2]:https://medium.com/@pentesttas/windows-events-sysmon-visualization-using-neo4j-part-2-d4c2fd3c9413
+#BlueTeam #ThreatHunting #Cypher https://pbs.twimg.com/media/EazRjVpX0AEJURX.jpg
+
+* Matthias Mann Lab @labs_mann
+All data of the ‘Proteome Landscape of the Kingdoms of Life’ @nature are open access. We integrated 340,000 quantified proteins in a graph database of 8 mio nodes and 54 mio relationships - ready to be explored:
+http://www.proteomesoflife.org
+
+* Michael Hunger @mesirii
+In case you missed my 3d and #reactjs graph visualization demos with #Neo4j this morning on twitch, you can watch the session on youtube here
+https://www.youtube.com/watch?v=QGJbJAopX-s&list=PL9Hl4pk2FsvXjk0hrerr78pLN-477pDLo&index=20
+To not miss it next time, make sure to follow us on http://twitch.tv/neo4j_
+#ICYMI #Twitch #visualization
+
+////

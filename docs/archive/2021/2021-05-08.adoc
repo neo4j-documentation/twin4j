@@ -1,0 +1,156 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Neo4j Streams, Event Processing, Py2Neo, News as Knowledge Graphs
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, Neo4j Engineering announced the release of Neo4j Streams with many new features. Dirk Fahland describes his project to transform event logs into a knowledge graph and the templates he has published. Rick Van Bruggen writes about how he retrieved new articles and turned them into a knowledge graph. We also point you to one of our NODES 2020 presentations that introduces you to Bloom with a demo by Anurag Tandon. Nigel Small has announced the latest release of Py2Neo. And finally, Madison Gipson shares how to pass parameters into Cypher code using Py2Neo.
+
+Cheers,
+https://twitter.com/elaine_neo4j[Elaine^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Matthias Sieber
+
+This week's featured community member is Matthias Sieber.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210504125032/this-week-in-neo4j-08-may-2021.jpeg[name="Matthias Sieber"]
+
+Matthias was one of Neo4j's  first Certified Professionals. Not only is he a Neo4j expert, he has helped many users and has earned the coveted @neo4j bronze  badge in StackOverflow. We thank him for all that he has done to help the Community.
+
+Matthias has dabbled in a little bit of everything! Besides becoming involved with Neo4j development, he has developed web applications and has provided technical leadership for several key projects. He has also taught courses at the university level. But wait, there is more!
+He started a company, Yomi.ai, that helps folks learn Japanese "Yomi.ai stands for better literacy by reading real Japanese". And, he has also found time to attend law school to earn a degree in dispute resolution. Wow!
+
+https://www.linkedin.com/in/matthiasklaussieber/[Connect with Matthias on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Neo4j Streams 4.0.7 has been released
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210506082150/Neo4j-Streams.jpeg" width=150px"  />
+</div>
+++++
+
+https://twitter.com/mdavidallen[David Allen^] announced the release of Neo4j Streams 4.0.7. The biggest change is dynamic configuration where you can change your Kafka config on the fly without restarting the database. You can create new databases in Neo4j & subscribe them to new Kafka topics as you go. Neo4j Streams has enabled an extra database field in messages sent to the dead letter queue, so that in multi-database scenarios, you can see where the error came from and make it easier to fix.
+
+https://github.com/neo4j-contrib/neo4j-streams/releases/tag/4.0.7[Read about it on Github, role="medium button"]
+
+[[features-2]]
+=== Analyzing process event data with Neo4j
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210506082306/DirkFahlandEventProcessing.jpeg" width=150px"  />
+</div>
+++++
+
+https://twitter.com/dfahland[Dirk Fahland^] has been working on a project to represent events in a knowledge graph. He has encoded time in the knowledge graph so that events can be better analyzed in a workflow. It enables users to see how incidents, interactions, and changes operate on components and configurations. They have published a set of templates that you can use to translate and integrate CSV log files for sets of events.
+
+https://zenodo.org/record/4708117#.YJMBnGZKiMI[Read about these templates, role="medium button"]
+
+[[features-3]]
+=== Making sense of the news with Neo4j, APOC and Google Cloud NLP
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210506082445/Rik-newsArticlesBlog.jpeg" width=150px"  />
+</div>
+++++
+
+https://twitter.com/rvanbruggen[Rik Van Bruggen^] posted an interesting blog about using Neo4j with the APOC library to aggregate data found in news articles as a knowledge graph for an organization. He gathered the data from the http://eventregistry.org/[EventRegistry site^] and imported it into the Neo4j database. Then he used the wonderful https://neo4j.com/labs/apoc/[APOC library^] and its access to the Google Cloud Platform Natural Language Processing API to enhance the graph to create a true knowledge graph.
+
+https://blog.bruggen.com/2021/04/making-sense-of-news-with-neo4j-apoc.html[Read the Blog Post, role="medium button"]
+
+[[features-4]]
+=== NODES 2020 Video of the Week: Getting Graph Questions Answered with Neo4j Bloom
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200922082225/image3-12.png" width="200px"  />
+</div>
+++++
+
+Here is the session that https://twitter.com/anutan76[Anurag Tandon^] presented about Neo4j Bloom and how you can use it to answer questions about the data in your graph. First, he provides an overview of why you would want to use Bloom and the features of the product. Then he shows you a demo of using Bloom to explore the Northwind dataset and how to create and use perspectives for viewing the data. He also explores other datasets in the demo.
+
+https://youtu.be/W7uaSJMNqW4[Watch the Video, role="medium button"]
+
+[[features-5]]
+=== Py2neo 2021.1.0 has just been released
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20180608023354/py2neo-3-1-python-driver-neo4j1.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/technige[Nigel Small^] has just announced the latest release of Py2Neo. Some of the highlights of this release include:
+
+* Full support for routing
+* Big stability improvements for multithreaded usage
+* Graph.update() and Graph.query() methods can retry
+* PEP249 (DB API 2.0) compatibility
+
+https://py2neo.org/2021.1/[Read about this release here, role="medium button"]
+
+[[features-6]]
+=== Running a Cypher Query With Parameters Through a Python Script
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210506082629/MadisonGipsonPyToNeo.jpeg" width="150px"  />
+</div>
+++++
+
+Madison has been using  https://py2neo.org/2021.1/[Py2Neo^] for her projects and found that copying/pasting queries from Neo4j Browser into code is the easiest way to do this. Of course, a best practice is to use placeholders (parameters) in your Cypher queries so that the Execution Plan Cache can be used with no recompilation of queries.  In this article, she shows you how to pass parameters for your Cypher code. 
+
+https://medium.com/swlh/running-a-cypher-query-with-parameters-through-a-python-script-f0089e245b4d/[Read the Blog Post, role="medium button"]
+
+
+
+=== Tweet of the Week
+
+My favorite tweet last week was by https://twitter.com/transitive_bs [Travis Fischer^]:
+
+tweet::1384757550067994624[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+////

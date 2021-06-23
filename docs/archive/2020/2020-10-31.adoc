@@ -1,0 +1,181 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+This week Will Lyon started the FullStack GraphQL book club. If you've been waiting for the right time to get started with the GRANDstack, maybe that time is now, along with the rest of the community.
+
+Amy Holder launched the new version of Neo4j Bloom, David Allen teaches us all about node labels, and Vlasta Kůs shows how to build a knowledge graph with GraphAware Hume.
+
+And finally,  Andras Nemeth shows how to build a Graph Data Science pipeline with Neo4j and LynxKite.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Véronique Gendner
+
+This week's featured community member is Véronique Gendner.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201030051812/this-week-in-neo4j-31-october-2020.jpg[name="Véronique Gendner"]
+
+Véronique has been playing with computers since the age of 10 and has a background in Computational Linguistics. 
+
+In September 2020, Véronique started a one year mission at the French National Institute of Geographical Information (IGN). She will work on geolocalized data, with ontologies and labeled property graphs.
+
+One of Véronique's projects is https://thebrain.com/[TheBrain^], a digital document management tool, that allows for a graph structure organization of documents, URLs, and notes. She recently https://www.youtube.com/watch?v=-mtFqb2U6Sc&feature=emb_title[presented a talk about this project at NODES2020^]. 
+
+In the talk, Véronique showed how to import TheBrain DB into Neo4j, to automatically extract selected lists or tables and take full advantage of the graph structure, to solve different use cases.
+
+https://www.linkedin.com/in/veroniquegendner/[Connect with Véronique on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Fullstack GraphQL Book Club | Chapter 1: What's The GRANDstack?
+
+Our video this week is from the first week of Will Lyon's FullStack GraphQL Book Club.
+
+youtube::3acCMbaNJxA[type={type}]
+
+In this installment, Will goes through the first chapter of the book, which gives a high-level overview of the GRANDstack. He then shows how to write GraphQL queries to solve the exercises at the end of the chapter.
+
+[[features-2]]
+=== Graph Visualization Just Got Easier: Introducing Neo4j Bloom 1.4!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201021112805/image4-2.jpg" width="200px"  />
+</div>
+++++
+
+Amy Hodler announced the release of version 1.4 of Neo4j Bloom, the graph visualisation tool. This release has two main new features: 
+
+* Proactive search suggestions to make it easier to explore new graphs without having to know the underlying graph model.
+* Hierarchical graph layout, which is useful for visualising nested and sequential data in a tree or linear format.
+
+https://neo4j.com/blog/graph-visualization-just-got-easier-introducing-neo4j-bloom-1-4/[Read the release post, role="medium button"]
+
+[[features-3]]
+=== Graph Modeling: Labels
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201030042150/1_RVSMszWv9EUJNyNxrIwXGw-3.png" width="200px"  />
+</div>
+++++
+
+We have another installment of David Allen's advanced graph modeling series of blog posts.
+
+This week we learn all about labels. David explains what they are, how Neo4j treats them internally, and how you should use them in your models.
+
+
+https://medium.com/neo4j/graph-modeling-labels-71775ff7d121[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Knowledge Graphs with Entity Relations: Is Jane Austen employed by Google?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201030050748/2020-10-20-schema.png" width="200px"  />
+</div>
+++++
+
+Vlasta Kůs has written a deep dive into the NLP techniques that we can use to extract meaning from news feeds.
+
+After giving an overview of the techniques, Vlasta takes us through a demo of GraphAware Hume, a graph-powered insights engine that has in-built support for constructing knowledge graphs from text documents.
+
+https://graphaware.com/nlp/2020/10/20/ere-jane-austen.html[Read the blog post, role="medium button"]
+
+
+
+////
+https://twitter.com/i_like_robots/status/1319002409008549888 
+https://twitter.com/mauritsrijk/status/1318998041689468929 
+https://twitter.com/AlbertoGarob/status/1318667258894327808 
+////
+
+[[features-5]]
+=== Supercharged Data Science with LynxKite on Neo4j data
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201030040338/1_aY9_KDFuRDehKqhgJGROzw.png" width=200px"  />
+</div>
+++++
+
+LynxKite is an open-source graph data science platform that simplifies building Machine Learning pipelines and supports multiple data sources. One of these data sources is Neo4j, and Andras Nemeth has written a tutorial showing how the two tools work together.
+
+Andras shows how to transform a graph into the required structure, before running a clustering algorithm over the resulting graph. And finally, the results can be written back into Neo4j for further analysis.
+
+https://towardsdatascience.com/supercharged-data-science-with-lynxkite-on-neo4j-data-11cd0fa10f41[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/adamcowley[Adam Cowley^]:
+
+tweet::1322133300752896000[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+https://medium.com/neo4j/a-graph-neural-network-to-approximate-network-centralities-in-neo4j-2ee96705a464 - A Graph Neural Network to approximate Network Centralities in Neo4j
+
+* M. David Allen @mdavidallen
+My first developer blog in a while; concepts in Neo4j of queries, transactions, and connections and how to see what your system is doing, and how they connect.
+https://medium.com/neo4j/how-queries-work-in-neo4j-97229988941a 
+
+* https://twitter.com/netbizltd/status/1319665053243670529
+netbiz globalnetbiz global @netbizltd
+@neo4j Commander 2.4 is out with very handy Syntax Highlighting in the FullScreen Texteditor! https://netbizltd.com/neo4j/ ... Markup (HTML/XML), Markdown, Cypher,
+
+* https://medium.com/neo4j/neo4j-aura-pubsub-on-google-cloud-image-annotation-ca7104cd493
+
+* Alberto De Lazzari @albertodela80
+Here is an uncommon use of @neo4j
+Building an associative memory with Neo4j https://alberto-delazzari.medium.com/building-an-associative-memory-with-neo4j-1d0713322309 #NeuralNetwork #explainability
+
+* https://towardsdatascience.com/exploratory-network-analysis-of-marvel-universe-c557f4959048
+MediumMedium
+Exploratory network analysis of Marvel Universe
+Introducing the new k-nearest neighbors algorithm in the Graph Data Science library
+
+
+
+////

@@ -1,0 +1,159 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== GraphConnect NYC 2017
+
+It's http://graphconnect.com/[GraphConnect^] week! The main event is on October 24th 2017 at Pier 36, NYC. 
+
+If you're coming don't forget to come to the DevZone and say 'hi'.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171020015917/gcny-2017-og-1-1024x538.jpg["GraphConnect - October 23rd-24th 2017", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+GraphConnect - October 23rd-24th 2017
+</strong>
+</p>
+++++
+
+There are lots of great talks scheduled and I'm particularly looking forward to these ones:
+
+* 11:00: https://graphconnect2017.sched.com/event/CKqW?iframe=no[How Graphs Changed The Way Hackers Attack^] by Andy Robbins. Andy will talk about the https://github.com/BloodHoundAD/BloodHound[BloodHound library^] that uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. 
+
+* 11:45:  https://graphconnect2017.sched.com/event/Ck1J/full-stack-development-with-graphql-and-neo4j?iframe=no&w=100%&sidebar=yes&bg=no[Full stack development with GraphQL and Neo4j^] by Will Lyon. GraphQL is the hip thing in APIs at the moment and my colleagues Will and Michael have built https://www.npmjs.com/package/neo4j-graphql-js[neo4j-graphql-js^], a GraphQL to Cypher query execution layer for Neo4j and JavaScript GraphQL implementations, which Will will talk about in this session.
+
+* 12:10: http://sched.co/CKqw[News Networked: Using Neo4j's Graph Database to Increase Scalability in Fake News Detection^] by Nir Avrahamov. Nir will talk about the https://neo4j.com/blog/machine-learning-graphs-fake-news-epidemic-part-1/[fake news^] https://neo4j.com/blog/machine-learning-graphs-fake-news-epidemic-part-2/[graph^] that he's been working on during his summer internship with Neo4j.
+
+* 14:00: https://graphconnect2017.sched.com/event/CEND/mapping-ontologies-in-graphs-for-personalization-at-gousto?iframe=no&w=100%&sidebar=yes&bg=no[Mapping Ontologies in Graphs for Personalization at Gousto^] by Irene Iriarte-Carretero. Irene presented a lightning talk version of this talk in London in early 2017 and I really enjoyed it. I'm looking forward to see how their use of Neo4j has evolved in the 7-8 months since then.
+
+* 14:45: https://graphconnect2017.sched.com/event/CEJT?iframe=no[Sentiment and Social Network Analysis for Intelligence and Law Enforcement^] by Laura Drummer. I've always been curious how we can find meaning in unstructured data so I'm particularly interested in the topic modeling part of this talk.
+
+=== Featured Community Member: Tim Ward
+
+This week’s featured community member is https://twitter.com/jerrong[Tim Ward^], CEO of https://twitter.com/cluedinhq[CluedIn^] - a knowledge management solution that helps you utilise the collective knowledge in your organisation.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171020022516/this-week-in-neo4j-21-october-2017.jpg["Tim Ward - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Tim Ward - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Tim has been using Neo4j for the last 6 years and presented his experience https://www.youtube.com/watch?v=zkrfSxfhqe8[scaling Neo4j^] at FooCafe in 2015.
+
+Tim has been leading the charge in the machine learning/graphs arena and presented https://www.youtube.com/watch?v=jiE3wsrVUQs[Using Neo4j and Machine Learning to Create a Decision Engine^] to a packed room at GraphConnect Europe 2017. Apart from Emil's keynote this has been the most viewed video from the conference.
+
+Tim will present http://sched.co/CEMH[Building the Connected Enterprise with Machine Learning and Neo4j^] at GraphConnect NYC. His talk is at 11:45.
+
+On behalf of the Neo4j community, thanks for all your work Tim!
+
+=== Online Meetup: Analysing Debian packages with Neo4j
+
+In this week's online meetup https://twitter.com/norbusan[Norbert Preining^] showed us how to load the https://wiki.debian.org/UltimateDebianDatabase[Debian UDD^] into Neo4j and write Cypher queries to explore dependencies between packages.
+
+youtube::lpqvv36SBQw[type={type}]
+
+The code from Norbert's talk is https://github.com/norbusan/debian-graph[available on GitHub^] and he's also done a https://www.preining.info/blog/2017/10/analysing-debian-packages-with-neo4j/[brief writeup on his blog^].
+
+=== FOSDEM call for participation, Spring Boot, Dr Jim Webber interview
+
+* http://twitter.com/AppDeveloperMag[App Developer Magazine^] have https://appdevelopermagazine.com/5604/2017/10/17/Explaining-graph-databases-to-a-developer[an interview^] with Neo4j's Chief Scientist https://twitter.com/jimwebber[Dr Jim Webber^] in which he explains how graph databases fit in the NoSQL landscape, why native graph databases such as Neo4j are most efficient for querying graph data, and how the Panama Papers helped project graph databases into the mainstream.
+
+* Ali Ince released https://github.com/neo4j/neo4j-python-driver/releases/tag/1.5.0[version 1.5.0^] of the Neo4j Python Driver. The 1.5 series uses a least connections load balancing strategy when interacting with clusters and adds configuration options to give the application developer more control.
+
+* The call for participation for the http://graphdevroom.github.io/[GraphDevRoom^] at FOSDEM 2018 is now open. This is the 6th edition of the GraphDevRoom and suggested topics for this year range from graph query languages to knowledge graphs, and from graph processing frameworks to large scale graph visualisation. I attended and spoke in 2015 and found it a very welcoming environment so I'd encourage you to submit your interesting ideas.
+
+* Tyler Bobell shows how to combine  https://engineering.logicgate.com/spring-boot-with-neo4j-mysql-4036a54efd3c[Neo4j & MySQL in the same Spring Boot application^]. There's lots of code examples and a https://github.com/tylerbobella/neo4j-mysql-spring-boot[GitHub repository^] to go with it.
+
+* https://twitter.com/niklassaers[Niklas Saers^] released version https://github.com/GraphStory/neo4j-ios/releases/tag/v3.2.0[3.2.0 of Theo^], the Swift Neo4j driver. The driver now has support for Swift 3 & 4. 
+
+=== From The Knowledge Base
+
+This week from the https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we have an article explaining https://neo4j.com/developer/kb/understanding-the-query-plan-cache/[how the query plan cache works^].
+
+If you've ever wondered what happens when you execute Cypher queries in Neo4j this will answer many of your questions. 
+
+=== GraphQL Summit
+
+Neo4j will be sponsoring https://summit.graphql.com/[GraphQL Summit^] in San Francisco on October 25th and 26th.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171020001803/1-xjY0QYNjqLkYcVCM07K5BA-1024x512.png["GraphQL Summit - October 25th-26th 2017", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+GraphQL Summit - October 25th-26th 2017
+</strong>
+</p>
+++++
+
+My colleagues https://twitter.com/mesirii[Michael Hunger^] and https://twitter.com/lyonwj[Will Lyon^] will be there and will be giving demonstrations of how to build GraphQL APIs backed by Neo4j and showcase some of the integrations we're building for working with GraphQL and Neo4j at the booth. 
+
+https://summit.graphql.com/[Register here^] with promo code NEO4JFAN for a 25% discount to GraphQL Summit.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| October 23rd 2017 | https://www.meetup.com/nycneo4j/events/242972036[GraphHack - Graphs4Good^] | https://www.meetup.com/preview/nycneo4j[NYC Neo4j^] | Neo4j DevRel Team
+
+| October 23rd 2017 | https://www.meetup.com/WomenWhoCodeNYC/events/244133062[Investigating Complex Data Relationships through Graphs^] | https://www.meetup.com/WomenWhoCodeNYC[Women Who Code NYC^] | https://twitter.com/praveenasekhar[Praveena Fernandes^], https://twitter.com/aethelraed[Petra Selmer^], Maria Scharin
+
+| October 24th 2017 | http://graphconnect.com/[GraphConnect NYC 2017^]| http://graphconnect.com/[GraphConnect^] | https://twitter.com/emileifrem[Emil Eifrem^], https://twitter.com/jimwebber[Dr Jim Webber^], and more
+
+
+
+| October 25th 2017 | https://www.meetup.com/nycneo4j/events/244178577[Graph-based Natural Language Understanding^] | https://www.meetup.com/preview/nycneo4j[NYC Neo4j^] | https://twitter.com/AlessandroNegro[Dr. Alessandro Negro^], https://twitter.com/ikwattro[Christophe Willemsen^]
+
+| October 25th 2017 | https://www.meetup.com/New-York-Kubernetes-Meetup/events/243342647[Graph Database and Kubernetes^] | https://www.meetup.com/New-York-Kubernetes-Meetup[New York Kubernetes Meetup^] | https://twitter.com/markhneedham[Mark Needham^]
+
+| October 25th 2017 | https://www.meetup.com/nycneo4j/events/243464557[openCypher Meetup ^] | https://www.meetup.com/nycneo4j[NYC Neo4j^] | https://twitter.com/aethelraed[Petra Selmer^], https://twitter.com/szarnyasg[Gábor Szárnyas^], https://twitter.com/thobe[Tobias Lindaaker^], https://twitter.com/boggle[Stefan Plantikow^]
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/QuantumBIS[QuantumBIS^]:
+
+tweet::921022899485540352[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

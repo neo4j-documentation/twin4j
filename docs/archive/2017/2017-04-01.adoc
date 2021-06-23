@@ -1,0 +1,148 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+Bitcoin, ontology, php, datakind, 
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 1 April 2017, including projects around bitcoin, 
+
+[Primary Image File Name:]
+this-week-neo4j-1-apr-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 1 April 2017
+
+[Headline:]
+This Week in Neo4j – 1 April 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+It's a varied episode this week - we've got a worm's neuronal wiring graph, bitcoin explorers, a link:http://www.datakind.org/[DataKind, window="_blank"] DeepDive, and more. 
+
+=== Featured Community Member: Christophe Willemsen
+
+This week’s featured community member is link:https://twitter.com/ikwattro[Christophe Willemsen], Principal Consultant at Neo4j Solutions Partner link:http://graphaware.com/[GraphAware, window="_blank"].
+
+Christophe came to fame in the Neo4j community by creating link:http://graphgen.graphaware.com/#/[Graphgen, window="_blank"] - a tool that allows you to generate test data for your graph database. 
+
+He’s since gone on to build the link:https://github.com/graphaware/neo4j-php-client[Neo4j PHP driver, window="_blank"] and this week released a new version of link:https://github.com/graphaware/neo4j-php-ogm[Neo4j PHP OGM, window="_blank"] - an object graph mapper for Neo4j. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tbLMrkflfwg" frameborder="0" allowfullscreen></iframe>
+++++
+
+He's also presented several talks at link:http://graphconnect.com/[GraphConnect, window="_blank"], Neo4j's bi-annual user conference, and the video of his talk 'Cypher: Write Fast and Furious' was published this week. 
+
+=== Exploring a worm's connectome
+
+++++
+<div style="text-align: center;">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170401000617/this-week-neo4j-2-apr-2017.gif" alt="Explore everything that&#039;s happening in the Neo4j community for the week of 1 April 2017" width="469" height="256" class="alignnone size-full wp-image-63979" />
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center"><strong>Exploring a worm's connectome</strong></p>
+++++
+
+The coolest use of graphs this week goes to the link:https://elegans.herokuapp.com/[Worm Circuitry Explorer, window="_blank"] which link:https://elegans.herokuapp.com/about[stores the connectome (neuronal wiring diagram) of a worm in Neo4j, window="_blank"] and has an amazing d3.js interactive visualization. 
+
+=== The bitcoin blockchain is a graph
+
+We were lucky enough to have Greg Walker, the creator of link:http://learnmeabitcoin.com/[learnmeabitcoin, window="_blank"],  link:https://www.meetup.com/graphdb-london/events/237954465/[present at the London Neo4j meetup, window="_blank"] this week. Greg has stored the entire bitcoin blockchain in Neo4j and updates it every 10 minutes when new transactions are confirmed. 
+
+The bitcoin graph contains over 1 billion nodes and 2 billion relationships. You can learn more from link:https://www.slideshare.net/neo4j/learnmeabitcoincom-the-bitcoin-blockchain-in-neo4j-by-greg-walker[Greg's slides, window="_target"].
+
+link:https://twitter.com/straumat[Stéphane Traumat, window=”_blank”] link:https://github.com/straumat/blockchain2graph/releases[released version 0.4, window=”_blank”] of blockchain2graph - a tool that extracts information from the bitcoin blockchain and inserts them into Neo4j. 
+
+This release contains performance improvements and now has relationships between previous and next block in the chain. 
+
+
+
+=== Diving into UK corporation ownership with Neo4j
+
+link:https://twitter.com/astroadamh[Adam Hill, window="_blank"] presented link:https://www.slideshare.net/AdamHill10/diving-into-uk-corporation-ownership-with-neo4j[Diving into UK corporation ownership with Neo4j, window="_blank"] at the Neo4j London meetup. In the talk Adam describes his participation in the link:http://www.datakind.org/projects/using-open-data-to-uncover-potential-corruption[DataKind Global Witness event, window="_blank"]  where the goal was to uncover potential corruption using open data. 
+
+Adam and his team loaded the data into Neo4j and queried for tax havens, mega owners, and complicated corporate structures. The government is now investigating some of the companies and individuals identified as non compliant.
+
+If you're interested in doing this type of data analysis and you'll be in London in May, join our link:https://www.meetup.com/graphdb-london/events/237040841/[data journalism focused GraphHack, window="_blank"] on 10th May. 
+
+=== Real-time recommendations, GraphQL, discovering taxonomies
+
+* link:https://twitter.com/gp_pulipaka[Dr. GP Pulipaka, window="_blank"] shared link:https://twitter.com/_nicolemargaret?lang=en[Nicole White, window="_blank"]’s Graph Connect Europe 2016 talk showing how to do link:https://neo4j.com/blog/real-time-recommendation-engine-data-science/[real time recommendations with Neo4j, window="_blank"]. 
+
+* link:https://twitter.com/ryguyrg[Ryan Boyd, window="_target"] link:https://www.youtube.com/watch?v=2XbNhAJ9wh0[showed how he built, window="_blank"] the link:https://neo4j.com/sandbox-v2/[Neo4j sandbox, window="_blank"] using Docker, AWS Lambda, Auth0, and more  at the Neo4j online meetup. You can also link:https://www.slideshare.net/ryguyrg/building-the-neo4j-sandbox-aws-ecs-docker-python-neo4j[grab the slides, window="_blank"] from his talk.
+
+* Magbic Aleman link:https://medium.com/@magbicaleman/go-graphql-and-neo4j-6d65b28736cd[got started with Neo4j last weekend, window="_blank"] and has now got a Go server up and running that serves Neo4j data via link:http://graphql.org/learn/[GraphQL, window="_blank"]. Maybe this is the weekend that you try Neo4j out for the first time?! 
+
+* link:https://twitter.com/barrasadv[Jesús Barrasa, window="_blank"] shows how you can link:https://jesusbarrasa.wordpress.com/2017/03/31/quickgraph5-learning-a-taxonomy-from-your-tagged-data/[learn a taxonomy from tagged data, window="_blank"] using just a few Cypher queries. If you've got tagged data this technique is well worth a try for finding the latent structure between those tags.
+
+=== Composite indexes, Javascript procedures, new GORM release
+
+If you want to do something hands on with Neo4j this week there's lots of goodies to play with. 
+
+* We released link:https://neo4j.com/release-notes/neo4j-3-2-0-alpha07/[Neo4j 3.2.0-alpha07, window="_target"] which contains composite indexes - a long requested feature. Give it a try and let us know how you get on.
+
+* Michael Hunger created link:https://github.com/neo4j-contrib/neo4j-script-procedures[neo4j-script-procedures, window="_blank"], a project that allows you to write Neo4j user-defined procedures in Javascript. He's also written link:http://jexp.de/blog/2017/04/fullstack-javascript-neo4j-script-procedures/[a blog post explaining how to use it, window="_blank"].
+
+* link:https://twitter.com/graemerocher[Graeme Rocher,window="_blank"] released link:http://gorm.grails.org/6.1.x/neo4j/manual/index.html#releaseNotes[GORM 6.1, window="_blank"], a library that makes it easy to link:http://guides.grails.org/neo4j-movies/guide/index.html[integrate Neo4j in a Grails application, window="_blank"]. This release introduced support for the Neo4j Bolt Driver 1.2, allows batch inserts using FOREACH and UNWIND, supports path queries, and assigned identifiers
+
+On my GitHub travels I also came across a couple of other interesting Neo4j based projects that have been recently updated.
+
+* link:https://github.com/jri/deepamehta[deepamehta, window="_blank"] is a platform for collaboration and knowledge management that uses Neo4j under the covers and released 4.8.6 a few weeks ago.
+
+* link:https://github.com/SciGraph/SciGraph[SciGraph, window="_blank"] is a Neo4j backed ontology store, that aims to represent ontologies and data described using ontologies as a graph.  You can learn more in this link:https://github.com/SciGraph/SciGraph/raw/master/docs/presentation/20150801%20SciGraph.pptx[overview slidedeck, window=”_blank”]
+
+=== Interviews with Emil Eifrem and Dr Jim Webber
+
+++++
+<div style="text-align: center;">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170401001637/emil.jpg" alt="Neo4j CEO, Emil Eifrem" width="400" /> 
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center"><strong>Neo4j CEO, Emil Eifrem</strong></p>
+++++
+
+This week also featured interviews with Neo4j's CEO, link:https://twitter.com/emileifrem[Emil Eifrem, window="_blank"], and our Chief Scientist, Dr link:https://twitter.com/jimwebber[Jim Webber, window="_blank"].
+
+* Emil was link:http://www.mercurynews.com/2017/03/27/theyre-no-palantir-smaller-startups-with-new-ideas-take-big-data/[interviewed by the San Jose Mercury News, window="_blank"] in an article which talks through use cases of Neo4j from the link:https://www.youtube.com/watch?v=S20XMQyvANY[ICIJ’s Panama papers, window="_blank"] to link:https://vimeo.com/110675062[eBay’s same day delivery service, window="_blank"].
+
+* Part 2 of link:https://www.forbes.com/sites/alastairdryburgh/2017/03/29/growth-stories-to-build-a-business-give-the-product-away/#18e52cf408b0[Emil’s interview with Forbes, window="_blank"] was posted in which Emil describes how he created the graph databases category and got early adoption of the product. 
+
+* Jim link:http://www.odbms.org/2017/03/qa-with-data-engineers-jim-webber/[was interviewed, window="_blank"] as part of a Q&A series with data engineers on ODBMS.org. Topics discussed include ACID, BASE, CAP and the trade off between capacity, scale, and performance. 
+
+=== Next Week
+
+So what's there happening next week in the world of graphs? 
+
+* On Wednesday April 5th, 2017 Pieter Cailliau will present link:https://www.meetup.com/Neo4j-Manchester/events/238295283/[Graph Databases for Real-time recommendation engines, window="_blank"] at the link:https://www.meetup.com/Neo4j-Manchester/[Neo4j Manchester meetup, window="_blank"].
+* On Thursday April 6th, 2017 David Dyball will present link:https://www.meetup.com/Neo4j-Online-Meetup/events/238681208/[Real time art recommendations with Neo4j, window="_blank"] at the link:https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online meetup, window="_blank"]. We're going to try a chat based format this week so come along with your questions, it will be interactive!
+
+=== Tweets of the Week
+
+I’m going to cheat this week and have two tweets of the week!
+
+First up is a tweet by link:https://twitter.com/tastapod[Dan North, window="_blank"] in response to one by link:https://twitter.com/anildash[Anil Dash, window="_blank"] asking who’s doing the best job of developer relations in their respective communities. 
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/anildash">@anildash</a> <a href="https://twitter.com/andypiper">@andypiper</a> IME <a href="https://twitter.com/jetbrains">@jetbrains</a> (<a href="https://twitter.com/hhariri">@hhariri</a> and <a href="https://twitter.com/trisha_gee">@trisha_gee</a>), Spring Boot (<a href="https://twitter.com/starbuxman">@starbuxman</a>), <a href="https://twitter.com/neo4j">@neo4j</a> (<a href="https://twitter.com/mesirii">@mesirii</a>) are exemplary.</p>&mdash; Dan North (@tastapod) <a href="https://twitter.com/tastapod/status/846399837818044416">March 27, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+If you’ve been around the Neo4j community for a little while you’ve probably had link:https://twitter.com/mesirii[@mesirii, window="_blank"] (aka Michael Hunger) reply to one of your questions on Slack or Stack Overflow at 3am, irrespective of the day of the week.
+
+On behalf of the community, thanks for all your help Michael!
+
+My other favourite tweet was by link:https://twitter.com/aaywee[Lauri Halkosaari, window="_blank"] who’s just started learning Neo4j and got up and running in 5 minutes.
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Docker + Kitematic + Neo4j = graph DB running queries in 5 minutes. Just love how <a href="https://twitter.com/hashtag/containers?src=hash">#containers</a> have changed the world! <a href="https://twitter.com/hashtag/nerdlife?src=hash">#nerdlife</a> <a href="https://t.co/4joqGKTtbl">pic.twitter.com/4joqGKTtbl</a></p>&mdash; Lauri Halkosaari (@aaywee) <a href="https://twitter.com/aaywee/status/845545492167741441">March 25, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+That’s all for this week. We’ve posted on a Sunday this time due to the April Fool’s post that went out yesterday but we’ll be back next Saturday. 
+
+Until then, have a great week!
+
+Cheers, Mark

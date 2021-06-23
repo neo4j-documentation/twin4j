@@ -1,0 +1,294 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 23 June 2018, including the World Cup Graph and GraphQL API and the Intro to Graph Databases YouTube series is back!
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week David Fox explains how his team at Adobe moved from a 48 instance Cassandra cluster to a 3 instance Neo4j one, Emil is interviewed on The New Stack Makers Podcast, Neo4j Launches Commercial Kubernetes Application on GCP Marketplace, and we have the first alpha release of our new Go driver!
+
+[[featured-community-member]]
+=== Featured Community Member: David Fox
+
+This week’s featured community member is https://www.linkedin.com/in/davidfoxsoftware/[David Fox^], Software Engineer at Adobe.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720071608/this-week-in-neo4j-21-july-2018.jpg" alt="" width="800" height="400" class="alignnone size-full wp-image-80114[name="Andrea Santurbano "]
+
+David has been a member of the Neo4j community for many years and presented https://vimeo.com/79485392[Connections Through Friends: The Second Degree and Beyond^] at GraphConnect 2013. 
+
+I first came across David in my role in Neo4j's customer success team while David was working at https://www.peerstream.com/[Snap Interactive^] (now PeerStream). David has since presented 
+his experiences there in a talk at the Neo4j New York meetup titled https://vimeo.com/96227714[Running Neo4j in Production: Tips, Tricks and Optimizations^].
+
+David now works for Adobe, and is responsible for the backend infrastructure and performance on https://www.behance.net/[Behance^] – a social network for creatives, serving over 10 million members. We'll cover more about his experience there below.
+
+David also built https://devrant.com/[devRant^] - a community especially crafted with the wants and needs of developers in mind - and https://neo4j.com/blog/community-for-developers-devrant-neo4j/[wrote about his experience using Neo4j^] as part of that application.
+
+On behalf of the Neo4j community, thanks for all your work David!
+
+[[behance-adobe]]
+=== Moving Adobe Behance's activity feed from Cassandra -> Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720064210/belogo-social-posts-default.png" width="100px"  />
+</div>
+++++
+
+As mentioned above, David was http://www.odbms.org/blog/2018/07/on-using-graph-database-technology-at-behance-interview-with-david-fox/[interviewed^] by Prof. Roberto V. Zicari, about his  experience building a new implementation of Behance's https://help.behance.net/hc/en-us/articles/204484454-What-is-the-Activity-Feed-[activity feed feature^]. 
+
+In the first part of the interview David explains how the activity feed feature and some of the limitations they had with their original implementation which was using Cassandra as the underlying storage engine.
+
+He goes on to observe that the full dataset size has been reduced from 50TB when it was stored in Cassandra, down to around 40 GB in Neo4j. They’re also able to power this system using a cluster of 3 Neo4j instances, down from 48 Cassandra instances of equal specs. 
+
+As a result of this they 've been able to exponentially decrease the amount of developer-operations staff hours required each month to keep the activity feed running.
+
+link:http://www.odbms.org/blog/2018/07/on-using-graph-database-technology-at-behance-interview-with-david-fox[Read the full interview, role="medium button"]
+
+=== Neo4j Launches Commercial Kubernetes Application on GCP Marketplace
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720053438/apple-icon.png" width="100px"  />
+</div>
+++++
+
+On Wednesday https://twitter.com/mdavidallen[David Allen^] announced the https://neo4j.com/blog/neo4j-launches-kubernetes-application-google-cloud-platform-marketplace/[release of the Neo4j Graph Platform^] within a commercial Kubernetes application to all users of the newly renamed https://techcrunch.com/2018/07/18/googles-cloud-launcher-is-now-the-gcp-marketplace-adds-container-based-applications/?guccounter=1[Google Cloud Platform Marketplace^].
+
+This means that users can now easily deploy Neo4j’s native graph database capabilities for Kubernetes directly into their GKE-hosted Kubernetes cluster.
+
+link:https://console.cloud.google.com/marketplace/details/neo4j-public/causal-cluster-k8s[One click Neo4j deployment on GKE, role="medium button"]
+
+[[podcast]]
+=== On The New Stack Makers Podcast: Emil Eifrem
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="100px"  />
+</div>
+++++
+
+This week https://twitter.com/emileifrem[Emil Eifrem^], Neo4j's CEO, was https://thenewstack.io/neo4js-emil-eifrem-on-graph-databases-and-machine-learning/[interviewed on The New Stack Makers Podcast^].
+
+They talk about the history of Neo4j from its origins solving a problem in enterprise Content Management, through to the release of the Neo4j Bloom last month, and Emil's vision of the future of Machine Learning and graphs.
+
+You can listen to the interview below. 
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/473538537&amp;color=ff5500"></iframe>
+<br /> <br />
+++++
+
+[[articles-1]]
+=== RDFS/OWL ontologies -> Neo4j, Part 4 of Dating Site, Merging data from optional keys
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720072104/gordy901-contours.jpg" width="100px"  />
+</div>
+++++
+
+* In https://maxdemarzi.com/2018/07/19/building-a-dating-site-with-neo4j-part-four/[part 4^] of https://twitter.com/maxdemarzi[Max De Marzi^]'s series on building a dating site he continues building out the backend API, adding endpoints to capture the things that users like and hate.
+
+* https://twitter.com/ElLazal[Lju Lazarevic^] has written a blog post showing how to  https://lju-lazarevic.github.io/ImportingRDFSOWL.html[importing RDFS/OWL ontologies into Neo4j^] using the W3C Organizational Ontology as an example dataset. Lju uses a procedure from https://github.com/jbarrasa/neosemantics[neosemantics^] to import the data and then shows how to query the resulting ontology using the Cypher query language and https://github.com/neo4j-contrib/neo4j-apoc-procedures[APOC^] library.
+
+* I came across an interesting question (and answer!) on StackOverflow - https://stackoverflow.com/questions/51327465/neo4j-how-to-merge-nodes-from-json-data-when-key-is-optional[How to Merge Nodes from JSON Data when Key is optional^]. The `WITH` clause is sometimes unintuitive to new users of Cypher and https://stackoverflow.com/users/2920686/frobberofbits[FrobberOfBits^] does a great job of explaining how it works.
+
+
+*  Alfred Sawatzky has https://www.youtube.com/watch?v=aONuw5e9XXg&feature=youtu.be[created a video^] showing how to use https://www.yworks.com/neo4j-explorer/[yFiles Neo4j Explorer^] to render the Neoj4 graph schema. 
+
+[[golang]]
+=== First alpha of Go Neo4j driver
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720072418/1__XgWKTM2vRHQrRUlaMMZCw.jpeg" width="100px"  />
+</div>
+++++
+
+Based on popular demand our drivers team have been working on a Go driver for Neo4j, and this week  https://medium.com/neo4j/neo4j-drivers-are-go-9697baf4d116[released its first alpha version^].
+
+You can find instructions for using the driver in the https://github.com/neo4j/neo4j-go-driver/blob/master/README.md[neo4j-go-driver^] GitHub repository, and if you've used any of the other language drivers you will find the same familiar API that you're used to.
+
+The GA for the Go Driver is planned along with the Neo4j 3.5 release later this year.
+If you want to learn more you can join the #neo4j-golang channel of the http://neo4j.com/slack[Neo4j users slack^].
+
+link:https://medium.com/neo4j/neo4j-drivers-are-go-9697baf4d116[Learn about the Neo4j Go Driver, role="medium button"]
+
+[[apoc-series]]
+=== Creating Nodes and Relationships Dynamically with APOC 
+
+Creating nodes and relationships with Cypher is really straightforward. It only gets tricky when you have labels, relationship-types or property-keys that are driven by data and dynamic.
+
+youtube::KsAb8QHClNg[type={type}]
+
+The Cypher planner only works with static tokens and in this video https://twitter.com/mesirii[Michael^] shows how APOC procedures come to the rescue here for creating, merging and updating nodes and relationships with dynamic data coming from user provided strings or lists.
+
+link:https://www.youtube.com/watch?v=V1DTBjetIfk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=1[Watch the whole APOC series, role="medium button"]
+
+
+[[articles-2]]
+=== Python Dependency Graph, Fraud Detection with Neo4j, Neo4j OGM Release
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720061300/python-deps.png" width="150px"  />
+</div>
+++++
+
+* I wrote https://markhneedham.com/blog/2018/07/16/quick-graph-python-dependency-graph/[a blog post^] showing how to analyse a graph of your Python depencies using centrality algorithms from the Neo4j Graph Algorithms library.
+
+* https://twitter.com/joedepeau[Joe Depeau^] presented a webinar showing https://www.youtube.com/watch?v=CR4z0mWbM-Y[How to Build a Fraud Detection Solution with Neo4j^]. Joe shows the value that graphs can add beyond traditional fraud detection methods, shows how Neo4j can fit in a typical architecture, and demonstrates how https://neo4j.com/bloom/[Neo4j Bloom^] can be used to explore a fraud dataset. 
+
+* Michael Simons https://github.com/neo4j/neo4j-ogm/releases/tag/v3.0.4[released version 3.0.4^] of Neo4j OGM. This version has support for version 1.5 of Bolt drivers, compatibility for 3.4 point types, and several bug fixes.
+
+* https://twitter.com/JMHReif[Jennifer Reif^] has written https://medium.com/neo4j/a-new-age-of-data-what-is-graph-and-how-can-it-help-me-fa104a187c6d[a blog post^] in which she covers the history of data storage, contrasts relational and graph data modeling, and shares some common use cases for graphs. 
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| July 25th 2018 | https://www.meetup.com/graphdb-london/events/252738819/[Neo4j Quick Graphs: Extracting Taxonomies, Strava, Wikipedia, Python Dependencies	^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | Mark Needham, https://twitter.com/barrasadv?lang=en[Jesús Barrasa^]
+
+| July 25th 2018 | https://www.meetup.com/Philly-GraphDB/events/252872972/[Querying Open Civic Data Using Cypher & Neo4j^] | https://www.meetup.com/Philly-GraphDB/[Philly GraphDB^] | 
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/IianNeill[Iian Neill^]:
+
+tweet::1017708320038137856[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+NEXT WEEK:
+
+@rimllr, @dirkmahler, @mesirii, @jensnerche and yours truly got a paper accepted at @IEEEVISSOFT! :tada:
+
+"Towards an Open Source Stack to Create a Unified Data Source for Software Analysis and Visualization"
+
+Preprint: https://easychair.org/publications/preprint/893N
+Video: https://www.youtube.com/watch?v=LebVqfzQ_KE
+
+* Mining functional annotations across species
+https://www.biorxiv.org/content/early/2018/07/16/369785
+
+* https://dzone.com/articles/introduction-to-neo4j-ogm?utm_campaign=EngageSocial&utm_source=Twitter&utm_medium=Twitter_4885&utm_content=badc0da
+
+[[projects]]
+=== Projects to play with: Wikilink, Hospital Organ Transplant, Family History App
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070618/Octocat.png" width="120px"  />
+</div>
+++++
+
+On my GitHub travels I came across a few interesting projects that you can take a look at if you get some time over the weekend.
+
+* WikiLink is a web project that allows faster searching & graph visualization on the link network created between the Wikipedia Categories & Pages URLs.
+https://github.com/fdezdaniel/WikiLink
+
+
+* A Neo4j backed GraphQL API providing hospital organ transplant data.
+https://github.com/srp324/Hospital-Organ-Transplant-API
+
+* https://github.com/Wenzel/oswatcher
+An open database of operating systems
+
+* https://github.com/vitorhorta/netscan-neo4j
+NetSCAN is an overlapping community detection algorithm plugin for Neo4j graph database.
+
+* Organizing and securely holding your family memories
+https://github.com/wScottSh/family-history-app - uses the GRANDstack
+
+
+end of next week
+
+[[apoc-youtube]]
+=== APOC YouTube Series: Load JSON, Load JDBC, Bulk loading data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629061434/apoc-neo4j-user-defined-procedures1.gif" width="120px"  />
+</div>
+++++
+
+This week https://twitter.com/mesirii[Michael^] released 4 more videos in the Neo4j APOC YouTube series:
+
+* https://www.youtube.com/watch?v=yEN6TCL8WGk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4&t=0s[Exploring Neo4j Database Metadata in APOC (#3)^]
+
+* https://www.youtube.com/watch?v=M1P1IlQdb5M&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4[Loading Data from JSON Web APIs into Neo4j with apoc.load.json (#4)^]
+
+* https://www.youtube.com/watch?v=e8UfOHJngQA&index=5&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Load Data from Relational DBs with JDBC and APOC (#5)^]
+
+* https://www.youtube.com/watch?v=t1Nr5C5TAYs&index=6&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Efficiently Updating and Inserting Data With apoc.periodic.iterate (#6)^] 
+
+You can find a list of all the videos so far in https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[the Neo4j APOC Utility Library HowTo Series playlist^].
+
+[[knowledge-base]]
+=== How deletes work in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+This week from the https://neo4j.com/developer/kb/[Neo4j Knowledge base^] we have …
+
+[[european-roads-google-analytics-tibco-spitfire]]
+=== European road graph, Google Analytics -> Neo4j, TIBCO Spitfire
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713060902/A%CC%8ArhusE3-A101968.07.27.jpg" width="100px"  />
+</div>
+++++
+
+[[ml-models]]
+=== Graphs and ML: Remembering Models
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713072117/1_c-wlReFlN_WRaz9KS9yRxA.jpeg" width="150px"  />
+</div>
+++++
+
+Last week https://twitter.com/ML_auren[Lauren^] wrote an article explaining the linear regression procedures she added for Neo4j, and this week she's https://medium.com/neo4j/a-developers-look-ml-models-in-neo4j-7d4cbacb320c[written an article^] explaining some of the internals.
+
+Lauren explains her design decisions and looks at the advantages and disadvantages of different approaches. Lauren and https://twitter.com/mdavidallen[David Allen^] also have https://twitter.com/ML_auren/status/1017522612316983296[an interesting discussion on twitter^] about using Neo4j as a master data solution for machine learning systems.
+
+
+////

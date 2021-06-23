@@ -1,0 +1,205 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Building a Fashion Knowledge Graph, Carrefour Basket Dataset Challenge, Community detection on Game of Thrones, Analysing Network Traffic
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+There was so much content produced this week that I couldn't fit it all in! Don't worry though, we'll cover the rest next week.
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Luanne Misquitta explains why the most popular graph modeling advice is 'It depends'. 
+
+Tomaz Bratanic demonstrates the seed property feature of community algorithms,  Alex Woolford analyses traffic on his home network, and Jesus Barrasa’s builds a fashion knowledge graph.
+
+And finally, Rik has started a series of blog posts exploring data from the Carrefour Basket Data Challenge.
+
+Enjoy!
+
+Mark Needham, Karin Wolok, and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Polley Wong
+
+Our featured community member this week is Polley Wong, CTO at Swade Inc.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191129055520/this-week-in-neo4j-30-november-2019.jpg[name="Polley Wong"]
+
+Polley Wong is passionate for both design and data science. She’s an entrepreneur and a teacher. Polley is the co-founder of VIUSPACE[VIU.SPACE], a VR Software that blends the world of interior architectural presentations and digital experiences, JITA[JITA.io], a design management solution, and http://wecreate.group[WE CREATE GROUP^] that focuses on design and innovation. She also leads the technology for a company called http://www.swade.com[Swade], a mobile trading platform. 
+Even with everything going on in Polley’s world, she sets time aside to help others learn. Just recently, openup.global/?lang=en[Open UP Summit] announced a cohort of students consisting of a variety of engineers, teachers, students, and scientists, completing an 8-week course on GraphDB. Guess who led it… you guessed it, Polley Wong. 
+Polley, we can only imagine how much work it takes to do what you do. We’re so thankful that people like you are out there to help others grow! Great job and thank you!!
+
+https://www.linkedin.com/in/polleywong/[Connect with Polley on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: It Depends and why it's the most frequent answer to modelling questions
+
+This week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference is by Luanne Misquitta about graph data modelling.
+
+youtube::4Z5cTwZPsBY[type={type}]
+
+In the talk Luanne shows four different ways of modelling the movies graph that ships with Neo4j. Luanne goes through each of the models, explaining the use case where that model would make sense, and then concludes with a handy cheat sheet of modeling advice.
+
+[[features-2]]
+=== Game of Thrones: Community detection through time using the seed property 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191129003615/1_KWLd12v9t7KGrL1Pu8BRaw.png" width="200px"  />
+</div>
+++++
+
+Tomaz Bratanic continues his series of posts about new features in the https://neo4j.com/docs/graph-algorithms/current/[graph algorithms library^].
+
+In the latest post he explains how to use the seed property parameter supported by the community detection algorithms, with the help of a Game of Thrones graph. 
+
+https://towardsdatascience.com/community-detection-through-time-using-seed-property-in-neo4j-on-the-game-of-thrones-dataset-a2e520a6c79f[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Analysing network traffic, New neosemantics release, Decision Trees with Neo4j 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191129013906/2019-11-29_09-37-541.png" width="200px"  />
+</div>
+++++
+
+* I really enjoyed https://twitter.com/biggus_data[Alex Woolford^]'s https://www.youtube.com/watch?v=7EeYxSz0fjs[short video^] showing how to use Zeek, Kafka, and Neo4j to analyse the traffic on your home network. It's certainly given me some ideas for a new weekend project.
+
+* https://twitter.com/multiplex3r[Aaron Fenwick^] has been using Neo4j and Scapy to visualise PCAP network traffic files. Aaron shared a GitHub Gist that contains https://gist.github.com/multiplex3r/a04a8cfc1dcedb2e5553ff7c850c9450[a script to parse these files into a graph^].
+
+* https://twitter.com/BarrasaDV[Jesús Barrasa^] released version 3.5.0.4 of https://neo4j.com/docs/labs/nsmntx/current/[neosemantics^], a plugin that enables the use of RDF in Neo4j. This release Includes  a number of additional procedures and functions, including utility methods and others that complete the existing import/delete capabilities when RDF is passed as-payload instead of by-reference.
+
+* We created a new developer guide this week showing how to https://neo4j.com/developer/aura-grandstack/[deploy a GRANDstack application^] onto https://neo4j.com/aura/[Neo4j Aura^], a fully-managed cloud database developed by the same people that built Neo4j.
+
+* I came across https://twitter.com/manojlds[Manoj Mahalingam^]'s https://github.com/manojlds/thepill[thepill^], a decision tree evaluation plugin for Neo4j. The latest release adds support for step by step traversal of trees.
+
+[[features-4]]
+=== QuickGraph #9: The fashion Knowledge Graph. Inferencing with Ontologies in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191128233823/noun_shopping_3001973.png" width="100px"  />
+</div>
+++++
+
+In the latest post of Jesus Barrasa's popular QuickGraph series, we learn how to build a fashion knowledge graph.
+
+In this post Jesus shows how to build a graph containing both a product catalogue from a popular UK retailer and a clothing materials ontology. By connecting these two graphs, Jesus teaches us how to run multilingual semantic searches on the product catalogue.
+
+https://jbarrasa.com/2019/11/25/quickgraph9-the-fashion-knowledge-graph-inferencing-with-ontologies-in-neo4j/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Carrefour Graph: Part 1 - Playing with shopping receipts
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191129004048/Screenshot-2019-11-27-at-17.51.57.png" width="150px"  />
+</div>
+++++
+
+Rik has started a new series of blog posts based on data https://github.com/ging/carrefour_basket_data_challenge[from a coding challenge for Carrefour^], a big French retailer. 
+
+In the first post Rik explains how he wrangled the data into shape, and then provides step by step instructions for using various APOC procedures to import the data into Neo4j. The scripts used in the blog post are available in a https://gist.github.com/rvanbruggen/eeec1c52f6b801679ab8af297c0f4607[GitHub gist^].
+
+http://blog.bruggen.com/2019/11/part-14-playing-with-carrefour-shopping.html[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/GeoffreyMahugu[Geoffrey Mahugu^]:
+
+tweet::1198620929141739520[type={type}]
+
+
+////
+
+=== Projects
+
+* predicate functions, extract functions, patterns, all together, @neo4j 's Cypher rocks.
+https://stackoverflow.com/questions/59078599/matching-all-nodes-related-to-a-set-of-other-nodes-neo4j/59078847#59078847 
+
+https://medium.com/neo4j/the-world-wide-web-is-like-a-bow-tie-discovering-graph-structure-with-neo4j-5d1b684cd4ee
+
+* @Graphistry
+We're delighted to share our latest investigation power ups!
+- Smart pivots for @neo4j workflow automation
+- @rapidsai & @blazingsql speedups + notebooks: multi-gpu dataframes made easy
+- Customize pivots for #LowCodeSecOps
+#GraphThePlanet
+https://www.graphistry.com/blog/graphistry-2-26-1-gpu-graph-investigations-with-rapids-blazingsql-neo4j-custom-pivots-and-more
+
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+
+
+* @softvisresearch
+Software Analytics with #Jupyter notebooks using a prefilled #Neo4j database running on #MyBinder. Created with building blocks from @feststelltaste and @psychemedia.
+https://github.com/softvis-research/BeLL   https://pbs.twimg.com/media/EISE7-FXUAEkaDj.jpg
+
+
+
+* Niklas Kolster @NiklasKolster
+Analysing online customer journeys in 3d https://www.windsor.ai/analysing-online-customer-journeys-in-3d-with-3d-force-graphs/ 
+
+* Ben Albritton @bla222
+Learning about the Islamic Scientific Manuscripts Initiative with Dr. Sally Ragep this morning @SIMS_Mss . All data available in a @neo4j db: https://ismi.mpiwg-berlin.mpg.de/neo4j-graph-db
+
+* Luanne Misquitta @luannem
+Great tips and tricks for using the @neo4j #GraphQL library by Michal Trnka https://graphaware.com/neo4j/2019/11/18/grandstack-tips-and-tricks.html #GRANDstack
+
+* jorge_albarran @jorge_albarran
+I just published Neo4j and the Starwars Galaxy: Using graphs to explore the galaxy https://medium.com/@jorgealbarran/neo4j-and-the-starwars-galaxy-using-graphs-to-explore-the-galaxy-198b328ec724 
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+* @jorge_albarran
+I just published Neo4j and the Starwars Galaxy: Using graphs to explore the galaxy https://link.medium.com/oNHeU3BgM1
+
+@ikwattro
+Handling Synomyms with @neo4j Full Text Search https://dev.to/ikwattro/handling-synonyms-in-neo4j-full-text-search-232p
+
+https://towardsdatascience.com/build-a-react-flask-app-that-suggests-novel-novels-with-a-python-graph-9491e714bbdf 
+Build a React + Flask App that Suggests Novel Novels with a Python Graph
+
+Our team member David shows you how to create a GRANDstack app using #GraphQL, React, Apollo, and #NeoJ4
+https://buff.ly/2q1NqHD
+
+
+
+
+* Hi, Spring fans! In this installment @starbuxman talks to @springbootbuch author, Spring community legend and engineer working on the new, reactive @SpringData @neo4j project,  @rotnroll666
+https://soundcloud.com/a-bootiful-podcast/michael-simons-on-spring-boot-reactive-spring-data-neo4j-and-more
+
+* Rik Van Bruggen @rvanbruggen
+Part 2/4 of my experiments with a cool retail dataset from @CarrefourGroup with anonymous shopping receipt data in #neo4j: some stats and early queries to get started. See http://blog.bruggen.com/2019/11/part-24-playing-with-carrefour-shopping.html for more fun!
+
+
+
+
+
+
+
+////

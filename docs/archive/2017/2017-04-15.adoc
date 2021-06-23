@@ -1,0 +1,129 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 15 April 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-15-apr-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 15 April 2017
+
+[Headline:]
+This Week in Neo4j – 15 April 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Members: Ashley Sun and Rob Schoening
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170414140157/ashley-sun-rob-schoening-lending-club11.jpg" alt="Lending Club&#039;s Ashley Sun and Rob Schoening" width="559" height="391" class="alignnone size-full wp-image-64407" />
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Ashley Sun and Rob Schoening
+</strong>
+</p>
+++++
+
+This week's featured community members are part of Lending Club's engineering team and been publishing several open-source tools for dev-ops to manage a vast variety of service and operations information.
+
+They have https://neo4j.com/blog/managing-microservices-neo4j/[presented their early work at GraphConnect] and continue to evolve tools like https://github.com/LendingClub/macgyver[MacGyver], https://github.com/LendingClub/mercator[Mercator] and https://github.com/LendingClub/neorx[neorx, a reactive driver for Neo4j's http API]. 
+
+link:https://twitter.com/ryguyrg[Ryan Boyd^] demoed an extension to Mercator in this week's https://www.youtube.com/watch?v=cBFCb172vLU[webinar on IT-Operations] that tracks information from AWS ECS.
+
+=== ICIJ win the Pulitzer Prize
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170413070757/this-week-neo4j-15-april-2017-1024x567.jpg" alt="This Week in Neo4j - 15 April 2017" width="640" height="354" class="alignnone size-large wp-image-64375" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Members of the ICIJ and Süddeutsche Zeitung team celebrate
+</strong>
+</p>
+
+++++
+
+Congratulations to our friends at the link:https://twitter.com/ICIJorg[ICIJ^] who link:https://www.icij.org/blog/2017/04/panama-papers-wins-pulitzer-prize[won the Pulitzer prize for explanatory reporting^] for their work on the link:https://neo4j.com/blog/analyzing-panama-papers-neo4j/[Panama Papers^].  
+
+To learn more about their work you can watch link:https://twitter.com/cabralens[Mar Cabra^]'s link:https://neo4j.com/blog/icij-neo4j-unravel-panama-papers/[talk at GraphConnect 2016^].
+
+=== The Panama Papers Neo4j Sandbox
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170414140512/PanamaPapers-Sandbox-1024x327.png" alt="Panama Papers Sandbox" width="640" height="204" class="alignnone size-large wp-image-64411" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The Panama Papers Neo4j Sandbox
+</strong>
+</p>
+++++
+
+If you want to get hands on with the Panama Papers data we've recently released a Panama Papers guide on the link:https://neo4j.com/sandbox[Neo4j Sandbox^]. 
+
+Create an account and within minutes you can explore the network of offshore companies and their shareholders. Let us know how you get on by tweeting with link:https://twitter.com/search?q=%23neo4j&src=typd[#neo4j hashtag^]. 
+
+=== Star Wars Graph, Twitter clone, Reddit Place
+
+* link:http://starwars.overstory.co.uk:5050/[Star Wars Graph^] is an interactive mashup of linked data sets created by the folks at link:http://www.overstory.co.uk/[overstory^].  They've imported data from the Star Wars API, combined it with social links derived from automated analysis of the Star Wars film scripts and additional information from The Movie DB API to create a combined, connected graph of Star Wars data.
+
+* link:https://twitter.com/bod0ng[Bodong Chen^] link:http://bodong.ch/blog/2017/04/10/graphing-reddit-place.html[graphed the Reddit Place Sensation^]. link:https://www.reddit.com/r/place/[Reddit Place^] was an event run on April 1st where people had to collaborate to paint a virtual canvas. Bodong loaded a data dump of the event into Neo4j and showed how to analyse the behaviour of participants with a series of link:https://neo4j.com/developer/cypher-query-language/[Cypher^] queries.
+
+* The video of link:https://twitter.com/jimwebber[Dr Jim Webber^]'s QCon London talk link:https://www.infoq.com/presentations/causal-clustering-neo4j["Causal Consistency for Large Neo4j Clusters"^] is now available. In this talk Jim explains the Causal Clustering feature introduced in Neo4j 3.1
+
+* link:https://twitter.com/maxdemarzi[Max De Marzi^] adds the timeline feed and the ability to (un-)like posts to in his https://maxdemarzi.com/2017/04/10/building-a-twitter-clone-with-neo4j-part-five/[5th part of "Building a Twitter Clone with Neo4j"^]. He details the inner workings of each optimized feature discussing the complete implementation.
+
+* For our German readers (or Google Translate users), Thomas Hensel from b-s-s dissects link:http://www.bigdata-unleashed.com/20170410/nat%C3%BCrliches-sprachverstehen-mit-neo4j[how to realize intent (action) and entity detection in natural language with a graph approach^]. By turning sentences into sequences of nodes and strengthening recurring patterns, training sets generate the intents implicitly.
+
+* On our http://neo4j.com/developer/get-started[developer pages^], link:https://twitter.com/mesirii[Michael Hunger^] finished a new guide on https://neo4j.com/developer/guide-create-neo4j-browser-guide/[creating custom Neo4j Browser Guides^], something many of you asked for. We'd love to get your feedback on this content and see your own creations shared on Twitter.
+
+
+=== On GitHub
+
+These are the interesting Neo4j based projects I found this week:
+
+* link:https://github.com/i-am-tom[Tom Harding^] created link:http://npmdaily.com/pkg/neopreen[neopreen^] - a library of formatters and combinators to simplify working with data returned by the Neo4j driver. 
+
+* Robbie1977 created link:https://github.com/Robbie1977/docker-neo4j-knowledgebase[docker-neo4j-knowledgebase^] - a Neo4j Docker image containing the link:https://www.virtualflybrain.org/site/vfb_site/home.htm[VirtualFlyBrain.org KnowledgeBase^], a hub for neural anatomy and imaging data.
+
+* link:https://github.com/RicardsGraudins[RicardsGraudins^] created link:https://github.com/RicardsGraudins/College-Timetable-Neo4j[College-Timetable-Neo4j^], which shows how to model a college timetable including rooms, departments, courses, and more.
+
+=== From The Knowledge Base
+
+This week from the  link:https://neo4j.com/developer/kb[Neo4j Knowledge Base^] we'll look at some questions people have when importing CSV data into Neo4j.
+
+* link:https://neo4j.com/developer/kb/How-do-I-define-a-LOAD-CSV-FIELDTERMINATOR-in-hexidecimal-notation/[How do I define a LOAD CSV FIELDTERMINATOR in hexidecimal notation^]
+
+* link:https://neo4j.com/developer/kb/How-do-I-specify-the-field-and-array-delimiter-to-neo4j-import-as-a-ASCII-character/[How do I specify the field and array delimiter to neo4j-import as a ASCII character^]
+
+=== Tweet of the Week
+
+My favorite tweet this week was by link:https://twitter.com/NathanHDize[Nathan Dize^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Started coding works focused on the death of Toussaint Louverture in neo4j, more to follow <a href="https://twitter.com/elotroalex">@elotroalex</a> thoughts? <a href="https://twitter.com/hashtag/Haiti?src=hash">#Haiti</a> <a href="https://t.co/4GOcRNq8GX">pic.twitter.com/4GOcRNq8GX</a></p>&mdash; Nathan Dize (@NathanHDize) <a href="https://twitter.com/NathanHDize/status/851243075888394240">April 10, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+
+That’s all for this week. Have a great Easter weekend. 
+
+Cheers, Mark

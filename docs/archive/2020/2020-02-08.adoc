@@ -1,0 +1,175 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Analyzing .NET Dependencies, Coloring a Sudoku Graph, Christmas Messages Graph, Making Graph Algorithms ‘Clique’
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+This week saw the official release of Neo4j 4.0, which you can learn more about in https://neo4j.com/blog/neo4j-graph-database-4-0-ga-release/[Dr Jim Webbers's release post^], based on his https://youtu.be/AfhJcyys108?t=1550[NODES 2019 keynote^]. Jim and co also will be presenting a webinar on the 4.0 release on 26th February 2020, so don't forget to https://go.neo4j.com/Introducing-Our-Next-Gen-Graph-Database.html[register for that^].
+
+For this week's video we have Lju Lazarevic's presentation about versioning graphs from the NODES 2019 conference.
+
+We have the videos from the FOSDEM Graph Room, lots of articles about Neo4j 4.0's schema-based access control, and a Human Genes Graph.
+
+And finally, I created a learnt how to use a tool called Streamlit to build a single page web application around the UK Charts QuickGraph.
+
+Enjoy!
+
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Vigneswaren Krishnamoorthy
+
+This week's featured Neo4j Community member is Vigneswaren Krishnamoorthy, Product Manager at IFCA MSC BHD. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200207035629/this-week-in-neo4j-8-february-2020.jpg[name="Vigneswaren Krishnamoorthy"]
+
+Kassim (Vignes) is the founder of a graph-y new startup, http://www.tunjangjaya.com/[Tunjang Jaya], based out of Malaysia. He’s a https://neo4j.com/graphacademy/neo4j-certification[Neo4j Certified Developer] and a lover of graphs. 
+
+Kassim is passionate about connecting with other people in the Neo4j ecosystem. Last year, he participated in https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day[Global Graph Celebration Day] by hosting a local event. We just announced https://neo4j.com/blog/calling-all-nodes-join-us-for-global-graph-celebration-day-on-april-15-2020/?ref=social-blog[GGCD 2020] and his event in https://globalgraphcelebrationday.com[Kuala Lumpur, Malaysia is already listed]! :D 
+
+Not only does Kassim help grow and support the Neo4j community, he’s also open and looking for feedback and collaboration.  One of the projects he’s working on is an https://community.neo4j.com/t/greetings-from-tunjang-jaya-graftek-malaysia-hr-people-analytics-development/14131[HR People Analytics application], and he’s looking for developers who are interested and willing to share ideas on how to make it great! 
+
+Kassim, we’re so grateful to have you in our community! Thank you for being consistent and active in our graphy-ecosystem! 
+
+https://community.neo4j.com/u/vignes_k1/summary[Say hello to Kassim on the Neo4j Community site!, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: How to keep track of change - versioning approaches in Neo4j
+
+In this week's video from the NODES 2019 conference, Lju Lazarevic gives us a crash course on https://neo4j.com/online-summit/session/change-tracking-versioning-approaches-neo4j[approaches to versioning data in a graph^].
+
+youtube::Cm1yd8d7qv0[type={type}]
+
+In the talk Lju explains why we might want to version data, and then explores approaches to track  an object's state, relationship changes and omitted records. There's also an extended Q&A about 30 minutes in where Lju answers some interesting domain specific questions around versioning.
+
+
+[[features-2]]
+=== Schema-based access control in Neo4j 4.0
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200207025518/noun_access-control_995819.png" width="150px"  />
+</div>
+++++
+
+One of the new features in Neo4j 4.0 is schema based security, and we've got several blog posts covering different aspects of this functionality. 
+
+* Luanne Misquitta provides an example of how we could https://graphaware.com/neo4j/2020/02/06/multi-tenancy-neo4j.html[configure access for different users in a multi tenant setup^].
+
+* Bert Radke shows how restricting access to nodes with a certain label https://faboo.org/2020/01/schema-access-control/[changes the results that we get back from the shortest path algorithm^].
+
+* Rik Van Bruggen http://blog.bruggen.com/2020/01/securing-my-beergraph-with-neo4j-40.html[revisits his famous Beer Graph^] and makes it child proofed by restricting access to the alcohol percentage properties and relationships.
+
+https://neo4j.com/docs/operations-manual/current/authentication-authorization/introduction/[Read the docs, role="medium button"]
+
+[[features-3]]
+=== Human Gene Graph, Finding the longest path, Lisk Blockchain analysis
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200207050422/noun_genome_2892439-1.png" width="120px"  />
+</div>
+++++
+
+* Hongping Liang https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf[visualises over 40,000 human genes in Neo4j^], and then queries them by chromosome or chromosome regions.
+
+* I wrote a blog post showing how to https://markhneedham.com/blog/2020/01/29/neo4j-finding-longest-path/[find the longest path in a graph^], while trying to find out which player lost the most Australian Open Finals in a row.
+
+* Sinisa Drpa explains how to https://tagtaxa.com/getting-an-insight-of-blockchain-transactions-with-neo4j-graph-database/[import data from the Lisk blockchain into Neo4j^], and then explores blockchain transactions flow.
+
+* Akash Surwase shows how to https://www.opcito.com/blogs/backup-and-restore-neo4j-graph-database-using-ansible/[automate Neo4J database backup and restore using Ansible^].
+
+* Gerrit Meier announced the https://medium.com/neo4j/spring-data-neo4j-rx-beta-iii-79573a773584[third beta release of Spring Data Neo4j RX (SDN/RX)^], the shiny new version of SDN for Neo4j 4.0. 
+
+[[features-4]]
+=== FOSDEM Graph Systems and Algorithms devroom
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200207013411/fosdem800x400.jpg" width="200px"  />
+</div>
+++++
+
+FOSDEM is a free event for software developers to meet, share ideas and collaborate, and the 2020 version was held on the 1st and 2nd February 2020. 
+
+For the 8th year in a row there was a graph databases room, and the videos are now available. There are lots of interesting ones, including:
+
+* https://fosdem.org/2020/schedule/event/graph_neo4j_algos/[The Neo4j Graph Algorithms Library: An Overview^] 
+* https://fosdem.org/2020/schedule/event/graph_cypher_sharding/[Cypher enhancements for sharded and federated graph databases^]
+* https://fosdem.org/2020/schedule/event/graph_temporal_gradoop/[Temporal Graph Analytics with GRADOOP^]
+
+https://fosdem.org/2020/schedule/track/graph_systems_and_algorithms/[Watch all the videos, role="medium button"]
+
+[[features-5]]
+=== Creating an Interactive UK Official Charts Data App with Streamlit and Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200207013311/streamlit-neo4j-banner.png" width="150px"  />
+</div>
+++++
+
+I recently came across Streamlit, a tool that makes it easy to build data based single page web applications, and wanted to give it a try.
+
+The UK Charts QuickGraph gave me a perfect opportunity, so I created a Streamlit app that let me explore this dataset via various DataFrames and interactive charts.
+
+https://markhneedham.com/blog/2020/01/16/interactive-uk-charts-quickgraph-neo4j-streamlit/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/hellen[Kriminellen^]:
+
+tweet::1224623935721000960[type={type}]
+
+////
+
+* Vlad Batushkov 
+https://medium.com/neo4j/flights-search-application-with-neo4j-using-cypher-and-apoc-custom-procedures-part-2-401fd90bf5c4
+Flights Search Application with Neo4j —Using Cypher queries and APOC Custom Procedures (Part 2)
+
+https://neo4j.com/developer/multi-tenancy-worked-example/
+
+Neo4j: Enriching an existing graph by querying the Wikidata SPARQL API ·  Mark Needham
+https://markhneedham.com/blog/2020/02/04/neo4j-enriching-existing-graph-wikidata-sparql-api/ 
+
+
+https://maxdemarzi.com/2020/01/21/going-faster-in-2020/ 
+
+https://medium.com/neo4j/arrows-hacks-tricks-for-your-graph-models-and-diagrams-371ca2810c56 
+Arrows Hacks — tricks for your graph models and diagrams
+
+
+https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf
+Human Genes Graph
+
+
+
+
+* #Bioinformatics projects with public @neo4j databases, including @reactome and Hetionet by @dhimmel: https://graphdb-bio.com/projects-using-neo4j-1
+
+
+* https://github.com/trinitor/netstat2neo4j 
+
+////
+

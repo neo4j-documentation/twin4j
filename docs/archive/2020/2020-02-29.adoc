@@ -1,0 +1,249 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 29 Feb 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Reducing visualization complexity. BloodHound 3.0, Gene Regulation Graph Database, Pokemon Day, 4.0 Webinar, GraphTour Europe developer campfire talks
+
+[Body copy:]
+////
+
+Greetings graphistas!
+
+I’m taking on the newsletter batton from Jennifer this week whilst Mark Needham is enjoying his well-earned break. 
+
+In this week’s edition we learn from Jan Zek a powerful yet simple approach for reducing complexity when visualizing graph data. 
+
+Bloodhound 3.0 was recently released. We find out about all the new features, and how we might deploy it with Neo4j 4.0 on VM.
+
+A team from the Guangzhou Medical University share their Gene Regulation Graph Database platform.
+
+Pokemon Day is upon us! We check out Joe Deapeu’s latest blog post, and remind ourselves of Igor Zorani’s webinar
+
+We’ve got a copy of the Neo4j 4.0 all-star webinar in case you missed it. 
+
+Last but not least, we announce the developer campfire talks, running alongside the GraphTour London and Munich
+
+I hope you have a fabulous weekend!
+
+https://twitter.com/ellazal[Lju^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Jan Žák
+
+This week's featured community member is Jan Žák. For the last 4 years Jan works as a senior consultant at our partner GraphAware. He focuses especially on full stack web development, geospatial applications, computer security and graph visualization. Jan is a certified Neo4j professional and holds an MSc degree in Computer Security and a BSc degree in Software Engineering from Czech Technical University in Prague
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200228182717/twin4j-jan-zak.jpeg[name="Jan Žák"]
+
+Jan has been very active in the Neo4j community. He has written a link:https://graphaware.com/search/?q=jan%20zak[number of articles on graph visualization^] and given a number of talks on the topic, most recently at NODES 2019 as you can see below. Thanks a lot Jan for all your insightful contributions.
+
+https://twitter.com/zakjan[Follow Jan on Twitter!, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Challenges in knowledge graph visualization
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019^] conference, Jan Zak demonstrates a powerful way to reduce the https://neo4j.com/online-summit/session/challenges-knowledge-graph-visualization[complexity of visualizing^] graph data. 
+
+youtube::kmS_8Uq77tQ[type={type}]
+
+Using the example of knowledge graphs, Jan explains some of the challenges you can have with visualizing data, such as many nodes, or distinguishing between node types of different levels of importance. 
+
+He then introduces an elegant method based on APOC https://neo4j.com/docs/labs/apoc/current/virtual/[virtual relationships^] and https://neo4j.com/docs/labs/apoc/current/graph-querying/path-expander/[path expander^] procedures to reduce complexity of displayed data. 
+
+Whilst the focus is on knowledge graphs, this approach is equally valid in many other areas, such as hiding away complexity of networks, or grouping up individual products into groups.
+
+[[features-2]]
+=== BloodHound 3.0 is released
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190416124935/bloodhound-7.png" width="120px"  />
+</div>
+++++
+
+The latest version of BloodHound (3.0) was released recently. BloodHound uses graph theory to reveal hidden and often unintended relationships within an Active Directory environment. This is a powerful way to easily identify highly complex attack paths that might otherwise be impossible to recognize. 
+
+The latest version of BloodHound includes:
+
+* three new attack primitives
+* several performance improvements in the GUI
+* support for Neo4j 4.0
+
+Do check out Andy Robbins https://posts.specterops.io/introducing-bloodhound-3-0-c00e77ff0aa6[blog post^]!
+
+https://twitter.com/nemesis09[nemesis09^] has put together an excellent post on how to get BloodHound 3.0 up and running on a VM with Neo4j 4.0 and Ubuntu 18.0.4 LTE
+
+https://f4ble.wordpress.com/2020/02/25/bloodhound-vm-installation/[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Gene Regulation Graph Database (GREG)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200228072545/greg_20200228.jpg" width="120px"  />
+</div>
+++++
+
+A group at Guangzhou Medical University has developed a graph-based platform to study gene regulation.
+
+The http://www.moralab.science/GREG[Gene Regulation Graph Database^] (GREG) is a publicly available resource that allows users to visualize and explore interactions between DNA and RNA proteins as well as DNA - DNA interactions. 
+
+Being able to understand these interactions assist in the study of gene regulation. In their paper, Mei et al. also describe application examples of GREG such as exploring potential causes of chronic obstructive pulmonary disease.
+
+The web platform they have created combined information from multiple other tools and research from individual interaction databases.
+
+You can read their journal publication, https://academic.oup.com/database/article/doi/10.1093/database/baz162/5735477[GREG - studying transcriptional regulation using integrative graph databases^] to learn more about their research. Also, you can explore various interactions through their http://www.moralab.science/GREG/[web-based interface^].
+
+They are also keen to hear what you think! If you’d like to provide some feedback, you can join them on the community website.
+
+https://community.neo4j.com/t/greg-the-gene-regulation-graph-database/15136[Join the community, role="medium button"]
+
+
+[[features-4]]
+=== I want to be the very best, like no one ever was...
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200224111219/pokegraph.jpg" width="120px"  />
+</div>
+++++
+
+That’s right! This week saw Pokemon Day, with the famous game turning 24. We couldn’t possibly see this day go past without some sort of observance.
+
+My colleague Joe Depeau’s latest blog post talks us through modelling Pokemon based on their generation, abilities, types and moves. He then uses the imported data to explore the different properties of pokemon and their evolution paths. Last but not least, using weighting for each Pokemon how they fare against other Pokemon types to figure out the best team line up for battle!
+
+A quick reminder if you didn’t see it last year. Community member Igor Zorani showed us in an https://www.youtube.com/watch?v=052tqeB8zCk[online meetup^] a web scraper he built in .NET to get data from https://bulbapedia.bulbagarden.net/wiki/Main_Page[Bulbapedia^]. He talks us through his graph modelling decisions, and then shows us how to explore mega evolutions of Pokemon. 
+
+https://neo4j.com/blog/pokegraph-gotta-graph-em-all/[Read the blog post, role="medium button"]
+
+
+[[features-5]]
+=== 4.0 Webinar
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200228073441/whats-new-hero1.svg" width="150px"  />
+</div>
+++++
+
+Did you miss the https://go.neo4j.com/Introducing-Our-Next-Gen-Graph-Database.html[webinar^]? What webinar I hear you ask? 
+
+That webinar, the one with our CEO and co-founder, Emil Eifrem, along Chief Data Scientist Dr. Jim Webber, and Director of Product Management Ivan Zoratti forming the panel and CMO Lance Walter moderating.  The one where the audience were submitting their questions? Yes, that one. 
+
+The discussion during the session not only covered the various new 4.0 features and what they mean for users,  but also insight into how decisions are made on how features are selected and prioritised. 
+
+Don’t worry, you can catch-up with the recording right here, right now. Enjoy!
+
+youtube::L2KJJH52n5A[type={type}]
+
+[[features-6]]
+=== Developer campfire talks at GraphTour
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200228072553/graphtour_20200228.svg" width="150px"  />
+</div>
+++++
+
+https://neo4j.com/graphtour/[GraphTour^] Europe is in full swing. As a quick reminder, the following cities are left:
+
+* 3 March - Stockholm
+* 11 March - London
+* 17 March - Munich
+* 26 March - Paris
+* 31 March - Rome
+
+For those of you based in and around London and Munch, we have a special treat for you! Alongside the main event, there will be a series of 15-minute talks delivered by the Developer Relations team to get you up and running on the Neo4j ecosystem:
+
+* Walkthrough getting up and running with Neo4j Desktop
+* Reactive Database Connections with Neo4j Drivers
+* Graph Data Science with Neo4j Graph Algorithms
+* Superpowers for your Neo4j Project with the APOC Library
+* Improving your Developer Experience with Neo4j Graph Apps
+
+And in London Will Lyon will give a full-stack application development training with GRANDstack on March 12.
+
+https://neo4j.com/graphtour/[Register for GraphTour,role="medium button"]
+
+=== Tweet of the Week
+
+Shao Shuai has built a https://github.com/shao-shuai/birdview-patent-landscape[data pipeline^] for visualising citation relationships of all US patent data and he needs your feedback. Get involved!
+
+tweet::1232857410928177152[type={type}]
+
+
+////
+* Graph Data Science plugin with Examples
+https://towardsdatascience.com/introducing-the-neo4j-graph-data-science-plugin-with-examples-from-the-graph-algorithms-19b831f66f2
+
+* Composite Indexes in Neo4j 4.0 - pushing performance to the max
+https://maxdemarzi.com/2020/02/19/composite-indexes-in-neo4j-4-0/
+https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/twin4j-composite-indexes.jpg
+
+* #Bioinformatics projects with public @neo4j databases, including @reactome and Hetionet by @dhimmel: https://graphdb-bio.com/projects-using-neo4j-1
+
+* https://github.com/trinitor/netstat2neo4j 
+
+* Multi Tenant GraphQL with Neo4j
+https://blog.grandstack.io/multitenant-graphql-with-neo4j-4-0-4a1b2b4dada4 
+
+* Software platform dependency analysis with F# and Neo4j
+It's common for software platforms to consist of many deployed services that communicate with each other and connect to resources over the…
+https://chester.codes/software-platform-dependency-analysis-with-fsharp-and-neofourj/
+
+* https://posts.specterops.io/introducing-bloodhound-3-0-c00e77ff0aa6 - BloodHound 3.0
+
+* @itpsapinc
+Advantco Neo4j adapter for SAP PO http://bit.ly/2SLIDnS #itpsap
+https://twitter.com/itpsapinc/status/1229561679756718080
+
+* @MartinPreusse
+I wrote a tutorial on loading gene id mappings from @NCBI Gene and @ensembl to a @neo4j database with my #Python package #graphio: https://graphdb-bio.com/graphio-tutorial-idmapping 
+
+* Sylvain ROUSSY @SylvainRoussy
+Meet the grapes! Importing wine data into @neo4j  with the powerful of @Norconex  web crawler: https://neo4j.com/blog/importing-data-from-the-web-norconex-neo4j/
+
+@adamcowley
+#Neo4j 4.0 now makes it possible to build a SaaS company on top of Neo4j.  Here's how you can build a lightweight control panel to automate the process
+https://adamcowley.co.uk/neo4j/sass-control-panel-graph-app/ 
+
+@rvanbruggen
+Just before the weekend: after securing my #beergraph, I managed to separate administrative from investigative access in a #fraud graph as well - thanks to #neo4j 4.0's fine grained access control features. It's really easy and powerful - look at http://blog.bruggen.com/2020/02/securing-sample-fraud-graph-with-neo4j.html 
+
+@yow_conf
+If you missed @mesirii's #YOW19 talk on "How Graphs Help Investigative Journalist to Connect the Dots", you can watch it now... and many other talks from December's conference... on our Youtube channel
+https://twitter.com/yow_conf/status/1229601466874318859
+
+
+This week's featured Neo4j community member is Adam Cowley, Developer Relations Engineer at Neo4j.
+
+Adam joined the Neo4j Developer Relations team just last week, shifting over from Professional Services at Neo4j. Although, he’s new to the team - he’s not a newbie in graphs nor in contributing to the community. 
+
+Before Adam joined Neo4j in 2017, Adam was working as a web developer based in Swindon, UK. He has a decade of experience designing and developing websites, web applications, contact management systems and native software for a wide range of projects, from start-ups to International enterprise companies. Adam’s been active in the community since the beginning. Regularly contributing to https://github.com/adam-cowley[GitHub^] (check out his work on https://github.com/adam-cowley/neode[neode^] - Neo4j OGM for Node JS), writing blog posts, and speaking at conferences (including past https://graphconnect.com[GraphConnect^] conferences). 
+
+His passion and enthusiasm for giving back is what ultimately led him to Neo4j, and eventually full circle, to the DevRel team where our focus is the community.
+
+Adam, we’re so grateful to have you! Welcome to the team! 
+
+// PS. https://neo4j.com/careers[Neo4j is hiring^]!
+
+////
+
+
+

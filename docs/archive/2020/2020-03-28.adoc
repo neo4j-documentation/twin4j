@@ -1,0 +1,176 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+I'm back to take over the TWIN4j reins. Thanks to Jennifer, Will, and Lju for curating the weekly graph news in my absence. 
+
+In this week's video, Calin Constantinov shows us how to make graph patterns show themselves in various datasets.
+
+We had the launch of the Neo4j BI Connector, TasoX explores Windows Events, and Rik begins his journey into the world of supply chain management.
+
+And finally, several COVID-19 related projects have been created. Be sure to check those out, and if you have free time, I'm sure they'd appreciate any help you can give.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Siraj Munir
+
+This week's featured community member is Siraj Munir, Lecturer of Computer Science at PAF-Karachi Institute of Economics & Technology, and Data Scientist.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200327033858/this-week-in-neo4j-28-march-2020.jpg[name="Siraj Munir"]
+
+Siraj has been an advocate for graphs for quite a while now and has got involved in our community in almost every opportunity he’s had. He’s organized events in Karachi, Pakistan as part of https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day[Global Graph Celebration Day] events (in 2019 for the 1st ever GGCD and again this year), he’s part of our https://neo4j.com/speaker-program[Neo4j Speaker Program].
+
+He also submitted an awesome project for https://medium.com/neo4j/graphhackers-lets-unite-to-help-save-the-world-graphs4good-2020-fed53562b41f[Graphs4Good GraphHack]  - https://community.neo4j.com/t/knowledge-graph-to-the-rescue-covid-19/16201[Knowledge Graph to the Rescue]. We just did our kick-off this past Friday and https://docs.google.com/document/d/1v0MnwzCCPGRXRHVrx7EdnSlT34JXrwGzWgfE3aWn4ME/edit?usp=sharing[projects have been posted].
+
+It’s pretty apparent that Siraj feeds off the combination of learning and teaching, helping and sharing.  He even launched https://www.linkedin.com/in/nerd-s-lab-881243199[Nerd’s Lab] late last year, with a goal to “share knowledge and skills” and “link academia knowledge with industry ecosystem”. 
+
+Siraj, we’re so thankful to have you in our community! Thank you for being so passionate about helping others be better. You’re a true contributor and we admire your hard work!   
+
+https://www.linkedin.com/in/siraj-munir-2b59a7b5/[Connect with Siraj on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Making patterns show themselves
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019^] online conference, Calin Constantinov shows us https://neo4j.com/online-summit/session/making-pattern-show-themselves-investigation-social-network[how to make graph patterns show themselves^].
+
+youtube::2lC65ua8pDk[type={type}]
+
+In the talk Calin takes us through various datasets, including LinkedIn and the Facebook graph, and shows the insights that can be derived from each one.
+
+[[features-2]]
+=== Supply Chain Management with graphs: Part 1 - Data wrangling and import
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327015423/erp-supply_chain_management.png" width="120px"  />
+</div>
+++++
+
+Rik Van Bruggen has started writing a series of blog posts about supply chain management with graphs. 
+
+In part 1 Rik explains his search for an appropriate dataset and then takes us through the steps to import and clean up the data.
+
+https://blog.bruggen.com/2020/03/supply-chain-management-with-graphs.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Windows Events & Sysmon Visualization using Neo4j (part 1)
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327024011/windowsxp.jpg" width="120px"  />
+</div>
+++++
+
+TasoX has started writing a series of blog posts showing how to gain an in-depth understanding of Windows Events using graphs.
+
+In part 1 TasoX explains how to enable Windows Events Forwarding and describes the challenges he overcame while using the Neo4j Python driver to import XML data produced by Windows Event Viewer.
+
+https://medium.com/@pentesttas/windows-events-sysmon-visualization-using-neo4j-part-1-529ca5ab4593[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== COVID-19 Round-up
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327023334/Covid-19-Image.jpg" width="150px"  />
+</div>
+++++
+
+The Neo4j community has been busy making sense of the COVID-19 pandemic data using graphs. Below are some of the projects that I came across this week:
+
+* https://github.com/tracemission[tracemission^] is a project submission from the https://twitter.com/WirvsVirusHack[WirvsVirusHackathon^]. It lets users log their presence during specific time slots at a location. If a virus infected person visited the location at the same time, Tracemission supplies means to contact individuals potentially at risk of an infection.
+
+* The Upcode Academy have created a https://co.vid19.sg/cases[graph-based data visualization^] of cases in Singapore, using Neo4j.
+
+* Alex Law has been https://medium.com/neo4j/covid-19-with-graphxr-and-neo4j-16ea37686ca5[compiling cases caused by cross-country travel^] from the available reports to create a travel log for COVID-19. Alex then uses Neo4j and GraphXR to detect the hubs that have spread the virus and to find out how the virus first reached different locations.
+
+* https://covidgraph.github.io/[CovidGraph^] is a project working on the integration of publications and molecular data on COVID-19 in a Neo4j graph.
+
+[[features-5]]
+=== Getting Started with the Neo4j BI Connector
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327015806/2020-03-27_08-57-55.png" width="120px"  />
+</div>
+++++
+
+This week David Allen and Logan Smith announced the release of the Neo4j BI Connector, a tool that delivers direct access to Neo4j graph data from business intelligence (BI) tools.
+
+The BI Connector lets users write SQL queries from BI tools like Tableau, Looker, TIBCO Spotfire Server, and Microstrategy. These queries are translated to Cypher queries, executed against a Neo4j database, and then return results in tabular form.
+
+If you have any questions or feedback, please send David and Logan an email at ecosystem@neo4j.com.
+
+https://neo4j.com/blog/getting-started-with-the-neo4j-bi-connector/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/drlynnchiu[Lynn Chiu^], who's been using Neo4j to track Coronavirus cases in Taiwan:
+
+tweet::1242561540273963016[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+Rik Van Bruggen @rvanbruggen
+Part 2/3 of my experiments with #neo4j in a really cool #supplychainmanagement (#scm) domain: https://blog.bruggen.com/2020/03/supply-chain-management-with-graphs_25.html - really love how easy it is to work with this data in #neo4j.
+
+Part 3/3 of my experiments with #supplychainmanagement (#scm) in #neo4j: applying some #graphalgo love (betweenness, pathfinding, ...) to a supply chain can be very interesting. See https://blog.bruggen.com/2020/03/supply-chain-management-with-graphs_27.html
+
+* Need a Neo4j causal cluster in your integration tests?
+I got you covered: https://github.com/michael-simons/junit-jupiter-causal-cluster-testcontainer-extension
+Based on @junitteam Jupiter and the amazing @testcontainers project.
+
+* William Lyon @lyonwj
+[new blog post] GraphQL ResolveInfo Deep Dive
+Building efficient #GraphQL resolvers by generating database queries.
+Uses examples from the @neo4j GraphQL integrations, but the concepts apply to any GraphQL API that fetches data from a database.
+https://blog.grandstack.io/graphql-resolveinfo-deep-dive-1b3144075866
+
+* To give you a head start for app development with
+#Java, #Python #DotNet #JavaScript #Go #GraphQL #SpringBoot and Neo4j
+the Neo4j Aura team updated the "how-to-connect" page.
+https://console.neo4j.io/#how-to-connect
+If you're logged in, you get database specifics injected. Check it out.
+
+
+
+
+
+* Michael Simons @rotnroll666
+Neo4j, reactive database access, JDK 14 records: https://github.com/michael-simons/neo4j-examples-record-movies
+Even relationship mappings work ootb with records.
+Thanks @odrotbohm for the Spring record support.
+
+Windows Events & Sysmon Visualization using Neo4j (part 2)
+https://medium.com/@pentesttas/windows-events-sysmon-visualization-using-neo4j-part-2-d4c2fd3c9413
+
+
+////

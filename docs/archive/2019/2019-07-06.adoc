@@ -1,0 +1,134 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Anurag Tandon has started a series of videos on Neo4j Bloom, the graph visualisation too, and Adam Cowley shows us how to text analytics with Neo4j and Cypher.
+
+We also learn about the technology behind the upcoming Neo4j Cloud, and there are new project pages for the recently launched Neo4j Labs.
+
+[[featured-community-member]]
+=== Featured Community Members: Jennifer Reif
+
+Our featured community members this week is https://twitter.com/jmhreif?lang=en[Jennifer Reif^], one of my colleagues on the Developer Relations team at Neo4j.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190704055455/this-week-in-neo4j-6-july-2019.jpg[name="Jennifer Reif"]
+
+Jennifer started working at Neo4j in February 2018, and went straight in at the deep end, presenting a training session on graph modeling and a talk at Women Who Code London in her 2nd week. 
+
+Since then, Jennifer has travelled all over, teaching people about graphs in Los Angeles, Montreal, Kansas City, Dallas, London again, Stockholm, Chicago, and Toronto, to name just a few. If you've attended a Neo4j training session in the US in the last year, there's a good chance Jennifer taught you!
+
+Along with all the talks, Jennifer has also done an overhaul of the https://neo4j.com/developer/get-started/[Neo4j Developer pages^], which act as the starting point for new users of Neo4j, and also wrote the popular https://medium.com/neo4j/create-a-data-marvel-develop-a-full-stack-application-with-spring-and-neo4j-part-2-12186b929cb2[Marvel blog series^].
+
+On behalf of the Neo4j community, thanks for all your work Jennifer!
+
+https://twitter.com/jmhreif?lang=en[Follow Jennifer on twitter, role="medium button"]
+
+[[features-1]]
+=== Perspectives in Bloom (Video #1 in Bloom Series)
+
+We didn't have a https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] this week, but https://www.linkedin.com/in/tandonanurag[Anurag Tandon^] has started a series of videos on Neo4j Bloom, the graph visualisation tool. 
+
+youtube::GV3WCEsHRYI[type={type}]
+
+In the first video Anurag explains the perspectives features, shows some sample perspectives, and takes us on a guided tour of the feature on a sample dataset. 
+
+[[features-2]]
+=== Calculating TF-IDF scores in Neo4j with Cypher
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190704033952/Screenshot-2019-04-06-at-11.53.211.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/adamcowley?lang=en[Adam Cowley^] wrote a blog post showing how to extract useful information from text documents using the TF/IDF algorithm from a Cypher query.
+
+https://www.adamcowley.co.uk/neo4j/calculating-tf-idf-score-cypher/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Learning about research connectivity using Neo4j and W3C annotations.
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190704034718/Selection_817.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/sjGoring[Simon Goring^] shared the slides from his talk on https://github.com/throughput-ec[The Throughput Project^]. 
+
+Simon shows how Neo4j has been used to build a graph from W3C annotations to learn more about research connectivity.
+
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view[Download the slides, role="medium button"]
+
+[[features-4]]
+=== Choosing Kubernetes: Managing Risk in Cloud Infrastructure
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190704035439/Selection_818.png" width="150px"  />
+</div>
+++++
+
+InfoQ shared the slides and video from Ben Butler Cole's QCon London 2019 presentation Choosing Kubernetes: Managing Risk in Cloud Infrastructure.
+
+In the talk Ben tells the story of the upcoming Neo4j Cloud product, covering both the product and the implementation, in terms of the decisions they made about how to manage risk.
+
+https://www.infoq.com/presentations/neo4j-kubernetes[Watch the video, role="medium button"]
+
+[[features-5]]
+=== New Pages for Neo4j Labs projects
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190704033514/Selection_816.png" width="200px"  />
+</div>
+++++
+
+A few months ago we launched Neo4j Labs,  a one-stop shop of solution offerings that provide fertile ground for innovation, while allowing us to iterate quickly and provide high-value tooling for your development work.
+
+Michael Hunger has created pages for each of the projects, providing an overview of the project, as well as links to related videos and articles. 
+
+https://neo4j.com/labs/[Learn about Neo4j Labs Projects, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/mdavidallen[David Allen^]:
+
+tweet::1146124982696730624[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+
+
+////

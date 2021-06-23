@@ -1,0 +1,374 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 4 August 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have Deep Feature Learning for Graphs with the DeepGL algorithm, Decision Trees, Customer Journey Analytics, Data Vault in Neo4j, the GA of Neo4j-OGM 3.1.3, a fascinating post about NBA champions, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Reshama Shaikh 
+
+This week’s featured community member is https://twitter.com/reshamas[Reshama Shaikh^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180928020526/this-week-in-neo4j-29-september-2018.jpg[name="Reshama Shaikh"]
+
+Reshama is a bio statistician and data scientist. She is also a organizer of the meetup groups Women in Machine Learning and https://www.meetup.com/NYC-Women-in-Machine-Learning-Data-Science/)[Data Science NYC^] and the https://www.meetup.com/NYC-PyLadies/[NYC PyLadies^]
+
+We met Reshama last year at GraphConnect when we hosted a https://www.meetup.com/NYC-Women-in-Machine-Learning-Data-Science/events/244032981/[Women in Data Science meetup together^]. This year, Reshama attended the conference, participated in a panel on _‘Welcoming Diversity’_ for our http://bit.ly/ecosystem-summit[Ecosystem Summit^], and co-hosted http://bit.ly/graphhack2018[GraphHack: Technology Buzz Word Bingo!^] 
+
+Reshama has been a great supporter of the Neo4j community and we grateful for all that she has done. Reshama also wrote a great blog on https://reshamas.github.io/graphs-are-the-next-frontier-in-data-science[her GraphConnect experience this year!^]
+
+On behalf of the Neo4j community, thanks for all your work Reshama!
+
+link:https://twitter.com/reshamas[Thank Reshama for her work, role="medium button"]
+
+[[features-1]]
+=== Graph-Based Customer Journey Analytics with Neo4j
+
+On Thursday https://twitter.com/BarrasaDV[Jesús Barrasa^] presented a webinar, in which he showed how Neo4j can be used for Customer Journey Analytics.
+
+youtube::Rlh9PkHinAs[type={type}]
+
+Jesus shows how we can explore our customer data and execute high level churn analysis as well as testing basic hypotheses using a combination of the Cypher query language and https://neo4j.com/bloom/[Neo4j Bloom^] visualization tool. 
+
+If you want to see a more extensive worked example of this technique, Adam Cowley wrote a post a few months ago showing how to https://www.adamcowley.co.uk/neo4j/importing-google-analytics-to-neo4j-via-bigquery-using-apoc-jdbc/[analyse Google Analytics data with Neo4j^].
+
+
+[[features-2]]
+=== Decision Trees in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180928024428/2018-09-28_10-44-23.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/maxdemarzi[Max De Marzi^] shared the slides from his GraphConnect talk - Decision Trees in Neo4j, Building dynamic expert systems and rules engines.
+
+In the talk Max shows how to build a dynamic rules engine that's able to determine whether a person should be allowed to enter a bar or not.
+
+Max achieves this using https://neo4j.com/docs/java-reference/current/tutorial-traversal/[Neo4j's Traversal framework^] - an API that gives you very fine grained control over graph traversals. It's all then neatly packaged in a user defined procedure.
+
+You can read more about Max's approach in a couple of blog posts he wrote in early 2018:
+
+* https://maxdemarzi.com/2018/01/14/dynamic-rule-based-decision-trees-in-neo4j/[Dynamic Rule Based Decision Trees in Neo4j^]
+
+* https://maxdemarzi.com/2018/01/26/dynamic-rule-based-decision-trees-in-neo4j-part-2/[Dynamic Rule Based Decision Trees in Neo4j – Part 2^]
+
+link:https://www.slideshare.net/maxdemarzi/decision-trees-in-neo4j[Download the slides, role="medium button"]
+
+[[articles-1]]
+=== Data Vault on Neo4j, SDN Release, GraphQL on CodeSandbox Containers
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180928032004/DV_vs_Graph.jpg" width="150px"  />
+</div>
+++++
+
+* https://twitter.com/Loguteva[Kate Loguteva^] has written a blog post showing how to http://optimalbi.com/blog/2018/09/25/data-vault-on-graph-database/[implement Data Vault (a methodology for building data warehouses) in Neo4j^].
+
+* https://twitter.com/rotnroll666[Michael Simons^] has written a blog post titled https://medium.com/neo4j/spring-data-lovelace-neo4j-ogm-3-1-3-went-ga-36614b60c889[Spring Data Lovelace & Neo4j-OGM 3.1.3 went GA^]. In the post Michael goes through the new features in Neo4j-OGM, including an improved loading mechanism, better handling of class hierarchies, and nested property filter support. He also describes new features in Spring Data Neo4j 5.1 Lovelace, such as the introduction of Persistence constructors and auditing support. 
+
+* https://twitter.com/lyonwj[Will Lyon^] https://codesandbox.io/s/m56625lz8x[created a GraphQL server with Apollo^] using the brand new https://hackernoon.com/codesandbox-containers-5864a8f26715[CodeSandbox Containers^]. Will's example server uses https://github.com/neo4j-graphql/neo4j-graphql-js[neo4j-graphql-js^] to generate database queries from GraphQL type definitions. 
+
+[[features-3]]
+=== DeepGL on Neo4j - Deep Feature Learning for Graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180928033536/2018-09-28_11-35-31.png" width="200px"  />
+</div>
+++++
+
+We've heard a lot of interest in running graph embedding algorithms on Neo4j and over the last few months https://uk.linkedin.com/in/pete-meltzer-400607148[Pete Meltzer^] and I have written a user defined procedure that implements the https://arxiv.org/abs/1704.08829[DeepGL^] algorithm. 
+
+One of the things we liked about this algorithm is that it's designed to keep memory usage low and also returns the names of the features that it comes up with, which is helpful for model understanding. 
+
+We're using the https://deeplearning4j.org/docs/latest/nd4j-overview[nd4j^] library to do matrix calculations and Pete spent a lot of time working out how to fine tune our use of that library so big thanks to him for that!
+
+You can download the code for the algorithm from our experimental https://github.com/neo4j-graph-analytics/ml-models/releases/tag/1.0.2[ml-models^] GitHub repository.
+
+We'd love to hear if the algorithm is useful as part of your machine learning workflow, so let us know how you get on by sending an email to devrel@neo4j.com or p.meltzer@braintree.com. 
+
+link:https://medium.com/neo4j/deepgl-on-neo4j-b27e8c64190f[Read the blog post, role="medium button"]
+
+[[articles-2]]
+=== Teammates of Champions, Causal Cluster on AWS, Graphs for Software Analytics
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180928041203/2018-09-28_12-11-55.png" width="200px"  />
+</div>
+++++
+
+* I came across a fascinating blog post written by https://twitter.com/atseajournal[Erik Germani^] looking at the https://atseajournal.com/nba/shaq-bacon/[teammates of NBA champions^]. Erik observes that since 1983, every NBA champion has featured a player who was on the same team as Shaquille O'Neal at some point in their career. He then uses Neo4j to find other players who have similarly long streaks of being teammates with the champions. 
+
+* Neo4j 3.4.7 enterprise causal cluster update is https://aws.amazon.com/marketplace/pp/B07D441G55[live on AWS Marketplace^]. WIth just a few clicks and under five minutes you can get a graph cluster up and running.
+
+* The slides of the paper https://www.slideshare.net/RichardMller12/towards-an-open-source-stack-to-create-a-unified-data-source-for-software-analysis-and-visualization[Towards an Open Source Stack to Create a Unified Data Source for Software Analysis and Visualization^] that https://www.twitter.com/rimllr[Richard Müller^], https://www.twitter.com/dirkmahler[Dirk Mahler^], https://www.twitter.com/mesirii[Michael Hunger^], https://www.twitter.com/jensnerche[Jens Nerche^] and https://twitter.com/feststelltaste?lang=en-gb[Markus Harrer^] presented at https://twitter.com/ieeevissoft?lang=en[IEEE Working Conference on Software Visualization^] are now available.
+
+* jQAssistant have launched the https://jqassistant.org/the-jqassistant-dashboard/[JQAssistant Dashboard^], which was recently presented at as presented at https://twitter.com/ieeevissoft?lang=en[IEEE Working Conference on Software Visualization^]. This dashboard allows Interactive visualization of software structures and metrics.
+
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group
+
+| October 4th 2018 | https://www.meetup.com/graphdb-belgium/events/255018635/[GraphTalk Brussels] | https://www.meetup.com/graphdb-belgium/[Graph Database - Brussels^] 
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/AnthonyJClink[Anthony J Clink^]:
+
+tweet::1043605230028386304[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+NEXT WEEK:
+
+https://info.michael-simons.eu/2018/09/25/validate-nested-transaction-settings-with-spring-and-spring-boot/
+Validate nested Transaction settings with Spring and Spring Boot (applicable to JPA, Neo4j and others)
+
+
+[[features-3]]
+=== Talking Kotlin: Michael Hunger
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="150px"  />
+</div>
+++++
+
+
+
+link:http://talkingkotlin.com/neo4j-and-more-with-michael-hunger/[Read the show notes, role="medium button"]
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/500703675&amp;color=ff5500"></iframe>
+++++
+
+
+[[articles-2]]
+=== Graph Theory & Predictive Modeling, Bookmarking in Graphileon, S3 -> Apache Spark -> Neo4j
+
+* something
+
+
+[[articles-1]]
+=== Bolt Driver for Angular, Neo4j on CentOS, Heavyweight Boxing Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180824140701/1_FrTrTgWQ2AV37hG-DTNGdw.png" width="150px"  />
+</div>
+++++
+
+
+[[features-2]]
+=== ESCO in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180824133502/Screen-Shot-2018-08-23-at-13.19.02.png" width="150px"  />
+</div>
+++++
+
+abc
+
+link:https://blog.bruggen.com/2018/08/esco-database-in-neo4j-skills.html[Read the blog post, role="medium button"]
+
+
+[[new-community-site]]
+=== New Neo4j Community Site & Forum
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180824034430/download-8.jpeg" width="150px"  />
+</div>
+++++
+
+
+[[articles-2]]
+=== Building an asset tracker, Piping data into Neo4j, Querying with Neo4j OGM 
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180817013819/1_FrQIV8ZCfq65YHMjWdKQJg.jpeg" width="150px"  />
+</div>
+++++
+
+*abc
+
+
+
+[[features-3]]
+=== Loading Graph Data for An Object Graph Mapper or GraphQL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180817012612/1_8fXDuFXn0BDok6_gA7EtTg.jpeg" width="150px"  />
+</div>
+++++
+
+abc
+
+link:https://medium.com/neo4j/loading-graph-data-for-an-object-graph-mapper-or-graphql-5103b1a8b66e[Read the blog post, role="medium button"]
+
+
+
+
+Lju takes us through a worked example of a person working in a organisation with a complex hierarchy, and shows how we can use a graph to determine what resources the person should have access to. Lju finishes the talk by going through some case studies of Neo4j customers who are using graphs to solve these types of problems.
+
+* https://neo4j.com/blog/congratulations-cerved-larus-big-data-analytics-award-digital360/
+Congrats to Cerved and LARUS for Winning the Big Data Analytics Award from Digital360
+
+* https://github.com/ezrac/POLAR/blob/master/README.md
+
+
+
+[[behance-adobe]]
+=== Moving Adobe Behance's activity feed from Cassandra -> Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720064210/belogo-social-posts-default.png" width="100px"  />
+</div>
+++++
+
+….
+
+link:http://www.odbms.org/blog/2018/07/on-using-graph-database-technology-at-behance-interview-with-david-fox[Read the full interview, role="medium button"]
+
+=== Neo4j Launches Commercial Kubernetes Application on GCP Marketplace
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720053438/apple-icon.png" width="100px"  />
+</div>
+++++
+
+….
+
+[[online-meetup]]
+=== Online Meetup: Meta-exp
+
+youtube::6aBsPquK-kg[type={type}]
+
+[[golang]]
+=== First alpha of Go Neo4j driver
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180720072418/1__XgWKTM2vRHQrRUlaMMZCw.jpeg" width="100px"  />
+</div>
+++++
+
+meta exp
+
+
+youtube::6aBsPquK-kg[type={type}]
+
+link:https://medium.com/neo4j/neo4j-drivers-are-go-9697baf4d116[Learn about the Neo4j Go Driver, role="medium button"]
+
+[[apoc-series]]
+=== Creating Nodes and Relationships Dynamically with APOC 
+
+Creating nodes and relationships with Cypher is really straightforward. It only gets tricky when you have labels, relationship-types or property-keys that are driven by data and dynamic.
+
+youtube::KsAb8QHClNg[type={type}]
+
+The Cypher planner only works with static tokens and in this video https://twitter.com/mesirii[Michael^] shows how APOC procedures come to the rescue here for creating, merging and updating nodes and relationships with dynamic data coming from user provided strings or lists.
+
+link:https://www.youtube.com/watch?v=V1DTBjetIfk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=1[Watch the whole APOC series, role="medium button"]
+
+[[apoc-youtube]]
+=== APOC YouTube Series: Load JSON, Load JDBC, Bulk loading data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629061434/apoc-neo4j-user-defined-procedures1.gif" width="120px"  />
+</div>
+++++
+
+This week https://twitter.com/mesirii[Michael^] released 4 more videos in the Neo4j APOC YouTube series:
+
+* https://www.youtube.com/watch?v=yEN6TCL8WGk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4&t=0s[Exploring Neo4j Database Metadata in APOC (#3)^]
+
+* https://www.youtube.com/watch?v=M1P1IlQdb5M&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4[Loading Data from JSON Web APIs into Neo4j with apoc.load.json (#4)^]
+
+* https://www.youtube.com/watch?v=e8UfOHJngQA&index=5&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Load Data from Relational DBs with JDBC and APOC (#5)^]
+
+* https://www.youtube.com/watch?v=t1Nr5C5TAYs&index=6&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Efficiently Updating and Inserting Data With apoc.periodic.iterate (#6)^] 
+
+You can find a list of all the videos so far in https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[the Neo4j APOC Utility Library HowTo Series playlist^].
+
+[[knowledge-base]]
+=== How deletes work in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+This week from the https://neo4j.com/developer/kb/[Neo4j Knowledge base^] we have …
+
+[[european-roads-google-analytics-tibco-spitfire]]
+=== European road graph, Google Analytics -> Neo4j, TIBCO Spitfire
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713060902/A%CC%8ArhusE3-A101968.07.27.jpg" width="100px"  />
+</div>
+++++
+
+[[ml-models]]
+=== Graphs and ML: Remembering Models
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180713072117/1_c-wlReFlN_WRaz9KS9yRxA.jpeg" width="150px"  />
+</div>
+++++
+
+Last week https://twitter.com/ML_auren[Lauren^] wrote an article explaining the linear regression procedures she added for Neo4j, and this week she's https://medium.com/neo4j/a-developers-look-ml-models-in-neo4j-7d4cbacb320c[written an article^] explaining some of the internals.
+
+Lauren explains her design decisions and looks at the advantages and disadvantages of different approaches. Lauren and https://twitter.com/mdavidallen[David Allen^] also have https://twitter.com/ML_auren/status/1017522612316983296[an interesting discussion on twitter^] about using Neo4j as a master data solution for machine learning systems.
+
+
+////

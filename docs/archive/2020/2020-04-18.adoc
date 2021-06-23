@@ -1,0 +1,157 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Joe Depeau explains how graph algorithms are used in banking.
+
+Gerrit Meier launches Spring Data Neo4j⚡RX, Inzamam ul Haque optimises Cypher queries, and Max De Marzi builds a Multi-Level-Marketing program.
+
+And finally, Karin Wolok runs the rule over the projects submitted for this year's Graphs4Good GraphHack COVID-19 edition.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Gerrit Meier
+
+This week's featured community member is Gerrit Meier, engineer in the Neo4j Drivers team, where he works on Spring Data Neo4j, alongside Michael Simons.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200417020733/this-week-in-neo4j-18-april-2020.jpg[name="Steven Mogg"]
+
+This week they released the brand new Spring Data Neo4j RX 1.0 GA, which utilizes the new reactive driver architecture in Neo4j. You can read more about that below.
+
+Before joining Neo4j, Gerrit worked in consulting where he gained a lot of experience with real world Java application development for large customers.
+
+Gerrit helps the Neo4j user community in a myriad of ways: giving https://neo4j.com/online-summit/session/spring-data-neo4j-reactive-sdn-rx[talks at conferences like NODES 2019^], writing numerous https://medium.com/@gerrit.meier[articles^], and helping users on the users' slack and the https://community.neo4j.com/c/drivers-stacks/spring-data-neo4j-ogm/30[Neo4j community site^]. 
+
+Thank you so much, Gerrit for all your enthusiasm and support.
+
+https://twitter.com/meistermeier[Follow Gerrit on Twitter, role="medium button"]
+
+[[features-1]]
+=== How Graph Algorithms Answer your Business Questions in Banking and Beyond
+
+This week's video is https://twitter.com/joedepeau?lang=en[Joe Depeau^]'s recent webinar where he showed how graph algorithms are used in banking.
+
+youtube::LvomhcjYjIY[type={type}]
+
+In the talk Joe explains how to use the Graph Data Science Library's PageRank, Weakly Connected Components, and Node Similarity algorithms to explore a fraud graph. 
+
+And if you enjoyed this presentation, don't forget to register for the https://neo4j.com/connections/graph-data-science/[Connections: Graph Data Science^] online conference on 28th April, where Joe and friends will be showing how to use graph analytics to make sense of your structured data.
+
+[[features-2]]
+=== Spring Data Neo4j⚡RX released into the wild
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417013418/springdata-1.png" width="150px"  />
+</div>
+++++
+
+This week Gerrit Meier, our featured community member, announced the launch of Spring Data Neo4j RX 1.0. 
+
+Spring Data Neo4j⚡RX is the successor to Spring Data Neo4j + Neo4j-OGM, and is the go to library for building Spring based graph apps.
+
+In the release post Gerritt explains some of the main features of the new library, including:
+
+* An improved CypherDSL to help build type safe Cypher queries
+* Optimistic locking to avoid simultaneous modification of entities
+* Support for adding primary and secondary labels to nodes
+
+https://medium.com/neo4j/spring-data-neo4j-rx-released-into-the-wild-f1473951f91d[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Check Out Some of This Year’s Graphs4Good GraphHack Projects
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180917114134/graphs4good.jpg" width="200px"  />
+</div>
+++++
+
+Over the last few weeks https://twitter.com/askkerush[Karin Wolok^] has been hosting the Graphs4Good GraphHack COVID-19 edition, which came to its conclusion this week.
+
+In a wrap up blog post, Karin covers some of this year's projects, including:
+
+* Exposure Tracker - a crowd-sourced contact tracing app
+* Project Domino - a real time knowledge graph of COVID-19 related posts on twitter
+* Epidemic Simulator - a custom coded simulation of the spread of COVID-19 via social connections
+
+https://neo4j.com/blog/2020-graphs4good-graphhack-projects/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Optimising Cypher queries, yFiles Tips and Tricks, Drug Development with Bloom
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Inzamam ul Haque shares https://inzamam.dev/optimization-essentials-for-your-neo4j-cypher-queries[tips for optimising your Cypher queries^].
+
+* The Live Data Concepts blog explains how to https://medium.com/@LiveDataConcept/drug-development-knowledge-graph-insights-using-visual-and-interactive-cues-df1707b5e039[use Neo4j Bloom to explore a drug development knowledge graph^].  
+
+* In a recent webinar, we learn tips and tricks for https://vimeo.com/yworks/yfiles-and-neo4j[visualising a Neo4j database using yFiles^]. 
+
+
+[[features-5]]
+=== Graphs and Pyramids in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417033441/pyramids.jpg" width="200px"  />
+</div>
+++++
+
+In Max De Marzi's latest blog post he explains how graphs can be used in Multi-Level-Marketing programs. 
+
+The post is based on a version of Twitter where users pay in coins to post messages and receive coins if a post is liked or replied to. Users can also post about and sell their products directly on the platform. Other users can then create their own posts promoting that product, and take a % of the product sale price.
+
+Max shows how we would model this scenario using a graph and then work out the amount of commission due to each user for a product sale. A truly innovative use of graphs!
+
+http://maxdemarzi.com/2020/04/09/graphs-and-pyramids/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Astayonix[Jessica Burns^], who's been dreaming about graphs!
+
+tweet::1250847836515729409[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+@maxdemarzi
+Updating your @neo4j 3.x Unmanaged Extensions to 4.x http://maxdemarzi.com/2020/04/06/updating-your-neo4j-3-x-unmanaged-extensions-to-4-x/ https://pbs.twimg.com/media/EU7LNvJWoAEWqhn.png
+
+Lup Yuen Lee 李立源 @MisterTechBlog
+#Neo4j Metadata for Cultural Artifacts...
+"A Semantically Annotated JSON Metadata Structure For Open Linked Cultural Data In Neo4j"
+https://dl.acm.org/doi/pdf/10.1145/3368640.3368659 
+
+////

@@ -1,0 +1,135 @@
+﻿We'll clarify more points on this template each week, but for now, all red text indicates where we'd need to change or update the item each week
+
+[Keywords/Tags:]
+Wordpress, jqassistant, pandas, Python, RDBMS, 
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 18 March 2017, including projects around 
+
+Wordpress
+
+[Primary Image File Name:]
+this-week-neo4j-18-mar-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 18 March 2017
+
+[Headline:]
+This Week in Neo4j – 18 March 2017
+
+[Body copy:]
+Welcome to this week in Neo4j.<br /><br />
+
+This week we’ve got ...
+
+<h3>Heading</h3><br />
+
+<div style="text-align: center;"></div>
+[[Insert Image here]]
+<p style="font-size: .8em; line-height: 1.5em;" align="center"><strong>Image text</strong></p>
+
+
+<div style="text-align: center;"></div>
+[[Insert Image here]]
+<p style="font-size: .8em; line-height: 1.5em;" align="center"><strong>Image text</strong></p>
+	
+
+<h3>Wordpress recommendation engine</h3><br />
+
+Adam Cowley - https://twitter.com/adamcowley has been busy this week building a Neo4j based recommendation engine for Wordpress https://github.com/adam-cowley/neo4j-wordpress . <br /><br />
+
+You can follow his work in a 3 part blog series:<br /><br />
+
+<ul><ul>
+
+
+<li>Part 1: Data Modelling
+http://www.adamcowley.co.uk/neo4j/wordpress-recommendations-neo4j-part-1-data-modelling/
+</li>
+
+<li>
+Part 2: Content Based Recommendations http://www.adamcowley.co.uk/neo4j/wordpress-recommendations-with-neo4j-part-2-content-based/
+</li>
+
+<li>
+Part 3: Collaborative Filtering http://www.adamcowley.co.uk/neo4j/wordpress-recommendations-neo4j-part-3-collaborative-filtering/
+</li>
+
+</ul></ul>
+
+Markus Harrer - https://twitter.com/feststelltastehas written another couple of interesting blog posts. In the first he shows how to combine neo4j and Python’s pandas library http://pandas.pydata.org/ to find the top committers in a github repository https://www.feststelltaste.de/committer-distribution/ . There’s lots of data wrangling and cleansing along the way.   
+
+In his second post Markus summarises his experiences working with jQAssistant https://www.feststelltaste.de/my-experiences-with-jqassistant-so-far/ . It’s a pretty good resource for all things software analytics. Michael Hunger also has a blog post from a few years ago where he shows how to use jQAssistant and other OSS tools http://jexp.de/blog/2014/06/geekout-software-analytics-with-graphs/ 
+
+Ryan Boyd wrote a blog post about moving RDBMS data into the graph  - http://www.developeradvocate.com/2017/03/rdbms-to-graph-database/ using the apoc.load.jdbc procedure. Ryan also presented a webinar on this topic late last week: <br /><br />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JaATpaGDNh4" frameborder="0" allowfullscreen></iframe>
+
+Ben Rund  wrote an article The Good, The Bad, and the Hype about Graph Databases for MDM
+https://upside.tdwi.org/articles/2017/03/14/good-bad-and-hype-about-graph-databases-for-mdm.aspx in which
+
+Building social network with Neo4j and Python - Andrii Soldatenko
+https://www.youtube.com/watch?v=hDuy8Qj6Q-k
+
+I missed an excellent post by Romain Thalineau where he shows how to monitor the French Presidential Election on Twitter using Python and Neo4j https://medium.freecodecamp.com/monitoring-the-french-presidential-election-on-twitter-with-python-6a2a9310e6f4#.8slfi8pmv 
+
+
+
+This week I decided to do some exploration of Neo4j projects on github that haven’t necessarily surface on twitter. I queried the Neo4j community graph https://github.com/community-graph  to find the most recent projects. 
+
+From the old school. Visual Basic and Neo4j! https://github.com/Kmahmoudi/neo4j_visual_basic 
+
+Neo4j and the Twitch API
+https://github.com/AlfredDobradi/twitch-graph
+https://dev.twitch.tv/ 
+
+Nathan Danielsen - Loading US FEC 2016 Data into Neo4j
+https://github.com/ndanielsen/fec-2016-neo4j 
+
+
+Gert Sallaerts https://github.com/Gertt created neo4j-retried
+https://github.com/ambassify/neo4j-retried which allows the user to automatically retry queries and handle DeadlockDetected exceptions more cleanly. 
+
+Tom Shafer https://github.com/tomshafer created neo4j-db-manager https://github.com/tomshafer/neo4j-db-manager , a neat little tool for working with multiple local databases.  
+
+Michael Hunger twitter fire hose
+https://github.com/neo4j-examples/neo4j-twitter-stream
+
+
+Seb Insua - graphviz-config-template
+https://github.com/sebinsua/graphviz-config-template/commits/master
+Converts dot https://en.wikipedia.org/wiki/DOT_(graph_description_language)  syntax into Cypher queries that create a graph. 
+
+
+<h3>Next week<h3><br />
+
+So what’s there to look forward to in the world of graphs next week?
+
+<ul><ul>
+
+<li>
+On Tuesday March 21st 2017 Will Lyon https://twitter.com/lyonwj will be presenting Analyzing The Trumpworld Graph: Applying Network Analysis to Public Data https://www.meetup.com/nycneo4j/events/238123925/ at NYC Neo4j https://www.meetup.com/nycneo4j/  
+</li>
+
+<li>
+On Wednesday March 22nd 2017 Amanda Schaffer will be presenting an Intro to graph databases https://www.meetup.com/Seattle-PyLadies/events/238145395/  at pyladies Seattle https://www.meetup.com/Seattle-PyLadies/
+</li>
+
+<li>
+Also on Wednesday, Rik van Bruggen will presenting "Graph Databases and the TrumpWorld" with Neo4j https://www.meetup.com/DataScientistsIreland/events/226989741/  at Data Scientists Ireland https://www.meetup.com/DataScientistsIreland/events/226989741/  in Dublin.
+</li>
+
+
+</ul></ul>
+
+<h3>Tweet of the Week</h3><br />
+
+We’ll finish with my favourite tweet of the week by Tobias Zander https://twitter.com/airbone42
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great introduction to <a href="https://twitter.com/neo4j">@neo4j</a>. Looks like my plans for the weekend now changed.</p>&mdash; Tobias Zander (@airbone42) <a href="https://twitter.com/airbone42/status/842095275749605386">March 15, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+If you’re having fun playing with Neo4j tweet with the #neo4j hashtag https://twitter.com/hashtag/neo4j and maybe you’ll feature in next week’s post.<br /><br />
+
+Have a good weekend!

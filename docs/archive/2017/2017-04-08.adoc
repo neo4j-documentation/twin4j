@@ -1,0 +1,167 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 8 April 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-8-apr-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 8 April 2017
+
+[Headline:]
+This Week in Neo4j – 8 April 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we look at how to create a Twitter clone using Neo4j, the Neo4j Data Science stack, learning Chinese, and much more!
+
+=== Featured Community Member: Tomaz Bratanic
+
+This week's featured community member is link:https://twitter.com/tb_tomaz[Tomaz Bratanic, window="_blank"]
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170407055211/this-week-neo4j-8-apr-2017.jpg" alt="Explore everything that&#039;s happening in the Neo4j community for the week of 8 April 2017" width="254" height="254" class="alignnone size-full wp-image-64202" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Tomaz Bratanic - This week's featured community member
+</strong>
+</p>
+++++
+
+Tomaz only recently came onto the Neo4j scene but has been quick to get going and blogs about Neo4j at an incredible rate.
+
+Over the last few weeks these are some of Tomaz's posts:
+
+* link:https://tbgraph.wordpress.com/2017/03/07/neo4j-apoc-triggers-and-web-apis/[Neo4j APOC triggers and web APIs, window="_blank"] 
+* link:https://tbgraph.wordpress.com/2017/04/01/neo4j-location-trees/[Neo4j Location Trees, window="_blank"]
+* link:https://tbgraph.wordpress.com/2017/04/01/neo4j-to-gephi/[Neo4j to Gephi, window="_blank"]
+* link:https://tbgraph.wordpress.com/2017/04/02/cypher-location-queries/[Cypher Location queries, window="_blank"]
+
+Tomaz also created the link:https://github.com/tomasonjo/hospitals-neo4j[hospitals-neo4j, window="_blank"] project which brings together the above blog posts while analysing a hospital dataset.
+
+Tomaz has also created a Neo4j browser guide which you can try out by executing the following command in the query window of your Neo4j browser:
+
+++++
+<pre data-lang=”cypher” class=”code programlisting cm-s-neo”>
+:play http://guides.neo4j.com/contrib/hospital.html
+</pre>
+<br />
+++++
+
+On behalf of the Neo4j community, thanks Tomaz! I'm looking forward to see what else you come up with for link:https://neo4j.com/blog/april-is-apoc-awareness-month/[APOC Awareness month, window="_blank"]. 
+
+=== Building a Twitter Clone with Neo4j
+
+link:https://twitter.com/maxdemarzi[Max De Marzi, window="_blank"] has written a new series of posts showing how to build a Twitter clone with Neo4j. 
+
+* link:https://maxdemarzi.com/2017/03/30/building-a-twitter-clone-with-neo4j-part-one/[Part One, window="_blank"] in which Max explains his approach to Neo4j POCs and designs an initial graph model. 
+* link:https://maxdemarzi.com/2017/04/03/building-a-twitter-clone-with-neo4j-part-two/[Part Two, window="_blank"] in which Max shows how to build a Twitter-esque HTTP API and create/retrieve users.  
+* link:https://maxdemarzi.com/2017/04/04/building-a-twitter-clone-with-neo4j-part-three/[Part Three, window="_blank"] in which Max adds functionality to follow other users and see who we've followed and who's followed us.
+* link:https://maxdemarzi.com/2017/04/05/building-a-twitter-clone-with-neo4j-part-four/[Part Four, window="_blank"] in which Max adds functionality to add tags and edit posts (a feature Twitter doesn't actually have!) 
+
+=== Automated static malware analysis using Neo4j
+
+The link:https://twitter.com/malwaregroup[MalwareGroup, window="_blank"] posted a really cool talk by Marion Marscalek and Raphael Vinot in which they show how to combine Neo4j and radare to analyse malware. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8VTCVaffrTQ" frameborder="0" allowfullscreen></iframe>
+++++
+
+You can link:https://github.com/pinkflawd/r2graphity[see all the code from their talk on github, window="_blank"].
+
+=== The Neo4j Data Science Stack, Open Data, PageRank with APOC
+
+There were lots of blog articles this week!
+
+* link:https://twitter.com/BrockTibert[Brock Tibert, window="_blank"1] link:https://medium.com/@BrockTibert/my-quick-start-docker-image-for-data-science-6bffb5dbac31[created a docker image containing his favourite data science tools, window="_blank"] - link:https://twitter.com/ProjectJupyter[Jupyter, window="_blank"], link:https://twitter.com/rstudio[R Studio Server,window="_blank"], and Neo4j - and showed how to deploy it on link:https://twitter.com/digitalocean[Digital Ocean, window="_blank"].
+
+* Mike Morley and Dave Bennet presented link:https://www.meetup.com/Calgary-Neo4j-Graph-Meetup/events/237621040/[real world graph modelling, window="_blank"] at the link:https://www.meetup.com/Calgary-Neo4j-Graph-Meetup/[Calgary Neo4j meetup, window="_blank"] a few weeks ago and link:https://github.com/menome/neo4j-data-integration-meetup[shared the code from their talk on github, window="_blank"]. They combined data from the Alberta Energy Regulator and Edmonton Open Data Portal, loaded it all into Neo4j, before analysing the combined dataset with Cypher.
+
+* link:https://twitter.com/intermineorg[InterMine, window="_blank"] - the open source data warehouse built specifically for the integration and analysis of complex biological data from the  Micklem lab at University of Cambridge - link:https://docs.google.com/presentation/d/1UVXXbBp0zEpvXRuoIFOpm3TOiVyuA5JUEyIZO36YsL4/edit#slide=id.p[shared slides detailing their experiences using Neo4j, window="_blank"].
+
+* link:https://twitter.com/flerlagekr[Ken Flerlage, window="_blank"] has been having fun playing around with the link:https://neo4j.com/developer/movie-database/[movie database, window="_blank"] to explore the link:http://www.kenflerlage.com/2017/04/six-degrees-of-kevin-bacon-with-graph.html[six degrees of Kevin Bacon, window="_blank"]. 
+
+* link:https://twitter.com/rbramley[Robin Bramley, window="_blank"] wrote up his talk from last week's London meetup where he showed how to  link:https://leanjavaengineering.wordpress.com/2017/03/31/open-gov-data-talk-at-neo4j-london-user-group/[explore the UK road safety dataset using Neo4j, window="_blank"].
+
+* link:https://twitter.com/jensnerche[Jens Nerche, window="_blank"] continued analysing code bases with link:https://jqassistant.org/[jQAssistant, window="_blank"] and this week shows how to find link:http://techblog.kontext-e.de/managing-technical-debt-with-arc42-and-jqassistant-dependencies/[unwanted dependencies between Java packages, window="_blank"].
+
+* Tom Porter walks through the FOREACH hack for  link:http://porterhau5.com/blog/creating-conditional-statements-with-cypher/[creating conditional statements with Cypher, window="_blank"]
+
+* link:https://twitter.com/adamcowley[Adam Cowley,window="_blank"] released the latest part of his WordPress Recommendations series where he looks at how to link:http://www.adamcowley.co.uk/neo4j/wordpress-recommendations-neo4j-part-4-pagerank-with-apoc/[use PageRank with APOC Procedures, window="_blank"].  
+
+=== On GitHub: Chinese language exploration, PHP OGM, d3.js
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170407054850/learning-chinese-neo4j.jpeg" alt="Learning Chinese with Neo4j" width="500" class="alignnone size-full wp-image-64199" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Modelling the Chinese language in Neo4j
+</strong>
+</p>
+++++
+
+On my GitHub travels I came across the following projects which are worth a look:
+
+* link:https://twitter.com/diegomrodz[Diego Rodrigues, window="_blank"] created  link:https://github.com/diegomrodz/chinese_exp[chinese_exp, window="_blank"] where he shows how to use data to explore and learn the Chinese language. Fernando Izquierdo also link:https://skillsmatter.com/skillscasts/9797-neo4j-february-meetup[presented on the same topic, window="_blank"] at the London meetup a couple of months ago.
+
+*  Marco Falcierhas has been building on top of link:https://twitter.com/ikwattro[Christophe Willemsen]'s link:https://github.com/mfalcier/laravel-neo4j-php-ogm-example[Laravel Neo4j PHP OGM example project, window="_blank"] .  
+
+* Christophe himself created link:https://github.com/ikwattro/neo4j-ogm-symfony-security[neo4j-ogm-symfony-security, window="_blank"], where he creates a quick PoC showing how to use a custom UserProvider backed by a Neo4j database. 
+
+* Bogdans Afonins combines link:https://laravel.com/[Laravel, window="_blank"] and link:https://github.com/graphaware/neo4j-php-ogm[Neo4j PHP OGM, window="_blank"]
+in the link:https://github.com/bafonins/SpringMVC-Neo4j-App[SpringMVC-Neo4j-App, window="_blank"] project. 
+
+* link:https://github.com/fancellu[Dino Fancellu, window="_blank"] created link:https://github.com/fancellu/neo4j-d3v4[neo4j-d3v4, window="_blank"], a proof of concept project that gets data via the Javascript driver and feeds it into a d3 v4 force simulation. 
+
+=== From The Knowledge Base
+
+The link:https://neo4j.com/developer/kb[Neo4j Knowledge Base, window="_blank"] is a collection of Frequently Asked Questions maintained by Neo4j's Customer Success team. 
+
+If you're doing some hands on work with Neo4j, at some stage you'll want to port the users/roles and constraints/indexes from your staging environment to production. 
+
+The following articles describe queries that will automatically generate Cypher statements to do this and save you having to rebuild them from scratch. 
+
+* link:https://neo4j.com/developer/kb/Using-Cypher-to-generate-Cypher-statements-to-recreate-indexes-and-constraints/[Using Cypher to generate Cypher statements to recreate indexes and constraints, window="_blank"] 
+
+* link:https://neo4j.com/developer/kb/Using-Cypher-to-generate-Cypher-statements-to-recreate-Users-and-Roles/[Using Cypher to generate Cypher statements to recreate Users and Roles, window="_blank"]
+
+=== Next Week
+
+So what's there happening next week in the world of graphs? 
+
+* On Saturday April 8th, 2017 Nigel Small will present link:https://pydata.org/amsterdam2017/schedule/presentation/26/[A Pythonic Tour of Neo4j and the Cypher Query Language, window="_blank"] at link:https://pydata.org/amsterdam2017/[PyData Amsterdam, window="_blank"]. 
+* On Thursday April 13th, 2017 Michael Hunger and I are going to run link:https://www.meetup.com/Neo4j-Online-Meetup/events/238920813/[APOC Office Hours, window="_blank"] as part of April APOC Awareness month. If you have any APOC questions and/or are taking part in the competition come along and ask us anything. 
+
+=== Tweets of the Week
+
+My favorite tweet this week was by link:https://twitter.com/tmanning[@tmanning, window="_blank"] who spent last weekend modelling Whitehouse personal financial disclosures documents in Neo4j as part of a link:https://twitter.com/data4democracy[Data4Democracy,window="_blank"] event.
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">How the White House executive staff linked? D4D team White-House-PDF processed 80/120 financial disclosures of the staff. <a href="https://twitter.com/hashtag/D4DHackathon?src=hash">#D4DHackathon</a> <a href="https://t.co/MJTonA7R6b">pic.twitter.com/MJTonA7R6b</a></p>&mdash; Data for Democracy (@data4democracy) <a href="https://twitter.com/data4democracy/status/848599977005907968">April 2, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This graph shows the connections betweens people and organizations they worked for outside the federal government. <a href="https://twitter.com/data4democracy">@data4democracy</a> <a href="https://twitter.com/neo4j">@neo4j</a></p>&mdash; tmanning (@tmanning) <a href="https://twitter.com/tmanning/status/848600399590416384">April 2, 2017</a></blockquote>
+++++
+
+That’s all for this week. Have a great weekend! 
+
+Cheers, Mark

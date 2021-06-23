@@ -1,0 +1,198 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Jesus and I show how to build a Software Knowledge Graph.
+
+Max De Marzi walks through a procedure that implements faux bitmap indexes, Nathan Smith implements k-means clustering, and Michael Simons gives us a deep dive of the Neo4j drivers.
+
+
+And finally, Tomaz Bratanic builds a knowledge graph of monuments in Spain.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Yusuf Baktir
+
+This week's featured community member is Yusuf Baktir, Data Scientist at Signify Health
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200904083431/this-week-in-neo4j-5-september-2020.jpg[name="Yusuf Baktir"]
+
+Yusuf reached out to Michael Hunger on the https://neo4j-users-slack-invite.herokuapp.com/[Neo4j Users Slack^] in April of this year and said he was interested in collaborating on networkx-neo4j. networkx-neo4j is a Python library that I created to provide a networkx-esque API for the Graph Algorithms library.
+
+Over the last few months, Yusuf has migrated the library to use the Graph Data Science library and has created Jupyter notebooks to help users get started. He recently https://medium.com/neo4j/nxneo4j-networkx-api-for-neo4j-a-new-chapter-9fc65ddab222[wrote a blog post^] explaining the changes that he's made to the networkx-neo4j library, how to use it, and his ideas going forward.
+
+On behalf of the Neo4j community, thanks for your work Yusuf!
+
+https://www.linkedin.com/in/yusuf-baktir/[Connect with Yusuf on LinkedIn, role="medium button"]
+
+[[features-6]]
+=== Book: Hands-On Graph Analytics with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200828013510/noun_book-reading_856168.png" width="150px"  />
+</div>
+++++
+
+Estelle Scifo recently published Hands-On Graph Analytics with Neo4j, which provides a mix of hands on exercise and explanation around NLP, spatial data, and Graph Algorithms.
+
+TWIN4j readers can get 25% off the book on amazon.com by using the **25DATABEAM** discount code.
+
+https://www.amazon.com/Hands-Graph-Analytics-Neo4j-visualization-ebook/dp/B08FBJ3B1S[View the book, role="medium button"]
+
+[[features-1]]
+=== Building a Knowledge Graph using NLP and Ontologies
+
+This week's video is a presentation by Jesus Barrasa and me from the recent https://neo4j.com/connections/knowledge-graphs/[Neo4j Connections: Knowledge Graphs^] event.
+
+youtube::17NRCNqqbcA[type={type}]
+
+In the video, we show how to build and query a software knowledge graph using data extracted from Wikidata and the dev.to developer blog. The https://neo4j.com/labs/neosemantics[n10s^] and https://neo4j.com/labs/apoc[APOC^] libraries feature heavily. We also wrote a https://neo4j.com/developer/graph-data-science/build-knowledge-graph-nlp-ontologies/[tutorial^] that has step by step instructions to reproduce everything shown in the video.
+
+You can find all the talks from the conference in the https://neo4j.com/video/connections/knowledge-graphs/[video archive^].
+
+[[features-2]]
+=== K-means clustering with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200904015929/1_Tkp-IXmicqEiJBrgPU9Q9g.png" width="150px"  />
+</div>
+++++
+
+The K-means clustering algorithm is a popular unsupervised learning technique that works well when your data can be grouped into a known number of natural clusters. 
+
+In his latest blog post, Nathan Smith shows how to implement this algorithm using Neo4j and Cypher queries.
+
+https://medium.com/neo4j/k-means-clustering-with-neo4j-b0ec54bf0103[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Faux Bitmap Indexes in Neo4j: Part 2
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200904021824/range-queries.jpg" width=150px"  />
+</div>
+++++
+
+Max De Marzi continued his series of blog posts showing how to use faux bitmap indexes to optimise single model queries where relationships aren’t considered.
+
+In the second post, Max takes us through the code for building a user defined procedure that implements boolean logic filtering.
+
+
+http://maxdemarzi.com/2020/08/26/faux-bitmap-indexes-in-neo4j-part-two/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Connected Feature Extraction, Neo4j on Kubernetes, Drivers Deep Dive
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+* We've added a new developer guide explaining https://neo4j.com/developer/graph-data-science/connected-feature-extraction/[connected feature extraction^], a technique that is used to improve the performance of Machine Learning models.
+
+* Arseny Zinchenko explains how to https://itnext.io/neo4j-running-in-kubernetes-79633944f213[run Neo4j on Kubernetes^] with the help of a Helm chart. 
+
+* Michael Simons has written a https://medium.com/neo4j/try-and-then-retry-there-can-be-failure-30bf336383da[deep dive into Neo4j drivers^], explaining different edge cases using Spring Data Neo4j.  
+
+* Michal Štefaňák published https://github.com/stefanak-michal/Bolt[stefanak-michal/Bolt^], a PHP driver for Neo4j.
+
+[[features-5]]
+=== Traveling Tourist: Part 1 - Building a Knowledge Graph of monuments located in Spain from WikiData API
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200904011449/1_Qm5-FfWXrVqY8CwtmBQW0w.png" width="200px"  />
+</div>
+++++
+
+Tomaz Bratanic has started writing the Traveling Tourist series of blog posts, and begins by building a knowledge graph of monuments in Spain.
+
+He gives a brief introduction to the neosemantics (n10s) library, before showing how to construct a SPARQL query against the Wikidata API, and import the results into Neo4j using n10s. Tomaz also shows how to enrich the graph with spatial information and use this information to explore the most frequent architectural style of monuments in each state.
+
+
+////
+* Exploring pathfinding graph algorithms in #Neo4j Graph Data Science library
+p.s. Just in time for the latest #summerofnodes challenge
+#Neo4j #graph #spatial #algorithms #trip #recommendations
+https://towardsdatascience.com/part-2-exploring-pathfinding-graph-algorithms-e194ffb7f569
+////
+
+https://towardsdatascience.com/traveling-tourist-part-1-import-wikidata-to-neo4j-with-neosemantics-library-f80235f40dc5[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/CSkardon[Chris Skardon^]:
+
+tweet::1301465764445257731[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* https://neo4j.com/developer/graph-data-science/link-prediction/ 
+https://neo4j.com/developer/graph-data-science/link-prediction/scikit-learn/
+
+
+* YOW! Conferences @yow_conf
+Joining our upcoming conference is @jimwebber w/ "A Humane Presentation about Graph Database Internals", looking at how @neo4j designers deal with common functional & non-functional requirements.
+PER http://ow.ly/401d50AMUPM 
+SG http://ow.ly/jDh650AMUPH
+HK http://ow.ly/rPed50AMUPI https://pbs.twimg.com/media/Egd7Y0LXYAQ6AnO.jpg
+
+* https://blog.grandstack.io/drag-and-drop-with-the-grandstack-766f074df151 
+Drag and Drop with the GRANDstack
+
+* Steen Dupont @LegoMoth
+Playing with the @CollectionTrust  SPECTRUM 5.0 procedures (using @neo4j neo4J and @GraphXr) as they are core to our collections management system. Seeing how the procedures map and how the links focus the procedures towards Object Entry Information is oddly reassuring
+
+
+
+* Interesting article by Kenneth, Head of Data and Analytics EY Denmark, about using Neo4j and Python to calculate second order democracy indices from trade data 
+https://medium.com/@kennethhmnielsen/authoritarian-by-proxy-using-neo4j-and-python-to-calculate-second-order-democracy-indices-ccca92695d74
+
+
+* Chris Skardon 🐱‍🐉 @CSkardon
+Hello #Neo4jClient users, I've recently pushed 4.0.0.10-prerelease to nuget, and it's a significant one. Adding WithDatabase to all the clients and transactions to the .NET Core side of things. 1/5
+
+* https://medium.com/neo4j/how-to-create-a-knowledge-graph-from-your-slack-archive-with-neo4j-6a1a1d59a535
+MediumMedium
+How to create a Knowledge Graph from your Slack Archive with Neo4j
+TL;DR: All of the code is available on Github. Follow the steps to export your messages and load them into Neo4j using the import scripts.
+
+* William Lyon @lyonwj
+(10/?) GraphQL Mutations & Authorization With @auth0
+:megaphone: hasScope #GraphQL Auth Directive
+:dart: Scopes & API Permissions With Auth0
+:leftwards_arrow_with_hook: @apollographql useMutation #reactjs Hook & Forms
+https://www.youtube.com/watch?v=dCCObITlSY0
+
+////

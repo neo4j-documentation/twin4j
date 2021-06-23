@@ -1,0 +1,139 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 20 January 2018, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-20-january-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 20 January 2018
+
+[Headline:]
+This Week in Neo4j – 20 January 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have categorical PageRank using graph algorithms, more on knowledge graphs, and an interview with Jesús Barrasa about Neo4j's new telecoms practice.
+
+=== Featured Community Member: Alberto Perdomo
+
+This week’s featured community member is https://twitter.com/albertoperdomo[Alberto Perdomo^], co-founder and CEO of https://www.graphenedb.com/[GrapheneDB^], the world's first fully managed solution for graph database hosting in Neo4j. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180119033559/this-week-in-neo4j-20-january-2018.jpg["Alberto Perdomo - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Alberto Perdomo - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Alberto has been a member of the Neo4j community since 2012 when he started working on GrapheneDB, who just this week announced 
+https://twitter.com/GrapheneDB/status/954050395537539072[improved Neo4j hosting plans^] on Heroku. 
+
+Alberto https://vimeopro.com/neo4j/graphconnect-2013/video/80502385[presented at the first GraphConnect London conference^] in 2013 and GrapheneDB have been regular sponsors of the conference and associated hackathons in the years since then.
+
+Alberto was http://blog.bruggen.com/2016/03/podcast-interview-with-alberto-perdomo.html[interviewed on the Graphistania podcast^] a couple of years ago where he explained the origin story of GrapheneDB and the challenges building a DBaaS offering. He has also written https://neo4j.com/blog/contributor/alberto-perdomo/[several articles^] for the http://neo4j.com/blog[Neo4j blog^].
+
+On behalf of the Neo4j community, thanks for all your work Alberto!
+
+=== From GraphConnect: How Graphs Changed The Way Hackers Attack 
+
+At GraphConnect NYC 2017 https://twitter.com/_wald0[Andy Robbins^] talked about https://github.com/BloodHoundAD/BloodHound[BloodHound^], a tool he created that uses graph theory to show how attackers breach and take over modern corporate network.
+
+youtube::cT4xEhssz0U[type={type}]
+
+BloodHound is one of the coolest tools I've come across while writing https://neo4j.com/tag/twin4j/[#twin4j^] so it was really interesting to hear about the problem it aims to solve and how it came to be.
+
+=== Categorical PageRank, Product catalog graph, Knowledge graphs
+
+* https://twitter.com/Mooredvdcoll[David Moore^] wrote up his experience https://mooredvd.wordpress.com/2018/01/11/building-a-graph-database/[building a product catalog in Neo4j^]. David's code is https://github.com/mooredvd/graphs[available on GitHub^].
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180119045407/PageRanks-Example.png" width="150px" />
+</div>
+++++
+
+* In early 2015 https://twitter.com/kennybastani[Kenny Bastani^] introduced the concept of  https://neo4j.com/blog/categorical-pagerank-using-neo4j-apache-spark/[categorical PageRank^] and showed how to calculate it for Wikipedia pages using https://github.com/kbastani/neo4j-mazerunner[Neo4j Mazerunner^]. This week https://twitter.com/tb_tomaz[Tomaz Bratanic^] wrote a post showing how to  https://tbgraph.wordpress.com/2018/01/14/neo4j-categorical-pagerank/[apply categorical PageRank to a Game of Thrones dataset using Neo4j graph algorithms^]. 
+
+
+
+
+* Thomas Frisendal has http://www.dataversity.net/not-get-lost-2018-map-graph-go/[another installment^] of his series on Knowledge Graphs. In this post Thomas wonders why knowledge graphs are getting so much attention and describes an architecture for the finance industry with a knowledge graph at its heart.
+
+=== On the podcast: Jesús Barrasa
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180119042615/jesus-podcast.jpg" width="150px" />
+</div>
+++++
+
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] http://blog.bruggen.com/2018/01/podcast-interview-with-jesus-barrasa.html[interviews my colleague^] https://twitter.com/barrasadv?lang=en[Jesús Barrasa^] about his new job leading the telecoms practice at Neo4j. 
+
+Jesus explains the common use cases he sees for graphs in the telecom space such as dependency modelling and root cause analysis and his hopes that graphs will become ubiquitous in this space.
+
+=== Visualizing PE files, Dynamic rule based decision trees, Kotlin
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180119045120/kotlin_250x2501.png" width="150px" />
+</div>
+++++
+
+* https://twitter.com/mesirii[Michael Hunger^] shared the slides from his presentation https://www.slideshare.net/neo4j/building-community-apis-using-graphql-neo4j-and-kotlin-86378860[Building Community APIs using GraphQL, Neo4j, and Kotlin^] at the https://twitter.com/CincyKotlin[Cincinnati Kotlin User Group^].
+
+* link:++https://twitter.com/_samdb_++[Sam Brown^] created https://github.com/sam-b/import_vis[import_vis^], a tool that can be used to visualise and query imports and exports in https://en.wikipedia.org/wiki/Portable_Executable[Windows Portable Executable^] (PE) files.
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] wrote a blog post in which he showed how to build a  https://maxdemarzi.com/2018/01/14/dynamic-rule-based-decision-trees-in-neo4j/[dynamic rule based decision trees^] using Neo4j. In the post Max explains how to write a procedure that explores rules using the Neo4j Traversal API and evaluates predicate expressions using the http://janino-compiler.github.io/janino/[Janino^] Java compiler. 
+
+* Max also wrote a post in which he shows how you might go about https://maxdemarzi.com/2018/01/17/neptune-and-uranus/[building a high performance in memory graph database^].
+
+
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+
+|Date |Title | Group | Speaker 
+
+| January 23rd 2018 | https://www.meetup.com/graphdb-boston/events/245762706/[Bill of Materials (BoM) and Graphs (Neo4j in Manufacturing)^] | https://www.meetup.com/graphdb-boston[Graph Database Boston^] |  Oleg Shilovitsky, Christopher Chaulk
+
+| January 24th 2018 | https://www.meetup.com/Boulder-Denver-Big-Data/events/246428901/[The Paradise Papers: Investigating and Analyzing Corruption with Graphs^] | 
+https://www.meetup.com/Boulder-Denver-Big-Data[Boulder/Denver BigData Meetup^]
+ | https://twitter.com/lyonwj[Will Lyon^]
+
+
+
+| January 25th 2018 | https://www.meetup.com/Minneapolis-Neo4j-User-Group/events/245940803/[Supply Chain Management and Cybersecurity with Neo4j^] | https://www.meetup.com/Minneapolis-Neo4j-User-Group[Minneapolis Neo4j User Group^] | Eric Wespi, Nathan Adams, https://twitter.com/spiegelbergeric[Eric Spiegelberg^]
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Mooredvdcoll[David Moore^]:
+
+tweet::951917912452993025[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

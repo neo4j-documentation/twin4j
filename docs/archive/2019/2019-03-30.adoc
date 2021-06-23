@@ -1,0 +1,197 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+GraphTour Europe is over after a fun final event in London. There's now a break of a month or so before the US version gets started in Washington D.C. on 7th May, quickly followed by San Francisco on 9th May. 
+
+Don't forget to https://neo4j.com/graphtour/[register^] if either of those cities are nearby.
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190329091224/IMG-20190326-WA0003-1.jpg " width="200px"  />
+</div>
+++++
+
+I spent most of my time demonstrating Neuler - The Graph Algorithms Playground -  with my colleague https://twitter.com/irfannuri[Irfan^]. You can learn more about that from our https://www.youtube.com/watch?v=zZZFqAX-PH0&list=PL9Hl4pk2FsvVnz4oi0F8UXiD3nMNqsRO2&index=2[Online Meetup video^], and we'll have a blog post ready soon. 
+
+It was a big week for the GRANDstack - we had a live coding session, a presentation at GraphTour London, and a new starter kit was created. 
+
+I had fun graphing Brexit, Jennifer Reif and I wrote articles explaining how to load data into Neo4j, Ryan Boyd launched the expanded startup program, and more!
+
+
+[[featured-community-member]]
+=== Featured Community Member: Pierre Romera 
+
+Our featured community member this week is https://twitter.com/pirhoo[Pierre Romera^], Chief Technology Officer of the https://www.icij.org/[International Consortium of Investigative Journalists^] (ICIJ). 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190329093408/this-week-in-neo4j-30-march-2019.jpg[name="Pierre Romera"]
+
+ICIJ is a U.S.-based non-profit with a “global network of reporters and media organizations who work together to investigate the most important stories in the world” and “believe journalism can bring about positive change”. 
+
+Pierre is extremely passionate about creating transformative tools to enable journalists to obtain salient knowledge within a wealth of unstructured data.  Through technology, collaboration, and innovation, Pierre has worked on The Panama Papers, The Paradise Papers, and The West African Leak, which are some of the most-notable, impactful, and biggest leaks in history, exposing crime and corruption through investigative journalism. 
+
+In the past, he co founded Journalism++, the Franco-German data journalism agency behind the Migrant Files, a project that won the European Press Prize in 2015 for Innovation. He is one of the pioneers of data journalism in France. 
+
+Thank you, Pierre, from us and the hundreds of strengthened journalists in your network.
+
+
+link:https://twitter.com/pirhoo[Follow Pierre on Twitter, role="medium button"]
+
+[[features-1]]
+=== This Week in the GRANDstack: Live Coding, Seed Application, GraphTour
+
+This was a busy week for the https://grandstack.io/[GRANDstack^].
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Gavin Williams started with a blank project and live coded an application using the GRANDstack.
+
+youtube::AsnXiGQ_Hi4[type={type}]
+
+https://twitter.com/@erikbroder[Erik Rahm^] created https://github.com/erikrahm/grand-stack-seed[grand-stack-seed^] -  a seed application he created that has built in Auth and sample User GQL types/queries/mutations, to make it easy for front-end developers to quickly get up to speed with  Neo4j and neo4j-graphql-js.
+
+And https://twitter.com/@wheresrhys[Rhys Evans^] shared the slides of his https://speakerdeck.com/wheresrhys/a-field-guide-to-the-financial-times[GraphQL heavy presentation^] from GraphTour London. 
+
+
+[[features-2]]
+=== We're Expanding the Neo4j Startup Program: Now More Entrepreneurs Get Neo4j Enterprise Edition & Neo4j Bloom – for Free
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190325094533/neo4j_bloom_041.jpg" width="200px"  />
+</div>
+++++
+
+This week Ryan Boyd announced the expansion of the Neo4j Startup Program. 
+
+The program has been expanded  to support much larger organizations, with up to 50 employees, and we've also made it easier to apply to the program and manage your membership.
+
+And the icing on the cake is that members of the program can now get a license for the Neo4j Bloom graph visualization. 
+
+link:https://neo4j.com/blog/were-expanding-the-neo4j-startup-program-now-more-entrepreneurs-get-neo4j-enterprise-edition-neo4j-bloom-for-free/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Graphing Brexit
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190329081407/1_NN0u15SWpV3j3PQwp-qe9g.png" width="200px"  />
+</div>
+++++
+
+On Wednesday night UK MPs voted no to series of potential Brexit options. and afterwards I read a lot analysis of how different individuals and parties had votes on various websites.
+
+All the analysis seemed very tabular to me so I loaded the voting data into Neo4j and did a bit of graph analysis with Cypher, Neo4j Bloom, and the Graph Algorithms library. 
+
+link:https://medium.com/neo4j/graphing-brexit-bbe4314cf70[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Graphing Tea, Neo4j Import, Neo4j Speaker Program, Property graphs and Elixir
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190329083425/joe-depeau-tea-sommelier-61.jpg" width="150px"  />
+</div>
+++++
+
+* https://twitter.com/joedepeau[Joe Depeau^] gives us a lesson in drinking tea in https://neo4j.com/blog/keep-calm-drink-tea-graphing-britains-most-beloved-hot-beverage/[his latest post^], where he builds a tea knowledge graph containing tea, types and species of tea, where tea is grown, and more.
+
+* https://twitter.com/jmhreif[Jennifer Reif^] shared the slides from her talk https://speakerdeck.com/jmhreif/get-to-know-the-real-world-discovering-connected-data-with-a-graph-database[Get To Know The Real World: Discovering Connected Data with a Graph Database^]. 
+
+* I wrote a blog post showing how to go from https://markhneedham.com/blog/2019/03/27/from-graph-model-to-neo4j-import/[raw data and a graph model to a working Neo4j Database^] using the Neo4j Import Tool. 
+
+* Karin announced the https://medium.com/neo4j/speak-at-conferences-around-the-world-let-neo4j-pay-your-way-21f0002c807c[launch of the Neo4j Speaker Program^]. If you're a graph enthusiast, and are willing and eager to share your knowledge and experiences, this one's for you. 
+
+* https://twitter.com/tonyhammond?lang=en[Tony Hammond^] has written a blog post in which he walks through a simple application for https://medium.com/@tonyhammond/property-graphs-and-elixir-13672940804b[playing around with Neo4j property graphs using Elixir^].  
+
+
+[[features-4]]
+=== Importing CSV Files: Neo4j Desktop and Sandbox
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190329083636/sandbox_gdownload31.png" width="200px"  />
+</div>
+++++
+
+Jennifer Reif has been refreshing and expanding the content on the Neo4j Knowledge Base and Developer Pages, and this week explains how to load CSV files into Neo4j across different environments.
+
+If your files are stored locally, on Dropbox, on Google Drive, on GitHub, or just online, Jennifer's got you covered.
+
+link:https://neo4j.com/developer/kb/import-csv-locations/[Read the article, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/comdotdom[Dom Gittins^]:
+
+tweet::1110510046352424960[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://github.com/lyft/cartography
+Cartography is a Python tool that consolidates infrastructure assets and the relationships between them in an intuitive graph view powered by a Neo4j database.
+
+https://towardsdatascience.com/link-prediction-with-neo4j-part-2-predicting-co-authors-using-scikit-learn-78b42356b44c
+Link Prediction with Neo4j Part 2: Predicting co-authors using scikit-learn
+
+https://medium.com/neo4j/cosine-similarity-in-neo4j-d617b0442439
+Cosine Similarity in Neo4j
+
+Importing CSV Files: Neo4j Desktop and Sandbox - Neo4j Graph Database Platform
+
+Pass Temporal Objects as Parameters - Neo4j Graph Database Platform
+https://neo4j.com/developer/kb/pass-temporal-objects-parameters/
+
+New Docker walkthrough/tutorial published on our developer guides! https://neo4j.com/developer/docker-run-neo4j/
+
+Overhaul to visualization tools page is complete! https://neo4j.com/developer/tools-graph-visualization/
+
+
+Celebrating the last stop of our European #neo4j #graphtour with ... a #graphistania #podcast episode: tallking to @szenyo of @graph_aware about his Graph Technology Landscape. Read / listen on http://blog.bruggen.com/2019/03/podcast-interview-with-janos-szendi.html
+
+https://medium.com/neo4j/creating-a-data-marvel-part-10-lessons-and-resources-8ffb5bf0ad1
+Creating a Data Marvel: Part 10 — Lessons and Resources
+
+
+
+Neo4j Database Analyzer
+https://medium.com/neo4j/introducing-the-neo4j-database-analyzer-a989b85e4026 
+
+* https://blog.semanticscholar.org/finding-experts-in-grapal-b97ef280e585 
+Finding experts in GrapAL
+
+* https://graphaware.com/neo4j/2019/03/09/graph-assisted-typescript-refactoring.html
+Graph-assisted Typescript refactoring
+
+https://medium.freecodecamp.org/how-to-detect-a-users-preferred-color-scheme-in-javascript-ec8ee514f1ef
+How to detect a user’s preferred color scheme in JavaScript
+
+https://medium.com/@dmccreary/a-taxonomy-of-graph-use-cases-2ba34618cf78
+A Taxonomy of Graph Use Cases
+
+
+////

@@ -1,0 +1,190 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi graphistas,
+
+Welcome to the first version of TWIN4j for 2021. 
+
+Our video this week is an interview with Emil Eifrem about the FinCEN Files investigation. 
+
+Antonin Smid explores The MET Art Collection, Dan Flavin builds a Christmas Tree using Cypher, and Sebastian Daschner implements an undo feature using Neo4j and Quarkus.
+
+And finally, Shyam Pratap Singh  analyses COVID-19 tweets using Neo4j and GraphAware NLP.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Mark Heckler
+
+This week's featured community member is https://twitter.com/mkheck[Mark Heckler^].
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210107075909/this-week-in-neo4j-9-january-2020.jpg[name="Mark Heckler"]
+
+Mark Heckler is a Spring Developer & Advocate at VMware, conference speaker, and author of https://www.oreilly.com/library/view/spring-boot-up/9781492076971/[Spring Boot: Up & Running^], due for final publication in February 2021. Chapter 6 of the book uses Neo4j as an example of how to create a repository-based service with a graph database. 
+
+Mark also paired up with Neo4j's Jennfier Reif to present on Neo4j and Spring Boot at various conferences and meetups. One of these occasions was at the Neo4j Online Meetup in early 2019, showed how to https://www.youtube.com/watch?v=T5dZB6TZBeE&feature=emb_title[build a graph-backed application using Spring Data Neo4j, Spring Boot, and data sourced from the Marvel API^].
+
+On behalf of the Neo4j community, thanks for your work Mark!
+
+https://www.linkedin.com/in/markheckler/[Connect with Mark on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Follow the money: Untangling complex fraud networks with Emil Eifrem
+
+Our video this week is a fireside chat between Emil Eifrem, CEO at Neo4j, and Chelsea Bruce-Lockhart of the Financial Times. 
+
+youtube::Ijjlz286YUA[type={type}]
+
+Their discussion focuses on the power of graph databases as applied to the latest https://neo4j.com/blog/analyzing-fincen-files-data-neo4j/[FinCEN Files investigation^].
+
+[[features-2]]
+=== Exploring The MET Art Collections with Hume #1
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210107085112/knowledge-graph-schema.png" width="200px"  />
+</div>
+++++
+
+Antonin Smid has started a blog post series showing how to analyse The MET Art Collection, using GraphAware Hume.
+
+In the first post, Antonin ingests a CSV file of the artworks and sets up visualisation actions to explore the data. 
+
+https://graphaware.com/hume/2020/11/30/insightful-it-operations-with-hume.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== A Neo4j Path Through the Christmas Holidays
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210107090623/1_N9oLS4wyEhVXP2zJDYz5TA.png" width="100px"  />
+</div>
+++++
+
+
+I missed Dan Flavin's Christmas themed post last year, but we can allow ourselves a bit of nostalgia. 
+
+Dan writes a Christmas tree generating Cypher query and also shows what would happen if the Grinch stole one of the nodes!
+
+https://medium.com/neo4j/a-neo4j-path-through-the-christmas-holidays-56a3b847d872[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Overview of Neo4j 4.0 Training Course, Implementing an Undo Feature, Query Logging in Neo4j 4.0
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Elaine Rosenberg has started breaking the 2-day Introduction to Neo4j course into 2-hour long standalone courses. The first of these new courses is https://neo4j.com/graphacademy/training-overview-40/enrollment/[Overview of Neo4j 4.0^]. This course provides an overview of what a graph database is, the Neo4j Graph Platform, and how to get started with Neo4j Desktop and Neo4j Browser. 
+
+* Sebastian Daschner builds an https://blog.sebastian-daschner.com/entries/undo-with-neo4j[undo feature for a Neo4j Quarkus application^], with a little help from the https://neo4j.com/labs/kafka/[Neo4j Streams plugin^]. 
+
+* Christophe Willemsen explains how to https://stackoverflow.com/questions/65363826/how-can-i-call-this-apoc-procedure-selectively-only-on-a-subset-of-nodes/65373231#65373231[filter the output of the  `apoc.nodes.group` procedure by creating temporary labels^].
+
+* Kees Vegter takes us on a guided tour of https://medium.com/neo4j/neo4j-4-x-query-logging-enhancements-7943d7f4ac7f[querying logging in Neo4j 4.0^] using Query Log Analyzer. 
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Decoding Covid-19 tweets using NLP and Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210108003732/1_gVj4ufZxKpkbOuFjLfkw5w.png" width=150px"  />
+</div>
+++++
+
+Shyam Pratap Singh makes sense of tweets about COVID-19 using Neo4j and the GraphAware NLP Library.
+
+Shyam runs named entity recognition and sentiment analysis against the data, before writing queries to find people both for and against vaccinations.
+
+https://towardsdatascience.com/decoding-the-covid-19-tweets-using-nlp-and-graph-database-35e1b406f439[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/rvanbruggen[Rik Van Bruggen^]:
+
+tweet::1347075200811229185[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+Richard Müller @rimllr
+"Graph-Based Performance Analysis at System- and Application-Level" of monitored @kiekerapm log data using @jqassistant and @neo4j. The slides presented at the 11th Symposium on Software Performance (#SSP2020) are now available:
+https://www2.slideshare.net/RichardMller12/graphbased-performance-analysis-at-system-and-applicationlevel-ssp-2020 
+
+
+Outbrain Engineering @OutbrainEng
+In this blog post, we tell the story of how to add a graph database to a service using @neo4j DB and the embedded approach we’ve decided to continue with. #BigData #datavisualizations https://medium.com/outbrain-engineering/embedding-neo4j-graphdb-to-deal-with-data-flow-complexity-31b17a08304c
+
+https://t.co/pkjTBDNuFo?amp=1
+legos - An asset management system - Part 1
+
+
+* https://graphaware.com/hume/2021/01/06/exploring-the-met-art-collections-2.html - Exploring The MET Art Collections with Hume #2
+
+https://towardsdatascience.com/using-graphsage-embeddings-for-downstream-classification-model-4492e01ae54e
+MediumMedium
+Using GraphSAGE embeddings for downstream classification model
+
+
+* Jesús Barrasa @BarrasaDV
+Graphs for Explainable Decision Support in Operations Maintenance of Wind Turbines by @joyjitchat
+#Neo4j  #KnowledgeGraphs  
+https://deepai.org/publication/xai4wind-a-multimodal-knowledge-graph-database-for-explainable-decision-support-in-operations-maintenance-of-wind-turbines 
+
+https://community.neo4j.com/t/obsidian-plugin-author-graphs-in-markdown-or-visualize-obsidian-vaults-in-neo4j/30743
+
+https://bhaveshpandey.github.io/2020/12/09/legos-Asset-Management-System-Part1/
+Bhavesh Pandey
+legos - An asset management system - Part 1
+Sneak peak, early PDG/Houdini integration and database model overview.
+
+////

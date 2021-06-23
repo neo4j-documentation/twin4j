@@ -1,0 +1,196 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, we have a presentation by Jennifer Reif about the APOC Library from the recent TechTalks event.
+
+Rik Van Bruggen explores the COVID-19 Contact Tracing Graph with Neo4j Bloom, Tomaz Bratanic shows off the new APOC NLP procedures, and Daniel Sharp analyses chess matches with Neo4j.
+
+And finally, Alexander Erdl explores data from Steam, the video game digital distribution service.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Members: Peter Rose and Ilya Zaslavsky
+
+
+
+This week's featured community members are Peter Rose and Ilya Zaslavsky, who both work at San Diego Supercomputer Center, UC San Diego.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200515034131/this-week-in-neo4j-16-may-2020.jpg[name="Peter Rose and Ilya Zaslavsky"]
+
+Peter is the Director of Structural Bioinformatics Laboratory and Ilya is the Director of Spatial Information Systems Lab. 
+
+Peter and Ilya have a fire inside of them. They are hungry to learn about cutting edge technology while giving back to the world. They are also passionate about solving problems through collaboration. Together, they started an effort to collaborate on a https://neo4j.com/blog/2020-graphs4good-graphhack-projects[Graphs4Good GraphHack] project to build a https://github.com/covid-19-net/covid-19-community[Knowledge Graph to Fight COVID-19]. 
+
+They invited the Neo4j community to join their efforts as they presented in an https://www.youtube.com/watch?v=yYVPvUZkvKQ[Neo4j Online Meetup] and they opened up the project to their students; teaching them about the power of graph databases and how they are applying it to real use cases in knowledge management. 
+
+Peter, Ilya, we value all you do for the global community and young hungry minds.  Thank you for being part of our community! We're proud to have you! 
+
+++++
+<div style="display:flex;/* justify-content: space-around; */">
+<div class="paragraph" style="margin-right: 20px;">
+<p><a href="https://www.linkedin.com/in/peterrose/" class="medium button">Connect with Peter on LinkedIn</a></p>
+</div>
+    <div class="paragraph">
+<p><a href="https://www.linkedin.com/in/ilya-zaslavsky-7997ab7/" class="medium button">Connect with Ilya on LinkedIn</a></p>
+</div>
+</div>
+++++
+
+
+[[features-1]]
+=== Superpowers for your Neo4j Project with the APOC Library
+
+This week's video is a presentation by Jennifer Reif about the APOC Library from the recent https://go.neo4j.com/200505-neo4j-us-tech-talks-webinar.html[TechTalks^] event.
+
+youtube::EtMUb__I8uM[type={type}]
+
+Jennifer gives us a crash course on the library, showing off some of the most popular procedures for importing data, handling large transactions, manipulating text, maps, or collections, and more. 
+
+[[features-2]]
+=== COVID-19 Contact Tracing: Part 4 - Geospatial, Bloom, Security
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200327023334/Covid-19-Image.jpg" width="150px"  />
+</div>
+++++
+
+Rik continues his series of blog posts showing how to build a COVID-19 Contact Tracing Graph using Neo4j.
+
+In part 4 we learn how to:
+
+* Visualise nodes with geographic attributes on a map using Estelle Scifo's https://medium.com/neo4j/introducing-neomap-a-neo4j-desktop-application-for-spatial-data-3e14aad59db2[Neomap Graph App^]
+* Run near natural language search phrases over the data using Neo4j Bloom
+* Ensure the security and privacy of the data using Neo4j 4.0's schema-based security module
+
+https://blog.bruggen.com/2020/04/covid-19-contact-tracing-blogpost-part_0.html[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== NLP goes hand in hand with graphs
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200515004901/googles-bert-changing-nlp-landscape.jpg" width="120px"  />
+</div>
+++++
+
+We recently added https://neo4j.com/docs/labs/apoc/current/nlp/[NLP functionality to the popular APOC library^], and Tomaz Bratanic explains all in his latest blog post. 
+
+After importing a Kaggle News dataset, Tomaz shows how to classify the documents, extract entities, and determine the sentiment of the content. He then shows us how to write queries to make sense of the results.
+
+But he's not finished there! In the second part of the post we enrich the graph by importing data from the Google Knowledge Graph and Wikidata, as well as extracting communities using the https://neo4j.com/graph-data-science-library/[Graph Data Science Library^].
+
+If you want a crash course in the power of NLP and graphs, this is the post for you.
+
+https://towardsdatascience.com/nlp-and-graphs-go-hand-in-hand-with-neo4j-and-apoc-e57f59f46845[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j Spark Connector on Databricks, Kubernetes Graph, Analysing Chess
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* I wrote a blog post showing https://markhneedham.com/blog/2020/05/05/quick-graph-building-entity-graph-twin4j-apoc-nlp/[how to use APOC's new NLP procedures^] on the content of TWIN4j newsletters. It's all very meta.
+
+* Niels de Jong shows how to https://nielsdejong.nl/neo4j%20projects/2020/05/11/neo4j-spark-connector-databricks.html[set up Spark in Databricks cloud to communicate with a Neo4j Aura causal cluster^].
+
+* David Allen released https://neo4j.com/bi-connector/?version=1.0.3[version 1.0.3 of the Neo4j BI Connector^].
+
+* Andy Burgin https://youtu.be/9mRIc6NpR6Y?t=2223[uses Neo4j to make sense of Kubernetes infrastructure^] during the Cloud Native + Kubernetes Manchester, April 2020 Virtual Edition.
+
+* Daniel Sharp shows how to https://medium.com/applied-data-science/how-to-analyse-chess-games-using-graph-networks-38dd3b77d4be[analyse chess matches^] using the Graph Data Science Library. The code used in the post is available in the https://github.com/dsharpc/ChessNetworks[dsharpc/ChessNetworks^] GitHub repository.
+
+
+[[features-5]]
+=== Explore your Steam Library in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200515003755/541197-steam-logo-640x360-1.jpg" width="200px"  />
+</div>
+++++
+
+Alexander Erdl has written a blog post showing how to explore data from Steam, the video game digital distribution service.
+
+In the first part of the post Alex explains how to extract the data in CSV format, cleans up the data, and then imports it using the LOAD CSV Cypher clause.
+
+He then shows how to explore the graph using Cypher and the https://neo4j.com/docs/graph-data-science/current/[Graph Data Science Library^]. We learn:
+
+* Which game Alex plays the most
+* The games he's bought and never even played!
+* How to find similar games to ones that we like
+
+For those gamers that have always been curious about graphs, this is the blog post that merges the two worlds.
+
+https://medium.com/neo4j/lets-graph-explore-your-steam-library-in-neo4j-6d9d133f571[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/lyonwj[Will Lyon^], who will soon be showing us how to build a social network using the GRANDstack on https://m.twitch.tv/neo4j_/profile[Twitch^]:
+
+tweet::1261077406242140160[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+Rik Van Bruggen @rvanbruggen
+Picked up an old skill again: created a #neo4j browser guide for the #covid19 #contacttracing demo that I built last week. It has become so easy: from #asciidoc to browser guide in seconds. http://blog.bruggen.com/2020/04/contact-tracing-guide-for-neo4j-browser.html
+
+How to transform a REST service to a graph service
+https://blog.grandstack.io/how-to-transform-a-rest-service-to-a-graph-service-d2ae8c5bd10d 
+
+Guide to using Apollo Federation with Neo4j GraphQL (published on Monday) and the latest version of neo4j-graphql.js (written by Michael Graham): https://grandstack.io/docs/apollo-federation-gateway-with-neo4j.html
+grandstack.iograndstack.io
+Using Apollo Federation and Gateway With Neo4j · GRANDstack
+
+Jean-Michel Daignan @DaignanJM
+I just finished writing an article on a fun experiment that I was running with the @neo4j graph database and @BeatSaber UGC content, Good reading. :blue_book::blue_book::blue_book: http://the-odd-dataguy.com/dive-in-neo4j-graph-database/
+
+
+
+
+ https://medium.com/swlh/how-to-visualize-a-spring-integration-graph-with-neo4j-61927ba5bb5a 
+How to visualize a Spring Integration graph with Neo4j?
+https://www.youtube.com/watch?v=9mRIc6NpR6Y
+Cloud Native + Kubernetes Manchester, April 2020 Virtual Edition
+
+
+
+(Opens in new tab)Towards Data Science(Opens in new tab) @TDataScience(Opens in new tab)
+Movie Recommendations powered by Knowledge Graphs and Neo4j https://buff.ly/35smGQJ 
+
+(Opens in new tab)Tim Pavlick(Opens in new tab) @Timpavlick(Opens in new tab)
+
+
+////

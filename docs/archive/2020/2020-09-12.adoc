@@ -1,0 +1,184 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, Will Lyon shows us how to get started with Neo4j, Gatsby, and GraphQL.
+
+Max De Marzi shows how to solve a tricky problem using the Traversal API, Adam Cowley builds a Knowledge Graph from Slack archives, and M. David Allen published architecture documentation for Neo4j and Kafka
+
+
+And finally, Tomaz Bratanic does a deep dive into the path finding algorithms in the Graph Data Science Library.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Alexander Erdl
+
+This week's featured community member is Alexander Erdl.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200911065121/this-week-in-neo4j-12-september-2020.jpg[name="Alexander Erdl"]
+
+Alex has been working in the Neo4j EMEA marketing team for the last six years, and you'll likely have met him if you've attended any of the GraphTour, GraphDay, or GraphConnect events.
+
+Since the Coronavirus lockdown in Europe, Alex has been getting more involved with the Neo4j community, starting with an excellent video showing how to https://neo4j.com/videos/explore-your-steam-library-twitch-stream-alex-erdl/[explore your Stream library in Neo4j^].
+
+And in August he teamed up with Lju Lazrevic to run the Summer of Nodes event, a prequel for the upcoming https://neo4j.com/nodes-2020/[NODES 2020^] event on October 20th. 
+
+On behalf of the Noe4j community, thanks for all your work Alex!
+
+https://www.linkedin.com/in/alexander-erdl/[Connect with Alex on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Getting started with Neo4j, Gatsby, and GraphQL
+
+This week's video is from Will Lyon's Weekly GRANDstack live stream.
+
+youtube::siPmZRTRki8[type={type}]
+
+In this week's session, Will evolves a Gatsby getting started tutorial to use a Neo4j sandbox backend with help from https://github.com/neo4j-graphql/neo4j-graphql-js[neo4j-graphql-js^].
+
+[[features-2]]
+=== How to create a Knowledge Graph from your Slack Archive with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200911022304/1_urijmFGkc4_cbpRIeXKQEw.png" width="200px"  />
+</div>
+++++
+
+In Adam Cowley's latest blog post, he shows us how to build a Knowledge Graph from our Slack archives. 
+
+After explaining how to export the data from Slack, Adam walks through the exported JSON files and shows how to import this data into a graph structure using APOC's https://neo4j.com/labs/apoc/4.1/import/load-json/[Load JSON procedure^].
+
+He then writes queries to find the most active user and the one who would be best placed to answer Cypher questions, before concluding by extracting n-grams to find the most common topics across all channels.
+
+
+https://medium.com/neo4j/how-to-create-a-knowledge-graph-from-your-slack-archive-with-neo4j-6a1a1d59a535[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Changes in direction with the Traversal API
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200911011500/things-change.jpg" width=150px"  />
+</div>
+++++
+
+Every now and then you come across a graph query that can't be solved with Cypher or the APOC standard library. Luckily we can also write our own procedures, and the best place to learn how to do that is https://maxdemarzi.com/[Max De Marzi's blog^].
+
+In his latest post, Max builds a procedure that finds paths between pairs of nodes where the relationship direction can only change once along the way. If you want a crash course in the power of Neo4j's Traversal API, this is a pretty good place to start.
+
+https://maxdemarzi.com/2020/09/02/changes-in-direction-with-the-traversal-api/[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Drag & Drop GRANDstack, Second Order Democracy, Neo4j Cypher-DSL
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200703012121/noun_web-link_3240450.png" width="150px"  />
+</div>
+++++
+
+* Michael Porter explains how to https://blog.grandstack.io/drag-and-drop-with-the-grandstack-766f074df151[add drag and drop functionality to a GRANDstack application^], with the help of the React-beautiful-dnd library.
+
+
+* Rik Van Bruggen published http://blog.bruggen.com/2020/09/graphistania-20-episode-8-one-after.html[another episode of the Graphistania podcast^], talking about all the graphuse cases that the "summer of covid" threw (and keeps throwing) at us.
+
+* We published another Graph Data Science developer guide. The https://neo4j.com/developer/graph-data-science/link-prediction/[link prediction guide^] gives a high level overview of the things to keep in mind when solving these types of problems. 
+
+* Kenneth Nielson uses Neo4j and Python to https://medium.com/@kennethhmnielsen/authoritarian-by-proxy-using-neo4j-and-python-to-calculate-second-order-democracy-indices-ccca92695d74[calculate second order democracy indices from trade data^].
+
+* M. David Allen has written new https://neo4j.com/labs/kafka/4.0/architecture/[architecture documentation^] for Neo4j and Kafka, in which he describes how to move back and forth from streams to graphs.   
+
+* Michael Simons continues work on https://github.com/neo4j-contrib/cypher-dsl[Neo4j Cypher-DSL^], a spin off project from Spring Data Neo4j RX. So far it supports map projections, list comprehensions, list operators, and more.
+
+[[features-5]]
+=== Traveling Tourist: Part 2 - Exploring Pathfinding Graph Algorithms
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200911011902/1_RxBkkALmcADfD6_w77oqxA.png" width="200px"  />
+</div>
+++++
+
+Tomaz Bratanic continues with his Traveling Tourist series of blog posts. In part 1, last week, he built a graph of Spanish monuments, and in part 2 he shows us how to use pathfinding algorithms against this graph.
+
+Tomaz shows how to use the shortest path, minimum weight spanning tree, and random walk algorithms, before solving the Santa Claus variation of the traveling salesman problem
+
+https://towardsdatascience.com/part-2-exploring-pathfinding-graph-algorithms-e194ffb7f56[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/jimwebber[Jim Webber^]:
+
+tweet::1304093335796281345[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* 
+https://neo4j.com/developer/graph-data-science/link-prediction/scikit-learn/
+
+
+* William Lyon @lyonwj
+(10/?) GraphQL Mutations & Authorization With @auth0
+:megaphone: hasScope #GraphQL Auth Directive
+:dart: Scopes & API Permissions With Auth0
+:leftwards_arrow_with_hook: @apollographql useMutation #reactjs Hook & Forms
+https://www.youtube.com/watch?v=dCCObITlSY0
+
+* https://medium.com/@st3llasia/analyzing-arxiv-data-using-neo4j-part-1-ccce072a2027
+
+* Michael Simons
+Spring up your graph. About the new SDN6 last week at SpringOne https://www.youtube.com/watch?v=A7LRNS0Dnr4&feature=emb_title cc @Gerrit Meier
+
+* From benoit https://twitter.com/ouestware/status/1304067541388726278
+OuestWareOuestWare @ouestware
+Ever wanted to build a web app based on @neo4j and @GraphQL easily?
+Then the #GRANDstack is made for you!
+Read about it on our :gb: blog:
+https://www.ouestware.com/2020/09/08/GRAND-stack-one-schema-to-rule-them-all
+
+
+* https://medium.com/better-programming/build-a-restaurant-recommendation-engine-using-neo4j-9d13ebdd4736?source=rss-------8-----------------artificial_intelligence
+MediumMedium
+Build a Restaurant Recommendation Engine Using Neo4j
+Use the popular graph database to figure out what we should eat today
+
+* Khalid @buhakmeh
+Check it out! "Use NEO4J To Find The Shortest Path" (04/28/2020) by @buhakmeh #database RTs appreciated. https://khalidabuhakmeh.com/use-neo4j-to-find-the-shortest-path (09/09/2020)
+
+
+
+* https://towardsdatascience.com/build-a-subway-journey-planner-using-neo4j-566b1a53670a
+MediumMedium
+Build a Subway Journey Planner Using Neo4j
+Use the popular graph database to figure out the best travel path between two subway stations
+
+////

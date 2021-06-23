@@ -1,0 +1,178 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+Welcome to the I can't believe it's already February edition of This Week in Neo4j.
+
+This week we have five (FIVE!) releases of different projects in the ecosystem, including the Neo4j Desktop, Graph Algorithms Library, and a brand new Python library that's great for ETL jobs.
+
+Elsewhere there's a a master class in writing a stored procedure with Max De Marzi, Jennifer Reif and Mark Heckler show us how to build an application of the Marvel Universe using Neo4j and Spring Boot, and Andrea Santurbano shows us how to build a just-in-time data warehouse with Neo4j Streams.
+
+[[featured-community-member]]
+=== Featured Community Members: Kunal Yadav, Paramveer Singh, Raghu Madhava 
+
+This week's featured community members are Kunal Yadav, Paramveer Singh, and Raghu Madhava.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190201113813/this-week-in-neo4j-2-february-20191.jpg[name="Kunal Yadav, Paramveer Singh, Raghu Madhava"]
+
+Kunal, Paramveer, Raghu are all on the engineering team at CAST Software in Bengaluru, India. With a desire to advocate graph-thinking in their community, the three of them took it upon themselves to start a local meetup group and just announced their first event for February 23! 
+
+We commend you for taking the initiative to spread graph thinking in your community! And if you live nearby, don't forget to https://www.meetup.com/Bangalore-Data-Visualization-Meetup/events/258521635/[register for the meetup^]. 
+
+link:https://www.meetup.com/Bangalore-Data-Visualization-Meetup/events/258521635/[Register for the meetup, role="medium button"]
+
+[[features-1]]
+=== Getting Graphic: Extract maximum value from your data using Neo4j and Spring Data
+
+In this week's Neo4j Online meetup, https://twitter.com/jmhreif?lang=en[Jennifer Reif^] and https://twitter.com/mkheck?lang=en[Mark Heckler^] showed us how to build a graph backed application using Spring Data Neo4j, Spring Boot, and data sourced from the Marvel API.  
+
+youtube::T5dZB6TZBeE[type={type}]
+
+Highlights from the talk include the difficulties (and innovative solutions) getting the data out of Marvel's API, getting the skeleton of the application built quickly with Spring Boot, and the challenges faced while modelling the Marvel Universe. 
+
+[[features-2]]
+=== Neo4j Desktop Release: Command Bar, Deep Linking, Improved Security
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190201083537/1_Hdsam5Xq6_oBvVhot4nS8Q.jpeg" width="200px"  />
+</div>
+++++
+
+Oskar Hane released version 1.1.14 of the Neo4j Desktop, a release which had a focus on tightening up security for our users and evolving integration support for third party app vendors. 
+
+Apart from that we also added a command bar as a neat feature that should make you more productive and happy, as well as deep-linking which improves integration inside and outside of Neo4j Desktop.
+
+Don't forget to update your desktop to get these new features!
+
+link:https://r.neo4j.com/2TplAyl[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== How to leverage Neo4j Streams and build a just-in-time data warehouse
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190201092640/1_0k7QFFBl7YGD9haNYeLQpw.png" width="200px"  />
+</div>
+++++
+
+Andrea Santurbano has written a blog post showing how to to create a Just-In-Time Data Warehouse using the newly released Neo4j Streams module with Apache Spark’s Structured Streaming Apis and Apache Kafka.
+
+Andrea takes us through a worked example,  glueing everything together using Apache Zeppelin, a notebook runner that has native support for Neo4j.
+
+link:https://r.neo4j.com/2BgF6Gg[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Graph Algorithms Release: Pearson Similarity, ArticleRank, Louvain Performance Improvements
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190201084653/1_zeQ4XYGU-FHVolTt0YUrYg.png" width="150px"  />
+</div>
+++++
+
+This week we also released a new version of the Graph Algorithms library for Neo4j 3.4 and 3.5.
+
+This release introduces the ArticleRank and Pearson Similarity algorithms, Cypher projection support for similarity algorithms, and performance optimizations for the Louvain algorithm.
+
+Timothy Holdsworth worked on the ArticleRank algorithm, so thanks to Timothy for this useful addition to the library!
+
+link:https://r.neo4j.com/2TplAyl[Read the release post, role="medium button"]
+
+[[features-5]]
+=== Even moar releases: Neo4j Versioner Core, Neo4j Connector, Py2neo
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190201085853/pre_press_release2.jpg" width="150px"  />
+</div>
+++++
+
+You thought we'd finished with the releases for this week?! Think again, we've got 3 more:
+
+* Py2neo is a client library and toolkit for working with Neo4j from within Python applications and from the command line. https://r.neo4j.com/2TpqlIn[Version 4.2^] includes some upgraded dependencies, including a switch to now depend on the 1.7 connector, rather than the 1.6 driver as previously. There are also a load of bug fixes and proper support for temporal types.
+
+* Neo4j Versioner Core is a collection of procedures, aimed to help developers to manage the Entity-State model, by creating, updating and querying the graph. https://r.neo4j.com/2TogwdC[Version 2^] sees support for Neo4j 3.5. and new procedures that let you version your relationships.
+
+* https://r.neo4j.com/2Tv2gjy[Neo4j Connector^] is a Python library that contains everything you need to execute single-request transactions for Neo4j 3.0 and above through its HTTP API. It is well suited for ETL jobs where we want to execute many statements in a single request.
+
+[[features-6]]
+=== Learn you a Neo4j stored procedure
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190201091434/toa-heftiba-782391-unsplash.jpg" width="150px"  />
+</div>
+++++
+
+Max De Marzi has written a blog post containing slide decks, source code, and performance test source code, to get you up and running with writing Neo4j stored procedures.
+
+There's more than 300 slides...so more than enough to keep you busy this weekend! And if you get stuck Max is happy to help on the https://community.neo4j.com/t/neo4j-stored-procedures-for-devs-that-dont-know-java-yet/4693/2[Neo4j community site^].
+
+
+link:https://r.neo4j.com/2TqUg2W[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/sramazzina[Sergio Ramazzina^]:
+
+tweet::1091030352792039425[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+link:https://r.neo4j.com/2TpqlIn[Read the blog post, role="medium button"]  
+
+Editing nodes and relations in a grid.. a lot easier and faster - https://www.youtube.com/watch?v=3NNY1wo27ps 
+
+https://medium.com/neo4j/whats-cooking-part-2-what-can-i-make-with-these-ingredients-7df9dc129993 
+
+https://medium.com/@davidrbayer/in-defense-of-over-engineering-cd0562a20dad  
+
+https://graphaware.com/analytics/2019/01/28/speaker-identification-meets-graphs.html 
+
+.@GCPcloud OnAir Webinar yesterday - had a great time presenting with @gabidavila on using @neo4j on Google Kubernetes Engine https://www.youtube.com/watch?v=IrNJaXM6uU4&feature=youtu.be #gke #kubernetes #graph 
+
+
+
+[[articles-1]]
+=== Graphing yourself, New Scala Driver, New Release on Google Cloud Platform
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190111074314/1_H4YN_BOKECgFDZ8icF7tMg.png" width="150px"  />
+</div>
+++++
+
+* tada  - https://tech.findmypast.com/graphical-family-tree/ 
+
+Graphing the Poets 
+https://medium.com/@kirbyurner/graphing-the-poets-b600c86d6b9 
+
+////

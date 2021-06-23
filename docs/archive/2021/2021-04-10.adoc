@@ -1,0 +1,164 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Neo4j & Django, Analyzing Genomes, GGCD, Change Data Capture,
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, don’t forget to https://globalgraphcelebrationday.com/[join us^] for Global Graph Celebration Day on April 15! Neo4j is hosting an extended meetup with content and announcements.
+
+Cristina starts us off with a walkthrough of using Django and Neo4j together on the Paradise Papers data set. Sixing covers importing genomes and ontologies with the KEGG data and exploring for research and scientific hypotheses. Christophe shows off the new change data capture connectors by GraphAware for RabbitMQ, AWS SQS, Azure Service Bus, and CloudEvents with Knative.
+
+And finally, help Neo4j improve data import by filling out a survey, Jesus follows up on the video in last week’s newsletter for reconciling taxonomies, Rik explores clickstream data in Neo4j, and Christophe shared a short clip of visualization using Hume with a keywords review demo.
+
+Cheers,
+https://twitter.com/jmhreif[Jennifer^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Members: Andrea Santurbano & Giuseppe Villani
+
+
+This week's featured community members are Andrea Santurbano and Giuseppe Villani.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210409110703/this-week-in-neo4j-10-april-2021.jpeg[name="Andrea Santurbano, Giuseppe Villani"]
+
+Andrea is a CTO at LARUS Business Automation and has been very involved for several years with the APOC library, creating new functionality and fixing bugs. He has been the mastermind behind many pull requests and has conversed with much of the community in the APOC Github repo. Over the last couple of years, he has also contributed and published content around the Neo4j Streams library that integrates Neo4j with Apache Kafka. Andrea has participated in several Neo4j events, including NODES last year with a session on combining Neo4j with Apache Spark.
+
+Giuseppe is a software developer at LARUS Business Automation and works with Andrea on the APOC library. He has been very active on APOC’s Github repository in recent weeks, also contributing to the code base with new procedures and making updates to existing functionality. He has quite a flurry of activity on Github, so you can be sure to find him there contributing code and making Neo4j users’ lives better. Last year, Giuseppe also spoke at our NODES event with a presentation on Spring, Neo4j, and JHipster.
+
+Thank you, Andrea and Giuseppe, for your contributions to the Neo4j ecosystem and for having such an impact in the community! We appreciate everything you’ve done and look forward to continued collaboration!
+
+https://www.linkedin.com/in/andrea-santurbano-ab143232/[Connect with Andrea on LinkedIn, role="medium button"]
+
+https://www.linkedin.com/in/giuseppe-villani/[Connect with Giuseppe on LinkedIn, role="medium button"]
+
+
+[[features-1]]
+=== Neo4j for Django Developers
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210409110913/twin4j-django-developers.jpeg" width="150px"  />
+</div>
+++++
+ 
+Cristina shows us how to use an object-relational mapper like Django and an object-graph mapper like neomodel together to enhance an application with the graph data structure of Neo4j.
+
+We see the Paradise Papers search application as an example of how someone could add Neo4j to an already-existing Django application. Cristina also walks through setting up the example on Neo4j Sandbox, locally in Neo4j Desktop, or with Neo4j Aura! Steps are also included to deploy the application to Heroku. At the end, Cristina guides us to the next steps with resources for exploring the data set and importing your own relational data to Neo4j using the ETL tool, so that you can try https://github.com/neo4j-contrib/django-neomodel[Django-neomodel^] in your own projects. Happy developing!
+
+https://medium.com/neo4j/neo4j-for-django-developers-efd0e39e5f2e[Read the blog post, role="medium button"]
+
+
+[[features-2]]
+=== Analyzing Genomes in a Graph Database
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210409111136/twin4j-genomes-graphdb.png" width="200px"  />
+</div>
+++++
+
+In this post, Sixing shows us how to import and explore the Kyoto Encyclopedia of Genes and Genomes (KEGG) data for KEGG Orthology (KO) numbers. The code is already prepared for us in a https://github.com/dgg32/neo4j_genome_ko[Github repository^], but Sixing pulls data from the API using a Python script, then import the data as CSV files into Neo4j.
+
+Once imported, we run some queries to find the rarest and most common KO numbers in genomes and find out which genomes are the most similar by comparing the KOs they share. Finally, Sixing shows us how to use Neo4j Bloom to handle the visualizations for this larger data set and understand why Neo4j is such an asset for research to locate hypotheses and test them.
+
+https://medium.com/geekculture/analyzing-genomes-in-a-graph-database-27a45faa0ae8[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Don’t Miss: Global Graph Celebration Day - April 15!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210409111244/twin4j-ggcd-2021.jpeg" width="200px"  />
+</div>
+++++
+
+Global Graph Celebration Day is just around the corner on April 15th! Neo4j is hosting an extended meetup for graph enthusiasts around the globe. We will learn some basics about graphs, hear how people in the community are using Neo4j in their projects and businesses, play games and win prizes for some fun, and wrap up with GraphQL community call where there are sure to be some exciting announcements!
+
+Watch the event live on globalgraphcelebrationday.com[https://globalgraphcelebrationday.com/^] on Thursday and join in on the fun with Neo4j and the community!
+
+https://medium.com/neo4j/stay-connected-be-a-part-of-global-graph-celebration-day-2021-d11539b1224d[Read the blog post, role="medium button"]
+
+
+[[features-4]]
+=== Neo4j Change Data Capture with GraphAware Hume
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210409111405/twin4j-change-data-capture.png" width=150px"  />
+</div>
+++++
+
+Christophe writes about the connectors they have built for change data capture (CDC). While the Neo4j Streams project with Kafka is good, messaging platforms in businesses are polyglot where all kinds of change data capture is needed. To support their needs and their customers’ needs, GraphAware built connectors for RabbitMQ, AWS SQS, Azure Service Bus, and CloudEvents with Knative.
+
+Christophe briefly explains the integration with CloudEvents, as it is likely the least common, then gives a brief overview of using the Neo4j change data capture with Hume Orchestra. The post concludes that change data capture can help applications react to changes in the database and increase business value.
+
+https://graphaware.com/neo4j,hume/2021/03/29/neo4j-change-data-capture-hume-cdc.html[Read the blog post, role="medium button"]
+
+
+[[features-5]]
+=== Data Import Survey, Taxonomy Reconciliation, Analyze Clickstream Data, Hume Visualization
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Neo4j wants to know your experience around data import! Help us improve by responding to https://forms.gle/UXEopA5Gz6ywUqhA7[the survey^].
+
+* If you caught Jesus’s knowledge graph video last week, there is now a continuation blog post honing in on the https://jbarrasa.com/2021/03/28/quickgraph19-taxonomy-reconciliation/[reconciliation of taxonomies^].
+
+* Rik published a https://blog.bruggen.com/2021/03/part-13-wikipedia-clickstream-analysis.html[blog post^] that explores clickstream data in Neo4j. Find out how user journeys through page links are a great use case for Neo4j!
+
+* Christophe https://www.youtube.com/watch?v=307G9Q8GZKw[shared a clip^] on Twitter demonstrating 3 of Hume’s features for visualization with a keywords review demo. It shows how Hume can do more than data exploration, handling operations and actions from the visualization itself.
+
+
+=== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/mdavidallen[David Allen^]:
+
+tweet::1377050566631829508[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+////

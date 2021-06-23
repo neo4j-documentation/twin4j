@@ -1,0 +1,175 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - New Book: Fullstack GraphQL Applications with GRANDstack, Leveraging Graph Algorithms In Visualizations, Marketing Activities in Neo4j
+
+[Body copy:]
+////
+
+This week Will Lyon announced the release of the early access version of his GRANDstack book, and Max De Marzi shows us how to analyse marketing activities. 
+
+Scott Sosna interrogates lobbying data, Nathan Smith solves the perfect dorm room assignment problem, and Will Lyon visualises the Russian Twitter Troll dataset.
+
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Augustine Correa
+
+
+This week’s featured Neo4j community member is Augustine Correa. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025031055/this-week-in-neo4j-26-october-2019.jpg[name="Augustine Correa"]
+
+You might recognize Augustine's name as a host for a Global Graph Celebration Day event or from one of the NODES 2019 viewing parties.  It’s also possible you’ve heard his name as he’s a passionate and successful community organizer around developer technologies, is responsible for one of the longest running Docker groups in the world, and helps run a https://twitter.com/freeCodeCamp[Free Code Camp] in Mumbai. We actually first connected with him through a raffle on the http://www.codecrush.me[Code Crush podcast] with https://twitter.com/JulieTorero[Julie Torero] and https://twitter.com/kiaaaana[Kiana T]!  
+
+If you’ve never organized a developer meetup before, we can let you know… it’s a lot of work! Augustine has been consistent and has been doing it for years - not just about graph databases and Neo4j, but around all kinds of popular technologies, tools, and methodologies. With no doubt, Augustine is a thought-leader in this space. 
+
+While we love that he takes time out to help others in the community grow and learn professionally and personally, he also takes the time to show others around the world how to build successful communities. Here’s a snippet of his video on https://www.youtube.com/watch?v=Wr9g0vJgn3A[“Secret Ingredients of a Successful Tech Community”]. In the video he speaks about the importance of partnership and valuing your most committed members by letting them lead the content; all things that we highly value. 
+
+On behalf of the Neo4j and other developer communities around the world, thanks for all your work, Augustine! 
+
+https://twitter.com/TalkOrTweets[Follow Augustine on twitter, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Leveraging Graph Algorithms In Visualizations With Neovis js
+
+This week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference is Will Lyon's lightning talk about https://neo4j.com/online-summit/session/graph-algos-visualization-neovis[visualising the results of Graph Algorithms using Neovis.js^].
+
+youtube::HyG7MxMS5Qw[type={type}]
+
+In the talk Will shows how to combine the https://neo4j.com/docs/graph-algorithms/current/[Neo4j Graph Algorithms^] and  https://github.com/neo4j-contrib/neovis.js/[Neovis.js graph visualisation^] libraries to enhance a graph visualisation of Russia Twitter trolls.
+
+[[features-2]]
+=== Book Deal: Fullstack GraphQL Applications with GRANDstack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191024231921/Lyon-Fullstack-MEAP-HI.jpg" width="150px"  />
+</div>
+++++
+
+https://twitter.com/lyonwj[Will Lyon^], aka Mr GRANDstack, is writing a book that will bring together everything that he's learned while working on GraphQL integrations with Neo4j over the last few years.
+
+The book is titled Fullstack GraphQL Applications with GRANDstack and the first 3 chapters are available to read now! 
+
+In addition, Will has persuaded his editor to give readers of TWIN4j a special discount code. You can get a 40% discount on the price by using the code *twin4j40* at checkout.
+
+https://www.manning.com/books/fullstack-graphql-applications-with-grandstack[Read the book, role="medium button"]
+
+[[features-3]]
+=== Fraud Detection, Malware Analysis, Analyzing US Lobbying Data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025020451/2019-10-25_10-03-57.png" width="150px"  />
+</div>
+++++
+
+* At the recent GraphTour in New York City Max De Marzi gave a  presentation on Fraud Detection with Neo4j, and the https://www.slideshare.net/maxdemarzi/fraud-detection-and-neo4j[slides from that talk^] are now available. 
+
+* We recently https://neo4j.com/developer/dates-datetimes-durations/[published a developer guide^] that covers some of the most common challenges when working with Neo4j's Date, DateTime, and Duration types.
+
+* Maksim Dubyk achieved his Reverse Engineering Malware (GREM) Gold Certification, with the publication of his paper https://www.sans.org/reading-room/whitepapers/reverseengineeringmalware/leveraging-pe-rich-header-static-malware-detection-linking-39045[Leveraging the PE Rich Header for Static Malware Detection and Linking^]. In one section of the paper, Maksim explains how he used Neo4j and its Graph Algorithms Library to compute link analysis metrics that were used as part of his overall solution.
+
+* Having loaded US Lobbying data into Neo4j in his previous post, Scott Sosna now shows how to https://dzone.com/articles/analyzing-us-lobbying-data-in-neo4j[interrogate the data^] using the Cypher query language. 
+
+[[features-4]]
+=== Marketing Activities in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025013608/paths-cropped.jpg" width="150px"  />
+</div>
+++++
+
+In https://twitter.com/maxdemarzi[Max De Marzi^]'s latest blog post, we learn how to work with marketing activity data, using a generated dataset based on activites Neo4j users might do.
+
+Max shows how to run path analysis to find common sequences of activity types and the sequence of activities that lead to an opportunity. He then concludes the post by describing different modeling approaches that speed up the query run time.
+ 
+http://maxdemarzi.com/2019/10/21/marketing-activities/[Read the blog post, role="medium button"]
+
+
+[[features-5]]
+=== The perfect dorm room assignment: Exploring the bipartite matching problem with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025014324/41VaxWW3cqL._SX347_BO1204203200_.jpg" width="150px"  />
+</div>
+++++
+
+Nathan Smith has been reading https://www.cs.cornell.edu/home/kleinber/networks-book/[Networks, Crowds and Markets^], and decided to try and solve Chapter 10's bi-partite matching problem using Neo4j.
+
+In a very technical post, Nathan shows how to solve the problem using several procedures from https://neo4j.com/developer/neo4j-apoc/[APOC^], Neo4j's standard library. 
+
+
+https://medium.com/@nsmith_piano/the-perfect-dorm-room-assignment-exploring-the-bipartite-matching-problem-with-neo4j-c59ade420acb[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/szenyo[Janos Szendi Varga^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1184823341787561984[type={type}]
+
+
+////
+
+https://medium.com/@nsmith_piano/a-market-for-matches-finding-prices-with-neo4j-71ab085f8cd2 
+A market for matches: Finding prices with Neo4j
+
+Jasper Blues @doctor_cerulean
+This is Atok, Benguet, 48KM from our house. Makes a nice backdrop for my two day old open-source project - which is a Node.js and  #TypeScript client for #GraphDatabase like @AgensGraph #Neo4J and others.
+https://github.com/liberation-data 
+
+* https://neo4j.com/graph-algorithms-3-5-12-0-release-notes/
+This release includes new functionality to recognize multiple properties in the graph loader (@kees.vegter), improvements to seeding with Louvain, error messaging when users try to load multiple graphs with the same name, a bug fix for algo.version() (@tom.geudens), deprecating algo.unionFind in favor of algo.wcc, and a beta procedure for random graph generation (plus other cool stuff)
+
+
+
+
+
+You want to be able to not just put data in to Neo4j, but also get it out??!? Using SSIS?!?!?
+OK then, I got your back - read / watch all about it. https://xclave.co.uk/2019/10/16/using-a-data-flow-to-move-data-from-neo4j-in-ssis/
+
+And one more made it to the @qlik Gallery, think Graph!
+https://community.qlik.com/t5/Qlik-Gallery/TIQSolutions-Fraud-Detection-in-eCommerce/ba-p/1633922 @neo4j #graph #fraudanalysis @TIQSolutions
+
+chris farrellchris farrell @seajay
+Releasing my bloodhound helper tool, cypheroth.
+It helps save time you would have spent running bloodhound cypher queries in the neo4j web interface by dumping all the important info out to spreadsheets. Comes with a great set of starting queries.
+https://github.com/seajaysec/cypheroth https://pbs.twimg.com/media/EG83s1BWwAA4jJ1.png
+
+
+Integration of RDKit and Neo4j #RDKit #Neo4j #GraphDB #Chemoinformatics
+https://iwatobipen.wordpress.com/2019/10/12/integration-of-rdkit-and-neo4j-rdkit-neo4j-graphdb-chemoinformatics/
+
+On #Graphs, #AI and #ML. Q&A with Alicia Frame
+Senior Data Scientist @neo4j Neo4j
+http://www.odbms.org/2019/10/on-graphs-ai-and-ml-qa-with-alicia-frame/ 
+
+
+////

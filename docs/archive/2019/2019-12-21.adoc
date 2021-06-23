@@ -1,0 +1,242 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - SDN-RX, Kafka, Bloom, Flight Search, Visualizing with GraphXR, Music Connections, Graph Versioning
+
+[Body copy:]
+////
+
+Hello my fellow graph fans,
+
+We're almost at winter solstice and all the other celebrations commencing these weeks. 
+To give you some material to have fun with during that time, this weeks issue is pretty packed.
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Gerrit Meyer introduces the all new Spring Data Neo4j RX which uses the reactive driver architecture of Neo4j 4.0.
+
+Jennifer published a guide on Bloom, we see breast cancer data visualized, the GraphXR folks have more training material.
+I really enjoyed Joe Depeaus article on matching music interests with our CEO.
+
+Rik was very active and has published a new podcast, part 4 of the Carrefour analysis and an email analysis series.
+
+Lots of fun stuff to read through,
+
+Enjoy the time off if you have it!
+
+Michael Hunger, and the Developer Relations team
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191220064617/michael-sydney.jpg[width=400]
+
+
+[[featured-community-member]]
+=== Featured Community Member: Robin Moffatt
+
+This week's featured Neo4j Community member is Robin Moffatt the awesome developer advocate from Confluent, creators of Apache Kafka.
+Robin's talks are always a treat, if you get the opportunity to see him live make sure to do so.
+On https://rmoff.net/[his blog] he not only covers Kafka related topics but also life lessons for developers (advocates).
+
+I met him the first time in 2018 in Cracow, PL at the CoreDump conference, co-organized by my colleague Jarek Palka.
+Robins and my paths have crossed several times since, even presenting together in the Kafka+Neo4j meetup in Berlin.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191220070920/featured-robin.jpeg[name="Robin Moffatt"]
+
+As part of his quest to bring the power of data streams to the world he has frequently used Neo4j and our Kafka-Integration as an example.
+Robin has covered graph topics from fraud detection, https://talks.rmoff.net/8Oruwt#s7kxm71[railroad lines^] and most recently https://rmoff.net/2019/12/18/detecting-and-analysing-ssh-attacks-with-ksqldb/[syslog attack vectors^].
+
+Thanks a lot for your relentless work Robin, hope you have some relaxing time at home now.
+
+https://twitter.com/rmoff[Follow Robin on Twitter, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: All-new SDN-RX: Reactive Spring Data Neo4j
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^], Gerrit Meier introduces the all-new reactive variant of Spring Data Neo4j. 
+
+youtube::mrs4TQwNo6g[type={type}]
+
+Starting with version 4.0 Neo4j will support the reactive programming model. To provide this feature for the Spring (Data) community, we decided to re-create Spring Data Neo4j from scratch purely based on the newest Java Driver and the Spring framework. With this foundation you can expect an even better support for mapping of your business domain in the Spring ecosystem.
+
+[[features-2]]
+=== Graph Algorithms Release: K1 Coloring, Modularity Optimisation, Node Similarity
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191220061528/node-similarity.png" width="150px"  />
+</div>
+++++
+
+Alicia Frame released version 3.5.13.0 of the Neo4j Graph Algorithms Library for the Graph Data Science team.
+
+This release contains quite some goodies.
+https://neo4j.com/docs/graph-algorithms/current/algorithms/k1coloring/[K1-Coloring^] is a color mechanism that's also used in geographic maps.
+The goal is to assign as few node colors so that each neighbour has a different color.
+
+The https://neo4j.com/docs/graph-algorithms/current/algorithms/node-similarity/[node similarity algorithm] is an optimized version of Jaccard, which works on neighborhood structures, i.e. how similar is a node to it's 2nd degree neighbours based on shared intermediate nodes.
+
+There are optimizations for Louvain modularity, especially around parallelization.
+
+The graph loader now supports multiple nodes and some preview functionality for the upcoming Graph Data Science 1.0 which the team is currently working on.
+
+https://neo4j.com/graph-algorithms-3-5-13-0-release-notes/[Read release notes, role="medium button"]
+
+[[features-3]]
+=== Bloom Guide, Graphistana, Flight Search, GraphXR
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191220062953/graphxr.png" width="200px"  />
+</div>
+++++
+
+* David Jegan created a https://www.youtube.com/watch?v=j4rD168TLXg[short video showing how to build a GRANDstack application^]. 
+
+* Jennifer Reif  published a new developer guide in which she shows https://neo4j.com/developer/neo4j-bloom/[how to use Neo4j Bloom^], the graph visualisation tool and on top of that also one that shows you how to connect Bloom to https://neo4j.com/developer/aura-bloom/[Neo4j Aura^]
+
+* Rik continues his series of blog posts based on data https://github.com/ging/carrefour_basket_data_challenge[from a coding challenge for Carrefour^] a big French Retailer
+* Paul Drangeid shares tips for https://blog.graphcommit.com/2019/11/configuring-neo4j-server-yes-there-are.html[configuring a Neo4j instance running on Windows for data import^].  
+
+// * Robin showed how to https://rmoff.net/2019/12/18/detecting-and-analysing-ssh-attacks-with-ksqldb/[capture ssh-login attempts from a syslog] into a Kafka stream and processing it in ksqlDB. The streaming data was then analyzed with Elasticsearch and Neo4j with our Neo4j-Kafka Connect Sink Plugin.
+
+* Rik has investigated the Hillary Clinton email dump using the GraphAware NLP package in https://blog.bruggen.com/2019/12/part-13-revisiting-hillary-clintons.html[a 3-part blog series^].
+
+* An interesting https://medium.com/neo4j/visualize-cancer-1c80a95f5bb4[demonstration of visualizing breast cancer data^] with GraphXR was published by https://twitter.com/gamer456148[Andrew Kamal^]. This was his contribution to the NODES 2019 GraphHack.
+
+* Our prolific featured community member from June, Vlad Batushkov is back. He started a blog post series on creating a Flight Search GRANDstack app, and starts off with https://medium.com/neo4j/flights-search-application-with-neo4j-dockerizing-part-1-bcb861dc0c83[Dockerizing the Flight Search Application^].
+
+* The 2nd epsiode of the https://blog.bruggen.com/2019/12/graphistania-20-episode-2-this-month-in.html[Graphistania Podcast 2.0^] also aired this week.
+Rik and Stefan covered their highlights from the November's "this week in neo4j" issues.
+
+* I put the slides from the 3 YOW! conferences in Sydney, Brisbane and Melbourne https://www.slideshare.net/jexp/how-graphs-help-investigative-journalists-to-connect-the-dots["How Graphs Help Investigative Journalists to Connect the Dots"^] online.
+
+* David Allen shares some https://twitter.com/mdavidallen/status/1207666420496113666[tips on using epoch time^] for comparisons in Neo4j.
+
+* The good folks from GraphXR created new tutorials and documentation to answer all of your GraphXR questions - 
+https://www.kineviz.com/learning[learning resources^],
+https://www.youtube.com/playlist?list=PLXpADR-eMJRJilQczveaotpgtXSHHb3A3[a youtube playlist^] and
+https://static1.squarespace.com/static/5c58b86e8dfc8c2d0d700050/t/5df2bc684c2e38505cf2be1c/1576189042217/GraphXR_User_Guide_v2_2_1.pdf[a user guide^]
+
+* https://twitter.com/rotnroll666[Michael Simons^] summarized the configuration options to connect https://medium.com/neo4j/using-neo4j-aura-from-java-and-spring-boot-f1c1684894f8[graph applications that directly or indirectly use the Java driver to Neo4j Aura^]. That includes Spring Data Neo4j, SDN-RX and Quarkus.
+
+* The https://twitter.com/jqassistant/status/1207396176267493378[jQAssistant plugin for SonarQube is now available in their marketplace^], this puts graph based software analytics in the hands of SonarQube users
+
+[[features-4]]
+=== Make small talk with your boss - graph based music recommendations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191218095319/graph-based-recommendations-photo-malte-wingen.jpg" width="200px"  />
+</div>
+++++
+An article I enjoyed a lot this week is from Joe Depeau the owner of Armstrong from our London office.
+
+
+In his very entertaining style he describes his attempt of figuring out which music interests he would share with his boss Emil Eifrem and how they would overlap.
+To determine that, he imported parts of the large crowdsourced MusicBrainz database into Neo4j.
+Then he used his own and Emils interests - acquired through some detective social media investigation - to see where there are interesting connections.
+
+https://neo4j.com/blog/make-small-talk-with-your-boss-graph-based-recommendations/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Keeping track of graph changes using temporal versioning
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191220062252/clock.jpeg" width="200px"  />
+</div>
+++++
+
+My colleauge Lju Lazarevic https://www.youtube.com/watch?v=Cm1yd8d7qv0&list=PL9Hl4pk2FsvUbsmdPrqTRF_DWvUb4z5AK[gave a talk at NODES 2019^] about the different means to represent time and versions in Neo4j.
+
+In this article you find the essence of the talk explained in detail.
+She goes over reasons for versioning and use-cases for instance tracking changes in IAM, Infrastructure or Social networks.
+There are different ways to achieve this, from manual modeling of state and version nodes to using community projects like http://github.com/h-omer/neo4j-versioner-core[Versioner-core].
+In a number of examples she highlights the implications of the approaches and possible things to watch out for.
+
+https://medium.com/neo4j/keeping-track-of-graph-changes-using-temporal-versioning-3b0f854536fa[Read the article, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was also by https://twitter.com/rmoff/[Robin Moffatt^]
+posting about his love for Cypher :)
+
+
+tweet::1207440053762449409[type={type}]
+
+I wish you all a enjoyable time in the next 2 weeks, hopefully with your families and loved ones.
+
+Happy Winter Solstice, Christmas, Hanukkah, or whichever celebration you enjoy at the change of the year.
+
+In the next year you will see even more developer goodness from Neo4j, I'm super excited about the prospect.
+
+Next week we will skip this newsletter, we're back in the new year.
+
+Cheers, Michael
+
+
+
+////
+
+* predicate functions, extract functions, patterns, all together, @neo4j 's Cypher rocks.
+https://stackoverflow.com/questions/59078599/matching-all-nodes-related-to-a-set-of-other-nodes-neo4j/59078847#59078847 
+
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+
+* Ben Albritton @bla222
+Learning about the Islamic Scientific Manuscripts Initiative with Dr. Sally Ragep this morning @SIMS_Mss . All data available in a @neo4j db: https://ismi.mpiwg-berlin.mpg.de/neo4j-graph-db
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+
+Quantyca @quantycabi
+New blog post is out!
+Matteo Cimini will show a practical example by making use of Neo4j and Cypher Query Language: https://buff.ly/354RQgh
+You can find our blogposts also on our website: https://quantyca.it/
+Quantyca Team Rocks! 
+#database #graph #recommendation #neo4j https://pbs.twimg.com/media/ELZ1-9OWoAAhxnn.jpg
+
+Gerrit Meier @meistermeier
+And here we go with our second part of the #SpringData @neo4j RX introduction. This time we’ll have a look at the Neo4jTemplate and the Neo4jClient. https://youtu.be/_-aGFW4huvg
+
+https://blog.graphcommit.com/2019/12/graph-commit-project.html
+https://blog.graphcommit.com/2019/11/create-veeam-backup-knowledge-graph-via.html 
+https://blog.graphcommit.com/2019/11/import-vcenter-infrastructure-into.html
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-dockerizing-part-1-bcb861dc0c83 
+Flights Search Application with Neo4j — Dockerizing (Part 1)
+How to build Neo4j Docker Image with a flights database imported using the neo4j-admin import tool
+
+https://towardsdatascience.com/inference-in-graph-database-7203938932a0  @jesus.barrasa
+Inference in Graph Database
+In this blog post, I will try to explain what the inference is on Semantic Web and to show how the inference can be applied in a local…
+
+https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf
+Human Genes Graph
+
+Visualize Clinical Data in Graph Database in 20 Minutes
+https://medium.com/@hongpingliang/visualize-clinical-data-in-graph-database-in-20-minutes-f4de223449a2 
+
+
+
+////
+

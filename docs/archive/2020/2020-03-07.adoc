@@ -1,0 +1,192 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 7 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Teaching Graphs, Graph Data Science Notebooks, COVID-19, NeoMap, Drivers Galore, XRPlorer
+
+[Body copy:]
+////
+
+Greetings graphistas!
+
+In this week’s edition we watch Risa Myers’ NODES talk where she shares her experiences on teaching Neo4j to students.
+
+Tomaz Bratanic walks us through how to migrate existing code from the Graph Algorithms library to its successor, the Graph Data Science library, based on examples the Graph Algorithms book (which is only available for download until April 15).
+
+Adam Cowley has produced a lot of new content around: taking advantage of multi database in 4.0 through a worked example, how to seed an instance of Neo4j inside a Docker container using a backup, and has built an early version of a Cypher Query builder for Node.js.
+
+Estelle Scifo has released the latest version of neomap, and gives us an overview of the new features in it with her latest blog post.
+
+I hope you have a fabulous weekend!
+
+https://twitter.com/ellazal[Lju^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Thomas Silkjær
+
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200306211201/featured9March.png[name="Thomas Silkjaer"]
+
+Our featured community member this week is Thomas Silkjær. Thomas is a designer, developer, and data analyst with a passion for understanding blockchain technology, living in Aarhus, Denmark. He’s also https://neo4j.com/graphacademy/neo4j-certification[Neo4j Certified Developer^], a https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninja^], and a contributing writer for https://www.forbes.com/sites/thomassilkjaer/#1d4bb7547348[Forbes^].  You might recognize Thomas from the presentation he gave last year on https://www.youtube.com/watch?v=NiwRd7qLtCc[Exploring the XRP ledger in GraphXR^] or his articles on https://xrpcommunity.blog/exploring-relationships-on-the-ledger-part-two/[exploring the XRP data^]. Thomas is passionate about building and connecting the dots, just as much as he is in sharing his knowledge and helping others. We wanted to express our admiration and gratitude for his passion and contributions. Thank you, Thomas, for all that you do for the community. 
+
+PS. He’s recently left his company, after 15 years to https://twitter.com/Silkjaer/status/1229863550539223041[explore new possibilities working in fintech, blockchain, and data analytics]. He is currently working on the https://xrplorer.com/[xrplorer project^] a Neo4j based tool with up to date information of the XRP (Ripple) ledger.
+
+If you have any ideas for him, you can message him directly on the https://community.neo4j.com/u/thomas_silkjaer/summary[Neo4j Community Site^].
+
+https://twitter.com/Silkjaer[Follow Thomas on Twitter!, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: We are not just relational anymore: Teaching Neo4j as part of a database course
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019^] conference, Risa Myers’ talks about how she has incorporated Neo4j on the syllabus at Rice University. 
+
+youtube::alqm9mRKTVw[type={type}]
+
+She identifies that the focus in a project should be on selecting the right tool for the job, and when thinking about how you store and query your data, this is also applicable. Risa describes the evolution of the course that she runs, and how it has changed over time to incorporate different database types, including Neo4j. 
+
+If teaching Neo4j has whet your appetite, do check out the https://neo4j.com/graphacademy/university-program/[Neo4j GraphAcademy University Program^].
+
+https://neo4j.com/online-summit/session/teaching-neo4j-introduction-college[Watch Risa's Talk, role="medium button"]
+
+[[features-2]]
+=== Graph Data Science Library Notebooks
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200305095442/Examplegraphzeppelin.png" width="120px"  />
+</div>
+++++
+
+https://twitter.com/tb_tomaz[Tomaz Bratanic^] has recently written a blog post featuring how you can migrate from the Graph Algorithms library to its successor, the https://neo4j.com/docs/graph-data-science/current/[Graph Data Science (GDS)^] library, which was released this week as a 1.0 version, soon to be available in Neo4j Desktop. 
+
+He has prepared migration guides in the form of an https://zeppelin.apache.org/[Apache Zeppelin^] notebooks. Using examples from the Graph Algorithms book, Tomaz has produced 16 single graph algorithm notebooks with implementations in Apache Spark as well as in Neo4j. He also covers the link prediction analysis from the book, ported to the new library.
+
+The Graph Data Science library, together with Bloom 1.2 is also available in the new https://neo4j.com/sandbox[Graph Data Science Sandbox^], thanks to Will Lyon.
+
+Don’t forget, if you haven’t already - do download your copy of the link:https://neo4j.com/graph-algorithms-book/?utm_source=twin4j[Graph Algorithms^] book whilst you can - it’s available for free download, but only until 15 April!
+
+https://towardsdatascience.com/introducing-the-neo4j-graph-data-science-plugin-with-examples-from-the-graph-algorithms-19b831f66f2[See the GDS Migration Notebooks, role="medium button"]
+
+
+[[features-3]]
+=== Welcome Adam Cowley!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170512143250/adam-cowley-2017.jpg" width="120px"  />
+</div>
+++++
+
+*Adam Cowley* just joined our team (yay!). He will be working predominantly in the area of Neo4j Developer Tools (Desktop, Browser, Graph Apps, Visualization). Exciting things to come!
+
+PSA: https://neo4j.com/careers[We are hiring^]!
+
+Meanwhile he’s been keeping himself busy with the following topics:
+
+Adam gives an example of how you can use the 4.0 multi database features through the example of building a Software as a Service (SaaS) company. He shows how you can build a https://adamcowley.co.uk/neo4j/sass-control-panel-graph-app/[lightweight control panel to automate the process of spinning up new databases^].
+
+If you want to take a https://adamcowley.co.uk/neo4j/neo4j-docker-seed-backup/[backup of an existing database, and use it to seed an instance of Neo4j inside a Docker container^], Adam got you covered too.
+
+Last but not least, for those of you using Neo4j with Node.js, he’s put together an early version of a Cypher Query builder, available on https://github.com/adam-cowley/neode-querybuilder[GitHub^]. Please do let Adam know what you think!
+
+https://adamcowley.co.uk/categories/neo4j/[See all of Adams articles, role="medium button"]
+
+
+[[features-4]]
+=== Quick Links: COVID-19 Visualization, Composite Indexes, Neo4j Simply in Depth, GraalVM for Python, R, Ruby Drivers, Auth Strategies for Drivers, Drivine JS Driver, Graph Embeddings
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200221082625/twin4j-composite-indexes.jpg" width="120px"  />
+</div>
+++++
+
+* Our friends from Kineviz published a https://www.kineviz.com/covid19[COVID-19 temporal and spatial data visualization^]
+* Max De Marzi recently published a post on how to take advantage of https://maxdemarzi.com/2020/02/19/composite-indexes-in-neo4j-4-0/[composite indexes^] in 4.0
+* https://twitter.com/AjitVoice[Ajit Singh’s^] book, ‘Neo4j Simply in Depth’ has made it to https://twitter.com/AjitVoice/status/1233812062423437312[Book Authority’s^] best new Neo4j eBook
+* Michaels Simons and Hunger show how to use https://info.michael-simons.eu/2020/03/06/polyglot-programming-on-the-graalvm/[GraalVM's polyglot features to use the Neo4j Java 4.0 Driver from Python, R, Ruby and Javascript^]
+* Michal Trnka and https://twitter.com/luannem[Luanne Misquitta^] discuss strategies for https://graphaware.com/neo4j/2020/02/28/neo4j-drivers-authorization.html[Neo4j 4.0 drivers and authorization^]
+* https://twitter.com/@victorchircu[Victor Chircu^] shows us how we can https://www.simpleorientedarchitecture.com/interviewing-your-architecture/[explore our Service-Oriented Architecture using Neo4j^], which gives flexibility as the estate changes
+* https://twitter.com/doctor_cerulean[Jasper Blues^] has https://liberation-data.com/drivine/2020/03/01/introducing-drivine.html[released the first version of Drivine^], a database client for Node.js and TypeScript with support for Neo4j 
+* Estelle Scifo wrote a https://medium.com/@st3llasia/graph-embedding-techniques-7d5386c88c5[great introduction to graph embedding techniques^]
+
+[[features-5]]
+=== New version of Neomap with Routing
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200305095951/neomaps1.png" width="150px"  />
+</div>
+++++
+
+https://twitter.com/st3llasia[Estelle Scifo^] recently released 0.4.0 of neomap. If you’ve not come across neomap before, it is a Neo4j Desktop Graph App which allows you to visualize nodes with geographic attributes. You have the flexibility to mark certain artefacts on the map, based on what Cypher query you input into the application.
+
+This is especially powerful when used in combination with the https://neo4j.com/download-center/[Graph Data Science^] library, as Estelle shows us in her latest blog post. 
+
+You can also read more about how neomap https://stellasia.github.io/blog/2019-10-10-global-graph-hack/[came to be^], as Estelle’s (winning!!) entry to last year’s https://neo4j.com/graph-hack-19/[Global GraphHack competition^].
+
+https://medium.com/neo4j/visualizing-shortest-paths-with-neomap-0-4-0-and-the-neo4j-graph-data-science-plugin-18db92f680de[Read the Neomap release article, role="medium button"]
+
+
+=== Tweet of the Week
+
+Jim Chen has imported the Justices of the US Supreme Court in a Graph with their succession and nomination links to presidents. Really cool!
+
+// https://twitter.com/chenx064/status/1235307867823132673
+tweet::1235307867823132673[type={type}]
+
+Like the tweet if you find this interesting.
+
+////
+
+
+
+* #Bioinformatics projects with public @neo4j databases, including @reactome and Hetionet by @dhimmel: https://graphdb-bio.com/projects-using-neo4j-1
+* @MartinPreusse
+I wrote a tutorial on loading gene id mappings from @NCBI Gene and @ensembl to a @neo4j database with my #Python package #graphio: https://graphdb-bio.com/graphio-tutorial-idmapping 
+
+
+* https://github.com/trinitor/netstat2neo4j 
+
+* Multi Tenant GraphQL with Neo4j
+https://blog.grandstack.io/multitenant-graphql-with-neo4j-4-0-4a1b2b4dada4 
+
+* Software platform dependency analysis with F# and Neo4j
+It's common for software platforms to consist of many deployed services that communicate with each other and connect to resources over the…
+https://chester.codes/software-platform-dependency-analysis-with-fsharp-and-neofourj/
+
+* @itpsapinc
+Advantco Neo4j adapter for SAP PO http://bit.ly/2SLIDnS #itpsap
+https://twitter.com/itpsapinc/status/1229561679756718080
+
+* Sylvain ROUSSY @SylvainRoussy
+Meet the grapes! Importing wine data into @neo4j  with the powerful of @Norconex  web crawler: https://neo4j.com/blog/importing-data-from-the-web-norconex-neo4j/
+
+@rvanbruggen
+Just before the weekend: after securing my #beergraph, I managed to separate administrative from investigative access in a #fraud graph as well - thanks to #neo4j 4.0's fine grained access control features. It's really easy and powerful - look at http://blog.bruggen.com/2020/02/securing-sample-fraud-graph-with-neo4j.html 
+
+@yow_conf
+If you missed @mesirii's #YOW19 talk on "How Graphs Help Investigative Journalist to Connect the Dots", you can watch it now... and many other talks from December's conference... on our Youtube channel
+https://twitter.com/yow_conf/status/1229601466874318859
+
+
+////
+
+
+

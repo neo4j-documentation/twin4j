@@ -1,0 +1,142 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week we learn how to build a content recommendation system using knowledge graphs, augment business intelligence with graph power, and learn how to use BloodHound to assist with an analysis of password hashes from two different domains.
+
+[[featured-community-member]]
+=== Featured Community Members: Global Graph Celebration Day Organisers
+
+Our featured community members this week are the organisers of the https://globalgraphcelebrationday.com/[Global Graph Celebration Day^] events.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190417214958/ggcd.png[name="Global Graph Celebration Day Organisers"]
+
+We initially planned Global Graph Celebration Day because we thought it would be fun to do, but we had no idea that it would be so impactful in such a large global movement. 
+
+For the 1st annual Global Graph Celebration Day, having 60+ events in 6 continents really wow'd us, but what truly makes it incredible is that it was driven strictly by the community. 
+
+People, all over the world, took time out of their lives to gather their local community and include them as part of this global initiative. We wanted to recognize these people for their drive and hard work, along with all the attendees that supported their efforts, as it wouldn't be anything without them, as well.  
+
+Thank you to all who led and participated.... Leonhard Euler would be proud.   ;) 
+
+____
+"Individually, we are one drop. Together, we are an ocean." – Ryunosuke Satoro
+____
+
+https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day/[Read the blog post, role="medium button"]
+
+[[features-1]]
+=== Content-Based Recommendations using Knowledge Graphs
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Christophe Willemsen showed us how to build a content based recommendation engine using knowledge graphs.
+
+youtube::ySxgzBdM2jM[type={type}]
+
+Using data from my blog, Max De Marzi's blog, and the Neo4j Community site, Christophe used NLP techniques to compute article similarities and categorise those articles.
+
+[[features-2]]
+=== Augment Intelligence with Graph Power
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190418072023/1_f74cypr1-L88zHYQb1WvFg.png" width="200px"  />
+</div>
+++++
+
+In https://twitter.com/irregularbi?lang=en[Ralf Becher^]'s latest blog post, he shows us to build a graph based business intelligence dashboard using https://neo4j.com/docs/graph-algorithms/current/[Neo4j Graph Algorithms^] and Qlik. 
+
+ 
+
+
+
+link:https://medium.com/neo4j/augment-intelligence-with-graph-power-878bce611a8f[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Graph Algorithms in Practice: Eigenvector Centrality, Cosine Similarity
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190418002310/download-6.png" width="150px"  />
+</div>
+++++
+
+We have a couple of posts showing how to use a couple of the algorithms in the Neo4j Graph Algorithms Library.
+
+Tomaz Bratanic https://tbgraph.wordpress.com/2019/04/04/eigenvector-graph-centrality-analysis-on-subreddit-hyperlink-network-with-neo4j-and-cypher-projection/[analyses the Subreddit hyperlink network^] using https://neo4j.com/docs/graph-algorithms/current/algorithms/eigenvector-centrality/[Eigenvector Centrality^]. He also does a deep dive into how the projected graph model of the graph algorithms work, and explains how to use it for your own analysis.
+
+Mike Palei wanted to compute the Cosine Similarity between a given node and all other nodes in the graph, and https://medium.com/neo4j/cosine-similarity-in-neo4j-d617b0442439[explains how to use the Cosine Similarity function to do this^]. 
+
+[[articles-1]]
+=== Releases: Elixir Driver, Foreign data wrapper for Postgresql, APOC
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190418065409/rocket1.png" width="150px"  />
+</div>
+++++
+
+* Version 1.5 of BoltSips, the Neo4j Driver for Elixir, was released this week, and is available from https://hex.pm/packages/bolt_sips[hex.pm/packages/bolt_sips^]. This is a comprehensive release, containing support for Bolt v1, v2 and v3.
+
+* Benoît Simard released https://github.com/sim51/neo4j-fdw[neo4j-fdw^], a foreign data wrapper for Postgresql. It can be used to access data stored into Neo4j from Postgresql, or you can directly write a cypher query in your select. 
+
+* Michael https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases/tag/3.5.0.3[released a new version^] of the APOC library. This release has lots of new features, including an automatic UUID handler configurable by label, Excel export functionality, and new functions for checking relationship existence. Lju also https://www.youtube.com/watch?v=HvTvy4G9uJk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=15&t=0s[created a video^] showing how to do conditional execution using the apoc.case.do and apoc.when.do procedures.
+
+[[features-4]]
+=== Case Study: Password Analysis with BloodHound
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190418072452/1_E0I-QO-1U8yROC6FbUyHGA1.png" width="150px"  />
+</div>
+++++
+
+Christopher Maddalena has written a case study,  in which he explained how the SpecterOps team used BloodHound to assist with an analysis of password hashes from two different domains.
+
+link:https://posts.specterops.io/case-study-password-analysis-with-bloodhound-a3d264736c7[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/NoemiDerzsy[Noemi Derzsy^]:
+
+tweet::1118013758733979648[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+* https://medium.com/neo4j/eventing-graph-data-neo4j-rabbitmq-e16b91274fbc  - Eventing Graph Data
+With Neo4j & RabbitMQ
+
+Overhaul to visualization tools page is complete! https://neo4j.com/developer/tools-graph-visualization/
+
+https://apiko.com/blog/neo4j-database-advantages/
+
+
+
+
+////

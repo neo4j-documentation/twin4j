@@ -1,0 +1,128 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 3 June 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have a graph of Dave Chappelle's Lil Jon Skit, Knowledge Graph Search, an interview with Konstantin Lutovich, and more!
+
+=== Featured Community Member: Eddy Wong
+
+This week’s featured community member is https://twitter.com/eddywongch[Eddy Wong^], Technologist, Advisor, CTO, and Entrepreneur.
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180126042630/this-week-in-neo4j-27-january-2018.jpg["Eddy Wong - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Eddy Wong - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Eddy has been part of the Neo4j community since 2012 when he used Neo4j  at https://www.wanderu.com/[Wanderu^], a ground travel metasearch engine and fare aggregator that he co-founded. Eddy presented about his work there at https://vimeo.com/79477603[GraphConnect NYC 2013^].
+
+Eddy is the organiser of the https://www.meetup.com/graphdb-boston[Graph Database Boston^] meetup and has been running events since 2013. He was also one of the http://blog.bruggen.com/2015/09/podcast-interview-with-eddy-wong-wanderu.html[early interviewees on the Graphistania podcast^].
+
+On behalf of the Neo4j community, thanks for all your work Eddy!
+
+=== From GraphConnect: Knowledge Graph Search with Elasticsearch
+
+At GraphConnect NYC 2017 https://twitter.com/luannem[Luanne Misquitta^] and https://twitter.com/alessandronegro[Alessandro Negro^] explained how to do graph search with Neo4j and Elasticsearch.
+
+youtube::k8Gu6GMbBtQ[type={type}]
+
+They talk about the rise of Knowledge Graphs in the last few years and how we can use them in our applications to serve better search results to users.
+
+=== Lil Jon Graph, Hungarian Wines, Digital Humanities
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180126045429/download-1.jpeg" width="150px" />
+</div>
+++++
+
+
+* https://twitter.com/maxdemarzi[Max De Marzi^] is back with https://maxdemarzi.com/2018/01/26/dynamic-rule-based-decision-trees-in-neo4j-part-2/[Dynamic Rule Based Decision Trees Part 2^]. In this post Max shows how to graph https://www.youtube.com/watch?v=pZ_R4glgnOg&feature=youtu.be&t=2m11s[Dave Chappelle's A Moment in the Life of Lil Jon Skit^]. Yeeeah!
+
+* https://twitter.com/omarlarus[Omar Rampado^] and https://twitter.com/fblamanna[Fabio Lamanna^] spoke about http://larus-ba.it/neo4j/2018/01/22/digital-humanities-graph-mainz/[collaborative networks in digital humanities^] at the Academy of Sciences and Literature in Mainz. 
+
+* Sandor Dargo shared his experience http://sandordargo.com/blog/2018/01/25/how-wine-disco-is-progressing[building a graph of Hungarian wines^]
+
+
+=== On the podcast: Konstantin Lutovich
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180126035408/konstantin.png" width="150px" />
+</div>
+++++
+
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] http://blog.bruggen.com/2018/01/podcast-interview-with-konstantin.html[interviewed^] https://github.com/lutovich[Konstantin Lutovich^], long time Neo4j Kernel team member and current maintainer of the Java and JavaScript drivers.
+
+Rik and Konstantin talk about the new Async API in the Java driver that Konstantin https://neo4j.com/blog/beta-release-java-driver-async-api-neo4j/[blogged about in early December^] as well as his experience working on different parts of the database.
+
+=== Bill of Materials, Pentaho Integration, jQAssistant
+
+* https://twitter.com/bartmaer[Bart Maertens^] explains how to http://blog.know.bi/easily-load-data-to-neo4j-with-pentaho-data-integration[easily load data into 
+Neo4J with Pentaho Data Integration^].
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180126050111/2018-01-26_12-59-46.png" width="150px" />
+</div>
+++++
+
+* https://twitter.com/olegshilovitsky[Oleg Shilovitsky^] https://medium.com/@openbom/graph-database-boston-meetup-bill-of-materials-and-neo4j-a0bbe7b4d5ce[wrote a summary^] and https://medium.com/@openbom/graph-database-boston-meetup-bill-of-materials-and-neo4j-a0bbe7b4d5ce[shared the slides^] from his talk with Chris Chaulk at the  Graph Database Boston meetup. In the talk they show how to use https://www.openbom.com/[OpenBOM^] for bill of material management. 
+
+* https://twitter.com/jensnerche[Jens Nerche^] shows how to use jQAssistant and Neo4j to http://techblog.kontext-e.de/Enrich-scanned-code-with-higher-level-concepts-from-Architecture-Documentation/[enrich scanned code with higher level concetps from architecture documentation^].
+
+* Mike Schilling created https://github.com/bindstone/collector-poc[collector-poc^], a small POC to import a JIRA Database in Neo4J. Mike uses the https://github.com/Wolfgang-Schuetzelhofer/jcypher[JCypher^] library to get data into Neo4j.
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| January 31st 2018 | https://www.meetup.com/Graph-Database-NRW/events/244681589/[Querying graph data by example from genomics - Part 4^] | https://www.meetup.com/Graph-Database-NRW[Graph Database - NRW^] | https://twitter.com/ira_res[Iryna Feuerstein^]
+
+| February 1st 2018 | https://www.meetup.com/Suprfanz-com-Toronto/events/243994434/[Data Science in Practice: Importing and Visualizing Facebook Data Using Graphs!^] | https://www.meetup.com/Suprfanz-com-Toronto[Python & Neo4J Startup meetup Toronto^] | Ray Bernard
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/JavascriptMick[JavascriptMick^]:
+
+tweet::955915115462770688[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

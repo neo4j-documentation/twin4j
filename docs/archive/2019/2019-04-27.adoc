@@ -1,0 +1,155 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week we learn how graphs are being used to fight diabetes and we have an overhaul to the graph visualization tools page. Michael shares his favourite tips and tricks for using the Arrows graph modelling tool, Vinodh Subramanian shows how to consume and produce events for RabbitMQ, and more!   
+
+[[featured-community-member]]
+=== Featured Community Members: Amy Hodler
+
+Our featured community member this week is https://twitter.com/amyhodler[Amy Hodler^], Graph Analytics and AI Program Manager, and author of the recently released https://neo4j.com/graph-algorithms-book/[O'Reilly Graph Algorithms Book^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190425072714/this-week-in-neo4j-27-april-2019.jpg[name="Amy Hodler"]
+
+Amy has been part of the Neo4j community for the last two years, in which time she's led the way in educating the community about graph analytics and graph enhanced AI. 
+
+Amy presented https://www.youtube.com/watch?v=GC0o5ajQ2u4[Weave Together Graph and Relational Data in Apache Spark^] at Spark Summit 2018, and this week presented Predicting Influence and Communities Using Graph Algorithms and Improve ML Predictions using Connected Feature Extraction at the 2019 version. 
+
+She has also given presentations on Graph Analytics at https://www.youtube.com/watch?v=fPH-WJ-kEpY[GraphConnect NYC 2017^] and https://www.youtube.com/watch?v=ho6Y6nMpNk0&t=2s[GraphTour SF 2018^], as well as presenting on Graph Enhanced AI at https://www.youtube.com/watch?v=vZi-Ca9QBME&t=4s[GraphConnect NYC 2018^] and as part of the https://www.youtube.com/watch?v=PpiO0S-OQS0[Expero Webinar Series^]
+
+Amy was also http://blog.bruggen.com/2019/02/podcast-interview-with-amy-hodler-neo4j.html[interviewed on the Graphistania podcast^] in February.
+
+On behalf of the Neo4j community, thanks for all your work Amy!
+
+https://twitter.com/amyhodler/[Follow Amy on twitter, role="medium button"]
+
+[[features-1]]
+=== Graphs to fight diabetes
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Dr Alexander Jarusch presented graphs to fight diabetes.
+
+youtube::vFXQJ1Ba1kA[type={type}]
+
+Alexander explained how his team have combined multiple data sources to build a knowledge graph able to answer questions about diabetes and other diseases.
+
+[[features-2]]
+=== Overhaul to visualization tools page is complete!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190425070645/d3_visualization1.jpg" width="150px"  />
+</div>
+++++
+
+If graph visualisation is your thing, you're going to love the overhaul that https://twitter.com/jmhreif[Jennifer Reif^] has done to the Graph Visualization Tools developer page.
+
+Jennifer breaks down the available tools into three categories: 
+
+* embeddable tools with Neo4j connections
+* embeddable tools without direct Neo4j connection, and 
+* standalone product tools. 
+
+And then takes us on a guided tour of each category, exploring the available tools, and explaining where each is appropriate.
+
+link:https://neo4j.com/developer/tools-graph-visualization/[View the Graph Visualization Tools Guide, role="medium button"]
+
+
+[[features-3]]
+=== Eventing Graph Data With Neo4j & RabbitMQ
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190425062515/download-8.png" width="150px"  />
+</div>
+++++
+
+Vinodh Subramanian shows how to build a Neo4j application that both consumes and produces events for https://www.rabbitmq.com/[RabbitMQ^], the open source message broker.
+
+He does this using a combination of custom procedures, and https://neo4j-contrib.github.io/neo4j-apoc-procedures/#triggers[triggers^] from the Neo4j APOC library.
+
+link:https://medium.com/neo4j/eventing-graph-data-neo4j-rabbitmq-e16b91274fbc[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Recipe to Recipe Similarity, Lyft Amundsen on SE Daily
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190426031746/0_ZjP7pSSaidIgSDmm.png" width="150px"  />
+</div>
+++++
+
+* I https://medium.com/neo4j/whats-cooking-part-4-similarities-d4443d89556a[wrote a blog post^] showing how to use the Jaccard Similarity algorithm to compute recipe to recipe and collection to ingredient similarities in the BBC Good Food graph.
+
+* This week https://twitter.com/photoft45[Tao Feng^] and https://twitter.com/mark_grover[Mark Grover^] discussed  a tool called https://eng.lyft.com/amundsen-lyfts-data-discovery-metadata-engine-62d27254fbb9[Amundsen^] on the https://softwareengineeringdaily.com/2019/04/16/lyft-data-discovery-with-tao-feng-and-mark-grover/[Software Engineering Daily podcast^].  Amundsen is a tool that uses that uses Neo4j for data discovery, and in the interview they explain why they used Neo4j as the backend data source.
+
+* In https://apiko.com/blog/neo4j-database-advantages/[Neo4j Database: Use Cases and Advantages For Your Project^], Helen Vdovychenko explains the benefits of graph databases and some of the most common use cases.
+
+[[features-4]]
+=== 12 Tips & Tricks on How To Use the Arrows Tool
+
+https://twitter.com/mesirii[Michael Hunger^] has published a new video with more and tips and tricks for using Arrows, the in-browser graph modeling tool. 
+
+youtube::SSjlUoFQdos[type={type}]
+
+Michael shows off the no code approach to creating nodes, relationships, and properties to build a graph of Neo4j Labs and its projects. He also demonstrates how to export the graph to Cypher or SVG format, as well as the different styling options.
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/KirkDBorne[Kirk Borne^]:
+
+tweet::1119273405465989120[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+* Network Connection Footprinting with WMI and Neo4j http://ijustwannared.team/2019/04/22/network-connection-footprinting-with-wmi-and-neo4j/ https://pbs.twimg.com/media/D4uHRMnWsAISuMW.jpg
+
+https://blog.mapillary.com/update/2019/04/25/testing-software-at-mapillary.html
+The Mapillary Blog
+Building the Global Street-Level Imagery Platform: How We Test Software at Mapillary
+
+https://medium.com/neo4j/efficient-neo4j-data-import-using-cypher-scripts-7d1268b0747
+Medium
+Efficient Neo4j Data Import Using Cypher-Scripts
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+Michael Porter:
+[new blog post] Complex GraphQL Filtering With neo4j-graphql.js
+
+This filtering functionality is really powerful for composing complex queries, and now available in neo4j-graphql.js!
+
+#GRANDstack
+
+https://blog.grandstack.io/complex-graphql-filtering-with-neo4j-graphql-js-aef19ad06c3e
+
+
+////

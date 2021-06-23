@@ -1,0 +1,160 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Bea Hernandez shows us how to explore football data and Volodymyr Miz explains how to combine Cassandra and Neo4j to analyse the Wikipedia Graph Dataset. 
+
+We also learn how to use Google Cloud Run as a serverless backend for a GRANDstack application, and there are releases of Neo4j Bloom, Neo4j Streams, Neo4j GraphQL-Java, and Halin.
+
+[[featured-community-member]]
+=== Featured Community Member: Gérald Billoir 
+
+Our featured community member this week is https://www.linkedin.com/in/geraldbilloir/[Gérald Billoir^]. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190607051512/this-week-in-neo4j-8-june-20191.jpg[name="Gérald Billoir"]
+
+We respect and admire when our community members take the initiative to lead, grow, and help our strengthen the Neo4j community. Gérald Billoir is an example of one of those people.   
+
+Gérald is a product developer and has built products from the ground-up, focusing much of his work around eCommerce tools for small business owners.  His most recent project is to build out https://www.graphmapper.com[GraphMapper^], applying network science to understand business markets. 
+
+As you’d imagine, Gérald is passionate about graphs, and reached out to us with a desire to help build upon the meetup community in Budapest. He connected with Janos Szendi-Varga, who was one of the lead co-organizers of the meetup who had since moved to UAE, and was able to join the organizing team with Zoltán Vigh, Gábor Döbrei, and Szárnyas Gábor. Gérald worked hard and scheduled his https://www.meetup.com/neo4j-budapest-users/events/261645651/[first event for June 25, 2019^]. 
+
+We’re so lucky to have you in our community, Gérald! Thank you for your help and passion in helping grow your local community.
+
+https://www.linkedin.com/in/geraldbilloir/?locale=en_US[Connect with Gérald on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Football Exploration with Neo4r
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Bea Hernandez showed us how to explore football data using the Neo4j R Driver.
+
+youtube::2FDUhCFLp2M[type={type}]
+
+Bea showed us how to model Premier League and La Liga data, and then analyses the data to work out whether home advantage actually helps. You can find the code and slides from the talk in the https://github.com/chucheria/2019_SatRdaysParis[2019_SatRdaysParis^] GitHub repository.
+
+[[features-2]]
+=== Case study of the popularity of #GoT characters on Wikipedia with the Graph Structured Dataset for Wikipedia Research.
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190606075528/structure.png" width="200px"  />
+</div>
+++++
+
+Volodymyr Miz shows how to combine Cassandra and Neo4j to analyse the Wikipedia Graph Dataset. Neo4j is used to analyse page structure, while Cassandra is used to analyse page popularity over time. 
+
+Volodymyr shows how to visualise the sub graph around the page for Game of Thrones, and then shows how the popularity of characters pages has changed over time.
+
+link:http://blog.miz.space/research/2019/06/05/wikipedia-graph-dataset-neo4j-mongodb-time-series-networks/[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Secure GraphQL APIs in minutes with Cloud Run and GRAND Stack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190606073941/1_ETaUHTD30rKa29ZVkCk2bw.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/mdavidallen[David Allen^] wrote a blog post showing how to use Google Cloud Run as a serverless backend for a GRANDstack application. 
+
+In a detailed walk through, we learn how to:
+
+* create a Neo4j Database from the GCP marketplace
+* create a Cloud Run Service that runs a  neo4j-graphql-js program 
+* configure the service to serve a GraphQL API with OAuth2 support
+* query our API from Apollo Launch
+
+link:https://medium.com/google-cloud/secure-graphql-apis-in-minutes-with-google-cloud-run-and-grand-stack-97d050dbc744[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Releases: Neo4j Bloom, Neo4j Streams, Neo4j GraphQL Java
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190606073157/noun_Download_2571324.png" width="150px"  />
+</div>
+++++
+
+We had releases of four different tools this week:
+
+* https://neo4j.com/bloom/[Neo4j Bloom^], the graph visualisation tool, https://neo4j.com/blog/neo4j-bloom-1-1-release[released version 1.1^], a release that makes graph exploration, sharing, and collaboration easy for everyone. Bloom can now be used from internet browser, making it easier than ever to reveal data connections across a project team.
+
+* https://github.com/neo4j-graphql/neo4j-graphql-java[Neo4j GraphQL-Java^], a GraphQL transpiler, released https://github.com/neo4j-graphql/neo4j-graphql-java/releases/tag/1.0.0-M03[milestone 3^]. In this release we've upgraded to graphql-java version 12, auto-generation of mutations for merge and adding and removing relationships, triple quotes for Cypher directives, and more.
+
+* Neo4j Streams, a Kafka integration, released versions https://github.com/neo4j-contrib/neo4j-streams/releases/tag/3.4.2[3.4.2^] and https://github.com/neo4j-contrib/neo4j-streams/releases/tag/3.5.1[3.5.1^]. This release introduces several features that make for easier ingestion, including roundtrip-sink-config, a common pattern for ingestion, and manual commit behavior for handling errors and retrievals.
+
+* David Allen released https://threadreaderapp.com/thread/1135582297590288389.html[version 0.11 of Halin^], the Neo4j monitoring and management tool. This release introduces a brand new UI, improvements to the diagnostic advisor, and updates to the in-app info boxes.
+
+[[features-4]]
+=== NODES 2019: Launching the Neo4j Online Developer Expo & Summit!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190606075715/nodes-2019-neo4j-online-developer-expo-summit-register-today1.png" width="200px"  />
+</div>
+++++
+
+https://twitter.com/ryguyrg[Ryan Boyd^] launched our first-ever Neo4j Online Developer Expo and Summit (NODES), which will be on October 9th 2019. 
+
+We’re going to keep this event very technical, with many of the sessions delivered by Neo4j experts on graph-y topics.
+
+There will be keynotes, regular sessions, lightning talks and the mentioned Q&A panels. We will run the event with multiple tracks, so that at any given time, there should be an interesting talk for you. 
+
+If you'd like to speak at the event, the https://www.papercall.io/nodes2019[CFP is now open^].
+
+link:https://neo4j.com/blog/nodes-2019-neo4j-online-developer-expo-summit/[Read the blog post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/uweeegeee[Uwe Geercken^]:
+
+tweet::1136384546562355200[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+
+
+https://neo4j.com/blog/seven-bridges-of-konigsberg-dogs-eye-view/?
+
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+Neo4j - A Graph Project Story : a play about #Neo4j, where protagonists are Neoj4 experts and the plot starts when a client come in with his project. A book written by @nmervaillie @SylvainRoussy @rrouyer and Frank Kutzler. http://d-booker.jo.my/neo4j-book-amz-us @neo4j @askkerush @neo4j https://pbs.twimg.com/media/D6iWgG6WkAElvJA.jpg
+
+
+
+
+
+
+
+////Fandreas

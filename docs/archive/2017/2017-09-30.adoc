@@ -1,0 +1,120 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 30 September 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-30-september-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 30 September 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Sylvain Roussy 
+
+This week’s featured community member is https://twitter.com/sylvainroussy[Sylvain Roussy^], Director of R&D at Blueway Software. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170929042543/this-week-in-neo4j-30-september-2017.jpg["Sylvain Roussy - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Sylvain Roussy - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+Sylvain has been a member of the Neo4j community for a number of years now, and is the author of a French book on Neo4j - Des données et des graphes. He is currently working on a new book which demonstrates developing an graph based application from idea to production. All presented in dialogues of the project team.
+
+He's also been organising the https://www.meetup.com/graphdb-Lyon[Neo4j meetup in Lyon^] since 2014. 
+
+On behalf of the Neo4j community thanks for all your work Sylvain!
+
+=== Online Meetup: Building Conversational Experiences with Amazon Alexa and Neo4j
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup[online meetup^] https://twitter.com/graph_aware[GraphAware^]'s https://twitter.com/ikwattro[Christophe Willemsen^] showed us how to combine Amazon Alexa and Neo4j to build great conversational experiences.
+
+youtube::GU6jup9nJ6I[type={type}]
+
+You can catch a https://graphconnect2017.sched.com/event/CKsX?iframe=no[live version of this talk^] at http://graphconnect.com/[GraphConnect NYC 2017^]. Christophe will also be hanging out in the DevZone giving demos of the Alexa to anyone who's interested.
+
+=== Graphing metaphors, Building a Source Code Schema, GraphQL and GoT
+
+* https://twitter.com/feststelltaste[Markus Harrer^] continued his series of posts showing how to use jQAssistant and Neo4j for software analytics. This time he shows how to https://www.feststelltaste.de/building-higher-level-abstractions-of-source-code/[build higher-level abstractions of source code^]
+
+* https://twitter.com/mesirii[Michael Hunger^] wrote  https://medium.com/@mesirii/importing-mapping-metaphor-into-neo4j-90ac9ead4d44[Importing Mapping Metaphor into Neo4j^], in which he explained how to create a graph of metaphoric connections of the English language and run graph algorithms against it. Michael also created https://www.youtube.com/watch?v=eY1qp26ooy0[a short video^] showing how to import the data into Neo4j.
+
+* The video of Michael Hunger's talk from the GraphQL Berlin meetup - https://www.youtube.com/watch?v=m9HYUWWF2Sw[A Game of Data and GraphQL^] - is now available. Michael shows how to build a GraphQL schema on top of data loaded from https://anapioficeandfire.com/[An API of Ice and Fire^], load and clean the data using APOC procedures, and then write queries in GraphiQL.
+
+* In https://medium.com/@mesirii/better-data-import-with-graphql-548084a35dfd[Better Data Import with GraphQL^] Michael Hunger explains the https://www.npmjs.com/package/graphql-cli-load[graphql-cli-load^] tool he's built to make it easier to load data into GraphQL backends. 
+
+* https://twitter.com/mfalcier[Marco Falcier^] released v1.3.0 of https://github.com/h-omer/neo4j-versioner-core/releases/tag/1.3.0[neo4j-versioner-core^], a collection of procedures to help developers manage versioned graphs. This release contains several new procedures to make it easier to do common operations. If you haven't seen neo4j-versioner-core, don't forget to watch https://www.youtube.com/watch?v=APC1vptFJoU&index=7&list=PL9Hl4pk2FsvVnz4oi0F8UXiD3nMNqsRO2[Episode #19^] of the online meetup which covered this project.
+
+* Adam Hopkins has written up his experience https://medium.com/@ahop63/my-new-development-stack-using-python-graphql-and-neo4j-the-brewmasters-guide-to-the-internet-87e3879009c4[building an application using GraphQL, Neo4j, and Django^].  
+
+=== Neo4j, Fraud Detection, and Python
+
+The https://www.meetup.com/preview/Data-Science-Milan[Data Science Milan^] group recently https://www.meetup.com/preview/Data-Science-Milan/events/243337281[hosted an event^] which focused on different data science applications that are made possible using graph databases.
+
+youtube::Ojq9UXoWEww[type={type}]
+
+The video contains a mix of talks in English and Italian - the one in English is about 50 minutes in so if you're language challenged like me you'll want to skip forwards to there.
+
+=== On the podcast: Tomaz Bratanic
+
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] http://blog.bruggen.com/2017/09/podcast-interview-with-tomasz-bratanic.html[interviewed^] https://twitter.com/tb_tomaz[Tomaz Bratanic^], who's written many great blog posts that we've featured in previous versions of TWIN4j.
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344397772&amp;color=00cc11"></iframe>
+++++
+
+Tomaz and Rik talk about Tomaz's move from playing poker to coding fulltime, why he loves the Cypher query language, and more!
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header", cols="d,d,d,v"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| October 3rd 2017 | https://www.meetup.com/graphdb-london/events/242948827/[Social Network Analysis and Visualization with Neo4j^] | https://www.meetup.com/graphdb-london[Neo4j - London User Group^] | https://twitter.com/markhneedham[Mark Needham^]
+
+| October 5th 2017 | https://www.meetup.com/Copenhagen-Graph-Databases-Meetup/events/243115006[GraphTalks Copenhagen^] | https://www.meetup.com/Copenhagen-Graph-Databases-Meetup[Copenhagen Graph Databases Meetup^] 
+| https://twitter.com/rvanbruggen[Rik Van Bruggen^], 
+https://twitter.com/dmontag[David Montag^],  
+https://twitter.com/jerrong[Tim Ward^]
+
+| October 5th 2017 | https://www.meetup.com/graphdb-berlin/events/243359938[Neo4j Basics Workshop^] | https://www.meetup.com/graphdb-berlin[Graph Database - Berlin^] | https://twitter.com/darthvader42[Stefan Armbruster^] 
+
+| October 5th 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/243172387/[Finding connections between components from 100s of Gigabytes of product data^] | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Ravi Krishnaswamy
+
+|=========================================================
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/MaxSumrall[Max Sumrall^], my former colleague on the Neo4j clustering team:
+
+tweet::912697236945022977[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

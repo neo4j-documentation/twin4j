@@ -1,0 +1,163 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 23 June 2018, including the World Cup Graph and GraphQL API and the Intro to Graph Databases YouTube series is back!
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – abc
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have the World Cup Graph and GraphQL API, an article explaining how to tune Cypher queries by understanding cardinality, querying Spatial data points, and the Intro to Graph Databases YouTube series is back!
+
+[[featured-community-member]]
+=== Featured Community Member: Bea Hernández
+
+This week’s featured community member is https://twitter.com/Chucheria[Bea Hernández^], Data Scientist at https://datmean.com/[DATMEAN^].
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180620230341/this-week-in-neo4j-23-june-2018.jpg[name="Bea Hernández"]
+
+Bea is part of the Neo4j community is Madrid as well as being the organiser of R-Ladies Madrid and a member of the NASADatanauts.
+
+Bea presented https://chucheria.github.io/neo4j-graphs/#/[Neo4j gRaphs^] at a combined R-Ladies and Neo4j Madrid meetup in February in which she showed how to analyse and visualise Neo4j data in R.
+
+This week DATMEAN were accepted into the Neo4j startup program so Bea will get to work on Neo4j even more.
+
+tweet::1009036777045286913[type={type}]
+
+All of us in the DevRel team are excited to hear about your experiences, perhaps at a future GraphConnect or Neo4j event.
+
+On behalf of the Neo4j community, thanks for all your work Bea!
+
+[[world-cup-graph]]
+=== The World Cup Graph
+
+We're well into the 2nd round of matches at World Cup 2018 and https://twitter.com/mesirii[Michael^] and I decided to revive the https://medium.com/neo4j/world-cup-2018-graph-19fbac0a75db[World Cup Graph^] that we first created 4 years ago. The dataset contains the matches, players, and tournaments for every World Cup from 1930 to the present day.
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180620231114/1_dk8DowbtQlMkFrWhL1MhtA-1024x572.png[width=500]
+
+++++
+<br />
+++++
+
+If you want to play around with the data we have a hosted version on a Neo4j Cloud instance at https://c27d992b.databases.neo4j.io/browser/[c27d992b.databases.neo4j.io^].  You can login with the username `worldcup` and password `worldcup` and then run `:play worldcup-2018-queries` for a guide that will show you some queries you can run against the dataset.
+
+[[world-cup-graph-graphql-api]]
+=== World Cup GraphQL API
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180620230922/0_y_uooSFcpVZy14uv.png" width="200px"  />
+</div>
+++++
+
+To make the data accessible to people not yet fluent with the Cypher query language we also https://medium.com/@mesirii/building-the-2018-world-cup-graphql-api-fab40ccecb9e[created a GraphQL API^] on top of the database. You can find that at https://worldcup-2018.now.sh/[worldcup-2018.now.sh^]. 
+
+This only took us a few hours thanks to the excellent https://github.com/grand-stack/grand-stack-starter[GRANDstack Starter Kit^]. All the scaffolding had been done for us - all we had to do was fill in details about our database and create a GraphQL schema.
+
+[[intro-graph-databases]]
+=== Intro to Graph Databases Episode #5 - Cypher, the Graph Query Language
+
+Based on popular demand, https://twitter.com/ryguyrg?lang=en[Ryan^] this week resumed the Intro to Graph Databases YouTube series with a video explaining the Cypher query language. 
+
+youtube::l76udM3wB4U[type={type}]
+
+Ryan starts by explaining how the developer surface of Neo4j has evolved over the years, from the embedded Java API, via the REST API, up to the present day of Bolt drivers and stored procedures and functions executed via Cypher.
+
+You can find the full series of videos as part of https://www.youtube.com/watch?v=5Tl8WcaqZoc&list=PL9Hl4pk2FsvWM9GWaguRhlCQ-pa-ERd4U[a YouTube playlist^].
+
+[[new-datatypes-open-beer-database]]
+=== Querying Spatial data points, The Strava Graph, Cypher snippets
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070021/Screen-Shot-2018-06-11-at-17.51.22.png" width="150px"  />
+</div>
+++++
+
+* Last week we featured https://blog.bruggen.com/2018/06/exploring-new-datatypes-in-neo4j-34-and.html[a blog post^] where Rik showed how to import the Open Beer Database along with Spatial data points, and in http://blog.bruggen.com/2018/06/exploring-new-datatypes-in-neo4j-34-and_15.html[this week's blog post^] he shows how to write queries against this new data type.
+
+* For those runners out there I've written a couple of posts showing how to https://markhneedham.com/blog/2018/06/12/neo4j-building-strava-graph/[import your data from the Strava API into Neo4j^] and then https://markhneedham.com/blog/2018/06/15/neo4j-querying-strava-graph-py2neo/[query it via the newly released Py2neo^]. 
+
+* Krishnaraj Rajagopal shared some useful Cypher snippets - https://medium.com/@krishnaraj.rajagopal/neo4j-get-label-counts-9ed7881a5962[get label count^] and   https://medium.com/@krishnaraj.rajagopal/neo4j-get-label-relationship-count-23fc9afc8ca[get label-relationship count^]. 
+
+* Sander Robijns http://estrenuo.com/2018/06/14/concept-maps-and-graph-data-modeling-techniques-in-the-data-modeler-toolbox/[wrote a blog post^] in which he explains the role that graph data modeling plays in a data modeler's toolbox. 
+
+* On StackOverflow https://stackoverflow.com/users/7875515/fillard-millmore[Fillard Millmore^] explained how to  https://stackoverflow.com/questions/50875189/neo4j-merge-properties-from-a-text-file[update nodes in an existing database based on data in CSV file^]. 
+
+[[knowledge-base]]
+=== Tuning Cypher queries by understanding cardinality
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+This week from the Neo4j Knowledge Base we have an entry by Andrew Bowman that explains how to https://neo4j.com/developer/kb/understanding-cypher-cardinality/[tune Cypher queries by understanding cardinality^].
+
+Andrew starts with a high level overview of how Cypher execution works, and then takes us through a worked example from the in built movies dataset, showing various tricks to improve the performance of the query.
+
+If you've ever wondered why your queries aren't doing what you expected them to this is a great post to read. 
+
+[[projects-knowledge-mortality-rdf-graph]]
+=== Projects to play with: Knowledge Graph, Mortality Explorer, RDF -> Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070618/Octocat.png" width="120px"  />
+</div>
+++++
+
+On my GitHub travels I came across a few interesting projects that you can take a look at if you get some time over the weekend.
+
+
+
+* https://github.com/wwlib/neo4j-knowledge-graph[neo4j-knowledge-graph^] - an example of a simple, queryable knowledge graph implemented using Neo4j that can be used with Microsoft's LUIS NLU or google's Dialogflow.com NLU.
+
+* https://github.com/senorbacon/mortality[mortality^] - a bit of a morbid dataset containing causes of deaths in the USA.
+
+* https://github.com/Rothamsted/rdf2neo[rdf2neo^] - a tool to convert and load RDF into Neo4j.
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| June 27th 2018 | https://www.meetup.com/graphdb-london/events/250982532/[Driving Insights Out of Connected Data to Transform Project Management^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/markhneedham?lang=en[Mark Needham^] 
+
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/HamzaGunnner[Tunisian Gunner^]:
+
+tweet::1009510603612934146[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

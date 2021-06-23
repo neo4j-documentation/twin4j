@@ -1,0 +1,164 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hello everyone,
+
+It's TWIN4j time. We'll start with this week's video, which is all about GoGM, an object graph mapper for Neo4j and the Go programming language.
+
+Tomaz Bratanic does an extensive analysis of the ArXiv dataset, Lukas Böhres combines Neo4j and Pyspark, and a couple of people are trying out the Advent of Code puzzles.
+
+And finally, Shyam Pratap Singh has built a graph based on Dark, the Netflix series.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Alex F. Mills
+
+This week's featured community member is Alex F. Mills.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201210063609/this-week-in-neo4j-12-december-2020.jpg[name="Alex F. Mills"]
+
+Alex is the Academic Director, Executive MBA in Healthcare Administration at the Zicklin School of Business in New York. 
+
+Alex studies design and control problems in service operations management. His research interests include healthcare operations, customer/patient type identification and imperfect information (triage), the impact of disruptions and resource limitations on system operations and recovery, and the impact of economic incentives on decision-making in healthcare. 
+
+Alex presented https://www.youtube.com/watch?v=wxNGIV6GFZw&feature=emb_title[The Relationships that Define a Resilient Supply Chain^] at the https://neo4j.com/connections/risk-mitigation/[Neo4j Connections: Graphs for Risk Mitigation in Supply Chains^] event earlier this year. In the talk, Alex goes through a variety of different supply chains, explaining their strengths and weaknesses, and showing why relationships are at the heart of this domain.
+
+His talk was so popular that it's been included in the https://neo4j.com/connections/best-of-2020/[Neo4j Connections: Best of 2020 Sessions^] that will run on 17th December 2020.
+
+https://www.linkedin.com/in/alexmills/[Connect with Alex on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Introduction to GoGM: community OGM for Neo4j and Go
+
+Our video this week is from Florent Biville's live stream.
+
+youtube::LGQuV-O36yE[type={type}]
+
+In this episode, Florent is joined by Erik Solender, the maintainer of https://github.com/mindstand/gogm[GoGM^], a Golang object graph mapper for Neo4j. Erik starts by explaining why he built GoGM, before showing how to model a simple domain using the library.
+
+Florent also wrote a blog post a couple of weeks ago, in which he https://medium.com/neo4j/a-real-world-adventure-with-golang-and-neo4j-af3c6172c13b[summarised some of his previous streams about Neo4j and Go^].
+
+[[features-2]]
+=== Network analysis of ArXiv dataset to create a search and recommendation engine
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201210055718/1200px-ArXiv_web.svg.png" width="200px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest blog post, he builds a search and recommendation engine on top of the ArXiv dataset using graph data science techniques. 
+
+In the first half of the post, Tomaz takes us through various techniques for cleaning the data - converting text from Latex to UTF-8 encoding and removing duplicate entities. He then does some exploratory analysis of the data before using the GDS Library to analyse the author and citation networks.
+
+https://tbgraph.wordpress.com/2020/12/01/network-analysis-of-arxiv-dataset-to-create-a-search-and-recommendation-engine-of-article[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Using Neo4j with PySpark on Databricks
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201210055748/1_bGEPTIwkwpPHEO16L_b5ww.jpeg" width="200px"  />
+</div>
+++++
+
+Lukas Böhres shares an end-to-end workflow of setting up a fully interconnected pairing of Neo4j and Spark using the recently released Neo4j Connector for Apache Spark.
+
+After deploying Neo4j and Spark instances in Azure, Lukas shows how to use the connector to both load data from Neo4j into Spark and write data from Spark to Neo4j.
+
+https://towardsdatascience.com/using-neo4j-with-pyspark-on-databricks-eb3d127f2245[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Advent of Code, Spring Data Neo4j, Fraud and the GRANDstack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* We launched a 4.0 version of the https://neo4j.com/graphacademy/training-gdsaa-40/enrollment/[Learn how to apply graph algorithms to enhance a Web application^] online training course.
+
+* Nicolas Mervaillie has been going through the http://adventofcode.com/2020[Advent of code^] puzzles  https://github.com/nmervaillie/aoc2020-neo4j[with Neo4j and Cypher^]. 
+
+* And https://github.com/michael-simons/aoc/tree/master/2020/day05/cypher[so has Michael Simons^].
+
+* Gerrit Meier published https://www.youtube.com/watch?v=Hyfs3IQiNGg[a new episode^] of his Spring Data Neo4j. In this episode, he shows how to use Spring Boot with the Neo4j Java Driver and Spring Data Neo4j.
+
+* Fernando López Bello https://quanamcorp-my.sharepoint.com/:v:/g/personal/flopez_quanam_com/EcRbOqvu08FJt_ndxdysN4gBT8uKEh9kMtBQK7q2s3hF9Q?e=3Vphnn[recorded a talk^] about a paper that he wrote, titled https://www.sciencedirect.com/science/article/pii/S2352914819300309?via%3Dihub[From medical records to research papers: A literature analysis pipeline for supporting medical genomic diagnosis processes^], which relies on Neo4j.
+
+* Christian Miles wrote a blog post showing how to https://hubs.li/H0BM2yc0[visualise Fraud with Neo4j and the GRANDstack^].
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== If you are a fan of Dark Netflix Series, here is a graph database for fun
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201210072256/AAAABWKGy4K_1_dvtIW7celhWo6bXLMybAQPY7sAzW2aoc6gUizViVh4WXlTfUy-wJF09wIxphPT0fFx-LwBRmcJ9dEZ3HiR.jpg" width=200px"  />
+</div>
+++++
+
+Shyam Pratap Singh is a big fan of the Dark series on Netflix and has created a Neo4j graph based on the series. 
+
+After building the dataset, Shyam makes sense of the data using plain Cypher queries, the in-built shortest path algorithm, and clustering algorithms from the Graph Data Science Library.
+
+https://towardsdatascience.com/if-you-are-a-fan-of-dark-netflix-series-here-is-a-graph-database-for-fun-4b9c17f50c5[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/davidbates[David Bates^]:
+
+tweet::1336187578601582594[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+
+////

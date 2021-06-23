@@ -1,0 +1,154 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week we learn about graphs in the financial services industry, efficient Neo4j data import using Cypher scripts, IOT data modeling, and there's also a new release of Halin, the Neo4j Monitoring tool. 
+
+[[featured-community-member]]
+=== Featured Community Member: Michael Porter
+
+Our featured community member this week is Michael Porter, Founder at Muddy Boots Code. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190503093009/this-week-in-neo4j-5-may-20191.jpg[name="Michael Porter"]
+
+Michael is a full-stack Neo4j Certified developer, and founder of Muddy Boots Code working with companies in the oil and mineral industry to help them make the most of their data. Originally from West Texas and a former US Marine, he's recently been working remotely from the Dominican Republic and going all in on GRANDstack.io 
+
+He recently published https://blog.grandstack.io/making-complex-data-simple-with-the-grand-stack-4c0c3435777b[Making Complex Data Simple With The GRANDstack^] that shows some of the complexities of oil and mineral rights lease data and how Neo4j and the GRANDstack can be used to build applications to analyze this complex and connected data. 
+
+Follow him on Twitter at https://twitter.com/MuddyBootsCode[@muddybootscode^] to see pictures of him coding from the beach ;-)
+
+https://twitter.com/MuddyBootsCode[Follow Michael on twitter, role="medium button"]
+
+[[features-1]]
+=== Graphs in Banking Integration with AI and Machine Learning Technologies
+
+In his latest webinar, https://twitter.com/joedepeau[Joe Depeau^] teaches us about graphs in the financial services industry.
+
+youtube::c9PkqidyTLA[type={type}]
+
+Joe reviews the types of data that are typically available within a bank, illustrates the graphs can be formed from that data, and discusses the use cases that those graphs can enable and support.  
+
+[[features-2]]
+=== Efficient Neo4j Data Import Using Cypher-Scripts
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190502232103/1_oQiAvoegTNKFH-gjGRhjiQ.jpeg" width="150px"  />
+</div>
+++++
+
+Andrea Santurbano has written a blog post that explains improvements made in the Cypher shell tool to enable efficient data import and export, when using parameterised Cypher scripts.
+
+
+
+
+link:https://medium.com/neo4j/efficient-neo4j-data-import-using-cypher-scripts-7d1268b0747[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== IoT Data Modeling in Neo4j Graph DB
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190502234106/thing08-is-out-1024x807.png" width="150px"  />
+</div>
+++++
+
+Using a worked example, Muntasir Joarder shows how to draw the IoT (Internet of Things) data model as a graph. He then explores some of the questions such a model would allow us to answer via Cypher queries, including:
+
+* Which other things are connected to one thing?
+* Who will be affected if a device is disconnected?	
+* Which are our battery powered things, and when is the battery end of life?
+
+link:https://emergingtechs.net/iot-data-modeling-in-neo4j-graph-db/[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Amy Hodler on Graph Based AI, Testing software at Mapillary, Inferring GraphQL Schema from existing database
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190503010509/1_rh4xUkJ4L7LmW8ykVw0ROg.jpeg" width="150px"  />
+</div>
+++++
+
+* https://twitter.com/amyhodler[Amy Hodler^], author of the recently published https://neo4j.com/graph-algorithms-book/[O'Reilly Graph Algorithms Book^], was https://medium.com/authority-magazine/women-leading-the-ai-industry-visibility-is-key-so-i-think-the-more-awareness-of-female-leaders-ad079cc0e3f0[interviewed by Authority Magazine^]. They cover a wide range of topics, including Amy's journey into the world of network science and graph algorithms, her work using graphs to enhance machine learning models, excitement for the future of AI, and more!
+
+* Santiago Baldassin explains how Neo4j is used to help https://blog.mapillary.com/update/2019/04/25/testing-software-at-mapillary.html[test software at Mapillary^], the street-level imagery platform that uses computer vision to fix the world's maps. 
+
+* Version 2.6.0 of neo4j-graphql.js, the library at the heart of the https://grandstack.io/[GRANDstack^], introduces a new function inferSchema that can https://blog.grandstack.io/inferring-graphql-type-definitions-from-an-existing-neo4j-database-dadca2138b25[generate GraphQL type definitions from an existing Neo4j database^].
+
+* https://twitter.com/IanHGray[Ian Gray^] has written a https://github.com/IanHGray/neo4j_utilities/blob/master/py2neo%20quickstart.ipynb[comprehensive tutorial^] showing how to import, query, and export data using the py2neo driver.
+
+[[features-4]]
+=== Halin Release: New Tasks Screen, Log Files Viewer, Advisor Improvements
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190503010016/images.png" width="150px"  />
+</div>
+++++	
+
+https://twitter.com/mdavidallen[David Allen^] released a new version of https://medium.com/neo4j/monitoring-neo4j-with-halin-4c11429b46ff[Halin^], the Neo4j monitoring and management tool. Highlights from this release include:
+
+* A new tasks screen that lets you see query metadata, transaction metadata, and connection details.  
+* Improvements to the Halin advisor. The advisor continues to give you actionable advice on the most common problems. 
+* Log file viewer - Halin pulls in log files from all servers in a cluster without having to SSH into those machines.
+
+If you don't already have Halin installed, you can install it from the Graph Apps Gallery. 
+
+
+link:https://install.graphapp.io/[Install Halin from the Graph Apps Gallery, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/rmoff[𝚁𝚘𝚋𝚒n  𝙼𝚘𝚏𝚏𝚊𝚝𝚝^]:
+
+tweet::1122978515270418432[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://tbgraph.wordpress.com/2019/04/30/depth-first-search-analysis-on-london-tube-network-with-neo4j-graph-algorithms/
+Depth First Search Analysis
+
+Graph databases for journalists - Using Neo4j to explore public contracting data
+https://medium.com/@a00808906/graph-databases-for-journalists-5ac116fe0f54
+
+* Network Connection Footprinting with WMI and Neo4j http://ijustwannared.team/2019/04/22/network-connection-footprinting-with-wmi-and-neo4j/  https://pbs.twimg.com/media/D4uHRMnWsAISuMW.jpg
+
+
+I've decided to keep track of cool #Neo4j #Cypher snippets I come across/use that might be useful. The first one is on setting defaults for null values. 
+Check out the comments on: https://medium.com/@lju/cool-cypher-stuff-1ae6d78d7a2e
+
+
+
+
+
+
+////

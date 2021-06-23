@@ -1,0 +1,176 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 Feb 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Halin Monitoring, Analyzing CodeMotion Data, Exploring GGCD Graph, Clojure Release, and More 4.0
+
+[Body copy:]
+////
+
+Hi, fellow nodes!
+
+I am stepping in this week for our wonderful curator, Mark Needham. We know this week’s Twin4j just won’t be the same without him, but we’ll do our best. :)
+
+In this edition, David Allen gives us a behind-the-scenes look on the monitoring tool Halin and how to use it in his NODES 2019 session.
+
+We have some conference data analysis for interesting connections, a look at how to get involved in the upcoming Global Graph Celebration Day, and the new release of a Clojure driver.
+
+Finally, we have more 4.0 developer guides on Cypher subqueries, multi-db, and Fabric.
+
+Enjoy!
+
+https://twitter.com/JMHReif[Jennifer^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Members: Jane Liang and Sylvia Tran 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/featured24Feb.png[name="Sylvia Tran, Jane Liang"]
+
+This week we have two featured Neo4j Community members; Sylvia Tran and Jane Liang! We first connected with Sylvia at https://www.datascience.salon/la[Data Salon LA^] when she chatted with our Neo4j Rep, https://www.linkedin.com/in/davidvessie[David Vessie^]. Then they met again, at http://pydata.org[PyData LA^]! As Sylvia and Jane both are both organizers of https://www.meetup.com/Pyladies-LA[PyLadies LA^] with some experience using Neo4j, they worked alongside David to organize meetup about graphs with their community!  We wanted to highlight these two because they are a true representation of individuals who value collaboration, knowledge sharing, and community building.  They’re eager to learn and just as eager to share with others.  We’re so grateful to have these women in our ecosystem. Their involvement and contributions go a long way….probably more than they know! 
+Thank you, Jane and Sylvia, for being curious and actively passionate about giving back! 
+
+https://www.linkedin.com/in/jingliang913/[Connect with Jane on LinkedIn, role="medium button"]
+https://www.linkedin.com/in/sylvia-s-tran/[Connect with Sylvia on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Monitoring Neo4j Servers and Clusters
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference, David Allen demonstrates https://neo4j.com/online-summit/session/monitoring-neo4j-servers-clusters-halin[monitoring Neo4j systems with an open source graph application^].
+
+youtube::4qDxwP7wIe8[type={type}]
+
+After showing how to install and setup the graph app https://neo4j.com/labs/halin/[Halin^], David explains all of the different metrics and includes guidance on where to find descriptions in case we forget what each is later. He then intentionally introduces some chaos into the cluster to see how Neo4j reacts and what Halin shows you in the process. Finally, we get a peek at what’s behind Halin and better understand the Neo4j database.
+
+
+[[features-2]]
+=== Analyzing CodeMotion Rome Data in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/twin4j-codemotion-data.jpg" width="120px"  />
+</div>
+++++
+
+Marco Liberati wrote a blog post in anticipation of the upcoming https://events.codemotion.com/conferences/rome/2020/[CodeMotion Rome conference^]. While waiting for final conference details and the inspiring session agenda, the author explored the conference data by importing it into Neo4j.
+
+The post steps through loading the JSON data with Neo4j Desktop and the APOC library, then takes a look at submission communities with Cypher queries. We find some interesting results that grant us insight into the technologies and groups who impact the conference. Leaving us curious and ready to explore, the author entices us with future posts on additional analysis. 
+
+https://www.codemotion.com/magazine/articles/events/waiting-for-codemotion-rome-2020/[Read the blog post, role="medium button"]
+
+
+[[features-3]]
+=== Gear up for Global Graph Celebration Day 2020!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/twin4j-ggcd-2020.jpg" width="120px"  />
+</div>
+++++
+
+Our colleague https://twitter.com/lyonwj[Will Lyon^] wrote a blog post helping us get excited and ready for Global Graph Celebration Day (GGCD) this year! This event started last year to celebrate the birth of Leonard Euler - the inventor of graph theory. We are thrilled to organize it again this year and hope you will join us!
+
+There are a variety of ways you can participate, so everyone can get involved. From locally-organized meetups and hackathons to personal technology and graph exploration from your home or workplace (and anything in between or in combination), we can all enjoy graphs and some fun. Be sure to check out the post for 5 ways to interact with the GGCD attendee graph!
+
+https://medium.com/neo4j/5-ways-to-explore-the-global-graph-celebration-day-attendee-graph-7bd2ed7768dc[Read the blog post, role=”medium button”]
+
+
+[[features-4]]
+=== New GorillaLabs Release of Clojure Driver for 4.0!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/twin4j-gorilla-labs.jpg" width="120px"  />
+</div>
+++++
+
+If you are keeping an eye on updates to Neo4j tools and libraries for 4.0 compatibility, Clojure developers can look no further. https://github.com/gorillalabs[GorillaLabs^] announced the latest update to their Clojure driver to support Neo4j 4.0.0. It allows you to connect to Neo4j using Bolt and interact with the database. Now you can build those outstanding applications or simply execute Cypher queries from Clojure with all the new features.
+
+The library is also open source, so be sure to star the project if you love it and provide feedback for desired features or fixes. Happy coding!
+
+https://github.com/gorillalabs/neo4j-clj/[Check out the Github project, role="medium button"]
+
+
+[[features-5]]
+=== More in 4.0— Subqueries in Cypher, Fabric, and a Multi-Tenancy Example
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/twin4j-cypher-subquery.png" width="150px"  />
+</div>
+++++
+
+There are three more developer guides for features in Neo4j 4.0, this time on using subqueries in Cypher, exploring Neo4j Fabric, and setting up a multi-tenancy example. 
+
+In the https://neo4j.com/developer/subqueries/[Cypher subqueries^] guide, it continues the learning progression of previous Cypher guides with the same data set, but shows how to use existential subqueries (WHERE clause) and return subqueries (CALL {} syntax). It is extremely helpful to see the differences between queries prior to 4.0 and the new syntax.
+
+The next guide covers https://neo4j.com/developer/neo4j-fabric-sharding/[sharding Neo4j graph data with Fabric^]. It starts with an overview of data sharding, then discusses how Fabric works. With an example and pictures, we see how to divide the data and architect the sharded system. Finally, we wrap up with some tips and tricks for a successful Fabric system.
+
+Our final guide this week provides a https://neo4j.com/developer/multi-tenancy-worked-example/[working example of a multi-tenancy scenario^] with multiple databases and Fabric. We use the retail data set from Carrefour and see how to import the data and set up the system, so we can follow along. Next, we dive into querying the data in the different databases, as well as across them with Neo4j Fabric. This guide provides a live scenario for how multi-database and Fabric features work together.
+
+
+=== Tweet of the Week
+
+My favorite tweet this week highlighted that Neo4j 1.0 released 10 years ago:
+
+tweet::1229453991412748289[type={type}]
+
+////
+* Graph Data Science plugin with Examples
+https://towardsdatascience.com/introducing-the-neo4j-graph-data-science-plugin-with-examples-from-the-graph-algorithms-19b831f66f2
+
+* Composite Indexes in Neo4j 4.0 - pushing performance to the max
+https://maxdemarzi.com/2020/02/19/composite-indexes-in-neo4j-4-0/
+https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/twin4j-composite-indexes.jpg
+
+* #Bioinformatics projects with public @neo4j databases, including @reactome and Hetionet by @dhimmel: https://graphdb-bio.com/projects-using-neo4j-1
+
+* https://github.com/trinitor/netstat2neo4j 
+
+* Multi Tenant GraphQL with Neo4j
+https://blog.grandstack.io/multitenant-graphql-with-neo4j-4-0-4a1b2b4dada4 
+
+* Software platform dependency analysis with F# and Neo4j
+It's common for software platforms to consist of many deployed services that communicate with each other and connect to resources over the…
+https://chester.codes/software-platform-dependency-analysis-with-fsharp-and-neofourj/
+
+* https://posts.specterops.io/introducing-bloodhound-3-0-c00e77ff0aa6 - BloodHound 3.0
+
+* @itpsapinc
+Advantco Neo4j adapter for SAP PO http://bit.ly/2SLIDnS #itpsap
+https://twitter.com/itpsapinc/status/1229561679756718080
+
+* @MartinPreusse
+I wrote a tutorial on loading gene id mappings from @NCBI Gene and @ensembl to a @neo4j database with my #Python package #graphio: https://graphdb-bio.com/graphio-tutorial-idmapping 
+
+* Sylvain ROUSSY @SylvainRoussy
+Meet the grapes! Importing wine data into @neo4j  with the powerful of @Norconex  web crawler: https://neo4j.com/blog/importing-data-from-the-web-norconex-neo4j/
+
+@adamcowley
+#Neo4j 4.0 now makes it possible to build a SaaS company on top of Neo4j.  Here's how you can build a lightweight control panel to automate the process
+https://adamcowley.co.uk/neo4j/sass-control-panel-graph-app/ 
+
+@rvanbruggen
+Just before the weekend: after securing my #beergraph, I managed to separate administrative from investigative access in a #fraud graph as well - thanks to #neo4j 4.0's fine grained access control features. It's really easy and powerful - look at http://blog.bruggen.com/2020/02/securing-sample-fraud-graph-with-neo4j.html 
+
+@yow_conf
+If you missed @mesirii's #YOW19 talk on "How Graphs Help Investigative Journalist to Connect the Dots", you can watch it now... and many other talks from December's conference... on our Youtube channel
+https://twitter.com/yow_conf/status/1229601466874318859
+
+////
+

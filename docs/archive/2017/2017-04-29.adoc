@@ -1,0 +1,168 @@
+﻿:linkattrs:
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 29 April 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-29-apr-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 29 April 2017
+
+[Headline:]
+This Week in Neo4j – 29 April 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+But before we begin, a quick announcement from us, the Neo4j Developer Relations team.
+
+=== Developer Zone at GraphConnect Europe 2017
+
+To provide the best developer experience at our http://graphconnect.com[GraphConnect^] conference in London, on May 11th 2017, we will open a dedicated *Developer Zone*. 
+
+We will all be joined by Neo4j engineers, eager to answer your questions and talk about cool stuff you can do with Neo4j. 
+
+So if you can make it to London for GraphConnect, don't miss out for the best experience of the show - the Developer Zone. You can https://graphconnect-europe2017.eventbrite.com?discount=DEVZONE30[register with the *DEVZONE30* discount for 30% off^], or send an email to mailto:devrel@neo4j.com[devrel@neo4j.com] to get one of the few free or 50% off tickets. 
+
+=== Featured Community Member: Michael Moussa
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170427065046/this-week-neo4j-29-apr-2017.jpg" alt="This Week in Neo4j - 29 April 2017" width="400" height="400" class="alignnone size-full wp-image-64796" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+This week's featured community member - Michael Moussa
+</strong>
+</p>
+++++
+
+https://twitter.com/michaelmoussa[Michael^] has been active for quite a while in the Neo4j community, presenting introductions to Neo4j at multiple PHP conferences. Last week he presented at the https://github.com/michaelmoussa/talks/tree/master/intro-to-graph-databases-with-neo4j/lonestar2017[Lone Star PHP Conference in Dallas, TX^]. 
+
+He's also contributed to PHP related projects in the Neo4j community and answered questions in our open channels. 
+
+
+=== Last few days of APOC Awareness Month
+
+We're in the last days of the https://neo4j.com/blog/april-is-apoc-awareness-month/[APOC Awareness Month^] so if you haven't published your article, *you have until Monday evening* (May 1st might be a good day off to work on this). 
+
+This week https://twitter.com/alexotter89[Alessio di Angelis^] won his prize by publishing a https://twitter.com/alexotter89/status/857506491842125825[really cool piece about importing and routing OpenStreetMap data using APOC^]. 
+
+https://twitter.com/tb_tomaz[Tomaz Bratanic^] continued his APOC algorithm series and wrote this time about https://tbgraph.wordpress.com/2017/04/24/neo4j-apoc-graph-algorithms-part-2/[similarities, cluster finding and visualizing them with virtual nodes and relationships^]. A very interesting read!
+
+=== Python, PyData, Flask, NeoModel, and Neo4j
+
+https://twitter.com/technige[Nigel Small^], author of http://py2neo.org/v3/[py2neo^] and tech lead of the drivers team visited Amsterdam a couple of weeks ago to present "A Pythonic Tour of Neo4j and the Cypher Query Language" at the https://pydata.org/amsterdam2017/[PyData conference^]. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ma6lVy6x3Mg" frameborder="0" allowfullscreen></iframe>
+++++
+
+Mostafa Moradian published https://github.com/mostafa/grest[gRest^],  a quickstart repository to build applications with Python, Flask, and NeoModel - a Django-like OGM for Neo4j.
+
+=== The GraphConnect schedule is a graph 
+
+++++
+<div style="text-align: center;">
+
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170428025031/graphconnect-schedule-graph-1024x576.png" alt="GraphConnect Schedule Graph" width="640" height="360" class="alignnone size-large wp-image-64815" />
+
+</div>
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+The GraphConnect Europe 2017 Schedule
+</strong>
+</p>
+++++
+
+Besides interviewing our community for the http://blog.bruggen.com/search/label/podcast[Graphistania Podcast^] and creating Graph-Karaokes, http://twitter.com/rvanbruggen[Rik van Bruggen^] also loves to recreate event schedules in Neo4j, for easy querying and recommendations. 
+
+GraphConnect is no exception and you can now http://blog.bruggen.com/2017/04/graphconnect-europe-2017-schedule-graph.html[view the schedule as a graph^].
+
+=== Wikipedia Knowledge Graph, GraphQL, Causal Clustering
+
+* As a follow up to https://www.meetup.com/Neo4j-Online-Meetup/events/239132427/[last week's online meetup^] my colleague https://twitter.com/BarrasaDV[Jesús Barrasa^] published a blog post explaining how to create the https://jesusbarrasa.wordpress.com/2017/04/26/quickgraph6-building-the-wikipedia-knowledge-graph-in-neo4j-qg2-revisited/[Wikipedia Knowledge Graph in Neo4j^]. He loads pages and categories and enriches them by querying dbpedia. You can follow along by running the Neo4j-Browser Guide Jesús created in the blank http://neo4j.com/sandbox[Neo4j Sandbox^].
+
+* Rik also published http://blog.bruggen.com/2017/04/autocompleting-neo4j-part-44-of-googly-q.html[parts 2 , 3, and 4^] of his series of explaining common questions about Neo4j. You get *very detailed answers* on the questions of scale, usage of Lucene, Solr and transactions and the Gremlin support of Neo4j.
+
+* If you love to extend Neo4j you will like this article by Igor Borojevic, who shows as part of the security series with Neo4j how to https://neo4j.com/blog/custom-security-plugins-user-defined-procedures-neo4j-enterprise/[build a custom security plugin], to chose your own way of doing Authentication and authorization
+
+* https://twitter.com/CSkardon[Chris Skardon^] explains step by step how to manually set up a causal cluster with Neo4 3.1.3 on Microsoft Azure. Enjoy his funny observations and comments in his blog post: link:http://geekswithblogs.net/cskardon/archive/2017/04/26/so-you-want-to-go-causal-neo4j-in-azure-sure.aspx[So you want to go Causal Neo4j in Azure? Sure we can do that^]
+
+* Magnus Wallberg wrote up the http://carlmagnuswallberg.wixsite.com/home/single-post/2017/04/14/The-dawn-of-a-new-CT-format-at-PhUSE-CSS[PhUSE conference^] where he attended a workshop led by Tim Williams comparing RDF and graphs. 
+
+* If you're looking for a job where you can work with Neo4j full time, Matt Andrews at the Financial Times is hiring:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Looking for front end / full stack contractors to join Nikkei-FT project in London! If you like Node, Neo4J &amp;/or ElasticSearch get in touch!</p>&mdash; Matt Andrews (@andrewsmatt) <a href="https://twitter.com/andrewsmatt/status/857149684766388224">April 26, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+
+
+=== The Mattermark GraphQL API Graph
+
+GraphQL has been on our minds, lately. So, when the Mattermark GraphQL API became available, https://twitter.com/lyonwj[Will Lyon^] looked into it and created this insightful blog post http://www.lyonwj.com/2017/04/27/mattermark-api-graphql-neo4j-startup-funding/[on analysing local startup ecosystems] based on their data. 
+
+He uses https://github.com/apollographql/apollo-client[ApolloClient^] to access the API and turn the data of startups based in his home state of Montana into a graph in Neo4j. 
+
+Will then goes on to use Cypher queries to answer questions such as: 
+
+* What are the companies in Montana that are raising venture capital? 
+* Who are the founders? 
+* Who is funding them and what industries are they in?_
+
+=== Online Meetup: Learning Chinese with Neo4j
+
+In this week's online meetup Fernando Izquierdo showed us how to learn Chinese using Neo4j. 
+
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ATkB-LQR0eY" frameborder="0" allowfullscreen></iframe>
+++++
+
+Even if you've got no interest in learning Chinese this is still worth watching because it's such an innovative use of graphs.
+
+=== From The Knowledge Base
+
+This week from the  link:https://neo4j.com/developer/kb[Neo4j Knowledge Base^]:
+
+* link:https://neo4j.com/developer/kb/how-do-i-quickly-identify-long-gc-pauses-via-the-messages-or-debug-logs/[How do I quickly identify long gc pauses via the messages or debug logs^] supplies a simple set of commands to quickly analyse Neo4j log files.
+
+* The article for https://neo4j.com/developer/kb/limiting-match-results-per-row/[Limiting MATCH results per row^] was recently extended with pattern comprehensions for Neo4j 3.1
+
+=== On GitHub: Rust, Spring Data Neo4j, The Bible
+
+Here are some of the most interesting projects I found on my GitHub travels:
+
+* If you like to work in Rust, this https://github.com/livioribeiro/rusted-cypher[Crate^] can help you to access Neo4j natively. It uses Cypher via the HTTP protocol and is well documented in the readme. It even offers a Macro based approach for less clutter in your code.
+
+* Marco Falcier created a quick https://github.com/mfalcier/forest-api[Spring Data Neo4j example project^] for managing forests of trees, that gives you a good starting point. It runs on a temporary in-memory database and comes with an Angular frontend and provides Mockito based tests.
+
+* The https://viz.bible/[MetaV viz.bible^] is an online and mobile site publishing detailed connections between bible verses and provides a lot of insights and charts. https://github.com/oblodgett[Olin Blodgett^]  took the https://github.com/robertrouse/KJV-bible-database-with-metadata-MetaV-[CSV data^] which is available under a CC license and https://github.com/oblodgett/neo4j-metav[transforms it into a graph in Neo4j^]. You can also see the underlying data model and some example queries. Would be interesting to build an app on top of that graph data which could augment viz.bible with deeper insights based on graph queries and analytics.
+
+* If you are into life-sciences research and want to work with http://www.snomed.org/snomed-ct[Snomed data^] in Neo4j, Pradeep created a https://github.com/pradeepvemulakonda/snomed-groovy[Docker based workflow^] using the official containers for Neo4j and Snomed and a Groovy script to load the data into a graph.
+
+=== Tweet of the Week
+
+// Ryan was at NASA is there a cool tweet?
+
+My favorite tweet this week was by link:https://twitter.com/cmdel[Christos Delivorias^]:
+
+++++
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Last day of the <a href="https://twitter.com/AberdeenAssetUK">@AberdeenAssetUK</a> <a href="https://twitter.com/hashtag/Hackathon?src=hash">#Hackathon</a>. 30K nodes 250K relationships across different systems. I ❤️ <a href="https://twitter.com/neo4j">@neo4j</a>  🚀🚀🚀🚀 <a href="https://t.co/82px797Fv1">pic.twitter.com/82px797Fv1</a></p>&mdash; Christos Delivorias (@cmdel) <a href="https://twitter.com/cmdel/status/857215480981008384">April 26, 2017</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+That’s all for this week. Have a great weekend. 
+
+Cheers, Michael & Mark

@@ -1,0 +1,185 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+The exciting news this week is that we launched the Graph Apps Gallery - a one stop shop where you can find all your favourite Graph Apps and discover new ones.
+
+Jennifer Reif wrapped up her series of posts on the Marvel Universe, I continued graphing the chaos of the British Parliament, and Cesar Pantoja showed us how to load Bitcoin into Neo4j in one day.
+
+[[featured-community-member]]
+=== Featured Community Member: Dr. Tommy Jones
+
+Our featured community member this week is Dr. Tommy Jones.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190405114343/this-week-in-neo4j-6-april-2019.jpg[name="Dr. Tommy Jones"]
+
+Dr. Tommy Jones has a background in statistics, mathematics, and computational science.  He’s also a Marine Corps veteran! Currently, he is working as part of the technical team at In-Q-Tel. 
+
+As a passionate advocate for data science and community building, Dr. Jones has been leading the data science community in Washington DC for the last couple years. As an advocate for graphs, he plans to present a talk on graph theory during https://GlobalGraphCelebrationDay.com[Global Graph Celebration Day^] on April 15th along side https://www.linkedin.com/in/amyhodler/[Amy Hodler^], a co-author for the soon-to-be released https://neo4j.com/graph-algorithms-book[O’Reilly Graph Algorithms Book^].   
+
+Dr. Jones has the types of qualities and characteristics we, at Neo4j, very much value like, sharing, collaboration, inclusion, and education. 
+
+Thank you, Tommy, for dedicating your time and commitment to helping others. We want you to know that we recognize and appreciate your contributions! 
+
+
+link:https://www.linkedin.com/in/twjstats/[Connect with Tommy on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== How to load Bitcoin into Neo4j in one day
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Cesar Pantoja showed us how to load the entire Bitcoin blockchain into Neo4j, in just one day.
+
+youtube::ndH6VZ1KFUg[type={type}]
+
+Cesar starts by explaining the graph model and the data pipeline used to get the data into Neo4j. before showing how to explore the way that money flows through the network.
+
+Cesar also https://medium.com/tokenanalyst/how-to-load-bitcoin-into-neo4j-in-one-day-b555219ed9d2[wrote a blog post^] on this topic a couple of months ago.
+
+
+[[features-2]]
+=== Graph Apps Gallery Launched
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190405023435/Selection_506.png" width="200px"  />
+</div>
+++++
+
+The Neo4j Labs Team are delighted to announce the release of the first version of the Graph Apps Gallery. 
+
+The Graphs App Gallery is an online Graph App that aims to make it easier for users to discover Graph Apps. You can use it directly from your web browser by navigating to https://install.graphapp.io/[install.graphapp.io^], or it can be installed in the Neo4j Desktop.. 
+
+One of the Graph Apps featured is Kees Vegter's https://medium.com/neo4j/introducing-the-neo4j-database-analyzer-a989b85e4026[Neo4j Database Analyzer^], which was released this week. This is a tool that lets you get a quick understanding of the data structures in your Neo4j Database.
+
+link:https://medium.com/neo4j/introducing-the-graph-app-gallery-81aa3e63567b[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Creating a Data Marvel: Part 10 — Lessons and Resources
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190405003127/1_eu5Xj4Qwj_5EKaQUB9wMLA.jpeg" width="200px"  />
+</div>
+++++
+
+After 4 months of writing, featuring 10 blog posts, this week https://twitter.com/jmhreif[Jennifer Reif^] wrote the final instalment in the Creating a Data Marvel Series.
+
+Along the way we've learned how to create a graph model for the universe, load data from the API into Neo4j, design domain classes, build a web API, and build a front end. 
+
+This week Jennifer discusses the future of the project, the lessons she's learned while building it, and shares the resources she's collected along the way
+
+
+link:https://medium.com/neo4j/creating-a-data-marvel-part-10-lessons-and-resources-8ffb5bf0ad1[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Graphing Brexit Clusters, GraphAL, Graph Technology Landscape
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190405024409/1_U963xyoMx2HbkcA8mQ-N7g-1.png" width="200px"  />
+</div>
+++++
+
+* As the British parliament descends further into chaos, I did some further exploration of the indicative votes, this time https://towardsdatascience.com/graphing-brexit-clustering-edition-3b966694e723[finding clusters of MPs who voted exactly the same way^]. 
+
+* To celebrate the last stop of the European GraphTour in London last week, Rik http://blog.bruggen.com/2019/03/podcast-interview-with-janos-szendi.html[interviewed Janos Szendi-Varga^] of GraphAware about the https://graphaware.com/graphaware/2019/02/01/graph-technology-landscape.html[Graph Technology Landscape^] that he published a couple of months ago.
+
+* Jennifer Reif published a knowledge base article explaining how to https://neo4j.com/developer/kb/pass-temporal-objects-parameters/[pass temporal objects as parameters^] from a Neo4j JavaScript Driver.
+
+* Oskar Hane has written a blog post explaining how to https://medium.freecodecamp.org/how-to-detect-a-users-preferred-color-scheme-in-javascript-ec8ee514f1ef[detect whether a user has system level dark mode enabled^], so that it can be respected by JavaScript applications. Once this has wider web browser support it will be coming to a Neo4j Browser near you. 
+
+* Christine Betts https://blog.semanticscholar.org/finding-experts-in-grapal-b97ef280e585[released GrapAL^] - the Graph database of Academic Literature. It is built using Neo4j and contains a subset of the Semantic Scholar knowledge base of academic literature.   
+
+[[features-4]]
+=== Link Prediction with Neo4j Part 2: Predicting co-authors using scikit-learn
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190405003227/1_JRCV3cyFHwQ8DdUS1Baf3g.png" width="200px"  />
+</div>
+++++
+
+Building on the https://medium.com/neo4j/link-prediction-with-neo4j-part-1-an-introduction-713aa779fd9[introduction to link prediction^] blog post that I wrote a few weeks ago, this week I show how to use these techniques on a citation graph.
+
+In this post we learn about splitting train and test graphs, engineering link prediction features, and how to train a random forest classifier using the popular scikit-learn library.  
+
+link:https://towardsdatascience.com/link-prediction-with-neo4j-part-2-predicting-co-authors-using-scikit-learn-78b42356b44c[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/gdebenito95[Gonzalo De Benito^]:
+
+tweet::1113532631487066114[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://github.com/lyft/cartography
+Cartography is a Python tool that consolidates infrastructure assets and the relationships between them in an intuitive graph view powered by a Neo4j database.
+
+https://medium.com/neo4j/cosine-similarity-in-neo4j-d617b0442439
+Cosine Similarity in Neo4j
+
+* https://graphaware.com/neo4j/2019/03/09/graph-assisted-typescript-refactoring.html 
+Graph-assisted Typescript refactoring
+
+https://medium.com/@dmccreary/a-taxonomy-of-graph-use-cases-2ba34618cf78
+A Taxonomy of Graph Use Cases
+
+New Docker walkthrough/tutorial published on our developer guides! https://neo4j.com/developer/docker-run-neo4j/
+
+Overhaul to visualization tools page is complete! https://neo4j.com/developer/tools-graph-visualization/
+
+Eigenvector graph centrality analysis on Subreddit hyperlink network with #Neo4j #graph #algorithms and #cypher projection
+
+https://tbgraph.wordpress.com/2019/04/04/eigenvector-graph-centrality-analysis-on-subreddit-hyperlink-network-with-neo4j-and-cypher-projection/
+
+https://apiko.com/blog/neo4j-database-advantages/
+
+https://blog.grandstack.io/whats-new-in-grandstack-310c067fea4a
+
+:tada:  Happy to announce the 2nd Milestone Release of neo4j-graphql-java, packed with a lot of newly implemented features, see the release notes:
+https://github.com/neo4j-graphql/neo4j-graphql-java/releases/tag/1.0.0-M02
+
+hĕdzˈŭpˈ :) BoltSips 1.5, the #Neo4j driver for #ElixirLang, is available at https://hex.pm/packages/bolt_sips
+
+This is a comprehensive release, containing the support for Bolt v1, v2 and v3.
+
+BoltSips is compatible with Neo4j versions: 3.0.x/3.1.x/3.2.x/3.4.x/3.5.x #MyElixirStatus :heart:
+
+I published a new video on using virtual nodes and rels, which is a really powerful tool for graph visualization (summarization, collapsing transitive relationships, monopartite viz)
+
+https://www.youtube.com/watch?v=x34FuSLt0l8&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=12&t=0s
+
+Find all videos here: 
+http://r.neo4j.com/apoc-videos
+
+#Neo4j #APOC #Neo4jLabs
+
+
+////

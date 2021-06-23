@@ -1,0 +1,175 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+The https://neo4j.com/nodes-2020/agenda/[NODES 2020^] conference is almost upon us. It all gets underway from 8am Eastern Time on Tuesday October 20th 2020. Hope to (virtually) see you there!
+
+We've just finished the virtual training sessions for Neo4j Certified Professionals, so thank you to all of you who joined us for that. My 3 year old decided to make a guest appearance at the end of the import training, which made that one a bit more challenging!
+
+Content-wise, our video this week is from Michael Hunger's live stream and is all about the Neo4j Community Graph. 
+
+We launched the Intro to Graph Algorithms for Neo4j 4.0 training course, Adam Cowley released a library for working with Neo4j from React, and Dr Jim Webber appeared on the Graphistania podcast.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Anelia Kurteva
+
+This week's featured community member is Anelia Kurteva, PhD Researcher at Leopold-Franzens Universität Innsbruck.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201016082437/this-week-in-neo4j-17-october-2020.jpg[name="Anelia Kurteva"]
+
+Anelia is a new member of the Neo4j community but is already a Certified Professional! Anelia has a Master of Science degree in Advanced Computer Science and a Bachelor of Science in Computer Science with Visual Computing. She is currently working on her PhD in Computer Science.
+
+Anelia's research focuses on sensor data and will solve the issue of data sharing between multiple entities based on informed user consent by using knowledge graphs. 
+
+In her talk at NODES 2020 next week, Anelia will take us through the semantics, data sharing, user consent and the implications of its issuing and withdrawal. Anelia will be speaking at 12:25 in the Knowledge Graphs track.
+
+https://www.linkedin.com/in/aneliakurteva/[Connect with Anelia on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Exploring the (Neo4j) Community Graph
+
+Our video this week is from Michael Hunger's live stream, in which he shows how to explore the Neo4j community graph.
+
+youtube::FDRJq9ybFPI[type={type}]
+
+The Neo4j community graph contains data about Neo4j related activity on StackOverflow, Twitter, GitHub, and Slack. 
+
+In the video Michael explains the graph model as well as some of the applications built on top of the graph. He concludes by showing how to create a community graph for your own community.
+
+[[features-2]]
+=== New GraphAcademy Course: Introduction to Graph Algorithms in Neo4j 4.0
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201012122224/graphacademy-course-intro-graph-algorithms-neo4j-40.jpg" width="200px"  />
+</div>
+++++
+
+This week Elaine Rosenberg and Tomaz Bratanic launched the latest GraphAcademy online training course, https://neo4j.com/graphacademy/online-training/intro-graph-algos-40/[Introduction to Graph Algorithms in Neo4j 4.0^].
+
+This training course will get you up to speed with the best practices for using the algorithms in the Graph Data Science Library. It is aimed at Cypher Developers and Data Scientists and will take 5 hours to complete if you do all the exercises. 
+
+https://neo4j.com/blog/graphacademy-course-introduction-graph-algorithms-neo4j-4-0/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Connecting your React app to Neo4j with React Hooks
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201016024033/EjUEBQIWoAA-7aN.png" width="200px"  />
+</div>
+++++
+
+Adam Cowley released https://github.com/adam-cowley/use-neo4j[use-neo4j^], a set of components and hooks for building React applications that communicate to Neo4j.
+
+If you're building a https://neo4j.com/developer/graph-apps/[Graph App^] or want to quickly prototype a web application, this library will save you a lot of boilerplate code.
+
+Michael Hunger also https://www.youtube.com/watch?v=GumfNoVqWlU[showed how to use the library^] on his most recent live stream.
+
+https://medium.com/neo4j/connecting-to-react-app-to-neo4j-148881d838b8[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j 4.0 procedure examples, .NET Core API, GraalVM demo project
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Chris Skardon has updated the https://github.com/neo4j-examples/neo4j-procedure-template[Neo4j procedure examples^] to work with the 4.x series of the database.
+
+* Michael Simons https://github.com/michael-simons/neo4j-java-driver-native-lib/blob/master/src/main/ruby/executeQuery.rb[created a demo project^] in which he compiles a Java program that uses the Neo4j Java driver with GraalVM into a native, shared library which can be used to connect to Neo4j from languages like C and Ruby.
+
+* Matthew Humpreys shows how to build a https://enterprise-knowledge.com/how-to-setup-a-net-core-api-with-neo4j/[.NET Core API with Neo4j^].
+
+////
+https://twitter.com/Nanthony95/status/1316148184352198659
+https://twitter.com/cloudbart/status/1314585663153504257 
+https://twitter.com/Nanthony95/status/1316148184352198659 
+////
+
+[[features-5]]
+=== Graph Database for Dummies: Podcast and Interview
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201009020315/header.png" width=200px"  />
+</div>
+++++
+
+https://neo4j.com/blog/introducing-graph-databases-for-dummies/[Graph Databases For Dummies^] is an introductory book on graph databases that was released about a month ago.
+
+In the latest episode of the Graphistania podcast, Rik Van Bruggen interviews his co-author Dr Jim Webber about their experience working on the book.
+
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/905615800&color=44c13e"></iframe>
+<div style="font-size: 10px; margin-bottom: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/graphistania" title="Graphistania" target="_blank" style="color: #cccccc; text-decoration: none;">Graphistania</a> · <a href="https://soundcloud.com/graphistania/graphistania-20-episode-9" title="Graphistania 2.0 - Episode 9" target="_blank" style="color: #cccccc; text-decoration: none;">Graphistania 2.0 - Episode 9</a></div>
+++++
+
+Patrick Wall also did https://www.youtube.com/watch?v=zFAQDo7ahyE[a 5 minute interview^] with the authors on the same topic.
+
+http://blog.bruggen.com/2020/10/graphistania-20-episode-9-one-about.html[Read the transcript, role="medium button"]
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/Nanthony95[Nick Anthony^]:
+
+tweet::1316148184352198659[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+* https://blog.grandstack.io/pulumi-platypus-and-the-very-grand-stack-be651093877f
+Pulumi Platypus And The Very GRAND Stack
+Deploying A Serverless GraphQL API Using Infrastructure As Code
+
+
+
+* https://towardsdatascience.com/supercharged-data-science-with-lynxkite-on-neo4j-data-11cd0fa10f41 - Supercharged Data Science with LynxKite on Neo4j data
+////

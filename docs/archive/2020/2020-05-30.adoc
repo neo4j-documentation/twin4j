@@ -1,0 +1,177 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, we have a presentation by Max De Marzi where he shares graph data modeling best practices.
+
+Vladimir Plizga builds a Spring Integration Graph, JHipster now has support for Neo4j, and the CFP for NODES 2020 is now open.
+
+And finally, Vlad Batushkov illustrates the circular money flow of a very simplified financial system using Neo4j.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: John Fleming
+
+
+This week's featured community member is John Fleming, Founder & CEO at Kaavio.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200529101746/featured24Feb-1.png[name="John Fleming"]
+
+John Fleming lives in the intersection of finance, technology, and the relationship between humans with technology. He’s also a passionate (surpirse!) graph nerd! 
+
+If his name sounds slightly familiar, it may be because he recently presented at https://neo4j.com/connections[Neo4j Connections] on   https://neo4j.com/connections/financial-services/[Graphs for Impact Analysis in Financial Markets]. Sounds cool, right?!  If you missed it, lucky for you, the presentations are archived and you can access it https://go.neo4j.com/connections-graphs-in-financial-services-lp.html?_ga=2.206232019.1971220681.1590688742-317393079.1584469532[here]. 
+
+We love when users from our community share their stories, and John’s was one of the highly anticipated presentations, so we decided to feature him to show our return love for his contributions to educate the wider graph community. 
+
+Thanks, John! We look forward to seeing what more thought-provoking projects you create in the future! 
+
+https://www.linkedin.com/in/johnedwardfleming/[Connect with John on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Neo4j Ninjas: Tips & Tricks: Data Modeling Best Practices 
+
+This week we https://www.youtube.com/playlist?list=PL9Hl4pk2FsvV-naMT6t6BVfx3-dtWnMdB[released some videos^] from the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninjas^] webinar series. 
+https://community.neo4j.com/g/ninja[Neo4j Ninjas^] receive early access to these videos in return for answering technical questions on the Neo4j community site.
+
+This week's video is Max De Marzi's presentation, in which he shares graph data modeling best practices.
+
+youtube::LSKa3as_S7I[type={type}]
+
+After a quick crash course in the way Neo4j stores and queries data, Max shows how to model data for flights, social networks, forms, and more.
+
+[[features-2]]
+=== How to visualize a Spring Integration graph with Neo4j?
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200529011218/1_NGXkoQHfPCZeZ86dQE2EPg.png" width="150px"  />
+</div>
+++++
+
+The Spring Integration Graph is a JSON graph representation of the current state of all enterprise integration pattern components and their relationships.
+
+Vladimir Plizga shows us how to import, query and visualise this graph in Neo4j, with help from APOC and the Neo4j Browser. 
+
+https://medium.com/swlh/how-to-visualize-a-spring-integration-graph-with-neo4j-61927ba5bb5a[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== JHipster and Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200529011337/jhipster-1-.png" width="120px"  />
+</div>
+++++
+
+This week we have several articles around Neo4j and https://www.jhipster.tech/[JHipster^].
+JHipster is a Java based development platform to quickly generate, develop, & deploy modern web applications & microservice architectures.
+
+* JHipster https://www.jhipster.tech/using-neo4j/[announced Neo4j support^] in https://www.jhipster.tech/2020/05/17/jhipster-release-6.9.0.html[version 6.9.0^] of the library.
+
+* Davide Fantuzzi explains how to https://medium.com/larus-team/getting-started-with-jhipster-and-neo4j-35c8a647a6fe[build your first application with Neo4j and JHipster^].
+
+* Michael Simons goes into more https://medium.com/neo4j/two-hip-friends-jhipster-and-neo4j-774639e9693[detail about the integration between Neo4j and JHipster^].
+
+
+[[features-4]]
+=== Cypher gotchas, CFP for NODES 2020, Getting started with the GRANDstack 
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200417011039/noun_link_793604.png" width="80px"  />
+</div>
+++++
+
+* Rik Van Bruggen http://blog.bruggen.com/2020/04/contact-tracing-guide-for-neo4j-browser.html[created a Neo4j Browser guide^] for the COVID-19 Contact Tracking demo that he's been working on over the last month. 
+
+* The CFP for https://neo4j.com/nodes-2020/[NODES 2020^] is now open. NODES 2020 is a free, one-day virtual conference loaded with highly technical presentations, delivered by Neo4j experts from around the world on graph-related topics. Don't forget to https://neo4j.com/blog/neo4j-online-developer-expo-summit-is-back/[submit your talks^]. The CFP closes on 3rd August 2020.
+
+* Stefan Armbruster has https://blog.armbruster-it.de/2020/05/cypher-gotchas-multiple-match-vs-comma-operator/[written a blog post^] explaining the difference between writing multiple match clauses and using the comma operator in a Cypher query.
+
+* Will Lyon has added functionality to deploy to Vercel and Netlify to the https://github.com/grand-stack/grand-stack-starter[GRANDstack starter project^]. He's also https://www.youtube.com/watch?v=1JLs166lPcA[published a new video^] to help you get started.
+
+[[features-5]]
+=== Find Circular Money Flow with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200529011102/1_kK_Hf96Wo42vj3kFSaLVyQ.png" width="200px"  />
+</div>
+++++
+
+In Vlad Batushkov's latest blog post, he illustrates a type of money laundering activity called “Circular money flow” of a very simplified financial system using Neo4j.
+
+After creating a sample graph using the APOC Graph Generator, Vlad derives a transaction subgraph and then shows how to query it to detect potentially fraudulent activity.
+
+https://medium.com/neo4j/find-circular-money-flow-with-neo4j-c9138e1c3183[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/BarrasaDV[Jesús Barrasa^], whose https://neo4j.com/docs/labs/nsmntx/current/[Neosemantics^] library has now had 10,000 downloads:
+
+tweet::1264550019060903937[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+really cool 4 sessions of the monthly ninja program from earlier the year have been made publicly available:
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvV-naMT6t6BVfx3-dtWnMdB 
+
+(Opens in new tab)Towards Data Science(Opens in new tab) @TDataScience(Opens in new tab)
+Movie Recommendations powered by Knowledge Graphs and Neo4j https://buff.ly/35smGQJ 
+
+(Opens in new tab)Tim Pavlick(Opens in new tab) @Timpavlick(Opens in new tab)
+
+
+
+M. David Allen @mdavidallen
+Belatedly, I've updated these instructions for doing #SSL and #HTTPS in #Neo4j with .@letsencrypt which now covers Neo4j 4.0 and configuration of different protocol connectors (HTTPS, bolt, cluster)
+https://medium.com/neo4j/getting-certificates-for-neo4j-with-letsencrypt-a8d05c415bbd
+
+
+
+Confluent @confluentinc
+Use @ksqlDB to build stateful aggregations that can be queried in place or pushed downstream to other data stores. @rmoff shares how in our latest blog post, leveraging @apachekafka, @MongoDB, @elastic, and @neo4j for building apps and analysis: https://cnfl.io/wi-fi-data-with-kafka-and-friends
+
+Johannes Unterstein yay, running on Aura https://pharma.elsevier.com/covid-19/navigating-the-virus-regulation-pathway-through-text-mining-and-knowledge-graph/
+pharma.elsevier.com
+Navigating the Virus Regulation Pathway through Text Mining and Knowledge Graph
+
+Steve McDougall @JustSteveKing
+@mesirii @zuzana_kunckova @opdavies @neo4j @stauffermatt @keithdamiani @ikwattro @adamcowley @michellesanver @frankdejonge @stefanak_michal An update to all participants, I did it 
+Currently only the v4 http API is supported, but I may write an abstraction around your package @mesirii for the bolt protocol
+https://www.juststeveking.uk/an-adventure-with-graph-databases/
+
+- release https://www.jhipster.tech/using-neo4j/ <- 
+- @Michael Simons spring-bridge talk from last friday https://youtu.be/hi_zAj3tqeE?t=27128
+- slides https://speakerdeck.com/michaelsimons/introducing-neo4j-sdn-rx
+
+
+////

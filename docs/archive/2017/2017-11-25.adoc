@@ -1,0 +1,140 @@
+﻿:linkattrs:
+:type: "web"
+
+++++
+<style>
+img { margin-bottom: 1em; }
+</style>
+++++
+////
+[Keywords/Tags:]
+paradise papers, twin4j, bom, ldap, marvel, software analytics, tabletop
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 25 November 2017, including projects around Paradise Papers, Software Analytics, Marvel, BOMs
+
+[Primary Image File Name:]
+https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171120110146/this-week-in-neo4j-25-november-20171.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 25 November 2017
+
+[Headline:]
+This Week in Neo4j – 25 November 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Markus Harrer
+
+This week’s featured community member is https://twitter.com/feststelltaste[Markus Harrer^], Software Development Analyst at Sparda Bank DV. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171120110146/this-week-in-neo4j-25-november-20171.jpg["Markus Harrer - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+Markus joined the Neo4j community when he realized the power of the graph for software analytics. In his quest to make software development decisions data driven, he utilized Neo4j to visualize, infer, chart, and analyse the graphs of software.
+
+Markus presented at our online meetup and at several Java User Groups. He also wrote a large number of blog posts with detailed examples of his approach.
+
+Thank you so much Markus!
+
+=== Online Meetup: Software Analytics with Jupyter, Pandas, jQAssistant, and Neo4j
+
+In this week's online meetup Markus Harrer explored my favorite area of graph applications - software analytics. Equipped with the urge to improve software development decisions with data, he uses Jupyter Notebooks with Pandas and Py2Neo to query and visualize data from software project structures, commits and source code.
+
+Based on http://jqassistant.org/get-started[jQAssistants^] capabilities for scanning and analyzing large software projects he uses the graph data to gain specific insights.
+
+youtube::LEbqyZVTLiI[type={type}]
+
+Explore his very http://www.feststelltaste.de/[insightful blog^] and the https://www.slideshare.net/feststelltaste/software-analytics-with-jupyter-pandas-jqassistant-and-neo4j-neo4j-online-meetup[slides for the meetup^].
+
+=== Paradise Papers
+The Paradise Papers spurred a number of activities this week.
+
+Ryan updated the http://neo4jsandbox.com[Neo4j ICIJ Sandbox^] with the new data and also https://towardsdatascience.com/engineering-awareness-paradise-papers-6303d93cee64[published a Docker image^]:
+`docker run -p 7474:7474 -p 7687:7687 ryguyrg/neo4j-paradise-papers`
+
+Will and I wrote a https://neo4j.com/blog/depth-graph-analysis-paradise-papers/[blog post that goes deeper into the graph analytics of the Paradise Papers^], exploring graph algorithms and map visualizations.
+
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20171124033244/paradise-papers-in-depth-1.jpg[]
+
+
+
+Will also shows how to use https://github.com/johnymontana/pp-viz/blob/master/jupyter/PP_Viz.ipynb[Pandas with Neo4j's Python driver^] to quickly analyze graph data.
+
+Rik interviewed http://twitter.com/@niekbartho[Niek Bartholomaeus^] about his http://openthebox.be project, http://blog.bruggen.com/2017/11/podcast-interview-with-niek.html[Belgium's local investigative platform for corporate ownership^]
+
+=== Releases
+The Neo4j drivers saw some releases this week:
+
+* https://pypi.python.org/pypi/neo4j-driver/1.5.1[Python 1.5.1^]
+* https://www.nuget.org/packages/Neo4j.Driver[.Net 1.5.1^]
+* link:https://search.maven.org/#artifactdetails%7Corg.neo4j.driver%7Cneo4j-java-driver%7C1.5.0-beta02%7Cjar[Java 1.5.0-beta02^]
+
+https://neo4j.com/release-notes/neo4j-3-2-8/[Neo4j 3.2.8^] was released too with some small fixes in Cypher, WIndows packaging and Causal Cluster. The https://github.com/neo4j/neo4j/wiki/Neo4j-3.4-changelog[next alpha of Neo4j 3.4.0^] is scheduled next week.
+
+=== From BOM & LDAP to Marvel & Healthcare Data - Articles for a Whole Weekend
+
+* At DevopsDays Chicago Ashley Sun from LendingClub presented: https://www.youtube.com/watch?v=xzLPo3gtX-I[Graphs: The Fabric of DevOps (video)^]
+* At Data Architecture Summit, Ben Nussbaum spoke about the https://www.youtube.com/watch?v=VNYB373by0s[usefulness of graphs for data integration (video)^]
+* https://twitter.com/logisima[Benoit Simard^] shows how to use http://www.bsimard.com/2017/11/13/neo4j-ldap.html[an (open)LDAP server for Neo4j's authentication and authorization^]
+* Max de Marzi was busy this week, his first blog shows how to https://maxdemarzi.com/2017/11/17/bill-of-materials-in-neo4j/[represent and compute bills of material (BOM) in Neo4j^], while his second explains how you can model a graph covering 50 billion data points in https://maxdemarzi.com/2017/11/21/mutual-fund-benchmarks-with-neo4j/[fund to benchmark comparisions^]
+* The Graph Marvel Series: In this series of blog posts Tomaz Bratanic explores cool insights of the Marvel universe as a graph, from import and querying to running graph algorithms. His latest post looks at https://tbgraph.wordpress.com/2017/11/23/neo4j-marvel-social-graph-algorithms-centralities/[Marvel Centralities^] while the https://tbgraph.wordpress.com/2017/11/17/neo4j-marvel-social-graph-algorithms-community-detection/[previous one explored community detection^]
+* https://twitter.com/kafkaesqu3[David^] shared how he https://godlikesecurity.com/index.php/2017/11/23/a-brief-tour-of-the-bloodhound-and-neo4js-rest-api/[sped up some AD penetration testing^] with BloodHound & Neo4j's HTTP API
+* http://twitter.com/@anuragknoldus[Anurag Srivastava‏^] published a quick overview of some https://blog.knoldus.com/2017/11/17/whats-new-in-neo4j-3-3-0/[features released in Neo4j 3.3.0^]
+* https://twitter.com/modogo[Kai Schwaiger^] from Structr https://structr.org/blog/user-interface-for-virtual-types[introduces Virtual Types^] as a new feature in structr.org
+* http://twitter.com/fbiville[Florent Biville^] and http://twitter.com@MGazanayi[Marouane Gazanayi^]
+ presented an link:https://www.slideshare.net/neo4j/open-data-with-neo4j-and-kotlin/neo4j/open-data-with-neo4j-and-kotlin[open-data use-case for importing doctors and drug prescriptions^] using https://github.com/graph-labs/open-data-with-neo4j/[Kotlin with Neo4j^] at Devoxx Morocco
+* Mark wrote about how to use http://www.markhneedham.com/blog/2017/11/17/kubernetes-1-8-using-cronjobs-take-neo4j-backups/[cronjobs to take backups^] from a https://neo4j.com/blog/kubernetes-deploy-neo4j-clusters/[Kubernetes Deployed Neo4j Cluster^]
+
+=== Cool Projects: TableTop-Generation & Repositories-You-Might-Like
+
+https://tabletopgeneration.com/profile/jimmythesaint82?view=timeline[James David Tandy^] shared https://tabletopgeneration.com/home[TableTop Generation^], a full Social Collaboration Platform for people in the Tabletop Industry, Entirely based on Neo4j with a very slight splash of Mongo. Really cool as I like good board games!
+
+An useful project using the GitHub API and Neo4j from http://twitter.com/@AlexPuschinksy[Alex Puschinksy‏^] is http://www.repoyoumaylike.com[RepoYouMayLike^] - an experiment in Github projects recommendation
+
+Will highlighted the https://github.com/tobiashm/language-cypher[Atom Editor Cypher support^] by https://twitter.com/tobiashm[Tobias H. Michaelsen^]
+
+=== Good Answers on StackOverflow
+
+* 4 people answered this https://stackoverflow.com/questions/47419651/how-can-i-use-neo4j-cypher-query-to-create-a-histogram-of-nodes-bucketed-by-numb[statistical bucketing question^] with Cypher
+* https://stackoverflow.com/questions/47378638/determine-neo4j-database-version[This answer explains^] how to programmatically determine the Neo4j version
+* To https://stackoverflow.com/questions/47378187/neo4j-cypher-query-and-index-of-element-in-the-collection[determine the position^] of an item in a list with Cypher's reduce or APOC
+* https://stackoverflow.com/questions/47378813/neo4j-pipe-data[Using WITH for dataflow operations^], e.g. for determining top-n elements and then matching additional subgraphs for those
+* Forward looking questions on https://stackoverflow.com/questions/47439276/traverse-both-incoming-and-outgoing-relationship-in-cypher[regular path queries with openCypher^]
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+| Nov 28 2017 | https://www.meetup.com/Graph-Database-Czech-Republic/events/245252794/[Spring Data Neo4j for Enterprise Applications^] | https://www.meetup.com/Graph-Database-Czech-Republic/[Graph Database Czech Republic^] | https://twitter.com/frant_hartm[František Hartman^]
+| Nov 30 2017 | https://www.meetup.com/graphdb-london/events/244047546/[All about GRAND Stack: GraphQL, React, Apollo, and Neo4j^] | https://www.meetup.com/graphdb-london/[Neo4j London User Group^] | https://twitter.com/lyonwj[Wiliam Lyon^]
+| Nov 30 2017 | https://www.meetup.com/graphdb-london/events/245073207/[(Free Workshop) Full stack development with Neo4j: The GRAND stack - London^] | https://www.meetup.com/graphdb-london/[Neo4j London User Group^] | https://twitter.com/lyonwj[Wiliam Lyon^]
+| Nov 30 2017 | https://www.meetup.com/Neo4j-Online-Meetup/events/243975030/[How Project Rephetio used Neo4j to predict drug repurposing^] | https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] | https://twitter.com/dhimmel[Daniel Himmelstein]
+|=========================================================
+
+
+
+The https://neo4j.com/blog/fosdem-2018-join-us-graph-developer-room/[FOSDEM 2018 Graph Developer Room submissions^] are due this weekend, if you are interested in graph databases and open source and have some interesting idea, technology or project to share.
+
+=== Tweet of the Week
+
+My favourite tweet this week was by http://twitter.com/ManuelVilla1859[Manuel Villa, ICIJ Data Fellow^]:
+
+tweet::933350339738308608[type={type}]
+
+And I finally met the amazing Florent Biville of http://LiquiGraph.org and https://neo4j.com/blog/user-defined-functions-neo4j-procedure-compiler/[ProcedureCompiler^] fame at Devoxx in Morocco.
+
+tweet::930218483861852160[type={type}]
+
+Don't forget to retweet or favorite the tweets if you liked them too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Michael

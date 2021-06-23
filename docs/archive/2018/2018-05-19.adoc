@@ -1,0 +1,171 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 19 May 2018, including 
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 19 May 2018 including the release of Neo4j 3.4 and Neo4j is now available on Google Cloud Launcher. We also have the GQL proposal, a deep dive into the new DateTime data type, and more.
+
+[Headline:]
+This Week in Neo4j – 12 May 2018
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have the release of Neo4j 3.4 and Neo4j is now available on Google Cloud Launcher. We also have the GQL proposal, a deep dive into the new DateTime data type, and more.
+
+[[featured-community-member]]
+=== Featured Community Member: Nicolle Cysneiros
+
+This week’s featured community member is https://twitter.com/nicysneiros[Nicolle Cysneiros^], Full Stack Developer at Labcodes. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180518062119/this-week-in-neo4j-19-may-20181.jpg[name="Nicolle Cysneiros"]
+
+Nicolle Cysneiros has been part of the Neo4j community for a couple of years and I first came across her work in a talk from Euro Python 2017 - https://www.youtube.com/watch?v=Fy611BorGTc[Graph Databases: Talking about your Data Relationships with Python^]. 
+
+In this talk Nicolle gives an introduction to graph databases before showing examples on campaign donation and Game of Thrones datasets. She also shows how to use Neo4j alongside the https://networkx.github.io/[NetworkX^] and http://igraph.org/python/[igraph^] libraries.
+
+Nicolle gave a https://www.youtube.com/watch?v=J8LvW-tyLRc[similar version of the  talk^] at the recent https://us.pycon.org/2018/about/[PyCon 2018^], in Cleveland, Ohio.
+
+On behalf of the Neo4j and Python communities, thanks for all your work Nicolle!
+
+////
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180316032200/download-4.png" width="200px" />
+</div>
+++++
+////
+
+[[neo4j-34-release]]
+=== Neo4j 3.4 Released
+
+Following on from the announcement at GraphTour San Francisco a couple of weeks ago, https://neo4j.com/blog/neo4j-graph-database-3-4-ga-release/[Neo4j 3.4 was released on Thursday^]. https://twitter.com/ryguyrg?lang=en[Ryan^] explains the highlights in the video below.
+
+youtube::mdNJFTUiuA8[type={type}]
+
+You'll be able to download this version automatically from the Neo4j Desktop and https://neo4j.com/download/other-releases/#releases[packages for server deployments are also available^]. We've also released new versions of the https://neo4j.com/docs/graph-algorithms/current/[Graph Algorithms^], https://neo4j-contrib.github.io/neo4j-apoc-procedures/[APOC^], and https://neo4j.com/developer/graphql/[GraphQL^] plugins. 
+
+I'm excited to finally have geospatial and temporal data types and need to go back and update some of my applications. 
+https://twitter.com/adamcowley[Adam Cowley^] has written a great blog post explaining https://www.adamcowley.co.uk/neo4j/temporal-native-dates/[how to use dates^] and we also created a https://neo4j.com/sandbox-v2/[Neo4j 3.4 sandbox^] that has worked examples of both data types. 
+
+[[google-cloud-launcher]]
+=== Neo4j available on Google Cloud Launcher
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180518045039/1_WE-EQFubMHMnMv-bPIW5SA-1024x633.png" alt="Google Cloud Platform" width="200px" />
+</div>
+++++
+
+As of this week Neo4j is https://console.cloud.google.com/launcher/details/neo4j-public/neo4j-enterprise-causal-cluster?q=neo4j[available on Google Cloud Launcher^], and Christopher Crosbie from the Google Cloud Partner Engineering Team has https://cloud.google.com/blog/big-data/2018/05/transform-publicly-available-bigquery-data-and-stackdriver-logs-into-graph-databases-with-neo4j[written an article^] in which he shows how Neo4j can be used to better understand NCAA Mascots or analyze your GCP security posture with Stackdriver logs. 
+
+Christopher explains how to take the data from BigQuery into Neo4j and then shows Cypher queries to find the top mascots, as well as commonalities between them. 
+
+He then shows how Neo4j can be used to better understand your full cloud architecture by providing the ability to easily connect data relationships all the way from the Kubernetes microservices that collect the data to the rows in a BigQuery analysis where the data ends up in. 
+
+To get started for free you can https://neo4j.orbitera.com/c2m/trials/signup?testDrive=1135[sign up for a 3 day test drive^]. 
+
+[[gql]]
+=== GQL: It’s Time for a Single Property Graph Query Language  
+
+Earlier this week we published the https://gql.today/[GQL Manifesto^], which proposes fusing the best of Cypher, PGQL and G-CORE into a more comprehensive query language built specifically for graph solutions.
+
+++++
+<div style="text-align:center">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180516134253/its-time-for-a-single-property-graph-query-language.png" width="400px" />
+</div>
+++++
+
+If you're in favour of the manifesto https://gql.today/#vote[don't forget to vote^]. 
+We'll also be https://www.meetup.com/Neo4j-Online-Meetup/events/250906697/[hosting an online meetup^] on Thursday 24th May 2018 in which there will be a Q&A session where you can get any of your questions answered.
+
+=== Visualizing Open Data, Neo4j and Apache Spark, New Clojure Driver
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180518052402/2018-05-18_13-23-57.png" alt="Visualizing Open Data with Neo4j" width="150px" />
+</div>
+++++
+
+* https://twitter.com/scott_sosna[Scott Sosna^] https://www.slideshare.net/ScottSosna/visualizing-open-data-using-neo4j[shared the slides^] from his DevoxxUK 2018 talk. Scott shows how to explore various Open Data sources using Neo4J and see what you can discover. You can also https://www.youtube.com/watch?v=5emCx1D_Qoc[watch the video^] from Scott's talk.
+
+* https://twitter.com/darthvader42[Stefan Armbruster^] has written a blog post in which he explains how to  https://blog.armbruster-it.de/2018/05/using-nginx-to-proxy-a-neo4j-instance/[use Nginx as a reverse proxy server^] sitting in front of Neo4j. 
+
+* https://twitter.com/Chris_Betz[Dr. Christian Betz^] released https://medium.com/@chris_betz/neo4j-clj-a-new-neo4j-library-for-clojure-2df1a2a45783[neo4j-clj: a new Neo4j library for Clojure^]. In the post Christian explains the reason for creating the driver and covers some of the design decisions to make Clojure and Cypher play nicely together. Christian has also created https://www.youtube.com/watch?v=vIgoemc2kNM[a short video^] explaining the library.
+
+* https://twitter.com/ira_res[Iryna Feuerstein^] has written a blog post showing how to do https://medium.com/@ifeuerstein/graph-data-processing-30451b5b576f[Graph data processing with Neo4j and Apache Spark^].  You can find all the code in https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/1412982922818543/13325814683421/4638431139859966/latest.html[a Databricks notebook^] that Iryna created.
+
+* mbox is a file format used for holding collections of email messages and John King has created https://github.com/jejking/mbox2neo[mbox2neo^], a utility to build a simple Neo4j graph database from these files.
+
+* In https://twitter.com/maxdemarzi[Max De Marzi^]'s latest post he shows how to use Neo4j to help retailers https://maxdemarzi.com/2018/05/17/offers-with-neo4j/[make offers to their customers^], using only Cypher. Max does a deep dive into Cypher's https://neo4j.com/docs/developer-manual/current/cypher/functions/predicate/[predicate functions^] and uses some of the new date functions released in Neo4j 3.4
+
+[[online-meetup]]
+=== Online Meetup: Experience Report - Building a modern URL shortener
+
+This week on the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^] 	https://twitter.com/poeti8[Pouria Ezzati^] presented an experience report on building https://kutt.it/[kutt.it^], a modern URL shortener.
+
+youtube::MUsvRbOnrNY[type={type}]
+
+Pouria explained the origins of the application, how he migrated the backend database from MongoDB to Neo4j, and the modelling decisions he made. He also spent some time going through the NodeJS code that backs the application.
+
+You can find the code for the project in the https://github.com/thedevs-network/kutt[thedevs-network/kutt^] GitHub repository.
+
+/////
+[[knowledge-base]]
+=== From the Knowledge Base: Parsing query.log
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+
+This week from the Neo4j Knowledge Base we have an entry that shares a script that https://neo4j.com/developer/kb/an-approach-to-parsing-the-query-log/[parses the query log^] available in the Neo4j Enterprise Edition.
+
+The script summarises the total number of queries, their running time, the date and time of the and last queries, and more.
+
+If you want to understand what's happening on your Neo4j server this is a good place to start.
+/////
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| May 21st 2018 | https://www.meetup.com/GraphDB-Sydney/events/jqvlhpyxhbcc/[Natural Language Processing (NLP), chatbot and graph database^] | https://www.meetup.com/GraphDB-Sydney[GraphDB Sydney^] | https://twitter.com/justosophy[Justin Anderson^]
+
+| May 24th 2018 | https://www.meetup.com/graphdb-berlin/events/250615392/[Neo4j 3.4 Release Demo & Meta-Path Exploration^]  | https://www.meetup.com/graphdb-berlin[Graph Database Berlin^] | Sebastian Bischoff, Adrian Ziegler, Michael Hunger
+
+| May 24th 2018 | https://www.meetup.com/Neo4j-Online-Meetup/events/250906697/[GQL: It’s Time for a Single Property Graph Query Language^]  | https://www.meetup.com/Neo4j-Online-Meetup[Neo4j Online Meetup^] | Amy Hodler, Alastair Green
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/eddywongch[Eddy Wong^]:
+
+tweet::996879972705996800[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+

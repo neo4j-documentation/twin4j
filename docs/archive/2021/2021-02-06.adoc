@@ -1,0 +1,185 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+Our video this week is from Build a GRANDstack Podcast App live stream. If you like Next.js, this one is for you.
+
+New DevRel team member Clair Sullivan shows us how to import CSV files, Tomaz Bratanic builds a news knowledge graph, and Nigel Small announces the new release of py2neo.
+
+And finally, Niels de Jong publishes NeoDash, a tool that allows you to build a Neo4j backed dashboard in minutes.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Jesús Barrasa
+
+This week's featured community member is Jesús Barrasa.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210204024743/this-week-in-neo4j-6-february-2021.jpg[name="Jesús Barrasa"]
+
+Jesús has been part of the Neo4j community since 2015 and is best known as the author of https://neo4j.com/labs/neosemantics/[neosemantics (n10s)^], a plugin that enables the use of RDF and its associated vocabularies in Neo4j.
+
+He has presented on the library and associated topics at the https://www.youtube.com/watch?v=SvwIqzaoYMo[Neo4j Online Meetup^], https://www.youtube.com/watch?v=DRpW-FJgUTc&feature=emb_title[Neo4j Twitch Stream^], https://www.youtube.com/watch?v=t1Mn178sEYg&feature=emb_logo[GraphConnect^], and more.
+
+Jesús is also a https://jbarrasa.com/[prolific blogger^], writing on topics like ontologies, knowledge graphs, WordNet, and RDF*. 
+
+On behalf of the Neo4j community, thanks for all your week Jesús!
+
+https://www.linkedin.com/in/jbarrasa/[Connect with Jesús on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Next.js & GraphQL Authentication | Building A GRANDstack Podcast App: Episode 4
+
+Our video this week is from Will Lyon's Build a GRANDstack Podcast App live stream.
+
+youtube::pB4YZBJmMl8[type={type}]
+
+In this week's episode, Will starts working on the front-end of the Podcast App. After creating the skeleton of a Next.js application, Will shows how to wire up the GraphQL backend and set up client-side authentication.
+
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+////
+
+[[features-2]]
+=== Making sense of news — the knowledge graph way
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210204044312/1_wTcLG_TEUlq2V7ej4kYEkA.png" width="300px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest blog post, he shows how to create a news monitoring data pipeline using Natural Language Processing and a Knowledge Graph.
+
+After scraping articles from the CNET news portal and importing them into Neo4j, Tomaz does some exploratory analysis using the Python driver and https://seaborn.pydata.org/[Seaborn visualisation library^]. 
+
+He then shows how to pull out the key concepts from each of the articles using named entity linking via the http://wikifier.org/[Wikifier semantic annotation service^].
+
+And finally, he does some network analysis using the Graph Data Science Library and Neo4j Bloom to make sense of the resulting Knowledge Graph.
+
+
+https://medium.com/neo4j/making-sense-of-news-the-knowledge-graph-way-d33810ce5005[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== NeoDash: Build Neo4j dashboards without writing any front-end code
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210204032829/0_y8TZfzqYNhWWY0Zb.png" width="150px"  />
+</div>
+++++
+
+Niels de Jong recently published NeoDash, a tool that allows you to build a Neo4j backed dashboard in minutes.
+
+NeoDash supports charts, tables, and graph visualisations, which will all be positioned in a responsive grid layout. You can also export those dashboards if you want to share or store them externally.
+
+https://medium.com/neo4j/neodash-build-neo4j-dashboards-without-writing-any-front-end-code-7a132430ac50[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== py2neo 2021.0.0, Seed Docker with Data, Reactive data copy using Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Nigel Small https://twitter.com/technige/status/1357074232283435009[announced the release of version 2021.0.0 of py2neo^]. This release contains support for Python 3.9, numerous bug fixes, and a significant speed-up to large result hydration.
+
+* Dominic Kumar shows  http://www.dominickumar.com/blog/neo4j-seed-docker-with-data/[how to bootstrap or seed a Docker container^] with all the required data that we want to import into Neo4j.
+
+* Nicolas Mervaillie shows how to https://graphaware.com/neo4j/2021/01/14/reactive-data-copy.html[copy data between Neo4j instances^] using project reactor, a reactive library, based on the Reactive Streams specification, for building non-blocking applications on the JVM.
+
+* Pavel Sidorov https://pubs.acs.org/doi/10.1021/acs.jcim.0c01280[developed a Python library^] combining both relational and graph databases to manage and analyze reaction pathways calculated by Quantum Chemistry. 
+
+
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Importing CSV Files in Neo4j
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210203230341/0_sZG9jmrk8JkC5Luw.png" width=200px"  />
+</div>
+++++
+
+Clair Sullivan recently joined the Neo4j DevRel team as our Data Science Advocate. You can follow her on twitter https://twitter.com/CJLovesData1[@CJLovesData1^]. 
+
+In Clair's first blog post since starting in this role, she shows how to import a Game of Thrones dataset using both Cypher's LOAD CSV command and the Neo4j Import Tool. 
+
+Along the way, Clair provides helpful commentary on the things to keep in mind when using each of these tools. 
+
+https://towardsdatascience.com/importing-csv-files-in-neo4j-f3553f1a76cf[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/anton_davydov[Anton Davydov^]:
+
+tweet::1357159422871666688[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+* https://www.youtube.com/watch?t=90&v=1B1n38WmBm8&feature=youtu.be
+
+* https://jbarrasa.com/2021/01/22/quickgraph15-analysing-the-structured-data-embedded-in-web-pages/
+
+* https://towardsdatascience.com/finding-synergies-with-network-analysis-using-neo4j-to-identify-the-best-pok%C3%A9mon-teams-4ff89e791671
+
+* Jesús Barrasa @BarrasaDV
+QuickGraph#16 is out! English WordNet in #Neo4j
+Yes! WordNet is also a graph :sunglasses:
+#RDF #NLP #Neosemantics
+Ok, here's a plan for your weekend: Check out the post, play with it (link to demo server in the post), and then let us know your thoughts.
+https://jbarrasa.com/2021/01/29/quickgraph16-the-english-wordnet-in-neo4j-part-1/
+
+
+////

@@ -1,0 +1,138 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 24 February 2018, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+This week we have a Reddit AMA on Russian Twitter Trolls, Machine Learning with Graph Databases, a Reddcoin Graph, and more. 
+
+The Neo4j GraphTour visits https://www.eventbrite.com/e/neo4j-graphtour-berlin-tickets-41753274167#tickets[Berlin^] and https://www.eventbrite.com/e/neo4j-graphtour-london-tickets-41753299242[London^] this week. https://twitter.com/mesirii[Michael^] will be at both events and https://twitter.com/ryguyrg[Ryan^], our new team member https://twitter.com/JMHReif[Jennifer^], and I will be at the London one. Don't forget https://neo4j.com/graphtour/[to register^] and come and say "Hi!" to us!
+
+[[featured-community-member]]
+=== Featured Community Member: Tom Zeppenfeldt
+
+This week’s featured community member is https://twitter.com/tomzeppenfeldt[Tom Zeppenfeldt^], Director & Founder at Neo4j Partner https://twitter.com/graphileon[Graphileon^], who build a development environment for interactive, graph-based dashboards.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180223031747/this-week-in-neo4j-24-february-2018.jpg[name="Tom Zeppenfeldt"]
+
+Tom has been in the Neo4j community for several years and was one of the http://blog.bruggen.com/2015/06/podcast-interview-with-tom-zeppenfeldt.html[early interviewees^] on https://twitter.com/rvanbruggen[Rik Van Bruggen^]'s https://soundcloud.com/graphistania[Graphistania podcast^]. 
+
+He presented https://www.youtube.com/watch?v=-7pz06m4k1E[Interacting with Neo4j using a Graph-Driven User Interface^] at GraphConnect San Francisco 2016 and was https://neo4j.com/blog/tom-zeppenfeldt-founder-graphileon/[interviewed by my colleague Bryce^] where he explained how the Graphileon tool works. Tom's also been a regular presenter at meetups across Europe.
+
+Tom regularly posts https://www.youtube.com/channel/UC3mJvlvreuvwwtLIrJhutPg[short videos^] and screenshots on his Twitter account showing how to use Graphileon to analyse different datasets so he's well worth following on there.
+
+On behalf of the Neo4j community, thanks for all your work Tom!
+
+=== Reddit AMA: Russian Twitter Trolls
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180223051631/DWlwUSkWAAI5vO6.jpg" width="100px" />
+</div>
+++++
+
+My colleagues https://twitter.com/lyonwj[Will Lyon^] and https://twitter.com/mdavidallen[David Allen^] participated in a https://www.reddit.com/r/politics/comments/7zfk4i/im_a_reporter_for_nbc_news_and_we_published_over/[Reddit AMA about the Russian Twitter Trolls with NBC's Ben Popken^]. 
+
+In the session Will and David explain their favourite findings, interesting Russian-isms in the data, and their hopes that other platforms will open up their data to allow similar analysis there as well.
+
+=== Getting started with Neo4j, Neo4j-OGM, Spring Boot, Dr Aaron Clauset
+
+* https://www.linkedin.com/in/jon-mackay-827215/[Jon MacKay^] has written a blog post in which he https://programminghistorian.org/lessons/dealing-with-big-data-and-network-analysis-using-neo4j[explains how to use a graph database to store and analyze complex networked information^]. Jon provides step by step instructions for getting started with Neo4j Desktop, formatting CSV files, and loading them into Neo4j.  
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180223054036/aaron-clauset-network-science1.png" alt="" class="alignnone size-full wp-image-75348" width="150px" />
+</div>
+++++
+
+* We have the https://neo4j.com/blog/network-science-hidden-field-dr-aaron-clauset-part-2/[2nd part^] of https://twitter.com/amyhodler[Amy Hodler^]'s interview with https://twitter.com/aaronclauset[Dr. Aaron Clauset^] in which they look at how advancements in network science are impacting predictions based on connected data. They cover topics such as interpretability in deep learning models and building ensemble models to make predictions.
+
+* https://twitter.com/adamcowley[Adam Cowley^] has written a post showing how to https://www.adamcowley.co.uk/neo4j/using-neo4j-ogm-spring-boot/[use Neo4j-OGM with Spring Boot^]. Neo4j OGM is a library that maps Java objects to nodes in Neo4j, similar to how ORM libraries are used when interacting with relational databases. 
+
+* https://twitter.com/drupol[Pol Dellaiera^] has a cool post in which he shows how to http://not-a-number.io/2018/numberphile-and-neo4j[use Neo4j to solve a problem where you have to link a list of numbers such that adjacent numbers sums are perfect square numbers^]. You can see https://www.youtube.com/watch?v=G1m7goLCJDY[a video explaining the problem on the Numberphile YouTube account^].
+
+=== Pick of the week: An introduction to machine learning on graph databases
+
+We've seen a lot of interest in graph based machine learning, so I was excited to come across a blog post https://medium.com/octavian-ai/an-introduction-to-machine-learning-on-graph-databases-24ee502fd12e[written by David Mack^] in which he connects Neo4j with the https://keras.io/[Keras^] neural network library. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180223033013/1_MYxfMMqqXUgliE30K0RhUg.png["A graph in the Neo4j browser", 800, 352.8, class="alignnone size-full wp-image-66813"]
+
+++++
+<br />
+++++
+
+The challenge is to predict what review score a person will give to a product and David shows how to build a neural network based on the output of Cypher queries that achieves 100% test accuracy on this task.
+
+=== Reddcoin Graph, Paradise Papers, Neo4j CSV Processor
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180223054309/download-3.jpeg" alt="" class="alignnone size-full wp-image-75348" width="100px" />
+</div>
+++++
+
+* https://twitter.com/unterstein[Johannes Unterstein^] has built https://github.com/unterstein/reddcoin-graph[a community graph out of the ReddCoin Twitter Tipbot usage^]. https://twitter.com/reddcoin[Reddcoin^] is a crypto currency that aims to enrich people’s social lives and make digital currency easy for the general public. 
+
+* In http://www.dataversity.net/case-study-university-washington-facilitates-change-enterprise-metadata-repository/[Enterprise Metadata Repository Facilitates Change at the University of Washington^], https://twitter.com/jenz514[Jennifer Zaino^] explains how they built a Knowledge Navigator using Neo4j to help with the migration of their HR system to the cloud. The Knowledge Navigator helped users work out where to find their data in the new system as well as providing a common vocabulary to help people navigate the data.
+
+* In https://neo4j.com/blog/this-week-neo4j-nbc-russian-twitter-trolls-spring-boot-grand-stack/[last week's TWIN4j^] we mentioned the https://github.com/uwegeercken/neo4j-csv-processor[neo4j-csv-processor^] project, and this week https://twitter.com/uweeegeee[Uwe Geercken^] has written https://datamelt.weebly.com/blog/neo4j-csv-processor-sample[a blog post showing how to use it^] on a sample dataset.
+
+* I came across https://github.com/thedevs-network/kutt[kutt^], a Neo4j backed URL shortener that lets you set custom domains for your shortened URLs, manage your links and view the click rate statistics.
+
+
+* https://twitter.com/tb_tomaz[Tomaz Bratanic^] has written a post in which he shows https://tbgraph.wordpress.com/2018/02/19/paradise-papers-analysis-with-neo4j/[how to analyse the Paradise Papers using Neo4j's graph algorithms library^]. Tomaz shows how to use PageRank, weakly connected components, betweenness centrality, and more to explore the sub graph of officers with a Swiss address.
+
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| February 26th 2018 | https://www.meetup.com/graphdb-berlin/events/247731588/[Machine Learning and Graphs X 2^] | https://www.meetup.com/graphdb-berlin[Graph Database - Berlin^] | https://twitter.com/alessandronegro[Alessandro Negro^], https://twitter.com/ikwattro[Christophe Willemsen^]
+
+| February 27th 2018 | https://www.eventbrite.com/e/neo4j-graphtour-berlin-tickets-41753274167[GraphTour Berlin^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | Mix of Neo4j and customer speakers  
+
+| February 27th 2018 | https://www.meetup.com/graphdb-Lyon/events/247504636/[Base graphe et processus métier^] | https://www.meetup.com/graphdb-Lyon[Graph Database - Lyon^] | https://twitter.com/sylvainroussy[Sylvain Roussy^]
+
+| February 28th 2018 | https://www.meetup.com/graphdb-london/events/247538662/[Graph-Powered Machine Learning and Chatbots with Neo4j and Amazon Alexa^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/alessandronegro[Alessandro Negro^], https://twitter.com/ikwattro[Christophe Willemsen^]
+
+
+| March 1st 2018 | https://www.eventbrite.com/e/neo4j-graphtour-london-tickets-41753299242[GraphTour London^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | Mix of Neo4j and customer speakers  
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/kennybastani[Kenny Bastani^], our former colleague in the Neo4j DevRel team:
+
+tweet::966147033462648832[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

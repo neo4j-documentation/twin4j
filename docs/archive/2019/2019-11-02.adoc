@@ -1,0 +1,166 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 31 Aug 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-aug-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - New Book: Fullstack GraphQL Applications with GRANDstack, Leveraging Graph Algorithms In Visualizations, Marketing Activities in Neo4j
+
+[Body copy:]
+////
+
+This week Wolfgang Hoeck teaches us how to build a knowledge graph from scratch, and we have new releases of the Graph Algorithms Library.
+
+Dr Alicia Frame is interviewed about Graphs, AI, and ML, Nathan Smith solves the market clearing price problem, and Chris Farrell released a tool for querying Bloodhound data.
+
+
+Enjoy!
+
+Cheers,
+
+Mark Needham and the Developer Relations team
+
+[[featured-community-member]]
+=== Featured Community Member: Arthur Namias de Crasto
+
+Our featured community member this week is Arthur Namias de Crasto, a Netherlands-native graph-nerd who currently lives on the beautiful island of Curacao. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191101065542/this-week-in-neo4j-2-november-20191.jpg[name="Arthur Namias de Crasto"]
+
+Arthur is a https://neo4j.com/graphacademy/neo4j-certification[Neo4j Certified Developer] who has been using Neo4j for a couple of years and has been gradually ramping up his community activity. 
+
+He’s participated in our https://neo4j.com/blog/graph-visualization-day-recap[Valentines Day / Visualization Day Neo4j contest], organized and presented (on anti-money-laundering and GDPR) at  https://neo4j.com/blog/heres-how-the-neo4j-community-celebrated-global-graph-celebration-day[Global Graph Celebration Day], hosted a viewing party for the https://neo4j.com/online-summit/[Neo4j Online Developer Expo & Summit (NODES 2019)], and has been actively submitting himself to conferences around the world as part of our https://neo4j.com/speaker-program[Neo4j Speaker Program]
+
+And that’s not where Arthur’s participation ends - he’s now working on a Neo4j hobby project for compliance around documents that are scanned, indexed, or pulled from the web. He just put a call out to the Neo4j community to https://community.neo4j.com/t/looking-for-collaborators/11342[find possible collaborators!] Interested? Reach out to him directly on the https://community.neo4j.com/u/arthurnamiasdecrasto/summary[Neo4j Community Site]. 
+
+We’re so proud to have you as part of our community, Arthur! Thanks for spreading your knowledge and graph-thinking with the rest of our world!  
+
+https://www.linkedin.com/in/arthur-namias-de-crasto-49613414/[Connect with Arthur on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: How to build a knowledge graph from scratch even if you are not really a full-blown developer
+
+This week's video from the https://neo4j.com/online-summit/[NODES 2019^] conference is Wolfgang Hoeck's https://neo4j.com/online-summit/session/knowledge-graph-cancer-modeling-import-explore-bloom[How to build a knowledge graph from scratch even if you are not really a full-blown developer^]. 
+
+youtube::UuxLY87MqwU[type={type}]
+
+In the talk, Wolfgang takes us through his journey building a cancer drug discovery knowledge graph using tools to capture, connect, store, quer,y and visualize a landscape of biotech/pharma companies.
+
+[[features-2]]
+=== Graph Algorithms Release: In-memory graph graph improvements
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191101022852/1_xiIKvk7duIP2fNhCzWt-wg.png" width="150px"  />
+</div>
+++++
+
+We've done several releases of the Graph Algorithms Library over the last month, focused mostly on improving the in-memory graph.
+
+The library can now load multiple relationship types, as well as node and relationship properties. It also has improved error messages when loading multiple graphs with the same name, and you can no longer write to the database in Cypher projection queries.
+
+https://medium.com/neo4j/neo4j-graph-algorithms-release-multiple-relationships-and-properties-ann-f05ae37d1ae2[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== GraphQLResolveInfo Deep Dive, Moving data from Neo4j in SSIS
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191101023627/2019-11-01_09-34-21.png" width="150px"  />
+</div>
+++++
+
+* Will Lyon http://bit.ly/resolveinfo[shared the slides^] from his GraphQLSummit talk, GraphQLResolveInfo Deep Dive. In this talk Will shows that the GraphQL ResolveInfo object is not scary and can be used to build efficient database queries in GraphQL resolvers.
+
+* In the latest post of Chris Skardon's series on SSIS and Neo4j he shows how to https://xclave.co.uk/2019/10/16/using-a-data-flow-to-move-data-from-neo4j-in-ssis/[move data between Neo4j databases using SSIS^].. 
+
+* https://twitter.com/seajay[Chris Farrell^] released https://github.com/seajaysec/cypheroth[cypheroth^], an automated, extensible toolset that runs Cypher queries against Bloodhound's Neo4j backend and saves output to spreadsheets. BloodHound is a tool for exploring Active Directory Domain Security and PowerBI is Microsoft’s business analytics service.
+
+[[features-4]]
+=== On Graphs, AI, and ML: Q&A with Alicia Frame
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191101023923/brain-graphic-ai-May20192.jpg" width="150px"  />
+</div>
+++++
+
+Dr Alicia Frame, Senior Data Scientist at Neo4j,  was interviewed on Graphs, AI, and ML in the latest ODBMS.org interview.
+
+Alicia shares her favourite Graph ML talks from the recent NODES conference, explains how graphs relate to AI and ML, and explains how to use ML to build a knowledge graph.
+
+
+http://www.odbms.org/2019/10/on-graphs-ai-and-ml-qa-with-alicia-frame/[Read the interview, role="medium button"]
+
+
+[[features-5]]
+=== A market for matches: Finding prices with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20191025014324/41VaxWW3cqL._SX347_BO1204203200_.jpg" width="150px"  />
+</div>
+++++
+
+Nathan Smith continues to use Neo4j to explore the concepts in the https://www.cs.cornell.edu/home/kleinber/networks-book/[Networks, Crowds and Markets^] book.
+
+In his latest blog post, Nathan builds on the student dorm room problem, implementing an algorithm that finds the market clearing price in an auction.
+
+
+https://medium.com/@nsmith_piano/a-market-for-matches-finding-prices-with-neo4j-71ab085f8cd2[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/andersoncliffb[Clifford Anderson^]:
+
+// https://twitter.com/codexeditor/status/1166494387016101889
+
+tweet::1189654607796027392[type={type}]
+
+
+////
+
+Jasper Blues @doctor_cerulean
+This is Atok, Benguet, 48KM from our house. Makes a nice backdrop for my two day old open-source project - which is a Node.js and  #TypeScript client for #GraphDatabase like @AgensGraph #Neo4J and others.
+https://github.com/liberation-data 
+
+
+
+
+
+
+
+
+
+And one more made it to the @qlik Gallery, think Graph!
+https://community.qlik.com/t5/Qlik-Gallery/TIQSolutions-Fraud-Detection-in-eCommerce/ba-p/1633922 @neo4j #graph #fraudanalysis @TIQSolutions
+
+
+
+Nathan Smith @nsmith_piano
+When you need to stay a step ahead of the competition, a graph can help you understand the possible scenarios. See an example in my latest blog post. #Neo4j #Graph #Strategy https://medium.com/@nsmith_piano/into-the-multiverse-exploring-multiple-scenarios-for-structural-balance-48c460462510?source=friends_link&sk=54971bdd8afe093b7b753f5583d8fd48
+
+https://medium.com/neo4j/league-of-legends-with-neo4j-champions-diversity-in-worlds-2019-16999b21c457
+League of Legends with Neo4j : champions diversity in Worlds 2019
+
+
+https://medium.com/neo4j/graph-data-modeling-all-about-relationships-5060e46820ce
+Graph Data Modeling: All About Relationships
+
+https://medium.com/neo4j/writing-kettle-plugins-splunk-4b51ac426751
+Writing Kettle Plugins : Splunk
+
+////

@@ -1,0 +1,130 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 23 September 2017, including projects around <insert-topics-here>
+
+[Primary Image File Name:]
+this-week-neo4j-3-june-2017.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 3 June 2017
+
+[Headline:]
+This Week in Neo4j – 3 June 2017
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days. 
+
+=== Featured Community Member: Alessandro Negro
+
+This week’s featured community member is https://twitter.com/AlessandroNegro[Alessandro Negro^], Chief Scientist at Neo4j Solutions Partner https://twitter.com/graph_aware[GraphAware^]. 
+
+[role="image-heading"]
+image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20170922010030/this-week-in-neo4j-23-september-2017.jpg["Alessandro Negro - This Week's Featured Community Member", 800, 400, class="alignnone size-full wp-image-66813"]
+
+++++
+<p style="font-size: .8em; line-height: 1.5em;" align="center">
+<strong>
+Alessandro Negro - This Week's Featured Community Member
+</strong>
+</p>
+++++
+
+I first came across Alessandro when he presented https://skillsmatter.com/skillscasts/4286-using-neo4j-and-reco4j-for-graph-based-recommendations[a talk on Reco4j^], a recommendation framework that combined Neo4j and Hadoop, in June 2013. 
+
+He went on to create https://www.youtube.com/watch?v=5IXyA9iZtro[Reco4^] before joining GraphAware. 
+
+Alessandro is currently leading the charge on machine learning/graphs and presented https://skillsmatter.com/skillscasts/8647-mining-and-searching-text-with-graph-databases[Mining and Searching text with Graph Databases^] at our most popular London meetup event to date. In the talk he showed how Neo4j and NLP can be combined to create advanced services on top of text analysis: recommendations, trend discovery, and finding influencers.
+
+Alessandro will present http://sched.co/CGCQ[Powering Relevant Search with Neo4j and Elastic Search^] at GraphConnect New York on October 24th 2017. 
+
+On behalf of the Neo4j community, thanks for all your work Alessandro!
+
+=== From GraphConnect: RDF-vs-Property Graph Alternative Facts
+
+We didn't have an online meetup this week so we'll recap one of my favourite talks from GraphConnect Europe 2017 - https://www.youtube.com/watch?v=t1Mn178sEYg[Debunking some RDF-vs-Property Graph Alternative Facts^] - presented by my colleague https://twitter.com/barrasadv[Dr. Jesús Barrasa^]. 
+
+youtube::t1Mn178sEYg[type={type}]
+
+Jesus compares and contrasts the Labelled Property Graph (LPG) and RDF approaches to modelling graphs, the SPARQL and Cypher query languages, and addresses some common confusions when analysing these technologies. 
+
+You can also see the online meetup https://www.youtube.com/watch?v=SvwIqzaoYMo&list=PL9Hl4pk2FsvVnz4oi0F8UXiD3nMNqsRO2&index=23[Graph Databases, RDF, and linked data^] which covers similar ground.
+
+=== Pentaho Kettle plugin, Native vs Non Native, Maven Dependency Graph
+
+* https://twitter.com/know_bi[know.bi^]'s https://twitter.com/bartmaer[Bart Maertens^] announced the Pentaho Kettle plugin to https://www.know-bi.be/blog/article/easily-load-data-to-neo4j[load data into Neo4j^]
+
+* https://twitter.com/jimwebber[Dr Jim Webber^] presented a webinar on https://www.youtube.com/watch?v=Vh4sppn8FSE[Native vs Non Native Graphs^] where he explains the benefits of being able to represent data as a graph all the way down the stack from the query language to on disk format.
+
+* https://github.com/MZober1993[MZober1993^] created https://github.com/MZober1993/profiling-tools[profiling-tools^], a tool that exports your Maven dependency graph into Neo4j and then allows you to query for dependencies and sub modules.
+
+=== On the podcast: Chuck Calio
+
+This week on the Graphistania podcast http://blog.bruggen.com/2017/09/podcast-interview-with-chuck-calio-ibm.html[Rik interviews IBM's Chuck Calio^]. 
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/343086274&amp;color=00cc11"></iframe>
+++++
+
+Chuck and Rik discuss running https://neo4j.com/neo4j-on-ibm-power8/[Neo4j on IBM POWER8^] and the benefits you get from running large graphs on that type of hardware.
+
+Chuck also shares his vision for where he thinks graphs will play a role in the future of technology. 
+
+Chuck will be http://graphconnect.com/speaker/chuck-calio/[speaking at the GraphConnect New York conference^] on October 24th 2017.
+
+=== Spring Data Neo4j, JVM Heap Analysis, New Lynda training course
+
+* https://github.com/satishpeyyety[Satish Peyyety^] created https://github.com/satishpeyyety/retailstore-neo4j[retailstore-neo4j^], a set of RESTful services for an online retail store that runs on top of Neo4j using the https://spring.io/guides/gs/accessing-data-neo4j/[Spring Data Neo4j^] library.
+
+* https://twitter.com/cleishm[Chris Leishman^] https://github.com/cleishm/libneo4j-client/releases/tag/v2.2.0[released v2.2.0^] of https://github.com/cleishm/libneo4j-client[neo4j-client^], a command line shell for Neo4j. This version adds support for rendering byte array outputs. 
+
+* https://twitter.com/natpryce[Nat Pryce^] and https://twitter.com/richajam[James Richardson^]'s excellent 
+https://speakerdeck.com/npryce/looking-for-smoking-guns-in-a-haystack-jvm-heap-analysis-with-neo4j[Looking for Smoking Guns in a Haystack: JVM Heap Analysis with Neo4J^] presentation from 2014 resurfaced. In this talk they show how to use Neo4j to track down a memory hogging JSON parser.
+
+* My colleague https://twitter.com/lyonwj[Will Lyon^] released a new Lynda training course https://www.lynda.com/Neo4j-tutorials/Database-Clinic-Neo4J/601789-2.html[Database Clinic: Neo4j^]. Will introduces the Cypher query language, shows how to model data sets in a graph, and how to query them using the Python driver.
+
+=== On StackOverflow: Promise.all(), cartesian products, APOC
+
+This week on https://stackoverflow.com/tags/neo4j/[Neo4j StackOverflow^]…​
+
+* https://stackoverflow.com/users/6893866/tezra[Tezra^] https://stackoverflow.com/questions/46283563/optimizing-a-cypher-query-to-improve-performance[performance tunes a graph global Cypher query^] by removing a cartesian product and brings down the execution time from 7700 seconds to 30 seconds.
+
+* https://stackoverflow.com/users/6835358/bruno-peres[Bruno Peres^] suggests using the https://neo4j-contrib.github.io/neo4j-apoc-procedures/#_apoc_periodic_commit[apoc.periodic.commit^] procedure to deal with https://stackoverflow.com/questions/46277766/neo4j-long-lasting-query-to-be-split-executed-in-smaller-chunks[a slow running import query^].
+
+* https://stackoverflow.com/users/266598/yalamber[Yalamber^] shows how to use JavaScript's https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all[Promise.all()^] to https://stackoverflow.com/questions/46330060/how-to-use-promise-all-in-graphql-resolver-for-neo4j[collect the results of multiple Cypher queries in a GraphQL resolver^].
+
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| September 27th 2017 | https://www.meetup.com/preview/graphdb-london/events/242348535[Better WordPress recommendations with Neo4j^] | https://www.meetup.com/preview/graphdb-london[Neo4j - London User Group^] | https://twitter.com/adamcowley[Adam Cowley^]
+
+| September 28th 2017 | https://www.meetup.com/preview/Neo4j-Online-Meetup/events/242720095[Building Conversational Experiences with Amazon Alexa and Neo4j^] | https://www.meetup.com/preview/Neo4j-Online-Meetup[Neo4j Online Meetup^] | https://twitter.com/ikwattro[Christophe Willemsen^]
+
+| September 28th 2017 | https://www.meetup.com/preview/Philly-GraphDB/events/242994871[Learning Cypher - Neo4j Data Query Language^] | https://www.meetup.com/preview/Philly-GraphDB[Philly GraphDB^] | 
+
+|=========================================================
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/V_Kurbatov[Vova Kurbatov^]:
+
+tweet::910806893874024448[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

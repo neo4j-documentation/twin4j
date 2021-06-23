@@ -1,0 +1,157 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Robert Schäfer and Grzegorz Leonie show us how they use Neo4j and GraphQL to build Human Connection, and Andy Robbins visualised Bloodhound data using PowerBI.
+
+We also have a detailed tutorial on monitoring Neo4j with Prometheus, a new release of Structr, and the college admissions scandal visualised.
+
+[[featured-community-member]]
+=== Featured Community Members: Robert Schäfer and Grzegorz Leoniec 
+
+Our featured community members this week are Robert Schäfer and Grzegorz Leoniec.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190619222853/this-week-in-neo4j-22-june-2019.jpg[name="Robert Schäfer and Grzegorz Leoniec "]
+
+Robert is a Javascript and Ruby developer who helps beginners to learn programming and journalists to develop prototypes for innovative media formats. He lives in Potsdam, Germany 
+
+Greg is a freelancing fullstack software engineer who works with Javascript, Node, Vue, React Native, PHP, UI/UX, and design. He lives in Hamburg, Germany.
+
+Greg and Robert are working on https://human-connection.org/[Human Connection^], a free and open-source social network for active citizenship. The goal of Human Connection is to create a non-profit social knowledge and action network to meet the challenges of our time together, to preserve human dignity, and to create a future worth living for all people and future generations. 
+
+Human Connection uses Neo4j and the GraphQL integration for Neo4j, https://github.com/neo4j-graphql/neo4j-graphql-js[neo4j-graphql.js^], which Robert and Greg have contributed to. They recently recorded a Neo4j Online Meetup showing how they use Neo4j and GraphQL to power Human Connection.
+
+You can find Robert online at https://twitter.com/roschaeferDE[@roschaeferDE^] and Greg at https://twitter.com/WillKnowThat[@WillKnowThat^]
+
+[[features-1]]
+=== Using Neo4j and GraphQL to build Human Connection
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Robert Schäfer and Grzegorz Leoniec showed us how they used GraphQL and Neo4j to build Human Connection. 
+
+youtube::kGwGX6R70H4[type={type}]
+
+[[features-2]]
+=== Visualizing BloodHound Data with PowerBI
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190619221626/0_rQV2sX8xr6pMoyxM.png" width="200px"  />
+</div>
+++++
+
+Andy Robbins has started a series of posts showing how to visualise BloodHound data using PowerBI. BloodHound is a tool for exploring Active Directory Domain Security and PowerBI is Microsoft's business analytics service.
+
+* In https://posts.specterops.io/visualizing-bloodhound-data-with-powerbi-part-1-ba8ea4908422[part 1^], Andy shows how we can use BloodHound data, the Cypher query language, and PowerBI to create elegant data visualizations that will help reveal and communicate security-related insights about your Active Directory domains.
+
+* In https://posts.specterops.io/visualizing-bloodhound-data-with-powerbi-part-2-3e1c521fb7ae[part 2^]  he shows us how to use the https://github.com/cskardon/Neo4jDataConnectorForPowerBi/releases/latest[beta Neo4j connector for PowerBI^] to create charts that can be easily updated by simply hitting the “refresh” button in the PowerBI GUI.
+
+[[features-3]]
+=== College Admissions Scandal Visualized
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190619221433/kww_board_cropped.png" width="100px"  />
+</div>
+++++
+
+Shawn Roberts analysed the 990 Forms published by the IRS for the Key Worldwide Foundation and visualized the relationships in the data using Neo4j Bloom to help tell the story of the college admissions scandal.
+
+https://akaritechnologies.com/college-admissions-scandal-visualized/[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Monitoring Neo4j with Prometheus, Applying Graph Analytics to Game of Thrones, Emil Interview on Open Source Underdogs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190619221338/neo4j-grafana-prometheus-creation-speed.png" width="150px"  />
+</div>
+++++
+
+* Janos Szendi-Varga and Miro Marchi have started a series of posts showing how to monitor Neo4j using Prometheus and Grafana. In https://graphaware.com/neo4j/2019/06/11/monitoring-neo4j-prometheus.html[part 1^] they give an overview of database monitoring and show how to publish metrics from Neo4j procedures. In https://graphaware.com/neo4j/2019/06/14/monitoring-neo4j-prometheus-part-2.html[Part 2^] they show us how to render these metrics in a Grafana dashboard with a detailed walkthrough.
+
+* Neo4j CEO https://www.twitter.com/emileifrem[Emil Eifrem^] was http://gag.gl/2EKJAY[recently interviewed^] by https://twitter.com/nynymike[Mike Schwartz^] on the https://www.twitter.com/@fosspodcast[Open Source Underdogs^] podcast. They talk about startups, entrepreneurship, and open source.
+
+* https://twitter.com/amyhodler[Amy Hodler^] and I wrote https://db-engines.com/en/blog_post/81[a guest blog post^] for the DB Engines blog, in which we showed how to apply graph analytics to the Game of Thrones Graph.
+
+* Abdoul Karim published https://github.com/Rim-k/family-tree-kotlin-springboot-neo4j-graphql[family-tree-kotlin-springboot-neo4j-graphql^], a family tree sample application built using Spring Boot, Kotlin, GraphQL and Neo4j.
+
+[[features-4]]
+=== Structr 3.3: Better Security, Data Deployment, Easier Complex Queries
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190619221409/data-deployment.png" width="200px"  />
+</div>
+++++
+
+Christian Morgner announced version 3.3 of Structr, the graph application platform. This release adds support for property encryption, data export functionality, and improved query functions.
+
+It also ships with a new license model that should better fit the needs of customers.
+
+https://structr.com/blog/structr-3-3-released#blog-article-detail[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/unixdaemon[Dean Wilson^]:
+
+tweet::1139645674331549697[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://neo4j.com/blog/seven-bridges-of-konigsberg-dogs-eye-view/?
+
+New Pages for the #Neo4j Labs projects.
+
+Would love your feedback if those are helpful:
+
+* https://neo4j.com/labs/kafka/
+* https://neo4j.com/labs/grandstack-graphql/
+* https://neo4j.com/labs/halin/
+* https://neo4j.com/labs/apoc/
+* https://neo4j.com/labs/etl-tool/
+
+And our recent graduate:
+
+https://neo4j.com/developer/graph-algorithms/ 
+
+
+
+William Lyon@lyonwj
+I just made the #GRANDstack starter a template project with @github's new repository template feature.
+
+Just click the "Use this template" to create a new repo, no need to fork/download to get started with GraphQL and Neo4j!
+
+Try it out here: https://github.com/grand-stack/grand-stack-starter   https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+
+
+////

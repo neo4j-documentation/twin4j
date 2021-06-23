@@ -1,0 +1,150 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Stefan Bieliauskas shows us how to model provenance data in Neo4j, and Lju Lazarevic takes us through some techniques for de-duplicating ingredients in the BBC Good Food Graph. 
+
+We also have a new GRANDstack starter template and an ObservableHQ notebook showing how to use the Neo4j JavaScript drivers.
+
+[[featured-community-member]]
+=== Featured Community Members: Ray Lukas
+
+Our featured community members this week is https://www.linkedin.com/in/raylukas[Ray Lukas^], Architect Advisor at CVS Health. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190628014813/this-week-in-neo4j-29-june-2019.jpg[name="Ray Lukas"]
+
+His strong passion for connected data and understanding the complexities within our world, he began to create customized training materials on Neo4j development for his colleagues and friends. 
+
+He has a strong desire for helping people and contributing to an overall goal, which is what drove him to take on this pretty extensive project. His enthusiasm is infectious and he also happens to be an all around kind human. He’s a dog lover and has 4 collies!. 
+
+Thank you, Ray, for bringing positivity and excitement into our community! :heart:
+
+https://www.linkedin.com/in/raylukas[Connect with Ray on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Getting started with Provenance and Neo4j
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Stefan Bieliauskas shows us how to model provenance data using Neo4j. 
+
+youtube::DSdopn00p-c[type={type}]
+
+You can also read the https://medium.com/neo4j/getting-started-with-provenance-and-neo4j-b50f666d8656[blog post^] that Stefan wrote on the same topic earlier this year.
+
+[[features-2]]
+=== What’s cooking? Part 5: Dealing with duplicates
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190627063008/0_Xi9wsJRpOrGYd0nz.jpeg" width="200px"  />
+</div>
+++++
+
+In part 5 of the BBC Good Food series, https://twitter.com/ellazal[Lju Lazarevic^] takes us through some techniques for de-duplicating ingredients. 
+
+Using only Cypher and the APOC library, Lju shows us how to find plurals that refer to the same thing, deal with active and passive naming, ignore stop words, deal with capitalisation issues, and more. 
+
+https://medium.com/neo4j/whats-cooking-part-5-dealing-with-duplicates-a6cdf525842a[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== This Week in GRANDstack: GitHub Starter Template, StackOverflow API
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190627060857/GrandStack-Logo-Square.png" width="100px"  />
+</div>
+++++
+
+This week in the https://grandstack.io[GRANDstack^], https://www.twitter.com/lyonwj[Will Lyon^]  created a https://github.com/grand-stack/grand-stack-starter[starter template project^] using GitHub's new repository template feature. You can now get started with the GRANDstack in a single click. 
+
+And Michael Hunger wrote a blog post showing how to https://medium.com/open-graphql/build-a-stackoverflow-graphql-api-demo-app-in-10-minutes-69afbf4d037c[build a StackOverflow GraphQL API and  Demo App in 10 Minutes^].
+
+[[articles-1]]
+=== ObservableHQ Notebook, Data Import with GraphXR, Redesigning Neo4j's Developer Guides
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190627055541/Selection_791.png" width="150px"  />
+</div>
+++++
+
+* https://www.twitter.com/FredCiminera[Ciminera Frederic^] shared an ObservableHQ notebook showing https://observablehq.com/@nhogs/neo4j-driver-for-javascript[how to use the Neo4j JavaScript drivers^]. 
+
+* Sony Green shared the slides for his talk titled https://www.slideshare.net/SonyGreen1/data-injection-to-neo4j-with-graphxr-quick-easy-and-codefree[Data injection to Neo4j with GraphXR: Quick, easy, and code-free^]. 
+
+* We recently launched a revamp of Neo4j's Developer guides, and Jennifer Reif https://medium.com/neo4j/creative-technical-web-content-how-we-redesigned-neo4js-developer-guides-afee8b0bc982[has written about her experience working on this project^].
+
+[[features-4]]
+=== Houston, we don’t have a problem - Understanding sentiment in space with NASA
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190627065304/4FAF1BC6-2658-4109-AB98-20C168613AC9.jpeg" width="200px"  />
+</div>
+++++
+
+David Meza, Chief Knowledge Architect at NASA, was interviewed by diginomica about his work building the lessons learned graph. 
+
+In the interview, David explains how his team made sense of unstructured data from NASA missions by combining natural language processing and graph approaches 
+
+https://diginomica-com.cdn.ampproject.org/c/s/diginomica.com/houston-we-dont-have-problem-understanding-sentiment-space-nasa?amp[Read the article, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/szenyo[Janos Szendi-Varga^]:
+
+tweet::1143561892918693888[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://neo4j.com/blog/seven-bridges-of-konigsberg-dogs-eye-view/?
+
+New Pages for the #Neo4j Labs projects.
+
+Would love your feedback if those are helpful:
+
+* https://neo4j.com/labs/kafka/
+* https://neo4j.com/labs/grandstack-graphql/
+* https://neo4j.com/labs/halin/
+* https://neo4j.com/labs/apoc/
+* https://neo4j.com/labs/etl-tool/
+
+And our recent graduate:
+
+https://neo4j.com/developer/graph-algorithms/ 
+
+
+
+https://pbs.twimg.com/media/D8ZYWa-UYAAaZo6.png
+
+https://twitter.com/sjGoring/status/1139565317712072704 
+https://drive.google.com/file/d/1Y-zWZ3sqzdlN5JhGKWNvU1-FBCihwhDl/view
+
+
+
+////

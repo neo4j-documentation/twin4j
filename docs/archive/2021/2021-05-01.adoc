@@ -1,0 +1,157 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Neo4j GraphQL 1.0, GraphStuff.FM, RDBMS to Graph, Art History in VR
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, Neo4j Engineering announced the official release of the product-supported Neo4j GraphQL library, complete with new features, docs, and a migration guide.
+
+Will and Lju published another podcast episode for GraphStuff.FM on determining a good fit for graph databases. Jonathan and Robert shared CrossCode’s migration from a RDBMS to graph solution in their NODES 2020 presentation video. King’s Digital Lab published a data set of art history for a Neo4j database and explored it with 3D visualization and VR.
+
+And finally, Esther detailed the new features in GraphAware’s Hume 2.8, users imported dream report data into Neo4j and explore with GraphXR visualization, Mika explained the decision to transition from relational to graph for the Dayvelop application, and Tony announced the beta release for his book on Elixir and graph databases.
+
+Cheers,
+https://twitter.com/jmhreif[Jennifer^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Harsha Somisetty
+
+This week's featured community member is Harsha Somisetty.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210429134453/this-week-in-neo4j-1-may-2021.jpeg[name="Harsha Somisetty"]
+
+Harsha is a student at Rutgers University-Honors College studying mathematics, computer science, and statistics. He is also developing a focus on data science and operations research.
+
+Harsha is new to the Neo4j community, but he’s already jumped in with a question. Through the back and forth on the post, he demonstrates valuable skills in problem-solving, desire to learn, and query processing. Outside of this, Harsha appears to have interests in finance, mentorship, and community. We wish you all the best in your studies and career, Harsha, and are looking forward to seeing the amazing things you will accomplish!
+
+https://www.linkedin.com/in/harshasomisetty/[Connect with Harsha on LinkedIn, role="medium button"]
+
+
+[[features-1]]
+=== Announcing the Stable Release of the Official Neo4j GraphQL Library 1.0.0
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210426172712/graphql-social.png" width="150px"  />
+</div>
+++++
+ 
+The Neo4j engineering team announced the new product-official (and free) Neo4j GraphQL library on Tuesday! With it, comes a new https://www.npmjs.com/package/@neo4j/graphql[npm package^] that includes the driver and graphql as dependencies. Engineering also released a stable object graph mapper API to complement it. You can also find an https://neo4j.com/graphacademy/training-graphql-apis/enrollment/[online course on GraphAcademy^] for the library.
+
+Darrel wrote an announcement blog post detailing some features, as well as some migration steps for those using the previous Labs version of the library. The blog post also leaves us with resources for a full-fledged migration guide and https://neo4j.com/docs/graphql-manual/current/[docs^], ways to leave feedback, and how to ask questions.
+
+https://neo4j.com/developer-blog/announcing-stable-release-official-neo4j-graphql-library-1-0-0/[Read the Blog Post, role="medium button"]
+
+[[features-2]]
+=== GraphStuff.FM Podcast Episode #4: Will It Graph?
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210325202224/graph.fm_.png" width=150px"  />
+</div>
+++++
+
+Will and Lju released another episode in their GraphStuff.FM podcast series - this time on identifying good fits and use cases for a graph database. They dive in on how the graph database works and core features like index-free adjacency, pattern matching, and schema/data model.
+
+We also hear how graphs are different from other databases like relational and get insight into specific use cases that work well for graphs and ones that don’t. They wrap up with the concept of using graph databases as a general database and leave us with some resources to learn more.
+
+https://www.graphstuff.fm/episodes/will-it-graph-identifying-a-good-fit-for-graph-databases[Listen to the Podcast Episode, role="medium button"]
+
+
+[[features-3]]
+=== NODES 2020 Video of the Week: RDBMS & SQL to Neo4j & Cypher
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210429134451/nodes2020-rdbms-sql-to-neo4j-cypher.jpeg" width="200px"  />
+</div>
+++++
+
+Jonathan and Robert presented their session about CrossCode’s migration from a RDBMS solution to a graph solution and how the two compared. They start by comparing RDBMSs and graphs with their strengths and weaknesses, then launch into side-by-side looks at CrossCode’s needs implemented in each solution for data model, queries, and applications. The video wraps up with a demo of their graph in Neo4j Browser.
+
+Obviously, the graph solution was the better option for CrossCode’s use case, but I found it incredibly useful to see the two solutions and hear the valid criteria where RDBMS or graph is the better solution.
+
+https://youtu.be/TmmsblJgpKU[Watch the Video, role="medium button"]
+
+[[features-4]]
+=== Explore the Ancient Itineraries Data Set from King’s Digital Lab
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210429134450/king-digital-art-data-vr.png" width="200px"  />
+</div>
+++++
+
+King’s Digital Lab published a data set on art history and converted the Neo4j version of the data into a VR environment. The Github page holds all kinds of goodies for loading the data to Neo4j, exploring it with Browser or Bloom, building the data model, as well as building the visualizations with 3D force graph, page rank, and VR.
+
+Check out the repository for more information and how to explore the digital art data in the graph yourself!
+
+https://kingsdigitallab.github.io/ancient-itineraries/[Checkout the Github Repository, role="medium button"]
+
+
+[[features-5]]
+=== Hume 2.8 Release, Dream Data in GraphXR, Graphs for Dayvelop, Elixir and Graphs Book
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Esther at GraphAware wrote a graphaware.com/hume/2021/04/08/hume-2.8.0-released.html?utm_content=161316247&utm_medium=social&utm_source=twitter&hss_channel=tw-1381891062[blog post^] announcing Hume’s new release and features - from Snapshots and Webhooks to improved Actions and new Virtual Relationships. We get a walkthrough of each, accompanied by a demo video.
+
+* GraphXR folks at Kineviz pulled dreambank.net data into Neo4j and visualized the dream reportswith NLP and deep learning. They published an https://graphxrnext.kineviz.com/share/603f9ec927b62c00623fe9dd/Dream%20Similarity%20Graph/606b91893df5e400607daef2[interactive graph visualization^] you can explore of this data!
+
+* Mika wrote an https://hakimkramdi.medium.com/a-journey-with-a-graph-database-fc643ba56460[excellent article^] about developing their Dayvelop application with a graph database. They first explored a relational database solution, but found that the graph provided a simpler recommendation system and improved query performance for their use case needs. We get a walkthrough of the model, queries, and more in the post.
+
+* https://twitter.com/@tonyhammond[Tony^] announced that his book “Exploring Graphs with Elixir: Connect Data with Native Graph Libraries and Graph Databases” is https://pragprog.com/titles/thgraphs/exploring-graphs-with-elixir/[now available^] in beta. Congratulations, Tony, and we are thrilled to see content published around Elixir and graphs!
+
+
+=== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/noel[Noël Jackson^]:
+
+tweet::1379514333491777539[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+////

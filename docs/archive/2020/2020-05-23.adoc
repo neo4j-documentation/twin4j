@@ -1,0 +1,192 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week's video, we have a presentation by Jesus Barrasa and Adam Cowley about the launch of a Neo4j 4.0 compatible version of Neosemantics and its accompanying graph app.
+
+Jean-Michel Daignan analyses Beat Saber data, Sebastian Daschner shows how to use Neo4j with Quarkus, and Lennert van Sever shows how to transform a REST service to a graph service.
+
+And finally, we have releases of Neo4j Bloom, the Graph Data Science Library, and Stormspotter.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Llewellyn Preece
+
+
+
+This week's featured community member is Llewellyn Preece, Senior Director of Human Experience at Indigo Slate.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20200522043551/this-week-in-neo4j-23-may-2020.jpg[name="Llewellyn Preece"]
+
+Llewellyn is a special blend of a technically-driven engineer and an empathetic customer experience researcher. While these two specialties are symbiotic, it's not often that you see an individual be so closely engaged in both. 
+
+Llewellyn is part of the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c29671[Neo4j Ninja program], where https://community.neo4j.com[community contributors^] answer questions on the https://community.neo4j.com[Neo4j Community Site]), in exchange for advanced training opportunities, exclusive webinars, and sessions with Neo4j staff from product and engineering. 
+
+For the hundreds of people that post questions each month, we have a handful of dedicated community people (Ninjas) and Neo4j staff that do their best to help out. Having someone like Llewelyn involved to help the community when they encounter obstacles or have questions, is truly a privilege.
+
+Last week, https://neo4j.com/blog/contributor/karin-wolok[Karin Wolok, Neo4j's Community Manager], invited the Ninjas to come together to brainstorm all the cool things we can do for our community to be more successful using Neo4j. Llewellyn offered many interesting perspectives that opened up the minds of others on that call. If you see changes in the community programs or activities that you like at https://neo4j.com/nodes-2020[NODES 2020], know that he's one of the triggers of it. :D
+
+Llewellyn, we're truly grateful for you being part of our community and dedicating your time to helping others succeed. Thank you!
+
+https://www.linkedin.com/in/llewellynpreece/[Connect with Llewellyn on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Neosemantics (n10s): A Linked Data Toolkit for Neo4j
+
+This week's video is by Jesus Barrasa and Adam Cowley about the launch of a Neo4j 4.0 compatible version of Neosemantics and its accompanying graph app.
+
+youtube::LO-OvQaBq8s[type={type}]
+
+Jesus takes us through the major API changes that have been made in the most recent version of the library, and Adam shows how to use it from the graph app. You can also read more in the https://medium.com/neo4j/neosemantics-4-0-is-out-26a380dd7b51[release blog post^].
+
+[[features-2]]
+=== This Week in GRANDstack: REST to Graph, Apollo Federation and Gateway, Neo4j Sandbox
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200522024551/GrandStack-Logo-Square-3.png" width="150px"  />
+</div>
+++++
+
+The GRANDstack community has been busy this week.
+
+* Lennert van Sever shows how to https://blog.grandstack.io/how-to-transform-a-rest-service-to-a-graph-service-d2ae8c5bd10d[transform a REST service to a graph service^].
+
+* Michael Graham created a guide showing how to https://grandstack.io/docs/apollo-federation-gateway-with-neo4j.html[use Apollo Federation with Neo4j GraphQL^].
+
+* Will Lyon has done a https://twitter.com/lyonwj/status/1262397190531670021[major refresh of the GRANDstack documentation^]. He also did a https://www.twitch.tv/videos/627946960[live stream^] on twitch, where he showed off new GraphQL features in the Neo4j Sandbox and gave a sneak peek of some new GRANDstack tools.
+
+[[features-3]]
+=== Neo4J OGM with Quarkus
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200522030653/quarkus_logo_vertical_rgb_1280px_default.png" width="120px"  />
+</div>
+++++
+
+Sebastian Daschner shows how to use Neo4j with Quarkus, a Kubernetes Native Java stack.
+
+In the https://www.youtube.com/watch?v=1fz9i_Q9fCw[embedded video^], Sebastian shows how to build a HTTP API backed by Cypher queries, with the help of a coffee beans dataset. The code is available in the https://github.com/sdaschner/quarkus-playground/tree/neo4j[quarkus playground^] GitHub playground.
+
+https://blog.sebastian-daschner.com/entries/neo4j-ogm-with-quarkus[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Releases: Bloom 1.3, Stormspotter, Graph Data Science 1.2
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200522024342/noun_Gift_1607999.png" width="80px"  />
+</div>
+++++
+
+This week we had releases of two prominent projects in the Neo4j ecosystem, as well as a brand new project.
+
+Ljubica Lazarevic has a write up about the release of https://medium.com/neo4j/bloom-ing-marvellous-a2be0c3702bb[version 1.3 of Neo4j Bloom^]. This is the first freely available version of the popular graph visualization tool. This version of the library supports the multi database feature released in Neo4j 4.0 and there's an overhaul  of the perspectives feature.
+
+The Azure Red Team tool released an alpha version of https://github.com/Azure/Stormspotter[Stormspotter^], a security tool that creates an “attack graph” of the resources in an Azure subscription.
+
+And finally, we released https://neo4j.com/graph-data-science-1-2-1-release-notes/[version 1.2.1 of the Graph Data Science Library^], which provides a library of graph algorithms that quickly compute over very large graphs. This is the first version of the library that supports Neo4j 4.0.
+
+
+[[features-5]]
+=== An introduction to Neo4j applied on Beat Saber UGC content
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20200522025835/capsule_616x353.jpg" width="200px"  />
+</div>
+++++
+
+Jean-Michel Daignan has written a blog post showing how to use Neo4j to analyse user generated data from Beat Saber, a virtual reality fitness/rhythm computer game.
+
+Jean-Michel covers the Data Science, including:
+
+* Data import using the Python Driver
+* Exploratory data analysis using a Python data visualisation library
+* Friend recommendations using the Graph Data Science library's Jaccard similarity function.
+
+http://the-odd-dataguy.com/dive-in-neo4j-graph-database/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/AJarasch[Alexander Jarasch^], teasing us with new NLP features coming soon to https://covidgraph.org/[Covid Graph^]:
+
+tweet::1263162522225586178[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+* Rik Van Bruggen @rvanbruggen
+Picked up an old skill again: created a #neo4j browser guide for the #covid19 #contacttracing demo that I built last week. It has become so easy: from #asciidoc to browser guide in seconds. http://blog.bruggen.com/2020/04/contact-tracing-guide-for-neo4j-browser.html
+
+
+ https://medium.com/swlh/how-to-visualize-a-spring-integration-graph-with-neo4j-61927ba5bb5a 
+How to visualize a Spring Integration graph with Neo4j?
+
+
+
+(Opens in new tab)Towards Data Science(Opens in new tab) @TDataScience(Opens in new tab)
+Movie Recommendations powered by Knowledge Graphs and Neo4j https://buff.ly/35smGQJ 
+
+(Opens in new tab)Tim Pavlick(Opens in new tab) @Timpavlick(Opens in new tab)
+
+
+
+https://medium.com/larus-team/getting-started-with-jhipster-and-neo4j-35c8a647a6fe
+Getting started with JHipster and Neo4j
+
+
+
+
+Introducing Neo4j SDN:zap:RX
+Delivered at https://2020.springio.net/bridge/. SDN-RX: https://github.com/neo4j/sdn-rx Neo4j: https://neo4j.com Neo4j Aura: https://neo4j.com/aura JHipster: https://www.jhipster.tech https://medium.com/neo4j/two-hip-friends-jhipster-and-neo4j-774639e9693
+
+https://youtu.be/hi_zAj3tqeE?t=27128
+
+
+https://medium.com/neo4j/two-hip-friends-jhipster-and-neo4j-774639e9693
+jhipster+sdn-rx: - featured block, perhaps @Michael Simons @Gerrit Meier can add some color
+- blog post: https://medium.com/neo4j/two-hip-friends-jhipster-and-neo4j-774639e9693
+- release https://www.jhipster.tech/using-neo4j/ <- https://www.jhipster.tech/2020/05/17/jhipster-release-6.9.0.html
+- @Michael Simons spring-bridge talk from last friday https://youtu.be/hi_zAj3tqeE?t=27128
+- slides https://speakerdeck.com/michaelsimons/introducing-neo4j-sdn-rx
+
+
+
+
+https://medium.com/neo4j/two-hip-friends-jhipster-and-neo4j-774639e9693
+Medium
+Two Hip Friends — JHipster and Neo4j
+
+
+
+
+////

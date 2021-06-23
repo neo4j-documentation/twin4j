@@ -1,0 +1,157 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This Neo4j community has had another busy week. We launched a revamped Intro to Neo4j online course, available for the bargain price of $0. Irfan Karaca and I had fun showing off Neuler - a Graph App that lets you run Graph Algorithms over your data without writing any code. 
+
+
+David Allen does a deep dive into running Neo4j on Kubernetes, Dave Fauth shows us how to work with the Uber H3 geospatial indexing system, and I wrote a blog post showing how to delete a list of dynamic properties from every node. 
+
+Finally, I'm thrilled to share the news that Neo4j have joined the GraphQL Foundation as a Founding Member. It really is time to GraphQL all the things! 
+
+
+[[featured-community-member]]
+=== Featured Community Member: Joe Chesak
+
+This week's featured community members is https://twitter.com/joechesak[Joe Chesak^], Chief Data Officer at Bolder AS.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190315073248/this-week-in-neo4j-16-march-2019.jpg[name="Joe Chesak"]
+
+Joe Chesak has been active in the Neo4j community for many years. He is extremely passionate about connected data and the capabilities of modeling and storing your data in graphs.  
+
+He is also very passionate about community. Being in a place with no local Neo4j or graph database meetup, he made the initiative to start his own community. After connecting with the Neo4j Community Manager, Karin Wolok, he launched his group, https://www.meetup.com/Graph-Database-Stavanger/[GraphDB Stavanger^]. He has already scheduled 2 events and is on his way to scheduling the 3rd, around http://GlobalGraphCelebrationDay.com[Global Graph Celebration Day^].
+
+Thank you, Joe, for helping the graph-thinking world be more pleasant and enriched!
+
+
+link:https://twitter.com/joechesak[Follow Joe on twitter, role="medium button"]
+
+[[features-1]]
+=== Desktop Graph Analytics: For The Throne
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], https://twitter.com/irfannuri[Irfan Karaca^] and I showed off Neuler - a Graph App that we've created to make https://neo4j.com/developer/graph-algorithms/[Neo4j Graph Algorithms^] accessible to users who don't want to write Cypher. 
+
+youtube::zZZFqAX-PH0[type={type}]
+
+We start with a quick overview of graph algorithms, and the types of problems they solve, before reproducing Professor Andrew Beveridge's https://networkofthrones.wordpress.com/the-series/season-2/[Network of Thrones analysis^] using Neuler. 
+
+[[features-2]]
+=== Neo4j Joins GraphQL Foundation as a Founding Member
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190315043614/Selection_369.png" width="200px"  />
+</div>
+++++
+
+The GraphQL Foundation is an open and neutral home for the GraphQL community to enable widespread adoption and help accelerate development and the surrounding ecosystem.
+
+Over the last 2 ½ years, my colleagues Will Lyon and Michael Hunger have done a lot of work to https://grandstack.io/docs/guide-schema.html[make GraphQL and Neo4j play nicely together^], and this week Will announced that Neo4j have joined the GraphQL Foundation as one of the founding members. 
+
+You can learn more about the GraphQL Foundation from the https://gql.foundation/[gql.foundation^] website.
+
+link:https://neo4j.com/blog/neo4j-joins-graphql-foundation-founding-member/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== Geospatial with Uber H3
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190315043540/uber-h3.png" width="150px"  />
+</div>
+++++
+
+In the 2nd post of Dave Fauth series on using graphs for healthcare search, he shows how to extend Neo4j to support polygon based searching using Uber H3 - a hexagonal hierarchical geospatial indexing system.  
+
+Dave converts lat, long pairs into hex addresses, and then shows off the powerful search functionality to find health providers with a billing address along the line between two coordinates.
+
+link:http://www.intelliwareness.org/2019/02/neo4j-uber-h3-geospatial/[Read the blog post, role="medium button"]
+
+[[articles-1]]
+=== Neo4j in Orchestration Environments, Intro to yFiles, Deleting multiple properties from nodes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190315045421/1_lHsTCYWRYjkxe0oT182wqg.png" width="200px"  />
+</div>
+++++
+
+* In David Allen's latest blog post, he explains the https://medium.com/neo4j/neo4j-considerations-in-orchestration-environments-584db747dca5[considerations to take into account^] when running Neo4j in Kubernetes. David covers cluster drivers, disk provisioning, and stateful services, in an article rich in technical detail.
+
+
+* A few weeks ago Sebastian Mueller presented an https://www.youtube.com/watch?v=br3momUyCsI[introduction to yWorks^] at the Tokyo meetup., Sebastian gives an overview of the features that the software library provides and shows you how to connect your yFiles for HTML-powered web application to a Neo4j database. 
+
+* This week I learnt how to https://markhneedham.com/blog/2019/03/14/neo4j-delete-dynamic-properties/[remove a list of properties from all nodes^] in a single Cypher query using the popular https://neo4j.com/developer/neo4j-apoc/[APOC^] library.
+
+* In https://medium.com/@coppettim/the-power-of-graphs-for-risk-forecast-e5e54f63ddbf[The power of graphs for risk forecast^], M.C. proposes the use of a graph-based data model to assess and manage the financial risk of a bank’s clients. M.C. shows how to design a graph model containing client and payment data, and then uses the APOC library to show the payment chain for a particular client.
+
+[[features-4]]
+=== Revamped Intro to Neo4j Training Course
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190315043936/neo4j-online-training-course1.jpg" width="200px"  />
+</div>
+++++
+
+A couple of weeks ago, Elaine Rosenberg  launched the newly revamped Intro to Neo4j online training course. 
+
+This course lays a solid foundation for your graph technology journey, giving you all of the knowledge you need to build applications with Neo4j, including how to write Cypher queries. 
+
+It's been designed for beginner students to the Neo4j graph database, and is perfect for developers, architects, DBAs, data scientists and other data analysts.
+
+It's completely free and you can https://neo4j.com/graphacademy/online-training/introduction-to-neo4j/[register to take it now^]!
+
+link:https://neo4j.com/blog/newly-revamped-intro-to-neo4j-online-training-course/[Read the release post, role="medium button"]
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/joedepeau[Joe Depeau^]:
+
+tweet::1106135447510626305[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+https://blog.semanticscholar.org/finding-experts-in-grapal-b97ef280e585 
+Finding experts in GrapAL
+
+
+https://graphaware.com/neo4j/2019/03/09/graph-assisted-typescript-refactoring.html
+Graph-assisted Typescript refactoring
+
+https://medium.com/neo4j/configuring-stackdriver-logging-for-neo4j-vms-on-gcp-d175f32e2e1b
+Configuring Stackdriver Logging for Neo4j VMs on GCP
+
+In part 3 of his series, Neo4j support engineer @dmcanzano shares how to render Cypher results as charts within a @structr application.
+https://medium.com/neo4j/showing-charts-for-neo4j-query-results-using-amcharts-and-structr-efae0b7a04f0
+
+
+
+////

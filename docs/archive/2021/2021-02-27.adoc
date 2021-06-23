@@ -1,0 +1,165 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+This week we had the Neo4j and the Cloud Connections event and https://neo4j.com/video/connections/neo4j-and-the-cloud/[all the videos are now available^] in case you missed it.
+
+In this week's video, Will Lyon shows how to use Chakra UI in the GRANDstack podcast app.
+
+Jesús Barrasa queries the English WordNet graph, Lju Lazarevic announces the Call for Papers for NODES 2021, and Tomaz Bratanic creates an information extraction pipeline.
+
+And finally, Dr. Alessandro Negro announced the release of version 2.7.0 of Hume, GraphAware’s graph-powered insights engine.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: David Montag
+
+
+This week's featured community member is David Montag.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210226041236/this-week-in-neo4j-27-february-2021.jpg[name="David Montag"]
+
+David Montag is an Enterprise Cloud Architect at Google Cloud, where he's worked for the last 3 years. He was previously the first Field Engineer at Neo4j. 
+
+Over the years David has presented on Neo4j at various conferences, including https://www.youtube.com/watch?v=4CQUWuolHvc[GOTO 2016^] and the https://www.youtube.com/watch?v=mWV4qrWS13A[Big Things Conference^].
+
+This week he presented https://www.youtube.com/watch?v=71jCAObV_nU[Google Cloud – The Platform That Powers Aura^] with David Allen at the Neo4j and the Cloud Connections event. The two Davids explain the benefits of using GCP for Neo4j Aura and list some of the customers and use cases being run on Aura.
+
+https://www.linkedin.com/in/david-montag/[Connect with David on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== Chakra UI Component Library | Building A GRANDstack Podcast App: Episode 5
+
+Our video this week is from Will Lyon's Building A GRANDstack Podcast App live stream.
+
+youtube::x0_a9tOpExc[type={type}]
+
+In this episode, Will focuses on Chakra UI, which provides simple, modular, and accessible components to use in React applications. He also shows how to use Apollo Client for GraphQL queries and mutations and how to implement optimistic UI with Apollo Client.
+
+////
+
+image::https://dist.neo4j.com/wp-content/uploads/20210129015957/Screenshot-from-2021-01-29-09-59-31.png[link="https://www.coss.community/coss/ocs-2020-keynote-emil-eifrem-co-founder-ceo-of-neo4j-1c4m", window="_blank"]
+////
+
+[[features-2]]
+=== QuickGraph#17 The English WordNet in Neo4j (part 2)
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210226030037/wordnet.png" width="200px"  />
+</div>
+++++
+
+In QuickGraph #17, Jesús Barrasa queries the English WordNet graph that he created in https://jbarrasa.com/2021/01/29/quickgraph16-the-english-wordnet-in-neo4j-part-1/[QuickGraph #16^].
+
+Jesus discovers that there are 28 words to describe "the fleshy part of the human body that you sit on" and 8 different ways of saying “being unsuccessful”, as well as other cool insights.
+
+https://jbarrasa.com/2021/02/05/quickgraph17-the-english-wordnet-in-neo4j-part-2/[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== From Text to Knowledge: The Information Extraction Pipeline
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210226040046/1_NIwpfd-AOnJKjQBWvauhQ.png" width="150px"  />
+</div>
+++++
+
+In Tomaz Bratanic's latest blog post, he builds an information extraction pipeline that creates a knowledge graph from unstructured text.
+
+Tomaz uses a combination of spaCy, Wikifier, and OpenNRE to extract subject-predicate-object triples, which are then imported into Neo4j. He concludes by explaining how this technique can be one of the paths towards the goal of explainable AI.
+
+https://towardsdatascience.com/from-text-to-knowledge-the-information-extraction-pipeline-b65e7e30273e[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== NODES 2021 CfP, Sandbox Refresh, GDS Certifictation
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Lju Lazarevic announced the https://medium.com/neo4j/nodes-2021-is-coming-and-we-need-you-c93be99ebce4[Call for Papers for NODES 2021^], which will be held on June 17th 2021. 
+
+* The https://medium.com/neo4j/sandbox-spring-cleaning-38689661dece[Neo4j Sandbox has been upgraded^] to use version 4.2 of Neo4j and version 1.5 of Graph Data Science Library.  Every Sandbox also now comes with NEUler, the Graph Data Science Playground.
+* Elaine Rosenberg published the brand new https://neo4j.com/graphacademy/neo4j-gds-certify/[Neo4j Graph Data Science certification^]. Answer 40 questions in 60 minutes to show your GDS expertise.
+
+
+////
+
+https://twitter.com/davidbates/status/1336187578601582594 
+////
+
+[[features-5]]
+=== Hume 2.7: Search relevance, improved visualisation, and much more!
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210226025857/Screenshot-from-2021-02-26-10-58-41.png" width=200px"  />
+</div>
+++++
+
+Dr. Alessandro Negro announced the release of version 2.7.0 of Hume, GraphAware's graph-powered insights engine.
+
+This release sees a redesign of the UI for easier graph exploration, improvements to the search capability, and the introduction of a grouping capability to simplify the graph visualisation.
+
+https://graphaware.com/hume/2021/02/24/hume-2.7.0-released.html[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/DonManDonGuy[Donny Flynn^]:
+
+tweet::1364662207938785281[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+
+
+* https://lju.medium.com/lets-revisit-modelling-and-loading-data-10d601bbccb6
+* https://lju.medium.com/lets-model-and-l%CC%B5o%CC%B5a%CC%B5d%CC%B5-refactor-some-data-4161e768135
+* https://medium.com/virtuoso-blog/adding-virtuoso-sparql-results-to-a-neo4j-property-graph-e73786cff87e 
+
+////

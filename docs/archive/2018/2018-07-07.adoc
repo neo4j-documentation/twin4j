@@ -1,0 +1,215 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in Neo4j for the week of 7 July 2018, including Neo4j Morpheus, a demo of Neo4j on Google Cloud, and algorithms with Dr Jim Webber.
+
+
+[Primary Image File Name:]
+this-week-neo4j-31-march-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 9 June 2018
+
+[Headline:]
+This Week in Neo4j – abc
+
+[Body copy:]
+////
+
+Welcome to this week in Neo4j where we round up what's been happening in the world of graph databases in the last 7 days.
+
+This week we have a first look at Neo4j Morpheus (a tool for weaving together graph and relational data in Apache Spark), a demo of Neo4j on Google Cloud, profiling procedures with JMH, algorithms with Dr Jim Webber, exploring the World Cup with Neo4j Bloom, and more!
+
+[[featured-community-member]]
+=== Featured Community Member: Estelle Joubert
+
+This week’s featured community member is https://twitter.com/estellejoubert[Estelle Joubert^], Associate Professor at Dalhousie University. Estelle is a musicologist, which means that she studies music and culture, and has a particular focus on opera and political theory.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180705230856/this-week-in-neo4j-7-july-2018.jpg[name="Estelle Joubert"]
+
+Estelle is the https://www.dal.ca/faculty/arts/school-of-performing-arts/faculty-staff/our-faculty/musicology/estelle-joubert.html[principal investigator for a large-scale team-run project entitled Opera and the Musical Canon^], which uses Neo4j. The database is used to visualize relationships between people (composers, singers, publishers) and operatic objects (scores, reviews, images), offering a nuanced ‘picture’ of how operatic fame was generated prior to 1800. 
+
+Estelle was recently interviewed on the Graphistania podcast where she explains the project in more detail and describes some of the queries the projects aims to answer which made them switch over from a relational database.
+
+You can listen to the interview below or http://blog.bruggen.com/2018/06/podcast-interview-with-estelle-joubert.html[read the transcript^].
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/461891370&amp;color=44c13e"></iframe>
+<br /><br />
+++++
+
+On behalf of the Neo4j community, thanks for all your work and good luck with your project Estelle!
+
+[[neo4j-morpheus]]
+=== Weave Together Graph and Relational Data in Apache Spark
+
+The video from https://twitter.com/mdavidallen/[David Allen^] and https://twitter.com/amyhodler?lang=en[Amy Hodler^]'s Spark Summit talk about Neo4j Morpheus is now available.
+
+++++
+<iframe src="https://player.vimeo.com/video/274433801" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/274433801">Weave Together Graph and Relational Data in Apache Spark David Allen + Amy E. Hodler (Neo4J)</a></p>
+++++
+
+In the talk they explain this upcoming tool which will make it possible to weave together graph and relational data in Apache Spark. They go on to explain use cases where this approach will work well, such as getting a 360 degree view of a customer, before doing some live demos of the technology.
+
+Neo4j Morpheus is still in early access mode, so send us an email devrel@neo4j.com if you'd like to participate and we'll get you in touch with the right people.
+
+[[english-cypher-zeppelin-profiling]]
+=== English -> Cypher, Neo4j on Apache Zeppelin, Profiling procedures
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180706014800/1_4PrpHFMZ-f-ysX3TEOu-wg%402x.png" width="100px"  />
+</div>
+++++
+
+* In https://twitter.com/DavidHHMack[David Mack^]'s latest post he shows how to translate https://medium.com/octavian-ai/answering-english-questions-using-knowledge-graphs-and-sequence-translation-2acbaa35a21d[English to Cypher^] using the magic of sequence-to-sequence translation. The trained model is able to perform reasoning tasks such as recalling properties of objects, counting, finding shortest paths, and determining if two objects have a relationship.
+
+* The video from https://twitter.com/meistermeier?lang=en[Gerrit Meier^]'s talk at Spring I/O 2018 - https://www.youtube.com/watch?v=M15wR5YA-lc&feature=youtu.be[Time to graph up with Spring Data Neo4j^] - is now available.
+
+* Late last week version 0.8 of Apache Zeppelin was released. This version of the popular notebook software has https://zeppelin.apache.org/docs/0.8.0/interpreter/neo4j.html[Neo4j support^]. 
+
+* If you've ever found yourself wanting to benchmark your stored procedures or functions you're in luck! https://twitter.com/darthvader42?lang=en[Stefan Armbruster^] has created https://github.com/sarmbruster/neo4j-jmh[a project which shows how to use JMH to do this^]. You can also optionally create flame graphs of the output.
+
+[[google-cloud-launcher]]
+=== Google Cloud - Neo4j Causal Cluster Launch Demo
+
+David Allen has created a video in which he demos how to launch a new Neo4j Causal Cluster on Google Cloud Platform. 
+
+youtube::TomnIoeVGIg[type={type}]
+
+This uses the Launcher capability of Google Cloud along with the Deployment Manager to deploy a cluster of three Neo4j instances for highly-scalable graph queries.  
+
+You can also read David's guide for https://neo4j.com/developer/neo4j-cloud-google-cloud-launcher/[launching a Neo4j Causal Cluster on Google Cloud Launcher^]
+
+[[dr-jim-contentful-icij]]
+=== Algorithms with Dr Jim, How the ICIJ deal with data leaks, New release of Neode
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180706025817/JimWebber-300x3001.png" width="150px"  />
+</div>
+++++
+
+* https://twitter.com/jimwebber?lang=en[Dr Jim Webber^] has started a series of videos where he explains the data structures and algorithms used by Neo4j. He starts with a look at https://www.youtube.com/watch?v=NlT21Ceg3y0[linked lists, trees, and hash maps^].
+
+* I came across an interesting article written by the ICIJ in which they explain how they're able to https://www.icij.org/blog/2018/07/how-icij-deals-with-massive-data-leaks-like-the-panama-papers-and-paradise-papers/[deal with massive data leaks like the Panama Papers and Paradise Papers^]. They explain how they've been able to overcome both collaboration and technical challenges, the latter by using Apache Tika (to extract metadata and text), Apache Solr (to build search engines), Tesseract (to turn images into text), Neo4j (to make sense of the data), and Linkurious (to visualize the data).
+
+
+* Christopher Eyre has https://devrantsblog.wordpress.com/2018/07/01/viewing-contentful-data-in-neo4j/[written a^] https://devrantsblog.wordpress.com/2018/06/30/viewing-a-contentful-space-in-neo4j-part-2/[couple of^] blog posts in which he explains a utility he built that allows data stored in https://www.contentful.com/[Contentful^] (a cloud hosted, headless, Content Management System) to be imported into Neo4j. You can find the code for the tool in the https://github.com/chriseyre2000/contentful-to-neo4j[chriseyre2000/contentful-to-neo4j^] GitHub repository.
+
+* https://twitter.com/adamcowley[Adam Cowley^] has https://medium.com/neo4j/interacting-with-neo4j-in-nodejs-using-the-neode-object-mapper-3d99cb324546[written a blog post^] introducing https://www.npmjs.com/package/neode[Neode^] - an OGM he built by putting together a set of generic services on top of the official drivers to take care of the mundane CRUD operations.
+
+* This week Adam release version 0.1.14 of https://www.npmjs.com/package/neode[Neode^], This version has TypeScript support, temporal and spatial support. A massive thanks to https://twitter.com/noumaanshah[Noumaan Shah^] for his contributions to this release.
+
+[[world-cup-bloom]]
+=== Analysing the World Cup with Neo4j Bloom
+
+With the release of https://neo4j.com/bloom/[Neo4j Bloom^] last week I thought I'd make a quick video showing how to use it to explore the https://medium.com/neo4j/world-cup-2018-graph-19fbac0a75db[World Cup Graph^].
+
+youtube::6RWK3e_-hbk[type={type}]
+
+I show how to describe some simple graph patterns, visually detect England's hat trick scorers, and conclude by demonstrating how you can write your own custom Cypher queries and expose them as search phrases. 
+
+
+[[knowledge-base]]
+=== How deletes work in Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180112025916/learn-2999580_640.jpg" width="120px"  />
+</div>
+++++
+
+This week from the https://neo4j.com/developer/kb/[Neo4j Knowledge base^] we have an article explaining https://neo4j.com/developer/kb/how-deletes-workin-neo4j/[how deletes work in Neo4j^].
+
+This article explains what happens when you delete nodes, relationships, and properties, and why, contrary to expectations, you will see the amount of space taken on the filesystem increase when doing bulk delete operations.
+
+[[podcast]]
+=== On the podcast: Matt Casters
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180525061943/logopodcast.jpg" width="100px"  />
+</div>
+++++
+This week on the podcast https://twitter.com/rvanbruggen[Rik^] interviewed Matt Casters, Chief Solutions Architect at Neo4j.
+
+They talk about his experience building the https://sourceforge.net/projects/pentaho/[Pentaho Kettle^] integration tool, his more recent work extending it to load data from streaming data sources (like Kafka) into Neo4j, as well as his new role in the solutions team at Neo4j.
+
+You can listen to the interview below or http://blog.bruggen.com/2018/07/podcast-interview-with-matt-casters.html[read the transcript^].
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/467548923&amp;color=44c13e"></iframe>
+<br /> <br />
+++++
+
+[[apoc-youtube]]
+=== APOC YouTube Series: Load JSON, Load JDBC, Bulk loading data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180629061434/apoc-neo4j-user-defined-procedures1.gif" width="120px"  />
+</div>
+++++
+
+This week https://twitter.com/mesirii[Michael^] released 4 more videos in the Neo4j APOC YouTube series:
+
+* https://www.youtube.com/watch?v=yEN6TCL8WGk&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4&t=0s[Exploring Neo4j Database Metadata in APOC (#3)^]
+
+* https://www.youtube.com/watch?v=M1P1IlQdb5M&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq&index=4[Loading Data from JSON Web APIs into Neo4j with apoc.load.json (#4)^]
+
+* https://www.youtube.com/watch?v=e8UfOHJngQA&index=5&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Load Data from Relational DBs with JDBC and APOC (#5)^]
+
+* https://www.youtube.com/watch?v=t1Nr5C5TAYs&index=6&list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[Efficiently Updating and Inserting Data With apoc.periodic.iterate (#6)^] 
+
+You can find a list of all the videos so far in https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXEww23lDX_owoKoqqBQpdq[the Neo4j APOC Utility Library HowTo Series playlist^].
+
+
+////
+[[projects-knowledge-mortality-rdf-graph]]
+=== Projects to play with: Knowledge Graph, Mortality Explorer, RDF -> Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20180621070618/Octocat.png" width="120px"  />
+</div>
+++++
+
+On my GitHub travels I came across a few interesting projects that you can take a look at if you get some time over the weekend.
+
+* <text>
+////
+
+
+[[meetups]]
+=== Next Week
+
+What’s happening next week in the world of graph databases?
+
+[options="header"]
+|=========================================================
+|Date |Title | Group | Speaker 
+
+| July 11th 2018 | https://www.meetup.com/graphdb-london/events/251240708/[Hands On Neo4j: Building Graph Backed Applications^] | https://www.meetup.com/graphdb-london/[Neo4j - London User Group^] | https://twitter.com/technige?lang=en[Nigel Small^] 
+
+|=========================================================
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/rugsor[Rune Sørensen^]:
+
+tweet::1014829283162902528[type={type}]
+
+Don't forget to RT if you liked it too. 
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark

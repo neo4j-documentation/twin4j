@@ -1,0 +1,200 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Analyzing .NET Dependencies, Coloring a Sudoku Graph, Christmas Messages Graph, Making Graph Algorithms ‘Clique’
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+In this week’s video from the https://neo4j.com/online-summit/[NODES 2019 conference^], Joe Depeau explains how graph algorithms through the medium of classic teen films. 
+
+Nathan Smith tries to solve a Sudoku, Jesús Barrasa graphs Christmas messages, and Mike Solomon analyses Twitter data.
+
+And finally, Greg Shackles uses F# and Neo4j to analyse a .NET dependency graph.
+
+Enjoy!
+Mark Needham, Karin Wolok, and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Michael Porter
+
+This week's featured Neo4j Community member is Michael Porter, Founder at Muddy Boots Code.
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200110102404/this-week-in-neo4j-11-january-2020.jpg[name="Michael Porter"]
+
+Michael is a https://dev.to/muddybootscode[blogger^], a https://dev.to/muddybootscode/video-how-the-grandstack-makes-handling-complex-data-easy-1jip[speaker^], a https://neo4j.com/graphacademy/neo4j-certification/[certified developer^], and a https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninja^].  
+
+Did we mention he also has his own company? He’s a https://www.muddybootscode.io/[software developer consultant^] specializing in oil and gas. 
+What’s special about Michael’s contributions is that he isn’t just doing it to ‘do it’. He’s doing it because he’s passionate about helping people. 
+
+We recently launched the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninja program^] and https://community.neo4j.com/u/muddybootscode[Michael^] managed to reach #1 place on our leaderboard!  
+
+Congrats, Michael, and thanks again for all that you do!  
+
+https://twitter.com/MuddyBootsCode[Follow Michael on Twitter, role="medium button"]
+
+[[features-1]]
+=== NODES 2019: Making Graph Algorithms 'Clique'
+
+In this week's video from the https://neo4j.com/online-summit/[NODES 2019^], Joe Depeau explains how graph algorithms through the medium of classic teen films.
+
+youtube::hB7EadZeRGU[type={type}]
+
+After giving an overview of the graph algorithm library, Joe moves on to some applied examples. We use PageRank to find the popular students in the 1988 movie Heathers and Label Propagation to find communities of people in Mean Girls. 
+
+[[features-2]]
+=== Coloring a Sudoku graph with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200110052540/1_DdkBg8BULdQRjtRquo1g9w.png" width="150px"  />
+</div>
+++++
+
+Nathan Smith tries using the recently released https://neo4j.com/docs/graph-algorithms/current/algorithms/k1coloring/[K-1 Coloring Graph Algorithm^] to colour a Sudoku Graph. 
+
+In the post Nathan shows how to model a Sudoku grid in Neo4j, and then tries to fill in a valid configuration using the algorithm. It gets close, but doesn't quite solve the puzzle perfectly!
+
+
+
+
+https://medium.com/neo4j/coloring-a-sudoku-graph-with-neo4j-f86c891f6879[Read the blog post, role="medium button"]
+
+[[features-3]]
+=== TriGraph, Guardian Top 100 Male Footballers, Analysing Twitter Engagement data
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200110051337/1_IexCftzTGOS6ovwiOD5CiQ-scaled.jpeg" width="200px"  />
+</div>
+++++
+
+* Daniel Wilms used Neo4j to https://towardsdatascience.com/trigraph-how-to-use-graphs-to-analyse-triathlon-events-145c5daefcc5[analyse data from the Ironman Vega World Championships 2019^], an endurance event where participants swim 2.4 miles, bike 112 miles, and run 26.2 miles.
+
+* I wrote a QuickGraph blog post in which I showed how to https://markhneedham.com/blog/2019/12/22/quick-graph-guardian-top-100-male-footballers/[analyse The Guardian's Top 100 Male Footballers of 2019 dataset^] using Neo4j.
+
+* https://twitter.com/solomania/[Mike Solomon^] published some thoughts on https://thecleverest.com/storing-time-series-twitter-engagement-data-in-a-graph-database/[how to store and analyze Twitter engagement data using Neo4j^].
+
+* https://twitter.com/bla222[Ben Albritton^] shared a link to https://ismi.mpiwg-berlin.mpg.de/neo4j-graph-d[a Neo4j database containing the Islamic Scientific Manuscripts Initiative^], an initiative led by Dr. Sally Ragep.
+
+* https://twitter.com/MuddyBootsCode[Michael Porter^] shows how easy is it to https://dev.to/muddybootscode/neo4j-and-graphql-heavenly-match-1-directional-relationships-1cg2[evolve a graph model via a GraphQL schema^] using the GRANDstack. 
+
+
+[[features-4]]
+=== QuickGraph: Christmas Messages Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200110041658/screenshot-2019-12-29-at-02.29.34.png" width="150px"  />
+</div>
+++++
+
+In https://twitter.com/barrasadv[Jesús Barrasa^]'s latest QuickGraph blog post, he analyses the Christmas messages from some of Europe's heads of state.
+
+Jesús uses the popular NLTK library to process the speeches, and then creates a graph from the extracted words and word stems.
+
+He then queries the graph, finding out which countries are most self referential, and which mention climate the most. Jesús concludes the post by using the Graph Algorithms Library to compute the similarity of the Christmas messages.
+
+https://jbarrasa.com/2019/12/29/quickgraph11-the-christmas-messages-graph/[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== Analyzing .NET Dependencies with Neo4j
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200110040423/neo4j-graph-1.png" width="200px"  />
+</div>
+++++
+
+Greg Shackles uses a combination of F# and Neo4j to explore the dependencies between libraries in a .NET project.
+
+Greg shows how to export the dependencies to a CSV file using an F# script, load them into Neo4j using LOAD CSV, and explore the dependency graph with various Cypher queries. 
+
+F# was one of my favourite scripting languages when I https://markhneedham.com/blog/tag/f/[used iit at the start of the last decade^], so it was great to see it being used alongside my favourite graph database.
+
+https://gregshackles.com/analyzing-net-dependencies-with-neo4j/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/rotnroll666[Michael Simons^]:
+
+tweet::1215209354909093889[type={type}]
+
+////
+
+Knowledge Graphs in Action - @neo4j GraphTour Mexico City - by @ikwattro  - https://youtu.be/pRSEs9V6-4U
+
+https://faboo.org/2020/01/implementing-a-searchbox-with-neo4j/ 
+
+Adam Cowley @adamcowley
+ New Year, new Blog Post
+How to build a Real-Time UI on top of #Neo4j with #Vuejs and #Kafka
+https://adamcowley.co.uk/neo4j/real-time-ui-vuejs-neo4j-kafka/
+
+https://markhneedham.com/blog/2020/01/04/quick-graph-uk-official-charts/QuickGraph #4: UK Official Singles Chart 2019 ·  Mark Needham
+https://markhneedham.com/blog/2019/12/23/quick-graph-itsu-allergens/
+
+
+* @Kirtar_Oza
+Python Code for  fetching @MITREattack's #cti #STIXX2 data from its #TAXII2 server & building the database in Neo4j  AND building the relationships (Threat Actors, Malware, Tools and Techniques) by scraping MITRE ATT&CK's webpage - https://github.com/Kirtar22/ATTACK-Threat_Intel 
+
+prototype-build for representing MITRE's ATT&CK CTI data in a Graph view with relationships between various objects. The objects could be Threat Groups,Techniques used in cyber attacks OR software (tools,malware).
+
+
+https://tagtaxa.com/getting-an-insight-of-blockchain-transactions-with-neo4j-graph-database/
+Sinisa DrpaSinisa Drpa
+Getting an Insight of Blockchain Transactions Flow with Neo4j Graph Database
+In the previous post I described how to explore and better understand information on Lisk blockchain by running SQL queries directly on the blockchain database. In this article I'll try to explain how to export the data from Lisk relational database to Neo4j graph database in order to be able
+
+* Indoor navigation with ReactJS and Neo4j: https://ordina-jworks.github.io/iot/2019/12/20/ar-signpost.html
+
+
+* https://github.com/trinitor/netstat2neo4j
+
+https://dev.to/muddybootscode/neo4j-and-graphql-heavenly-match-1-directional-relationships-1cg2
+
+
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+
+
+
+https://blog.graphcommit.com/2019/12/graph-commit-project.html
+https://blog.graphcommit.com/2019/11/create-veeam-backup-knowledge-graph-via.html 
+https://blog.graphcommit.com/2019/11/import-vcenter-infrastructure-into.html
+
+https://towardsdatascience.com/inference-in-graph-database-7203938932a0  @jesus.barrasa
+Inference in Graph Database
+In this blog post, I will try to explain what the inference is on Semantic Web and to show how the inference can be applied in a local…
+
+https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf
+Human Genes Graph
+
+Visualize Clinical Data in Graph Database in 20 Minutes
+https://medium.com/@hongpingliang/visualize-clinical-data-in-graph-database-in-20-minutes-f4de223449a2 
+
+
+
+////
+

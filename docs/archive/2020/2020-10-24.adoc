@@ -1,0 +1,167 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 March 2020
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Graphs4Good Hackathon, Twitch Session, Cypher Projections, Go Driver,
+
+[Body copy:]
+////
+
+Hi everyone,
+
+We hope you enjoyed the NODES 2020 conference on Tuesday. The DevRel team had fun interacting with you in the various sessions. 
+
+We know that you probably weren't able to attend all the sessions that you attended but, fear not, the sessions were all recorded and are available to watch at https://neo4j.com/video/nodes-2020/[neo4j.com/video/nodes-2020^]. 
+
+There was only one contender for our featured video this week - Emil Eifrem and Alicia Frame's NODES 2020 keynote presentation. Alicia and Amy Hodler also announced the preview release of version 1.4 of the Graph Data Science Library.
+
+David Allen explains everything there is to know about supernodes, there's a new Neo4j Streams release, and Ilyas Malgazhdarov starts a series of posts on the GRANDstack.
+
+Cheers,
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Julie Fisher
+
+This week's featured community member is Julie Fisher, Risk Modeling Scientist at Asurion.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20201023033409/this-week-in-neo4j-24-october-2020.jpg[name="Julie Fisher"]
+
+Julie is the subject matter expert for graph at Asurion for the fraud machine learning team and also conducts Knowledge Sharing sessions on Python programming for the Risk Analysts. She has a master’s degree in Data Science from Lipscomb University.
+
+Julie is a Neo4j Certified Professional and has been part of the Neo4j community for several years, often answering questions about Cypher and Graph Visualisation on the https://community.neo4j.com/[community site^].
+
+This week, Julie curated all her knowledge about graph visualisation into the https://www.youtube.com/watch?v=XhvfScJkUj4&feature=emb_logo[Not All Visualizations are Created Equal^] talk at NODES 2020. In the talk, Julie describes her best practices for graph visualisations. These include understanding your use case, hiding unwanted data, node structure, and more. 
+
+https://www.linkedin.com/in/julie-fisher-a1b4b524/[Connect with Julie on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== NODES 2020 Keynote — The Next Decade of Graphs 
+
+Our video this week is from Emil Eifrem and Alicia Frame's keynote at the NODES 2020 conference.
+
+youtube::ivOPeDe8IDc[type={type}]
+
+In the first half of the talk, Emil talks about new features in the Neo4j 4.0 and 4.1 series, as well the work being done on Aura, Neo4j's database as a service. Alicia then takes over and talks about the evolution of Graph Data Science and gives a live demo showing how to do this on Neo4j.
+
+[[features-2]]
+=== Announcing: Graph-Native Machine Learning in Neo4j!
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201023020252/image3-2-1.jpg" width="200px"  />
+</div>
+++++
+
+Amy Hodler and Alicia Frame announced the preview release of version 1.4 of the Graph Data Science Library. 
+
+This release includes graph embeddings and a Machine Learning model catalog. Amy and Alicia also https://www.youtube.com/watch?v=b5ArPFip0oE&feature=youtu.be[presented a session^] on the release at the recent NODES 2020 conference.
+
+https://neo4j.com/blog/announcing-graph-native-machine-learning-in-neo4j/[Read the release post, role="medium button"]
+
+[[features-3]]
+=== Graph Modeling: All About Super Nodes
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201023004609/1_oYwkvJujOwcX_jciXzXifg.png" width="200px"  />
+</div>
+++++
+
+David Allen has resumed his advanced graph modeling series of blog posts.
+
+The latest installment is all about supernodes - what they are, the problems they cause, and what to do about them.
+
+https://medium.com/neo4j/graph-modeling-all-about-super-nodes-d6ad7e11015b[Read the blog post, role="medium button"]
+
+[[features-4]]
+=== Neo4j Streams Release, Pulumi Platypus + GRANDstack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* David Allen https://twitter.com/mdavidallen/status/1318195101382868993?s=20[announced a new release^] of the Neo4j Streams library, which contains several important bug fixes.
+
+* Alicia Frame https://issuu.com/mark123/docs/2020-jcs-5-october-web_compressed/s/11152702[published an article in issuu^], in which she describes the master data graph that the German Centre for Diabetes Research has built to make sense of biomedical data.
+
+* Edward Weymouth shows how to https://blog.grandstack.io/pulumi-platypus-and-the-very-grand-stack-be651093877f[deploy a GRANDstack application to GCP^] using Pulumi Platypus. Pulumi is a set of tools for managing infrastructure on any of the major cloud providers.
+
+
+////
+https://twitter.com/i_like_robots/status/1319002409008549888 
+https://twitter.com/mauritsrijk/status/1318998041689468929 
+https://twitter.com/AlbertoGarob/status/1318667258894327808 
+////
+
+[[features-5]]
+=== Quick prototyping with GRAND stack - Product introduction, tech spec, and graph model
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201023015407/matches.png" width=200px"  />
+</div>
+++++
+
+Ilyas Malgazhdarov has started a series of blog posts showing how to build a Tinder for indie hackers web application using the GRANDstack. The GRANDstack is a combination of technologies that work together to enable developers to build data-intensive full-stack applications. 
+
+In the first post, Ilyas walks through mock-ups of the product, creates the graph model using http://www.apcjones.com/arrows/#[Arrows^], and explains the Cypher query behind one of the screens.
+
+https://dev.to/ilyasm/quick-prototyping-with-grand-stack-4g26[Read the blog post, role="medium button"]
+
+
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/jgbrumbaugh[Jim Brumbaugh^]:
+
+tweet::1318569400144785408[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+https://medium.com/neo4j/a-graph-neural-network-to-approximate-network-centralities-in-neo4j-2ee96705a464 - A Graph Neural Network to approximate Network Centralities in Neo4j
+
+* M. David Allen @mdavidallen
+My first developer blog in a while; concepts in Neo4j of queries, transactions, and connections and how to see what your system is doing, and how they connect.
+https://medium.com/neo4j/how-queries-work-in-neo4j-97229988941a 
+
+* https://medium.com/neo4j/graph-modeling-labels-71775ff7d121 - Graph Modeling: Labels
+
+* https://towardsdatascience.com/supercharged-data-science-with-lynxkite-on-neo4j-data-11cd0fa10f41 - Supercharged Data Science with LynxKite on Neo4j data
+
+////

@@ -1,0 +1,202 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 21 Dec 2019
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Analyzing .NET Dependencies, Coloring a Sudoku Graph, Christmas Messages Graph, Making Graph Algorithms ‘Clique’
+
+[Body copy:]
+////
+
+Hi graph gang,
+
+https://neo4j.com/graphtour/[GraphTour^] 2020 gets underway this week with the first stop in https://neo4j.com/graphtour/amsterdam/[Amsterdam^] on 4th February 2020.
+There'll be someone from the Developer Relations team at most of the events, so don't forget to come and say hi.
+
+On 7th February 2020, https://neo4j.com/graph-algorithms-book/[O'Reilly Graph Algorithms Book^] author Amy Hodler will be presenting a webinar titled https://go.neo4j.com/WBR20020710TipsforResponsibleAI_Registration.html[10 Tips for Responsible AI – How Graph Technology Adds Context^], so don't forget to reserve your spot for that. 
+
+And Karin Wolok https://r.neo4j.com/36CTWnB[announced Global Graph Celebration Day^], which occurs on April 15th 2020. If you want to host an event, don't forget to https://r.neo4j.com/36CTWnB[read the blog post^] for more details.
+
+
+Alright, enough of the announcements, and onto the content. 
+
+For this week's video we have a Christophe Willemsen's Graph Tour Mexico City talk about Knowledge Graphs and GraphAware Hume.
+
+Neo4j Bloom 1.2.0 was released, Will Lyon build a local business search app using GraphQL and Neo4j Aura, and 
+
+And finally, I created a QuickGraph of Itsu's food allergens.
+
+Enjoy!
+
+https://twitter.com/markhneedham[Mark^], https://twitter.com/askkerush[Karin^], and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Anthony Chiboucas
+
+This week's featured Neo4j Community member is Anthony Chiboucas, CMS Developer at Downstream. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200131085038/this-week-in-neo4j-1-february-2020.jpg[name="Anthony Chiboucas"]
+
+
+Tony initially connected with us through the https://medium.com/neo4j/so-you-want-to-become-a-neo4j-ninja-c14a9c296713[Neo4j Ninja program^]. 
+
+He works with an interesting company that blends real world and digital experiences.  
+Tony has a graphy-y project he's currently working on (a public, open-source graph and API from a federated database of several museum archives) that he was interested in sharing with the global community.  
+
+He'll be presenting that in a couple weeks at the https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^],  so keep a lookout!
+
+Tony is one of those pretty rare community members that got into the community and jumped in full steam ahead.  It's like he's been waiting for the right opportunities to get involved and finally found them (or maybe just fell into the graph epiphany at the right time!) :D
+He's a nice guy and we highly suggest you stop and say hello!
+
+Thanks, Tony, for being so awesome and passionate about giving back to the community.  We're grateful to have you!
+
+https://www.linkedin.com/in/chiboucas/[Connect with Anthony on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== GraphTour: Knowledge Graphs in Action
+
+This week's video is from GraphTour Mexico City, where Christophe Willemsen presented on knowledge graphs and the https://hume.graphaware.com/[Hume platform^].
+
+youtube::pRSEs9V6-4U[type={type}]
+
+In the talk Christophe shows how to build a graph from the entities extracted from unstructured data, and these uses graph visualisations to discover new insights into the data.
+
+[[features-2]]
+=== Neo4j Bloom 1.2.0 Released
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200131042113/bloom-icon-grey.png" width="150px"  />
+</div>
+++++
+
+Neo4j Bloom, the breakthrough graph visualization, exploration and communication tool, released version 1.2.0 this week. This release adds some cool features, including:
+
+* new expandable legend with ability to configure style of nodes and relationships directly from the canvas
+* Selective expansion - expand only some neighbors of a node based on relationship type, category or a mix of both
+* advanced styling - users can now: 
+** choose from a full spectrum of colors
+	** configure both color and size of nodes and relationships
+	** style nodes and relationships using powerful data-driven rules based on property values, value ranges, wildcard matches, and existence of labels or property keys
+And more!
+
+The new version will be automatically picked up by the Neo4j Desktop, but can also be https://go.neo4j.com/download-bloom.html[downloaded from the download centre^]. An https://neo4j.com/docs/bloom-user-guide/1.2/[updated user guide^] is also available.
+
+https://github.com/neo4j-apps/neo4j-bloom/releases/tag/1.2.0[Read the release notes, role="medium button"]
+
+[[features-3]]
+=== Exporting data, Query Performance, Threat and Malware Graph
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200131074956/Graph_ATTCK_CTI.png" width="150px"  />
+</div>
+++++
+
+* I wrote a blog post showing how to get data from one Neo4j database to another one https://markhneedham.com/blog/2020/01/27/neo4j-exporting-subset-database/[using the export JSON procedure^].
+
+* Kees Vegter https://medium.com/neo4j/neo4j-query-log-analyzer-and-db-analyzer-update-for-neo4j-4-0-with-new-features-181081a464a7[released new versions of Neo4j Query Log Analyzer and DB Analyzer^], which now have support for multi databases, a feature added in the https://neo4j.com/release-notes/neo4j-4-0-0/[latest version of Neo4j^].
+
+* https://twitter.com/Kirtar_Oza[Krishna^] published https://github.com/Kirtar22/ATTACK-Threat_Intel[ATTACK-Threat_Intel^], a graph Representation of MITRE ATT&CK's CTI data
+
+* I wrote a blog post showing how to https://markhneedham.com/blog/2020/01/28/neo4j-database-dump-docker-container/[perform a database dump within a Docker container^]
+
+* Michael Hunger https://soundcloud.com/a-bootiful-podcast/neo4js-mad-scientist-michael[was interviewed^] on the latest episode of A Bootiful Podcast. 
+
+* Max De Marzi shares some of his https://maxdemarzi.com/2020/01/16/getting-the-latest-transactions/[favourite modelling tips and tricks^] to reduce the amount of time a query takes from just over 9 seconds to just 1 millisecond.
+
+* Ramon Ramentol gives us https://coil.com/p/moncho/XRPLORE-A-Sneak-Peek-on-XRPLORER/qXYmWJ3HI[a sneak peak of XRPLORER^], a XRPL data analytics and forensics platform. 
+
+
+
+[[features-4]]
+=== Working With Spatial Data In Neo4j GraphQL In The Cloud
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200131070832/king-of-graphql.png" width="150px"  />
+</div>
+++++
+
+Will Lyon has written a blog post in which he shows how to build a GraphQL API to find local businesses with help from neo4j-graphql.js, Neo4j Aura, and Zeit Now.
+
+Will starts with examples of creating and querying spatial data in Neo4j, before using neo4j-graphql.js’s https://blog.grandstack.io/inferring-graphql-type-definitions-from-an-existing-neo4j-database-dadca2138b25[inferSchema function^] to derive a GraphQL schema from the contents of the database. We then use the GraphQL playground to query the dataset.
+
+https://blog.grandstack.io/working-with-spatial-data-in-neo4j-graphql-in-the-cloud-eee2bf1afad[Read the blog post, role="medium button"]
+
+[[features-5]]
+=== QuickGraph: Itsu Allergens
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20200131043127/Itsu_logo.svg" width="120px"  />
+</div>
+++++
+
+In a QuickGraph from December, we create a graph of allergen data for Itsu, a British chain of East Asian-inspired fast food shops and restaurants. 
+
+We find the most prevalent allergens, the ones that appear together, before trying to find something that I can eat in the restaurant given my list of allergies.
+
+https://markhneedham.com/blog/2019/12/23/quick-graph-itsu-allergens/[Read the blog post, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/JorisAarts[Joris Aarts^]:
+
+tweet::1222307040204410881[type={type}]
+
+////
+
+https://maxdemarzi.com/2020/01/21/going-faster-in-2020/
+
+https://medium.com/neo4j/arrows-hacks-tricks-for-your-graph-models-and-diagrams-371ca2810c56 
+Arrows Hacks — tricks for your graph models and diagrams
+
+https://markhneedham.com/blog/2020/01/16/interactive-uk-charts-quickgraph-neo4j-streamlit/
+Creating an Interactive UK Official Charts Data App with Streamlit and Neo4j
+
+https://tagtaxa.com/getting-an-insight-of-blockchain-transactions-with-neo4j-graph-database/ 
+Sinisa DrpaSinisa Drpa
+Getting an Insight of Blockchain Transactions Flow with Neo4j Graph Database
+In the previous post I described how to explore and better understand information on Lisk blockchain by running SQL queries directly on the blockchain database. In this article I'll try to explain how to export the data from Lisk relational database to Neo4j graph database in order to be able
+
+
+
+https://medium.com/@hongpingliang/human-genes-graph-980b379baaaf
+Human Genes Graph
+
+
+https://medium.com/neo4j/flights-search-application-with-neo4j-using-cypher-and-apoc-custom-procedures-part-2-401fd90bf5c4
+Flights Search Application with Neo4j —Using Cypher queries and APOC Custom Procedures (Part 2)
+
+https://markhneedham.com/blog/2020/01/29/neo4j-finding-longest-path/
+
+* #Bioinformatics projects with public @neo4j databases, including @reactome and Hetionet by @dhimmel: https://graphdb-bio.com/projects-using-neo4j-1
+
+
+
+
+* https://github.com/trinitor/netstat2neo4j 
+
+* Opcito @opcito
+For any business, data is crucial and reducing the recovery time in an unprecedented event is vital. Here is how you can automate Neo4J database backup and restore using Ansible - https://bit.ly/35k2D5M
+
+* https://info.michael-simons.eu/2019/08/22/whats-a-bill-of-material-bom-file/
+
+////
+

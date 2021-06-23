@@ -1,0 +1,144 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+Discover what's new in the Neo4j community for the week of 22 December 2018
+
+
+[Primary Image File Name:]
+this-week-neo4j-22-december-2018.jpg
+
+[Primary Image Alt Text:]
+Explore everything that's happening in the Neo4j community for the week of 22 December 2018
+
+[Headline:]
+This Week in Neo4j – Building a dating website, 
+
+[Body copy:]
+////
+
+This week Bea Hernández shared the slides from her talk at SatRDays on my favourite two topics - football and graphs! The Kafka connector that we've previously featured was released in the Confluent Marketplace, and Michael Hunger showed us how to analyse StackOverflow data using the Neo4j Graph Algorithms library.
+
+https://neo4j.com/graphtour/[GraphTour EU^] continues after a week's break. The next two locations are Stockholm on 5th March, and Berlin on 12th March. There are still tickets available, so don't forget to register if those two cities are local to you!
+
+
+[[featured-community-member]]
+=== Featured Community Member: Jhonathan de Souza Soares
+
+This week's featured community members is Jhonathan de Souza Soares. 
+
+featured::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190301130455/this-week-in-neo4j-2-march-2019.jpg[name="Jhonathan de Souza Soares"]
+
+Jhonathan is an educator at Universidade Estadual de Campinas, a .NET Architect, a https://mvp.microsoft.com/en-us/PublicProfile/5001659?fullName=Jhonathan%20%20Soares[Microsoft MVP^], and a https://neo4j.com/graphacademy/neo4j-certification/[Certified Neo4j Developer^] from São Paulo, Brazil. 
+
+Jhonathan has been very engaged in the Neo4j community for many years. He's actively involved in the organization of regional NoSQL conferences and many local meetups in his area. Frequently, he presents on Neo4j-related topics at these events. In addition to his activity in the local tech community in Sao Paulo, his self-determination and motivation to help others learn and adopt graph databases into their stack has motivated him to volunteer to translate the https://neo4j.com/whitepapers/rdbms-developers-graph-databases-ebook/[EBook: Definitive Guide to Graph Databases^] to Portuguese.
+
+He was also the first in our community to register his local event for http://globalgraphcelebrationday.com[Global Graph Celebration Day^] for April 15th!.  As a community, we would like to thank you for all that you do for us, Jhonathan!  
+
+link:https://www.linkedin.com/in/jhonathansouza/[Connect with Jhonathan on LinkedIn, role="medium button"]
+
+[[features-1]]
+=== All About the Kafka Connect Neo4j Sink Plugin
+
+++++
+<div style="float:right; padding: 2px">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190301024710/Screen-Shot-2019-02-14-at-4.26.54-PM-e1551372728845.png" width="350px"  />
+</div>
+++++
+
+Michael Hunger and Andrea Santurbano published an article on the Confluent blog announcing the release of the Kafka Connect Neo4j Sink on Confluent Hub. 
+
+This release builds on the Kafka Sink - Neo4j extension that we've previously featured, but now makes it available via remote connections over the binary bolt protocol. This means that you can now stream your events from Apache Kafka® directly into Neo4j to create, update and enrich your graph structures. 
+
+link:https://www.confluent.io/blog/kafka-connect-neo4j-sink-plugin[Read the blog post, role="medium button"]
+
+[[features-2]]
+=== On the podcast: Amy Hodler
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190208023956/logopodcast-1.jpg" width="150px"  />
+</div>
+++++
+
+This week on the Graphistania podcast, Rik interviewed https://twitter.com/amyhodler[Amy Hodler^], Graph Analytics and AI Program Manager at Neo4j.
+
+Amy is the author of the upcoming O'Reilly book https://www.oreilly.com/library/view/graph-algorithms/9781492047674/[Graph Algorithms: Practical Examples in Apache Spark and Neo4j^]. The book will be released in Spring 2019, but you can view an Early Access version via O'Reilly's Safari platform. 
+
+They talk about Amy's experience writing the book, her path into the world of graphs via books written by Nassim Nicholas Taleb and James Gleick, and Amy's predictions for the future of graphs and AI.
+
+link:https://blog.bruggen.com/2019/02/podcast-interview-with-amy-hodler-neo4j.html[Read the transcript, role="medium button"]
+
+++++
+<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/581656839&amp;color=44c13e"></iframe>
+<br /><br />
+++++
+
+
+
+[[features-3]]
+=== How to Automate Neo4j Deploys on Azure
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190301024553/1_PxLCSedOps7_QGhSrzd9Uw1.png" width="150px"  />
+</div>
+++++
+
+David Allen continues his series of posts showing how to automate Neo4j deployments on the major cloud platforms, this time sharing his automation scripts for Microsoft Azure. 
+
+link:https://medium.com/neo4j/how-to-automate-neo4j-deploys-on-azure-d1eaeb15b70a[Read the blog post, role="medium button"]
+
+
+[[features-4]]
+=== TagOverflow  -  Correlating Tags in Stackoverflow 
+
+
+In this week's https://www.meetup.com/Neo4j-Online-Meetup/[Neo4j Online Meetup^], Michael Hunger shows us how to analyse StackOverflow data using the Neo4j Graph Algorithms library.
+
+youtube::bIErDD2Hnhg[type={type}]
+
+Michael shows how to compute tag correlations using the Jaccard Similarity algorithm, and then use those correlations to run other graph algorithms, such as PageRank, Betweenness Centrality, and Label Propagation. 
+
+Michael also published his work in https://towardsdatascience.com/tagoverflow-correlating-tags-in-stackoverflow-66e2b0e1117b[a blog post^] back in December 2018.
+
+[[features-5]]
+=== Football meets graphs
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190301024958/satRdayLogo.png" width="150px"  />
+</div>
+++++
+
+Last weekend Bea Hernández presented Football meets graphs at the SatRDays conference.
+
+Bea shows how to model football matches in a graph, and then home advantage and competitiveness using matches from La Liga and the Premier League.
+
+
+link:https://docs.google.com/presentation/d/1TbsADzwz8fDOATlkhcIyTFu3lakq4wN5vqRLe2HFx_A/edit#slide=id.p[Download the slides, role="medium button"]
+
+=== Tweet of the Week
+
+My favourite tweet this week was by https://twitter.com/geneticsdev[Marc Duby^]:
+
+tweet::1100473518372896768[type={type}]
+
+Don’t forget to RT if you liked it too.
+
+That’s all for this week. Have a great weekend!
+
+Cheers, Mark
+
+////
+
+Introduction to yWorks and yFiles 
+https://www.youtube.com/watch?v=br3momUyCsI 
+
+
+////

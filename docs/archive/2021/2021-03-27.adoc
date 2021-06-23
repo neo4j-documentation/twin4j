@@ -1,0 +1,164 @@
+﻿:linkattrs:
+:type: "web"
+
+////
+[Keywords/Tags:]
+<insert-tags-here>
+
+
+[Meta Description:]
+
+
+
+[Primary Image File Name:]
+this-week-neo4j-21-dec-2019.jpg
+
+[Primary Image Alt Text:]
+
+
+[Headline:]
+This Week in Neo4j - Versioner Core, NODES CfP, GRANDstack CMS, GraphStuff.FM podcast,
+
+[Body copy:]
+////
+
+Hello, everyone!
+
+In this week's episode, Marco Falcier announced an update to the neo4j-versioner-core library. 
+
+NODES 2021 Call for Papers *ends April 5*. Cristina walks through how she and Alisson migrated Neo4j’s GraphGist portal to the GRANDstack. GraphStuff.FM is now live - a podcast for all things graph.
+
+And finally, Davide shows us how to test polyglot with Github Actions, Lju gives us a fun game to play with data, and Will builds the next part of the podcast application.
+
+Cheers,
+https://twitter.com/jmhreif[Jennifer^] and the Developer Relations team
+
+
+[[featured-community-member]]
+=== Featured Community Member: Zuye Zheng
+
+
+This week's featured community member is Zuye Zheng.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210326192351/this-week-in-neo4j-27-march-2021.jpeg[name="Zuye Zheng"]
+
+Zuye is a Principal Architect at Salesforce in San Francisco, where he leads the development of the Salesforce Analytics experience for traditional reports and dashboards and ML augmented interfaces leveraging natural language and semantic graphs. Before that, he worked at Duetto Research and co-founded AppMesh.
+We saw Zuye's really interesting article a few weeks ago on https://medium.com/geekculture/graphing-r-investing-and-r-wallstreetbets-c9f9f9276d69[Graphing r/Investing and r/Wallstreetbets] where he imported Reddit posts, comments, users, and stock symbols they talked about into Neo4j and ran a number of graph analysis experiments on them. We hope to see more cool uses of graphs coming from him in the future.
+
+https://www.linkedin.com/in/zuyezheng/[Connect with Zuye on LinkedIn, role="medium button"]
+
+
+[[features-1]]
+=== Updates to neo4j-versioner-core library
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210325131932/es-data-model.png" width="150px"  />
+</div>
+++++
+ 
+Marco Falcier and Alberto D'Este have updated the popular neo4j-versioner-core library that allows users to handle data versioning in Neo4j.
+
+This library helps keep track of entity state in the database. It is added as an extension, just like APOC or custom plugins would be. We can clone the repository, add it to the plugins directory in Neo4j, and restart the database. For more details on functionality and usage, there is https://github.com/h-omer/neo4j-versioner-core/blob/master/docs/index.md[documentation] in the Github repository.
+
+https://github.com/h-omer/neo4j-versioner-core[Check out the Github repository, role="medium button"]
+
+
+[[features-2]]
+=== Call to NODES
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210325133255/nodes2021-banner-crop.png" width="200px"  />
+</div>
+++++
+
+The closing date for this year's Neo4j Online Developer Expo and Summit (NODES) call for papers (CfP) is just around the corner! You have until *April 5 at 23:30 UTC* to get your submissions in. Need some help with the process?
+
+* Here’s a https://medium.com/neo4j/nodes-2021-is-coming-and-we-need-you-c93be99ebce4[blog post] on why to submit to NODES and coming up with ideas
+* Check out this http://graphstuff.fm/[GraphStuff.FM podcast] on putting together a technical presentation
+* Ask any questions on our https://discord.gg/neo4j[Discord server] in #nodes
+* Or alternatively on https://community.neo4j.com/t/nodes-2021-june-17-talk-submission-questions/[the forum]
+
+We look forward to hearing your graph story! 
+
+https://www.papercall.io/nodes-2021[Submit a talk to NODES 2021, role="medium button"]
+
+
+[[features-3]]
+=== Building a CMS with the GRANDstack
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210325194638/graphgist-portal.png" width="200px"  />
+</div>
+++++
+
+Cristina wrote a blog post about how she and her colleague, Alisson, updated our http://portal.graphgist.org[GraphGist portal^]. The portal contains short, interactive examples of graphs with a variety of data sets and includes data models and sample queries.
+
+Cristina and Alisson migrated the existing application from a Ruby on Rails codebase to a new and improved GRANDstack structure. The blog post walks through how they did it - from data in the Neo4j database to GraphQL queries to the content approval process.
+
+Thank you, Cristina and Alisson, for the amazing work you did!
+
+https://medium.com/neo4j/building-a-graphql-based-cms-with-the-grandstack-781ec083b240[Read the blog post, role="medium button"]
+
+
+[[features-4]]
+=== New! GraphStuff.FM Podcast
+
+++++
+<div style="float:right; padding: 2px; padding-left: 4px;">
+<img src="https://dist.neo4j.com/wp-content/uploads/20210325202224/graph.fm_.png" width=150px"  />
+</div>
+++++
+
+Will Lyon and Lju Lazarevic are co-hosting a new podcast all about graphs - https://graphstuff.fm/[GraphStuff.FM^]! It’s your one-stop-shop for all things graph and connected data.
+
+There are two podcast episodes released so far with more to come. Tune in to the https://graphstuff.fm/episodes/navigating-a-technical-conference-talk-from-submission-to-delivery[latest episode^] to hear how to navigate a conference from submission to delivery.
+
+https://graphstuff.fm/[Tune in and subscribe to the podcast, role="medium button"]
+
+
+[[features-5]]
+=== Testing Polyglot with Github Actions, Explore Neo4j, GRANDstack Podcast App
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002012844/noun_Book_1908773.png" width="200px"  />
+</div>
+++++
+
+* Davide Fantuzzi shows us how they built a CI pipeline to https://medium.com/larus-team/testing-polyglot-libraries-with-github-actions-20669ae19238[test polyglot with Github actions^], starting with Python.
+
+* Lju Lazarevic gives you a fun, pandemic-friendly way to https://medium.com/neo4j/getting-to-know-you-getting-to-know-all-about-you-1cd0d2aacc6b[try Neo4j with friends^].
+
+* Will Lyon released another blog post (#5) in his https://lyonwj.com/blog/grandstack-podcast-app-chakra-ui-responsive-nav-bar-episode-component[podcast application series].
+
+
+=== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/RJElsinga[RoelOf Jan Elsinga^]:
+
+tweet::1368523106596368402[type={type}]
+
+Don't forget to RT if you liked it too!
+
+
+
+////
+
+=== TWIN4j Featured Member Nominations
+
+++++
+<div style="float:right; padding: 2px	">
+<img src="https://dist.neo4j.com/wp-content/uploads/20201002023837/noun_Knight_18620.png" width="150px"  />
+</div>
+++++
+
+On a brief side note, we are looking for nominations for future featured community members. 
+
+So if you know someone who's doing cool stuff with Neo4j, be it a colleague, a friend, or even yourself, please let me know by filling in the form below. If you provide your name, we'll make sure to mention you when we do the write-up.
+
+https://docs.google.com/forms/d/e/1FAIpQLSe_eyWds17yMX35fFfAoIjMoXbGL9yGmCJk8JorCV1in7zJQQ/viewform[Send your nomination, role="medium button"]
+
+////

@@ -80,7 +80,7 @@ In his blog, he describes how he prepared the database for loading, loaded the d
 He then shows how he explored the data in Bloom.
 And finally, he explains how he used some graph algorithms to further analyze the data.
 
-http://blog.bruggen.com/2021/06/network-analysis-of-shakespeares-plays.html/[Read the Blog, role="medium button"]
+http://blog.bruggen.com/2021/06/network-analysis-of-shakespeares-plays.html[Read the Blog, role="medium button"]
 
 // #neo4j #bloom #neo4jbloom #algorithms #import #CSV #shakespeare
 

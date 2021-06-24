@@ -1,0 +1,6 @@
+In this week's #twin4j, we highlight Neo4j 4.3 and some speakers/events around NODES 2021.There is a new graph app and python library to check out.
+We point you to the recordings around NODES-2021.
+
+https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/
+
+#neo4j #nodes2021 #prov2neo #semspect

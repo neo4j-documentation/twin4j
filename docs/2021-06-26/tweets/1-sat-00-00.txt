@@ -1,0 +1,6 @@
+In this week's #twin4j, we feature Kacha Mukabe who was the first-place winner in our Leonhard Euler Idea Contest which was a 2-month hackathon for developers who wanted to demonstrate an application that used GraphQL.
+
+
+https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#featured-community-member
+
+#neo4j #graphql

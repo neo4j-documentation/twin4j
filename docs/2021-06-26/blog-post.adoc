@@ -1,0 +1,196 @@
+= This Week in Neo4j - Neo4j 4.3, SemSpect Graph App, Reconciling Taxonomies, Contest Winners, Relationship Indexes, prov2neo, NODES 2021 Recordings
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Elaine Rosenberg
+// twin4j is added automatically
+:tags: neo4j, hackathon, graphql, devops, cluster, scalable, cypher, relationships, visualization, CSV, graphapp, \
+ontology, neosemantics, OWL, RDF, euler, index, graphmodel, python, nodes-2021, \
+semspect, wc3, prov
+
+Hello, everyone!
+
+We here at Neo4j are still "abuzz" about the presentations last week at NODES 2021 and the exciting announcements by Emil about
+Neo4j 4.3, Aura Free Tier, the massive trillion relationship graph, and the series F funding.
+
+Let's keep up the momentum!
+
+This week we feature Kacha Mukabe who is the winner of our Leonhard Euler Idea Contest. He had no Neo4j experience to start with, but he was able to create an impressive submission using GraphQL.
+We point you to an article that highlights the features of the latest Neo4j 4.3 release.
+Thorsten Liebig from Derivo GmbH has released SemSpect, a Neo4j Desktop Graph App that enables you to explore graphs.
+We also point you to the presentation that Liz Michel did at NODES 2021 and the blog posts she has written about analzing ontologies with Neo4j.
+The Leonhard Euler Idea Contest winners were announced last week at NODES 2021.
+Of course, Rik Van Bruggen, jumped into a demonstration of why relationship indexes are such a big deal.
+Andreas Schreiber has just released _prov2neo_ a Python library for importing PROV documents into the graph.
+
+And finally, we end with links to the NODES 2021 recordings which include the pre-NODES hands-on training sessions and the conference sessions.
+
+[[featured-community-member]]
+== Featured Community Member: Kacha Mukabe
+
+This week's featured community member is Kacha Mukabe.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210624114337/this-week-in-neo4j-26-June-2021.jpeg[name="Kacha Mukabe"]
+
+Kacha is this year's winner of the Leonhard Euler Idea Contest, a hackathon that we hosted prior to NODES 2021.
+In his project that he entered for the contest, he created an application, _Developers.Zed_ that could be used to collect information about developer skills and provide recommendations.
+He built his application using GRANDstack and used ChakraUI and next.js for the front-end application and an express GraphQL back-end using a Neo4j database.
+
+Kacha has worked for financial institutions developing applications using his Python, Django, Javascript, .NET, and Java skills.
+In addition, he is the CTO and founder of https://explorer.education/[Explorer School^] in Zambia where he provides opportunities for software development and outsourcing skills.
+
+We congratulate Kacha for digging into Neoj as a new user and using https://lyonwj.com/blog/[William Lyon's blog^] as a resource to create his application.
+
+// linkedin link
+https://www.linkedin.com/in/kachamukabe/[Connect with Kacha on LinkedIn, role="medium button"]
+
+// #neo4j #hackathon #graphql #explorereducation
+
+[[features-1]]
+== Neo4j 4.3 Release
+
+image::https://dist.neo4j.com/wp-content/uploads/20210616120456/social_share.png[width=150,float="right"]
+
+Neo4j engineering has released Neo4j 4.3 that includes new features and more performance improvements:
+
+* More for devops support:
+** Improved Kubernetes integration
+** Prometheus monitoring improvements
+** Parallelized backup and restore
+** Single IP address for cluster server-side routing
+* Security improvements to RBAC and logging
+* Performance improvements:
+** Smart IO scheduling
+** Finer-grained locking for relationship updates to speed up writes by 10X
+** Index relationship properties for faster queries (73% fewer DB hits)
+** Unlimited scale out for analytical workloads with Single Core Read Replicas
+** Query planner improvements for queries using LIMIT or ORDER BY
+
+https://neo4j.com/blog/introducing-neo4j-4-3-the-fastest-path-to-graph-productivity/[Read about Neo4j 4.3, role="medium button"]
+
+// #neo4j #devops #cluster #scalable #cypher #relationships
+
+[[features-2]]
+== SemSpect Graph App
+
+image::https://dist.neo4j.com/wp-content/uploads/20210624114330/SemSpectGraphApp.png[width=150,float="right"]
+
+https://twitter.com/tliebig/[Thorsten Liebig] from https://www.derivo.de/en/home/[Derivo GmbH^] has just released a Graph App for Neo4j Desktop.
+Like Neo4j Bloom, SemSpect provides you with the ability to explore graphs when you are not familiar with the graph.
+It uses a data-driven approach to exploring the nodes and relationships in the graph.
+With SemSpect, you can explore the patterns in the graph and save them.
+You can filter your explorations and apply filters to other views.
+You can also export the result of your explorations to CSV files.
+One benefit of using SemSpect is that it can be used on data that is changing in the graph.
+
+https://doc.semspect.de/docs/neo4j-graph-app/[Read about SemSpect, role="medium button"]
+
+// #neo4j #semspect #visualization #CSV #graphapp
+
+[[features-3]]
+== Reconciling Taxonomies using Ontologies
+
+image::https://dist.neo4j.com/wp-content/uploads/20210624114323/Ontologies-LizMichel.png[width=150,float="right"]
+
+https://linkedin.com/in/elizabeth-michel-7944703b/[Liz Michel] was a speaker this year at NODES 2021.
+Her presentation was _Bridging the Gap: Using Graph Data Science to Reconcile Disparate Data with Ontologies_.
+You can watch her presentation in the recorded sessions (scroll down).
+Her presentation outlined some of the  issues with reconciliations and showed how the alignment can be done for large graphs.
+
+Besides her presentation at NODES 2021, we found that she wrote an interesting blog on using ontologies with Neo4j using NeoSemantics.
+The blog she published last year was https://www.tamr.com/blog/how-to-leverage-ontologies-with-your-mastered-data/[How To Leverage Ontologies with your Mastered Data^]
+
+She recently published another blog, that covers some of what she presented at NODES entitled _A Data Scientist’s Rosetta Stone: Unifying Disparate Data with Ontologies_.
+
+https://www.tamr.com/blog/unifying-disparate-data-with-ontologies/[Read her latest Blog, role="medium button"]
+
+// #neo4j #ontology #neosemantics #OWL #RDF
+
+[[features-4]]
+== Leonhard Euler Idea Contest Winners
+
+image::https://dist.neo4j.com/wp-content/uploads/20210414230850/leonhard-euler-idea-contest.png[width=150,float="right"]
+
+Every year for our NODES conference, we sponsor a hackathon that lasts a couple of months and gives users and opportunity to create a Neo4j application.
+This year we set out to focus the hackathon on applications built using GraphQL.
+For the contest, we had over 305 folks who registered for the hackathon and 28 of them developed applications that they submitted for adjudication.
+The criteria that we used to judge the entries included originality (50%), implementation complexity (30%), and feasibility of solution (20%).
+
+We awarded prize monies to the three winners and also to submissions that earned the "most creative" designation.
+
+Here are the three winners:
+
+. _Developers.Zed_ where you can find software developers in Zambia through easy links and recommendations. It's like Linked-in for developers in Zambia.
+. _Help Me_ which is like Stack Overflow but for social good. Ask for help, lend help to others, earn gratitude and create strong relationships.
+. _SeedFundMe_, a kickstarter style website for investing in small businesses that are ready to grow.
+
+Congratulations to all who won prizes and a big thank you to all who submitted their Leonhard Euler ideas!
+
+https://neo4j.com/developer-blog/announcing-10-000-leonhard-euler-idea-contest-winners/[Read about the Hackathon, role="medium button"]
+
+// #neo4j #hackathon #euler
+
+[[features-5]]
+== Revisiting COVID-19 Graph Using Relationship Indexes
+
+image::https://dist.neo4j.com/wp-content/uploads/20210624114326/RIK-relationship-indexes.png[width=150,float="right"]
+
+We here at Neo4j are thrilled at the Neo4j 4.3 feature of indexes on relationship properties.
+Our own https://twitter.com/rvanbruggen/[Rik Van Bruggen^] from Neo4j could not wait to jump in and try it out.
+He points out how relationship indexes mean much better query performance through relationships, but also has implications around how you model your data.
+In this blog, he shows how he created the data for contact tracing.
+He demonstrated the performance using node indexes vs. relationship indexes.
+It is a very nice illustration of why you might want to consider modeling this way and using relationship indexes in your graph.
+
+http://blog.bruggen.com/2021/06/revisiting-covid-19-contact-tracing.html[Read the Blog, role="medium button"]
+
+// #neo4j #index #relationship #graphmodel #cypher
+
+[[features-6]]
+== prov2neo released - Import W3C
+
+image::https://dist.neo4j.com/wp-content/uploads/20210624114334/prov2neo.png[width=150,float="right"]
+
+https://twitter.com/onyame/[Andreas Schreiber] just released _prov2neo_.
+_prov2neo_ is a Python library that enables you to import PROV documents from W3C into a graph.
+The PROV formats that it supports are:
+
+* PROV-N
+* PROV-O (RDF)
+* PROV-XML
+* PROV-JSON
+
+https://github.com/DLR-SC/prov2neo/releases/tag/v1.0/[View the Repo, role="medium button"]
+
+// #neo4j #prov #WC3 #python
+
+[[features-7]]
+== NODES 2021 recordings
+
+image::https://dist.neo4j.com/wp-content/uploads/20210617145146/NODES-2021-twin.png[width=150,float="right"]
+
+We are working toward providing the recordings and slide resources from NODES 2021.
+You can view the recordings for each track and use the bookmarks to view a particular session in a track.
+The slides will be posted soon, but we just wanted to make the recordings available to you as soon as possible.
+
+As a reminder also, we have posted the pre-NODES hands-on training sessions:
+
+* https://neo4j.brand.live/c/2021nodes-training-monday/[Hands-on Introduction to Neo4j (Lju Lazarevic)^]
+* https://neo4j.brand.live/c/2021nodes-training-tuesday/[Hands-on with Neo4j Aura Free Tier (Jennifer Reif)^]
+* https://neo4j.brand.live/c/2021nodes-training-wednesday/[Getting Started with Neo4j Bloom (Lju Lazarevic)^]
+* https://neo4j.brand.live/c/2021nodes-training-thursday/[Building GraphQL APIs with the Neo4j GraphQL Library (William Lyon)^]
+* https://neo4j.brand.live/c/2021nodes-training-friday/[Creating a Knowledge Graph with Neo4j: A Simple Machine Learning Approach (Clair Sullivan)^]
+
+https://neo4j.brand.live/c/2021nodes-live[View the NODES 2021 recordings here, role="medium button"]
+
+// #neo4j #nodes2021
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/@adamcowley[Adam Cowley^]:
+
+tweet::1407353040487714819[type={type}]
+
+Don't forget to RT if you liked it too!

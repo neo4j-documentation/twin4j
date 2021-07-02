@@ -1,0 +1,5 @@
+In this week's #twin4j, we provide you links to the session recordings for NODES 2021 as well as links to the pre-NODES hands-on training session recordings.
+
+https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-7
+
+#neo4j #nodes2021

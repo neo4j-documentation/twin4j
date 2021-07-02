@@ -1,0 +1,5 @@
+In this week's #twin4j, @rvanbruggen describes how using relationship indexes, now available in Neo4j 4.3 can be a real game-changer for some applications.
+
+https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-5
+
+#neo4j #index #relationbships #cypher

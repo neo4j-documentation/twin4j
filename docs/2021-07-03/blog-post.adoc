@@ -1,0 +1,178 @@
+// 2021-07-03
+= This Week in Neo4j - Behind the Trillion Graph, Mocking Neo4j in Javascript, Bloom Tricks, Reactive Driver, Cloud Integrations, Data Science Talks, Neo4j Review, Aura Quickstart Videos
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Michael Hunger
+// twin4j is added automatically
+:tags: neo4j, mocking, javascript, graphql, kafka, spark, aura, data-science, fastrp, embeddings, integrations, scaling, sharding, fabric, unit-testing, reactive, bloom, kubernetes, knowledge-graph
+
+Hello, everyone!
+
+Even with the start of the summer and NODES behind us, there is no pause of activity in the Neo4j community. This week we've seen a lot of articles, projects and initiatives popping up.
+
+This week's featured member Yisroel Yakovson just published a mocking library for the Neo4j Javascript driver that you should check out.
+
+One of the big announcements was the Trillion Relationship Graph demonstration - in Chris Gioran's article we can see what happened behind the scenes.
+
+Then we look at some advanced Bloom topics, with Dan Flavin magic search queries and Angeliki's explanation of the reactive Javascript driver usage for large data volumes. 
+For those of you rather watching videos we have all the talk recordings of the NODES data science track with knowledge graphs, link prediction and dream analysis, followed by Ashley Faith's Neo4j review video (featuring Dave Voutila) as well as a new set of Aura intro videos that you can share with your colleagues and friends. 
+
+David Allen was a guest on the graphstuff.fm podcast, discussing integrations with Apache Spark and Kafka as well as Bi Analytics and GraphQL APIs with Will Lyon.
+
+And prolific talk commentator par excellence, Will Lyon shares the content of his NODES talk in a Twitter Thread.
+
+Cheers, Michael
+
+[[featured-community-member]]
+== Featured Community Member: Yisroel Yakovson
+This week's featured community member is Yisroel Yakovson
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210702074501/this-week-in-neo4j-03-July-2021.jpeg[name="Yisroel Yakovson"]
+
+Yisroel lives in  from Jerusalem, Israel and is CEO of https://www.nostack.net/[NoStack^], an online service allowing front-end developers to manage a full virtual stack. They integrate with Neo4j and are using GraphQL with GRANDstack. In that function he provided a lot of feedback for the GraphQL integrations we built at Neo4j.
+Yisroel has been an active member of the Neo4j community for quite some time. 
+
+He wrote his https://www.linkedin.com/in/yisroelyakovson/[first articles^] in 2018 explaining the power of https://medium.com/free-code-camp/meet-the-full-graph-stack-d32150308a87["Full Graph Servers"^], using GraphQL and Neo4j.
+
+This week he published an article about https://medium.com/neo4j/how-to-mock-neo4j-calls-in-node-7066c52ac468["Mocking Neo4j calls in Node Applications"^]. He explains how unit testing with Neo4j was not as flexible and easy as he wanted and how he went ahead building https://www.npmjs.com/package/neo-forgery[neo-forgery^] a testing library to mock calls of the official Neo4j Javascript driver. Please try it out and let him know how well it worked for you.
+
+Thanks a lot Yisroel for all your work at NoStack, content and projects in the Neo4j community.
+
+// linkedin link
+https://www.linkedin.com/in/yisroelyakovson/[Connect with Yisroel on LinkedIn, role="medium button"]
+
+// #neo4j #unit-testing #mocking #javascript
+
+[[features-1]]
+== Behind the Scenes of the Trillion Relationship Graph
+
+image::https://dist.neo4j.com/wp-content/uploads/20210702074503/trillion-graph.jpg[width=150,float="right"]
+
+One of the big highlights of NODES was the demo of the Trillion relationship graph in Emils keynote. And not just because of the coffee-mug-meme. The engineering team put together that scale demonstration within 3 weeks, putting 280TB of data onto 1200 servers and making it all run smoothly to deliver response times in the double digit milliseconds across the federated, sharded fabric cluster.
+
+Neo4j Architect Chris Gioran invites us to peek behind the curtain and tells the story of making this CEO challenge work. Interesting to see the fun we had with AWS and the approach we took to make it work. 
+
+And the best thing is - you can try it for yourself. We put the https://github.com/neo4j/trillion-graph[code for generating data, provisioning machines and the example app on GitHub^]. Just remember to watch your AWS bill!
+
+https://medium.com/neo4j/behind-the-scenes-of-creating-the-worlds-biggest-graph-database-cd22f477c843[Look under the hood of the Trillion Graph, role="medium button"]
+
+// #neo4j #devops #cluster #scalable #trillion #sharding #federation
+
+[[features-2]]
+== How to Create Conditional and Dynamic Queries in Neo4j Bloom
+
+image::https://dist.neo4j.com/wp-content/uploads/20210702074451/bloom-dynamic-queries.png[width=150,float="right"]
+
+Dan Flavin does it again, in one of his funny and deeply educational articles he explores how to utilize the magic of `apoc.cypher.run` and Bloom's custom search phrases to create new search interactions you wouldn't have thought possible. Truly mind-blowing if you're a bloom user. My favorite is running cypher queries that return more data than Neo4j Browser can render.
+
+https://medium.com/neo4j/how-to-create-conditional-and-dynamic-queries-in-neo4j-bloom-bdf0a2984837[Dive into Bloom Query Tricks, role="medium button"]
+
+[[features-3]]
+== Fetching Large Amounts of Data Using the Neo4j Reactive Driver: The Bloom Case
+
+image::https://dist.neo4j.com/wp-content/uploads/20210702074456/js-reactive.png[width=150,float="right"]
+
+Speaking of Bloom, in this blog post, Angeliki Komianou, engineer on the bloom team, dives into the reasons and the how-to of using the reactive APIs of our Javascript driver to optimize and speed up fetching large results from the database without the need to chunk manually.
+
+https://medium.com/neo4j/fetching-large-amount-of-data-using-the-neo4j-reactive-driver-the-bloom-case-4c3bcd0f4194[Learn how to use the reactive JS driver, role="medium button"]
+
+
+[[features-4]]
+== NODES 2021 Videos Graph Data Science
+image::https://dist.neo4j.com/wp-content/uploads/20210702074458/nodes-data-science.png[width=150,float="right"]
+
+One popular track of the NODES conference two weeks ago was the Data Science track. 
+
+In the first part of the day we saw applications of knowledge graph talks covering Covid-19 from Saudi Arabia, patents, journals and research at BASF, to shell company activities. Practical demonstrations of integration with KNIME or using NLP for graph extraction from unstructured text to data transformation from relational databases were presented in the next section. Continuing to applying graph data science on the meta-level to reconcile ontologies. 
+
+Then we saw a practical example of utilizing the Neo4j Connector for Apache Spark to allow data flow in both directions between tables and graphs. And as a highlight of the track a full ML pipeline inside of Neo4j for Link Prediction using the GDS library. Closing we enjoyed watching the exploration of a large dreams database with graphs which is definitely one of the more unusual applications of graphs and data science.
+
+////
+TODO can we use the YT links or a neo4j.com page?
+1. https://www.youtube.com/watch?v=PEhjnJZ4q9w&list=PL9Hl4pk2FsvVWp2uVltp44GsxBPO50mis&index=1[The World Chooses Masks We Choose the Knowledge Graph to Fight Covid^]
+2. https://www.youtube.com/watch?v=rJzPv3N4dL0&list=PL9Hl4pk2FsvVWp2uVltp44GsxBPO50mis&index=3[BASF Knowledge Graph Local and Global Traversals at Scale^]
+3. 
+////
+
+You can find the video recordings of these exciting sessions on the track page as individual sections (selectable in the player).
+
+https://neo4j.brand.live/c/2021nodes-data-science[Re-watch the NODES Data Science Track, role="medium button"]
+
+// #data-science #machine-learning #natural-language-processing #nlp #spark #dream-analysis #covid-19 #knowledge-graph #knime #investigations
+
+[[features-5]]
+== Video: Ashley Faith doing an honest review of Neo4j
+
+image::https://dist.neo4j.com/wp-content/uploads/20210702074446/ashley-faith-neo4j.png[width=150,float="right"]
+
+
+In the 4th episode of her video series on Knowledge Graph Technology Ashley reviews Neo4j. She talks about using Neo4j in a number of projects, the available tools, the awesome community and what you can do with it. She's joined by Dave Voutila who demonstrates a number of use-cases (like fraud-detection, personal data graphs) and how the graph model and tools (arrows, bloom, browser, neosemantics) support the mental model of business analysts/experts.
+
+Ashley also presented this year at NODES - on https://www.youtube.com/watch?v=vAH5M2UggXw&list=PL9Hl4pk2FsvXL9_STTVsB7o9Cjv06i0AR&index=7["Using Graphs to Support More Equitable Search"^] exploring better ways for users to search and explore their data.
+
+https://www.youtube.com/watch?v=OkrCXF2BZ3Y[Watch the Neo4j review, role="medium button"]
+
+// #search #language #review #video #tools
+
+[[features-6]]
+== Aura Free Intro Videos
+
+image::https://dist.neo4j.com/wp-content/uploads/20210702074448/aura-import-csv-video.png[width=150,float="right"]
+
+Graph academy author Elaine Rosenberg guides you along your first steps with Neo4j Aura Free. In the first few videos we create a database, load a CSV or a dump file.
+
+* https://www.youtube.com/watch?v=1Ee242FDFcc&list=PL9Hl4pk2FsvVyzMCg1Dx2dEoX73ewq35j&index=1[Create a new database^]
+* https://www.youtube.com/watch?v=lLZWVwMA5aM&list=PL9Hl4pk2FsvVyzMCg1Dx2dEoX73ewq35j&index=2[Import CSV into you database^]
+* https://www.youtube.com/watch?v=Yk-srZUsfz4&list=PL9Hl4pk2FsvVyzMCg1Dx2dEoX73ewq35j&index=3[Load a Dump file into your database^]
+
+She also prepared a Neo4j Browser guide that shows how to import CSV data that was exported from a relational database, just run `:play import-relational-data-guide` in your Neo4j Browser and another one for data modeling: `:play data-modeling-guide`.
+
+https://www.youtube.com/watch?v=1Ee242FDFcc&list=PL9Hl4pk2FsvVyzMCg1Dx2dEoX73ewq35j&index=1[Watch the playlist, role="medium button"]
+
+// #aura #cloud #dbaas #get-started #data-import
+
+[[features-7]]
+== Integrations in the Cloud
+image::https://dist.neo4j.com/wp-content/uploads/20210702074453/graphstuff-fm.jpg[width=150,float="right"]
+
+
+https://twitter.com/lyonwj[Will Lyon^] interviewed https://twitter.com/mdavidallen[David Allen^] in this weeks https://graphstuff.simplecast.com/episodes/neo4j-connectors-for-apache-kafka-business-intelligence-graphql-apache-spark[Graphstuff.fm Podcast episode^] on all things data integration - Spark, Kafka, Tableau, GraphQL.
+
+You should https://graphstuff.fm[*definitely subscribe* to the podcast^], so far all episodes have been worthwhile listening to.
+
+Fittingly the videos from the "Connections: Graph Architecture and Integrations" are available to watch at your leisure.
+
+1. https://www.youtube.com/watch?v=LsUq8pditmA[Keynote Session: Extending the Reach of Graphs^] by David Allen, Partner Solution Architect and William Lyon, Developer Relations Engineer, Neo4j
+
+2. https://www.youtube.com/watch?v=YJiQKYZE4Ug[Neo4j with Cloud-Native Data Mastering for the Enterprise^] by Anthony Deighton, CPO and Julia Neagu, Director of Analytics, Tamr
+3. https://www.youtube.com/watch?v=OOihIxbo0dE[Utilizing the GRANDstack: Neo4j and GraphQL in the Real World^] by Will Reynolds, Principal Software Developer, Hoare Lea
+4. https://www.youtube.com/watch?v=03gfVsJFPbQ[Analytics & Graphs: Neo4j Connector for Apache Spark^] by Andrea Santurbano, CTO Larus BA Italy
+5. https://www.youtube.com/watch?v=ICoANuZrBOU[Best Practices and Performance Optimization with the Neo4j Apache Kafka Connector^] by David Fauth, Field Engineer, Neo4j
+
+https://graphstuff.simplecast.com/episodes/neo4j-connectors-for-apache-kafka-business-intelligence-graphql-apache-spark[Listen to the Podcast Discussion, role="medium button"]
+
+// #cloud #integrations #spark #kafka #tableau #graphql #podcast #interview
+
+[[features-8]]
+== Links of the week
+image::https://dist.neo4j.com/wp-content/uploads/20210702074507/twitchverse-fastrp.png[width=150,float="right"]
+
+* https://twitter.com/@astr0baby[Astr0 Baby^] put together an guide to https://astr0baby.wordpress.com/2021/06/26/compiling-and-running-native-neo4j-on-apple-m1-arm64/[compiling and running Neo4j on an Apple M1/ARM64^]
+* https://twitter.com/Solifugo[Victor Torres^] shows in detail how to run https://project42.site/creating-a-neo4j-cluster-with-docker/[a Neo4j cluster with Docker^]
+* https://twitter.com/ElLazal[Lju Lazarevic^] provided the https://github.com/lju-lazarevic/bloom[import scripts and explanation^] for her Neo4j Bloom training 
+* https://twitter.com/CSkardon[Charlotte Skardon's^] PowerBI connector now https://xclave.co.uk/2021/07/01/power-bi-connector-auto-refresh/[supports Auto Refresh^]
+* https://twitter.com/tb_tomaz[Tomaz Bratanic^] wrote a new, exciting article on https://towardsdatascience.com/twitchverse-using-fastrp-embeddings-for-a-node-classification-task-bb8d34aa690[Node Embeddings, using FastRP for classification^] in the Twitchverse dataset
+
+// #olympics #fastrp #embedding #data-science #power-bi #analytics #bloom #docker #clsuter #arm #m1
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/@lyonwj[Will Lyon^], he's sharing the content of his NODES talk "Using Cypher with GraphQL" as a Twitter thread.
+
+tweet::1408144047697371137[type={type}]
+
+Don't forget to RT if you liked it too!
+

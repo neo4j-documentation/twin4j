@@ -1,0 +1,5 @@
+In this week's #twin4j, Liz Michel from Tamr presented at NODES 2021 about using data science to produce ontologies. She has written a couple of supporting blogs you may be interested in.
+
+https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-3
+
+#neo4j #ontology #neosemantics #owl #rdf

@@ -74,6 +74,7 @@ async function publish(issueDate) {
   }
   const blogPostData = {
     title: documentTitle,
+    slug,
     content: content,
     status,
     date_gmt: publishDateUTCIncludingTimeZone,

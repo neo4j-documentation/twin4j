@@ -13,7 +13,7 @@ Hello, everyone!
 
 // introduction
 
-[[featured-community-member]]
+[#featured-community-member,hashtags=""]
 == Featured Community Member: ${uiModel.featuredCommunityMember.fullName}
 
 This week's featured community member is ${uiModel.featuredCommunityMember.fullName}.
@@ -25,7 +25,7 @@ featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="${uiMod
 // linkedin link
 https://www.linkedin.com/in/name[Connect with ${uiModel.featuredCommunityMember.firstName} on LinkedIn, role="medium button"]
 
-[[features-1]]
+[#features-1,hashtags=""]
 == Feature 1
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -34,7 +34,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-2]]
+[#features-2,hashtags=""]
 == Feature 2
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -43,7 +43,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-3]]
+[#features-3,hashtags=""]
 == Feature 3
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -52,7 +52,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-4]]
+[#features-4,hashtags=""]
 == Feature 4
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -61,7 +61,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-5]]
+[#features-5,hashtags=""]
 == Feature 5
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -70,7 +70,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-6]]
+[#features-6,hashtags=""]
 == Feature 6
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -79,7 +79,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-7]]
+[#features-7,hashtags=""]
 == Feature 7
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]

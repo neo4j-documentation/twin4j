@@ -1,5 +1,5 @@
-In this week's #twin4j, we point you to a new Neo4j Desktop Graph App, SemSpect. It can be used to explore any graph and provides some really nice visualization features.
+You can find a really impressive and inspiring use of APOC procedures in bloom search phrases by @DflavD in this week's #twin4j
 
-https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-2
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#features-2
 
-#neo4j #semspect #visualization
+#neo4j #bloom #apoc #tricks

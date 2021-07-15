@@ -1,5 +1,5 @@
-In this week's #twin4j, we point you to the blog that describes the Leonhard Euler Idea Contest, who entered the contest, and who won.
+In this week's #twin4j, we look at the talk recordings of the "data science" track of #NODES2021, so much great content to rewatch.
 
-https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-4
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#features-4
 
-#neo4j #hackathon #Euler
+#neo4j #datascience #ml #ai #knowledgegraphs

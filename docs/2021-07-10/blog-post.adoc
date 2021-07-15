@@ -1,0 +1,199 @@
+// 2021-07-10
+= This Week in Neo4j - PHP Driver, Software Analytics, Chemical Patents, Streamlit TSNE, GraphQL Security, GitHub Copilot, Developer Tools, Nodes 2021
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-php-driver-software-analytics-chemical-patents-streamlit-tsne-graphql-security-github-copilot-developer-tools-nodes2021
+:noheader:
+:linkattrs:
+:categories: twin4j
+:author: Michael Hunger
+// twin4j is added automatically
+:tags: neo4j, knowledge-graph, graphql, security, auth, releases, nodes-2021, php, streamlit, python, embeddings, data-science, developer-tools, patents, software-analytics, dotnet, copilot
+
+Hello, everyone!
+
+Another week gone, many of you had a long weekend and a short week.
+But impressively a lot of content has been created these last few days.
+
+Our featured member this week is Ghlen Nagels, the maintainer of the new PHP client library for Neo4j. We look at Clair's Node Embedding Streamlit App, follow Dan through the Auth story of neo4j/graphql, check out what's new with Developer Tools, look at the connections between Chemicals and Patent data, and explore .Net code with Neo4j.
+
+I also highlight some releases that came out in the last few days and cover the Neo4j track of NODES2021.
+
+And definitely watch how Clair Sullivan makes GitHub's Copilot write Neo4j client code for her.
+
+Hope you enjoy this weeks issues as much as I did putting it together.
+
+If you want to discuss any of the topics, please join us on https://dev.neo4j.com/chat[Neo4j Discord^].
+
+Cheers, Michael
+
+[[featured-community-member]]
+== Featured Community Member: Ghlen Nagels
+
+This week's featured community member is Ghlen Nagels.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210709064624/this-week-in-neo4j-10-July-2021.jpeg[name="Ghlen Nagels"]
+
+
+Ghlen lives in Kortrijk, Belgium and is the Founder of the software consultancy "youngsource" and more interestingly of the legal document search and management tool "Laudis". 
+
+In the recent resurgence of interest for a PHP driver he took it on to write a replacement for the discontinued GraphAware driver, that builts on  top of Michael Stefanak's "bolt" connector as well as the HTTP APIs and offers a user friendly API as well as wrappers for the previous driver APIs. The client has been developed with help from the drivers team and supports features like transaction functions, typing with psalm, and more.
+
+There is more to come in the https://github.com/neo4j-php[neo4j-php^] github organization including updated integrations for Laravel and Symfony. If you are using PHP with Neo4j I would like to urge you to give the new driver a try and provide us with feedback.
+
+You can read more in the https://medium.com/neo4j/connect-to-neo4j-with-php-e10e24afedff[blog post about the new PHP client release^]. 
+
+Thanks a lot Ghlen for all your work for improving the lives of PHP users in the Neo4j community.
+
+// linkedin link
+https://www.linkedin.com/in/ghlen/[Connect with Ghlen on LinkedIn, role="medium button"]
+
+// #neo4j #php #driver #community #contributions
+
+[[features-1]]
+== Visualizing Graph Embeddings with t-SNE in Python with Streamlit
+
+image::https://dist.neo4j.com/wp-content/uploads/20210709064627/tsne.png[width=150,float="right"]
+
+Data Science Advocate Clair Sullivan combined two interesting things in this towardsdatascience article. Using a Streamlit app to compute Node embeddings in Neo4j using the Graph Data Science Library and then visualizing them with an interactive t-SNE component is pretty cool. 
+
+With the built-in controls you can manipulate hyperparameter and other algorithm config options. Check out the code and app in the article, of course you can fork it and use it for your own purposes.
+
+https://towardsdatascience.com/visualizing-graph-embeddings-with-t-sne-in-python-10227e7876aa[Read the t-SNE article, role="medium button"]
+
+// #streamlit, #gds, #tsne #embeddings, #python
+
+[[features-2]]
+== .Net code analysis with Neo4j
+
+image::https://dist.neo4j.com/wp-content/uploads/20210709064622/software-analytics.png[width=150,float="right"]
+
+Software Analytics with Neo4j was my first project 13 years and resulted in the development of https://jqassistant.org[jQAssistant^], a software analytics platform based on Neo4j.
+
+The more I was excited about Vlad Batushkov's tool Strazh, that uses the Roslyn compiler to generate a source code representation of .Net projects that then is imported into Neo4j.
+
+He differentiates them into 4 layers of different granularities and purposes.
+
+1. project dependencies
+2. folders & files
+3. types
+4. method invocations
+
+And explores how you then can query this graph model to get new insights into your code.
+Definitely a worthwhile read, even if you're not working in .Net.
+
+https://medium.com/neo4j/codebase-knowledge-graph-204f32b58813[Learn more about Software Analytics with Neo4j, role="medium button"]
+
+[[features-3]]
+== New and Noteworthy: Neo4j Developer Tools
+
+image::https://dist.neo4j.com/wp-content/uploads/20210709063503/browser-home.png[width=150,float="right"]
+
+In this article, Greg King summarizes the updates to Neo4j Browser and Desktop in the latest releases.
+
+For Browser those cover mostly usability improvements when working with Cypher editing and frame interactions in the result frames. 
+
+In Desktop it is more about operations, from dump-support and safe-restart on Windows, to better upgrade experience and improved log-viewers.
+
+https://medium.com/neo4j/new-and-noteworthy-neo4j-developer-tools-bfef5a41b41f[Check out the blog post, role="medium button"]
+
+
+[[features-4]]
+== NODES 2021 Videos Neo4j Track
+image::https://dist.neo4j.com/wp-content/uploads/20210710/neo4j-track.png[width=150,float="right"]
+
+At GraphConnect, the Neo4j track often had standing room only.
+Hearing from Neo4j folks about cool features and tips & tricks, always filled the seats.
+That's not different for NODES where we had dedicated track with 9 talks.
+
+Starting with Priya Jacobs and Tom Geudens doing a fun introduction to Neo4j. 
+Followed by Darrel Warde looking at the history, present and future of GraphQL with Neo4j. Then my team member Adam Cowley showed how we use Neo4j to learn about and improve the user experience on our developer pages.
+Being a Java/JVM person I really enjoyed Gerrit Meiers talk on using Neo4j from the Java ecosystem from procedures to using the drivers all the way to Spring Data Neo4j.
+
+Greg King demonstrated the power of and cool new features in the Neo4j Developer Tools - Browser and Desktop. A-Team Alicia Frame and Amy Hodler tooks us on a whirlwind tour through the most recent releases of the Graph Data Science Library - it gets more impressive with each release.
+
+Ivan Zoratti with engineers Anton Persson and Valdemar Roxling gave a look under the hood of the brand new 4.3 release of Neo4j. Most beloved by many users, the Arrows.app is perfect for drawing graphs for presentations and illustrations - maintainers Alistair Jones and Irfan Nuri Karaca demonstrate many of the non-obvious features and capabilities.
+
+And finally my colleague Jennifer Reif puts her Cypher Sleuthing skills to work on topics like datetimes/durations, the CASE statement and the notorious Eager operation and PROFILE/EXPLAIN, your best friends.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXfH-q5aghB2g7AlIztqoaf[Re-watch the NODES Neo4j Track on YouTube, role="medium button"]
+
+// #cypher #datetime #graph-data-science #relationship-indexes #graphql #arrows #graph-drawing #user-journey #education #intro
+
+[[features-5]]
+== Securing Your Graph With Neo4j GraphQL
+
+image::https://dist.neo4j.com/wp-content/uploads/20210709064619/secure-graphql.png[width=150,float="right"]
+
+Dan Starns recaps his NODES2021 talk with lots of code examples and details on scenarios for authentication and authorization in GraphQL. He discusses the challenges Auth in GraphQl in general and how we approached it in neo4j/graphql. From authentication with JWT's through a top-level mutation and handling the tokens in resolvers. 
+For securing access to data, he demonstrates the automated handling of scopes, permissions using the `@auth` directive with coarse grained operations and fine grained conditionals and even RBAC roles.
+
+Definitely check out Dan's post and talk recording, this is a really interesting and important area. Security should not be underestimated.
+
+https://medium.com/neo4j/securing-your-graph-with-neo4j-graphql-91a2d7b08631[Learn more about Auth in Neo4j/GraphQL, role="medium button"]
+
+// #graphql #security #jwt #rbac #auth #roles
+
+[[features-6]]
+== Visualizing Relationships between Chemicals and Patent Data
+
+image::https://dist.neo4j.com/wp-content/uploads/20210709063507/chemical-patents.png[width=150,float="right"]
+
+This deep dive article by Aniruddha Chatterjee looks into mapping chemicals from patents using NER (entity recognition) into a Neo4j knowledge graph and querying them for recommendations for related patents and chemicals.
+
+I can imagine quite a number of good applications for this data esp. if combined with life-sciences and ecological sources, similar to drug-repurposing.
+
+It uses data from http://ichemist.ireadrx.ai/[iChemist claim search^] as a source.
+
+https://medium.com/ireadrx/visualizing-relationships-between-chemicals-and-patent-data-f317d7c8bea9[Read the article, role="medium button"]
+
+// #patent #chemistry #recommendations #knowledge-graph
+
+[[features-7]]
+== Fresh of the Press - Releases
+image::https://dist.neo4j.com/wp-content/uploads/20210709064616/neo4j-432.jpg[width=150,float="right"]
+
+* A https://neo4j.com/release-notes[number of Neo4j releases^] happened this week: 3.5.29 / 4.0.12 / 4.1.10 / 4.2.9 / 4.3.2
+* https://github.com/neo4j-devtools/neo4j-bloom/releases/tag/1.7.0[Bloom 1.7.0^] with auto-perspectives, performance improvements and 4.3 updates
+* https://github.com/neo4j/graphql/releases/tag/%40neo4j%2Fgraphql%401.1.0[Neo4j/GraphQl 1.1.0^] with top-level @cypher projections and several bugfixes
+* https://neo4j.com/release-notes/gds/graph-data-science-1-6-2-release-notes/[Graph Data Science Library 1.6.2^] with several bugfixes came out
+* https://pypi.org/project/neo4j/4.3.2/[The Python driver 4.3.2^] has been released! 
+*  A new version of Neo4j Driver for Go, version 4.3.2, is now available: @pm_db
+https://github.com/neo4j/neo4j-go-driver/releases/tag/v4.3.2
+* A new version of https://search.maven.org/artifact/org.neo4j.driver/neo4j-java-driver/4.3.3/jar[Neo4j Driver for Java, version 4.3.3^], is now available
+
+* https://jqassistant.org/jqassistant-1-10-0-released/[Software Analytics tool jQAssistant 1.10.0 was released^] with some cool features like concept extensions, support for Generics and a Jupyter Docker image with custom analysis notebooks
+* https://twitter.com/fbiville[Florent Biville^] released the https://github.com/liquibase/liquigraph/releases/tag/liquigraph-4.0.3[final version of liquigraph^] which is superceded by the real https://github.com/liquibase/liquibase-neo4j[liquibase extension for Neo4j^]
+
+// #neo4j #python #java #graphql #releases #go
+
+[[features-8]]
+== Links of the week
+image::https://dist.neo4j.com/wp-content/uploads/20210709063500/amy-hcm.jpg[width=150,float="right"]
+
+* In https://medium.com/neo4j/cypher-sleuthing-dealing-with-dates-part-3-eccd90206dbf[part 3 of her Cypher Sleuthing series^], https://twitter.com/jmhreif[Jennifer Reif^] dives into datetime-components, precisions and durations
+* https://twitter.com/rotroll666[Michael Simons^] gives us a sneak twitter thread into deploying a https://twitter.com/rotnroll666/status/1413062178865881088[Quarkus GraphQL app that uses Neo4j and CypherDSL to Heroku^]. Looking forward to the blog post.
+
+* Amy Hodler published an article about https://www.personneltoday.com/hr/graph-databases-the-next-big-thing-for-human-capital-management/[using graph databases in human capital management^]
+
+* The current https://graphstuff.fm/episodes/whats-new-in-neo4j-325m-fundraising-neo4j-43-release-neo4j-aura-free-tier-the-trillion-relationship-demo-more[GraphStuff.fm podcast episode^] covers in audio some of the recent hot topics in the Neo4j world
+* The recording for last week's #3Hx session https://www.youtube.com/watch?v=i30SWDiiZqw["3H10 - Apache Hop and Neo4j"^] is available, all you need for a ETL infrastructure that supports Neo4j as top-notch integration
+
+* Paras Bansal wrote an article about https://paras301.medium.com/neo4j-data-processing-with-springboot-ee6b771b5887[Neo4j data processing with springboot^] where he shows how to use the plain driver with Cypher queries
+* https://twitter.com/springMLInc[SpringML^] published an https://www.springml.com/blog/problem-solving-with-graph-database/[article explaining which problems a Graph Database solves^]
+
+
+// #spring-boot #graphql #quarkus #podcast #human-capital-management #hcm #heroku #cypher-dsl #tips
+
+== Tweet(s) of the Week
+
+My favorite tweet this week was by https://twitter.com/@cjlovesdata1[Clair Sullivan^], showing off how GitHub's Copilot will generate your Neo4j client code for you, including Cypher statements.
+
+tweet::1410637586066931715[type={type}]
+
+But I cannot skip the throwback to 2009 from Øredev, the developer conference in our home of Malmö, Sweden of one of Emil's early presentations on Neo4j and graphs. That was 12 years ago - time really flies.
+
+tweet::1412749505011851269[type={type}]
+
+
+Don't forget to RT if you liked it too!
+

@@ -1,5 +1,4 @@
-In this week's #twin4j, we feature Yisroel Yakovson who published a new mocking library "neo-forgery" for the neo4j-javscript driver.
+Our featured community member in this week's #twin4j is @YisroelYakovson, CEO of @NoStack.
+Thank you for all your contributions around building fullstack Javascript apps with Neo4j.
 
-{url}/#featured-community-member
-
-#neo4j #unit-testing #javascript
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#featured-community-member

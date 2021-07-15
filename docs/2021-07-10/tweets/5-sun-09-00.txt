@@ -1,0 +1,4 @@
+In this week's #twin4j, we'll go over the amazing talks from the #Neo4j track at #NODES2021 with deep dives presented by Neo4j employees.
+Definitely a must-watch.
+
+https://neo4j.com/blog/this-week-in-neo4j-php-driver-software-analytics-chemical-patents-streamlit-tsne-graphql-security-github-copilot-developer-tools-nodes2021/#features-4

@@ -1,0 +1,6 @@
+In this week's #twin4j, @danstarns1 shows us how to secure your #neo4j/@graphql API with JWT authentication, @auth directives covering operations, roles and RBAC.
+Read the article and watch the #NODES2021 talk.
+
+https://neo4j.com/blog/this-week-in-neo4j-php-driver-software-analytics-chemical-patents-streamlit-tsne-graphql-security-github-copilot-developer-tools-nodes2021/#features-5
+
+#security

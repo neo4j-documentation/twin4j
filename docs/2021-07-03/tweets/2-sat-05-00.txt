@@ -1,5 +1,5 @@
-In this week's #twin4j, we point you to an article that outlines the highlights of Neo4j 4.3. There were devops enhancements and a number of really nice performance improvements.
+Neo4j Architect @digitalstain invites us to peek behind the curtain of the trillion graph #neo4j fabric setup that we demonstrated in the #NODES2021 keynote.
 
-https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-1
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#features-1
 
-#neo4j #scalable #cypher #devops
+#sharding #scalability

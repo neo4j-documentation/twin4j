@@ -1,0 +1,5 @@
+In this week's #twin4j, we look at the @streamlit app that @cjlovesdata1 wrote to visualize Neo4j graph embeddings.
+
+https://neo4j.com/blog/this-week-in-neo4j-php-driver-software-analytics-chemical-patents-streamlit-tsne-graphql-security-github-copilot-developer-tools-nodes2021/#features-1
+
+#neo4j #tsne #streamlit

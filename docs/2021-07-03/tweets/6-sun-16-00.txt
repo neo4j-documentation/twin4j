@@ -1,5 +1,7 @@
-In this week's #twin4j, @rvanbruggen describes how using relationship indexes, now available in Neo4j 4.3 can be a real game-changer for some applications.
+Watch how @AshleighNFaith reviews Neo4j with guest @voutilad looking at tools, applications and data science. 
+She also spoke at #NODES2021 about better means to search graphs.
+Read more in this week's #twin4j.
 
-https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-5
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#features-5
 
-#neo4j #index #relationbships #cypher
+#neo4j #video #review

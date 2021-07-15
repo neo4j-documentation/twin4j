@@ -1,0 +1,5 @@
+In this week's #twin4j, @ruddha2001 demonstrates how to extract #chemical entities using #NER from #patent data, import them into a graph and run recommendations queries to discover new insights.
+
+https://neo4j.com/blog/this-week-in-neo4j-php-driver-software-analytics-chemical-patents-streamlit-tsne-graphql-security-github-copilot-developer-tools-nodes2021/#features-6
+
+#neo4j #ichemist

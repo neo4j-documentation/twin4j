@@ -1,0 +1,5 @@
+In this week's #twin4j, a .Net source code analysis tool, Strazh by Vlad Batushkov that imports Roslyn generated AST information into Neo4j to then query the code-knowledge-graph for insights.
+
+https://neo4j.com/blog/this-week-in-neo4j-php-driver-software-analytics-chemical-patents-streamlit-tsne-graphql-security-github-copilot-developer-tools-nodes2021/#features-2
+
+#neo4j #dotnet #roslyn

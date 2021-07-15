@@ -1,5 +1,6 @@
-In this week's #twin4j, @onyame has just released prov2neo, a Python library that enables you to load W3C PROV documents into Neo4j.
+Graph Academy curator @ElaineRosenberg published new getting-started videos for #neo4j Aura.
+Feel free to share them widely to help people with their first steps.
 
-https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-6
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#features-6
 
-#neo4j #python #prov2neo #prov
+#neo4j #aura #dataimport #csv #get-started

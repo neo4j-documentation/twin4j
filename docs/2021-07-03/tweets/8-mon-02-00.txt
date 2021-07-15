@@ -1,5 +1,4 @@
-In this week's #twin4j, we provide you links to the session recordings for NODES 2021 as well as links to the pre-NODES hands-on training session recordings.
+Learn more about @mdavidallen's interview in the GraphStuff.FM podcast about integrating #Neo4j with @ApacheKafka @ApacheSpark @Tableau @GraphQL.
+Also available - the talks from the Cloud Integrations Connection event.
 
-https://neo4j.com/blog/this-week-in-neo4j-neo4j-4-3-semspect-graph-app-reconciling-taxonomies-contest-winners-relationship-indexes-prov2neo-nodes-2021-recordings/#features-7
-
-#neo4j #nodes2021
+https://neo4j.com/blog/this-week-in-neo4j-trillion-graph-mocking-neo4j-in-javascript-bloom-tricks-reactive-driver-cloud-integrations-data-science-talks-neo4j-review-aura-quickstart-videos/#features-7

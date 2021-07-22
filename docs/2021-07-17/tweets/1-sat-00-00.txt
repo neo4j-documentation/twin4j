@@ -1,0 +1,4 @@
+This week's featured member in #twin4j is @chrlschn, founder of Zytonomy who shared his graph story utilizing #Neo4j for complex clinical trials data.
+
+https://neo4j.com/blog/this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql/#featured-community-member
+

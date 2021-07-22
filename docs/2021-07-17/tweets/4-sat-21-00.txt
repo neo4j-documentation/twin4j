@@ -1,0 +1,3 @@
+In this week's #twin4j, Allison and Cristina from @thesilverlogic show how to make use of the neo4j Django Admin feature in neomodel an object graph mapper for #Neo4j in #Python
+
+https://neo4j.com/blog/this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql/#features-3

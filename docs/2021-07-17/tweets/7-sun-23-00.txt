@@ -1,0 +1,3 @@
+In this week's #twin4j, Stuart Morris DB PM dives into the #neo4j 4.3 write improvements for concurrent relationship updates.
+
+https://neo4j.com/blog/this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql/#features-6

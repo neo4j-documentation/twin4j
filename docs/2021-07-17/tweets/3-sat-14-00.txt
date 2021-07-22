@@ -1,0 +1,3 @@
+In time for summer @rvanbruggen interviewed our #Neo4j Founder @emileifrem in a fun an informative podcast episode. Check it out for thoughts on where we are and where we're going as a database category.
+
+https://neo4j.com/blog/this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql/#features-2

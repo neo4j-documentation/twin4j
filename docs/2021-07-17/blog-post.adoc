@@ -1,0 +1,162 @@
+// 2021-07-10
+= This Week in Neo4j - Data Journalism NYPD, Django Admin, Visualization Talks, CEO Podcast, Write Performance, Java GraphQL
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql
+:noheader:
+:linkattrs:
+:categories: twin4j
+:author: Michael Hunger
+// twin4j is added automatically
+:tags: graphs4good, journalism, graph-data-science, podcast, funding, django, python, visualization, nodes-2021, virtual-reality, machine-learning, java, graphql, spring, cypher-dsl, quarkus, performance, relationships, neo4j-43, wildfire
+
+Hello, everyone!
+
+Time really flies, it only felt like yesterday putting together last weeks twin4j.
+
+I would love to encourage you to both share the newsletter and blog with colleagues and friends who could also find it helpful, best by pointing them to the https://neo4j.com/tag/twin4j/[page with past issues and the sign-up form^].
+
+But also to send us your feedback either via https://twitter.com/neo4j[Twitter^] or https://dev.neo4j.com/chat[Discord^]. Please let us know what you like or dislike about twin4j and what you would love to see more of.
+
+I'm also really excited to announce that we upgraded Neo4j Sandbox to Neo4j 4.3.2, Graph Data Science 1.6.2 Bloom 1.7.0 and the most recent versions of APOC and neosemantics.
+
+Our featured community member is Charles Chen, longtime Neo4j user who shared his story this week.
+
+Then we dive into the use of graphs in journalistic research like the NYC police misconduct investigation and listen to Emil and Rik in their Graphistania Podcast summer interview.
+Then Stu Moore introduces write performance improvements for relationship updates.
+
+Django neomodel just got enabled to render admin forms for your data types which is pretty cool.
+We look at all the amazingly visual talks of the Visualization Track of NODES 2021.
+
+And Michael Simons takes us through an super interesting journey of GraphQL backends in Java.
+
+My favorite Tweet is from Will Lyon looking at forest fire data.
+
+Have a great weekend and enjoy this collection of amazing content.
+
+Cheers, Michael
+
+[[featured-community-member]]
+== Featured Community Member: Charles Chen
+
+This week's featured community member is Charles Chen.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210716101620/this-week-in-neo4j-17-July-2021.jpeg[name="Charles Chen"]
+
+Charles used the AWS database selection flowchart that made the rounds on twitter this week to https://www.linkedin.com/pulse/graph-databases-neo4j-stroll-down-memory-lane-looking-charles-chen/[write about his journey with graph databases^].
+
+Charles is the founder of https://www.zytonomy.com[Zytonomy^] a company that tracks skill acquisition and identifies gaps in training, using ML and graphs to surface operational knowledge. Previously he worked in life sciences on clinical trial applications where he started to utilize the value of graphs with Neo4j and even contributing with his team to the .Net neo4jclient.
+
+Charles is definitely in love with Cypher which I very much share. The readable pattern based approach to reading and writing graph data is unparalleled.
+
+Thanks a lot Charles for sharing your perspective, we hope it inspires many others to give graph databases a try.
+
+https://www.linkedin.com/in/charlescchen/[Connect with Charles on LinkedIn, role="medium button"]
+
+[[features-1]]
+== Graphs4Good: Insights into Police Misconduct with Graphs
+:tags: graphs4good, policing, journalism, graph-data-science, eigenvector
+image::https://dist.neo4j.com/wp-content/uploads/20210716101614/policing.jpg[width=150,float="right"]
+
+// https://neo4j.com/blog/graphs4good-insights-into-police-misconduct-with-graphs/
+
+Even difficult social issues can show as patterns in data. 
+Journalist George Joseph of the Gothamist published a piece entitled https://gothamist.com/news/mapping-clusters-nypd-officers-repeatedly-accused-misconduct[“Mapping the Clusters of NYPD Officers Repeatedly Accused of Misconduct”^].
+Together with independent data journalist EJ Fox, Joseph detailed how controversial police conduct is often a group behavior. The article presented an explorable visualization and map of officers tied to complaints since 2010.
+
+What's especially interesting is tht EJ Fox used Neo4j and especially the graph data science capabilities (Eigenvector Centrality) to analyze the data and determine central figures and their relationships. An really important application of the technology for investigative journalism. 
+
+https://ejfox.com/blog/nypd-ccrb-complaint-clusters/[Read the deep dive, role="medium button"]
+
+[[features-2]]
+== Graphistania Podcast: Summer Interview with Emil
+:tags: podcast, emil, funding, nodes,company, databases, scaling
+
+image::https://dist.neo4j.com/wp-content/uploads/20210716101611/graphistania-emil.png[width=150,float="right"]
+
+After 6 months Rik invited Emil back to talk about the human and industry aspects of the pandemic, dad jokes, all the developments at Neo4j including NODES, the funding, company growth and of course the trillion graph demo. They also speak about the convergence of the database market and what the future holds. 
+
+Make sure to give it a listen or watch the video recording.
+
+http://blog.bruggen.com/2021/07/graphistania-20-episode-15-summer.html[Listen to Rik and Emil, role="medium button"]
+
+
+
+[[features-3]]
+== Django Admin for NeoModel
+:tags: django, python, neomodel, ogm
+
+image::https://dist.neo4j.com/wp-content/uploads/20210716101608/django-admin.jpeg[width=150,float="right"]
+
+Cristina Escalante and Allison Patricio worked on adding Django Admin functionality for https://github.com/neo4j-contrib/django-neomodel[django_neomodel^].
+Just by registering your model types you can enjoy automatic CRUD forms and lists in your admin backend, all backed by your Neo4j database. If you're using Neo4j from Python using Neomodel or Django, please check it out.
+
+https://medium.com/neo4j/register-your-neo4j-based-models-to-the-django-admin-b58ebcd6dfc3[Check out the blog post, role="medium button"]
+
+
+
+[[features-4]]
+== NODES 2021 Videos Visualization Track
+:tags: visualization, nodes-2021, time-series, bloom, virtual-reality, machine-learning, 
+
+image::https://dist.neo4j.com/wp-content/uploads/20210716101623/track-visualization.png[width=150,float="right"]
+
+Graph visualization has always been a hot topic, we get a lot of questions on how to render graphs interactively. 
+
+That's why it was really cool we had a full track of visualization topics at NODES 2021.
+As I moderated the track, I was privy to watching most of them and you can even spot me in the Q&A Panels.
+
+
+Tim from Cylynx started the day demoing the visualization and import features of their Motif tool. Then Neo4j's Anurag presented the new features in Neo4j Bloom, followed by Katarina from Cambridge Intelligence exploring the live of a twitter troll (Neo4j Sandbox) using really impressive timeseries, heatmap and other visualization components from Kronograph and ReGraph. 
+
+Research assistant Julian from Berlin walked through the relationships between company bosses and politicians of the biggest German firms. A deep dive into Machine Learning with Dataiku and Linkurious for Fraud Detection was presented by Jean. 
+
+Close to my heart was a demo by Srivathsava from Chowbus, who showed an DSL for representing Microservice architectures which was then rendered to Cypher queries to be executed. Mike and Peter from Menome, took us into the real world and modeled and rendered connected geo-physical data as a knowledge graph.
+
+And finally James from Aviar, used Unreal Engine to render graphs in 3D for VR applications. The track was closed by Arthur who visually explored the online gaming sector as a graph.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXex-otu827ruRt28UIkrzB[Re-watch the NODES Visualization Track on YouTube, role="medium button"]
+
+
+[[features-5]]
+== Neo4j, GraphQL and Java
+:tags: java, graphql, spring, cypher-dsl, quarkus
+
+image::https://dist.neo4j.com/wp-content/uploads/20210716102413/neo4j-graphql-java.png[width=150,float="right"]
+
+Michael Simons, team member of the Neo4j Spring Data Neo4j team took a deep dive into GraphQL for Java Backend Applications.
+
+He covers `neo4j-graphql-java` a translator library to Cypher, using the Cypher-DSL.
+That Cypher query then can be executed with the Neo4j Java Driver and returned by any JVM web server as JSON to the API client.
+
+Next is using Spring Data as a back-end for your GraphQL API, using Netflix' DGS library that maps resolvers directly to Spring Data Neo4j's repository finders or to other sources, like REST APIs.
+
+And finally a Quarkus based app that utilizes the SmallRye GraphQL and an incremental approach of building up a Cypher query based on the selection set of the GraphQL query with Cypher-DSL. 
+
+Closing the article with a shout out to query-complexity limitation with `MaxQueryComplexityInstrumentation`.
+
+I thoroughly enjoyed reading the article, Michael. Thank you also for providing all the code and running applications.
+
+https://info.michael-simons.eu/2021/07/13/neo4j-java-and-graphql/[Explore GraphQL in Java, role="medium button"]
+
+
+[[features-6]]
+== Relationship Chain Locks - Don't block the Rock
+:tags: performance, writes, relationships, neo4j-43
+
+image::https://dist.neo4j.com/wp-content/uploads/20210716101617/relationship-locks-rock.png[width=150,float="right"]
+
+Core database PM Stuart Moore takes a fun celebrity to demonstrate the impressive write improvement in Neo4j 4.3 which uses more fine grained locks for updating relationships. Those changes allow better concurrent writes especially on central nodes with a lot of relationships.
+
+https://medium.com/neo4j/relationship-chain-locks-dont-block-the-rock-e8db75254b63[Read the article, role="medium button"]
+
+== Tweet(s) of the Week
+
+:tags: wildfire
+
+We're all affected more and more by climate change, so Will Lyon started to look into wildfires data.
+
+tweet::1415047360422449153[type={type}]
+
+
+Don't forget to RT if you liked it too!
+

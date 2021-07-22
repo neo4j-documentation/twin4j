@@ -1,0 +1,3 @@
+In this week's #twin4j, we highlight the use of #Neo4j in the investigation into NYPD police misconduct by @Gothamist journalist @georgejoseph94 with @mrejfox who pulled all the investigative data into a graph and used graph data science (eigenvector centrality) to identify central and similar figures.
+
+https://neo4j.com/blog/this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql/#features-1

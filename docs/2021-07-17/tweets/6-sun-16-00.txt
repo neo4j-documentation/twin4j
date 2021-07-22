@@ -1,0 +1,5 @@
+A really helpful article by @rotnrol666 about different approaches of creating @GraphQL backends on the JVM is discussed in this week's #twin4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-data-journalism-nypd-django-admin-visualization-talks-ceo-podcast-write-performance-java-graphql/#features-5
+
+#neo4j #quarkus #spring #graphqljava

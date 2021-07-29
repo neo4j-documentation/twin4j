@@ -1,0 +1,5 @@
+In this week's #twin4j, Marco Del Coco from GraphAware published a blog about using Hume for an image recognition application.
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/#features-4
+
+#neo4j #hume #imagerecognition

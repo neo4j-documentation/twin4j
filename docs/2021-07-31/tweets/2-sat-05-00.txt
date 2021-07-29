@@ -1,0 +1,5 @@
+In this week's #twin4j, we point to a talk presented at API Summit 2021 on "The Role of GraphQL in Emerging Technologies".
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/#features-1
+
+#neo4j #graphql #apisummit2021 #api

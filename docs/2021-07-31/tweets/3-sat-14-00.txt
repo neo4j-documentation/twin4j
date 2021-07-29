@@ -1,0 +1,5 @@
+In this week's #twin4j, Lju Lazarevic and Alex Erdl co-hosted their first weekly modeling session where they showed how to model and load NBA data as a graph in Aura Free.
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/#features-2
+
+#neo4j #modeling #aura #nba

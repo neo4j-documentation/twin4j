@@ -1,0 +1,5 @@
+In this week's #twin4j, there are talks and tutorials around GraphQL, Modeling and loading data into Aura Free, Node Embeddings, an image recognition application, and migration code for embedded Neo4j instances.
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/
+
+#neo4j #graphql #modeling #aura #embedding

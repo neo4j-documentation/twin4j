@@ -1,0 +1,5 @@
+In this week's #twin4j, Tomaz Bratanic describes how he used the Neo4j GDS and KarateClub libraries to create node embeddings to analyze a dataset.
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/#features-5
+
+#neo4j #graphdatascience #karateclub #nodeembedding

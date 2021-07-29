@@ -1,0 +1,5 @@
+In this week's #twin4j, we point you to a Tutorial written by Will Lyon about using nextjs API routes to build a GraphQL API and deploy this serverless function with vercel.
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/#features-3
+
+#neo4j #graphql #nextjs #api #vercel #aura

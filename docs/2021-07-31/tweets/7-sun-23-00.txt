@@ -1,0 +1,5 @@
+In this week's #twin4j, Michael Simons, a Neo4j engineer released the code that enables Java developers to migrate their embedded Neo4j instances.
+
+https://neo4j.com/blog/this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration/#features-6
+
+#neo4j #migrate #java #maven

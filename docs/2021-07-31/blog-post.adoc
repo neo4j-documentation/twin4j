@@ -1,27 +1,41 @@
-= This Week in Neo4j -
+= This Week in Neo4j - API Summit, GraphQL, Modeling, Nextjs, Image Recognition, KarateClub, Migration
 // update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
-:slug: this-week-in-neo4j-
+:slug: this-week-in-neo4j-api-summit-graphql-modeling-nextjs-image-recognition-karateclub-migration
 :noheader:
 :linkattrs:
 :categories: graph-database
 :author: Elaine Rosenberg
 // twin4j is added automatically
-:tags:
+:tags: graphql, neo4j, rest, conference-data, api, model, aura, import, data-model, nextjs, react, vercel, hume, graphaware, image-recognition, nlp, knowledge-graph, graph-embedding, KarateClub, data-science, migration, maven, java
 
 Hello, everyone!
 
-// introduction
+I hope that you are having a great summer and that you can take some time to refresh yourselves.
+In spite of the summer hiatus, many folks have been busy doing Neo4j-related work!
+
+This week, we highlight Rajesh Gaddipati and Vishal Kachave as our featured community members.
+They presented at the API Summit 2021 conference about how they used the GraphQL API and Neo4j in their work at Fujitsu.
+
+Lju Lazaravic and Alex Erdl from Neo4j have begun a weekly series where they step through how to model a particular dataset and create a graph in Aura Free.
+Will Lyon has again posted an interesting tutorial. His latest is about building a GraphQL Server with Next.js and Vercel.
+Marco Del Coco from GraphAware describes how he used Hume to create an image recognition application.
+Tomaz Bratanic describes how he uses both the Neo4j Data Science Library and KarateClub to create node embeddings for graph analysis.
+And finally, Michael Simons from Neo4j points us to a migration tool that can  be used to migrate applications with embedded Neo4j.
 
 [[featured-community-member]]
 == Featured Community Members: Rajesh Gaddipati & Vishal Kachave
 
-This week's featured community members are Rajesh Gaddipati & Vishal Kachave. They both collaborated recently on a presentation for API Summit 2021 where they showed how they used GraphQL and Neo4j.
+This week's featured community members are Rajesh Gaddipati and Vishal Kachave. They collaborated recently on a session for API Summit 2021 where they presented how they used GraphQL and Neo4j.
 
-Rajesh is very active in the Twitter Community on topics relating to Neo4j and is a Certified Neo4j Professional. He uses his Neo4j and GraphQl expertise to develop applications for Fujitsu.
+Rajesh is very active in the Twitter Community and has actively followed and retweeted posts related to Neo4j, NODES 2021, and GraphQL.
+Thank you Rajesh for your enthusiasm and support!
+Rajesh is also a Certified Neo4j Professional.
+He uses his Neo4j and GraphQl expertise to develop applications for Fujitsu where he leads the Graph Analytics stack.
 
-Vishal has also developed GraphQL applications that use Neo4j at Fujitsu.
+Vishal has developed GraphQL applications that use Angular and React JS, as well as GraphQL and Neo4j at Fujitsu.
+He is part of the Centre for Emerging Technologies team at Fujitsu.
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Rajesh Gaddipati & Vishal Kachave"]
+featured::https://dist.neo4j.com/wp-content/uploads/20210729101007/this-week-in-neo4j-31-July-2021.jpeg[name="Rajesh Gaddipati & Vishal Kachave"]
 
 // linkedin link
 https://www.linkedin.com/in/rajesh-gaddipati-4a0544143/[Connect with Rajesh Gaddipati on LinkedIn, role="medium button"]
@@ -33,13 +47,13 @@ https://www.linkedin.com/in/vishal-kachave-403751185/[Connect with Vishal Kachav
 == Talk: API Summit 2021 - GraphQL and Neo4j
 :tags: graphql, neo4j, rest, conference-data, api
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/APISummit2021.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210729101514/APISummit2021.png[width=150,float="right"]
 
-Rajesh Gaddipati and Vishal Kachave did a presentation at API Summit 2021 on "The role of GraphQL in emerging technologies".
+Rajesh Gaddipati and Vishal Kachave presented at API Summit 2021 on "The Role of GraphQL in Emerging Technologies".
 
-They compared Graph Databases with relational databases, demonstrated a REST API, and compared it with a GraphQL API explaining the differences and the benefits of each approach.
+They compared graph databases with relational databases, demonstrated a REST API, and compared it with a GraphQL API, explaining the differences and the benefits of each approach.
 
-Then they introduced and demoed the Neo4j/GraphQL library providing an API for inserting and serving the conference data using Neo4j Aura Free as a back-end database.
+Then they introduced and demonstrated using the Neo4j GraphQL library providing an API for inserting and serving the conference data using Neo4j Aura Free as a back-end database.
 Using that data, they ran some advanced queries on top of the last 5 years of conference data to show the power of a graph using Neo4j Browser and Bloom.
 
 
@@ -47,57 +61,74 @@ https://www.youtube.com/watch?v=kUehuIgjhrI[Watch the GraphQL & Neo4j talk, role
 
 [[features-2]]
 == Discovering Neo4j Aura Free with Lju and Alex
+:tags: neo4j, model, aura, import, data-model
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/NBAModel.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210729101541/NBAModel.png[width=150,float="right"]
 
-My colleagues in Developer Relations, https://twitter.com/ellazal/[Lju Lazaravic^] and https://twitter.com/alexandererdl/[Alex Erdl^], have started a new live-streaming event that will occur on Momdays.
-Every week, they will hold a session that shows you how to model and load the data into a Neo4j Aura Free instance.
+My colleagues here at Neo4j, https://twitter.com/ellazal/[Lju Lazaravic^] and https://twitter.com/alexandererdl/[Alex Erdl^], have started a weekly live-streaming event that will occur on Momdays.
+Every week, they will hold a session that shows you how to model and load a particular dataset into a Neo4j Aura Free instance.
 The sessions typically last for an hour and will be posted https://github.com/lju-lazarevic/discoveraurafree/[here^].
-Every week, Lju and Alex will show you how to model a different dataset.
 
-For this week's stream, they show you how to model and create a graph with the U.S. National Basketball Association (NBA) data that is publicly available from the https://fivethirtyeight.com/[FiveThirtyEight] site.
+For this week's dataset, they show you how to model and create a graph with the U.S. National Basketball Association (NBA) data that is publicly available from the https://fivethirtyeight.com/[FiveThirtyEight] site.
 
-https://www.youtube.com/watch?v=_tuea3bsrPA[Watch the creation of the NBA dataset graph, role="medium button"]
+https://www.youtube.com/watch?v=_tuea3bsrPA[Watch the creation of the NBA graph, role="medium button"]
 
 [[features-3]]
 == Building A GraphQL Server with Next.js
+:tags: graphql, neo4j, nextjs, react, api, aura, vercel
 
-https://twitter.com/lyonwj[Will Lyon^] has again posted a tutorial
-
-image::https://dist.neo4j.com/wp-content/uploads/xyz/vercel.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210729101559/vercel.png[width=150,float="right"]
 
 Next.js is an awesome React framework, but did you know you can use it to build backend API endpoints?
-https://twitter.com/lyonwj[Will Lyon^] wrote a tutorial (with video!) on how to use #nextjs API routes to build a GraphQL API with @neo4j Aura & deploy as a serverless function w/ @vercel.
+Our wonderful GraphQL expert, https://twitter.com/lyonwj[Will Lyon^] wrote a tutorial (with video!) on how to use nextjs API routes to build a GraphQL API with Neo4j Aura.
+In the tutorial, he also shows you to deploy it as a serverless function with https://vercel.com/[vercel^].
 
-https://www.lyonwj.com/blog/graphql-server-next-js-neo4j-aura-vercel/[Follow the tuturial, role="medium button"]
+https://www.lyonwj.com/blog/graphql-server-next-js-neo4j-aura-vercel/[Follow the tutorial, role="medium button"]
 
 [[features-4]]
-== Feature 4
+== Graph-based Image Recognition in Hume
+:tags: neo4j, hume, graphaware, image-recognition, nlp, knowledge-graph
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210729101531/ImageRecognitionHume.png[width=150,float="right"]
 
-// 3-4 paragraphs
+https://www.linkedin.com/in/marco-del-coco-7b751b3a/[Marco Del Coco^] from https://graphaware.com/[GraphAware] just published a blog about using Hume for an image recognition application.
+In his application, he uses three Hume orchestra workflows to create the knowledge graph.
+He uses image processing and clustering back-end services to provide useful views of subjects co-occurrences, pictures and subject visualization and maps, and time perspectives.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://hubs.ly/H0SLd430/[Read the blog, role="medium button"]
 
 [[features-5]]
-== Feature 5
+== Integrate Neo4j with KarateClub Node Embedding Package
+:tags: neo4j, graph-embedding, KarateClub, data-science
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210729101536/KarateClub.png[width=150,float="right"]
 
-// 3-4 paragraphs
+https://twitter.com/tb_tomaz?lang=en[Tomaz Bratanic^] has recently posted a blog that describes how he used node embeddings to analyze the Harry Potter Universe data.
+To quote Tomaz: "Node embeddings are helpful when you want to capture network information in a fixed-size vector and use it in a downstream Machine Learning workflow."
 
-https://call-to-action-url/[Action, role="medium button"]
+In this blog he uses the KarateClub API to help him to create a NetworkX graph that is stored in Neo4j.
+He then uses a number of graph algorithms both in the Neo4j Graph Data Science library  and the KarateClub library to create the embeddings used to analyze the data.
+
+In addition, he shares a https://github.com/tomasonjo/blogs/blob/master/harry_potter/Harry_Potter_Karate_Club_integration.ipynb/[collab notebook^] so you can try the algorithms yourself.
+
+https://towardsdatascience.com/tagged/neo4j?p=99715d73250a/[Read the blog, role="medium button"]
 
 [[features-6]]
-== Feature 6
+== Neo4j Instance Migration
+:tags: neo4j, migration, maven, java
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210729101545/neo4j-migrations.png[width=150,float="right"]
 
-// 3-4 paragraphs
+https://twitter.com/rotnroll666[Michael Simons^], a Neo4j engineer has just released tooling for migrating a Neo4j instance that is embedded in your Java application.
 
-https://call-to-action-url/[Action, role="medium button"]
+This is a tool for defining Java based migrations that should be applied and recorded against a Neo4j instance.
+The only dependencies are the Neo4j Java driver and ClassGraph, the later being used to find migrations on the classpath.
 
+Neo4j Migrations is inspired by https://flywaydb.org/[FlywayDB^], which is an awesome tool for migration of relational databases.
+
+https://github.com/michael-simons/neo4j-migrations/releases/tag/0.3.1/[View the Github repo, role="medium button"]
+
+////
 [[features-7]]
 == Feature 7
 
@@ -107,10 +138,14 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
+////
+
 == Tweet of the Week
 
-My favorite tweet this week was by https://twitter.com/handle[name^]:
+My favorite tweet last week was by https://twitter.com/lyonwj[Will Lyon^]:
 
-tweet::tweet-id[]
+//https://twitter.com/lyonwj/status/1417828049337282561
+
+tweet::1417828049337282561[type={type}]
 
 Don't forget to RT if you liked it too!

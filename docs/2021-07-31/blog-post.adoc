@@ -1,0 +1,116 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Elaine Rosenberg
+// twin4j is added automatically
+:tags:
+
+Hello, everyone!
+
+// introduction
+
+[[featured-community-member]]
+== Featured Community Members: Rajesh Gaddipati & Vishal Kachave
+
+This week's featured community members are Rajesh Gaddipati & Vishal Kachave. They both collaborated recently on a presentation for API Summit 2021 where they showed how they used GraphQL and Neo4j.
+
+Rajesh is very active in the Twitter Community on topics relating to Neo4j and is a Certified Neo4j Professional. He uses his Neo4j and GraphQl expertise to develop applications for Fujitsu.
+
+Vishal has also developed GraphQL applications that use Neo4j at Fujitsu.
+
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Rajesh Gaddipati & Vishal Kachave"]
+
+// linkedin link
+https://www.linkedin.com/in/rajesh-gaddipati-4a0544143/[Connect with Rajesh Gaddipati on LinkedIn, role="medium button"]
+
+https://www.linkedin.com/in/vishal-kachave-403751185/[Connect with Vishal Kachave on LinkedIn, role="medium button"]
+
+
+[[features-1]]
+== Talk: API Summit 2021 - GraphQL and Neo4j
+:tags: graphql, neo4j, rest, conference-data, api
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/APISummit2021.png[width=150,float="right"]
+
+Rajesh Gaddipati and Vishal Kachave did a presentation at API Summit 2021 on "The role of GraphQL in emerging technologies".
+
+They compared Graph Databases with relational databases, demonstrated a REST API, and compared it with a GraphQL API explaining the differences and the benefits of each approach.
+
+Then they introduced and demoed the Neo4j/GraphQL library providing an API for inserting and serving the conference data using Neo4j Aura Free as a back-end database.
+Using that data, they ran some advanced queries on top of the last 5 years of conference data to show the power of a graph using Neo4j Browser and Bloom.
+
+
+https://www.youtube.com/watch?v=kUehuIgjhrI[Watch the GraphQL & Neo4j talk, role="medium button"]
+
+[[features-2]]
+== Discovering Neo4j Aura Free with Lju and Alex
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/NBAModel.png[width=150,float="right"]
+
+My colleagues in Developer Relations, https://twitter.com/ellazal/[Lju Lazaravic^] and https://twitter.com/alexandererdl/[Alex Erdl^], have started a new live-streaming event that will occur on Momdays.
+Every week, they will hold a session that shows you how to model and load the data into a Neo4j Aura Free instance.
+The sessions typically last for an hour and will be posted https://github.com/lju-lazarevic/discoveraurafree/[here^].
+Every week, Lju and Alex will show you how to model a different dataset.
+
+For this week's stream, they show you how to model and create a graph with the U.S. National Basketball Association (NBA) data that is publicly available from the https://fivethirtyeight.com/[FiveThirtyEight] site.
+
+https://www.youtube.com/watch?v=_tuea3bsrPA[Watch the creation of the NBA dataset graph, role="medium button"]
+
+[[features-3]]
+== Building A GraphQL Server with Next.js
+
+https://twitter.com/lyonwj[Will Lyon^] has again posted a tutorial
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/vercel.png[width=150,float="right"]
+
+Next.js is an awesome React framework, but did you know you can use it to build backend API endpoints?
+https://twitter.com/lyonwj[Will Lyon^] wrote a tutorial (with video!) on how to use #nextjs API routes to build a GraphQL API with @neo4j Aura & deploy as a serverless function w/ @vercel.
+
+https://www.lyonwj.com/blog/graphql-server-next-js-neo4j-aura-vercel/[Follow the tuturial, role="medium button"]
+
+[[features-4]]
+== Feature 4
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[[features-5]]
+== Feature 5
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[[features-6]]
+== Feature 6
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[[features-7]]
+== Feature 7
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/handle[name^]:
+
+tweet::tweet-id[]
+
+Don't forget to RT if you liked it too!

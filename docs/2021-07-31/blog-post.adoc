@@ -142,10 +142,10 @@ https://call-to-action-url/[Action, role="medium button"]
 
 == Tweet of the Week
 
-My favorite tweet last week was by https://twitter.com/lyonwj[Will Lyon^]:
+My favorite tweet last week was by https://twitter.com/drlynnchiu[Lynn Chiu^]:
 
 //https://twitter.com/lyonwj/status/1417828049337282561
 
-tweet::1417828049337282561[type={type}]
+tweet::1420879160742924294[type={type}]
 
 Don't forget to RT if you liked it too!

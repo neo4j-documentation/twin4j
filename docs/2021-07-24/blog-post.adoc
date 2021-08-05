@@ -1,0 +1,184 @@
+// 2021-07-24
+= This Week in Neo4j - DeFi Blockchain Graph, FlatData, NER with SpaCy, NODES talks on API, App Development, DevOps, GraphQL, Bloom, Visual Query Builder
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-defi-blockchain-graph-flatdata-ner-with-spacy-nodes-talks-on-api-app-development-devops-graphql-bloom-visual-query-builder
+:noheader:
+:linkattrs:
+:categories: twin4j
+:author: Michael Hunger
+// twin4j is added automatically
+:tags: blockchain, ethereum, sovryn, defi, flatdata, scraping, lobsters, github, actions, book, graph, NER, NLP, spacy, python, data science, harry potter, testing, temporary database, nodes-2021, application, api, antibiotics, python, fastapi, unreal, voice recognition, dell, gene variants, legal, knowledge, test automation, data marketplace, wine search, graphql, devops, python, skaffold, infrastructure, bloom, performance, filters, styling, kineviz, visual query builder, cypher, bloodhound, cybersec, windows
+
+Hello, everyone!
+
+I'm leaving for some time off next week but I don't want to leave you without the weekly update from the Neo4j ecosystem. I have three call-outs to make, and then let you digest the amazing content from this week.
+
+First of all: https://neo4j.com/blog/certified-neo4j-professional-t-shirts-are-back/[Neo4j Certification T-Shirts are back for the summer!^] Get yours in one of many colors and show off your skills.
+
+Starting early next Monday (8AM UTC), Lju and Alex will pick a dataset each week on our https://twitch.tv/neo4j[Twitch Channel^] and discuss how to model, import and query it. For those of you that can't make it, the recording will be ready when you wake up. If you want to suggest datasets please let them know in https://dev.neo4j.com/chat[Discord^].
+
+*We are hiring a Product Manager for Neo4j GraphQL tooling.*
+They would be responsible for shaping the future of GraphQL integrations for Neo4j and work with a great team!
+
+So if you know someone who is a great fit (including yourself) please https://jobs.lever.co/neo4j/b48cda4b-8270-4f6f-adaa-e729cb7ccf3b[apply here^].
+
+Have a great weekend and enjoy the newsletter.
+
+Cheers, Michael
+
+[[featured-community-member]]
+== Featured Community Member: William Gathright
+:tags: blockchain, ethereum, sovryn, defi
+
+This week's featured community member is William Gathright.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210723030233/this-week-in-neo4j-24-July-2021.jpeg[name="William Gathright"]
+
+Will is a Neo4j Certified Professional since 2020 and just published https://medium.com/neo4j/knowledge-graph-defi-with-neo4j-d508dd8c07ab[an article describing how to represent the Sovryn Blockchain as a graph^]. He discusses how decentralized finance can enable many new applications by supporting new instruments on established cryptocurrency infrastructure. In the article he also links his really cool explainer video of the knowledge graph he submitted to teh Sovryn Hackathon.
+
+William is CTO at Talos IoT an company providing more value and insights out of connected technology. He's also CEO of Tumalow Energy Storage and and Vice Chairman of the VA Solar Energy/Storage authority.
+He's versed in many things from material sciences, to solar and energy tech and high- and low-level software development.
+
+
+Thanks a lot William for the article, and knowledge graph code. Making financial networks more transparent is always a good application of graph technology.
+
+https://www.linkedin.com/in/william-gathright-phd-363907/[Connect with William on LinkedIn, role="medium button"]
+
+[[features-1]]
+== FlatGraph - A Neo4j integration for GitHubs FlatData - Lobste.rs Data Scraping
+:tags: flatdata, scraping, lobsters, github, actions
+
+image::https://dist.neo4j.com/wp-content/uploads/20210723064714/flat-graph.png[width=150,float="right"]
+
+When GitHubs FlatData came out a few weeks ago, I was quite impressed about the ingenuity of using a build system to execute repeatable tasks for loading or transforming data and committing the data to a GitHub repository, to capture a historic trail. (Some could say almost a "git"chain).
+
+Will wrote an integration to allow that data to be easily synched to a Neo4j database to incrementally build up a Knowledge Graph and applied it to the Lobste.rs API to scrape recent and hot articles and storing them in Neo4j Aura for free.
+
+https://lyonwj.com/blog/no-cost-data-scraping-github-actions-neo4j-aura[Read more about FlatGraph, role="medium button"]
+
+[[features-2]]
+== Just Like Magic: Turning a Harry Potter book into a Knowledge Graph with SpaCy and Neo4j
+:tags: book, graph, NER, NLP, spacy, python, data science, harry potter
+
+image::https://dist.neo4j.com/wp-content/uploads/20210723064717/harry-potter-spacy.png[width=150,float="right"]
+
+Avid readers know about the Game Of Thrones network character-interaction-graph analysis which is super interesting. 
+If you wondered how to create the same yourself with any text of your chosing, Tomaz got you covered.
+
+In a fascinating deep dive he explains how to use Spacy a powerful Python tool for Natural Language Processing (NLP) - to turn a magical book (Harry Potter) into magical graph.
+
+Stay tuned for the next article which then applies some more data science to your favorite characters.
+
+https://medium.com/neo4j/turn-a-harry-potter-book-into-a-knowledge-graph-ffc1c45afcc8[Learn how to do NLP with Spacey, role="medium button"]
+
+[[features-3]]
+== Quick, Temporary Neo4j Databases on Demand
+:tags: testing, temporary database
+
+image::https://dist.neo4j.com/wp-content/uploads/20210723030230/temp-db.jpeg[width=150,float="right"]
+
+For our http://neo4j.com/graphgists[GraphGist Portal^] we needed a new way of providing short-lived temporary Neo4j databases. Our old in-memory-db app didn't cut it anymore after 6 years, so we decided to use the multi-database feature of Neo4j 4.x to realize the same.
+
+To make it reusable the functionality was published as a javascript library (https://www.npmjs.com/package/@neo4j-labs/temp-dbs[neo4j-labs/temp-dbs^]), that you can integrate into your testing setups or use elsewhere where you need a throw-away Neo4j db to execute some Cypher statements against (and possibly visualize the results).
+
+It also allows to expire databases that are older than a certain time.
+
+Find out more from Allison who wrote up an how to as a blog post.
+
+https://medium.com/neo4j/a-library-for-temporary-neo4j-databases-36d69e1fd96e[Check out the blog post, role="medium button"]
+
+
+
+[[features-4]]
+== NODES 2021 Videos - Apps & APIs  Track
+:tags: nodes-2021, application, api, antibiotics, python, fastapi, unreal, voice recognition, dell, gene variants, legal, knowledge, test automation, data marketplace, wine search, graphql
+
+image::https://dist.neo4j.com/wp-content/uploads/20210723030225/nodes-apps-apis.png[width=150,float="right"]
+
+Building Applications or APIs to power them is the most exciting part for a developer as it gets the data into your users hands. In this track at NODES 2021 conference, pracitioners shared their learnings and tips on how to do that.
+
+First we have Roland Haas and Asoke K Talukder explaining how infectious disesase knowledge graphs can help fight antibiotic resistance of bacteria. Then long-time Neo4j champion Koji Annoura demonstrates how to generate Cypher queries using the Web-Speech-API in your browser. 
+
+How to extend the popular Python backend package FastAPI for Neo4j is shown by Dave Bender, demoing FastGraph. Next is Antonio Origlia who builds virtual humans backed by a graph extension (Fantasia) in Unreal Engine 4. 
+
+A Gene Variant Graph is built by Matthew Gerring using GeneWeaver. Peter Bouda from Apiax shows their legal assistant built on a knowledge graph. Frederik Byl from KBC details their journeys with Neo4j from test automation to internal data marketplaces. Hari Nair from Dell, gives a quick overview of graph usages from entity linking to analysing business flows using graph algorithms. 
+
+Deliciously, Steve Blackmon and Yash Gad explain how PixWine uses graphs to power their wine search engine. And finally Arif Hanif serves GraphQL endpoints powered by HotChocolate a .Net GraphQL framework.
+
+Loads of good talks to explore I hope I piqued your interest for this NODES track.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvXOozP7d23sh27QikC75QTw[Watch the NODES Apps & APIs Track on YouTube, role="medium button"]
+
+
+[[features-5]]
+== Hot Reload Your Infrastructure as Code with Skaffold
+:tags: devops, python, skaffold, infrastructure
+
+image::https://dist.neo4j.com/wp-content/uploads/20210723030222/infrastructure-as-code-skaffold.jpeg[width=150,float="right"]
+
+My colleague Max Andersson knows much more about infrastructure, cloud and devops than I will ever know.
+
+In this article he shares how to use Skaffold to create executable and immutable infrastructure definitions for a Docker or Kubernetes setup in a concise way.
+
+https://medium.com/neo4j/hot-reload-your-infrastructure-as-code-with-skaffold-2f2e6ec6a6d0[Learn more about Infrastructure as Code, role="medium button"]
+
+
+[[features-6]]
+== Recent Updates in Neo4j Bloom
+:tags: bloom, performance, filters, styling
+
+image::https://dist.neo4j.com/wp-content/uploads/20210723030227/recent-bloom-updates.jpeg[width=150,float="right"]
+
+Neo4j Bloom PM Jeff Gagnon summarizes the updates of the last 2 releases in this blog post. He covers better performance in search and visualization, as well as usability improvements with Auto-Perspectives and Style reordering.
+
+A very cool new feature is in-scene filtering which allows you to hide temporarily or dismiss nodes based on property filters.
+
+https://medium.com/neo4j/recent-updates-to-neo4j-bloom-7bee848a91e8[Read the article, role="medium button"]
+
+
+[[features-7]]
+== Kineviz Visual Query Builder
+:tags: kineviz, visual query builder, cypher
+
+Kineviz released version 2.11 of their really cool graph visualization software GraphXR which now comes with a https://helpcenter.kineviz.com/learning-center/Working%20version/Visual-Query-Builder.1377304877.html[visual query builder for Cypher^]. 
+It's pretty impressive, you can build simple and complex Cypher queries and combining them.
+It also allows for in-memory querying of the visualized graph.
+The video explains it in much detail with a number of examples on the 2020 election dataset.
+
+https://www.youtube.com/watch?v=5YMKDik6GWo[Watch the Query Builder video, role="medium button"]
+
+////
+
+[[features-8]]
+== Talk: API Summit 2021 - GraphQL and Neo4j
+:tags: graphql, neo4j, rest, conference data, api
+
+Rajesh Gaddipati and Vishal Kachave did a presentation at API Summit 2021 on "The role of GraphQL in emerging technologies".
+
+They compare Graph Databases with relational Databases, demonstrate a REST API and compare it with a GraphQL API explaining the differences and the benefits of each approach. 
+
+Then they introduce and demo the neo4j/graphql library providing an API for inserting and serving the conference data using Neo4j Aura Free as a backing database.
+
+Using that data, they run some advanced queries on top of the last 5 years of conference data to show the power of a graph using Neo4j Browser and Bloom.
+
+https://www.youtube.com/watch?v=kUehuIgjhrI[Watch the GraphQL & Neo4j talk, role="medium button"]
+
+== Quick Links
+:tags: graphql, hume, image recognition 
+
+
+* GraphAware published a blog post about https://graphaware.com/hume/2021/07/21/graph-based-image-recognition-in-hume.html[graph based image recognition with Hume^]
+* Lju transcribed the first part of the podcast episode https://medium.com/neo4j/will-it-graph-identifying-a-good-fit-for-graph-databases-part-1-506eda46c26e["Will it Graph? Identifying a good fit for graph databases"^] as a blog article
+////
+
+== Tweet(s) of the Week
+
+:tags: bloodhound, cybersec, windows
+
+Bloodhound is an amazing cybersecurity tool built on top of Neo4j. Big thanks to https://twitter.com/_wald0[Andrew Robbins^] and team for all your work. Andrew shares some of the recent cool features in a twitter thread.
+
+tweet::1418077997051957252[type={type}]
+
+
+Don't forget to RT if you liked it too!
+

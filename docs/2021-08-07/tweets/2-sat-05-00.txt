@@ -1,0 +1,5 @@
+In this week's #twin4j, @ElLazal and @lyonwj continue their series "Will it Graph?" by exploring the good and poor fits for graph databases.
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/#features-1
+
+#neo4j #graphdatabase

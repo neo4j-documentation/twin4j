@@ -1,0 +1,5 @@
+In this week's #twin4j, we look at how to identify graphy problem, Python backups, temp databases, streaming from Kinesis, NASA knowledge graphs. And Kanye West.
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/
+
+#neo4j #AWS #kinesis #KnowledgeGraph #Python

@@ -1,0 +1,5 @@
+Are you interested in streaming large amounts of real-time data into Neo4j? In this week's #twin4j, @utnaf shows you how to connect AWS Kinesis to Neo4j with Spark.
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/#features-5
+
+#neo4j #spark #kinesis #graphdatascience

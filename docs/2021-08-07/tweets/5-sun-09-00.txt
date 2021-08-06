@@ -1,0 +1,5 @@
+In this week's #twin4j, you can find an article from @VentureBeat about the work by @davidmeza1 and @NASA using knowledge graphs to hook people up to projects.
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/#features-4
+
+#neo4j #knowledgegraph

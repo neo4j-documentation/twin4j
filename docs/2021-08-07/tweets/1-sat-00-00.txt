@@ -1,0 +1,5 @@
+This week's featured member in #twin4j is Katerina Baousi of @CambridgeIntel, who presented at #NODES2021 on exploring the life of a Twitter troll with #Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/#featured-community-member
+
+#neo4j

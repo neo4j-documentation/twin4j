@@ -1,0 +1,5 @@
+In this week's #twin4j, we present the NODES2021 Extended talks by Siddharth Karumanchi and @wiber on semantic AI and the Theta Base respectively.
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/#features-3
+
+#neo4j #database #nlp #knowledgegraph #artificialintelligence

@@ -1,0 +1,5 @@
+Believe it or not, we can turn Kanye West into a graph! In this week's #twin4j, @rvanbruggen demonstrates how to calculate the Kanye Number in this fun example!
+
+https://neo4j.com/blog/this-week-in-neo4j-will-it-graph-python-database-backups-temporary-databases-knowledge-graphs-kinesis-and-kanye-west/#features-6
+
+#neo4j #python #cypher #bloom #postgres

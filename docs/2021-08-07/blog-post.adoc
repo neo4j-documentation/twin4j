@@ -1,0 +1,119 @@
+= This Week in Neo4j - Will it Graph, Python Database Backups, Knowledge Graphs, Kinesis, and Kanye West
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-will-it-graph-python-database-backups-semantic-ai-thetabase-knowledge-graphs-kinesis-and-kanye-west
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Clair Sullivan
+// twin4j is added automatically
+:tags: neo4j, graph-database, graphy-problem, graphstuff-fm, python, pypi, backup, database, nlp, knowledge-graph, artificial-intelligence, nasa, spark, aws-kinesis, gds, graph-data-science, apache-zeppelin, cypher, bloom, postgres, browser
+
+Hello, everyone!
+
+It's August and many of us are thinking about taking a restful break from work for the month, or perhaps returning our kids to school.  However our community members are hard at work generating some
+great things with Neo4j!
+
+We are taking the opportunity this week to highlight Katerina Baousi, who gave an excellent talk at NODES 2021 on looking at Twitter trolls using Neo4j.  We also have posts ranging from identifying graphy problems to using temporary graphs for unit testing to how to go from AWS Kinesis to Neo4j in Spark.  There is an article this week showing how NASA is using knowledge graphs to manage people, skills, and projects.  Lastly, you will not want to miss the fun in going through the Six Degrees of Kanye West!
+
+
+[[featured-community-member]]
+== Featured Community Member: Katerina Baousi
+
+This week's featured community member is Katerina Baousi. 
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210804124517/this-week-in-neo4j-07-August-2021.jpeg[name="Katerina Baousi"]
+
+Katerina is a solutions engineer at
+Cambridge Intelligence.  She has a great deal of skill in a broad variety of areas, including web
+development and data visualization.  Her work at Cambridge Intelligence is focused on the KronoGraph tool for exploring timeline analysis within graph data. She also gave an excellent talk at NODES 2021 on https://youtu.be/YuwiGgTTV3c[Timeseries Visualization of Social Networks with Neo4j^].  
+
+// linkedin link
+https://www.linkedin.com/in/katerina-baousi/[Connect with Katerina Baousi on LinkedIn, role="medium button"]
+
+[[features-1]]
+== Will It Graph? (part 2)
+:tags: neo4j, graph-database, graphy-problem, graphstuff-fm
+
+image::https://dist.neo4j.com/wp-content/uploads/20210804120709/will-it-graph.png[width=150,float="right"]
+ 
+In this episode of https://graphstuff.fm/episodes[GraphStuff.FM^],Neo4j's own https://twitter.com/ElLazal[Lju Lazarevic^] and https://twitter.com/lyonwj[William Lyon^] present information on how to identify whether you have a "graphy" problem and how to know whether a graph database is the right fit for your problem.  This is the second part of a series on the topic.  Part 1 can be found https://neo4j.com/developer-blog/will-it-graph-identifying-a-good-fit-for-graph-databases-part-1/[here^].
+
+One key indicator that they discuss is that having a lot of JOINs in a typical workflow is a big hint to suspecting that you have a graphy problem since multi-hop traversals can be expensive.  This is particularly beneficial when you don't know how many connections you are interested in at query time (i.e. a variable-length graph traversal).  Some examples that they provided include fraud detection and network and IT management.
+
+https://neo4j.com/developer-blog/will-it-graph-identifying-good-fit-graph-databases-part-2/[Read the Blog Post, role="medium button"]
+
+https://graphstuff.fm/episodes/will-it-graph-identifying-a-good-fit-for-graph-databases[Listen to the Podcast, role="medium button"]
+
+[[features-2]]
+== A New Tool to Backup a Neo4j Database with Python
+:tags: python, neo4j, pypi, backup
+
+image::https://dist.neo4j.com/wp-content/uploads/20210804120705/pypi-logo.svg[width=150,float="right"]
+
+Are you interested in downloading and uploading data into a Neo4j database where using dump files is not an option?  Would you like to be able to store your data in different formats thus allowing, say, easily changing which version of Neo4j you are using?  Would you like an open source Python package that is capable of doing so, installable via pip?  Then check out the code that https://github.com/andreshyer[Andres Hyer^] has written to do just that.  You can use it on Aura, with Docker, via the command-line, or pretty much any way that you want.  Check it out!
+
+https://pypi.org/project/neo4j-backup/[Learn More, role="medium button"]
+
+[[features-3]]
+== NODES 2021 Extended: Semantic AI Platform; What is the Theta Base
+:tags: neo4j, database, nlp, knowledge-graph, artificial-intelligence
+
+image::https://dist.neo4j.com/wp-content/uploads/20210805144333/nodes-2021-1.png[width=150,float="right"]
+
+We are now into full swing with the NODES 2021 Extended talks, which build off of the excitement from NODES 2021 with even more high-quality talks.
+
+So we are taking the opportunity to highlight the talks of two users.  The first is Siddharth Karumanchi, founding research scientist at QUIPI, who presented a talk entitled "Semantic AI Platform."  The goal of this work is to bring the context for enterprise domain knowledge in a convenient way.  He showed how to semantically enrich a knowledge graph to aid in text mining and natural language processing problems like entity extraction and disambiguation.
+
+The second talk was presented by https://twitter.com/wiber[Elias Moosman^], co-founder of Youiest, who discussed the Theta Base.  In this talk he shared how pulling together though, data, and ownership can be used to create apps around measuring and influencing employee engagement.  This looks at how intentions and values for an organization interact with both positive and negative correlation, managed with Neo4j.
+
+
+https://youtu.be/VhXPI4bydJU[Watch the Session Here, role="medium button"]
+
+[[features-4]]
+== How NASA is Using Knowledge Graphs to Find Talent
+:tags: knowledge-graph, neo4j, nasa
+
+image::https://dist.neo4j.com/wp-content/uploads/20210804120703/nasa-4.svg[width=150,float="right"]
+
+Continuing their tradition of actively using Neo4j, NASA has detailed their use of a talent mapping database to show the relationships between people,
+skills, and projects in a knowledge graph.  
+
+Senior data scientist https://twitter.com/davidmeza1?lang=en[David Meza^] described this work to Venture Beat. The aim is to look at identifying things like skills, tasks, and technology within a work role and translate that to employees for things like connecting
+that employee with training around NASA-specific competencies.  It will hopefully give the
+employees an opportunity to explore how to further their careers and better align people
+across the organization. 
+
+https://venturebeat.com/2021/07/24/how-nasa-is-using-knowledge-graphs-to-find-talent/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+venturebeat/SZYF+(VentureBeat)&utm_content=Google+Feedfetcher/[Read the Article, role="medium button"]
+
+[[features-5]]
+== (from:Kinesis)-[:VIA_SPARK]->(to:Neo4j)
+:tags: spark, aws-kinesis, neo4j, gds, graph-data-science, apache-zeppelin
+
+image::https://dist.neo4j.com/wp-content/uploads/20210803145307/kinesis-spark-neo4j.jpeg[width=150,float="right"]
+
+Are you interested in streaming large amounts of real-time data into Neo4j?  https://twitter.com/utnaf[Davide Fantuzzi^] of LARUS has written a blog post on how to
+use the Neo4j Spark connector to get an AWS Kinesis Data Stream into a Neo4j database. This post includes a complete demonstration of how to set up a proper IAM user, the Kinesis Data Stream, and the Kenesis Data Generator in preparation for data ingest into Neo4j.  He then provides the reader with a Docker container that runs an Apache Zeppelin notebook, allowing you to tinker with Spark and Neo4j and then finally explore the graph in the Neo4j browser.
+
+https://medium.com/neo4j/from-kinesis-via-spark-to-neo4j-97d564562b61/[Read the Blog Post, role="medium button"]
+
+[[features-6]]
+== Six Degrees of Kanye West
+:tags: python, neo4j, cypher, bloom, postgres, graph-database, browser
+
+image::https://dist.neo4j.com/wp-content/uploads/20210803145306/kanye-bloom.png[width=150,float="right"]
+
+Have you ever wanted to be able to calculate the Kanye Number for a given artist?  Admit
+it...you have!  Neo4j's own https://twitter.com/rvanbruggen[Rik Van Bruggen^] has written a blog post showing you how (part 3/3 of this series).  Using the data available from Musicbrainz, he has created a
+fun demo that shows the power of graph databases with some basic Cypher queries to get you
+started.  There are plenty of worked Cypher examples, including calculating the Kanye Number, finding recordings with the most artists, and concludes with a nice Bloom demonstration.
+
+http://blog.bruggen.com/2021/08/summer-fun-with-musicbrainz-real-six_8.html[Read the Blog Post, role="medium button"]
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/BoardGameGeek[BoardGameGeek^]:
+
+tweet::1422416172088233987[type={type}]
+
+Don't forget to RT if you liked it too!

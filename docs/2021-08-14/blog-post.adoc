@@ -1,0 +1,105 @@
+= This Week in Neo4j - GraphQL Library v2, Aura Free Demo, Power BI, MLOps, The Louvre, and Discourse versus Discord
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Clair Sullivan
+// twin4j is added automatically
+:tags: neo4j, graphql, aura, twitch, power-bi, stock-market, graph-data-science, gdsl, graph-data-science-library, mlops, machine-learning, communication, discourse, discord
+
+Hello, everyone!
+
+// introduction
+
+[[featured-community-member]]
+== Featured Community Member: Daniel Starns and Darrell Warde
+
+This week's featured community members are Daniel Starns and Darrell Warde.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210812083823/this-week-in-neo4j-14-August-2021.jpeg[name="Daniel Starns and Darrell Warde"]
+
+https://twitter.com/danstarns1[Dan Starns^] and https://twitter.com/darrell_warde[Darrell Warde^] are both software engineers on the GraphQL team at Neo4j in London. If you've used GraphQL with Neo4j at all chances are you've come across their work. Dan and Darrell have been working together to build the https://neo4j.com/product/graphql-library/[Neo4j GraphQL Library^], which had a major 2.0 release this week. In addition to engineering work, Dan and Darrell support the Neo4j community by being extremely active and helpful on the Neo4j Discord server (especially the #graphql channel!), writing blog posts, and giving talks. For example, at NODES 2021 Dan presented https://www.youtube.com/watch?v=FhOAQJluTIg["Securing Your Graph With Neo4j GraphQL"^], and Darrell presented https://www.youtube.com/watch?v=sZ-eBznM71M["Neo4j and GraphQL: The Past, The Present and The Future"^]. Thanks so much Dan and Darrell for all you do to support the Neo4j community!
+
+
+// linkedin link
+https://www.linkedin.com/in/danielstarns/[Connect with Dan on LinkedIn, role="medium button"]
+
+https://www.linkedin.com/in/darrellwarde/[Connect with Darrell on LinkedIn, role="medium button"]
+
+[[features-1]]
+== Release of the Neo4j GraphQL Library 2.0.0
+:tags: neo4j, graphql
+
+image::https://dist.neo4j.com/wp-content/uploads/20210810102000/graphql.jpg[width=150,float="right"]
+
+The Neo4j GraphQL library version 2 is now available!  In addition to incorporating several learnings from v1, there are many new features associated with this version.  One of the most exciting new additions is the inclusion of relationship properties in a low-friction way with familiar constructs.  Other additions in this version include cursor pagination, count queries, improvements with union relationship fields, and many more.  If this all sounds good to you, follow https://neo4j.com/docs/graphql-manual/2.0/guides/v2-migration/[this migration guide^] to quickly get you moved from v1 to v2.
+
+https://neo4j.com/developer-blog/announcing-the-release-of-neo4j-graphql-library-2-0-0/[Read the Announcement, role="medium button"]
+
+https://youtu.be/Ww3XclhuaaU[Watch the Livestream Video, role="medium button"]
+
+[[features-2]]
+== Lju and Alex Demo Aura Free with the World Championship Chess Match
+:tags: aura, twitch, neo4j
+
+image::https://dist.neo4j.com/wp-content/uploads/20210810101958/chess.png[width=150,float="right"]
+
+As part of their on-going https://www.twitch.tv/neo4j[Twitch^] series, https://twitter.com/ElLazal[Lju Lazarevic^] and https://twitter.com/alexandererdl/[Alex Erdl^] continue their demonstrations of Aura Free.  In this week's Twitch stream, they looked at the moves of the championship chess match of Carlsen versus Caruana (2018) scraped from https://boardgamegeek.com/browse/boardgame[Board Game Geek^].  The data model is discussed in detail as well as explorations of the use of chess board positions, commonly used pieces, and what moves those pieces played.
+
+If you have any graphs you want to see highlighted in future Twitch streams, please let them know!
+
+https://youtu.be/vkTQpOr2BNc[Watch the Video, role="medium button"]
+
+https://github.com/lju-lazarevic/discoveraurafree#week-3-the-caruana-carlsen-chess-game-data-set[Check out the Repo, role="medium button"]
+
+
+[[features-3]]
+== Visualize Stock Volume Similarity with Neo4j and Power BI
+:tags: neo4j, power-bi, stock-market, graph-data-science, gdsl, graph-data-science-library
+
+image::https://dist.neo4j.com/wp-content/uploads/20210810102005/neo-power-bi.png[width=150,float="right"]
+
+In his next post in a series on Power BI and Neo4j, https://twitter.com/BryantAvey[Bryant Avey^] wrote up a post from his Bootcamp session on how to create Power Query templates to import data from Neo4j.  He then uses algorithms from the Neo4j https://dev.neo4j.com/gdsl[Graph Data Science library^] to score and categorize volume similarity between stocks.  He also uses Power BI to visualize the data in a variety of ways.
+
+https://medium.com/@bryantavey/pattern-driven-insights-visualize-stock-volume-similarity-with-neo4j-and-power-bi-13ca922acad1/[Read the Blog Post, role="medium button"]
+
+[[features-4]]
+== NODES 2021 Talk: Set Your Graph in Hyperdrive with Machine Learning and MLOps
+:tags: mlops, machine-learning, graph-data-science, gdsl, graph-data-science-library
+
+image::https://dist.neo4j.com/wp-content/uploads/20210805144333/nodes-2021-1.png[width=150,float="right"]
+
+At NODES 2021, https://www.linkedin.com/in/camilladalrio/[Camilla Dal Rio^], a data scientist at Moviri Analytics, presented a talk about building MLOps native apps with Neo4j.  The goal of her work is to create a platfrom that addresses the problem of mapping IT systems from a variety of points-of-view, including things like anomaly detection and scenario simulation for configuration change.  The platfrom she presented ingests a variety of different data sets, both in batch and in streaming modes.  She discussed the use of a several algorithms in the Graph Data Science library that she uses to solve problems like the prediction and analysis of incident propagation and identification of potential hot areas in the network for that propogation.
+
+https://youtu.be/oIy1TFcg9v0[Watch the Talk, role="medium button"]
+
+[[features-5]]
+== Examining the Louvre
+:tags: neo4j, graph-data-science, gdsl, graph-data-science-library
+
+image::https://dist.neo4j.com/wp-content/uploads/20210810102002/louvre.jpeg[width=150,float="right"]
+
+In part 3 of her series exploring the Louvre as a graph, Priya Jacob uses the Graph Data Science library to analyze the collection of art.  In particular, she demonstrates how to use algorithms like node similarity and the Louvain method for community detection to make inferences on the artwork.  For example, her results demonstrate the node similarity of Michelangelo to a variety of other associated with the Renaissance period -- all with the power of a graph!  She also looks at the detected communities of German and Dutch artists within the graph belonging to the German Renaissance/Baroque periods.  In other exciting results she is able to identify similar paintings with great visible accuracy.
+
+https://priya-jacob.medium.com/examining-the-louvre-cfcca2d26537/[Read the Blog Post, role="medium button"]
+
+[[features-6]]
+== Discourse vs Discord
+:tags: neo4j, communication, discourse, discord
+
+image::https://dist.neo4j.com/wp-content/uploads/20210325023926/discord-preview.jpg[width=150,float="right"]
+
+If you are like many of us you have found yourself asking when to reach out to the Neo4j via https://community.neo4j.com/[Discourse^], the home of the community discussion pages, versus https://discord.com/invite/neo4j[Discord^], the live chat environment.  https://twitter.com/akollegger[Andreas Kollegger^], one of the members of the Neo4j Developer Relations team, has written up a guide with some good "rules of thumb" on how to know which to use when.
+
+https://community.neo4j.com/t/discourse-vs-discord/42345[Read the Post, role="medium button"]
+
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/JavascriptMick[Michael Dausmann^]:
+
+tweet::1424530388773343234[type={type}]
+
+Don't forget to RT if you liked it too!

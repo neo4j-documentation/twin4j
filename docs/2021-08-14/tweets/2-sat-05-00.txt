@@ -1,0 +1,5 @@
+In this week's #twin4j, we are excited to talk about the release of the Neo4j GraphQL version 2!  Check out the official announcement and video discussion:
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/#features-1
+
+#neo4j #GraphQL

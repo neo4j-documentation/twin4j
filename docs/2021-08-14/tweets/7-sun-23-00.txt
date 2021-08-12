@@ -1,0 +1,5 @@
+There are a lot of ways you can interact with the Neo4j community! In this week's #twin4j, @akollegger gives some handy "rules of thumb" on how to know when to use the Community Forums versus the Neo4j Discord server.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/#features-6
+
+#neo4j #discourse #discord

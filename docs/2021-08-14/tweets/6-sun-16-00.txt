@@ -1,0 +1,5 @@
+Did you know that you can use graph data science to explore The Louvre? In this week's #twin4j, Prija Jacob shows how to use node similarity and the Louvain community detection algorithm to do it.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/#features-5
+
+#neo4j #GraphDataScience

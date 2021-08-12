@@ -1,0 +1,5 @@
+MLOps is an exciting area of opportunity! In this week's #twin4j, we look at the #NODES2021 presentation by Camilla Dal Rio of @moviri who talked about creating an MLOps pipeline with Neo4j to map and analyze IT systems.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/#features-4
+
+#neo4j #MLOps #MachineLearning

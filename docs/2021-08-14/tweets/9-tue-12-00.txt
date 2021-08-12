@@ -1,0 +1,5 @@
+In this week's #twin4j, we talk about the release of the Neo4j GraphQL 2.0.0, show examples using Aura, talk about Power BI, MLOps, and graphing The Louvre. Also, what is the best way to reach out to the community?
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/
+
+#neo4j #GraphQL #PowerBI #MLOps

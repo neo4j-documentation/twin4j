@@ -1,0 +1,5 @@
+This week's featured members in #twin4j, are @danstarns1 and @darrell_warde, who have worked as part of the team to create the GraphQL Library 2.0.0. You can also find them as active participants on the Neo4j Discord server.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/#featured-community-member
+
+#neo4j

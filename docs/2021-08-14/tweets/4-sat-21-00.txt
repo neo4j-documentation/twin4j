@@ -1,0 +1,5 @@
+In this week's #twin4j, we highlight a new post by @BryantAvey who uses Power BI and the Neo4j Graph Data Science library to import, analyze, and visualize stock market data from a Neo4j database.
+
+https://neo4j.com/blog/this-week-in-neo4j-graph-ql-library-v2-aura-free-demo-power-bi-mlops-the-louvre-and-discourse-versus-discord/#features-3
+
+#neo4j #PowerBI #GraphDataScience

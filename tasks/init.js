@@ -94,15 +94,6 @@ function nextDate(dayIndex) {
   return today
 }
 
-function slugify(value) {
-  return value.toLowerCase()
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, '')
-    .replace(/[^\x00-\x7F]/g, '-')
-    .replace(/[^a-zA-Z\d]/g, '-')
-    .replace(/-{2,}/g, '-')
-}
-
 const args = process.argv.slice(2)
 const issueDateArg = args[0]
 

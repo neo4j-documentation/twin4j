@@ -1,0 +1,5 @@
+In the second graph embedding article in this week's #twin4j, @CJLovesData1 goes into depth on the FastRP algorithm, summarizing the research papers used to develop it so you can get straight to work using it.
+
+https://neo4j.com/blog/this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka/#features-3
+
+#neo4j #GraphDataScience

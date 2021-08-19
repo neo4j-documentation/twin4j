@@ -1,0 +1,5 @@
+This week's featured member in #twin4j is @Daschner, a long-time active member of the Neo4j community, working to spread the knowledge of enterprise software development. Learning about his recommendation engine for coffee is worth it!
+
+https://neo4j.com/blog/this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka/#featured-community-member
+
+#neo4j

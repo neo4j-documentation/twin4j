@@ -1,0 +1,5 @@
+In the final feature on graph embeddings in this week's #twin4j, we take an in-depth look at the sophisticated GraphSAGE algorithm, written by @serengil, as demonstrated on the classic Game of Thrones graph.
+
+https://neo4j.com/blog/this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka/#features-4
+
+#neo4j #GraphDataScience

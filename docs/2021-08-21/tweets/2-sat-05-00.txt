@@ -1,0 +1,5 @@
+There is a lot to discuss when it comes to the Neo4j GraphQL Library v2.0.0! In this week's #twin4j, @danstarns1 takes us in depth on all of the updates and its usage.
+
+https://neo4j.com/blog/this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka/#features-1
+
+#neo4j #GraphQL

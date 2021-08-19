@@ -1,0 +1,5 @@
+In this week's #twin4j, we focus on graph embeddings. @tb_tomaz introduces us to the first of 3 algorithms included in the GDS library, node2vec, describing its origins in natural language processing and implementation on graphs.
+
+https://neo4j.com/blog/this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka/#features-2
+
+#neo4j #GraphDataScience

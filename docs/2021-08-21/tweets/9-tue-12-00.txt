@@ -1,0 +1,5 @@
+In this week's #twin4j, we take an in-depth look at the GraphQL library v2, along with recommendation engines and general purpose databases. But in this installment we will do an in-depth look at the Neo4j graph embeddings used in data science.
+
+https://neo4j.com/blog/this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka/
+
+#neo4j

@@ -1,0 +1,99 @@
+= This Week in Neo4j - More on GraphQL v2, A Focus on Graph Embeddings, and Recommendation Engines with Kafka
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-more-on-graphql-v2-a-focus-on-graph-embeddings-and-recommendation-engines-with-kafka
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Clair Sullivan
+// twin4j is added automatically
+:tags: neo4j, graphql, graph-data-science-library, graph-embeddings, node2vec, fastrp, graphsage, kafka, aura, recommendation-engine, graph-database, graphstuff-fm, relational-database
+
+Hello, everyone!
+
+For this week of Twin4j, we wanted to highlight a few different things.  First we get the chance to have an in-dept look at the newly-released GraphQL library 2.0.0.  Next, we are dedicating most of this issue to the fascinating topic of graph embeddings, commonly used in data science and machine learning problems.  There are 3 different graph embedding methods included in the Neo4j https://neo4j.com/product/graph-data-science-library/[Graph Data Science library^], FastRP, Node2Vec, and GraphSAGE, and we have articles this week showing the inner workings of all three.  We also have a few items on creating recommendation engines, including the recent work of our featured community member, Sebastian Daschner.  And then we conclude with the popular podcast topic: "Will it Graph?"
+
+Enjoy!
+
+[[featured-community-member]]
+== Featured Community Member: Sebastian Daschner
+
+This week's featured community member is Sebastian Daschner.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210819110639/this-week-in-neo4j-21-August-2021.jpeg[name="Sebastian Daschner"]
+
+Sebastian is a regular contributor of https://blog.sebastian-daschner.com/tags/neo4j[great content^] within the Neo4j community, including a fabulous presentation at https://www.youtube.com/watch?v=yZi8ht_naIE[NODES 2020^] on Quarkus on Neo4j.  For example, in one of his https://blog.sebastian-daschner.com/entries/building-recommendations-with-neo4j[most recent posts^] he wrote about how to build a recommendation engine for coffee using Neo4j and Quarkus in Java with a great demonstration using Neo4j Aura or locally via a Docker container.  He also has provided some great examples in the past of using Kubernetes with Neo4j.  His goal is to educate and spread knowledge on enterpise software development, Java, and IT in general through workshops and consulting.  
+
+// linkedin link
+https://twitter.com/DaschnerS[Connect with Sebastian on Twitter, role="medium button"]
+
+[[features-1]]
+== In-Depth Guide to Neo4j GraphQL Library 2.0.0
+:tags: neo4j, graphql
+
+image::https://dist.neo4j.com/wp-content/uploads/20210819110635/graphql2.png[width=150,float="right"]
+
+In last week's edition of Twin4j we highlighted the newly-released v2 of the Neo4j GraphQL library.  This week, https://twitter.com/danstarns1[Dan Starns^] takes us in depth into the new version, which includes new features such as relationship properties, count queries, and relay support.  The main aim of this release was to support relationship properties, and he walks through an example using the classic Movies database showing how relationship properties could be hacked in v1 versus how efficient it is to do it now with full support in v2.
+
+https://medium.com/neo4j/your-in-depth-guide-to-neo4j-graphql-library-2-0-0-126e0929c57e[Read the Blog Post, role="medium button"]
+
+[[features-2]]
+== Complete Guide to Understanding the Node2Vec Algorithm
+:tags: graph-data-science-library, graph-embeddings, node2vec
+
+image::https://dist.neo4j.com/wp-content/uploads/20210819110637/n2v_marvel.png[width=150,float="right"]
+
+Have you ever wondered how the popular https://neo4j.com/docs/graph-data-science/current/algorithms/node2vec/[Node2Vec^] algorithm used for generating graph embeddings works?  Node2Vec is included in the https://neo4j.com/product/graph-data-science-library/[Graph Data Science library^], but have you wanted to understand more about what it is doing under the hood?  https://twitter.com/tb_tomaz[Tomaz Bratanic^] has written up an in-depth guide into the origins and workings of this popular algorithm.  It helps provide an understanding on how you can then tune your hyperparameters to get the best embedding for your application.
+
+https://towardsdatascience.com/complete-guide-to-understanding-node2vec-algorithm-4e9a35e5d147[Read the Blog Post, role="medium button"]
+
+[[features-3]]
+== Behind the Scence on the FastRP Algorithm for Generating Graph Embeddings
+:tags: graph-embeddings, graph-data-science-library, fastrp
+
+image::https://dist.neo4j.com/wp-content/uploads/20210819112723/abacus.jpeg[width=150,float="right"]
+
+What is it that makes the Fast Random Projections (https://neo4j.com/docs/graph-data-science/current/algorithms/fastrp/[FastRP^]) algorithm, built into the Graph Data Science library, tick?  FastRP is obviously fast, as the name would imply, but it also generates very accurate node embeddings.  https://twitter.com/CJLovesData1[Clair Sullivan^] has written up a blog post that quickly summarizes the math behind the algorithm so you don't have to read the research papers to learn how the hyperparameters work.
+
+https://towardsdatascience.com/behind-the-scenes-on-the-fast-random-projection-algorithm-for-generating-graph-embeddings-efb1db0895[Read the Blog Post, role="medium button"]
+
+[[features-4]]
+== Graph Embeddings in Neo4j with GraphSAGE
+:tags: graph-embeddings, graph-data-science-library, graphsage
+
+image::https://dist.neo4j.com/wp-content/uploads/20210819112731/got_graphsage.jpeg[width=150,float="right"]
+
+https://twitter.com/serengil[Sefik Ilkin Serengil^] has written up a tutorial on how to create https://neo4j.com/docs/graph-data-science/current/algorithms/graph-sage/[GraphSAGE^] embeddings with Neo4j.  GraphSAGE is the final of three embedding creation algorithms available within the Graph Data Science library, and the most sophisticated.  Unlike Node2Vec and FastRP, GraphSAGE is an inductive algorithm, meaning that it doesn't need to retrain on the entire graph each time a new node is added to the graph.  Another added benefit is that it can be trained with multiple node labels.  
+
+https://sefiks.com/2021/06/06/graph-embeddings-in-neo4j-with-graphsage/[Read the Blog Post, role="medium button"]
+
+[[features-5]]
+== Real-Time Recommendations with Kafka and Neo4j
+:tags: kafka, aura, recommendation-engine, neo4j
+
+image::https://dist.neo4j.com/wp-content/uploads/20210819114153/kafka_rec_eng.png[width=150,float="right"]
+
+Building off of his previous posts, https://twitter.com/biggus_data[Alex Woolford^] tackles how to build a real-time recommendation engine using clickstream events captured from Kafka and imported to Neo4j.  To do so, he shows how to Dockerize a Kafka Connect instance that includes the Neo4j connector and use it to create a Neo4j sink.  This is all done using Confluent Cloud and Neo4j Aura.
+
+https://woolford.io/2021-08-09-snowplow-neo4j-recommender/[Read the Blog Post, role="medium button"]
+
+
+[[features-6]]
+== Will it Graph? (Part 3)
+:tags: graph-database, neo4j, graphstuff-fm, relational-database
+
+image::https://dist.neo4j.com/wp-content/uploads/20210819110641/wig_part3.png[width=150,float="right"]
+
+In this next part of the https://graphstuff.fm/episodes[GraphStuff.FM^] podcast, https://twitter.com/ElLazal[Lju Lazarevic^] and https://twitter.com/lyonwj[William Lyon^] discuss the potential of using a graph database as a general-purpose database within a larger database ecosystem.  One big question they address is why would you want to do that?  The easy answer is that graph databases are really fast when it comes to prototyping since they don't require you to declare a schema.  Additionally, graph models more closely represent how people intuitively think of data.  Lju and Will talk through some examples of where thinking about your data as a graph can do things like speed up API development.
+
+https://medium.com/neo4j/will-it-graph-identifying-a-good-fit-for-graph-databases-part-3-9cd5913f5f95[Read the Blog Post, role="medium button"]
+
+https://graphstuff.fm/episodes/will-it-graph-identifying-a-good-fit-for-graph-databases[Listen to the Podcast, role="medium button"]
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/thetechr0mancer[TheTechromancer^]:
+
+tweet::1425921971414573057[type={type}]
+
+Don't forget to RT if you liked it too!

@@ -20,6 +20,50 @@ module.exports = (uiModel) => {
   const yyyy = date.getUTCFullYear()
   const month = monthNames[date.getUTCMonth()]
   const dd = ('0' + (date.getUTCDate())).slice(-2)
+  let avatarStyle
+  if (uiModel.avatarDataUris.length > 1) {
+    avatarStyle = `
+    .meta .avatar {
+      width: 275px;
+      height: 275px;
+      border-radius: 100%;
+      position: absolute;
+    }
+
+    .avatar0 {
+      background-image: url(${uiModel.avatarDataUris[0]});
+      background-position: center;
+      background-size: cover;
+      z-index: 1;
+      top: 115px;
+      margin-left: 0;
+    }
+
+    .avatar1 {
+      background-image: url(${uiModel.avatarDataUris[1]});
+      background-position: center;
+      background-size: cover;
+      top: 115px;
+      margin-left: calc(22px + 205px);
+      background-position-x: 25px;
+    }`
+  } else {
+    avatarStyle = `
+    .meta .avatar {
+      width: 305px;
+      height: 305px;
+      border-radius: 100%;
+      position: absolute;
+      top: 95px;
+      margin-left: 22px;
+    }
+
+    .avatar0 {
+      background-image: url(${uiModel.avatarDataUris[0]});
+      background-position: center;
+      background-size: cover;
+    }`
+  }
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +83,7 @@ module.exports = (uiModel) => {
       padding-bottom: 0.5rem;
     }
 
-    .title {
+    .byline .title {
       font-size: 17px;
       display: block;
     }
@@ -68,24 +112,19 @@ module.exports = (uiModel) => {
     footer {
       align-self: flex-end;
       margin-top: auto;
-      margin-bottom: 25px;
-      margin-right: 15px;
+      margin-bottom: 20px;
+      margin-right: 16px;
+      text-align: right;
+      width: 257px;
     }
 
-    .meta .avatar {
-      width: 305px;
-      height: 305px;
-      border-radius: 100%;
-      position: absolute;
-      top: 95px;
-      margin-left: 22px;
+    footer .title {
+      font-size: 17.25px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
     }
-
-    .avatar {
-      background-image: url(${uiModel.avatarDataUri});
-      background-position: center;
-      background-size: cover;
-    }
+${avatarStyle}
   </style>
 </head>
 <body>
@@ -94,13 +133,15 @@ module.exports = (uiModel) => {
       <header>
         <div class="meta">
           <div class="byline">
-            <span class="author">${uiModel.communityMember.name}</span>
-            <span class="title">${uiModel.communityMember.title}</span>
+            <span class="author">${uiModel.communityMembers.map((communityMember) => communityMember.name).join(' & ')}</span>
+            <span class="title">${uiModel.communityMembers[0].title}</span>
           </div>
-          <div class="avatar"></div>
+          <div class="avatar avatar0"></div>
+          ${uiModel.communityMembers.length > 1 ? `<div class="avatar avatar1"></div>` : ''}
         </div>
       </header>
       <footer>
+        <div class="title">Featured Community Member${uiModel.communityMembers.length > 1 ? 's' : ''}</div>
         <div class="date">
           ${month} ${dd}, ${yyyy}
         </div>

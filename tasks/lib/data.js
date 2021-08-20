@@ -81,11 +81,11 @@ async function getIssueDirectory(issueDate) {
   return issueDirectoryPath
 }
 
-async function getCommunityMemberData(issueDate) {
+async function getCommunityMembersData(issueDate) {
   const issueDirectoryPath = ospath.join(docsDirectoryPath, issueDate)
-  const communityMemberJsonFilePath = ospath.join(issueDirectoryPath, 'community-member.json')
+  const communityMemberJsonFilePath = ospath.join(issueDirectoryPath, 'community-members.json')
   if (!await fileExists(communityMemberJsonFilePath)) {
-    console.error(`Community member JSON file is missing from ${issueDirectoryPath}, make sure that you have a file named 'community-member.json' inside ${issueDate} directory.`)
+    console.error(`Community member JSON file is missing from ${issueDirectoryPath}, make sure that you have a file named 'community-members.json' inside ${issueDate} directory.`)
     process.exit(9)
   }
   try {
@@ -200,7 +200,7 @@ module.exports = {
   getCommunityMemberImageSlug,
   getIssueDirectory,
   getIssueDirectoryName,
-  getCommunityMemberData,
+  getCommunityMembersData,
   getBlogPost,
   getImagesDirectory,
   getCommunityMemberImage,

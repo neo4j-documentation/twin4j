@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer')
 
 const {
   getCommunityMemberImage,
-  getCommunityMemberData,
+  getCommunityMembersData,
   getBuildDirectory,
   getBuildImagesDirectory,
   getIssueDate,
@@ -17,12 +17,14 @@ const imagesDir = ospath.join(__dirname, '..', 'resources', 'images')
 const template = require('../resources/community-member-card-template.js')
 
 async function generateCommunityMemberCardHtml(issueDate, uiModel) {
-  const communityMemberImage = await getCommunityMemberImage(issueDate, uiModel.communityMember.image)
-  const avatarBuffer = await fs.readFile(communityMemberImage)
-  const avatarDataUri = `data:image/gif;base64,${avatarBuffer.toString('base64')}`
+  const avatarDataUris = await Promise.all(uiModel.communityMembers.map(async (communityMember) => {
+    const communityMemberImage = await getCommunityMemberImage(issueDate, communityMember.image)
+    const avatarBuffer = await fs.readFile(communityMemberImage)
+    return `data:image/gif;base64,${avatarBuffer.toString('base64')}`
+  }))
   const backgroundImageBuffer = await fs.readFile(ospath.join(imagesDir, `twin4j-fcm-template-with-logo.jpeg`))
   const backgroundDataUri = `data:image/gif;base64,${backgroundImageBuffer.toString('base64')}`
-  return template({ ...uiModel, backgroundDataUri, avatarDataUri })
+  return template({ ...uiModel, backgroundDataUri, avatarDataUris })
 }
 
 async function generateCommunityMemberCardImage(puppeteerPage, page, dest) {
@@ -33,9 +35,9 @@ async function generateCommunityMemberCardImage(puppeteerPage, page, dest) {
 }
 
 async function generate(issueDate) {
-  const communityMemberJson = await getCommunityMemberData(issueDate)
+  const communityMembersJson = await getCommunityMembersData(issueDate)
   const date = await getIssueDate(issueDate)
-  const uiModel = { communityMember: communityMemberJson, date }
+  const uiModel = { communityMembers: communityMembersJson, date }
   const buildImagesDirectory = await getBuildImagesDirectory(issueDate)
   const communityMemberImageSlug = getCommunityMemberImageSlug(issueDate)
   const tempFilePath = ospath.join(buildImagesDirectory, `${communityMemberImageSlug}.html`)

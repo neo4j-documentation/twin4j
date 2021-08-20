@@ -1,4 +1,13 @@
 module.exports = (uiModel) => {
+  const featuredCommunityMemberCompleteName = uiModel.featuredCommunityMembers.map((communityMember) => communityMember.fullName).join(' & ')
+  let featuredCommunityMemberIntro
+  if (uiModel.featuredCommunityMembers.length > 1) {
+    featuredCommunityMemberIntro = `This week's featured community members are ${featuredCommunityMemberCompleteName}.`
+  } else {
+    featuredCommunityMemberIntro = `This week's featured community member is ${featuredCommunityMemberCompleteName}.`
+  }
+  const featuredCommunityMemberTitle = uiModel.featuredCommunityMembers.length > 1 ? `Featured Community Members: ${featuredCommunityMemberCompleteName}` : `Featured Community Member: ${featuredCommunityMemberCompleteName}`
+  const linkedInLinks = uiModel.featuredCommunityMembers.map((communityMember) => `https://www.linkedin.com/in/name[Connect with ${communityMember.firstName} on LinkedIn, role="medium button"]`).join('\n\n')
   return `= This Week in Neo4j -
 // update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
 :slug: this-week-in-neo4j-
@@ -14,16 +23,16 @@ Hello, everyone!
 // introduction
 
 [#featured-community-member,hashtags=""]
-== Featured Community Member: ${uiModel.featuredCommunityMember.fullName}
+== ${featuredCommunityMemberTitle}
 
-This week's featured community member is ${uiModel.featuredCommunityMember.fullName}.
+${featuredCommunityMemberIntro}
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="${uiModel.featuredCommunityMember.fullName}"]
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="${featuredCommunityMemberCompleteName}"]
 
-// featured community member presentation
+// featured community member(s) presentation
 
-// linkedin link
-https://www.linkedin.com/in/name[Connect with ${uiModel.featuredCommunityMember.firstName} on LinkedIn, role="medium button"]
+// linkedin link(s)
+${linkedInLinks}
 
 [#features-1,hashtags=""]
 == Feature 1

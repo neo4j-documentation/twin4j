@@ -6,6 +6,17 @@ const asciidoctor = require('@asciidoctor/core')()
 
 const { getIssueDirectory, getBlogPost } = require('./lib/data.js')
 
+const tweetFiles = {
+  'featured-community-member': '1-sat-00-00.txt',
+  'features-1': '2-sat-05-00.txt',
+  'features-2': '3-sat-14-00.txt',
+  'features-3': '4-sat-21-00.txt',
+  'features-4': '5-sun-09-00.txt',
+  'features-5': '6-sun-16-00.txt',
+  'features-6': '7-sun-23-00.txt',
+  'features-7': '8-mon-02-00.txt'
+}
+
 const rootDirectory = ospath.join(__dirname, '..')
 
 const args = process.argv.slice(2)
@@ -14,6 +25,17 @@ const issueDate = args[0]
 if (!issueDate) {
   console.error('Issue date is undefined, please specify an issue date `npm run init-tweets 2021-05-15`.')
   process.exit(9)
+}
+
+function getHashTagsLine(section) {
+  const hashtagsValue = section.getAttribute('hashtags', '').trim()
+  const hashtags = hashtagsValue ? hashtagsValue.split(',').map((hashtag) => hashtag.trim()) : []
+  hashtags.unshift('neo4j')
+  return Array.from(new Set(hashtags)).map((hashtag) => `#${hashtag}`).join(' ')
+}
+
+function getTweetContent(blogPostSlug, section) {
+  return `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#${section.getId()}\n\n${getHashTagsLine(section)}`
 }
 
 ;(async () => {
@@ -39,23 +61,9 @@ if (!issueDate) {
   }
   const sections = document.getSections()
   for (const section of sections) {
-    const sectionId = section.getId()
-    if (sectionId === 'featured-community-member') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '1-sat-00-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#featured-community-member\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-1') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '2-sat-05-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-1\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-2') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '3-sat-14-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-2\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-3') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '4-sat-21-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-3\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-4') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '5-sun-09-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-4\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-5') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '6-sun-16-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-5\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-6') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '7-sun-23-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-6\n\n#neo4j`, 'utf8')
-    } else if (sectionId === 'features-7') {
-      await fs.writeFile(ospath.join(tweetsDirectory, '8-mon-02-00.txt'), `In this week's #twin4j, \n\nhttps://neo4j.com/blog/${blogPostSlug}/#features-7\n\n#neo4j`, 'utf8')
+    const tweetFile = tweetFiles[section.getId()]
+    if (tweetFile) {
+      await fs.writeFile(ospath.join(tweetsDirectory, tweetFile), getTweetContent(blogPostSlug, section), 'utf8')
     }
   }
   // summary tweet

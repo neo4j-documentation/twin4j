@@ -1,4 +1,13 @@
 module.exports = (uiModel) => {
+  const featuredCommunityMemberCompleteName = uiModel.featuredCommunityMembers.map((communityMember) => communityMember.fullName).join(' & ')
+  let featuredCommunityMemberIntro
+  if (uiModel.featuredCommunityMembers.length > 1) {
+    featuredCommunityMemberIntro = `This week's featured community members are ${featuredCommunityMemberCompleteName}.`
+  } else {
+    featuredCommunityMemberIntro = `This week's featured community member is ${featuredCommunityMemberCompleteName}.`
+  }
+  const featuredCommunityMemberTitle = uiModel.featuredCommunityMembers.length > 1 ? `Featured Community Members: ${featuredCommunityMemberCompleteName}` : `Featured Community Member: ${featuredCommunityMemberCompleteName}`
+  const linkedInLinks = uiModel.featuredCommunityMembers.map((communityMember) => `https://www.linkedin.com/in/name[Connect with ${communityMember.firstName} on LinkedIn, role="medium button"]`).join('\n\n')
   return `= This Week in Neo4j -
 // update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
 :slug: this-week-in-neo4j-
@@ -13,19 +22,19 @@ Hello, everyone!
 
 // introduction
 
-[[featured-community-member]]
-== Featured Community Member: ${uiModel.featuredCommunityMember.fullName}
+[#featured-community-member,hashtags=""]
+== ${featuredCommunityMemberTitle}
 
-This week's featured community member is ${uiModel.featuredCommunityMember.fullName}.
+${featuredCommunityMemberIntro}
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="${uiModel.featuredCommunityMember.fullName}"]
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="${featuredCommunityMemberCompleteName}"]
 
-// featured community member presentation
+// featured community member(s) presentation
 
-// linkedin link
-https://www.linkedin.com/in/name[Connect with ${uiModel.featuredCommunityMember.firstName} on LinkedIn, role="medium button"]
+// linkedin link(s)
+${linkedInLinks}
 
-[[features-1]]
+[#features-1,hashtags=""]
 == Feature 1
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -34,7 +43,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-2]]
+[#features-2,hashtags=""]
 == Feature 2
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -43,7 +52,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-3]]
+[#features-3,hashtags=""]
 == Feature 3
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -52,7 +61,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-4]]
+[#features-4,hashtags=""]
 == Feature 4
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -61,7 +70,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-5]]
+[#features-5,hashtags=""]
 == Feature 5
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -70,7 +79,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-6]]
+[#features-6,hashtags=""]
 == Feature 6
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
@@ -79,7 +88,7 @@ image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float=
 
 https://call-to-action-url/[Action, role="medium button"]
 
-[[features-7]]
+[#features-7,hashtags=""]
 == Feature 7
 
 image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]

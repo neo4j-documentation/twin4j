@@ -10,6 +10,11 @@
 
 Hello, everyone!
 
+Here we are already in mid-August and the summer is already winding down.  But the community is still hard at work and doing some great things with graphs!
+
+There was some big news within the Neo4j community this week in the release of the GraphQL library v2.0.0.  There is plenty to discuss about it over the next few weeks, but in this edition of Twin4j you will find a lot of preliminary information about this release.  We have a lot of great things to talk about in addition to that -- things like getting up and running on Aura free with a fun graph of a chess match.  There are also some great posts below about graph data science and MLOps.  And we wrap up with a look at the different ways you can interface with the Neo4j community on Discourse versus Discord.  
+
+
 // introduction
 
 [[featured-community-member]]
@@ -98,7 +103,7 @@ https://community.neo4j.com/t/discourse-vs-discord/42345[Read the Post, role="me
 
 == Tweet of the Week
 
-My favorite tweet this week was by https://twitter.com/JavascriptMick[Michael Dausmann^]:
+My favorite tweet this week was by https://twitter.com/thetechr0mancer[TheTechromancer^]:
 
 tweet::1424530388773343234[type={type}]
 

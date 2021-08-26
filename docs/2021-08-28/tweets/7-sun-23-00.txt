@@ -1,0 +1,5 @@
+Sometimes getting started in a new skill is the hardest thing to do! In this week's #twin4j, @ellazal walks people through how to get up and running with either the Neo4j #Sandbox or #Aura Free tier environments on the classic movies graph.
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/#features-6
+
+#neo4j #Aura #Sandbox

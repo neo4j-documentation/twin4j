@@ -1,0 +1,5 @@
+How would you like to create a recommendation engine based on an open-source music network? In this week's #twin4j, @ArcibelLuzbel walks through a tutorial on just this using #DjangoNeomodel, #Heroku, and #Aura.
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/#features-4
+
+#neo4j 

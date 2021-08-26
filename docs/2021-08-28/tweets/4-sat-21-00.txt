@@ -1,0 +1,5 @@
+Do you wonder how many degrees of separation there are between you and Will Smith? In this week's #twin4j, @isayeter shows his iOS app, based on Neo4j, that takes your social media and explores your personal Six Degree of Kevin Bacon.
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/#features-3
+
+#neo4j #iOS

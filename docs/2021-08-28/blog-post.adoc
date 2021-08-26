@@ -1,0 +1,106 @@
+= This Week in Neo4j - Workshops, Steam VR, iOS Apps, and More
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Clair Sullivan
+// twin4j is added automatically
+:tags: nodes, training, aura, bloom, graphql, knowledge-graph, introduction, start-up, virtual-reality, ios, android, six-degrees, small-world, app-development, django, neomodel, resonate, heroku, graph-data-science, graph-data-science-library, sandbox, getting-started
+
+Hello, everyone!
+
+And just like that, August is almost over!  Everyone is returning from their August vacations (or maybe staycations), the kids are returning to school (whatever that might look like in your part of the world), and our minds are naturally returning to our work with the beginning of the new season.
+
+As usual, things have been quite busy and exciting among the Neo4j community!  In this week's Twin4j, we will get to see something that we don't see that often: Neo4j powering a virtual reality documentatary experience on Steam VR!  We have a few different posts this week talking about using the Aura Free tier to do things ranging from the analysis of our favorite movie graph to a full-on recommendation engine for a community-owned music network.  We also have an iOS app created for looking at your personal "Six Degrees of Kevin Bacon" (also known as the small-world concept) through your social media connections.
+
+I also wanted to highlight that we are re-running the NODES 2021 workshops the week of September 13, 2021.  If you missed any of these 2-hour, hands-on workshops, now is your chance to see them again!
+
+Cheers!
+
+[#featured-community-member,hashtags=""]
+== Featured Community Member: Nigel Small
+
+This week's featured community member is https://twitter.com/technige[Nigel Small^].
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210825122716/this-week-in-neo4j-28-August-2021.jpeg[name="Nigel Small"]
+
+You may not know whether or not you have interacted with Nigel, but if you work with any of the Neo4j drivers and particularly if you use the community-supported https://py2neo.org/[py2neo^] Python driver, then you have interacted with him quite a bit!  Nigel is the author and maintainer of this very popular, open-source Python driver, which celebrated its 10th anniversary this year.  According to the https://pypi.org/project/py2neo/[pypi.org statistics^] as of the writing of this week's post, py2neo has over 1000 stars and over 200 forks on https://github.com/py2neo-org/py2neo[GitHub^].  It also averages about 110k downloads per month.  
+
+In addition to his work on py2neo, Nigel has been an employee at Neo4j since 2014 on both leading the Drivers team as well as a member of the Aura team.  Nigel released version 2021.2.0 of py2neo on August 24, 2021, which will be the last significant release for a while as he moves on to new opportunities.  Nigel, we will miss you tremendously and wish you all of the best in your new role!
+
+// linkedin link(s)
+https://www.linkedin.com/in/technige/[Connect with Nigel on LinkedIn, role="medium button"]
+
+[#features-1,hashtags=""]
+== Neo4j Training Series September
+:tags: nodes, training, aura, bloom, graphql, knowledge-graph, introduction
+
+image::https://dist.neo4j.com/wp-content/uploads/20210805144333/nodes-2021-1.png[width=150,float="right"]
+
+           
+After the great success of our last training week ahead of NODES 2021, we are inviting you to join our next week of training in September. From Monday, 13 September 2021 we are hosting a different two hour workshop every day. We will start with an https://go.neo4j.com/TR210913TrainingSeries-Intro_Registration.html[Introduction session^] where we show you what graph based problems look like and continue with an https://go.neo4j.com/TR210914TrainingSeries-Aura_Registration.html[Overview to Neo4j Aura^] and how to interact with your (first?) graph database in the cloud. The series continues with https://go.neo4j.com/TR210915TrainingSeries-Bloom_Registration.html[Neo4j Bloom^] and how to best visualise graphs. Finally we learn how to https://go.neo4j.com/TR210916TrainingSeries-GraphQL_Registration.html[Build APIs with Neo4j GraphQL Library^] before we finish the week by https://go.neo4j.com/TR210917TrainingSeries-KnowledgeGraph_Registration.html[Creating a Knowledge Graph^].
+
+We are looking forward to having you join us on any (or all) session throughout the week!
+
+https://neo4j.com/events/[Check the Neo4j Events Calendar, role="medium button"]
+
+
+[#features-2,hashtags=""]
+== "A Clever Label" Released on Steam VR
+:tags: start-up, virtual-reality
+
+image::https://dist.neo4j.com/wp-content/uploads/20210825122708/clever_label.jpeg[width=150,float="right"]
+
+There was a great announcement coming from one of the participants in the Neo4j https://neo4j.com/startups/?ref=licensing[startup program^].  https://twitter.com/michela[Michela Ledwidge^], co-founder of Sydney studio Mod, has https://community.neo4j.com/t/a-clever-label-an-investigative-documentary-experience-with-an-open-api/3387/16[reported^] in the Discourse community forums that her work in immersive data storytelling is now available on the Steam VR platform.  In particular, Mod has released a documentary experience that allows audiences to find hidden relationships between anti-equality lobbyists, Australian politicians, and international organizations.  Powered by Neo4j, the audience is able to interact in virtual reality with the data that goes beyond a fixed narrative, eliminating the one-way communication of a traditional documentary.   
+
+https://store.steampowered.com/app/1627660/A_Clever_Label/[Play on Steam, role="medium button"]
+
+[#features-3,hashtags=""]
+== First Proof of "Six Degrees of Separation"
+:tags: ios, android, six-degrees, small-world, app-development
+
+image::https://dist.neo4j.com/wp-content/uploads/20210825122703/6deg.png[width=150,float="right"]
+
+What began as a conversation with friends about COVID resulted in an in-depth review of the "Six Degrees of Separation" theory.  https://twitter.com/isayeter[Isa Yeter^] breaks down this small-world concept in a new blog post where he discusses an app that he developed called https://www.pathica.com/[Pathica^].  The purpose of Pathica to illustrate your own personal "friend of a friend" network on social media and create your own six degrees to Kevin Bacon.  Pathica is presently available for download on the Apple App Store with an Android version reported to be coming soon.
+
+https://medium.com/neo4j/first-proof-of-six-degrees-of-separation-55e39d37cba3[Read the Blog Post, role="medium button"]
+
+[#features-4,hashtags=""]
+== Resotrack: Exploring the Resonate API with Django-Neomodel on Aura
+:tags: aura, django, neomodel, resonate, heroku
+
+image::https://dist.neo4j.com/wp-content/uploads/20210816021021/resotrack-e1629105043240.jpeg[width=150,float="right"]
+
+Resonate, the community-owned music network, was in need of a solution that could turn tags associated with songs, albums, and genres into recommendations for music.  To do so, they used Neo4j to suggest relevant tracks within each tag based on track popularity for their entire music catalog.  This is built using Django-Neomodel and deployed on Aura Free and Heroku. https://twitter.com/ArcibelLuzbel[Cristina Escalante^] walks us through the setup and code for how to do it.
+
+https://medium.com/neo4j/resotrack-exploring-the-resonate-api-with-django-neomodel-on-aura-da0eef97e65a[Read the Blog Post, role="medium button"]
+
+[#features-5,hashtags=""]
+== Subgraph filtering in Neo4j Graph Data Science library
+:tags: graph-data-science, graph-data-science-library 
+
+image::https://dist.neo4j.com/wp-content/uploads/20210825122713/subgraph.png[width=150,float="right"]
+
+In his latest post, https://twitter.com/tb_tomaz[Tomaz Bratanic^] takes a look at one of the newer features of the https://neo4j.com/product/graph-data-science-library/[Graph Data Science library^]: working with https://neo4j.com/docs/graph-data-science/current/management-ops/graph-catalog-ops/#catalog-graph-create-subgraph[subgraphs^]. Working with a data set he created of Harry Potter characters and their interactions, Tomaz demonstrates how create a subgraph and how subgraphs can then be used as part of an efficient workflow that skips over the creation of unnecessary additional in-memory graphs or writing intermediate results back to the database.
+
+https://towardsdatascience.com/subgraph-filtering-in-neo4j-graph-data-science-library-f0676d8d6134[Read the Blog Post, role="medium button"]
+
+[#features-6,hashtags=""]
+== Get Up and Running with Neo4j on Sandbox or Aura Free Tier
+:tags: sandbox, aura, getting-started
+
+image::https://dist.neo4j.com/wp-content/uploads/20210825145212/movie_reel.jpeg[width=150,float="right"]
+
+https://twitter.com/ellazal[Lju Lazarevic^] describes how to get up and running with Neo4j, either with Neo4j Sandbox or the Neo4j Aura Free tier, using one of her favorite graphs: the basic movie graph.  This post is a great start for beginners on either platform.  It also is a concise walk through for seasoned users of Neo4j Sandbox on getting going with the Neo4j Aura Free tier.
+
+https://medium.com/neo4j/getting-started-with-play-movies-251228c12f2c[Read the Blog Post, role="medium button"]
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/HNTweets[Hacker News^]:
+
+tweet::1430588294627213312[type={type}]
+
+Don't forget to RT if you liked it too!

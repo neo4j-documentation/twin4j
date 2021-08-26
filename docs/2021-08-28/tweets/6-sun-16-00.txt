@@ -1,0 +1,5 @@
+In this week's #twin4j, @tb_tomaz demonstrates using the Neo4j Graph Data Science library to make efficient calculations using the built-in subgraph functionality.
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/#features-5
+
+#neo4j #GraphDataScience

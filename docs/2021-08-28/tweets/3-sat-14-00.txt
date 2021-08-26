@@ -1,0 +1,5 @@
+Neo4j and Steam VR...what could be more cool? In this week's #twin4j, @michela highlights a new Steam VR game, developed through the Startup Program, using Neo4j to create an innovative way of doing immersive on an anti-equality dataset.
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/#features-2
+
+#neo4j #SteamVR

@@ -1,0 +1,5 @@
+This week's featured community member in #twin4j, is @technige, the author of the popular @py2neo Python driver. Py2Neo just released its latest version, 2021.2.0. Upgrade today!
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/#featured-community-member
+
+#neo4j

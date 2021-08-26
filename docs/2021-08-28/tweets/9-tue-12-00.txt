@@ -1,0 +1,5 @@
+In this week's #twin4j, we highlight upcoming, hands-on workshops, an innovative, graph-enhanced immersive game on Steam VR, iOS apps to explore your own Six Degrees of Kevin Bacon, and more!
+
+https://neo4j.com/blog/this-week-in-neo4j-workshops-steam-vr-ios-apps-and-more/
+
+#neo4j

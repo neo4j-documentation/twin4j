@@ -1,0 +1,100 @@
+= This Week in Neo4j - NODES Workshops, Data Lineage, Knowledge Graphs, Spatial Data, and Creating a Social Network
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-nodes-workshops-data-lineage-knowledge-graphs-spatial-data-and-creating-a-social-network
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Clair Sullivan
+// twin4j is added automatically
+:tags: nodes, training, aura, bloom, graphql, knowledge-graph, introduction, neo4j-spatial, crud, data-governance, data-lineage, biology, web-interface, social-network, fastapi, neo4j, postgresql, redis, data-science, jupyter, colab, python, bite-sized-ds
+
+Happy September!
+
+We have a lot in store this week for Twin4j.  First, we would like to remind you of the upcoming, live re-runs of the NODES 2021 workshops, scheduled for the week of September 13, 2021.  All workshops are at a time that should be friendly to attendees of multiple time zones, and recordings will also be available if you cannot attend live.  We also have a variety of fun content this week, including knowledge graphs, using the Neo4j spatial capabilities to map out locations along a route, data lineage, and research with vaccinology.  We also have a feature on a learning experiment to create a social network for bunnies.
+
+Enjoy!
+
+[#featured-community-member,hashtags=""]
+== Featured Community Member: Adnan Siddiqi
+
+This week's featured community member is Adnan Siddiqi.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210831152322/this-week-in-neo4j-04-September-2021.jpeg[name="Adnan Siddiqi"]
+
+https://twitter.com/pknerd[Adnan^] is an independent software consultant from Karachi, Pakistan with a background in ETL and web development.  He recently was featured in https://news.ycombinator.com/item?id=28290296[Hacker News^] for his excellent blog post on http://blog.adnansiddiqi.me/visualizing-python-modules-and-dependencies-with-neo4j/[Visualizing Python modules and dependencies with Neo4j^] with an accompanying https://youtu.be/IFpB65FycJI[YouTube video^].  He decided to give Neo4j a try based on a tweet that "got stuck in [his] mind" about Python dependencies, which he used as his excuse for exploring graph databases.  We are excited to welcome him to the Neo4j community!
+
+https://www.linkedin.com/in/kadnan/[Connect with Adnan on LinkedIn, role="medium button"]
+
+[#features-1,hashtags=""]
+== Reminder: Neo4j Training Series September
+:tags: nodes, training, aura, bloom, graphql, knowledge-graph, introduction
+
+image::https://dist.neo4j.com/wp-content/uploads/20210805144333/nodes-2021-1.png[width=150,float="right"]
+
+           
+After the great success of our last training week ahead of NODES 2021, we are inviting you to join our next week of training in September. From Monday, 13 September 2021 we are hosting a different two hour workshop every day. We will start with an https://go.neo4j.com/TR210913TrainingSeries-Intro_Registration.html[Introduction session^] where we show you what graph based problems look like and continue with an https://go.neo4j.com/TR210914TrainingSeries-Aura_Registration.html[Overview to Neo4j Aura^] and how to interact with your (first?) graph database in the cloud. The series continues with https://go.neo4j.com/TR210915TrainingSeries-Bloom_Registration.html[Neo4j Bloom^] and how to best visualise graphs. Finally we learn how to https://go.neo4j.com/TR210916TrainingSeries-GraphQL_Registration.html[Build APIs with Neo4j GraphQL Library^] before we finish the week by https://go.neo4j.com/TR210917TrainingSeries-KnowledgeGraph_Registration.html[Creating a Knowledge Graph^].
+
+We are looking forward to having you join us on any (or all) session throughout the week!
+
+https://neo4j.com/events/[Check the Neo4j Events Calendar, role="medium button"]
+
+
+[#features-2,hashtags=""]
+== Planning a trip through the State of New York with the Aura Free tier
+:tags: aura, neo4j-spatial
+
+image::https://dist.neo4j.com/wp-content/uploads/20210901095250/rest_stops_ny.png[width=150,float="right"]
+
+Have you ever thought about planning a route for a trip that includes where the rest stops are along the way along with pertinent details like which are handicap accessible or the closest one with a public phone?  In the latest fun installment of "Discover Neo4j Aura Free with Lju and Alex" from https://twitter.com/ElLazal[Lju Lazarevic^] and https://twitter.com/alexandererdl/[Alex Erdl^], they explore a fun data set looking at the rest stops of the U.S. State of New York using the Aura Free tier coupled with https://neo4j.com/docs/cypher-manual/current/functions/spatial/[Neo4j spatial^].
+
+https://youtu.be/Nb2kUlf-aj4[Watch the Video, role="medium button"]
+
+
+[#features-3,hashtags=""]
+== Enabling Data Lineage
+:tags: crud, data-governance, data-lineage
+
+image::https://dist.neo4j.com/wp-content/uploads/20210901080937/data_lineage.png[width=150,float="right"]
+
+Rapid data-driven decision making is clearly a key in enabling organizations to remain competitive.  However, traditional data warehouses do not respond and adapt quickly and can limit the ability to make decisions quickly.  https://twitter.com/amin_jalali[Amin Jalali^] has recently written about his work on a new environment named Customer Analytics - Data Product Environment (CA-DPE), which is based on a data mesh approach.  This enviroment provides several different "views" of each data product, such as reads, insertions, and deletions.  This allows for each view to support the Create-Read-Update-Delete (CRUD) pattern for each data product.  These data products and their relationships are generated in Neo4j, which allows for better understandability, transparency, traceability, and governance of the data.
+
+https://medium.com/if-tech/enabling-data-lineage-using-a-graph-database-fd40be4bf768[Read the Blog Post, role="medium button"]
+
+[#features-4,hashtags=""]
+== LinkedImm: a Linked Data Graph Database for Integrating Immunological Data
+:tags: knowledge-graph, biology, web-interface
+
+image::https://dist.neo4j.com/wp-content/uploads/20210901074817/linkedimm.webp[width=150,float="right"]
+
+https://www.linkedin.com/in/ahmadchan/[Syed Ahmad Chan Bukhari^] has lead a team of researchers to create a graph database for immunological data.  Using Neo4j, his team created the publicly-available http://128.36.0.23/linkedimm/[LinkedImm^] knowledge graph, whose purpose is to facilitate vaccinology research.  In their recent publication, the team points out that biological data is highly related and semi-structured, making graphs a much more suitable choice than traditional SQL databases.  To help experimental immunologists get started using Cypher, a tool they might not be familiar with, they have created a web-based dashboard to allow interactions with their data either through ad-hoc queries or through spoken or typed natural language.
+
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04031-9[Read the Article, role="medium button"]
+
+[#features-5,hashtags=""]
+== Bunnybook: a Social Network Built with FastAPI + React/RxJs, Neo4j, PostgreSQL and Redis
+:tags: social-network, fastapi, neo4j, postgresql, redis
+
+image::https://dist.neo4j.com/wp-content/uploads/20210901100158/bunnybook.png[width=150,float="right"]
+
+What a great way to learn and experiment with Neo4j by creating your own social network!  https://www.linkedin.com/in/pietro-bassi/[Pietro Bassi^] decided he wanted to get some experience with Cypher and graph databases, so he https://www.reddit.com/r/Python/comments/pf5dt0/i_created_bunnybook_a_social_network_built_with/[did just that^]!  Bunnybook is a small social network (for bunnies) based in Python and using a FastAPI backend whose source code is available https://github.com/pietrobassi/bunnybook[here^].  
+
+http://137.184.46.182/login[Demo Bunnybook, role="medium button"]
+
+[#features-6,hashtags=""]
+== Bite-Sized Neo4j for Data Scientists
+:tags: data-science, jupyter, colab, python, bite-sized-ds
+
+image::https://dist.neo4j.com/wp-content/uploads/20210901101715/juptyterlab-colab-logos.png[width=150,float="right"]
+
+Are you a data scientist and/or Pythonista looking to get into Neo4j in quick, bite-sized tutorials?  https://twitter.com/CJLovesData1[Clair Sullivan^] has started a https://dev.neo4j.com/bite_sized_ds[video series^] whose purpose is to provide weekly, 5-minute tutorials to help you quickly learn sujects like connecting to a free http://sandbox.neo4j.com/[Neo4j Sandbox^] from within Python using Jupyter or Google Colab.  The series (4 parts and growing!) is available on YouTube and on https://dev.neo4j.com/bites_repo[GitHub^].
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC[Watch the Video Series, role="medium button"]
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/jessarchercodes[Jess Archer^]:
+
+tweet::1430883086238064651[type={type}]
+
+Don't forget to RT if you liked it too!

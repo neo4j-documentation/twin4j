@@ -1,0 +1,5 @@
+Creating your own social network is a great way to learn and experiment with #Cypher and Neo4j! In this week's #twin4j, Pietro Bassi shows a how he create a small social network using Python and FastAPI with Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-nodes-workshops-data-lineage-knowledge-graphs-spatial-data-and-creating-a-social-network/#features-5
+
+#neo4j

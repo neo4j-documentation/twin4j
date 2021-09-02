@@ -1,0 +1,5 @@
+Is there a way for data scientists to quickly get started in Neo4j with common tooling? In this week's #twin4j, we highlight a new, weekly video series of 5-min tutorials by @CJLovesData1 called "Bite-Sized Neo4j for Data Scientists."
+
+https://buff.ly/38xQJJa
+
+#neo4j #DataScience

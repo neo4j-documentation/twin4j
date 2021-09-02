@@ -1,0 +1,5 @@
+Biological data frequently lends itself well to exploring as a graph. In this week's #twin4j, we present a new paper by Syed Ahmad Chan Bukhari who has created a tool to allow people to query a vaccinology graph with natural language.
+
+https://buff.ly/38xt0ZS
+
+#neo4j #Biology 

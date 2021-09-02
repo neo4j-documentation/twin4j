@@ -1,0 +1,5 @@
+This week's featured member in #twin4j, is @pknerd, and independent software consultant who created a tool with Neo4j for exploring Python package dependencies.
+
+https://neo4j.com/blog/this-week-in-neo4j-nodes-workshops-data-lineage-knowledge-graphs-spatial-data-and-creating-a-social-network/#featured-community-member
+
+#neo4j #python

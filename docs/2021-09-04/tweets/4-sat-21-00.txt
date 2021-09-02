@@ -1,0 +1,5 @@
+Data lineage and governance is a big deal in data-driven decision making. In this week's #twin4j, @amin_jalali highlights an environment he created using Neo4j to do just that.
+
+https://neo4j.com/blog/this-week-in-neo4j-nodes-workshops-data-lineage-knowledge-graphs-spatial-data-and-creating-a-social-network/#features-3
+
+#neo4j #CRUD #DataLineage #DataGovernance

@@ -1,0 +1,5 @@
+Let's have some fun with spatial data on a road trip using Neo4j! In this week's #twin4j, @ElLazal and @alexandererdl create and query a graph of the rest stops in NY State using the Aura Free tier.
+
+https://neo4j.com/blog/this-week-in-neo4j-nodes-workshops-data-lineage-knowledge-graphs-spatial-data-and-creating-a-social-network/#features-2
+
+#neo4j #Aura #Spatial

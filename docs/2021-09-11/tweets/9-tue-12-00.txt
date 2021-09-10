@@ -1,0 +1,5 @@
+In this week's #twin4j, we introduce our newest member to the devrel team, Shiny Zhu. Our hands-on trainings  occur this week and we have videos, articles and software releases for Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/
+
+#neo4j #graphdatascience #training #grapheleon #powerbi

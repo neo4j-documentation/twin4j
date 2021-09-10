@@ -1,0 +1,5 @@
+In this week's #twin4j, we remind you of next week's hands-on training sessions. Each session is ~2 hours led by members of the devrel team.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-1
+
+#neo4j #training #aura #bloom #graphql #knowledgegraphs

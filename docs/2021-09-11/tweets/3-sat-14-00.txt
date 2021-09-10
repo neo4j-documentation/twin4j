@@ -1,0 +1,6 @@
+In this week's #twin4j, Architect Olga Kogan from our customer AppsFlyer shares their approach to securely managing Microservices.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-2
+
+#neo4j #authorization #microservices #pbac #opa
+

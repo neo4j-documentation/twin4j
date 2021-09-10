@@ -1,0 +1,7 @@
+In this week's #twin4j, we highlight Suadeo, a Neo4j backed free mobile app for iOS and Android that allows you to share what you watch with your friends.
+
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-3
+
+#neo4j #recommendations #mobile #ios #android #movies #shows
+

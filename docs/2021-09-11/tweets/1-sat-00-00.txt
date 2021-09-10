@@ -1,0 +1,7 @@
+In this week's #twin4j, we feature  Shiny Zhu our newest developer relations team member out of Shanghai. Sniny is a full stack developer, was very active in the .Net and Python communities and is a long-time Microsoft MVP.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#featured-community-member
+
+#neo4j #developer #devrel
+
+

@@ -1,0 +1,5 @@
+In this week's #twin4j, @BryantAvey explains how to surface patterns are detected in a neo4j graph automatically in Power BI.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-6
+
+#neo4j #graphdatascience #powerbi #datavisualization #temporal #stocks

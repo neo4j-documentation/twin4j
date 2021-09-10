@@ -1,0 +1,5 @@
+In this week's #twin4j, @AshleighNFaith and @davidmeza1 explore their favorite graph algorithms of the graph data science library in a 15 minute video.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-5
+
+#neo4j #graphalgorithms #youtube #gdslibrary

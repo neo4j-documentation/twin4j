@@ -1,0 +1,5 @@
+In this week's #twin4j, we highlight new releases of apps, libraries, drivers for Neo4j as well as a number of interesting github projects.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-7
+
+#neo4j #charts #releases #graphileon #jdbc #bloom #graphql #nextjs

@@ -1,0 +1,5 @@
+In this week's #twin4j, @gatemezing from Mondeca (Paris) shared the slides from Semantics Conf (Amsterdam) on how they publish and browse a knowledge-graph using Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser/#features-4
+
+#neo4j #knowledgegraph #rdf #neosemantics

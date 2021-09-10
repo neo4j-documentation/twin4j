@@ -1,0 +1,214 @@
+= This Week in Neo4j - Power BI, Mobile Recommendations, Policy Base Service Authorization, Graph Algorithms Book Review, Training Week, Knowledge Graph Browser
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-power-bi-mobile-recommendations-policy-base-service-authorization-graph-algorithms-book-review-training-week-knowledge-graph-browser
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Michael Hunger
+// twin4j is added automatically
+:tags: nodes, china, shanghai, flights, training, aura, bloom, graphql, knowledge-graph, introduction, authorization, microservices, opa, policy-based-auth, pbac, recommendations, mobile, movies, shows, ios, android, knowledge-graph, rdf, neo4j, neosemantics, graph-algorithms, video, youtube, book review, graph-data-science, power-bi, data-visualization, temporal, stocks, neo4j-config, charts, releases, graphileon, jdbc, bloom, graphql, docker, tailwind, next.js, linux, ubuntu, installation
+
+Back to work/school!
+
+I'm back from time off with the family and I assume so are many of you.
+Hope you had time to recharge, disconnect and meet some real people for a change.
+
+This week I have a lot of great things to share.
+
+Our featured community person this week is Shiny Zhu our newest team member out of Shanghai.
+Lju gives an overview of what's in store for our training week.
+Ashleigh Faith and David Meza are exploring their favorite graph algorithms in a joint video.
+Suadeo is a mobile recommendation engine app based on Neo4j powered by your friends watching behavior.
+
+Appsflyer's policy based authorization services are explained by Olga Kogan.
+Ghislain Atemezing shares the slides from Semantic Conf covering a Knowledge Graph Browser based on Neo4j using RDF to property graph mapping.
+Bryant Avey explains and demonstrates in detail how to integrate Power BI with Neo4j using our HTTP-Endpoint to execute Cypher queries and how to visualize graph-data-science enriched stock trading data.
+
+And finally we have a long list of releases and updates that came together in the last few days.
+
+Don't forget to join our https://dev.neo4j.com/forum[Forums^] or https://dev.neo4j.com/chat[Discord Chat^] to discuss these news and any other graph topic.
+
+Enjoy this weeks update,
+
+Cheers, Michael
+
+[#featured-community-member,hashtags=""]
+== Featured Community Member: Shiny Zhu
+:tags: nodes, china, shanghai, flights
+
+This week's featured community member is Shiny Zhu.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20210910055644/this-week-in-neo4j-11-September-2021.jpeg[name="Shiny Zhu"]
+
+I'm super excited about Shiny Zhu joining our team as our first Developer Advocate in Asia Pacific, out of Shanghai China. 
+
+Shiny has a https://www.linkedin.com/in/shinyzhu/[impressive history^], he's a full stack developer, was very active in the .Net and Python communities and is a long-time Microsoft MVP.
+
+Even before joining he got active in our graph community, learned and shared about Neo4j, attended the Shanghai meetup and even got certified.
+
+Shiny already hit the ground running establishing a https://bbs.csdn.net/forums/neo4j[Neo4j presence in CSDN^] and publishing his first two articles on representing a flight data model in a graph in https://dev.to/shinyzhu/my-first-graph-data-model-using-neo4j-to-store-flight-schedule-data-25i2[English^] and https://shinyzhu.com/2021/09/05/flight-schdule-in-graph-database-neo4j/[Chinese^].
+
+So it would be great if you followed him on social media and reach out to him with questions and suggestions for topics, events, content and more.
+
+https://twitter.com/shinyzhu[Follow Shiny on Twitter, role="medium button"]
+
+
+////
+
+Great writeup of how one of the customers I work with is using @neo4j  https://medium.com/appsflyer/authorization-solution-for-microservices-architecture-a2ac0c3c510b
+
+feature
+Some experiments importing @StatsBomb data into @neo4j
+https://adamcowley.co.uk/neo4j/analysing-football-events-neo4j/ #neo4j
+
+“Knowledge graphs make data smarter...Smarter data benefits knowledge reuse, reduces duplications, and discrepancies.”
+Get your free O’Reilly book here:  
+https://neo4j.com/knowledge-graphs-data-in-context-for-responsive-businesses
+
+== Answering Frequent Questions: Relational vs Graph
+
+A frequent question we get especially from new users is - how do graph databases compare with relational databases.
+How can you transform the models, import data, how do queries between SQL and Cypher relate.
+
+Lju gives us a deep dive in her article on FreeCodeCamp, covering all these topics.
+
+
+https://www.freecodecamp.org/news/graph-database-vs-relational-database/[Deep Dive on Relational vs. Graph, role="medium button"]
+
+////
+
+[#features-1,hashtags=""]
+== Coming up: Neo4j Training Week September 13-17
+:tags: training, aura, bloom, graphql, knowledge-graph, introduction
+
+image::https://dist.neo4j.com/wp-content/uploads/20210805144333/nodes-2021-1.png[width=150,float="right"]
+
+First of all I wanted to remind you of our upcoming training week.
+
+Lju has written a great article covering the topics.
+
+Those super interactive, live classes will help you get started with: 
+
+* Neo4j the graph database
+* Aura Free in our cloud service
+* Bloom graph visualization and exploration
+* GraphQL integration for Neo4j to build APIs quickly
+* Knowledge graphs using NLP and GDS (Graph Data Science)
+
+Please make sure to either join one of the sessions or share the opportunity with your colleagues, friends and family - no one is to young or old to enjoy the power of graphs.
+
+https://medium.com/neo4j/training-week-is-just-around-the-corner-ec20378e4d68[Check out Lju's Training Overview, role="medium button"]
+
+[#features-2,hashtags=""]
+== Authorization Solutions for Microservices Architecture
+:tags: authorization, microservices, opa, policy-based-auth, pbac
+
+image::https://dist.neo4j.com/wp-content/uploads/20210910055633/auth-opa.png[width=150,float="right"]
+
+Architect Olga Kogan from our customer AppsFlyer shares their approach to securely managing Microservices.
+
+ApplFlyer manages insights data for APIs and mobile services and uses Neo4j as part of the access control and authorization servicce that is used for each microservice, as a global approach at the REST API layer is not fine grained enough.
+And their needs are very specific due to privacy, legal and data sensitivity requirements.
+
+They use a Policy based access control (PBAC) with the Rego scripting language from Open Policy Agent (OPA), a CNCF project to implement a more flexible approach that can use different pieces of contextual information to request authorization decisions.
+
+Neo4j serves as the permission management engine that allows real-time policy and permission changes for each customer, partner and service/action.
+
+https://youtu.be/Nb2kUlf-aj4[Watch the Video, role="medium button"]
+
+
+[#features-3,hashtags=""]
+== Suadeo - what are you watching?
+:tags: recommendations, mobile, movies, shows, ios, android
+
+image::https://dist.neo4j.com/wp-content/uploads/20210910055642/suadeo.png[width=150,float="right"]
+
+We were really impressed by Suadeo, a Neo4j backed free mobile app for iOS and Android that allows you to share what you watch with your friends and build (suadeo-)lists of interesting shows and movies to watch from your peers.
+
+Neo4j community member mbazos spent a year in the Neo4j community learning and building the app and is happy to release it now and is interested in your feedback.
+
+https://www.suadeo.io/[Check out the App, role="medium button"]
+
+[#features-4,hashtags=""]
+== Slides: Knowledge Graph Browser for a Property Graph in Neo4j
+:tags: knowledge-graph, rdf, neo4j, neosemantics
+
+image::https://dist.neo4j.com/wp-content/uploads/20210910055636/kg-slides.png[width=150,float="right"]
+
+https://twitter.com/gatemezing[Ghislain Atemezing^] from Mondeca (Paris) shared the slides from Semantics Conf (Amsterdam) on how they publish and browse a knowledge-graph using Neo4j.
+
+RDF subjects are mapped to nodes in the graph, and predicates (triples and literals) to relationships (which is not the ideal model as it's too fine grained and doesn't utilize the "property" graph for the literals). 
+They built an infrastructure for a Knowledge Graph Browser using Spring, Neo4j and Elastic.
+There are some live deployments to explorate at http://mef-prod.mondeca.com/index 
+
+https://figshare.com/articles/presentation/Knowledge_Graph_Publication_and_Browsing_Using_Neo4J/16574681[Explore the Slides, role="medium button"]
+
+
+[#features-5,hashtags=""]
+== Favorite Graph Algorithms from our Favorite Friends
+:tags: graph-algorithms, video, youtube, book review
+
+image::https://dist.neo4j.com/wp-content/uploads/OReilly-Graph-Algorithms_v2_ol1.jpg[width=150,float="right"]
+
+Two of our favorite contributors are back for a joint feature.
+
+Join https://twitter.com/AshleighNFaith[Ashleigh Faith^] and https://twitter.com/davidmeza1[David Meza^ ] while exploring their favorite graph algorithms of the graph data science library in this 15 minute video with a calming river in the background.
+
+They introduce the book with it's intro to graphs, Neo4j and Apache Spark and explore one algorithm per chapter. Explaining the approach of the book with background and history, explanation of the algorithm, how to use it and the examples in Spark and Neo4j.
+
+Here are the algorithms they are talking about:
+
+* Path-Finding: All-Pairs-Shortest Paths
+* Centrality: Betweenness Centrality (finding bridges between clusters)
+* Clustering: Triangle Counting + Clustering Coefficent (interconnectedness)
+* Clustering: Louvain 
+* Machine Learning: Graph Embeddings
+
+https://www.youtube.com/watch?v=z-RCS2sD6kQ[Watch the video, role="medium button"]
+
+[#features-6,hashtags=""]
+== Visualize Stock Volume Similarity with Neo4j, GDS, and Power BI
+:tags: graph-data-science, power-bi, data-visualization, temporal, stocks
+
+image::https://dist.neo4j.com/wp-content/uploads/20210910055638/power-bi.png[width=150,float="right"]
+
+https://twitter.com/BryantAvey[Bryant Avey^] explains in his article how to surface patterns detected in a neo4j graph automatically in Power BI by running PowerQuery templates that auto-refresh and execute multiple Cypher queries in bulk.
+
+He uses the daily stock price history data from TD Ameritrade represented as a linked list of history nodes. 
+
+The raw data was enriched by using the GDS KNN algorithm to find similarities between stock trade volumes across different stocks and days and then running Louvain to show clusters of similiar groups of nodes. 
+
+In PowerBI the similarity and volume data was explored using timeline analytics and candlestick charts to identify temporal patterns of price and later volume correlations visualized in correlation charts.
+
+He presented the approach at the Power BI bootcamp, which is really cool.
+
+In a https://medium.com/codex/importing-neo4j-graph-data-with-power-bi-d2686e9255bc[previous article^] he showed how to load data from Neo4j into Power BI using the HTTP API and custom PowerBI templates for executing the POST requests with Auth and custom result parsing.
+
+https://medium.com/codex/pattern-driven-insights-visualize-stock-volume-similarity-with-neo4j-and-power-bi-13ca922acad1[Learn how to explore GDS enriched data in PowerBI, role="medium button"]
+
+
+[#features-7,hashtags=""]
+== Quick Hits and Releases
+:tags: neo4j-config, charts, releases, graphileon, jdbc, bloom, graphql, docker, tailwind, next.js, linux, ubuntu, installation
+
+image::https://dist.neo4j.com/wp-content/uploads/20210910055647/ubuntu-logo.png[width=150,float="right"]
+
+* The preview release of the https://neo4j.com/release-notes/gds/graph-data-science-1-7-0-preview/[GDS library 1.7.0^] is available with new maximum k-cut algorithm, ML pipelines, Cypher on the in-memory graph and progress/monitoring improvments. We'd love to get your feedback so please check it
+* https://twitter.com/therobbrennan[Rob Brennan^] shared the https://github.com/TheRobBrennan/dockerized-neo4j-with-nextjs[code of his learnings^] of building a dockerized neo4j typescript backend serving an GraphQL API to an Next.js front-end with Tailwind deployed to Vercel
+* GraphAware previews their https://github.com/graphaware/neo4j-config-cli[neo4j-config-cli^] which allows to automate neo4j configuration like indexes, RBAC, data seeds and more
+* Adnan Shabbir from LinuxHint wrote a https://linuxhint.com/install-neo4j-ubuntu/[detailed blog post^] on how to install, configure and use Neo4j on Ubuntu.
+* Adam Cowley added support for storing configuration of the "Charts" graph app in your database so you can reuse and share it. https://twitter.com/adamcowley/status/1435976624122568712[Try it out^]
+* https://twitter.com/graphileon[Graphileon^] released the 4th iteration of their Visual Query Builder which allows displaying filtering on edge property values. https://www.youtube.com/watch?v=KElPHARmaEo[Watch the short video^]
+* The https://github.com/neo4j-contrib/neo4j-jdbc/releases/tag/4.0.3[Neo4j JDBC driver 4.0.3^] was released by Florent Biville. It puts the baseline JDK back to Java 8 and supports now the full list of the neo4j connection schemes
+* Bloom 1.8.1 was released with a few small bugfixes, the https://neo4j.com/release-notes/bloom/[Bloom 1.8 release^] with datetime support and other features went out a few weeks ago
+* https://www.nuget.org/packages/Neo4j.Driver/4.3.2[Version 4.3.2 of the .Net driver^] has been released by the drivers team
+* https://neo4j.com/release-notes/database/neo4j-4-2-11/[Neo4j 4.2.11^] came out this week with neo4j-admin, browser-fullscreen some kernel fixes
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/di0nj[Dion Jansen^] who shared how to turn an GraphML file into a graph using Python.
+
+tweet::1433006590043607040[type={type}]
+
+Don't forget to RT if you liked it too!

@@ -1,0 +1,164 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Elaine Rosenberg
+// twin4j is added automatically
+:tags:
+
+Hello, everyone!
+
+We hope that some of you were able to attend the hands-on training sessions that the developer relations team members conducted last week.
+We had a great turnout for these sessions.
+
+This week we feature Bryan Avey who has worked on many projects that use Neo4j.
+
+[#featured-community-member,hashtags="neo4j,powerbi,graphdatabase,integration,knowledgegrah"]
+== Featured Community Member: Bryant Avey
+
+:tags: powerbi, integration, knowledgegraph
+This week's featured community member is https://twitter.com/bryantavey/[Bryant Avey^]Bryant Avey.
+He is the Chief Geek and CIO of InterNuntius, Inc. where he has used his expertise to integrate Neo4j with business systems.
+In addition, he serves as the Chief Data Officer of a non-profit, Stratalytica that promotes open data and knowledge graphs used by many organizations.
+
+He has written these interesting Medium articles:
+
+https://medium.com/codex/pattern-driven-insights-visualize-stock-volume-similarity-with-neo4j-and-power-bi-13ca922acad1[Pattern-Driven Insights: Visualize Stock Volume Similarity with Neo4j and Power BI^].
+https://medium.com/codex/importing-neo4j-graph-data-with-power-bi-d2686e9255bc[Importing Neo4j Graph Data with Power BI^].
+https://medium.com/geekculture/labeled-vs-typed-property-graphs-all-graph-databases-are-not-the-same-efdbc782f099[Labeled vs Typed Property Graphs — All Graph Databases are not the same^].
+
+He also presented at NODES 2020 with a presentation https://youtu.be/AKswn4xwZBw[Automating the Neo4j Pipeline for Data Shaping and Visualization with Power BI^]
+Bryant has also found the time to participate in our online Community forum and help others.
+We thank him for his contributions to our Community.
+
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/this-week-in-neo4j-18-September-2021.jpeg[name="Bryant Avey"]
+
+https://www.linkedin.com/in/bryantavey/[Connect with Bryant on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j,graphxr,kineviz,datavisualization,sanbox"]
+== Exploring Neo4j Sandbox & GraphXR
+
+:tags: sandbox, data-visualization, graphxr, kineviz
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/kineviz-explore-sandbox.jpeg[width=150,float="right"]
+
+The https://community.kineviz.com/[Kineviz Community^] has created a hands-on tutorial that instructs you to create a visualization of your data using GraphXR.
+The steps of the tutorial show you how to use the graph in a Neo4j Sandbox and visualize it.
+You need not install anything on your system to create the visualization.
+Then, if you are impressed with the visualization you have created, you can add it to the Kineviz GraphXR Gallery for others to see.
+
+https://community.kineviz.com/t/exploring-neo4j-sandbox-graphxr/[Visualize with GraphXR, role="medium button"]
+
+[#features-2,hashtags="neo4j,datascience,antibiotic,CARD"]
+== Neo4j for Antibiotic Resistance
+
+:tags: datascience, antibiotic, CARD
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/card-antibiotic-resistance.png[width=150,float="right"]
+
+linkedin.com/in/sixing-huang-3a824a66/[Sixing Huang], a data scientist who is a Certified Neo4j Professional and is also certified in Neo4j Graph Data Science has written an article about the Comprehensive Antibiotic Resistance Database (CARD)  work he has done.
+In this article, he explains how to load the data into a Neo4j graph.
+He then uses Neo4j Bloom to explore the data.
+The article shows a number of Cypher queries that can be used to understand the data and answer questions about the data.
+
+https://towardsdatascience.com/neo4j-for-antibiotic-resistance-f452f74137e8/[Read the article, role="medium button"]
+
+[#features-3,hashtags="neo4j,relational,graph,modeling,graphdatabase, cypher, sql"]
+== Answering Frequent Questions: Relational vs Graph
+
+:tags: relational, graph, modeling, graphdatabase, cypher, sql
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/lju-codecamp.png[width=150,float="right"]
+
+https://twitter.com/ellazal/[Lju Lazaravic^] wrote a tutorial that explains how to model relational data as a Neo4j graph.
+It is a beginners guide to understanding the property graph model implemented by Neo4j, especially when coming from a relational background.
+In this guide Lju compares how data is modeled in relational vs. Neo4j's property graph model.
+She introduces you to the Movie graph that is used for learning Cypher and compares how queries are done with Cypher and how they would be done in SQL.
+It is definitely a good read for those who have worked with relational and need a jump-start for understanding Neo4j and Cyher.
+
+https://www.freecodecamp.org/news/graph-database-vs-relational-database/[Deep Dive on Relational vs. Graph, role="medium button"]
+
+[#features-4,hashtags="neo4j,azure,functions,dependency,injection"]
+== Azure Functions, Neo4j and Dependency Injection
+
+:tags: azure,dependency,injection
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/AzureFunctions-charlotte.jpg[width=150,float="right"]
+
+https://twitter.com/CSkardon[Charlotte Skardon^] has written another post about Azure functions. In VS, a function is instantiated, run, and then it is deleted.
+The creation of the driver instance repeatedly is not performant. Charlotte describes in this post how to reuse the driver in your code using Dependency Injection(DI).
+Reusing the driver instance enables you to send many Cypher queries to the Neo4j database without additional overhead.
+
+
+https://xclave.co.uk/2021/09/10/azure-functions-neo4j-and-dependency-injection/[Read the post, role="medium button"]
+
+[#features-5,hashtags="neo4j,spring,migrate"]
+== Winter to Spring: Migrating from Spring Data Neo4j 5 to 6, Part 2
+
+:tags: spring, migrate
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/spring-migrate.png[width=150,float="right"]
+
+https://twitter.com/jmhreif[Jennifer Reif^] has written Part 2 of her articles on migrating Spring Data Neo4j.
+This article steps you through how to use the migration Github repo for your migration.
+It uses a Spring Data Neo4j 5 application with OGM and upgrades to the dependencies and syntax changes of Spring Data Neo4j 6.
+This application uses the imperative style code. Her next post in this series will cover reactive functionality.
+
+https://jmhreif.com/blog/migrate-sdn-part2/[Read the Blog, role="medium button"]
+
+[#features-6,hashtags="apoc,import,json"]
+== Loading JSON Data into Neo4j
+
+:tags: apoc, import, json
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/load-json-aura.jpeg[width=150,float="right"]
+
+https://twitter.com/mdavidallen[David Allen^] posted a quick and easy how-to guide for loading JSON data into a Neo4j graph.
+He uses the @TheHackersNews public API to load a mini-feed of stories.
+He shows how to transform the data so that it can be loaded with APOC library calls.
+
+https://twitter.com/mdavidallen/status/1437748040085954570/[Read the thread, role="medium button"]
+
+[#features-7,hashtags="video, training, bloom, aura, knowledgegraph, graphql, datascience"]
+== Videos & Training from Developer Relations Team
+
+:tags; videos, training, bloom, aura, knowledgegrah, datascience, graphql
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+Our Developer Relations team has been very busy creating videos for you to learn with.
+Please have a look:
+
+=== Discovering Aura Free with Lju & Alexander
+
+These hour-long live sessions are recorded and show you how to model different types of data in Neo4j.
+*Note*: Below the video is information about the video, including where to find the datasets used in the video.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVZaoIpfsfpdzEXxyUJlAYw/[Watch the videos, role="medium button"]
+
+=== Bite-Sized Neo4j for Data Scientists
+
+These 5-minute videos show you how to perform some common tasks that data scientists are always asking about.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC/[Watch the videos, role="medium button"]
+
+=== Hands-on Training Sessions
+
+These 2-hour sessions teach you how to get started with Neo4j, how to use Aura Free, how to use Neo4j Bloom, how to use the GraphQL library, and how to work with Knowledge Graphs.
+*Note*: Below the video is information about the slides and repos used for the sessions.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVMFOYpMvab8os1g3zTRdm0/[Watch the videos, role="medium button"]
+
+=== Code Wars: Database Decisions for Application Development
+
+https://www.youtube.com/watch?v=4L4ovvZhlGY/[Watch the Jennifer Reif Presentation, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/pankajtiwari2[Pankaj Kumar^]:
+
+tweet::1437047261326766083[type={type}]
+
+Don't forget to RT if you liked it too!

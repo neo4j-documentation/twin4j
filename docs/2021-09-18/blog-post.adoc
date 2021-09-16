@@ -1,39 +1,53 @@
-= This Week in Neo4j -
+= This Week in Neo4j - GraphXR, CARD, Relational vs. Graph, Azure Functions, Neo4j Spring Data 6, Load JSON, Videos galore
 // update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
-:slug: this-week-in-neo4j-
+:slug: this-week-in-neo4j-graphxr-card-relational-vs-graph-azure-functions-neo4j-spring-data-6-load-json-videos-galore
 :noheader:
 :linkattrs:
 :categories: graph-database
 :author: Elaine Rosenberg
 // twin4j is added automatically
-:tags:
+:tags: powerbi, integration, knowledgegraph, sandbox, data-visualization, graphxr, kineviz, datascience, antibiotic, CARD, relational, graph, modeling, graphdatabase, cypher, sql, azure,dependency,injection, functions, springdata, migrate, apoc, import, json, videos, training, bloom, aura, graphql
 
 Hello, everyone!
 
 We hope that some of you were able to attend the hands-on training sessions that the developer relations team members conducted last week.
-We had a great turnout for these sessions.
+We had a great turnout for these sessions which were recorded.
 
-This week we feature Bryan Avey who has worked on many projects that use Neo4j.
+This week we feature Bryant Avey who has worked on many projects that use Neo4j, particularly around integration with business processes.
+Kineviz has a new portal where you can use GraphXR for visualization of your data without needing to install anything.
+Sixing Huang, a data scientist describes how he explored the Comprehensive Antibiotic Resistance Database (CARD) using Neo4j.
+Lju Lazaravic published a tutorial about relational vs. graph data modeling and how the Movie data is accessed using Cypher vs. SQL.
+Charlotte Skardon posted some tips for how to use Neo4j from Azure by using Dependency Injection for reusing the driver instance.
+Jennifer Reif published part 2 of her blog series about migrating from Neo4j Spring Data 5 to Neo4j Spring Data 6.
+David Allen tweeted a thread, a how-to guide for easily importing JSON into Neo4j using the APOC library.
+And finally, we share a *huge* set of videos that were presented by the Neo4j Developer Relations team on many topics.
+
+We hope you enjoy this weeks news.
+
+Cheers,
+
+Elaine
 
 [#featured-community-member,hashtags="neo4j,powerbi,graphdatabase,integration,knowledgegrah"]
 == Featured Community Member: Bryant Avey
 
 :tags: powerbi, integration, knowledgegraph
-This week's featured community member is https://twitter.com/bryantavey/[Bryant Avey^]Bryant Avey.
+
+This week's featured community member is https://twitter.com/bryantavey/[Bryant Avey^].
 He is the Chief Geek and CIO of InterNuntius, Inc. where he has used his expertise to integrate Neo4j with business systems.
 In addition, he serves as the Chief Data Officer of a non-profit, Stratalytica that promotes open data and knowledge graphs used by many organizations.
 
 He has written these interesting Medium articles:
 
-https://medium.com/codex/pattern-driven-insights-visualize-stock-volume-similarity-with-neo4j-and-power-bi-13ca922acad1[Pattern-Driven Insights: Visualize Stock Volume Similarity with Neo4j and Power BI^].
-https://medium.com/codex/importing-neo4j-graph-data-with-power-bi-d2686e9255bc[Importing Neo4j Graph Data with Power BI^].
-https://medium.com/geekculture/labeled-vs-typed-property-graphs-all-graph-databases-are-not-the-same-efdbc782f099[Labeled vs Typed Property Graphs — All Graph Databases are not the same^].
+* https://medium.com/codex/pattern-driven-insights-visualize-stock-volume-similarity-with-neo4j-and-power-bi-13ca922acad1[Pattern-Driven Insights: Visualize Stock Volume Similarity with Neo4j and Power BI^].
+* https://medium.com/codex/importing-neo4j-graph-data-with-power-bi-d2686e9255bc[Importing Neo4j Graph Data with Power BI^].
+* https://medium.com/geekculture/labeled-vs-typed-property-graphs-all-graph-databases-are-not-the-same-efdbc782f099[Labeled vs Typed Property Graphs — All Graph Databases are not the same^].
 
 He also presented at NODES 2020 with a presentation https://youtu.be/AKswn4xwZBw[Automating the Neo4j Pipeline for Data Shaping and Visualization with Power BI^]
 Bryant has also found the time to participate in our online Community forum and help others.
 We thank him for his contributions to our Community.
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/this-week-in-neo4j-18-September-2021.jpeg[name="Bryant Avey"]
+featured::https://dist.neo4j.com/wp-content/uploads/20210916091843/this-week-in-neo4j-18-September-2021.jpeg[name="Bryant Avey"]
 
 https://www.linkedin.com/in/bryantavey/[Connect with Bryant on LinkedIn, role="medium button"]
 
@@ -42,7 +56,7 @@ https://www.linkedin.com/in/bryantavey/[Connect with Bryant on LinkedIn, role="m
 
 :tags: sandbox, data-visualization, graphxr, kineviz
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/kineviz-explore-sandbox.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916091828/kineviz-explore-sandbox.jpeg[width=150,float="right"]
 
 The https://community.kineviz.com/[Kineviz Community^] has created a hands-on tutorial that instructs you to create a visualization of your data using GraphXR.
 The steps of the tutorial show you how to use the graph in a Neo4j Sandbox and visualize it.
@@ -51,14 +65,14 @@ Then, if you are impressed with the visualization you have created, you can add 
 
 https://community.kineviz.com/t/exploring-neo4j-sandbox-graphxr/[Visualize with GraphXR, role="medium button"]
 
-[#features-2,hashtags="neo4j,datascience,antibiotic,CARD"]
+[#features-2,hashtags="neo4j,datascience,antibiotic,CARD,cypher"]
 == Neo4j for Antibiotic Resistance
 
-:tags: datascience, antibiotic, CARD
+:tags: datascience, antibiotic, CARD, cypher
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/card-antibiotic-resistance.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916091824/card-antibiotic-resistance.png[width=150,float="right"]
 
-linkedin.com/in/sixing-huang-3a824a66/[Sixing Huang], a data scientist who is a Certified Neo4j Professional and is also certified in Neo4j Graph Data Science has written an article about the Comprehensive Antibiotic Resistance Database (CARD)  work he has done.
+https://linkedin.com/in/sixing-huang-3a824a66/[Sixing Huang], a data scientist who is a Certified Neo4j Professional and is also certified in Neo4j Graph Data Science has written an article about the Comprehensive Antibiotic Resistance Database (CARD)  work he has done.
 In this article, he explains how to load the data into a Neo4j graph.
 He then uses Neo4j Bloom to explore the data.
 The article shows a number of Cypher queries that can be used to understand the data and answer questions about the data.
@@ -70,7 +84,7 @@ https://towardsdatascience.com/neo4j-for-antibiotic-resistance-f452f74137e8/[Rea
 
 :tags: relational, graph, modeling, graphdatabase, cypher, sql
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/lju-codecamp.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916091831/lju-codecamp.png[width=150,float="right"]
 
 https://twitter.com/ellazal/[Lju Lazaravic^] wrote a tutorial that explains how to model relational data as a Neo4j graph.
 It is a beginners guide to understanding the property graph model implemented by Neo4j, especially when coming from a relational background.
@@ -83,23 +97,23 @@ https://www.freecodecamp.org/news/graph-database-vs-relational-database/[Deep Di
 [#features-4,hashtags="neo4j,azure,functions,dependency,injection"]
 == Azure Functions, Neo4j and Dependency Injection
 
-:tags: azure,dependency,injection
+:tags: azure,dependency,injection, functions
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/AzureFunctions-charlotte.jpg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916092706/AzureFunctions-charlotte.jpg[width=150,float="right"]
 
-https://twitter.com/CSkardon[Charlotte Skardon^] has written another post about Azure functions. In VS, a function is instantiated, run, and then it is deleted.
+https://twitter.com/CSkardon[Charlotte Skardon^] has written another post about Azure functions. In Visual Studio, a function is instantiated, run, and then it is deleted.
 The creation of the driver instance repeatedly is not performant. Charlotte describes in this post how to reuse the driver in your code using Dependency Injection(DI).
 Reusing the driver instance enables you to send many Cypher queries to the Neo4j database without additional overhead.
 
 
-https://xclave.co.uk/2021/09/10/azure-functions-neo4j-and-dependency-injection/[Read the post, role="medium button"]
+https://xclave.co.uk/2021/09/10/azure-functions-neo4j-and-dependency-injection/[Read the Post, role="medium button"]
 
 [#features-5,hashtags="neo4j,spring,migrate"]
 == Winter to Spring: Migrating from Spring Data Neo4j 5 to 6, Part 2
 
-:tags: spring, migrate
+:tags: springdata, migrate
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/spring-migrate.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916091838/spring-migrate.png[width=150,float="right"]
 
 https://twitter.com/jmhreif[Jennifer Reif^] has written Part 2 of her articles on migrating Spring Data Neo4j.
 This article steps you through how to use the migration Github repo for your migration.
@@ -113,47 +127,51 @@ https://jmhreif.com/blog/migrate-sdn-part2/[Read the Blog, role="medium button"]
 
 :tags: apoc, import, json
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/load-json-aura.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916091833/load-json-aura.jpeg[width=150,float="right"]
 
 https://twitter.com/mdavidallen[David Allen^] posted a quick and easy how-to guide for loading JSON data into a Neo4j graph.
 He uses the @TheHackersNews public API to load a mini-feed of stories.
 He shows how to transform the data so that it can be loaded with APOC library calls.
 
-https://twitter.com/mdavidallen/status/1437748040085954570/[Read the thread, role="medium button"]
+https://twitter.com/mdavidallen/status/1437748040085954570/[Read the Thread, role="medium button"]
 
 [#features-7,hashtags="video, training, bloom, aura, knowledgegraph, graphql, datascience"]
 == Videos & Training from Developer Relations Team
 
-:tags; videos, training, bloom, aura, knowledgegrah, datascience, graphql
+:tags: videos, training, bloom, aura, knowledgegrah, datascience, graphql
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210916091836/neo4j-subscribe-youtube.png[width=150,float="right"]
 
 Our Developer Relations team has been very busy creating videos for you to learn with.
-Please have a look:
+Please have a look!
 
 === Discovering Aura Free with Lju & Alexander
 
 These hour-long live sessions are recorded and show you how to model different types of data in Neo4j.
+
 *Note*: Below the video is information about the video, including where to find the datasets used in the video.
 
-https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVZaoIpfsfpdzEXxyUJlAYw/[Watch the videos, role="medium button"]
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVZaoIpfsfpdzEXxyUJlAYw[Watch the Videos, role="medium button"]
 
 === Bite-Sized Neo4j for Data Scientists
 
 These 5-minute videos show you how to perform some common tasks that data scientists are always asking about.
 
-https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC/[Watch the videos, role="medium button"]
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC[Watch the Videos, role="medium button"]
 
 === Hands-on Training Sessions
 
 These 2-hour sessions teach you how to get started with Neo4j, how to use Aura Free, how to use Neo4j Bloom, how to use the GraphQL library, and how to work with Knowledge Graphs.
+
 *Note*: Below the video is information about the slides and repos used for the sessions.
 
-https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVMFOYpMvab8os1g3zTRdm0/[Watch the videos, role="medium button"]
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVMFOYpMvab8os1g3zTRdm0[Watch the Videos, role="medium button"]
 
 === Code Wars: Database Decisions for Application Development
 
-https://www.youtube.com/watch?v=4L4ovvZhlGY/[Watch the Jennifer Reif Presentation, role="medium button"]
+Jenifer Reif presents and demos how Java developers adapt their code to use different sources of data.
+
+https://www.youtube.com/watch?v=4L4ovvZhlGY/[Watch Jennifer's Presentation, role="medium button"]
 
 == Tweet of the Week
 

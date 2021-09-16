@@ -1,0 +1,5 @@
+In this week's #twin4j, we feature @bryantavey from our Neo4j Community. Bryant has published Neo4j-related articles, presented at NODES 2020 and is a great Community helper in our forum.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphxr-card-relational-vs-graph-azure-functions-neo4j-spring-data-6-load-json-videos-galore/#featured-community-member
+
+#neo4j #powerbi #graphdatabase #integration #knowledgegrah

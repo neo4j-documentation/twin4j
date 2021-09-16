@@ -1,0 +1,5 @@
+In this week's #twin4j, @ellazal has published a tutorial that introduces you to graph property models with Neo4j if you are coming from a relational background. She compares cypher queries with their equivalent in SQL.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphxr-card-relational-vs-graph-azure-functions-neo4j-spring-data-6-load-json-videos-galore/#features-3
+
+#neo4j #relational #graph #modeling #graphdatabase #cypher #sql

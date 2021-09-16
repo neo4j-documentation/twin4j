@@ -1,0 +1,5 @@
+In this week's #twin4j, @mdavidallen tweets about how easy it is to load JSON into Neo4j using APOC procedures.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphxr-card-relational-vs-graph-azure-functions-neo4j-spring-data-6-load-json-videos-galore/#features-6
+
+#neo4j #apoc #import #json

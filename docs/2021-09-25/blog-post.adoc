@@ -1,0 +1,162 @@
+= This Week in Neo4j - Liquibase, Crypto Txns Breadcrumbs, Cloud Empire, Java Version Diffs, Gephi, graphQL 2.2.0, GraphKer
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Elaine Rosenberg
+// twin4j is added automatically
+:tags: liquigraph, liquibase, migrate, breadcrumbs, graphaware, blockchain, osinto, knowledge-graph, visualization, 3D, java, modeling, cypher, gephi, graphql, graphker, cybersecurity, MITRE, NIST
+
+
+Hello, everyone!
+
+This week we feature....
+
+In this issue, Florent Biville invites you to test the new tool to migrate from liquigraph to liquibase that can help you migrate your Neo4j databases.
+GraphAware and Breadcrumbs collaborated on a project to analyze a graph with billions of crypto transactions and visualize the data.
+The folks at Osinto who provide subscriptions to their knowledge graphs provide a site where you can visualize data and relationships in 3D using Cloud Empire.
+Jennifer Reif loaded a Neo4j database with Java library data and shows how to analyze the differences between Java versions.
+Meet Suvariya wrote a beginners tutorial aimed at data scientists for exploring the graph and also shows how to use Gephi to visualize the data.
+Neo4j engineers have released version 2.2.0 of the GraphQL Library.
+Adamantios - Marios Berzovitis released GraphKer for performing cybersecurity checks on your graphs.
+
+And finally, we leave you withe the links to the most popular video series produced by the Developer Relations team.
+
+
+We hope you enjoy this weeks news.
+
+Cheers,
+
+Elaine
+
+[#featured-community-member,hashtags="neo4j,"]
+== Featured Community Member: xxx
+
+:tags:
+
+This week's featured community member is https://twitter.com/xxx/[xxx^].
+
+featured::https://dist.neo4j.com/wp-content/uploads/xxx/this-week-in-neo4j-25-September-2021.jpeg[name="xxx"]
+
+https://www.linkedin.com/in/xxx/[Connect with xxx on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j,liquigraph, liquibase, migrate"]
+== Data Migration: From Liquigraph to Liquibase - Call for Testers!
+
+:tags: liquigraph, liquibase, migrate
+
+image::https://dist.neo4j.com/wp-content/uploads/xxx/liquigraph.png[width=150,float="right"]
+
+https://www.liquigraph.org/[Liquigraph^] is a database refactoring tool.
+It helps you maintain your Neo4j database state by defining and incrementally executing migrations.
+https://twitter.com/fbiville/[Florent Biville^], a Neo4j engineer, is the creator of liquigraph.
+He has published a tool that will help you migrate from liquigraph to liquibase.
+If you are using liquibase, consider helping to test this plugin.
+
+https://community.neo4j.com/t/data-migration-from-liquigraph-to-liquibase-looking-for-testers/44461/[Test Liquibase, role="medium button"]
+
+[#features-2,hashtags="neo4j,breadcrumbs,graphaware,blockchain"]
+== Following the Digital Breadcrumbs and Graphing the Blockchain
+
+:tags: breadcrumbs, graphaware, blockchain
+
+image::https://dist.neo4j.com/wp-content/uploads/xxx/Breadcrumbs.png[width=150,float="right"]
+
+https://twitter.com/graph_aware/[GraphAware^] and https://twitter.com/AppBreadcrumbs/[Breadcrumbs^] have teamed up to produce a Neo4j graph that helps users by visualizing block chain data.
+The application they developed crunches 6 billion crypto transactions and organizes it in a way that our [Breadcrumb] tools can update and show data in a matter of seconds.
+
+https://www.graphaware.com/graphaware/2021/09/15/digital-breadcrumbs.html/[Read the article, role="medium button"]
+
+[#features-3,hashtags="neo4j,osinto,knowledgegraph,visualization, 3D"]
+== How to navigate a Cloud Empire graph
+
+:tags: osinto, knowledge-graph, visualization, 3D
+
+image::https://dist.neo4j.com/wp-content/uploads/xxx/xxx.png[width=150,float="right"]
+
+The folks at https://twitter.com/osinto/[Osinto^] provide knowledge graphs subscriptions to help you understand data around aviation and drones.
+Their knowledge graphs are implemented with Neo4j on AWS.
+In addition, they have Cloud Empire, their graph intelligence product that enables you to provide market insights, even with your own data.
+In this demo, https://twitter.com/charlieosborne/[Charles Osborne^] show how to explore the connections in a 3-D graph visualization. You can also try it yourself.
+
+https://www.osinto.com/cloud-empire-demo/[Watch the Demo, role="medium button"]
+
+[#features-4,hashtags="neo4j,java,modeling"]
+== Java 17: Explore the Newly-Released Java Version in a Graph Database!
+
+:tags: java, modeling
+
+image::https://dist.neo4j.com/wp-content/uploads/xxx/Java17.jpeg[width=150,float="right"]
+
+https://twitter.com/jmhreif[Jennifer Reif^] has written an article about how she imported data for Java libraries through version 17.
+She describes how she loaded the data and how she modeled the data so that questions could be answered about the differences between Java versions.
+
+She used the data in the graph and Cypher to answer questions like these:
+
+* What are the changes between any Java version (e.g. 8, 11, or 16) to 17?
+* What has changed in the java.time package between version 16 and 17?
+* What has been added/removed/etc in Java version 17?
+
+
+https://medium.com/neo4j/java-17-explore-the-newly-released-java-version-in-a-graph-database-14fd11d4f4/[Read the Blog, role="medium button"]
+
+[#features-5,hashtags="neo4j,cypher, gephi"]
+== Data-Science Series (Part 5)-Getting started with Neo4j
+
+:tags: cypher, gephi
+
+image::https://dist.neo4j.com/wp-content/uploads/xxx/Gephi.png[width=150,float="right"]
+
+https://twitter.com/MeetSuvariya[Meet Suvariya^] has written some great articles in his Graph Data Science series.
+This tutorial  is a great beginners guide to using Neo4j Browser to explore and query the movie graph.
+What was interesting in this tutorial was how he finished with visualizing the graph with Gephi.
+
+https://meetsuvariya.medium.com/data-science-series-part-5-getting-started-with-neo4j-graph-database-tool-7c23076d5005/[Follow the Tutorial, role="medium button"]
+
+[#features-6,hashtags="neo4j,graphql"]
+== Version 2.2.0 of the Neo4j GraphQL Library has been released!
+
+:tags: graphql
+
+image::https://dist.neo4j.com/wp-content/uploads/20210429081228/graphql-hero-home-b.svg[width=150,float="right"]
+
+Neo4j engineering has released its latest version of GraphQL.
+This release includes:
+
+* @alias directive - map a GraphQL field to a Neo4j node/relationship property under a different name
+* Feature: Add Duration Scalar
+* Fix: Project Interface Field
+
+https://github.com/neo4j/graphql/releases/[Explore the GraphQL Repo, role="medium button"]
+
+[#features-7,hashtags="neo4j,graphker,cybersecurity,MITRE,NIST"]
+== GraphKer, Open source tool for Cybersecurity
+
+:tags: graphker, cybersecurity,MITRE, NIST
+
+image::https://dist.neo4j.com/wp-content/uploads/xxx/GraphKer.png[width=150,float="right"]
+
+https://www.linkedin.com/in/adamantios-marios-berzovitis-4b6481177/[Adamantios - Marios Berzovitis^] has just released GraphKer.
+GraphKer is an open source tool for a cybersecurity graph database in Neo4j.
+With GraphKer you can have the most recent update of cyber-security vulnerabilities, weaknesses, attack patterns and platforms from MITRE and NIST, in an very useful and user friendly way provided by Neo4j graph databases!
+
+https://github.com/amberzovitis/GraphKer/[Explore the Repo, role="medium button"]
+
+== Video Series
+
+Remember that you can watch these helpful videos by the Developer Relations Team:
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVZaoIpfsfpdzEXxyUJlAYw[Discovering Aura Free, role="medium button"]
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC[Bite-Sized Neo4j for Data Scientists, role="medium button"]
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVMFOYpMvab8os1g3zTRdm0[Hands-on Training Sessions, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/doctor_cerulean[Jasper Blues^]:
+
+tweet::1438373078556311559[type={type}]
+
+Don't forget to RT if you liked it too!

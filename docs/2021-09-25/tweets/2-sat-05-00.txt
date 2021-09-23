@@ -1,0 +1,6 @@
+In this week's #twin4j, @fbiville, a Neo4j engineer posts that he is looking for folks using liquigraph for database migration.
+He is migrating liquigraph users to liquibase and is inviting folks to test the migration.
+
+https://neo4j.com/blog/this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker/#features-1
+
+#neo4j #liquigraph #liquibase #migrate

@@ -1,0 +1,5 @@
+In this week's #twin4j, the engineers at @osinto have published a demo for exploring a graph in 3D. With their portal, you can also explore it yourself to get an appreciation of the features of Cloud Empire.
+
+https://neo4j.com/blog/this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker/#features-3
+
+#neo4j #osinto #knowledgegraph #visualization #3D

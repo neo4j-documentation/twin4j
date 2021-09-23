@@ -1,0 +1,6 @@
+In this week's #twin4j, we features ways that applications have been implemented to explore graphs and some different ways to visualize the data in the graph.
+We also provide quick links to our most popular learning videos produced by the Developer Relations team here at Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker/
+
+#neo4j  #breadcrumbs #graphaware #blockchain #osinto #knowledgegraph #java #gephi #graphql #cybersecurity

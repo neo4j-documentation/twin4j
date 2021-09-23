@@ -1,0 +1,5 @@
+In this week's #twin4j,  Adamantios - Marios Berzovitis describes the release of GraphKer for updating your graphs with cybersecurity as a goal.
+
+https://neo4j.com/blog/this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker/#features-7
+
+#neo4j #graphker #cybersecurity #MITRE #NIST

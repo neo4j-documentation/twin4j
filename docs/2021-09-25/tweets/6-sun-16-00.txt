@@ -1,0 +1,6 @@
+In this week's #twin4j, @MeetSuvariya posted an article in his series for beginning data scientists. In his article he shows how to get started with Neo4j and then finishes with a tutorial on visualizing the data with Gephi.
+
+
+https://neo4j.com/blog/this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker/#features-5
+
+#neo4j #cypher #gephi

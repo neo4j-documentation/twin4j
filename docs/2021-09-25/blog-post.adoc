@@ -6,12 +6,12 @@
 :categories: graph-database
 :author: Elaine Rosenberg
 // twin4j is added automatically
-:tags: liquigraph, liquibase, migrate, breadcrumbs, graphaware, blockchain, osinto, knowledge-graph, visualization, 3D, java, modeling, cypher, gephi, graphql, graphker, cybersecurity, MITRE, NIST
+:tags: neo4j-community, art, museum, liquigraph, liquibase, migrate, breadcrumbs, graphaware, blockchain, osinto, knowledge-graph, visualization, 3D, java, modeling, cypher, gephi, graphql, graphker, cybersecurity, MITRE, NIST
 
 
 Hello, everyone!
 
-This week we feature....
+This week we feature Anthony Chiboucas, a very active Neo4j Community member.
 
 In this issue, Florent Biville invites you to test the new tool to migrate from liquigraph to liquibase that can help you migrate your Neo4j databases.
 GraphAware and Breadcrumbs collaborated on a project to analyze a graph with billions of crypto transactions and visualize the data.
@@ -30,23 +30,39 @@ Cheers,
 
 Elaine
 
-[#featured-community-member,hashtags="neo4j,"]
-== Featured Community Member: xxx
+[#featured-community-member,hashtags="neo4j,neo4jcommunity,art,museum"]
+== Featured Community Member: Anthony Chiboucas
 
-:tags:
+:tags: neo4j-community, art, museum
 
-This week's featured community member is https://twitter.com/xxx/[xxx^].
+This weeks featured community member is Anthony Chiboucas.
+Tony is a savy, experienced PHP developer who lives and works in Portland, Oregon as a CMS developer at Downstream.
+For the last 3 years, he has also been working on a graph-enabled middleware solution to connect artists, places, events, and genres throughout all history for museums and arts exhibitions.
+That is, he has created a federated graph database of all arts for interactive museum exhibits.
+He is in love with graphs, Cypher, and Neo4j since starting with that project and has not looked back.
+He joined the Neo4j Community in 2019 and is active as a Neo4j Ninja in the Community Forum, Discord, Slack, and StackOverflow.
+Tony enjoys answering many questions in our https://dev.neo4j.com/chat[Neo4j Discord Chat^] in almost all categories from Cypher to GDS and App development.
+If you want to see Tony live, check out the https://youtu.be/hgyow2noyLw?t=14699[recording of the Pre-Nodes Show^] with Alex and Lju which features a lot of interesting guests of the Neo4j Community.
 
-featured::https://dist.neo4j.com/wp-content/uploads/xxx/this-week-in-neo4j-25-September-2021.jpeg[name="xxx"]
+featured::https://dist.neo4j.com/wp-content/uploads/20210923074339/this-week-in-neo4j-25-September-2021.jpeg[name="Anthony Chiboucas"]
 
-https://www.linkedin.com/in/xxx/[Connect with xxx on LinkedIn, role="medium button"]
+https://www.linkedin.com/in/chiboucas/[Connect with Anthony on LinkedIn, role="medium button"]
+
+You can also connect with him through:
+
+* Neo4j Community: https://community.neo4j.com/u/tony.chiboucas/summary
+* Discord user @Wyrd: https://discord.com/channels/787399249741479977/867307718230540298/
+* Github: https://github.com/wyrdnexus
+* StackOverflow: https://stackoverflow.com/users/1589379/tony-chiboucas
+
+
 
 [#features-1,hashtags="neo4j,liquigraph, liquibase, migrate"]
 == Data Migration: From Liquigraph to Liquibase - Call for Testers!
 
 :tags: liquigraph, liquibase, migrate
 
-image::https://dist.neo4j.com/wp-content/uploads/xxx/liquigraph.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210923074336/liquigraph.png[width=150,float="right"]
 
 https://www.liquigraph.org/[Liquigraph^] is a database refactoring tool.
 It helps you maintain your Neo4j database state by defining and incrementally executing migrations.
@@ -54,31 +70,31 @@ https://twitter.com/fbiville/[Florent Biville^], a Neo4j engineer, is the creato
 He has published a tool that will help you migrate from liquigraph to liquibase.
 If you are using liquibase, consider helping to test this plugin.
 
-https://community.neo4j.com/t/data-migration-from-liquigraph-to-liquibase-looking-for-testers/44461/[Test Liquibase, role="medium button"]
+https://community.neo4j.com/t/data-migration-from-liquigraph-to-liquibase-looking-for-testers/44461/[Help Test Liquibase Migration, role="medium button"]
 
 [#features-2,hashtags="neo4j,breadcrumbs,graphaware,blockchain"]
 == Following the Digital Breadcrumbs and Graphing the Blockchain
 
 :tags: breadcrumbs, graphaware, blockchain
 
-image::https://dist.neo4j.com/wp-content/uploads/xxx/Breadcrumbs.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210923074315/Breadcrumbs.png[width=150,float="right"]
 
 https://twitter.com/graph_aware/[GraphAware^] and https://twitter.com/AppBreadcrumbs/[Breadcrumbs^] have teamed up to produce a Neo4j graph that helps users by visualizing block chain data.
-The application they developed crunches 6 billion crypto transactions and organizes it in a way that our [Breadcrumb] tools can update and show data in a matter of seconds.
+The application they developed crunches 6 billion crypto transactions and organizes it in a way that their Breadcrumb tools can update and show data in a matter of seconds.
 
-https://www.graphaware.com/graphaware/2021/09/15/digital-breadcrumbs.html/[Read the article, role="medium button"]
+https://www.graphaware.com/graphaware/2021/09/15/digital-breadcrumbs.html[Read the Article, role="medium button"]
 
 [#features-3,hashtags="neo4j,osinto,knowledgegraph,visualization, 3D"]
 == How to navigate a Cloud Empire graph
 
 :tags: osinto, knowledge-graph, visualization, 3D
 
-image::https://dist.neo4j.com/wp-content/uploads/xxx/xxx.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210923074331/Osinto.png[width=150,float="right"]
 
 The folks at https://twitter.com/osinto/[Osinto^] provide knowledge graphs subscriptions to help you understand data around aviation and drones.
 Their knowledge graphs are implemented with Neo4j on AWS.
 In addition, they have Cloud Empire, their graph intelligence product that enables you to provide market insights, even with your own data.
-In this demo, https://twitter.com/charlieosborne/[Charles Osborne^] show how to explore the connections in a 3-D graph visualization. You can also try it yourself.
+In this demo, https://twitter.com/charlieosborne/[Charles Osborne^] shows how to explore the connections in a 3-D graph visualization. You can also try it yourself.
 
 https://www.osinto.com/cloud-empire-demo/[Watch the Demo, role="medium button"]
 
@@ -87,7 +103,7 @@ https://www.osinto.com/cloud-empire-demo/[Watch the Demo, role="medium button"]
 
 :tags: java, modeling
 
-image::https://dist.neo4j.com/wp-content/uploads/xxx/Java17.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210923074326/Java17.jpeg[width=150,float="right"]
 
 https://twitter.com/jmhreif[Jennifer Reif^] has written an article about how she imported data for Java libraries through version 17.
 She describes how she loaded the data and how she modeled the data so that questions could be answered about the differences between Java versions.
@@ -106,7 +122,7 @@ https://medium.com/neo4j/java-17-explore-the-newly-released-java-version-in-a-gr
 
 :tags: cypher, gephi
 
-image::https://dist.neo4j.com/wp-content/uploads/xxx/Gephi.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210923074320/Gephi.png[width=150,float="right"]
 
 https://twitter.com/MeetSuvariya[Meet Suvariya^] has written some great articles in his Graph Data Science series.
 This tutorial  is a great beginners guide to using Neo4j Browser to explore and query the movie graph.
@@ -135,7 +151,7 @@ https://github.com/neo4j/graphql/releases/[Explore the GraphQL Repo, role="mediu
 
 :tags: graphker, cybersecurity,MITRE, NIST
 
-image::https://dist.neo4j.com/wp-content/uploads/xxx/GraphKer.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210923074323/GraphKer.png[width=150,float="right"]
 
 https://www.linkedin.com/in/adamantios-marios-berzovitis-4b6481177/[Adamantios - Marios Berzovitis^] has just released GraphKer.
 GraphKer is an open source tool for a cybersecurity graph database in Neo4j.
@@ -143,9 +159,10 @@ With GraphKer you can have the most recent update of cyber-security vulnerabilit
 
 https://github.com/amberzovitis/GraphKer/[Explore the Repo, role="medium button"]
 
-== Video Series
+== Video Series Reminder
 
-Remember that you can watch these helpful videos by the Developer Relations Team:
+Remember that you can watch these helpful videos by the Developer Relations Team.
+Here are the links to the YouTube Playlists:
 
 https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVZaoIpfsfpdzEXxyUJlAYw[Discovering Aura Free, role="medium button"]
 

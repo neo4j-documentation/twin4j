@@ -1,0 +1,6 @@
+In this week's #twin4j, we feature Anthony Chiboucas. Tony has developed a graph database as a resource that connects artist, events for interactive exhibits at museums.
+He is a prolific contributor to ALL Neo4j Community forums and we appreciate his enthusiasm for Neo4j.
+
+https://neo4j.com/blog/this-week-in-neo4j-liquibase-crypto-txns-breadcrumbs-cloud-empire-java-version-diffs-gephi-graphql-2-2-0-graphker/#featured-community-member
+
+#neo4j #neo4jcommunity #art #museum

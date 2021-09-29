@@ -1,0 +1,5 @@
+In this week's #twin4j, @CJLovesData1, our resident Data Scientist announces that she will be teaching a 4-hour course through O'Reilly Online Learning about Knowledge Graphs. You must register for this course that will be given on October 7,2021.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-3
+
+#neo4j #oreilly #knowledgegraphs #datascience #ml

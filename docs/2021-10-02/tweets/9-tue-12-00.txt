@@ -1,0 +1,6 @@
+In this week's #twin4j, we highlight Alexios Pantavos as our valued community member. Graphileon and Graphlytic demonstrate some new features of their tools. Clair will teach a KG course. We point to some interesting analyses of twitter and numeric graphs. We also describe the Aura/Kafka integration.
+And finally Jennifer describes Reactive Programming with Neo4j Spring Data.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/
+
+#neo4j #graphileon #graphlytic #knowledgegraph #kafka #aura #twitter #reactive

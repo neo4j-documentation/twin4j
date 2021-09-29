@@ -1,0 +1,5 @@
+In this week's #twin4j, @pankajtiwari2 has used the Twitter API to load data into Neo4j. He then analyzes how hashtags are used to answer some interesting questions of the graph.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-4
+
+#neo4j #twitter #hashtag #datascience

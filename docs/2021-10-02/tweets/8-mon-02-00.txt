@@ -1,0 +1,5 @@
+In this week's #twin4j, @jhmreif, our Java expert, has published her third article about migrating from Neo4j Spring Data 5 to 6 using reactive methods.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-7
+
+#neo4j #spring #springdata #reactive

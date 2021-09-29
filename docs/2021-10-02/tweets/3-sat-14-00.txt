@@ -1,0 +1,5 @@
+In this week's #twin4j, @graphileon just published a video that shows you how to create an API endpoint with Graphileon that enables an application to access a Neo4j graph.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-2
+
+#neo4j #API #endpoint #graphileon

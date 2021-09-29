@@ -1,0 +1,5 @@
+In this week's #twin4j, @graphlytic just published a video tutoriol that shows how you can map styles based upon numeric data in a property to make your graph visualization more dynamic.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-1
+
+#neo4j #graphlytic #datavisualization #stylerules

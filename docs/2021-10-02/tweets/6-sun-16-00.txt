@@ -1,0 +1,5 @@
+In this week's #twin4j, @mdavidallen from Neo4j describes the Neo4j Connector for Apache Kafka, version 4.1 that has been released and allows for bi-directional streaming between Neo4j Aura and Kafka.
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-5
+
+#neo4j #kafka #neo4jaura

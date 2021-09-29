@@ -1,0 +1,168 @@
+= This Week in Neo4j - Graphlytic Styles, Graphileon API endpoints, O'Reilly Knowledge Graphs course, Twitter Hashtags, Kafka with Neo4j Aura, Collatz Conjecture, Reactive Neo4j Spring Data
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Elaine Rosenberg
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: graphlytic, data-visualization, style-rules, graphileon, api, endpoints, oreilly, knowledge-graphs, data-science, ml, kafka, neo4j-aura, twitter, hashtags, data-science, mathematics, collatz-conjecture, graph-algorithms, spring-data, reactive
+
+Hello, everyone!
+
+In this issue, we feature Alexios Pantavos.
+
+The folks at Graphlytic have published a video tutorial that show you how to define rules for mapping styles with Graphlytic.
+Graphileaon has a new video that shows you how to create a public or private API endpoint to access the Neo4j graph.
+Our Data Scientist here a Neo4j, Clair Sullivan will be teaching a 4-hour course on Knowledge Graphs for ML on October 7th through O'Reilly Online Learning.
+Pankaj Kumar describes how he used the Twitter API to load data into Neo4j and the analysis he did around hashtags.
+David Allen writes about the Neo4j Connector for Apache Kafka, version 4.1 that has been released and allows for bi-directional streaming between Neo4j Aura and Kafka.
+Adrien Sales describes how his interest in the Collatz Conjecture, a mathematical problem prompted him to create a graph and analyze some data.
+Jennifer Reif just published an article about Neo4j Spring Data migration from 5 to 6 and how to incorporate reactive programming into the application.
+
+And finally, we remind you about the Developer Relations videos  and some new ones that were added to the playlists.
+
+Cheers,
+
+Elaine Rosenberg
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Alexios Pantavos
+
+:tags:
+
+This week's featured community member is Alexios Pantavos.
+
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Alexios Pantavos"]
+
+// featured community member(s) presentation
+
+// linkedin link(s)
+ https://www.linkedin.com/in/alexios-pantavos/[Connect with Alexios on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j,graphlytic, datavisualization, stylerules "]
+== Style Mapping Rules with Graphlytic
+
+:tags: graphlytic, data-visualization, style-rules
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/graphlytics-style-mapper.png[width=150,float="right"]
+
+https://twitter.com/graphlytic/[Graphlytic^] has just posted a video that teaches you how to use their style mapping functionality when you explore Neo4j graphs.
+The tutorial first shows how to define discrete mappers for visualizing the graph.
+Then it shows how to define rules for how nodes will be displayed based upon a numeric property value in the node.
+
+https://www.youtube.com/watch?v=cN11KzLhnZI/[Watch the Tutorial, role="medium button"]
+
+[#features-2,hashtags="neo4j, API, endpoint, graphileon"]
+== Creating API Endpoints with Graphileon
+
+:tags: graphileon, endpoint, API
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/create-api-endpoint-graphileon.png[width=150,float="right"]
+
+https://twitter.com/graphileon/[Graphileon^] has just posted a video that shows an easy way to create public and private API endpoints to which other systems can send GET or POST requests.
+The requests trigger the execution of Cypher code against a graph.
+Setting up an endpoint takes less than two minutes.
+
+https://www.youtube.com/watch?v=IkKNk5JE1cQ/[Watch the Demo, role="medium button"]
+
+[#features-3,hashtags="neo4j, oreilly, knowledgegraphs, datascience, ml"]
+== O'Reilly Learning - Knowledge Graphs
+
+:tags: oreilly, knowledge-graphs, data-science, ml
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/oreilly-knowledge-graphs.png[width=150,float="right"]
+
+https://twitter.com/CJLovesData1/[Clair Sullivan^] from Neo4j will be teaching a 4 hour, very interactive workshop with https://twitter.com/OReillyMedia/[O'Reilly Media^] on October 7, 2021.
+The name of the session is: "Introduction to Knowledge Graphs: Creating knowledge graphs to solve problems with machine learning."
+
+After taking this course, you should be able to:
+
+* Create a basic knowledge graph
+* Augment a knowledge graph with additional information
+* Apply analytics and data science techniques to create a knowledge graph solution
+* Use natural language processing (NLP) to extract unstructured text for a graph
+* Scrape Wikidata to get the relationships for all named entities in a text
+
+
+https://t.co/kNPusmsZQ6?amp=1/[Sign up for the Knowledge Graphs Course, role="medium button"]
+
+[#features-4,hashtags="neo4j, twitter, hashtag, datascience"]
+== Twitter Hashtag Analysis
+
+:tags: twitter, hash-tag, data-science
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/twitter-hashtag-analysis.png[width=150,float="right"]
+
+https://twitter.com/pankajtiwari2/[Pankaj Kumar^] posted an article describing the work he did to analyze Twitter data.
+He describes how he collected tweets on a hashtag and created a graph of tweets and users who tweeted and retweeted these tweets from different locations.
+He used the Twitter API to collect the data and then merged the data into a graph.
+And finally, he shows some of the Cypher code he used to query the graph to analyze the data.
+
+https://pankaj-tiwari2.medium.com/finding-who-and-where-from-twitter-hashtag-conversation-ce6c801025af/[Read the Article, role="medium button"]
+
+[#features-5,hashtags="neo4j, kafka, neo4jaura"]
+== Kafka for Neo4j Aura
+
+:tags: kafka, neo4j-aura
+
+image::https://dist.neo4j.com/wp-content/uploads/20210921075901/KafkaAura.jpg[width=150,float="right"]
+
+https://twitter.com/mdavidallen/[David Allen^] from Neo4j wrote an article that introduces you to using Kafka and Neo4j Aura.
+In this article he describes how to produce data from Neo4j Aura to Kafka using a Kafka Connect Source that is available with the Neo4j Connector for Apache Kafka, version 4.1.
+With this latest 4.1 release, the Connector allows for bi-directional exchange of data between Kafka and Neo4j Aura.
+In this article, he describes some use cases and then details how it works under the covers.
+
+https://neo4j.com/blog/kafka-for-neo4j-aura-is-available-now//[Read the Blog, role="medium button"]
+
+[#features-6,hashtags="neo4j, mathematics, collatzconjecture, graphalgorithms"]
+== The Collatz Conjecture
+
+:tags: mathematics, collatz-conjecture, graph-algorithms
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/collatz-conjecture.jpeg[width=150,float="right"]
+
+Are you a mathematician who has always wanted to solve the Collatz Conjecture problem?
+https://twitter.com/rastadidi/[Adrien Sales^] experimented with the problem by seeding some data.
+He was interested in what the graph would look like. In this article he describes the experiment he did and how he analyzed the data using the Neo4j Graph Data Science Library.
+
+
+https://dev.to/adriens/about-the-collatz-conjecture-neo4j-cypher-184h/[Read the Blog, role="medium button"]
+
+[#features-7,hashtags="neo4j, spring, springdata, reactive"]
+== Migrating from Neo4j Spring Data 5 to 6, Part 3
+
+:tags: spring, neo4j-spring-data, reactive
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/spring-logo.jpeg[width=150,float="right"]
+
+https://twitter.com/jhmreif/[Jennifer Reif^] from Neo4j has posted her third article about migrating  Neo4j Spring Data.
+First she summarizes what Reactive Programming is.
+Then she steps you through how to adapt the code in a Github repository to use reactive method access.
+
+https://jmhreif.com/blog/migrate-sdn-part3/[Read the Blog, role="medium button"]
+
+== Developer Relations Videos
+
+Here are the links to these valuable YouTube Playlists.
+
+*New this week*:
+
+* Exploring the StackOverflow Dataset in _Discovering Aura Free_.
+* Populating the Database from a JSON file in _Bite-Sized Neo4j for Data Scientists_.
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVZaoIpfsfpdzEXxyUJlAYw[Discovering Aura Free, role="medium button"]
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC[Bite-Sized Neo4j for Data Scientists, role="medium button"]
+
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVMFOYpMvab8os1g3zTRdm0[Hands-on Training Sessions, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/neo4j[Neo4j^]:
+
+// replace nnnn with the tweet ID
+
+tweet::1440542644061364224[type={type}]
+
+Don't forget to RT if you liked it too!

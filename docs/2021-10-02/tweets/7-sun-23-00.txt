@@ -1,0 +1,6 @@
+In this week's #twin4j, @rastadidi wrote an article about his curiosity about how a graph would look like in order to solve the Collatz Conjecture mathematical problem. He describes how he loaded the data and how he analyzed it using the GDS Library.
+
+
+https://neo4j.com/blog/this-week-in-neo4j-graphlytic-styles-graphileon-endpoints-oreilly-knowledge-graphs-twitter-hashtags-kafka-aura-collatz-reactive-neo4j-spring-data/#features-6
+
+#neo4j #mathematics #collatzconjecture #graphalgorithms

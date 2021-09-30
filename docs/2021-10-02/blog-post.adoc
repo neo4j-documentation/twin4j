@@ -10,7 +10,7 @@
 
 Hello, everyone!
 
-In this issue, we feature Alexios Pantavos.
+In this issue, we feature Alexios Pantavos, a developer who has worked tirelessly to help other Neo4j Community members.
 
 The folks at Graphlytic have published a video tutorial that show you how to define rules for mapping styles with Graphlytic.
 Graphileaon has a new video that shows you how to create a public or private API endpoint to access the Neo4j graph.
@@ -31,21 +31,32 @@ Elaine Rosenberg
 
 :tags:
 
-This week's featured community member is Alexios Pantavos.
+This week's featured community member is Alexios "Alex" Pantavos, Software Developer at Akelius, Residential Property AB.
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Alexios Pantavos"]
+featured::https://dist.neo4j.com/wp-content/uploads/20210930131004/this-week-in-neo4j-02-October-2021.jpeg[name="Alexios Pantavos"]
 
-// featured community member(s) presentation
+
+Originally from Athens, Greece, Alex moved to Berlin Germany 3 years ago, for an internship as Application Developer.
+He came across and fell in love with Neo4j when looking for a database that can manage the complex attributes and components of properties - apartments.
+As a graph, the many variable aspects of residential living places can be managed flexibly and used for comparisons, recommendations, and more.
+Alex is building the API-Backends, managing the database and building and optimizing Cypher queries.
+Alex worked early as volunteer at AIESEC, a non-profit to help the organization and it's participants with IT-related challenges.
+Thankfully he's also been providing the same level of help and support in the Neo4j Community, helping answer a lot of questions.
+He shared that helping others is one of the best ways to learn about any topic.
+
+If you want to see Alex in Action, check out the https://youtu.be/hgyow2noyLw?t=14699[pre-Nodes live-stream^] recording where he shares what he enjoys in the Neo4j Community.
+
+Thank you so much for all your contributions Alex.
 
 // linkedin link(s)
- https://www.linkedin.com/in/alexios-pantavos/[Connect with Alexios on LinkedIn, role="medium button"]
+https://www.linkedin.com/in/alexios-pantavos/[Connect with Alexios on LinkedIn, role="medium button"]
 
 [#features-1,hashtags="neo4j,graphlytic, datavisualization, stylerules "]
 == Style Mapping Rules with Graphlytic
 
 :tags: graphlytic, data-visualization, style-rules
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/graphlytics-style-mapper.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210930130954/graphlytics-style-mapper.png[width=150,float="right"]
 
 https://twitter.com/graphlytic/[Graphlytic^] has just posted a video that teaches you how to use their style mapping functionality when you explore Neo4j graphs.
 The tutorial first shows how to define discrete mappers for visualizing the graph.
@@ -58,7 +69,7 @@ https://www.youtube.com/watch?v=cN11KzLhnZI/[Watch the Tutorial, role="medium bu
 
 :tags: graphileon, endpoint, API
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/create-api-endpoint-graphileon.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210930130947/create-api-endpoint-graphileon.png[width=150,float="right"]
 
 https://twitter.com/graphileon/[Graphileon^] has just posted a video that shows an easy way to create public and private API endpoints to which other systems can send GET or POST requests.
 The requests trigger the execution of Cypher code against a graph.
@@ -71,7 +82,7 @@ https://www.youtube.com/watch?v=IkKNk5JE1cQ/[Watch the Demo, role="medium button
 
 :tags: oreilly, knowledge-graphs, data-science, ml
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/oreilly-knowledge-graphs.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210930130958/oreilly-knowledge-graphs.png[width=150,float="right"]
 
 https://twitter.com/CJLovesData1/[Clair Sullivan^] from Neo4j will be teaching a 4 hour, very interactive workshop with https://twitter.com/OReillyMedia/[O'Reilly Media^] on October 7, 2021.
 The name of the session is: "Introduction to Knowledge Graphs: Creating knowledge graphs to solve problems with machine learning."
@@ -92,7 +103,7 @@ https://t.co/kNPusmsZQ6?amp=1/[Sign up for the Knowledge Graphs Course, role="me
 
 :tags: twitter, hash-tag, data-science
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/twitter-hashtag-analysis.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210930131008/twitter-hashtag-analysis.png[width=150,float="right"]
 
 https://twitter.com/pankajtiwari2/[Pankaj Kumar^] posted an article describing the work he did to analyze Twitter data.
 He describes how he collected tweets on a hashtag and created a graph of tweets and users who tweeted and retweeted these tweets from different locations.
@@ -120,7 +131,7 @@ https://neo4j.com/blog/kafka-for-neo4j-aura-is-available-now//[Read the Blog, ro
 
 :tags: mathematics, collatz-conjecture, graph-algorithms
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/collatz-conjecture.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210930130944/collatz-conjecture.jpeg[width=150,float="right"]
 
 Are you a mathematician who has always wanted to solve the Collatz Conjecture problem?
 https://twitter.com/rastadidi/[Adrien Sales^] experimented with the problem by seeding some data.
@@ -134,7 +145,7 @@ https://dev.to/adriens/about-the-collatz-conjecture-neo4j-cypher-184h/[Read the 
 
 :tags: spring, neo4j-spring-data, reactive
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/spring-logo.jpeg[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20210930131002/spring-logo.jpeg[width=150,float="right"]
 
 https://twitter.com/jhmreif/[Jennifer Reif^] from Neo4j has posted her third article about migrating  Neo4j Spring Data.
 First she summarizes what Reactive Programming is.

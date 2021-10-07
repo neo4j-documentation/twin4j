@@ -7,6 +7,7 @@ const fs = require('fs').promises
 const { generate: generateBlogPost } = require('./generate-blog-post.js')
 const { generate: generateCommunityMemberCard } = require('./generate-community-member-card-image.js')
 const { copyImages } = require('./copy-images.js')
+const { resizeImages } = require('./resize-images.js')
 const { getIssueDate, getIssueDirectory, getBuildDirectory } = require('./lib/data.js')
 
 const rootDirectory = ospath.join(__dirname, '..')
@@ -30,6 +31,8 @@ if (!issueDate) {
     debug(`Featured community member image generated: ${ospath.relative(rootDirectory, generateCommunityMemberCardResult.outputFile)}`)
     const copyImagesResult = await copyImages(issueDate)
     debug(`Images copied to: ${ospath.relative(rootDirectory, copyImagesResult.destinationDirectory)}`)
+    // resize images
+    resizeImages(copyImagesResult.destinationDirectory, issueDate)
   } catch (e) {
     console.error('Something wrong happened!', e)
   }

@@ -1,0 +1,5 @@
+In this week's #twin4j, we show you how to load your backups dumps into aura free. 
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#features-6
+
+#neo4j #aura #aurafree #dataimport #sandbox #neo4jdesktop #backups

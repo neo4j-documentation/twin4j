@@ -1,0 +1,5 @@
+In this week's #twin4j, we feature Sixing Huang (@dgg32), Triple Neo4j-Certified Bioinformatic Data Scientist and Tech Writer.
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#featured-community-member
+
+#neo4j #featuredmember #neo4jcommunity

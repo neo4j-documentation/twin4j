@@ -7,6 +7,12 @@ const debug = require('debug')('resize-images')
 const { getCommunityMembersData } = require('./lib/data.js')
 
 async function resizeImages(buildImagesDirectory, issueDate) {
+  try {
+    execSync(`"mogrify" "--version"`)
+  } catch (e) {
+    console.log("Unable to resize images, 'mogrify' command not found. Make sure that ImageMagick is correctly installed: https://imagemagick.org/script/download.php")
+    return
+  }
   const communityMemberJson = await getCommunityMembersData(issueDate)
   const thumbsDirectory = ospath.join(buildImagesDirectory, 'thumbs')
   await fs.rmdir(thumbsDirectory, { recursive: true })

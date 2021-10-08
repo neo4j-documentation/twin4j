@@ -1,0 +1,5 @@
+In this week's #twin4j, we announce our new graph data modelling course on Graphacademy.
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#features-3
+
+#neo4j #graphacademy #graphdatamodelling #graphdatabase #course

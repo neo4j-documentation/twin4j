@@ -1,0 +1,5 @@
+In this week's #twin4j, discover the new features in GDS 1.7
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#features-1
+
+#neo4j #gds #linkprediction #kcut #datascience #graphalgorithms

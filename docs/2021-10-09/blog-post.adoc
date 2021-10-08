@@ -1,0 +1,172 @@
+= This Week in Neo4j - GDS 1.7 Features, Knowledge Graph with Spark and Neo4j, Digital Nomad Travel Logs, Link Predictions, Load Data Into Aura.
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura
+:noheader:
+:linkattrs:
+:categories: graph-database 
+:author: Max Andersson
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: data-visualization, knowledge-graphs, data-science, ml, neo4j-aura, mathematics, graph-algorithms.
+
+Hello, everyone!
+
+As we are beginning a new quarter of the year and entering the spookiest month of the year, Twin4j brings you both tricks and treats from the last week in the world of Neo4j. 
+In this issue, we will see Link Prediction pipelines in focus as we release the new version of GDS. 
+
+Read about the new features in Neo4j GDS 1.7 and how link prediction pipelines can be used to discover travel patterns of digital nomads. Or perhaps you’re more interested in a deep-dive into the new feature. 
+
+We have Micheal Hunger showing us how to load dump files into Neo4j Aura from different sources. Also an in-depth article about Neo4j Performance Architecture, and some Tuning tricks by Benjamin Guegan.
+
+And for those people interested in knowledge graphs with Spark & Neo4j, we have a good article by Emre Varol, demonstrating how you can get started.
+
+Finally, We also launched a new course on our Graphacademy learning platform. You can learn Graph Data Modelling best practices, refactoring, and better understand how modeling works in your graph databases.
+
+Cheers, 
+
+Max Andersson
+
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Sixing Huang
+
+:tags:
+
+featured::https://dist.neo4j.com/wp-content/uploads/20211008111054/this-week-in-neo4j-09-October-2021.jpeg[name="Sixing Huang"]
+
+Dr. Sixing Huang is a German bioinformatician who lives in Shenzhen and works at MGI(BGI).
+Originally from China, he studied and got his PhD in Germany and continued to work for different research institutions.
+
+Starting out as a application developer he moved more and more into cloud and architecture topics, becoming interested in Microservices and deep into DevOps. He expanded his knowledge then into data science, machine learning, graphs and data engineering.
+
+When not working he loves to travel the world (hopefully soon again) and is learning Japanese.
+Being a Neo4j Certified Professional, Sixing has written a number of informative articles on using graphs and Neo4j.
+
+
+They are spanning from using https://medium.com/codex/turn-neo4j-into-a-genome-browser-e94c7311dfab[Genome Clustering^], https://towardsdatascience.com/neo4j-for-diseases-959dffb5b479[Disease Analytics^] and https://towardsdatascience.com/graph-database-graphql-and-machine-learning-for-carbohydrate-active-enzymes-dba8500b45cf[Enzyme GraphQL APIs^] all the way to exploring the https://towardsdatascience.com/neo4j-for-bollywood-5ceb371031f1[Bollywood movieverse^].
+Thank you soo much Sixing for all your amazing articles, please keep them coming and good luck on your well advanced journey into the analytics space.
+
+// linkedin link(s)
+https://www.linkedin.com/in/sixing-huang-3a824a66/[Connect with Sixing on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j,gds,linkprediction,kcut, datascience,graphalgorithms "]
+== New Features in GDS 1.7.0
+//https://neo4j.slack.com/archives/C5P0FS8CA/p1632433568077100
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/20211008111047/gdsfeature.jpg[width=150,float="right"]
+
+Neo4j’s GDS 1.7 release introduces machine learning pipelines for graph native link prediction. Link prediction is valuable, but we heard you when you said it was hard!  In this release, we made things easier for you by adding the ability to define link prediction pipelines. A pipeline lets you define all the steps you want to take to build your predictive model, assembles them into a workflow, and then enables you to apply those defined steps to data to train your best model.
+
+Neo4j introduces link prediction pipelines to make model-building more accessible and less error-prone. We added progress logging and system monitoring to make it easier to monitor the status of your workloads and the utilization of your instances.
+
+System monitoring is a new enterprise feature that takes observability to the next level: a simple command to reveal your team’s utilization of resources on a shared system.
+
+As of GDS 1.7, you can query your graph projection with Cypher! String Support for Graph Export (both for exporting CSVs and creating new databases) Approximate Maximum K-Cut is an assignment of nodes in a graph into k-disjoint communities. The idea is that you want to maximize the number of relationships across communities – the opposite of a typical community detection algorithm.
+
+https://neo4j.com/blog/whats-new-with-graph-data-science-gds-1-7-release/[Read the article, role="medium button"]
+
+[#features-2,hashtags="neo4j, digitalnomads, travel, gds, knowledgegraphs,graphdatascience, graphanalytics "]
+== Travel pattern discovery of Digital Nomads.
+
+
+:tags: graph-modeling, digital-nomads, travel, gds graph-import graph-analysis, graph-data-science
+
+image::https://dist.neo4j.com/wp-content/uploads/20211008111056/travellogs.png[width=150,float="right"]
+
+Beign a digital nomad myself, this article written by Tomaz Bratanic about travel patterns of digital nomads stood out to me. Digital nomads are a group of people who travel to different places in the world and take their job with them, allowing them to have an exciting work-life balance. But where do they go?
+
+By analyzing travel logs of digital nomads with Neo4j Graph Data Science, we can find some patterns in the dataset provided by Nomadlist. The data is available for the top 50 cities per continent. The next step is to use the new Link Prediction Pipeline to predict new connections in a graph. 
+
+
+https://towardsdatascience.com/analyzing-travel-logs-of-digital-nomads-with-neo4j-graph-data-science-b7a13d6ba544[Read the article, role="medium button"]
+
+[#features-3,hashtags="neo4j, graphacademy, graphdatamodelling, graphdatabase, course "]
+== New Course: Graph Data Modelling
+
+
+:tags: neo4j, graphacademy, graph-modelling, graph-database, course
+
+//image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+++++
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NrLMzcDtraE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+++++
+
+This week we are happy to announce our new course: Graph Data Modelling. Perhaps you had some experience with Cypher or have already taken our Cypher fundamentals course, but you are not sure how to use it to build a graph database model. Then this course is for you.
+
+The course covers the concepts of graph modeling and how to refactor an already existing graph database model.
+
+
+https://graphacademy.neo4j.com/courses/modeling-fundamentals/[Start Learning - Graph Data Modeling, role="medium button"]
+
+[#features-4,hashtags="neo4j, dbms, performance, tuning, scalability, architecture "]
+== Neo4j Performance Architecture & Tuning
+
+
+:tags: dbms, performance, tuning, tuning-neo4j, scalability, architecture, 
+
+image::https://dist.neo4j.com/wp-content/uploads/20211008113419/performance2.jpg[width=150,float="right"]
+
+Benjamin Guegan writes about how Neo4j Performance Architecture works and some tricks on tuning your graph to optimize performance. He digs deep into concepts like the query processor, execution engine, and how the physical structure of nodes affects performance. 
+
+If you’re interested in l understanding more about Neo4J performance and architecture, then this is something you should read.
+
+https://www.graphable.ai/blog/neo4j-performance/[Learn about performance architechture, role="medium button"]
+
+[#features-5,hashtags="neo4j, knowledgegraph, spark, graph, nlp"]
+== Creating Clinical Knowledge Graph with Spark NLP & Neo4j
+
+:tags: neo4j, knowledge-graph, spark, graph, nlp
+
+image::https://dist.neo4j.com/wp-content/uploads/20211008111049/kgspark.png[width=150,float="right"]
+
+This blog post will show you how to create a basic Knowledge Graph using Spark NLS using Neo4J.
+
+Spark NLP is an open-source NLP library under the hood of Apache Spark and Spark ML. It provides a unified solution for all NLP needs by an easy API to integrate with ML Pipelines.
+
+
+
+https://medium.com/spark-nlp/creating-knowledge-graph-by-spark-nlp-neo4j-9d18706aa08b[Learn more about Spark NLP & Neo4j , role="medium button"]
+
+[#features-6,hashtags="neo4j, aura, aurafree, dataimport, sandbox, neo4jdesktop, backups "]
+== Getting Dumps and Example Projects into Aura Free
+
+:tags: neo4j, aura, aurafree, data-import, sandbox, neo4j-desktop, backups
+
+image::https://dist.neo4j.com/wp-content/uploads/20211008113722/importdb.png[width=150,float="right"]
+Regardless of where you start your graphista-journey, moving your data into Aura Free is a great way to get started on the next step towards a production solution with managed Neo4j in Aura. 
+
+Michael Hunger will show you how to get your dump files loaded into Aura from Sandbox, Neo4j desktop, or an example dataset in this blog post.
+
+
+
+
+https://medium.com/neo4j/week-10-getting-dumps-and-example-projects-into-aura-free-6980b178dc69[Get your data into Aura, role="medium button"]
+
+[#features-7,hashtags="neo4j, linkprediction ,fastrp, gds, deepdive"]
+== Link Predictions
+
+:tags: neo4j, link-prediction ,fastrp, gds, deep-dive
+
+image::https://dist.neo4j.com/wp-content/uploads/20211008113415/links.png[width=150,float="right"]
+
+A Deep Dive into Neo4j Link Prediction Pipeline and FastRP Embedding Algorithm. 
+
+Learn how to train and optimize Link Prediction models in the Neo4J Graph Data Science library to get the best results.
+
+Link Prediction pipeline combines node properties to generate input features of the Link Prediction model. 
+
+In this blog post, we get to explore FastRP node embeddings to define initial node features.
+
+https://towardsdatascience.com/a-deep-dive-into-neo4j-link-prediction-pipeline-and-fastrp-embedding-algorithm-bf244aeed50d[Learn about Link Predictions, role="medium button"]
+
+== Tweet of the Week
+Pandora Papers continues to make a difference in the world.
+ 
+My favorite tweet this week was by https://twitter.com/neo4j[Neo4j^]:
+
+
+// replace nnnn with the tweet ID
+
+tweet::1445187526566813700[type={type}]
+
+Don't forget to RT if you liked it too!

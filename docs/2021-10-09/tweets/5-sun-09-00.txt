@@ -1,0 +1,5 @@
+In this week's #twin4j, we take a closer look at neo4j performance architecture.
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#features-4
+
+#neo4j #dbms #performance #tuning #scalability #architecture

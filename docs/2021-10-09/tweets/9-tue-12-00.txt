@@ -1,0 +1,6 @@
+In this week's #twin4j, we highlight Sixing Huang and his much appreciated articles, Look in to new gds features, Load data into Aura, Neo4j performance
+architecture, Knowledge Graphs with Spark and Neo4j, and discover travel patterns of Digital Nomads.
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/
+
+#neo4j

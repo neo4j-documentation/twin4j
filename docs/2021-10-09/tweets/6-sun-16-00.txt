@@ -1,0 +1,5 @@
+In this week's #twin4j,  take a closer look of how you can leverage knowledge graphs with Apache Spark and Neo4j
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#features-5
+
+#neo4j #knowledgegraph #spark #graph #nlp

@@ -1,0 +1,5 @@
+In this week's #twin4j, we analyze travel patterns of digital nomads with the help of Link Predition pipelines.
+
+https://neo4j.com/blog/this-week-in-neo4j-GDS-17-Features-Knowledge-Graph-with-Spark-and-Neo4j-Digital-Nomad-Travel-logs-Link-Prediction-Load-Data-Into-Aura/#features-2
+
+#neo4j #digitalnomads #travel #gds #knowledgegraphs #graphdatascience #graphanalytics

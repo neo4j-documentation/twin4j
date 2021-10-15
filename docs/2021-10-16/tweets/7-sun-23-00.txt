@@ -1,0 +1,5 @@
+In this week's #twin4j, Clair shows us how knowledge graphs are made, in her new masterclass @Connected_Data. 
+
+https://neo4j.com/blog/this-week-in-neo4j-twitch-stackoverflow-masterclass-graphaule-workshop/#features-6
+
+#neo4j #knowledgegraph #masterclass

@@ -1,0 +1,146 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-twitch-stackoverflow-masterclass-graphaule-workshop
+:noheader:
+:linkattrs:
+:categories: graph-database, twin4j, data-science, knowledge-graphs, 
+:author: Max Andersson
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: neo4j, graph-database, data-science, knowledge-graphs,twitch,stackoverflow,masterclass,workshop
+
+Hello, everyone!
+
+🎃  Is it just me or is this month getting just getting spookier and spookier by the day? I’m sure it’s just me, but it still doesn’t feel like I’m the only one who’s been spooked this month. At least not if you’ve been working at Twitch.
+
+📺  Twitch made an "oopsie" and now their source code is all over https://www.theverge.com/2021/10/6/22712365/twitch-data-leak-breach-security-confirmation-comments[the internet].  We did not have partaken in this "oopsie", but we’ve been working on a new Twitch dataset you can use to analyze streamer data in this issue.
+
+⚠️ There is also a new Stack Overflow dataset to explore in this issue.
+
+🍺  For those of you who like beer, we’ve got a beer feature for you in this issue, and how a certain individual makes his own beer recommendation engine, if that is not a great use of graphs then I don’t know what is.
+
+Furthermore, we feature Graphaule a podcast/article series that focuses on graph value and how to bring these concepts together for value creation and we also feature some hands-on experiences within health care & life science, as well as a masterclass in knowledge graphs.
+
+Another cool thing is that you can still get a t-shirt for free when you certify as a Neo4j Certified Professional. 
+That’s it for me this week. Have great week and see you next week again.
+Cheers 🍻 , Max Andersson
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Håkan Löfqvist
+
+:tags:
+
+This week's featured community member is Håkan Löfqvist.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20211015093813/this-week-in-neo4j-16-October-2021.jpeg[name="Håkan Löfqvist"]
+
+This weeks featured member is Håkan Löfqvist, who works as a Field Engineer at Neo4j out of Stockholm, Sweden, helping many of our customers to be successful in their Neo4j projects.
+Even before joining Neo4j in 2020, Håkan has had a long history with Neo4j (since 2013!), having before worked as the CTO of Monocl which is using Neo4j together with Spark and ElasticSearch to build, find and prioritize relationships for medical use-cases. 
+What is really amazing about Håkan is his involvement in our user community. He has answered hundreds of questions both in the chat on Discord and in our Forums on all topics from Cypher and GDS to deployments and configuration.
+He has also contributed to APOC, given talks and written articles.
+Thanks so much for all your help Håkan, please keep it coming.
+Connect with Håkan on Linkedin: 
+
+
+// linkedin link(s)
+https://www.linkedin.com/in/h%C3%A5kan-l%C3%B6fqvist-5639b02/[Connect with Håkan on LinkedIn, role="medium button"]
+https://github.com/lqst[Håkan on GitHub, role="medium button"]
+
+[#features-1,hashtags="neo4j,untapped, beer, recommendations, AI "]
+==  🍺  Beer Recommendation Enigne
+
+:tags: neo4j, untapped, beer, recommendations, AI
+
+image::https://dist.neo4j.com/wp-content/uploads/20211015093814/untapped.png[width=150,float="right"]
+
+I don't know about you, but I do occationally endulge in a beer after work, but Bart Simons decided to take a break from drinking beer to scrape the  beer tracking app Untapped, in order to create his very own beer recommendation engine. Cheers!
+
+Bart Simons is a data scientist at a major consultancy firm. He created a beer recommendation engine using data from the Untappd app. He scraped data about people’s preferences, social networks, and visits to venues. Using the data, he created a graph database and created a recommendation function. He then created a score based on the similarity of beer users' ratings. The project is a work in progress, but working on putting the scraper in a script form instead of a command-line.
+
+https://medium.com/@22b.simons/untappd-meets-neo4j-49bb52c2f77c[Read the article, role="medium button"]
+
+[#features-2,hashtags="neo4j, gds, ai, diffbot, knowleadgegraph  "]
+== Visualizing Similarities Between Companies
+
+:tags: neo4j, gds, ai, diffbot, knowledge-graph
+
+image::https://dist.neo4j.com/wp-content/uploads/20211015093807/companies.png[width=150,float="right"]
+
+
+
+Khuyen Tran uses Neo4j to find the similarities between artificial intelligence companies. The data is being made available with the public domain CC0 license with the help of Diffbot's knowledge graph. The graph is then being used to find the most similar companies. 
+
+https://khuyentran1476.medium.com/visualize-similarities-between-companies-with-graph-database-212af872fbf6[Read the article, role="medium button"]
+
+[#features-3,hashtags="neo4j, twitch, sandbox, dataset, streamers"]
+== 📺  Twitch Sandbox
+:tags: neo4j, twitch, sandbox, dataset, streamers
+
+
+Twitch is a streaming service that allows users to watch live video feeds and chat with other users. Mainly focues on gaming, they provide a plaform for sharing content of all kinds. In this dataset you can explore the data from originally scraped from Twitch. Using the data you can explore the streamers and their streams, what games they are plaing, and how they are interacting with each other.
+
+Play with the new Twitch dataset in Neo4j Sandbox, and remember to tag your findings with https://twitter.com/neo4j[#neo4j] on twitter
+
+
+https://sandbox.neo4j.com?usecase=twitch[Explore Twitch Sandbox, role="medium button"]
+https://github.com/neo4j-graph-examples/twitch[Dataset on Github, role="medium button"]
+https://towardsdatascience.com/twitchverse-a-network-analysis-of-twitch-universe-using-neo4j-graph-data-science-d7218b4453ff[Article: Twitchverse, role="medium button"]
+
+[#features-4,hashtags="neo4j, stackoverflow, dataset, sandbox, streamers"]
+== ⚠️ Stack Overflow Dataset
+
+:tags: neo4j, stackoverflow, dataset, sandbox, streamers
+
+image::https://dist.neo4j.com/wp-content/uploads/20211015093812/icon-1.svg[width=150,float="right"] 
+If you ever dealt with code, no matter how small, you've probably seen  Stack Overflow. It's a website that allows users to ask questions and answer them. Discover Questions, Answers, Comments, and Tags from Stack Overflow in a graph database.
+
+Remember to tag your findings with https://twitter.com/neo4j[#neo4j] on twitter.
+
+
+https://sandbox.neo4j.com?usecase=stackoverflow[Explore Sandbox Dataset, role="medium button"]
+https://github.com/neo4j-graph-examples/stackoverflow[Dataset on Github, role="medium button"]
+
+[#features-5,hashtags="neo4j, graphvalue, podcast, exploreation "]
+== Graphalue
+
+:tags: neo4j, graphvalue, podcast, exploreation
+
+image::https://dist.neo4j.com/wp-content/uploads/20211015093808/graphaule.jpeg[width=150,float="right"]
+
+Stefan Wendin & Rik Van Bruggen are going to go on a quest together to better understand the value of graphs. The destination is "Graphalue" (pronounced grɑːfæljuː or grAfAl-yoo) A reference to the mythical land that brings the value concept together with the technical concepts of graphs. This quest is not going to be too long, but not too short either. Thinking this through, together, and creating a number of articles and podcasts about this topic on the way.
+
+https://www.graphalue.com/home/part-1-why-the-quest[Visit the Site, role="medium button"]
+https://soundcloud.com/graphistania/graphalue-e1-the-quest-for[🎧 Listen to the podcast 🎧, role="medium button"]
+
+
+[#features-6,hashtags="neo4j, knowledgegraph, masterclass "]
+== Masterclass of the Knowledge Graphs
+
+:tags: knowleadge-graph, neo4j, masterclass
+
+image::https://dist.neo4j.com/wp-content/uploads/20211015093805/clair.jpg[width=150,float="right"]
+
+The goal of this masterclass is to take participants from raw, unstructured text into the creation of a full knowledge graph. Participants will learn how to use basic natural language processing (NLP) to construct a small knowledge graph using Python and a graph database. From here, we will explore techniques around creating graph embeddings as the entry point for binary classification problems for node classification. Queries will be demonstrated using the Cypher Query Language, both from within the Neo4j web browser as well as from Python in the notebook environment.
+
+Held by our very own https://twitter.com/CJLovesData1[Clair]
+
+https://2021.connected-data.world/talks/knowledge-graphs-created-through-basic-machine-learning/[Register for the Masterclass, role="medium button"]
+
+[#features-7,hashtags="neo4j, lifescience, healthcare, knowledgegraphs, practical, graphdatabases, solutions"]
+== Neo4j Health Care and Life Sciences Workshop
+
+:tags: neo4j, lifescience, healthcare, knowledge-graphs, practical, graph-databases, solutions
+
+image::https://dist.neo4j.com/wp-content/uploads/20211015093817/workshop.png[width=150,float="right"]
+
+Are you working in the health care or life science industry, and perhaps heard that graph technology can make your life eaiser?! 
+In this series of workshops, we will explore the power of graph technology in the health care and life sciences industry and showcase practical applications for common problems. 
+
+
+https://www.bigmarker.com/series/neo4j-life-sciences-virtual-/series_details/[Register for Health Care & Life Sciences Workshop, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/mesirii[mesirii^]:
+tweet::1448582014664314883[type={type}]
+
+Don't forget to RT if you liked it too!

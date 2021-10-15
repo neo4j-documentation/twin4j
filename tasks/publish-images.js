@@ -41,6 +41,7 @@ async function publish(issueDate) {
       debug(`Image with slug ${slug} found, updating image with id: ${mediaId}...`)
       const response = await updateMedia(mediaId, imagePath, mediaData)
       console.log(`Image updated: ${response.source_url}`)
+      
     } else {
       debug(`Image with slug: ${slug} not found, creating...`)
       const response = await createMedia(imagePath, mediaData)

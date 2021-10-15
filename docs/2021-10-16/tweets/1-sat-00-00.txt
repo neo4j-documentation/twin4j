@@ -1,0 +1,5 @@
+In this week's #twin4j, we feature Håkan Löfqvist, Field Engineer at Neo4j. Thank you Håkan for sharing all of your knowledge with our community.
+
+https://neo4j.com/blog/this-week-in-neo4j-twitch-stackoverflow-masterclass-graphaule-workshop/#featured-community-member
+
+#neo4j 

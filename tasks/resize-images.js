@@ -15,7 +15,7 @@ async function resizeImages(buildImagesDirectory, issueDate) {
   }
   const communityMemberJson = await getCommunityMembersData(issueDate)
   const thumbsDirectory = ospath.join(buildImagesDirectory, 'thumbs')
-  await fs.rmdir(thumbsDirectory, { recursive: true })
+  await fs.rm(thumbsDirectory, { recursive: true, force: true })
   const originalImages = await fs.readdir(buildImagesDirectory)
   await fs.mkdir(thumbsDirectory)
   execSync(`"mogrify" "-path" "thumbs/" "-thumbnail" "800x418>" ${originalImages.map(image => `"${image}"`).join(' ')}`, { cwd: buildImagesDirectory })
@@ -27,7 +27,7 @@ async function resizeImages(buildImagesDirectory, issueDate) {
     await fs.copyFile(ospath.join(thumbsDirectory, image), ospath.join(buildImagesDirectory, image))
   }
   // cleanup
-  await fs.rmdir(thumbsDirectory, { recursive: true })
+  await fs.rm(thumbsDirectory, { recursive: true, force: true })
 }
 
 module.exports = {

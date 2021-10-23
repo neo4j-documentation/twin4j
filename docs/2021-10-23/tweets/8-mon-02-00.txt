@@ -1,0 +1,5 @@
+In this week's #twin4j, how to visualize neo4j data with the help of Gephi
+
+https://neo4j.com/blog/this-week-in-neo4j-Speaking-Cypher-Stocks-Graphaule-Discover-Aura-Wikidata-Gephi/#features-7
+
+#neo4j #gephi #tools

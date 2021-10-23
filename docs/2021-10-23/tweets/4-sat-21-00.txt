@@ -1,0 +1,5 @@
+In this week's #twin4j, we get another episode of graphaule. Talking about how to get the most value out of graph technology.
+
+https://neo4j.com/blog/this-week-in-neo4j-Speaking-Cypher-Stocks-Graphaule-Discover-Aura-Wikidata-Gephi/#features-3
+
+#neo4j #cypher #graphaule #graph-database #graph-value

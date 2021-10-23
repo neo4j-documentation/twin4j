@@ -1,0 +1,5 @@
+In this week's #twin4j, we get some insight on how graphs are enabling fraud detection.
+
+https://neo4j.com/blog/this-week-in-neo4j-Speaking-Cypher-Stocks-Graphaule-Discover-Aura-Wikidata-Gephi/#features-5
+
+#neo4j #frauddetection #fintech #graphvalue

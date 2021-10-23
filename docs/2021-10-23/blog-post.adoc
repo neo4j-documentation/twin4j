@@ -1,0 +1,137 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-Speaking-Cypher-Stocks-Graphaule-Discover-Aura-Wikidata-Gephi
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Max Andersson
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: neo4j, cypher, graphaule, graph-database, graph-analytics
+
+Hello, everyone!
+
+I guess it's time to start looking for old costumes in the closet. I'm going to be looking for a new one this year, and I think "Squid Game" might have an inpact on customes this year. Neither the less, this issue of Twin4j will be featuring Mike Oaten this week. Along with a new episode of Graphaule, and some practicle resources on importing wikidata into Neo4j.  
+
+Furthermore, you will find a supercool example of how to use the Cypher language to query the graph with your voice! Yes, you read that right. The guys over a laurus has figured out how to make this happen. Check it out. 
+
+Also, an interview of  Neo4js Nik Vora eplaining the value of graph databases in the context of Fraud detection.
+
+Have a great week everyone!
+/Max Andersson
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Mike Oaten
+
+:tags:
+
+This week's featured community member is Mike Oaten.
+
+featured::https://dist.neo4j.com/wp-content/uploads/20211022203458/this-week-in-neo4j-23-October-2021-2.jpeg[name="Mike Oaten"]
+
+This weeks featured member is Mike Oaten, who is a part of our https://neo4j.com/startups/[startup program] at Neo4j. Mike is an entreprenour working with his product https://riskhunter.co.uk/[Riskhunter] that uses graph technology to identify fraud and mis-selling of products in the UK financial services industry. Mike is also a part of the Neo4j community and organizes the meetup group https://www.meetup.com/Bristol-Graph-Database-Group/[Bristol Graph Database Group], so check them out if you live in the area. Mike resently publish a couple of his blog posts on the topic of graph technology and about https://medium.com/regulation-technologies/graph-databases-reflect-reality-dd6743abc1b7[how graph databases reflects reality] and https://medium.com/regulation-technologies/basic-entity-identification-using-graphs-4b3b2b3d2a2b[entity resolution].
+
+Thank you for your contribution to the Neo4j community!
+
+https://www.linkedin.com/in/mike-oaten-86013b8a/[Connect with Mike on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j, speechtotext, nlp, cypher "]
+== Speech-to-Cypher
+
+:tags: speech-to-text, cypher, nlp, laurus
+
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200438/speech.png[width=150,float="right"]
+Have you ever felt too tired to enter a Cypher query by typing it out?  An Engineer from Larus thought that converting speech to Cypher would be a cool solution, and I agree. By defining a new Grammar to express Cypher queries in English words Valerio managed to express his queries by just sound input and then outputting the result to the screen. Check out how he does it in his blog post. 
+
+
+https://medium.com/larus-team/speech-to-cypher-a17b9ff95047[Read the article, role="medium button"]
+
+[#features-2,hashtags="neo4j, stocks, graph-database, kaggle, nasdaq "]
+== Diversify Your Stock Portfolio with Graph Analytics
+
+:tags: neo4j, stocks, graph-database, kaggle, nasdaq
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200427/bull.jpeg[width=150,float="right"]
+
+Although the author is not a financial advisor and you should probably do your own research before investing, but the power of graph databases can be illustrated in this blog post. 
+
+Using a subset of Kaggle’s NASDAQ-100 Stock Price dataset, the author can infer a similarity network between stocks. This technique could reduce risk by diversifying investments, and potentially increase  profits. The author uses the Pearson similarity as the correlation metric in action to gain insights into the underlying data. 
+
+
+https://medium.com/neo4j/diversify-your-stock-portfolio-with-graph-analytics-4520a5e46b3d[Read the article, role="medium button"]
+
+[#features-3,hashtags="neo4j, cypher, graphaule, graph-database, graph-value"]
+== Graphaule: The Map to Graph Value (part 2)
+
+
+:tags: neo4j, cypher, graphaule, graph-database, graph-value
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022201018/graphaule-2.jpg[width=150,float="right"]
+
+Neo4j's Graph Innovation Lab offers service to help clients find graph value. Creativity plays a critical role during this process and is incredibly important to foster in the right environment. Brainstorming could very well be one of the oldest tricks in the book for creative processes. Split the brainstorming into different explicit phases, where you first create ideas, then document these ideas, and only at a later stage - when all ideas have been freely surfaced - proceed to the prioritization phase. The best suggestions will come floating up above - and will make our Quest so much easier. Learn more by listening to the podcast.
+
+https://www.graphalue.com/home/part-2-the-map-to-graph-value[Listen to the Podcast, role="medium button"]
+
+[#features-4,hashtags="neo4j, aura, kickstarter, aurafree, stream"]
+==  Discover Aura Free: Week 11
+
+:tags: aura, kickstarter, aurafree, stream
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022201241/discover-aurafree.png[width=150,float="right"]
+
+
+Aura Free is the new gem in the graph database ecosystem. It is a new way to build and maintain your graph database. In this stream Michael and Alex will share their experience with Aura Free and show you how they managed to build a graph database populated with a lot of data from https://www.kickstarter.com/[Kickstarter] projects and how to to extract some neat graph insights from it.
+
+https://medium.com/neo4j/week-11-importing-and-querying-kickstarter-projects-583b30f92e84[Read the article, role="medium button"]
+https://www.youtube.com/watch?v=LuYRvzL4i1k[Watch the stream, role="medium button"]
+
+[#features-5,hashtags="neo4j, frauddetection, fintech, graphvalue"]
+== Fintech and Fraud Detection
+
+:tags: neo4j, fraud-detection, fintech, graph-value
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200429/fintech.png[width=150,float="right"]
+
+In 2020, financial institutions in the Asia Pacific and globally racked up more than $10.6 billion in penalties. Criminals are getting more sophisticated, developing novel ways to elude discovery, acting either alone or as networks. A fraudster might create “new’s synthetic identities – by stealing information from several people and mixing their social security numbers, addresses, phone numbers, and email addresses – later using those identities to open bank accounts, credit card accounts, or loans. Nik Vora, Vice President – APAC at Neo4j, explains how graph technology unearths data and connections to lead investigators to curb money laundering.
+
+
+https://thefintechtimes.com/neo4j-why-graph-technology-is-the-key-to-fraud-detection/[Read the article, role="medium button"]
+
+[#features-6,hashtags="neo4j, wikidata, import, rdf, opendata, semanticweb "]
+== Import RDF data from Wikidata
+
+:tags: neo4j, wikidata, import, rdf, opendata, semantic-web
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200431/gentle_giant.png[width=150,float="right"]
+
+Now you might be wondering how to get your wikidate into Neo4j. The answer is simple: Watch Clair's video of how to quickly get started or read the blog post by Grant.
+
+Clair shows you how to import RDF data from Wikidata into Neo4j. Then explores how you can create your own blank perspective in bloom to explore the data. Watch the video to learn more
+
+Alternativly, Grant shows us how you can explore Prog Rock music with the help of a neo4j database. He also shows you how to use the Neo4j Cypher query language to query the database.  Read the blog post to learn more.
+
+https://www.youtube.com/watch?v=joG3zZ4vLno[Watch the video by Clair, role="medium button"]
+https://grant592.github.io/prog-neo4j/[Read the article by Grant, role="medium button"]
+
+[#features-7,hashtags="neo4j, gephi, tools"]
+== Neo4j & Gephi tool
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022201016/gephi-2.png[width=150,float="right"]
+
+Neo4j is the only enterprise-strength graph database that combines native graph storage, scalable architecture optimized for speed, and ACID compliance to ensure the predictability of relationship-based queries. Gephi is a tool that allows you to use data visualization in graphical form. In this article you will see how to use Gephi to visualize the data and get started with Neo4j.
+
+https://meetmanvar.medium.com/data-science-getting-started-with-neo4j-and-gephi-tool-8a8cb75dd4a9[Read the article, role="medium button"]
+
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/DaviesJeremy[DaviesJeremy^]:
+
+// replace nnnn with the tweet ID
+
+tweet::1449320082539261953[type={type}]
+
+Don't forget to RT if you liked it too!

@@ -1,0 +1,5 @@
+In this week's #twin4j,  we get a couple of examples of how to import rdf data into a neo4j database.
+
+https://neo4j.com/blog/this-week-in-neo4j-Speaking-Cypher-Stocks-Graphaule-Discover-Aura-Wikidata-Gephi/#features-6
+
+#neo4j #wikidata #import #rdf #opendata #semanticweb

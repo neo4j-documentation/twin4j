@@ -1,0 +1,5 @@
+In this week's #twin4j, we get to explore how Power Bi can be used in unity with neo4j, to visualize graph insights.
+
+https://neo4j.com/blog/this-week-in-neo4j-cures-movies-graphker-hacking-hacker-news-in-memory-graphs-power-bi-graphaule/#features-5
+
+#neo4j #power-bi, microsoft, integrations

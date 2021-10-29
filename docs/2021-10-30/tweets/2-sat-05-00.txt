@@ -1,0 +1,5 @@
+In this week's #twin4j, this years spookiest neosemantics walk-though with graphista Ashleigh Faith 
+
+https://neo4j.com/blog/this-week-in-neo4j-cures-movies-graphker-hacking-hacker-news-in-memory-graphs-power-bi-graphaule/#features-1
+
+#neo4j, #cursed, #halloween, #wikidata, #walkthough

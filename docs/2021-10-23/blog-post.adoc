@@ -1,143 +1,137 @@
-= This Week in Neo4j - Cursed Movies,  GraphKer, Hacking hacker news, In-memory graphs, Power Bi Integration, Graphaule.
+= This Week in Neo4j, Speaking Cypher, Stocks, Graphaule, Discover Aura, Wikidata, Gephi
 // update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
-:slug: this-week-in-neo4j-cures-movies-graphker-hacking-hacker-news-in-memory-graphs-power-bi-graphaule
+:slug: this-week-in-neo4j-Speaking-Cypher-Stocks-Graphaule-Discover-Aura-Wikidata-Gephi
 :noheader:
 :linkattrs:
 :categories: graph-database
 :author: Max Andersson
 // twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
-:tags:
+:tags: neo4j, cypher, graphaule, graph-database, graph-analytics
 
-image::https://dist.neo4j.com/wp-content/uploads/20211029061446/u3nVDkilvKgkxpCbY9Sofw_r.jpg[]
 Hello, everyone!
 
-Hello, everyone, and happy Halloween!
+I guess it's time to start looking for old costumes in the closet. I'm going to be looking for a new one this year, and I think "Squid Game" might have an inpact on customes this year. Neither the less, this issue of Twin4j will be featuring Mike Oaten this week. Along with a new episode of Graphaule, and some practicle resources on importing wikidata into Neo4j.  
 
-I got my squid game costume yesterday and getting ready to carve the pumpkins for this year’s Halloween. Don’t forget to stock up on candy. 
+Furthermore, you will find a supercool example of how to use the Cypher language to query the graph with your voice! Yes, you read that right. The guys over a laurus has figured out how to make this happen. Check it out. 
 
-In this issue, we have a feature on cybersecurity and another on hacking hacker news content. Besides the “hacky” stuff, a Halloween special is brought to you by the lovely Ashleigh Faith and our data scientist advocate Clair. If you are in the holiday spirit, definitely check it out.
+Also, an interview of  Neo4js Nik Vora eplaining the value of graph databases in the context of Fraud detection.
 
-We also get some insight on how you can combine neo4j with Power Bi to visualize your analysis done in Neo4j. Another episode of Bite-sized Neo4j and Graphaule is also available this week. 
-
-Wishes you the best holiday spirit
+Have a great week everyone!
 /Max Andersson
 
-
 [#featured-community-member,hashtags="neo4j, "]
-== Featured Community Member: Michela Ledwidge
-
-Michela Ledwidge is the co-founder of Sydney-based http://mod.studio/[studio "Mod"^] that specializes in real-time and virtual production.
-Especially for investigating important topics like diversity, equity the studio uses modern ways of telling stories through data and visualization like AR and VR. 
-For the "A Clever Label" production, Neo4j has been used as a backing database for correlating data of an investigative documentary for anti-LGBTQI interactions between Australian politicians, organizations, lobbyists.
-The entities and connections served by a Web API from Neo4j are visualized in VR using Unreal Engine and can be explored and navigated interactively.
-
-image::https://aws1.discourse-cdn.com/business4/uploads/neo4jcommunity/original/3X/0/5/05d382ab5479b650616c598a8b7c9d3baf3c3d79.jpeg[]
-
-The production was presented at https://community.neo4j.com/t/a-clever-label-an-investigative-documentary-experience-with-an-open-api/3387/15[SIGGRAPH 2019^] and is now available as a https://store.steampowered.com/app/1627660/A_Clever_Label/[Steam Game title^].
-We are impressed by your creative work to make critically related information more accessible for people of all backgrounds, Michela.
-If you are interested in exploring relevant (investigative) topics with this kind of technology, please check out the https://community.neo4j.com/t/a-clever-label-an-investigative-documentary-experience-with-an-open-api/3387[discussion thread on our Community Forum^], and reach out to Michela.
-
+== Featured Community Member: Mike Oaten
 
 :tags:
 
-This week's featured community member is Michela Ledwidge.
+This week's featured community member is Mike Oaten.
 
-featured::https://dist.neo4j.com/wp-content/uploads/20211029061431/this-week-in-neo4j-30-October-2021.jpeg[name="Michela Ledwidge"]
+featured::https://dist.neo4j.com/wp-content/uploads/20211022203458/this-week-in-neo4j-23-October-2021-2.jpeg[name="Mike Oaten"]
 
-// featured community member(s) presentation
+This weeks featured member is Mike Oaten, who is a part of our https://neo4j.com/startups/[startup program] at Neo4j. Mike is an entreprenour working with his product https://riskhunter.co.uk/[Riskhunter] that uses graph technology to identify fraud and mis-selling of products in the UK financial services industry. Mike is also a part of the Neo4j community and organizes the meetup group https://www.meetup.com/Bristol-Graph-Database-Group/[Bristol Graph Database Group], so check them out if you live in the area. Mike resently publish a couple of his blog posts on the topic of graph technology and about https://medium.com/regulation-technologies/graph-databases-reflect-reality-dd6743abc1b7[how graph databases reflects reality] and https://medium.com/regulation-technologies/basic-entity-identification-using-graphs-4b3b2b3d2a2b[entity resolution].
 
-// linkedin link(s)
-https://www.linkedin.com/in/name[Connect with Michela on LinkedIn, role="medium button"]
+Thank you for your contribution to the Neo4j community!
 
-[#features-1,hashtags="neo4j,curesed "]
-== Can Graph Data Science Prove a Movie is "Cursed"?
+https://www.linkedin.com/in/mike-oaten-86013b8a/[Connect with Mike on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j, speechtotext, nlp, cypher "]
+== Speech-to-Cypher
+
+:tags: speech-to-text, cypher, nlp, laurus
+
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200438/speech.png[width=150,float="right"]
+Have you ever felt too tired to enter a Cypher query by typing it out?  An Engineer from Larus thought that converting speech to Cypher would be a cool solution, and I agree. By defining a new Grammar to express Cypher queries in English words Valerio managed to express his queries by just sound input and then outputting the result to the screen. Check out how he does it in his blog post. 
+
+
+https://medium.com/larus-team/speech-to-cypher-a17b9ff95047[Read the article, role="medium button"]
+
+[#features-2,hashtags="neo4j, stocks, graph-database, kaggle, nasdaq "]
+== Diversify Your Stock Portfolio with Graph Analytics
+
+:tags: neo4j, stocks, graph-database, kaggle, nasdaq
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200427/bull.jpeg[width=150,float="right"]
+
+Although the author is not a financial advisor and you should probably do your own research before investing, but the power of graph databases can be illustrated in this blog post. 
+
+Using a subset of Kaggle’s NASDAQ-100 Stock Price dataset, the author can infer a similarity network between stocks. This technique could reduce risk by diversifying investments, and potentially increase  profits. The author uses the Pearson similarity as the correlation metric in action to gain insights into the underlying data. 
+
+
+https://medium.com/neo4j/diversify-your-stock-portfolio-with-graph-analytics-4520a5e46b3d[Read the article, role="medium button"]
+
+[#features-3,hashtags="neo4j, cypher, graphaule, graph-database, graph-value"]
+== Graphaule: The Map to Graph Value (part 2)
+
+
+:tags: neo4j, cypher, graphaule, graph-database, graph-value
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022201018/graphaule-2.jpg[width=150,float="right"]
+
+Neo4j's Graph Innovation Lab offers service to help clients find graph value. Creativity plays a critical role during this process and is incredibly important to foster in the right environment. Brainstorming could very well be one of the oldest tricks in the book for creative processes. Split the brainstorming into different explicit phases, where you first create ideas, then document these ideas, and only at a later stage - when all ideas have been freely surfaced - proceed to the prioritization phase. The best suggestions will come floating up above - and will make our Quest so much easier. Learn more by listening to the podcast.
+
+https://www.graphalue.com/home/part-2-the-map-to-graph-value[Listen to the Podcast, role="medium button"]
+
+[#features-4,hashtags="neo4j, aura, kickstarter, aurafree, stream"]
+==  Discover Aura Free: Week 11
+
+:tags: aura, kickstarter, aurafree, stream
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022201241/discover-aurafree.png[width=150,float="right"]
+
+
+Aura Free is the new gem in the graph database ecosystem. It is a new way to build and maintain your graph database. In this stream Michael and Alex will share their experience with Aura Free and show you how they managed to build a graph database populated with a lot of data from https://www.kickstarter.com/[Kickstarter] projects and how to to extract some neat graph insights from it.
+
+https://medium.com/neo4j/week-11-importing-and-querying-kickstarter-projects-583b30f92e84[Read the article, role="medium button"]
+https://www.youtube.com/watch?v=LuYRvzL4i1k[Watch the stream, role="medium button"]
+
+[#features-5,hashtags="neo4j, frauddetection, fintech, graphvalue"]
+== Fintech and Fraud Detection
+
+:tags: neo4j, fraud-detection, fintech, graph-value
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200429/fintech.png[width=150,float="right"]
+
+In 2020, financial institutions in the Asia Pacific and globally racked up more than $10.6 billion in penalties. Criminals are getting more sophisticated, developing novel ways to elude discovery, acting either alone or as networks. A fraudster might create “new’s synthetic identities – by stealing information from several people and mixing their social security numbers, addresses, phone numbers, and email addresses – later using those identities to open bank accounts, credit card accounts, or loans. Nik Vora, Vice President – APAC at Neo4j, explains how graph technology unearths data and connections to lead investigators to curb money laundering.
+
+
+https://thefintechtimes.com/neo4j-why-graph-technology-is-the-key-to-fraud-detection/[Read the article, role="medium button"]
+
+[#features-6,hashtags="neo4j, wikidata, import, rdf, opendata, semanticweb "]
+== Import RDF data from Wikidata
+
+:tags: neo4j, wikidata, import, rdf, opendata, semantic-web
+
+image::https://dist.neo4j.com/wp-content/uploads/20211022200431/gentle_giant.png[width=150,float="right"]
+
+Now you might be wondering how to get your wikidate into Neo4j. The answer is simple: Watch Clair's video of how to quickly get started or read the blog post by Grant.
+
+Clair shows you how to import RDF data from Wikidata into Neo4j. Then explores how you can create your own blank perspective in bloom to explore the data. Watch the video to learn more
+
+Alternativly, Grant shows us how you can explore Prog Rock music with the help of a neo4j database. He also shows you how to use the Neo4j Cypher query language to query the database.  Read the blog post to learn more.
+
+https://www.youtube.com/watch?v=joG3zZ4vLno[Watch the video by Clair, role="medium button"]
+https://grant592.github.io/prog-neo4j/[Read the article by Grant, role="medium button"]
+
+[#features-7,hashtags="neo4j, gephi, tools"]
+== Neo4j & Gephi tool
 
 :tags:
 
-image::https://dist.neo4j.com/wp-content/uploads/20211029062403/gds_movies_cursed123.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20211022201016/gephi-2.png[width=150,float="right"]
 
-This Halloween episode is a step-by-step walk-through of making a base graph using Neosemantics in Neo4j to gather Wikidata. The mini graph that we will be creating is all about cursed movies or at least what Hollywood deems a cursed movie. You will get challenged to take the apologetic base graph and morph it into a monopartite graph.
+Neo4j is the only enterprise-strength graph database that combines native graph storage, scalable architecture optimized for speed, and ACID compliance to ensure the predictability of relationship-based queries. Gephi is a tool that allows you to use data visualization in graphical form. In this article you will see how to use Gephi to visualize the data and get started with Neo4j.
 
-https://dev.neo4j.com/kaggle2021[Watch the video, role="medium button"]
-
-[#features-2,hashtags="neo4j, hacking, graphhacking,graphker, cve, cybersecurity"]
-== How to Have a Cybersecurity Graph Database on Your PC
-
-:tags: hacking, graph-hacking, graphker, CVE, cybersecurity
-
-image::https://dist.neo4j.com/wp-content/uploads/20211029061406/1_w3PrGDrvMpbGYiqEk1azig.jpeg[width=150,float="right"]
-
-GraphKer represents every public record of CVE, CWE, CAPEC, and CPE provided by MITRE and NIST in a connected graph using Neo4j. The tool is a free and open-source tool, providing a detailed and updated cybersecurity graph database. The most recent data feeds of CVEs and relevant CPEs, and all CWEs and CAPECs will be re-run in about 6 to 15 minutes using the tool. In 2021 we have plenty of great software, hardware, and techniques to enrich our cyber defense.
-
-https://medium.com/neo4j/how-to-have-a-cybersecurity-graph-database-on-your-pc-366884ac6a08/[Read the article, role="medium button"]
-
-[#features-3,hashtags="neo4j, hackernews, news, graphdatabase, insight"]
-== Hacking Hacker News for fun and profit
-
-:tags: hacker-news, news, graph-database, insight
-
-image::https://dist.neo4j.com/wp-content/uploads/20211029061344/1_bcKtL7aLgjYMFbv6n0Kljw.png[width=150,float="right"]
-
-Arnica’s new research is based on the popularity of stories posted on Hacker News. Hacker News published a public API to make our job easy… to some extent. They decided to query a relatively small portion of the ~30M records and extracted 2,252,719 nodes and 4,028,273 relationships from the last six months into a Graph database. The database is comprised of 110,801 users, 199,052 stories and 1,942,866 comments. We found 13,126 links that helped us in this research. You get the biggest bang for your buck when posting stories on Tuesday and Thursday.
-
-https://blog.arnica.io/hacking-hacker-news-for-fun-and-profit-part-1-41bd6a48a2c2[Read the Article
-, role="medium button"]
-
-[#features-4,hashtags="neo4j, nlp,  "]
-== Construct a biomedical knowledge graph with NLP
-
-:tags:
-
-image::https://dist.neo4j.com/wp-content/uploads/20211029061417/1_znU4UUQi0LlpQJBbShmVkQ.png[width=150,float="right"]
+https://meetmanvar.medium.com/data-science-getting-started-with-neo4j-and-gephi-tool-8a8cb75dd4a9[Read the article, role="medium button"]
 
 
-This article shows you how to construct a biomedical knowledge graph with NLP techniques. The biomedical field is a prime example where representing data as a graph makes sense. We will be using a single research paper in this blog post to walk you through all the steps required. We will use the Pytesseract library to extract text from the PDF. Each article can have one or more authors and use NLP to extract both medical entities and their relationships.
-
-
-https://towardsdatascience.com/construct-a-biomedical-knowledge-graph-with-nlp-1f25eddc54a0[Read the article, role="medium button"]
-
-[#features-5,hashtags="neo4j, "]
-== Pattern-Driven Insight: Integrating Neo4j with Power BI
-
-:tags:
-
-image::https://dist.neo4j.com/wp-content/uploads/20210527143043/neo4j_powerbi.png[width=150,float="right"]
-
-The session will show how to use neo4j to find hidden patterns in data and then explore those patterns and gain insight. Neo4j is designed around a simple yet powerful optimization. Each data record contains direct pointers to all the nodes that it's connected to. 
-
-https://www.youtube.com/watch?v=YVhLX1nGwRM[Watch the video, role="medium button"]
-
-[#features-6,hashtags="neo4j, "]
-== Creating In-Memory Graphs with Native Projections
-
-:tags:
-
-image::https://dist.neo4j.com/wp-content/uploads/20211029062403/gds_movies_cursed123.png[width=150,float="right"]
-
-Claire Sullivan is a data science advocate at neo4j for data scientists. She explains how to create an in-memory generation graph with native projections. The graph data science library likes undirected graphs more than it likes directed graphs. We use a free sandbox instance and a game of thrones to create a graph. We will talk about native projections, which can help data scientists get their work done faster. We'll then use a different type of property that we could use to create these graphs.
-
-
-https://www.youtube.com/watch?v=qWZLgBIN1V4[Watch the video, role="medium button"]
-
-[#features-7,hashtags="neo4j, "]
-== Graphalue - Part 3: Building the Case for Graph Value
-
-:tags:
-
-image::https://dist.neo4j.com/wp-content/uploads/20211015093808/graphaule.jpeg[width=150,float="right"]
-
-The "Why question" can be perceived as an intrusive, impolite, unnecessary ask. It's super powerful but uncomfortable. It's a powerful technique, but that it can easily be misused. We warn everyone that they will have to play along in this line of questioning to understand the value case better. The graph will have answered the question in real-time. It will enable us to follow a better process for XYZ because we will not lose as much time doing ABC.
-
-https://www.graphalue.com/home/part-3-building-the-case-for-graph-value/[Listen to the Podcast, role="medium button"]
 
 == Tweet of the Week
 
-My favorite tweet this week was by https://twitter.com/pokecoder[pokecoder^]:
+My favorite tweet this week was by https://twitter.com/DaviesJeremy[DaviesJeremy^]:
 
 // replace nnnn with the tweet ID
 
-tweet::1452993639680937984[type={type}]
+tweet::1449320082539261953[type={type}]
 
 Don't forget to RT if you liked it too!
-
-

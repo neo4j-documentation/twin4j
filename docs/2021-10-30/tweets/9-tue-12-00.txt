@@ -1,0 +1,5 @@
+In this week's #twin4j, 
+
+https://neo4j.com/blog/this-week-in-neo4j-cures-movies-graphker-hacking-hacker-news-in-memory-graphs-power-bi-graphaule/
+
+#neo4j

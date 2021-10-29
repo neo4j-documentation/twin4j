@@ -36,7 +36,7 @@ module.exports = (uiModel) => {
       background-size: cover;
       z-index: 1;
       top: 115px;
-      margin-left: 0;
+      margin-left: 15px;
     }
 
     .avatar1 {
@@ -44,7 +44,7 @@ module.exports = (uiModel) => {
       background-position: center;
       background-size: cover;
       top: 115px;
-      margin-left: calc(22px + 205px);
+      margin-left: calc(30px + 205px);
       background-position-x: 25px;
     }`
   } else {
@@ -80,7 +80,12 @@ module.exports = (uiModel) => {
       font-size: 28px;
       font-weight: 600;
       display: block;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.25rem;
+      padding-top: 0.25rem;
+    }
+
+    .byline {
+        margin-left: 1.25rem;
     }
 
     .byline .title {
@@ -112,17 +117,22 @@ module.exports = (uiModel) => {
     footer {
       align-self: flex-end;
       margin-top: auto;
-      margin-bottom: 20px;
-      margin-right: 16px;
+      margin-bottom: 41px;
+      margin-right: 36px;
       text-align: right;
-      width: 257px;
+      width: 228px;
     }
 
     footer .title {
-      font-size: 17.25px;
+      font-size: 14px;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 17px;
       text-align: center;
+    }
+
+    footer .date {
+      font-size: 15px;
+      margin-right: 10px;
     }
 ${avatarStyle}
   </style>

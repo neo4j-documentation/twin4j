@@ -1,6 +1,6 @@
-= This Week in Neo4j -
+= This Week in Neo4j - AuraDB Free, Spark Connector updates, KNIME Integration and more...
 // update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
-:slug: this-week-in-neo4j-
+:slug: this-week-in-neo4j-auradb-free-spark-connector-knime-integration
 :noheader:
 :linkattrs:
 :categories: graph-database
@@ -17,26 +17,40 @@ I don't know about you, but I always find the week where the clocks fall back in
 
 For the next month, I will be trawling through the archives to bring you some of the more interesting articles written by our fantastic community members.
 
+We start off with some big announcements from Neo4j related to link:https://neo4j.com/aura[Neo4j Aura] and the Neo4j Connector for Apache Spark.
+Tomaz Bratanic also gives us an overview of the new Twitch dataset to Neo4j Sandbox.
+
+We also have posts from Josip Almasi on his Open Source VR Server built on Neo4j, an introduction to the Neo4j Integration for KNIME, and finally Rik Van Bruggen and Stefan Wendin.
+
+I hope you enjoy reading these articles as much as I have.
+
 /Adam Cowley
 
 
 // introduction
 
 [#featured-community-member,hashtags="neo4j, "]
-== Featured Community Member: Adrien Sales
+== Featured Community Member: Dr. Kim Martin, PhD
 
 :tags:
 
-This week's featured community member is Adrien Sales.
+This week's featured community member is Dr. Kim Martin.
 
-featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Adrien Sales"]
-
-Adrien's posts
+featured::images/kim-martin.jpeg[name="Dr Kim Martin"]
 
 // featured community member(s) presentation
+Kim is a newcomer to the Neo4j community and in 2020 joined the Department of Forest and Wood Science at Stellenbosch University as a Postdoctoral Fellow.
+
+She has a background in mammalian tissue morphogenesis and a passion for computational modelling of living systems and structures.
+Kim is using Neo4j for [TBD].
+
+Kim was the first person to provide us with feedback on our brand new GraphAcademy platform and we are extremely grateful.
+
+Your t-shirt will be making its way to you soon, Kim!
+
 
 // linkedin link(s)
-https://www.linkedin.com/in/adrien-sales[Connect with Adrien on LinkedIn, role="medium button"]
+https://www.linkedin.com/in/kimcmartin[Connect with Kim on LinkedIn, role="medium button"]
 
 [#features-1,hashtags="neo4j, graphacademy, education"]
 == The new GraphAcademy
@@ -45,6 +59,7 @@ https://www.linkedin.com/in/adrien-sales[Connect with Adrien on LinkedIn, role="
 
 image::https://graphacademy.neo4j.com/img/og/og-landing.jpg[width=150,float="right"]
 
+// 3-4 paragraphs
 As this is my first week, I thought I would take this opportunity to shamelessly plug what I have personally been working on for the past few months.
 You may have already read link:https://medium.com/neo4j/introducing-the-new-graphacademy-45b0df491a23[my blog post introducing the new GraphAcademy site^], but if not I would like to spend a paragraph or two on our new set of courses.
 
@@ -55,19 +70,15 @@ We have tried to focus on your journey as a Neo4j professional and provide you a
 2. One you know what graphs are useful for, you can progress to the link:https://graphacademy.neo4j.com/courses/cypher-fundamentals/[Cypher Fundamentals^] course to learn how to get data out of the graph. The course is hands-on, constantly challenging you as you go.
 3. The link:https://graphacademy.neo4j.com/courses/modeling-fundamentals/[Graph Data Modeling Fundamentals^] course will then provide you with the techniques required to create and refactor your data model for performance.
 
-The Cypher Fundamentals and Graph Data Modeling Fundamentals courses both
+The Cypher Fundamentals and Graph Data Modeling Fundamentals courses are both give you some hands-on experience using link:https://sandbox.neo4j.com/[Neo4j Sandbox^] instances.
 
+I hope you enjoy them.  If you have any feedback, Please feel free to reach out by replying to this email or emailing graphacademy@neo4j.com.
+Or alternatively, you can use the feedback forms embedded in to every lesson.
 
-// We have decided to develop the curriculum in the open and give our community the ability to affect our road map. You can register your interest for any course listed as _Coming Soon_, and we will take this information into account when we prioritize our work. We are a small team so this feedback is invaluable.
-
-
-
-
-// 3-4 paragraphs
 
 https://graphacademy.neo4j.com/[Check out the new GraphAcademy site, role="medium button"]
 
-[#features-2,hashtags="neo4j, "]
+[#features-2,hashtags="neo4j, AuraDB Free, AuraDB, Cloud]
 == Announcing Neo4j AuraDB Free
 
 :tags: Neo4j, AuraDB Free, AuraDB, Cloud
@@ -88,7 +99,7 @@ You can get started now without entering credit card details.
 
 https://console.neo4j.io/[Get Started Now for Free!, role="medium button"]
 
-[#features-3,hashtags="neo4j, "]
+[#features-3,hashtags="neo4j, AuraDB, spark, cloud, connector, Kafka, Spark, streaming"]
 == Apache Spark for Neo4j AuraDB
 
 :tags: neo4j, AuraDB, spark, cloud, connector, Kafka, Spark, streaming
@@ -123,21 +134,24 @@ For a more in depth look of the dataset, you can read Tomaz's blog post.
 
 https://medium.com/neo4j/introducing-the-new-twitch-sandbox-bdda36a946bb[Read the Blog Post, role="medium button"]
 
-// [#features-5,hashtags="neo4j, "]
-// == Feature 5
+[#features-5,hashtags="neo4j, open source, vr, virtual reality, WebXR, WebRTC, glTF"]
+== Open Source VR Server
 
-// :tags:
+:tags: neo4j, open source, vr, virtual reality, WebXR, WebRTC, glTF
 
-// image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::images/vr-space.png[width=150,float="right"]
 
-// // 3-4 paragraphs
 
-// https://call-to-action-url/[Action, role="medium button"]
+// 3-4 paragraphs
+This week on the Neo4j Community Site,  link:https://community.neo4j.com/t/open-source-vr-server/46849[Josip Almasi posted a link to his Open Source VR Server^] which has been built on top of Neo4j.
+His blog post from December 2020, titled link:https://opensource.com/article/20/12/virtual-reality-server[Why I rewrote my open source virtual reality server^], goes into depth on how he built an open, interoperable VR server to open standards including WebXR and  WebRTC.
 
-[#features-6,hashtags="neo4j, "]
+https://opensource.com/article/20/12/virtual-reality-server[Action, role="medium button"]
+
+[#features-6,hashtags="neo4j, analytics, data science, etl, knime, cocktails"]
 == Neo4j Integration in KNIME
 
-:tags: neo4j, KNIME, etl
+:tags: neo4j, KNIME, etl, cocktails
 
 image::images/1-neo4j-integration-in-knime.png[width=150,float="right"]
 
@@ -151,14 +165,14 @@ KNIME is a free, open-source, data analytics platform that has been designed to 
 
 https://www.knime.com/blog/neo4j-integration-in-knime[Read the article, role="medium button"]
 
-[#features-7,hashtags="neo4j, "]
+[#features-7,hashtags="neo4j, neo4j, sales, presentations, graphalue, graph epiphany"]
 == Graphalue Part 4: _Presenting_ the case for graph value
 
-:tags:
+:tags: neo4j, sales, presentations, graphalue, graph epiphany
 
 image::images/graphalue.png[width=150,float="right"]
 
-And finally, our friends in Sales and Innovation Rik and Stefan have been at it again, publishing Part 4 in their link::https://www.graphalue.com/[Graphalue] series, this week presenting some valuable tips on _how_ to present the value case for graphs within your company.
+And finally, our friends in Sales and Innovation Rik and Stefan have been at it again, publishing Part 4 in their link:https://www.graphalue.com/[Graphalue^] series, this week presenting some valuable tips on _how_ to present the value case for graphs within your company.
 
 I have spent a lot of time with these two over the years and their I have always found our conversations to be extremely valuable.
 
@@ -173,7 +187,7 @@ https://www.graphalue.com/home/part-4-presenting-the-case-for-graph-value[Listen
 
 == Tweet of the Week
 
-There have been so many great tweets this week, Neo4j certainly go link:https://twitter.com/neo4j/status/1454784998180012040[all out for Halloween] and it's great to see link:https://twitter.com/AJarasch/status/1455673320058277895[in-person conferences] are now happening.
+There have been so many great tweets this week, Neo4j certainly go link:https://twitter.com/neo4j/status/1454784998180012040[all out for Halloween] and it's great to see link:https://twitter.com/AJarasch/status/1455673320058277895[in-person conferences] are happening again.
 
 But as a Node.js developer with a keen interest in visualisation, I've got to pick https://twitter.com/tb_tomaz[Tomaz Bratanic^]'s tweet, visualising airport thousands of flight routes between airports using link:https://www.sigmajs.org/[sigma.js^].
 

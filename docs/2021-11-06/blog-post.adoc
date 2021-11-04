@@ -11,13 +11,13 @@
 
 Hey everyone!
 
-I'm Adam and I work on the education side of our Dev Rel team, namely our link::https://graphacademy.neo4j.com[GraphAcademy] platform.
+I'm Adam and I work on the education side of our Dev Rel team, namely our link:https://graphacademy.neo4j.com[GraphAcademy^] platform.
 
 I don't know about you, but I always find the week where the clocks fall back in Europe plays havoc with my schedule, especially with the regular meetings arranged by my colleagues over in the US.
 
-For the next month, I will be trawling through the archives to bring you some of the more interesting articles written by our community members.
-Feel free to link::https://twitter.com/adamcowley[ping me a link to the articles that have caught your eye this week].
+For the next month, I will be trawling through the archives to bring you some of the more interesting articles written by our fantastic community members.
 
+/Adam Cowley
 
 
 // introduction
@@ -123,23 +123,23 @@ For a more in depth look of the dataset, you can read Tomaz's blog post.
 
 https://medium.com/neo4j/introducing-the-new-twitch-sandbox-bdda36a946bb[Read the Blog Post, role="medium button"]
 
-[#features-5,hashtags="neo4j, "]
-== Feature 5
+// [#features-5,hashtags="neo4j, "]
+// == Feature 5
 
-:tags:
+// :tags:
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+// image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
 
-// 3-4 paragraphs
+// // 3-4 paragraphs
 
-https://call-to-action-url/[Action, role="medium button"]
+// https://call-to-action-url/[Action, role="medium button"]
 
 [#features-6,hashtags="neo4j, "]
 == Neo4j Integration in KNIME
 
 :tags: neo4j, KNIME, etl
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image::images/1-neo4j-integration-in-knime.png[width=150,float="right"]
 
 // 3-4 paragraphs
 Artem Ryasik provides information on the link:https://hub.knime.com/redfield/extensions/se.redfield.knime.neo4jextension.feature/latest[Neo4j extension for KNIME Analytics Platform^] that enables you to analyse Neo4j data in KNIME.
@@ -156,7 +156,7 @@ https://www.knime.com/blog/neo4j-integration-in-knime[Read the article, role="me
 
 :tags:
 
-image::https://lh6.googleusercontent.com/hVcvP2q7Un_o0dIjeTOk3MquH-PCD6elJeQiDrrJbQsBMSzSZCUqyKIwWmsMZAEseiJIjdBfxqB4WyGUGsM1VPI=w1280[width=150,float="right"]
+image::images/graphalue.png[width=150,float="right"]
 
 And finally, our friends in Sales and Innovation Rik and Stefan have been at it again, publishing Part 4 in their link::https://www.graphalue.com/[Graphalue] series, this week presenting some valuable tips on _how_ to present the value case for graphs within your company.
 

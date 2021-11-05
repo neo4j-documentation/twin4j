@@ -143,7 +143,7 @@ https://medium.com/neo4j/introducing-the-new-twitch-sandbox-bdda36a946bb[Read th
 [#features-5,hashtags="neo4j, open source, vr, virtual reality, WebXR, WebRTC, glTF"]
 == Open Source VR Server
 
-:tags: neo4j, open source, vr, virtual reality, WebXR, WebRTC, glTF
+:tags: neo4j, open-source, vr, virtual-reality, WebXR, WebRTC, glTF
 
 image::images/vr-space.png[width=150,float="right"]
 
@@ -161,7 +161,7 @@ https://opensource.com/article/20/12/virtual-reality-server[Action, role="medium
 image::images/1-neo4j-integration-in-knime.png[width=150,float="right"]
 
 // 3-4 paragraphs
-Artem Ryasik has published an rticle on the link:https://hub.knime.com/redfield/extensions/se.redfield.knime.neo4jextension.feature/latest[Neo4j extension for KNIME Analytics Platform^] that enables you to analyse Neo4j data in KNIME.
+Artem Ryasik has published an article on the link:https://hub.knime.com/redfield/extensions/se.redfield.knime.neo4jextension.feature/latest[Neo4j extension for KNIME Analytics Platform^] that enables you to analyse Neo4j data in KNIME.
 The article explores a dataset featuring cocktails, bars and bartenders.
 So if you like a tipple, this article could be for you!
 

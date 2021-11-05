@@ -1,0 +1,5 @@
+In this week's #twin4j, we take a deeper look at new #GraphAcademy site and some of the new courses available on our brand new platform.
+
+https://neo4j.com/blog/this-week-in-neo4j-auradb-free-spark-connector-knime-integration/#features-1
+
+#neo4j

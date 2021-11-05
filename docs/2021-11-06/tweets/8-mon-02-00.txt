@@ -1,0 +1,7 @@
+In this week's #twin4j, we cover the latest version of @rvanbruggen's Graphalue where Rik and Stefan go into detail on how to present the value case for #Graphs
+
+Warning: Featured Jedis
+
+https://neo4j.com/blog/this-week-in-neo4j-auradb-free-spark-connector-knime-integration/#features-7
+
+#neo4j #graphdatabase #graphaule #jedi

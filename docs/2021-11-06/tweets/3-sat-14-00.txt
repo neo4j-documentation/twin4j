@@ -1,0 +1,5 @@
+In this week's #twin4j, we take a look at Neo4j #AuraDBFree - free graph databases for everyone!
+
+https://neo4j.com/blog/this-week-in-neo4j-auradb-free-spark-connector-knime-integration/#features-2
+
+#neo4j #aura #cloud #dbaas

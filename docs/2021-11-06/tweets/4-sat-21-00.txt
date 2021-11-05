@@ -1,0 +1,5 @@
+In this week's #twin4j, we look at the release of version 4.1 of the Neo4j Connector for Apache Spark, now with added support for Neo4j #Aura
+
+https://neo4j.com/blog/this-week-in-neo4j-auradb-free-spark-connector-knime-integration/#features-3
+
+#neo4j #auradb #spark #cloud #kafka #streamingdata

@@ -1,0 +1,5 @@
+In this week's #twin4j, we feature neo4j community member Dr Kim Martin, PhD.
+
+https://neo4j.com/blog/this-week-in-neo4j-auradb-free-spark-connector-knime-integration/#featured-community-member
+
+#neo4j #graphdatabase #networks

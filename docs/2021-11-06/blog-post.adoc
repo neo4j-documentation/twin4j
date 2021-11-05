@@ -145,7 +145,7 @@ https://medium.com/neo4j/introducing-the-new-twitch-sandbox-bdda36a946bb[Read th
 
 :tags: neo4j, open-source, vr, virtual-reality, WebXR, WebRTC, glTF
 
-image::images/vr-space.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20211105052625/vr-space.png[width=150,float="right"]
 
 // 3-4 paragraphs
 This week on the link:https://community.neo4j.com[Neo4j Community Site^],  link:https://community.neo4j.com/t/open-source-vr-server/46849[Josip Almasi posted a link to his Open Source VR Server^] which has been built on top of Neo4j.
@@ -158,7 +158,7 @@ https://opensource.com/article/20/12/virtual-reality-server[Action, role="medium
 
 :tags: neo4j, data-science, KNIME, etl, cocktails
 
-image::images/1-neo4j-integration-in-knime.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20211105052620/1-neo4j-integration-in-knime.png[width=150,float="right"]
 
 // 3-4 paragraphs
 Artem Ryasik has published an article on the link:https://hub.knime.com/redfield/extensions/se.redfield.knime.neo4jextension.feature/latest[Neo4j extension for KNIME Analytics Platform^] that enables you to analyse Neo4j data in KNIME.
@@ -174,7 +174,7 @@ https://www.knime.com/blog/neo4j-integration-in-knime[Read the article, role="me
 
 :tags: neo4j, sales, presentations, graphalue, graph-epiphany
 
-image::images/graphalue.png[width=150,float="right"]
+image::https://dist.neo4j.com/wp-content/uploads/20211105052621/graphalue.png[width=150,float="right"]
 
 // 3-4 paragraphs
 And finally, our friends in Sales and Innovation Rik and Stefan have been at it again, publishing Part 4 in their link:https://www.graphalue.com/[Graphalue^] series, this week presenting some valuable tips on _how_ to present the value case for graphs within your company.

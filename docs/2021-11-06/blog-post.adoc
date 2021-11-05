@@ -6,21 +6,21 @@
 :categories: graph-database
 :author: Adam Cowley
 // twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
-:tags:
+:tags: graphacademy, education, Neo4j, AuraDB-Free, AuraDB, Cloud, spark, cloud, connector, Kafka, Spark, streaming, twitch, graph-data-science, open source, vr, virtual reality, WebXR, WebRTC, glTF
 
 
 Hey everyone!
 
-I'm Adam and I work on the education side of our Dev Rel team, namely our link:https://graphacademy.neo4j.com[GraphAcademy^] platform.
+I'm link:https://twitter.com/adamcowley[Adam^] and I work on the education side of the Dev Rel team at Neo4j, mainly focussing on link:https://graphacademy.neo4j.com[GraphAcademy^].
 
 I don't know about you, but I always find the week where the clocks fall back in Europe plays havoc with my schedule, especially with the regular meetings arranged by my colleagues over in the US.
 
 For the next month, I will be trawling through the archives to bring you some of the more interesting articles written by our fantastic community members.
 
-We start off with some big announcements from Neo4j related to link:https://neo4j.com/aura[Neo4j Aura] and the Neo4j Connector for Apache Spark.
-Tomaz Bratanic also gives us an overview of the new Twitch dataset to Neo4j Sandbox.
+We start off with some big announcements from Neo4j related to link:https://neo4j.com/aura[Neo4j Aura^] and the Neo4j Connector for Apache Spark.
+Tomaz Bratanic also gives us an overview of the new Twitch dataset recently added to Neo4j Sandbox.
 
-We also have posts from Josip Almasi on his Open Source VR Server built on Neo4j, an introduction to the Neo4j Integration for KNIME, and finally Rik Van Bruggen and Stefan Wendin.
+We also have posts from Josip Almasi on his Open Source VR Server built with Neo4j, an introduction to the Neo4j Integration for KNIME, and finally Rik Van Bruggen and Stefan Wendin on presenting the value of Graphs.
 
 I hope you enjoy reading these articles as much as I have.
 
@@ -41,12 +41,11 @@ featured::images/kim-martin.jpeg[name="Dr Kim Martin"]
 // featured community member(s) presentation
 Kim is a newcomer to the Neo4j community and in 2020 joined the Department of Forest and Wood Science at Stellenbosch University as a Postdoctoral Fellow.
 
-She has a background in mammalian tissue morphogenesis and a passion for computational modelling of living systems and structures.
-Kim is using Neo4j for [TBD].
+Kim did her B.Sc. (Biochemistry; Genetics & Development) and B.Sc.(Med)Hons (Cell Biology) at UCT, Cape Town, and (following a number of years working in research labs) her Ph.D. in Biomedical Science at the University of Edinburgh, Scotland. She is currently a Postdoctoral Fellow in the EucXylo group in the Department of Forestry and Wood Science in Stellenbosch University in South Africa. With a background in mammalian tissue morphogenesis, she has enjoyed the switch to studying xylogenesis (xylem tissue morphogenesis) in trees
 
-Kim was the first person to provide us with feedback on our brand new GraphAcademy platform and we are extremely grateful.
+Kim is focusing on approaches to managing data and setting up modelling frameworks in the group, and - since attending NODES 2021 in June - has been exploring how to represent concepts relevant to her group as a Knowledge Graph using Neo4j.
 
-Your t-shirt will be making its way to you soon, Kim!
+Kim was the first person to provide us with feedback on our brand new GraphAcademy site and we are extremely grateful.
 
 
 // linkedin link(s)
@@ -60,8 +59,8 @@ https://www.linkedin.com/in/kimcmartin[Connect with Kim on LinkedIn, role="mediu
 image::https://graphacademy.neo4j.com/img/og/og-landing.jpg[width=150,float="right"]
 
 // 3-4 paragraphs
-As this is my first week, I thought I would take this opportunity to shamelessly plug what I have personally been working on for the past few months.
-You may have already read link:https://medium.com/neo4j/introducing-the-new-graphacademy-45b0df491a23[my blog post introducing the new GraphAcademy site^], but if not I would like to spend a paragraph or two on our new set of courses.
+As this is my first week, I thought I would take this opportunity to shamelessly plug the work that we have been doing on GraphAcademy.
+You may have already read link:https://medium.com/neo4j/introducing-the-new-graphacademy-45b0df491a23[my blog post introducing the new GraphAcademy site^], but if not I would like to spend a couple of paragraphs on our new set of courses.
 
 We have tried to focus on your journey as a Neo4j professional and provide you a clear path to a link:https://graphacademy.neo4j.com/categories/certification/[Neo4j Certification^].
 
@@ -72,7 +71,13 @@ We have tried to focus on your journey as a Neo4j professional and provide you a
 
 The Cypher Fundamentals and Graph Data Modeling Fundamentals courses are both give you some hands-on experience using link:https://sandbox.neo4j.com/[Neo4j Sandbox^] instances.
 
-I hope you enjoy them.  If you have any feedback, Please feel free to reach out by replying to this email or emailing graphacademy@neo4j.com.
+Among the courses that are currently in production are link:https://graphacademy.neo4j.com/courses/importing-data/[Importing Data into Neo4j^] and link:https://graphacademy.neo4j.com/courses/app-nodejs/[Building Neo4j Applications with Node.js^].
+
+Many of the courses on the site are listed as _Coming Soon_.
+If you see anything you like, you can register your interest by filling out the form on the course overview page.
+We will use this information to prioritise our courses as we go.
+
+If you have any feedback, Please feel free to reach out by replying to this email or emailing graphacademy@neo4j.com.
 Or alternatively, you can use the feedback forms embedded in to every lesson.
 
 
@@ -81,20 +86,21 @@ https://graphacademy.neo4j.com/[Check out the new GraphAcademy site, role="mediu
 [#features-2,hashtags="neo4j, AuraDB Free, AuraDB, Cloud]
 == Announcing Neo4j AuraDB Free
 
-:tags: Neo4j, AuraDB Free, AuraDB, Cloud
+:tags: Neo4j, AuraDB-Free, AuraDB, Cloud
 
 image::https://dist.neo4j.com/wp-content/uploads/20211102110456/DBPRESS1-1.png[width=150,float="right"]
 
 // 3-4 paragraphs
-We’re excited to announce that everyone can now use Neo4j AuraDB Free, and get started without a credit card in a number of cloud regions. AuraDB Free is ideal for people who are getting started learning graph, prototyping, and doing early development.
-
+We’re excited to announce that Neo4j AuraDB Free is now publically available.
 The introduction of AuraDB Free means that you can now sign up and launch a fully-managed Neo4j database free of charge.
 Whether you are trying out Neo4j for the first time, working on a prototype application or even looking for a testing environment, this option is for you.
 
-You can start either with an empty database to which you can load your own data or explore the movies dataset.
+You can either start with an empty database to which you can load your own data or explore the movies dataset.
 
 AuraDB Free databases are free forever, but have a limited graph size of 50k nodes and 175k relationships.
 You can get started now without entering credit card details.
+
+You can link:https://neo4j.com/developer-blog/announcing-neo4j-auradb-free/[read more about the announcement in this blog post^].gp
 
 
 https://console.neo4j.io/[Get Started Now for Free!, role="medium button"]
@@ -116,10 +122,10 @@ If you are a Neo4j Aura customer, this release is great news. We’ve made bi-di
 
 https://neo4j.com/blog/apache-spark-for-neo4j-auradb/[Read the blog post, role="medium button"]
 
-[#features-4,hashtags="neo4j, "]
+[#features-4,hashtags="neo4j, neo4j, twitch, graph-data-science"]
 == Analysing Twitch streamers and their audiences
 
-:tags:neo4j, twitch, graph data science
+:tags:neo4j, twitch, graph-data-science
 
 image::https://miro.medium.com/max/1400/1*GhPCJNjmBHvFLM-XE-K0aA.png[width=150,float="right"]
 
@@ -141,37 +147,36 @@ https://medium.com/neo4j/introducing-the-new-twitch-sandbox-bdda36a946bb[Read th
 
 image::images/vr-space.png[width=150,float="right"]
 
-
 // 3-4 paragraphs
-This week on the Neo4j Community Site,  link:https://community.neo4j.com/t/open-source-vr-server/46849[Josip Almasi posted a link to his Open Source VR Server^] which has been built on top of Neo4j.
-His blog post from December 2020, titled link:https://opensource.com/article/20/12/virtual-reality-server[Why I rewrote my open source virtual reality server^], goes into depth on how he built an open, interoperable VR server to open standards including WebXR and  WebRTC.
+This week on the link:https://community.neo4j.com[Neo4j Community Site^],  link:https://community.neo4j.com/t/open-source-vr-server/46849[Josip Almasi posted a link to his Open Source VR Server^] which has been built on top of Neo4j.
+His blog post from December 2020, titled link:https://opensource.com/article/20/12/virtual-reality-server[Why I rewrote my open source virtual reality server^], goes into depth on how he built an open, interoperable VR server to open standards including WebXR and WebRTC.
 
 https://opensource.com/article/20/12/virtual-reality-server[Action, role="medium button"]
 
-[#features-6,hashtags="neo4j, analytics, data science, etl, knime, cocktails"]
+[#features-6,hashtags="neo4j, analytics, data-science, etl, knime, cocktails"]
 == Neo4j Integration in KNIME
 
-:tags: neo4j, KNIME, etl, cocktails
+:tags: neo4j, data-science, KNIME, etl, cocktails
 
 image::images/1-neo4j-integration-in-knime.png[width=150,float="right"]
 
 // 3-4 paragraphs
-Artem Ryasik provides information on the link:https://hub.knime.com/redfield/extensions/se.redfield.knime.neo4jextension.feature/latest[Neo4j extension for KNIME Analytics Platform^] that enables you to analyse Neo4j data in KNIME.
+Artem Ryasik has published an rticle on the link:https://hub.knime.com/redfield/extensions/se.redfield.knime.neo4jextension.feature/latest[Neo4j extension for KNIME Analytics Platform^] that enables you to analyse Neo4j data in KNIME.
 The article explores a dataset featuring cocktails, bars and bartenders.
 So if you like a tipple, this article could be for you!
 
 KNIME is a free, open-source, data analytics platform that has been designed to provide end-to-end solutions.
 
-
 https://www.knime.com/blog/neo4j-integration-in-knime[Read the article, role="medium button"]
 
-[#features-7,hashtags="neo4j, neo4j, sales, presentations, graphalue, graph epiphany"]
+[#features-7,hashtags="neo4j, neo4j, sales, presentations, graphalue, graph-epiphany"]
 == Graphalue Part 4: _Presenting_ the case for graph value
 
-:tags: neo4j, sales, presentations, graphalue, graph epiphany
+:tags: neo4j, sales, presentations, graphalue, graph-epiphany
 
 image::images/graphalue.png[width=150,float="right"]
 
+// 3-4 paragraphs
 And finally, our friends in Sales and Innovation Rik and Stefan have been at it again, publishing Part 4 in their link:https://www.graphalue.com/[Graphalue^] series, this week presenting some valuable tips on _how_ to present the value case for graphs within your company.
 
 I have spent a lot of time with these two over the years and their I have always found our conversations to be extremely valuable.
@@ -179,8 +184,6 @@ I have spent a lot of time with these two over the years and their I have always
 I don't know about you, but I'm a huge admirer of Stefan's ability to effortlessly switch between the insightful and the sublime.
 
 
-
-// 3-4 paragraphs
 
 https://www.graphalue.com/home/part-4-presenting-the-case-for-graph-value[Listen to Graphalue Part 4 now, role="medium button"]
 

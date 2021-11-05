@@ -36,7 +36,7 @@ I hope you enjoy reading these articles as much as I have.
 
 This week's featured community member is Dr. Kim Martin.
 
-featured::images/kim-martin.jpeg[name="Dr Kim Martin"]
+featured::https://dist.neo4j.com/wp-content/uploads/20211105052624/this-week-in-neo4j-06-November-2021.jpeg[name="Dr Kim Martin"]
 
 // featured community member(s) presentation
 Kim is a newcomer to the Neo4j community and in 2020 joined the Department of Forest and Wood Science at Stellenbosch University as a Postdoctoral Fellow.
@@ -151,7 +151,7 @@ image::https://dist.neo4j.com/wp-content/uploads/20211105052625/vr-space.png[wid
 This week on the link:https://community.neo4j.com[Neo4j Community Site^],  link:https://community.neo4j.com/t/open-source-vr-server/46849[Josip Almasi posted a link to his Open Source VR Server^] which has been built on top of Neo4j.
 His blog post from December 2020, titled link:https://opensource.com/article/20/12/virtual-reality-server[Why I rewrote my open source virtual reality server^], goes into depth on how he built an open, interoperable VR server to open standards including WebXR and WebRTC.
 
-https://opensource.com/article/20/12/virtual-reality-server[Action, role="medium button"]
+https://opensource.com/article/20/12/virtual-reality-server[Read Josip's blog post, role="medium button"]
 
 [#features-6,hashtags="neo4j, analytics, data-science, etl, knime, cocktails"]
 == Neo4j Integration in KNIME

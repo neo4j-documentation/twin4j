@@ -1,0 +1,5 @@
+In this week's #twin4j, we look at how #GraphSAGE can help predict mergers and acquisitions
+
+https://neo4j.com/blog/this-week-in-neo4j-rugby-social-graphs-mergers-acquisitions-3/#features-7
+
+#neo4j #ai #ml #machinelearning #graphdatascience

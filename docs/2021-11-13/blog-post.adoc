@@ -1,0 +1,203 @@
+= This Week in Neo4j - Big Announcements, Rugby Stats, Social Graphs and Mergers & Acquisitions
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-rugby-social-graphs-mergers-acquisitions
+:noheader:
+:linkattrs:
+:categories: graph-database, neo4j, twin4j
+:author: Adam Cowley
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags:
+
+Hello, everyone!
+
+// introduction
+It's week two of four for my run publishing TWIN4J.
+
+Last week in the UK we enjoyed Bonfire Night, a night that I have found makes absolutely no sense outside of the UK.
+On 5 November 1605, a man named Guy Fawkes was arrested while guarding explosives beneath the House of Lords in London.
+He was part of a conspiracy to assassinate King James I and his parliament.
+
+Ever since, on November 5, bonfires and fireworks have been lit to celebrate the foiling of the plot.
+The tradition continues to this day.
+I wonder what we would have made of the events nowadays.
+
+But hey, any excuse for fireworks and marshmallows by an open fire!
+
+On to this week's events in Neo4j, we've had another jam-packed week of content that I'm delighted to deliver to your inbox.
+We take a look at a huge announcement for the company, take tackle rugby data, social graphs, predicting Mergers and Acquisitions and more.
+
+Let's dive in!
+
+/Adam Cowley
+
+
+
+[#featured-community-member,hashtags="neo4j, data-science, rugby, music, prog-rock, neosemantics, wikidata"]
+== Featured Community Member: Grant Beasley
+
+:tags: data-science, rugby, music, prog-rock, statistics, neosemantics, wikidata
+
+This week's featured community member is Grant Beasley.
+
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Grant Beasley"]
+
+// featured community member(s) presentation
+Grant has been prolific in the last month, link:https://grant592.github.io/[publishing a number of blog posts^] that feature Neo4j, Rugby Analytics and Prog Rock.
+As someone that sits in that intersect of the venn diagram of people who are interested in neo4j, music and sports data, there was no way I could have selected anyone else for this week's featured community member.
+
+In a link:https://grant592.github.io/prog-neo4j/[two part series on Prog Rock^], Grant uses Neosemantics to import and explore 70's Prog Rock data.
+Grant's series on link:https://grant592.github.io/graphs-databases-opta/[Graph Databases for Rugby Analytics^] uses python to import Opta Analytics data in XML format into Neo4j, before exploring the dataset using Cypher.
+
+Grant is a Data Scientist at SaleCycle, where he utilises big data to enhance client experience.
+SaleCycle help their customers increase conversion rates, understand their users and drive loyalty.
+
+You can link:https://twitter.com/grantbeasley[connect with Grant on Twitter @grantbeasley^]  or check out Grant's blog posts on his link:https://grant592.github.io/[personal blog here^].
+
+
+// linkedin link(s)
+https://www.linkedin.com/in/grant-beasley-5a271863/[Connect with Grant on LinkedIn, role="medium button"]
+
+
+
+[#features-1,hashtags="neo4j, patrick-pinchette, board-of-directors"]
+== Welcome, Patrick Pichette!
+
+:tags: neo4j, patrick-pinchette, board-of-directors
+
+image::https://dist.neo4j.com/wp-content/uploads/20211108074641/PatrickFinal.png[width=150,float="right"]
+
+// 3-4 paragraphs
+In the past week there has been some huge news for Neo4j as a company!
+
+As Emil outlines in link:https://neo4j.com/emil/welcome-patrick-pichette-to-neo4j-board/[this post on the Neo4j Blog^], we are delighted to welcome Patrick Pichette to the Neo4j Board of Directors as an independent board member.
+
+Patrick is the former CFO of Google and serves as the Chairman of the Board of Twitter and Lightspeed.
+In addition, he serves as an independent investor, advisor, and board member to a number of startups and innovation networks around the world.
+
+You can link:https://neo4j.com/press-releases/Patrick-Pichette-joins-Neo4j-Board-of-Directors/[read more about this news in the press release^] or link:https://neo4j.com/emil/welcome-patrick-pichette-to-neo4j-board/[read the conversation between Patrick and Emil^].
+
+
+https://neo4j.com/emil/welcome-patrick-pichette-to-neo4j-board/[Read the Interview now, role="medium button"]
+
+
+[#features-2,hashtags="neo4j, graph-database, sports, rugby"]
+== Graph Databases for Rugby Analytics
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/20211112042840/rugby-analytics.png[width=150,float="right"]
+
+// 3-4 paragraphs
+As I've already mentioned, Grant Beasley has published two posts in a series on exploring Rugby Analytics in a Graph Database.
+
+In the post, Grant uses Python to import XML data into Neo4j, creating a graph of Fixtures, Teams, Players and Referees.
+
+Each fixture has a number of events attached to it, which Grant uses to analyse carries, tackles and more.
+
+https://https://grant592.github.io/graphs-databases-opta/[Graph Databases for Rugby Analytics - Part 1, role="medium button"]
+
+
+
+[#features-3,hashtags="neo4j, open-data, corporations, transparency"]
+== Open Ownership
+
+:tags: neo4j, open-data, transparency, corporate
+
+image::https://dist.neo4j.com/wp-content/uploads/20211112042838/open-ownership.png[width=150,float="right"]
+
+// 3-4 paragraphs
+In link:https://twitter.com/OpenOwnership/status/1456583622702641155[Open Ownership's third technology showcase], Gavin Chait of Whythawk demonstrates how to import the Open Ownership dataset into Neo4j.
+
+Gavin has also link:https://github.com/turukawa/coding-notes/blob/master/Open%20Ownership%20and%20Neo4j%20Setup.ipynb[published a Jupyter Notebook on Github] in which he demonstrates how to import the data and set up full-text indexes to query business entities.
+
+https://www.youtube.com/watch?v=kZQJiaJNkuw[Watch Open Ownership Technology Showcase #3 on Twitter, role="medium button"]
+
+
+
+[#features-4,hashtags="neo4j, spring, social-graph"]
+== Implementing Facebook Social Graph using Spring and Neo4j
+
+:tags: neo4j, spring, social-graph
+
+image::https://dist.neo4j.com/wp-content/uploads/20211112042844/social-graph.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Amr Saleh has published link:https://medium.com/javarevisited/implementing-facebook-social-graph-using-spring-and-neo4j-81c1b67351b7[a comprehensive article^] to Javarevisited on how to implement a Facebook style Social Graph using Spring and Neo4j.
+
+This article builds on Amr's link:https://medium.com/javarevisited/microservices-in-practice-developing-instagram-clone-graph-service-193364c062df[previous post from June 2020^] where he used Neo4j and Spring Data Neo4j to build an Instagram clone.
+
+Amr starts by explaining the graph structure, before diving into the code and creating Data objects, controllers and data repositories in Spring Data Neo4j.
+
+You can link:https://www.youtube.com/watch?v=IIXjYJ0nPc4[watch a demo video for the project on Youtube^].
+Show Amr some love by throwing him some claps on his Javarevisited article.
+
+https://medium.com/javarevisited/implementing-facebook-social-graph-using-spring-and-neo4j-81c1b67351b7[Read the article on Javarevisited, role="medium button"]
+
+
+
+[#features-5,hashtags="neo4j, sigmajs, visualisation, graphql, grandstack"]
+== Network Visualisations with SigmaJS and GRANDStack
+
+:tags: neo4j, sigmajs, visualisation, graphql, grandstack
+
+image::https://dist.neo4j.com/wp-content/uploads/20211112042841/sigma-grandstack.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Following on from link:https://neo4j.com/blog/this-week-in-neo4j-auradb-free-spark-connector-knime-integration/[last week's featured tweet], Tomaz has link:https://towardsdatascience.com/grand-sigmajs-c475ec0bde68[published an article on Towards Data Science] which goes into detail on _how_ he used GRANDStack and Sigma.js to visualise flight data.
+
+The article teaches you to construct a Neo4j graph using data from link:https://openflights.org/[OpenFlights^], configure the Neo4j GraphQL library to serve the data, before finally demonstrating how to build a React application with Sigma.js to visualise the results.
+
+The code is link:https://github.com/tomasonjo/grand-sigmaJS[available on Github^].
+
+https://towardsdatascience.com/grand-sigmajs-c475ec0bde68[Read GRAND SigmaJS on Towards Data Science, role="medium button"]
+
+
+
+[#features-6,hashtags="neo4j, validation, ganister"]
+== Neo4j Browser for Functional Visual Validation
+
+:tags: neo4j, browser, ganister
+
+image::https://dist.neo4j.com/wp-content/uploads/20211112042836/neo4jbrowservalidation.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Yoann Maingon over at Ganister PLM has written a blog post on how they link:https://ganister.eu/blog/neo4j-browser-for-functional-visual-validation?lang=en[use Neo4j Browser for Functional Visual Validation^].
+The post explains how link:https://neo4j.com/developer/neo4j-browser/[Neo4j Browser^] allows Ganister PLM to visually make sense of their data.
+
+They take advantage of the forced graph layout to visually represent their data, and use features in Neo4j Browser to change node sizes, relationship line thickness and colours.
+
+My favorite quote from this post: _"Neo4j Browser to the Rescue!"_
+
+https://ganister.eu/blog/neo4j-browser-for-functional-visual-validation[Read the Blog Post, role="medium button"]
+
+[#features-7,hashtags="neo4j, arxiv, deep-learning, machine-learning, graph-data-science"]
+== Predicting Mergers and Acquisitions using Graph-based Deep Learning
+
+:tags: neo4j, arxiv, deep-learning, machine-learning, graph-data-science
+
+image::https://dist.neo4j.com/wp-content/uploads/20211112043157/mergers.png[width=150,float="right"]
+
+// 3-4 paragraphs
+link:https://arxiv.org/abs/2104.01757[Over on arxiv.org^], Keenan Venuti has published a paper on Predicting Mergers and Acquisitions using Graph-based Deep Learning.
+
+The goal of Keenan's work was to utilise link:https://neo4j.com/docs/graph-data-science/current/algorithms/graph-sage/[GraphSAGE^], a popular graph machine learning framework, to predict mergers and acquisitions (M&A) of enterprise companies.
+
+His results were promising.
+The ML model was able to correctly predict a merger or aquisition with an 81.79% accuracy on the validation dataset.
+
+If you are interested in learning more about GraphSAGE, then link:https://neo4j.com/docs/graph-data-science/current/algorithms/graph-sage/[an implementation of GraphSAGE available in the Graph Data Science Libary^].
+
+https://arxiv.org/abs/2104.01757[Read the Paper, role="medium button"]
+
+
+== Tweet of the Week
+
+Finally, my favorite tweet this week comes from our very own Data Science Advocate, https://twitter.com/CJLovesData1[Clair Sullivan^].
+
+As part of Clair's weekly series _"Bite-sized Neo4j for Data Scientists"_, she has published video #14 showing you how to run community detection algorithms on Neo4j using the Louvain method.
+
+// replace nnnn with the tweet ID
+
+tweet::1456735305160032257[type={type}]
+
+Clair publishes a new video every friday, so https://twitter.com/CJLovesData1[give her a follow^] if you like the video or are interested in more content like this!

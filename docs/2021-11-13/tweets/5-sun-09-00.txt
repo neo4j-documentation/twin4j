@@ -1,0 +1,5 @@
+In this week's #twin4j, we take a look at a Facebook-style Social Graph built with @springframework
+
+https://neo4j.com/blog/this-week-in-neo4j-rugby-social-graphs-mergers-acquisitions-3/#features-4
+
+#neo4j #spring #java #socialgraph

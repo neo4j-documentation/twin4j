@@ -1,0 +1,5 @@
+In this week's #twin4j, we feature neo4j community member @grantbeasley.
+
+https://neo4j.com/blog/this-week-in-neo4j-rugby-social-graphs-mergers-acquisitions-3/#featured-community-member
+
+#neo4j #graphdatabase #rugby #progrock #statistics #neosemantics #wikidata

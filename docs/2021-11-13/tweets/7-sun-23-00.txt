@@ -1,0 +1,5 @@
+In this week's #twin4j, Yoann Maingon at @GanisterPLM shows how to use #Neo4jBrowser to make sense of your data
+
+https://neo4j.com/blog/this-week-in-neo4j-rugby-social-graphs-mergers-acquisitions-3/#features-6
+
+#neo4j #graphdatabase

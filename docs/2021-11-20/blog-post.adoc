@@ -1,0 +1,179 @@
+= This Week in Neo4j - Health Care & Life Sciences Workshop, Cloudflare Workers, Apache Hop and more...
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-healthcare-life-sciences-workshop-cloudflare-workers-apache-hop
+:noheader:
+:linkattrs:
+:categories: neo4j, graph-database, twin4j
+:author: Adam Cowley
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: nlp, ml, ai apache-spark, recommendations, knowledge-graphs, kaggle, healthcare, life-sciences, workshop, climate-crisis, pollution, attrition, etl, import, data-pipelines, data-engineering, apache-hop, graphlytic, visualization,  art, artists
+
+Hello, everyone!
+
+// introduction
+It's that time again to explore the latest news in This Week in Neo4j.
+
+This week we feature the Neo4j Health Care & Life Sciences Workshop 2021, a two day workshop with in-depth technical presentations from the Health Care & Life Sciences space.  Will Lyon demonstrates how to build location-aware personalised news recommendations, Michael Hunger explores attrition data, and much more...
+
+
+/Adam Cowley
+
+
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Ali Emre Varol
+
+:tags: neo4j, data-science, nlp, spark
+
+featured::https://dist.neo4j.com/wp-content/uploads/20211119071742/this-week-in-neo4j-20-November-2021.jpeg[name="Ali Emre Varol"]
+
+// featured community member(s) presentation
+This week's featured community member is Emre Varol.
+Emre is a Data Scientist based in Istanbul, Turkey.  He works for John Snow labs, a company that focusses on AI and NLP solutions for healthcare companies.
+
+Emre presented at the Neo4j Healthcare & Life Sciences Workshop last week, walking through how he created a Clinical Knowledge Graph using Spark NLP and Neo4j.
+The presentation starts by introducing Spark NLP and how it can be used within the Healthcare space, before providing a life demo in which Emre walks through Named Entity Recognition (NER) to extract information from text, and imports it into a link:https://sandbox.neo4j.com[Neo4j Sandbox^] instance.
+
+You can watch Emre's presentation in the link below, or link:https://medium.com/spark-nlp/creating-knowledge-graph-by-spark-nlp-neo4j-9d18706aa08b[read more on the John Snow Labs blog^].
+The accompanying notebooks for this talk can be link:https://github.com/johnsnowlabs/spark-nlp-workshop[found on Github^].
+
+
+// linkedin link(s)
+https://www.linkedin.com/in/ali-emre-v-012989193/[Connect with Emre on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j, healthcare, life-sciences, workshop"]
+== Videos for Neo4j Health Care & Life Sciences Workshop 2021
+
+:tags: neo4j, healthcare, life-sciences, workshop
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071738/pegasus.png[width=150,float="right"]
+
+// 3-4 paragraphs
+18 new videos recorded at the Neo4j Healthcare & Life Sciences Workshop last week are link:https://neo4j.com/video/lifesciences-workshop2021/[now available on the Neo4j website^].
+
+The third Health Care & Life Sciences Workshop was setup to showcase **practical** solutions to common problems as helping to incubate collaboration, innovation and good practice.
+18 videos have been made available from the two day event, including presentations that center around knowledge graphs, graph algorithms and general Neo4j usage.
+
+Included in the videos are Jeremy Grignard's presentation of _Pegasus_ - a knowledge graph to support early drug discovery, Frederico Braga's presentation on building complex Web Applications for Health Care and Emre's presentation on building a Knowledge Graph with Neo4j and Spark NLP.
+
+
+
+https://neo4j.com/video/lifesciences-workshop2021/[Watch the videos now, role="medium button"]
+
+[#features-2,hashtags="neo4j, recommendations, knowledge-graphs"]
+==  Improving News Recommendations With Cloudflare Workers & Knowledge Graphs
+
+:tags: neo4j, recommendations, knowledge-graphs
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071743/will-cloudflare.png[width=150,float="right"]
+
+// 3-4 paragraphs
+As part of Cloudflare's Full Stack Week Developer Speaker Series, link:https://twitter.com/lyonwj[Will Lyon^] gave a talk on how to improve News recommendations using Knowledge Graphs and Cloudflare workers.
+Will's 30 minute talk focuses on the term an article based Knowledge Graph using data from the NY Times API including news articles, associated meta-data and comments.
+
+He then uses Cloudflare Workers to serve a real-time recommendation engine which takes into account the user's loation and interests.
+
+Cloudflare Workers is a serverless application platform  that runs on Cloudflare's global cloud network.
+They aim to solve many of the common problems with existing serverless technologies, including performance issues and the cold-start problem.
+Cloudflare Workers are also location aware, making them ideal for location-based personalisation.
+
+The link:https://dev.neo4j.com/news-graph[slides^] and link:https://github.com/johnymontana/news-graph[code^] are also available online.
+
+https://cloudflare.tv/event/4QAeaycw0oRp0x9IDb55Je[Watch the Video, role="medium button"]
+
+[#features-3,hashtags="neo4j, climate-crisis, pollution"]
+== Graph: A Possible Solution for Environmental Pollution!
+
+:tags: climate-crisis, pollution
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071740/pollution.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Over on the link:https://medium.com/neo4j[the Neo4j Developer Blog^], Shaani Arya Srivastava has published an interesting article on how graphs may be a solution for the affects of climate change on our planet.
+
+Shaani's article looks at identifying industries and cities that are responsible for pollution by linking them with their respective area’s air/water quality measures and disease case.
+
+With COP26 ending last week, this is a topic that I'm sure is on the mind of many people at the moment.
+
+You can link:https://github.com/ShaaniArya/euler-idea-industrialpollution[view the code and data on Github^].
+
+
+https://medium.com/neo4j/graph-a-possible-solution-for-environmental-pollution-cb85fc618b6[Read the Article, role="medium button"]
+
+[#features-4,hashtags="neo4j, graphql"]
+== Exploring a Kaggle HR Attrition Dataset
+
+:tags: neo4j, kaggle, attrition
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071733/attrition.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Also from the link:https://medium.com/neo4j[the Neo4j Developer Blog^], Michael Hunger has written an article to accompany Week 13 of the Discover AuraDB Free weekly stream on the link:https://twitch.tv/neo4j[Neo4j Twitch channel].
+
+In the post, Michael explores th **IBM Attrition Dataset**, which consists of employee information, along with their job satisfaction rating and a set of attributes that contribute towards that rating.
+
+Michael starts off by importing the data using LOAD CSV, creating a Graph of employees, jobs, departments and education data.
+The article concludes with suggestions for how you could use Neo4j and the Graph Data Science library to predict attrition rates.
+
+You can link:https://www.youtube.com/watch?v=U6avi4IF_CU[playback the livestream on YouTube^], or catch the next stream live, Mondays on the link:https://twitch.tv/neo4j[Neo4j Twitch Channel^].
+
+
+https://medium.com/neo4j/discover-auradb-free-week-13-exploring-a-kaggle-hr-attrition-dataset-e577f226e94f[Read the article, role="medium button"]
+
+[#features-5,hashtags="neo4j, "]
+== 5 Minutes to Write to Neo4j with Apache Hop
+
+:tags: etl, import, data-pipelines, data-engineering, apache-hop
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071737/knowbi.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Over at Know-BI, an article has been published on how to import data into Neo4j using Apache Hop.
+Apache Hop is a data engineering and data orchestration platform that allows data engineers and data developers to visually design workflows and pipelines to build powerful solutions.
+It offers a comprehensive feature set for getting data into, and extracting data out of Neo4j.
+
+The article demonstrates how Apache Hop's User Interface can be used to configure a Neo4j connection, create pipelines for transforming CSV data and output the data to a Neo4j.
+All of this can be achieved without writing a line of code!
+
+https://www.know-bi.be/5minutes-to-write-to-neo4j-with-apache-hop[Read the article, role="medium button"]
+
+[#features-6,hashtags="neo4j, "]
+== New Export Feature in Graphlytic UI
+
+:tags: neo4j, graphlytic, visualization
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071735/graphlytic-export.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Our friends at Graphlytic have recorded a new video tutorial which demonstrates how to export data from the Graphlytic UI.
+Visualisations in Graphlytic can be exported as images or CSV.
+
+
+https://www.youtube.com/watch?v=SQReTs-nyPA[Watch the video on YouTube, role="medium button"]
+
+[#features-7,hashtags="neo4j, art, artists"]
+== Quantifying reputation and success in art
+
+:tags: art, artists
+
+image::https://dist.neo4j.com/wp-content/uploads/20211119071732/art-connections.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+This week's research paper comes from page 825 of _Science Vol. 362_, where Samuel P Faiberger _et al._ examine 500k artists and determines that their long-term success can be attributed to they are connected.
+The study uses an extensive record of exhibition and auction data to study the career trajectory of individual artists relative to a nwtwork of galleries and museums.
+
+Spoiler alert: it turns out it is hard to break into the world of art if you do not start off with the right connections.
+
+https://www.science.org/doi/full/10.1126/science.aau7224/[Read more on Science.org, role="medium button"]
+
+== Tweet of the Week
+
+There has been some link:https://twitter.com/neo4j[great content on #neo4j hashtag^] this week, link:https://twitter.com/padonouDD/status/1458047261452161030[@padonouDD has been taking his first steps with Cypher^] and link:https://twitter.com/mikesir87/status/1458450340043493378[@mikesir87 has been experimenting with Docker container image data^].
+
+But favorite tweet this week has to be https://twitter.com/SavvasStephnds[Savvas Stephanides^]'s awesome thread introducing the high level concepts around Graph Databases.
+
+// replace nnnn with the tweet ID
+
+tweet::1457735386520768513[type={type}]
+
+Don't forget to RT if you liked it too!

@@ -1,0 +1,189 @@
+= This Week in Neo4j - Jeremy Grignard, Pegasus, FastRP and a brand new Node.js Course on GraphAcademy
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-jeremy-grignard-pegasus-fastrp-nodejs
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Adam Cowley
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: neo4j, datascience, graphdatascience, fastrp, frauddetection, graphql, nodejs, javascript
+
+Hello, everyone!
+
+// introduction
+This week I would like to extend a Happy Thanksgiving to our American readers across the globe.
+I hope you have all enjoyed time with your family and friends.
+With everything that has gone on over the past couple of years, I'm sure there is a lot for us all to be thankful for!
+
+Despite the holiday period, content has been flooding in thick and fast, so without further ado, let's get down to business...
+
+/Adam
+
+
+[#featured-community-member,hashtags="neo4j, data-scientist, phd, pegasus, drug-discovery"]
+== Featured Community Member: Jeremy Grignard
+
+:tags: data-scientist, phd, pegasus, drug-discovery
+
+This week's featured community member is Jeremy Grignard.
+Jeremy is preparing a PhD thesis in Computer Science and Artificial Intelligence at École polytechnique, while alongside working as a Data Scientist at Institut de Recherches Servier and Inria Saclay.
+
+
+featured::https://dist.neo4j.com/wp-content/uploads/20211126054423/this-week-in-neo4j-27-November-2021.jpeg[name="Jeremy Grignard"]
+
+// featured community member(s) presentation
+Jeremy took part in the link:https://neo4j.com/video/lifesciences-workshop2021/[Neo4j Health Care & Life Sciences Workshop 2021
+^] mentioned in link:https://neo4j.com/blog/this-week-in-neo4j-healthcare-life-sciences-workshop-cloudflare-workers-apache-hop/[last week's TWIN4j^], presenting _Pegasus_, a knowledge graph to support early drug discovery.
+In his talk he demonstrates how Neo4j can be used to aid the long, expensive and very risky process of drug discovery.
+
+You can link:https://www.youtube.com/watch?v=kuSzziinbJc[watch Jeremy's presentation^] on the Neo4j YouTube channel.
+
+
+// linkedin link(s)
+https://fr.linkedin.com/in/jeremy-grignard[Connect with Jeremy on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j, "]
+== New MEAP! Graph Algorithms for Data Science
+
+:tags: book, release, graph-algorithms, graph-data-science, data-science
+
+image::https://dist.neo4j.com/wp-content/uploads/20211126054410/Bratanic-MEAP-HI.png[width=150,float="right"]
+
+// 3-4 paragraphs
+This week, Manning announced the early access release of the new _MEAP! Graph Algorithms for Data Science_ liveBook by link:https://twitter.com/tb_tomaz[Tomaž Bratanič^].
+This is a must-read for fans of Tomaz's articles frequently included in link:https://neo4j.com/tag/twin4j/[TWIN4j^].
+
+tweet::1462854044582612997[type={type}]
+
+In Tomaz's own words, the book has been written for anyone with no experience with graphs to more experienced graph users to augment their understanding of graph algorithms and their role in the various analysis.
+You can link:https://www.twitch.tv/videos/1214806235[watch this stream on the Manning Publishing Twitch Channel^] for more information on the contents of the book.
+
+You can link:https://livebook.manning.com/book/graph-algorithms-for-data-science/[preview the liveBook here^].  With liveBook, you can access Manning books in-browser as they are being written.
+
+https://www.manning.com/books/graph-algorithms-for-data-science[Buy the live book, role="medium button"]
+
+[#features-2,hashtags="neo4j, "]
+== Making FastRP Graph Embeddings Work for You
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/20211126054411/fastrp-embeddings.jpg[width=150,float="right"]
+
+// 3-4 paragraphs
+Over on Towards Data Science, Clair Sullivan has published the article link:https://towardsdatascience.com/making-fastrp-graph-embeddings-work-for-you-f7344a535dc3[Making FastRP Graph Embeddings Work for You^], demonstrating how you can  tune the hyperparameters of FastRP to solve specific problems.
+FastRP, or Fast Random Projection, is a node embedding algorithm that can be used for a range of challenges including link:https://towardsdatascience.com/twitchverse-using-fastrp-embeddings-for-a-node-classification-task-bb8d34aa690[node classification^].
+
+In the article, Clair populates a Neo4j Sandbox instance with the CORA dataset (a dataset consisting of scientific publications), creates both traditional and graph-based ML models for the problem at hand, and then explores how these models can be improved by optimising FastRP hyperparameters.
+
+The article demonstrates that is possible to create an ML model strictly from graph embeddings, and that in some cases these embeddings can produce better results than traditional ML models.
+
+This week Clair has also released link:https://www.youtube.com/watch?v=H5wYeMzbsMM[Part 16 in the Bite-Sized Neo4j for Data Scientist series^], where she talks about Strongly Connected Components.
+
+https://towardsdatascience.com/making-fastrp-graph-embeddings-work-for-you-f7344a535dc3[Read the article, role="medium button"]
+
+
+
+[#features-3,hashtags="neo4j, java, graphql"]
+== Graph-Based Investigation of Fraud Rings
+
+:tags: neo4j, fraud-detection, visualization
+
+image::https://dist.neo4j.com/wp-content/uploads/20191220062953/graphxr.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Our friends over at link:https://www.kineviz.com/[Kineviz^] have published an article demonstrating how you can use their GraphXR product to explore and understand fraud rings.
+According to Javelin Strategy & Research’s 2021 Identity Fraud Study, fraud losses in 2020 rose to an astounding $56 billion USD, with identity fraud accounting for $43 billion of that total.
+So it makes sense to proactively investigate this.
+
+GraphXR is a browser-based visual analytics platform built to address evolving scenarios and unforeseen questions.
+It provides some very impressive out-of-the-box visualization options and powerful customisation options. My favorite is the impressive 3D graph visualization.
+
+You can link:https://neo4j.com/blog/graphxr-graph-app-neo4j-desktop/[add GraphXR as a Graph App in Neo4j Desktop].
+
+
+https://medium.com/kineviz/graph-based-investigation-of-fraud-rings-5656c8295c67[Read the article, role="medium button"]
+
+
+[#features-4,hashtags="neo4j, cloud, google, bloom"]
+== Resolving 3 financial services challenges with Neo4j Aura on Google Cloud
+
+:tags: neo4j, cloud, aura, bloom
+
+image::https://dist.neo4j.com/wp-content/uploads/20211126054413/fs-challenges.jpg[width=150,float="right"]
+
+// 3-4 paragraphs
+Jim Webber, Neo4j's Chief Scientist, and Antoine Larmanjat, Technical Director, Office of the CTO, Google Cloud, have co-authored an article on the Google Cloud Blog that addresses three common data challenges faced by financial services companies.
+
+Spoiler alert, the three challenges are Risk Management and Compliance, Manual Processes and Inefficiencies and Customer Engagement and Insight.
+The article outlines how these challenges can be addressed by solutions offered by Neo4j Aura on Google Cloud.
+
+To learn more about Neo4j Aura on Google Cloud for FinServ organizations, you can link:https://go.neo4j.com/wbr-211216-cloud-strategy-insider-resolving-finserv-data-challenges.html[register for the webinar on Thursday, December 16^].
+
+
+https://cloud.google.com/blog/topics/partners/solving-financial-services-challenges-with-graph-technology[Resolving 3 financial services challenges with Neo4j Aura, role="medium button"]
+
+[#features-5,hashtags="neo4j, graphdatascience, similarity, louvain"]
+== Create a similarity graph from node properties with Neo4j
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/20211126054421/similarity-graph.png[width=150,float="right"]
+
+// 3-4 paragraphs
+In another Neo4j related article on Towards Data Science, link:https://twitter.com/nsmith_piano[Nathan Smith^] explains how to create a similarity graph using properties of a Neo4j Graph.
+
+The article explores the concept of similarity and how this can be derived by extracting properties from nodes and running similarity algorithms using the Graph Data Science library.
+You can follow along with the article by creating a free blank sandbox on link:https://sandbox.neo4j.com[Neo4j Sandbox^].
+
+Nathan has been a valued member of the link:https://community.neo4j.com[Neo4j Community^] for as long as I can remember and recently joined Neo4j as a Senior Data Scientist.
+If you don't already, I'd recommend that you link:https://twitter.com/nsmith_piano[follow Nathan on Twitter^].
+
+https://towardsdatascience.com/create-a-similarity-graph-from-node-properties-with-neo4j-2d26bb9d829e[Read the article, role="medium button"]
+
+
+[#features-6,hashtags="neo4j, java, graphql"]
+== What’s New in Neo4j-GraphQL-Java
+
+:tags: neo4j, java, graphql
+
+image::https://dist.neo4j.com/wp-content/uploads/20210716102413/neo4j-graphql-java.png[width=150,float="right"]
+
+// 3-4 paragraphs
+In this Medium article, Andreas Berger presents the new features in 1.3 and 1.4 of the Neo4j-GraphQL-Java library.
+The latest version provides better integration into Spring Boot DGS appications, better support for pagination, and brings the library inline with the link:https://neo4j.com/product/graphql-library/[@neo4j/graphql library^].
+
+https://medium.com/neo4j/whats-new-in-neo4j-graphql-java-d3e9abd0ed34[Read the article, role="medium button"]
+
+
+[#features-7,hashtags="neo4j, "]
+== Brand New Building Neo4j Applications with Node.js course on GraphAcademy
+
+:tags: neo4j, graphacademy, node.js, javascript
+
+image::https://dist.neo4j.com/wp-content/uploads/20211126054419/neoflix.jpg[width=150,float="right"]
+
+// 3-4 paragraphs
+Finally, I'd like to finish with a plug to a brand new course released this week on GraphAcademy.
+
+I have been working on the link:https://graphacademy.neo4j.com/courses/app-nodejs[Building Neo4j Applications with Node.js^] course for what feels like forever and it is _finally_ ready!
+In the course, you take on the role of Developer for a fictional client _Neoflix_, modifying a link:https://github.com/neo4j-graphacademy/app-nodejs[pre-built repository] to convert hard-coded API responses into data retrieved a Neo4j Sandbox instance.
+
+The course first introduces you to the link:https://github.com/neo4j/neo4j-javascript-driver[Neo4j JavaScript Driver^], before providing hands-on code challenges that range from creating a Driver instance to running Read and Write transactions against the database.
+
+If you are a Node.js developer, web developer in general, or just interested in learning, I'd love to hear what you think.
+Drop me an email (adam at neo4j.com) with any feedback and I may be able to send one of those limited edition GraphAcademy t-shirts in your direction!
+
+https://graphacademy.neo4j.com/courses/app-nodejs[Read more about the course, role="medium button"]
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/ikwattro[Christophe Willemsen^]:
+
+// replace nnnn with the tweet ID
+
+tweet::1463492850881110025[type={type}]
+
+This thread goes into depth on the importance of styling nodes and relationships when presenting graphs and features some nice screenshots of GraphAware's Hume product.
+
+Don't forget to RT if you liked it too!

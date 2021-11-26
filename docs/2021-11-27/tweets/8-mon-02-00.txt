@@ -1,0 +1,5 @@
+In this week's #twin4j, we look at the brand new Building Neo4j Applications with #Nodejs course on #GraphAcademy
+
+https://neo4j.com/blog/this-week-in-neo4j-jeremy-grignard-pegasus-fastrp-nodejs/#features-7
+
+#neo4j #ai #ml #machinelearning #graphdatascience

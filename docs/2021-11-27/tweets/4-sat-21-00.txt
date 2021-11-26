@@ -1,0 +1,5 @@
+In this week's #twin4j, @Kineviz show how to perform graph-based investigations of Fraud Rings using #GraphXR
+
+https://neo4j.com/blog/this-week-in-neo4j-jeremy-grignard-pegasus-fastrp-nodejs/#features-3
+
+#neo4j #finance #frauddetection #visualization

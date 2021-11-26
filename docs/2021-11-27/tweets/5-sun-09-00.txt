@@ -1,0 +1,5 @@
+In this week's #twin4j, we take a look at how #Neo4jAura and @GoogleCloudTech can help solve three common financial services challenges
+
+https://neo4j.com/blog/this-week-in-neo4j-jeremy-grignard-pegasus-fastrp-nodejs/#features-4
+
+#neo4j #cloud #dbaas

@@ -1,0 +1,116 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Andreas Kollegger & Alexander Erdl
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags: release, data-science
+
+Hello, everyone!
+
+// introduction
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Adrien Sales
+Adrien works as Division Manager at OPT in beautful New Caledonia. He's a technology enthusiast and open source believer.
+He stays true to his knowledge sharing philosophy by publishing a lot of articles regularly.
+Interestingly he worked on both SchemaCrawler and Liquibase in the past, which we both use and integrate at Neo4j for the ETL-Tool and Liquibase-Neo4j.
+He is a long time Neo4j community member and has written many posts about using Neo4j in different contexts. 
+He's also built a number of projects using Neo4j from recipe databases to relational schema visualization.
+
+Here are some examples
+* https://dev.to/adriens/about-the-collatz-conjecture-neo4j-cypher-184h[About the Collatz conjecture, Neo4J & cypher^] - really cool math application and visualization
+* https://dev.to/adriens/deploy-neo4j-s-apoc-plugin-with-code-thanks-to-carvel-vendir-33l4[Deploy Neo4J's APOC plugin with code thanks to CARVEL vendir^]
+* https://www.linkedin.com/pulse/digging-mining-datas-structures-extracting-from-neo4j-adrien-sales/[Digging and mining datas structures : extracting INFORMATION_SCHEMA from Neo4J & APOC]
+* https://portal.graphgist.org/graph_gists/cloud-authentication-providers[Cloud authentication providers & Cambridge Analytica : what if i stop using Facebook ?^]
+Thanks a lot for all your enjoyable content and open-source work Adrien.
+Connect with Adrien on Twitter: https://twitter.com/rastadidi
+
+
+image: https://media-exp1.licdn.com/dms/image/C4E03AQEd6hT5hwJ1TQ/profile-displayphoto-shrink_800_800/0/1566465755859?e=1642636800&v=beta&t=Z6w-M-s4jtGX25NYbhQMsJEO9xpGv39-lOZL0NHFS7k
+linkedin: https://www.linkedin.com/in/adrien-sales/
+twitter: https://twitter.com/rastadidi
+github: https://github.com/adriens
+
+[#features-1,hashtags="neo4j, graphdatabase, release"]
+== Announcing Neo4j 4.4
+
+:tags: 
+
+image::https://miro.medium.com/max/1400/1*nupne4sdvxZBjZz0pVqp_Q.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Built on the most trusted, scalable, and secure database for performance and data integrity, Neo4j 4.4 adds massive gain in data processing while reducing memory requirements when importing very large datasets. You'll also benefit from zero downtime for database upgrades, cloud-native APIs for faster application development without middleware or the use of language drivers, Single Sign-On (SSO) to provide seamless authentication with cloud-based identity providers, and more.
+
+https://neo4j.com/blog/neo4j-4-4-the-fastest-path-to-graph-database-productivity-generally-available[Read the Article, role="medium button"]
+
+
+[#features-2,hashtags="neo4j, quarkus, java, graalvm"]
+== Inspecting the Quarkus Native call path universe with Neo4j
+
+:tags:
+
+image::https://quarkus.io/assets/images/posts/quarkus-native-neo4j-call-tree/persist-query.png[width=150,float="right"]
+
+// 3-4 paragraphs
+This blog post is the culmination of an idea that Sanne (Grinovero) floated to me during some lunch, back at a time when we, remote engineers, would occasionally meet face to face and have the opportunity to share ideas spontaneously. I’m unsure if the lunch was in Neuchâtel or Barcelona, but essentially Sanne was diagnosing an issue and he struggled with GraalVM’s native image analysis call tree text output. He wondered whether that data could instead be formatted differently and imported into a graph database for easier inspection. I’m happy to announce that the GraalVM and Mandrel 21.3.0 releases include improvements to address this particular issue.
+
+https://quarkus.io/blog/quarkus-native-neo4j-call-tree/[Read the Article, role="medium button"]
+
+[#features-3,hashtags="neo4j, nlp, scibert, deeplearning"]
+== Analyzing Scientific Articles with fine-tuned SciBERT NER Model and Neo4j
+
+:tags:
+
+image::https://miro.medium.com/max/1400/1*nupne4sdvxZBjZz0pVqp_Q.png[width=150,float="right"]
+
+// 3-4 paragraphs
+In this article, we will be analyzing a dataset of scientific abstracts using the Neo4j Graph database and a fine-tuned SciBERT model. After, we will be querying the data to answer some questions as our analysis for this corpus. This article assumes that you have the basic fundamentals of NLP and Neo4j.
+
+https://medium.com/ubiai-nlp/analyzing-scientific-documents-with-fine-tuned-scibert-ner-model-and-neo4j-133015a29418[Read the Article, role="medium button"]
+
+[#features-4,hashtags="neo4j, machinelearning, datascience, ai"]
+== Graph Embeddings: AI That Learns from Your Data to Solve Your Problems
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://neo4j.com/whitepapers/graph-embeddings-whitepaper/[Read the White Paper, role="medium button"]
+
+[#features-5,hashtags="neo4j, "]
+== Feature 5
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-6,hashtags="neo4j, "]
+== Feature 6
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/handle[name^]:
+
+// replace nnnn with the tweet ID
+
+tweet::nnnn[type={type}]
+
+Don't forget to RT if you liked it too!

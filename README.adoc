@@ -87,6 +87,9 @@ In order to publish images and blog posts to WordPress, you need to define the f
 - `WORDPRESS_USERNAME`
 - `WORDPRESS_PASSWORD`
 
+For convenience, you can make a copy of the `.env-example` file as `.env` then change the values there. 
+The `.env` file is excluded from the repository, so you can safely keep your secrets there.
+
 IMPORTANT: You first need to generate an issue using `npm run generate <issue-date>` before publishing.
 
 Publish tasks will create or update existing images or blog posts based on the slug.

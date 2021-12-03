@@ -1,11 +1,15 @@
 'use strict'
 
+require('dotenv').config()
+
 const debug = require('debug')('wordpress')
 const WPAPI = require('wpapi')
 
 const wpEndpoint = process.env['WORDPRESS_ENDPOINT'] || 'https://neo4j.com/wp-json'
 const wpUsername = process.env['WORDPRESS_USERNAME']
 const wpPassword = process.env['WORDPRESS_PASSWORD']
+
+console.log("Accessing WP API as", wpUsername);
 
 const wp = new WPAPI({
   endpoint: wpEndpoint,

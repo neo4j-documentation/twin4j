@@ -1,0 +1,117 @@
+= This Week in Neo4j -
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Alexander Erdl
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags:
+
+Hello, everyone!
+
+// introduction
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Ashleigh Faith
+
+:tags:
+
+This week's featured community member is Ashleigh Faith.
+
+featured::https://media-exp1.licdn.com/dms/image/C4E03AQH7QULTGbTdhQ/profile-displayphoto-shrink_800_800/0/1552918765430?e=1644451200&v=beta&t=83KFLcxojLVKaQWnb4tW2LqAkzHgIcqtwKHIthu_K38[name="Ashleigh Faith"]
+
+// featured community member(s) presentation
+
+// linkedin link(s)
+https://www.linkedin.com/in/ashleighnfaith/[Connect with Ashleigh on LinkedIn, role="medium button"]
+
+[#features-1,hashtags="neo4j, "]
+== Feature 1
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-2,hashtags="neo4j, ner, knowledge-graph"]
+== How to Build a Knowledge Graph with Neo4J and Transformers
+
+:tags: 
+
+image::https://miro.medium.com/max/984/1*WeVWx0L55N859fwYQXZaQQ.png[width=150,float="right"]
+
+// 3-4 paragraphs
+Learn how to build a knowledge graph from job descriptions using fine-tuned transformer-based
+Named Entity Recognition (NER) and spacy's relation extraction models. The method described here
+can be used in many different fields such as biomedical, finance, healthcare and beyond.
+
+https://towardsdatascience.com/how-to-build-a-knowledge-graph-with-neo4j-and-transformers-72b9471d6969/[Read the Article, role="medium button"]
+
+[#features-3,hashtags="neo4j, "]
+== Feature 3
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-4,hashtags="neo4j, "]
+== Feature 4
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-5,hashtags="neo4j, "]
+== Feature 5
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-6,hashtags="neo4j, "]
+== Feature 6
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-7,hashtags="neo4j, "]
+== Feature 7
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+== Tweet of the Week
+
+My favorite tweet this week was by https://twitter.com/kaerumy/[Khairil Yusof^]:
+
+// replace nnnn with the tweet ID
+
+tweet::1468463196461682697[type={type}]
+
+Don't forget to RT if you liked it too!

@@ -1,0 +1,5 @@
+In this week's #twin4j, the amazing Clair Sullivan shares more protips for practicing Data Scientists.
+
+https://neo4j.com/blog/this-week-in-neo4j-/#features-4
+
+#neo4j #datascience

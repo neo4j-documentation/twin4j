@@ -1,0 +1,5 @@
+In this week's #twin4j, we have Data Science for everyone, getting deeper insights by understanding relationships. 
+
+https://neo4j.com/blog/this-week-in-neo4j-data-science-all-around/
+
+#neo4j #datascience #nlp #KnowledgeGraphs

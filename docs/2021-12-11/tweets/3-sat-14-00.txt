@@ -1,0 +1,5 @@
+In this week's #twin4j, Walid Amamou transforms text into knowledge.
+
+https://neo4j.com/blog/this-week-in-neo4j-/#features-2
+
+#neo4j #ner #nlp #KnowledgeGraph

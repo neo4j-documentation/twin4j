@@ -8,103 +8,136 @@
 // twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
 :tags:
 
-Hello, everyone!
+Do you remember the
+https://www.icij.org/investigations/pandora-papers/[Pandora Papers] -
+the latest leak from the International Consortium of Investigative
+Journalists (ICIJ)? As you know, the ICIJ uses Neo4j to find the hidden
+connections in the vast numbers of files and data. They have now made
+the first data-release of that leak available and Michael Hunger dove
+right in. +
+Furthermore, this week is completely decked out with Data Science
+topics. We are exploring Knowledge Graphs with Named Entity Recognition
+or text analyse Electronic Health Records. In addition to these two
+great articles we invite you to watch Clair's Video this week about
+Graph Embeddings. +
+ +
+Enjoy this week's edition of Twin4j. +
+Andreas & Alexander
 
 // introduction
 
-[#featured-community-member,hashtags="neo4j, "]
-== Featured Community Member: Ashleigh Faith
+[#featured-community-member,hashtags="neo4j, stem, knowledge-graphs"]
+== Featured Community Member: Ashleigh N. Faith
 
 :tags:
 
-This week's featured community member is Ashleigh Faith.
+image:https://dist.neo4j.com/wp-content/uploads/20211209023256/this-week-in-neo4j-11-December-2021.jpeg[Ashleigh
+N. Faith - This Week’s Featured Community Member,width=800,height=400]
 
-featured::https://media-exp1.licdn.com/dms/image/C4E03AQH7QULTGbTdhQ/profile-displayphoto-shrink_800_800/0/1552918765430?e=1644451200&v=beta&t=83KFLcxojLVKaQWnb4tW2LqAkzHgIcqtwKHIthu_K38[name="Ashleigh Faith"]
+*Ashleigh N. Faith - This Week's Featured Community Member*
 
-// featured community member(s) presentation
+Ashleigh specializes in multilingual search and behavioral analytics,
+focused on semantics, interoperability, and natural language, and
+realized through ontologies and knowledge graph. Her domain focus is
+STEM subject matter -particularly in transportation, mechanical,
+medical, and electrical engineering technology, but I have worked on
+eCommerce, Business Intelligence, and Network Analysis data as well. She
+is an active member of the community and striving to educate others of
+the value, power, and importance of knowledge graphs. For this she was
+awarded the
+https://neo4j.com/blog/the-results-are-in-here-are-this-years-graphie-award-winners/[Neo4j Graphie Award 2021]
+
+Watch Ashleigh's videos on Youtube:
+
+* https://www.youtube.com/watch?v=7rrYguolqZc[Chatting with David Meza, NASA]
+* https://www.youtube.com/watch?v=OkrCXF2BZ3Y[Neo4j Technology Showcase]
+* https://www.youtube.com/watch?v=cfQ155oH3PY&list=PLOOT2byx0CKjwirg4UNdjxtwZCMtvNikH[Knowledge Graph Playlist] - find out if you are in need of a knowledge graph
+
+Thanks a lot for all your great videos and your work for the graph
+community.
 
 // linkedin link(s)
 https://www.linkedin.com/in/ashleighnfaith/[Connect with Ashleigh on LinkedIn, role="medium button"]
 
-[#features-1,hashtags="neo4j, "]
-== Feature 1
+[#features-1,hashtags="neo4j, icij, journalism"]
+== Digging Into the ICIJ Pandora Papers Dataset with Neo4j
 
 :tags:
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image:https://dist.neo4j.com/wp-content/uploads/20211207111752/Michael_1.gif[Digging
+Into the ICIJ Pandora Papers Dataset with Neo4j,width=150]
 
-// 3-4 paragraphs
+Just a few days ago, the Pulitzer Award winning International Consortium
+of Investigative Journalists (ICIJ) published the first data-release of
+the recent Pandora Papers investigation. This time the data publication
+was not split across the different investigations but contains the full
+offshoreleaks database in one dataset, so you can explore the data of
+shell companies, law firms, banks, and ultimate owners across all leaks
+and investigations. Dive into the data with Michael Hunger and find out
+how officers are related with Entities, Intermediaries and Shell
+Companies.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://neo4j.com/developer-blog/digging-into-the-icij-pandora-papers-dataset-with-neo4j/[Read the Article, role="medium button"]
 
-[#features-2,hashtags="neo4j, ner, knowledge-graph"]
+[#features-2,hashtags="neo4j, ner, nlp, KnowledgeGraph"]
 == How to Build a Knowledge Graph with Neo4J and Transformers
 
-:tags: 
+:tags:
 
-image::https://miro.medium.com/max/984/1*WeVWx0L55N859fwYQXZaQQ.png[width=150,float="right"]
+image:https://miro.medium.com/max/984/1*WeVWx0L55N859fwYQXZaQQ.png[Knowledge Graph with Neo4J and Transformers,width=150]
 
-// 3-4 paragraphs
-Learn how to build a knowledge graph from job descriptions using fine-tuned transformer-based
-Named Entity Recognition (NER) and spacy's relation extraction models. The method described here
-can be used in many different fields such as biomedical, finance, healthcare and beyond.
+Learn from Walid Amamou about how to build a knowledge graph from job
+descriptions using fine-tuned transformer-based Named Entity Recognition
+(NER) and spacy's relation extraction models. The method described here
+can be used in many different fields such as biomedical, finance,
+healthcare and beyond.
 
 https://towardsdatascience.com/how-to-build-a-knowledge-graph-with-neo4j-and-transformers-72b9471d6969/[Read the Article, role="medium button"]
 
-[#features-3,hashtags="neo4j, "]
-== Feature 3
+[#features-3,hashtags="neo4j, ehr, medcat"]
+== Exploring Electronic Health Records with MedCAT and Neo4j
 
 :tags:
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image:https://miro.medium.com/max/1050/1*KZoYydORORS6dUfPN0MGNA.png[Exploring Electronic Health Records with MedCAT and Neo4j,width=150]
 
-// 3-4 paragraphs
+Zeljko gives a hands-on tutorial on making biomedical concepts extracted
+from free text easily accessible to clinicians and researchers.
+Biomedical NER+L is concerned with extracting concepts from free text
+found in Electronic Health Records (EHRs) and linking them to large
+biomedical databases like SNOMED-CT and UMLS. In this post, Zeljko
+focuses on what to do once concepts are extracted from free text, in
+other words, how to make them useful to clinicians and other
+researchers.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://towardsdatascience.com/exploring-electronic-health-records-with-medcat-and-neo4j-f376c03d8eef[Read the Article, role="medium button"]
 
-[#features-4,hashtags="neo4j, "]
-== Feature 4
-
-:tags:
-
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
-
-// 3-4 paragraphs
-
-https://call-to-action-url/[Action, role="medium button"]
-
-[#features-5,hashtags="neo4j, "]
-== Feature 5
+[#features-4,hashtags="neo4j, datascience"]
+== Bite-Sized Neo4j for Data Scientists
 
 :tags:
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image:https://dist.neo4j.com/wp-content/uploads/20211209030438/2021-12-11-clairplaylist.png[Neo4j for Data Scientists,width=150]
 
-// 3-4 paragraphs
+Clair Sullivan has added more videos to her great Youtube Playlist with
+short overview videos for Data Scientists. Her recent addition is
+already episode 17 and here she goes into
+https://www.youtube.com/watch?v=HNE-Ctl52hw&list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC&index=17["Creating FastRP Graph Embeddings"].
 
-https://call-to-action-url/[Action, role="medium button"]
+https://www.youtube.com/playlist?list=PL9Hl4pk2FsvVShoT5EysHcrs-hyCsXaWC[Watch the Playlist, role="medium button"]
 
-[#features-6,hashtags="neo4j, "]
-== Feature 6
-
-:tags:
-
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
-
-// 3-4 paragraphs
-
-https://call-to-action-url/[Action, role="medium button"]
-
-[#features-7,hashtags="neo4j, "]
-== Feature 7
+[#features-5,hashtags="neo4j, awards"]
+== Neo4j Graphies 2021
 
 :tags:
 
-image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+image:https://dist.neo4j.com/wp-content/uploads/20211201012317/Graphie-blog.png[Graphie blog,width=150]
 
-// 3-4 paragraphs
+We’re thrilled to announce this year’s Graphie Award winners! This
+annual celebration honors people, projects, and companies from all
+around the world for excellence in the connected data space.
 
-https://call-to-action-url/[Action, role="medium button"]
+https://neo4j.com/blog/the-results-are-in-here-are-this-years-graphie-award-winners/[Read the Article, role="medium button"]
 
 == Tweet of the Week
 

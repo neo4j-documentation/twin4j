@@ -1,0 +1,5 @@
+In this week's #twin4j, enjoy the beautiful new graph visualizations in Bloom 2.0
+
+https://neo4j.com/blog/this-week-in-neo4j-/#features-1
+
+#neo4j #bloom

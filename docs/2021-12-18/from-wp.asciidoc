@@ -1,0 +1,170 @@
+[[content]]
+https://winterbloom.com/[Winter Bloom] helps you create musical
+instruments by plugging together individual electronic components -- an
+audio signal graph! +
+ +
+Our own Neo4j Bloom creates beautiful visual graphs. This week we
+celebrate
+https://neo4j.com/blog/neo4j-4-4-the-fastest-path-to-graph-database-productivity-generally-available/[a
+winter release] of Bloom 2.0. And you can use it - free of charge - in
+https://neo4j.com/cloud/aura/[Neo4j AuraDB Free],
+https://neo4j.com/download[Neo4j Desktop] as well as
+https://sandbox.neo4j.com/[Neo4j Sandbox]. +
+ +
+*Important*: Recently a security vulnerability was discovered and
+https://twitter.com/hashtag/log4j[discussed] in
+https://logging.apache.org/log4j/2.x/[Log4j], an unaffiliated open
+source project. Neo4j versions 4.2 and later are impacted. Please review
+the regularly updated information on the
+https://neo4j.com/security/log4j/[Apache Log4j Security Vulnerability
+(CVE-2021-44228)] page for recommended actions. +
+ +
+Enjoy this week's edition of Twin4j. +
+Andreas & Alexander
+
+[[featured-community-member]]
+== Featured Community Member: Michal Štefaňák
+
+ +
+
+image:https://dist.neo4j.com/wp-content/uploads/20211216052544/this-week-in-neo4j-18-December-2021.jpeg[Michal Štefaňák - This Week’s Featured Community Member,width=800,height=400]
+
+*Michal Štefaňák - This Week's Featured Community Member*
+
+Michal's life is full of seeking knowledge and figuring out solutions on
+a lot of technical problems. He was always interested in technology and
+started with programming in young age. In the Neo4j graph world he
+worked on a PHP library that takes care of the low-level details of
+connectivity with Neo4j. The project is now the foundation of the new
+PHP driver, which in turn will allow the whole PHP ecosystem to work
+with recent Neo4j versions again! For this he was awarded the
+https://neo4j.com/blog/the-results-are-in-here-are-this-years-graphie-award-winners/[Neo4j Graphie Award 2021]. 
+
+Congratulations Michal!
+
+Check out Michals work:
+
+* https://github.com/neo4j-php/Bolt[Bolt protocol library over TCP
+socket]
+
+Thanks a lot for all your great work for the graph community.
+
+https://www.linkedin.com/in/michalstefanak/[Connect with Michal on
+LinkedIn]
+
+[[features-1]]
+== Introducing Neo4j Bloom 2.0
+
+ +
+
+image:https://dist.neo4j.com/wp-content/uploads/20211210143953/Bloom2_Final-1.gif[Bloom2,width=150]
+
+Neo4j Bloom, our beautiful and expressive data visualization tool that
+freely interacts with Neo4j’s graph data platform with no code – has
+been delighting users since its initial release in 2018. Three years
+later, Bloom 2.0 has arrived with some key feature updates we think
+you’ll find helpful in your graph data exploration:
+
+* Scene Saving: Save multiple scenes, preserving all layout and styling
+details for later use
+* Scene Sharing: Collaborate with colleagues by sharing a read-only
+scene
+* Histogram: Easily apply styling rules and filters for your ad-hoc
+exploration workflows
+* Improved SSO Capability: Enable SSO in your corporate environment
+* Improved Editing Support: Leverage Bloom’s codeless interface to edit
+data ad-hoc
+
+https://neo4j.com/blog/introducing-neo4j-bloom-2-0-the-fastest-path-to-graph-data-visualization/[Read
+the Article]
+
+[[features-2]]
+== GeoGraph: Modelling and building a graph database of multi-source landmarks to help emergency mountain rescuers
+
+ +
+
+image:http://www.e-tissage.net/wp-content/uploads/2021/12/GeoGraph-ICC2021.gif[GeoGraph,width=150]
+
+Véronique Gendner from Univ Gustave Eiffel presents the Choucas research
+project which collects methods, tools and resources, to help mountain
+rescue team localise victims, when answering emergency calls. In this
+context, they have built a Neo4j graph, that integrates several sources
+of geolocated objects. Some data comes from the national mapping agency
+(IGN BDTOPO), others, like routes from crowdsourcing websites.
+
+https://www.e-tissage.net/icc2021/[Watch the Presentation]
+
+[[features-3]]
+== New Course: Importing CSV Data into Neo4j
+
+ +
+
+image:https://dist.neo4j.com/wp-content/uploads/20211216054042/12-18-21-graphacedemycourse.png[Import
+CSV,width=150]
+
+Adam Cowley just launched the latest edition to our Neo4j Graphacademy:
+Importing CSV Data into Neo4j. In this course you will learn how to take
+CSV data from another source and use it to create a graph. This course
+has been designed to complete your learning as a
+https://graphacademy.neo4j.com/categories/beginners/[beginner to Neo4j].
+What you will learn in this course:
+
+* Preparing for importing data
+* Using the Neo4j Data Importer
+* Post-processing for imported data
+* Using Cypher to import data
+
+https://graphacademy.neo4j.com/courses/importing-data/[Take the Course]
+
+[[features-4]]
+== Finding Log4j – Analysis Of Maven Repositories And Projects
+
+ +
+
+image:https://jqassistant.org/wp-content/uploads/2021/12/Log4j-Dependencies.png[log4j,width=150]
+
+On Friday, 10 Dec 2021, a serious vulnerability of the wide spread
+logging framework Log4j has been reported, see CVE-2021-45046. This blog
+post describes how jQAssistant may assist you in detecting applications
+or modules that make use of the framework.
+
+https://jqassistant.org/finding-log4j-analysis-of-maven-repositories-and-projects/[Read
+the Article]
+
+[[features-5]]
+== Neo4j Tutorial on Digital Forensics and Document Fingerprinting
+
+ +
+
+image:https://dist.neo4j.com/wp-content/uploads/20211216055331/2021-12-18-chrishayyoutube.jpg[Neo4j
+Tutorial,width=150]
+
+In this tutorial Chris Hay looks at how to use Neo4j for digital
+forensics. He looks at how you can build a digital document fingerprint
+and how that could be represented in Neo4j as a graph and how the the
+graph database can establish links between various pdf documents. He
+also analyzes other documents such as the Adam Back hashcash paper as
+well as another document created by Craig Wright to establish
+fingerprints of his document creation software.
+
+https://www.youtube.com/watch?v=FdQV9ZudZzA[Watch the Video]
+
+[[_tweet_of_the_week]]
+== Tweet of the Week
+
+ +
+
+My favorite tweet this week was by https://twitter.com/mcohmi[Ohm-I]:
+
+____
+Yo, https://twitter.com/neo4j?ref_src=twsrc%5Etfw[@neo4j]. +
+ +
+Is it "Neo 4 Jay" or "Neo Forge"? We need answers in these troubling
+times.
+
+— Ohm-I (@mcohmi)
+https://twitter.com/mcohmi/status/1471124126018392067?ref_src=twsrc%5Etfw[December
+15, 2021]
+____
+
+Don’t forget to RT if you liked it too!

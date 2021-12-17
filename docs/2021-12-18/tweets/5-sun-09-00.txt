@@ -1,0 +1,4 @@
+In this week's #twin4j, we address the impact of #log4j on #neo4j and show
+how jqassistant can help detect vulnerable applications.
+
+https://neo4j.com/blog/this-week-in-neo4j-/#features-4

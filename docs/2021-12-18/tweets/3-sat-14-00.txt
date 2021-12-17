@@ -1,0 +1,5 @@
+In this week's #twin4j, learn from @v2belleville how graphs can help with mountain rescue
+
+https://neo4j.com/blog/this-week-in-neo4j-/#features-2
+
+#neo4j #geo

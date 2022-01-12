@@ -6,6 +6,14 @@ const fs = require('fs').promises
 const debug = require('debug')('resize-images')
 const { getCommunityMembersData } = require('./lib/data.js')
 
+async function removeDir(dir) {
+  return typeof fs.rm === 'function'
+    // Introduced in Node 14.14.0
+    ? fs.rm(dir, { recursive: true, force: true })
+    // The recursive option is deprecated, using it triggers a deprecation warning in Node 16
+    : fs.rmdir(dir, { recursive: true, force: true })
+}
+
 async function resizeImages(buildImagesDirectory, issueDate) {
   try {
     execSync(`"mogrify" "--version"`)
@@ -15,7 +23,7 @@ async function resizeImages(buildImagesDirectory, issueDate) {
   }
   const communityMemberJson = await getCommunityMembersData(issueDate)
   const thumbsDirectory = ospath.join(buildImagesDirectory, 'thumbs')
-  await fs.rmdir(thumbsDirectory, { recursive: true, force: true })
+  await removeDir(thumbsDirectory)
   const originalImages = await fs.readdir(buildImagesDirectory)
   await fs.mkdir(thumbsDirectory)
   execSync(`"mogrify" "-path" "thumbs/" "-thumbnail" "800x418>" ${originalImages.map(image => `"${image}"`).join(' ')}`, { cwd: buildImagesDirectory })
@@ -27,7 +35,7 @@ async function resizeImages(buildImagesDirectory, issueDate) {
     await fs.copyFile(ospath.join(thumbsDirectory, image), ospath.join(buildImagesDirectory, image))
   }
   // cleanup
-  await fs.rmdir(thumbsDirectory, { recursive: true, force: true })
+  await removeDir(thumbsDirectory)
 }
 
 module.exports = {

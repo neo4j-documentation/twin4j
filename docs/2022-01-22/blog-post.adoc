@@ -1,0 +1,125 @@
+= This Week in Neo4j - January 22
+// update slug according to the blog post title, slug must only contain lowercase alphanumeric words separated by dashes, e.g. "this-week-in-neo4j-twitchverse-java-drivers-encryption"
+:slug: this-week-in-neo4j-web3
+:noheader:
+:linkattrs:
+:categories: graph-database
+:author: Andreas Kollegger
+// twin4j is added automatically; consolidate all tags in each feature to this attribute removing duplicates
+:tags:
+
+Surely the most exciting part of Web3 is that it brings us closer to Web4j, which will be entirely based on property graphs. Past decentralization, a great thing about graphs is that they have no center, or equally that every connected member is a center (has centrality). You are a center. The web will fold around you into your own pocket universe of information, applications, and transactions.
+
+....
+(web1:Read)-->(web2:Write)-->(web3:Transact)-->(web4:Personal)
+....
+
+
+Until that beautiful future, enjoy some reading about NFTs, SmartContracts, web development with PHP and Sports Data  Science!
+
+[#featured-community-member,hashtags="neo4j, "]
+== Featured Community Member: Cristina Escalente
+
+:tags:
+
+This week's featured community member is Cristina Escalente.
+
+featured::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[name="Cristina Escalante"]
+
+// featured community member(s) presentation
+
+http://twitter.com/whatsocks[Cristina^] is a prolific content creator, editor and developer, active in many communities from Boca Raton, FL to online global communities. 
+
+For the Neo4j community, she has authored several http://portal.graphgist.org/people/whatsocks[GraphGists^], https://medium.com/@Cristina[Blog Posts^] and contributed to many https://github.com/whatSocks:[open-source projects].
+
+She works at her consultancy https://tsl.io/[The SilverLogic^], which features an https://tsl.io/portfolio[impressive portfolio^] of projects. Reach out to Cristina for Neo4j consulting, web and mobile app development, 
+or https://grandstack.io[GRANDstack^] development.
+
+// linkedin link(s)
+https://www.linkedin.com/in/cristina-escalante-82529714/[Connect with Cristina Escalante, role="medium button"]
+
+[#features-1,hashtags="neo4j, "]
+== Feature 1
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-2,hashtags="neo4j, "]
+== Feature 2
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-3,hashtags="neo4j, "]
+== Feature 3
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-4,hashtags="neo4j, "]
+== Feature 4
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-5,hashtags="neo4j, "]
+== Feature 5
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-6,hashtags="neo4j, "]
+== Feature 6
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+[#features-7,hashtags="neo4j, "]
+== Feature 7
+
+:tags:
+
+image::https://dist.neo4j.com/wp-content/uploads/xyz/image.jpeg[width=150,float="right"]
+
+// 3-4 paragraphs
+
+https://call-to-action-url/[Action, role="medium button"]
+
+== Tweet of the Week
+
+Our favorite tweet this week was by https://twitter.com/XquaInTheMoon[Xqua^]:
+
+// replace nnnn with the tweet ID
+tweet::1482838043123806209[type={type}]
+
+Don't forget to RT if you liked it too!
